@@ -1,0 +1,405 @@
+<Entities>
+	<Entity name="DEFY-AN94" type="Human" editorAutoHeight="false">
+		<RenderObject3D model="data/models/dolls/an94.khm" diffuseTex="data/models/dolls/an94.dds"/>
+
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+		<PhysicalParams health="300"/>
+
+		<Human type="GoodGuy"
+			unit="GFL-UNIT-DEFY"
+			class="GFL-DOLL-AN94">
+
+			<Id name="DEFY-AN94" portrait="data/textures/portraits/gfl_an94.dds" gender="0" voicePack="cia_female"/>
+			<FOV degrees="135" distanceMeters="999" eyeRadiusMeters="1"/>
+			<Brain suppressionRecovery="80.0"/>
+
+			<Mobility>
+				<MoveSpeed min="1.3" defaultMetersPerSec="2.5" max="10"/>
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
+			</Mobility>
+
+			<Equipment>
+				<Item name="GFL-WEAP-AN94"/>
+				<Item name="IronSights"/>
+				<Item name="FN57"/>
+				<Item name="IronSights_Pistol"/>
+				<Item name="Concealable LVL2"/>
+				<Item name="Flashbang"/>
+				<Item name="Frag Grenade"/>
+			</Equipment>
+		</Human>
+	</Entity>
+
+	<Entity name="DEFY-AK15" type="Human" editorAutoHeight="false">
+		<RenderObject3D model="data/models/dolls/ak15.khm" diffuseTex="data/models/dolls/ak15.dds"/>
+
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+		<PhysicalParams health="300"/>
+
+		<Human type="GoodGuy"
+			unit="GFL-UNIT-DEFY"
+			class="GFL-DOLL-AK15">
+
+			<Id name="DEFY-AK15" portrait="data/textures/portraits/gfl_ak15.dds" gender="0" voicePack="cia_female"/>
+			<FOV degrees="135" distanceMeters="999" eyeRadiusMeters="1"/>
+			<Brain suppressionRecovery="80.0"/>
+
+			<Mobility>
+				<MoveSpeed min="1.3" defaultMetersPerSec="2.5" max="10"/>
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
+			</Mobility>
+
+			<Equipment>
+				<Item name="GFL-WEAP-AK15"/>
+				<Item name="IronSights"/>
+				<Item name="FN57"/>
+				<Item name="IronSights_Pistol"/>
+				<Item name="Concealable LVL2"/>
+				<Item name="Flashbang"/>
+				<Item name="Frag Grenade"/>
+			</Equipment>
+		</Human>
+	</Entity>
+
+	<Entity name="404-HK416" type="Human" editorAutoHeight="false">
+		<RenderObject3D model="data/models/dolls/hk416.khm" diffuseTex="data/models/dolls/hk416.dds"/>
+
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+		<PhysicalParams health="300"/>
+
+		<Human type="GoodGuy"
+			unit="GFL-UNIT-404"
+			class="GFL-DOLL-HK416">
+
+			<Id name="404-HK416" portrait="data/textures/portraits/gfl_hk416.dds" gender="0" voicePack="cia_female"/>
+			<FOV degrees="135" distanceMeters="999" eyeRadiusMeters="1"/>
+			<Brain suppressionRecovery="80.0"/>
+
+			<Mobility>
+				<MoveSpeed min="1.3" defaultMetersPerSec="2.5" max="10"/>
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
+			</Mobility>
+
+			<Equipment>
+				<Item name="GFL-WEAP-HK416"/>
+				<Item name="IronSights"/>
+				<Item name="FN57"/>
+				<Item name="IronSights_Pistol"/>
+				<Item name="Concealable LVL2"/>
+				<Item name="Flashbang"/>
+				<Item name="Frag Grenade"/>
+			</Equipment>
+		</Human>
+	</Entity>
+
+	<Entity name="404-G11" type="Human" editorAutoHeight="false">
+		<RenderObject3D model="data/models/dolls/g11.khm" diffuseTex="data/models/dolls/g11.dds"/>
+
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+		<PhysicalParams health="200"/>
+
+		<Human type="GoodGuy"
+			unit="GFL-UNIT-404"
+			class="GFL-DOLL-G11">
+
+			<Id name="404-G11" portrait="data/textures/portraits/gfl_g11.dds" gender="0" voicePack="cia_female"/>
+			<FOV degrees="110" distanceMeters="999" eyeRadiusMeters="0.6"/>
+			<Brain suppressionRecovery="40.0"/>
+
+			<Mobility>
+				<MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10"/>
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
+			</Mobility>
+
+			<Equipment>
+				<Item name="GFL-WEAP-G11"/>
+				<Item name="IronSights"/>
+				<Item name="FN57"/>
+				<Item name="IronSights_Pistol"/>
+				<Item name="Concealable LVL2"/>
+				<Item name="Flashbang"/>
+				<Item name="Frag Grenade"/>
+			</Equipment>
+		</Human>
+	</Entity>
+
+	<Entity name="404-G36K" type="Human" editorAutoHeight="false">
+		<RenderObject3D model="data/models/dolls/g36k.khm" diffuseTex="data/models/dolls/g36k.dds"/>
+
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+		<PhysicalParams health="200"/>
+
+		<Human type="GoodGuy"
+			unit="GFL-UNIT-404"
+			class="GFL-DOLL-G36K">
+
+			<Id name="404-G36K" portrait="data/textures/portraits/gfl_g36k.dds" gender="0" voicePack="cia_female"/>
+			<FOV degrees="110" distanceMeters="999" eyeRadiusMeters="0.6"/>
+			<Brain suppressionRecovery="40.0"/>
+
+			<Mobility>
+				<MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10"/>
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
+			</Mobility>
+
+			<Equipment>
+				<Item name="GFL-WEAP-G36K"/>
+				<Item name="IronSights"/>
+				<Item name="FN57"/>
+				<Item name="IronSights_Pistol"/>
+				<Item name="Concealable LVL2"/>
+				<Item name="Flashbang"/>
+				<Item name="Frag Grenade"/>
+			</Equipment>
+		</Human>
+	</Entity>
+
+	<Entity name="404-G28" type="Human" editorAutoHeight="false">
+		<RenderObject3D model="data/models/dolls/g28.khm" diffuseTex="data/models/dolls/g28.dds"/>
+
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+		<PhysicalParams health="200"/>
+
+		<Human type="GoodGuy"
+			unit="GFL-UNIT-404"
+			class="GFL-DOLL-G28">
+
+			<Id name="404-G28" portrait="data/textures/portraits/gfl_g28.dds" gender="0" voicePack="cia_female"/>
+			<FOV degrees="110" distanceMeters="999" eyeRadiusMeters="0.6"/>
+			<Brain suppressionRecovery="40.0"/>
+
+			<Mobility>
+				<MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10"/>
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
+			</Mobility>
+
+			<Equipment>
+				<Item name="GFL-WEAP-G28"/>
+				<Item name="IronSights"/>
+				<Item name="FN57"/>
+				<Item name="IronSights_Pistol"/>
+				<Item name="Concealable LVL2"/>
+				<Item name="Flashbang"/>
+				<Item name="Frag Grenade"/>
+			</Equipment>
+		</Human>
+	</Entity>
+
+	<Entity name="404-UMP45" type="Human" editorAutoHeight="false">
+		<RenderObject3D model="data/models/dolls/ump45.khm" diffuseTex="data/models/dolls/ump45.dds"/>
+
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+		<PhysicalParams health="300"/>
+
+		<Human type="GoodGuy"
+			unit="GFL-UNIT-404"
+			class="GFL-DOLL-UMP45">
+
+			<Id name="404-UMP45" portrait="data/textures/portraits/gfl_ump45.dds" gender="0" voicePack="cia_female"/>
+			<FOV degrees="135" distanceMeters="999" eyeRadiusMeters="1"/>
+			<Brain suppressionRecovery="80.0"/>
+
+			<Mobility>
+				<MoveSpeed min="1.3" defaultMetersPerSec="2.5" max="10"/>
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
+			</Mobility>
+
+			<Equipment>
+				<Item name="GFL-WEAP-UMP45"/>
+				<Item name="IronSights"/>
+				<Item name="FN57"/>
+				<Item name="IronSights_Pistol"/>
+				<Item name="Concealable LVL2"/>
+				<Item name="Flashbang"/>
+				<Item name="Frag Grenade"/>
+			</Equipment>
+		</Human>
+	</Entity>
+
+	<Entity name="404-UMP9" type="Human" editorAutoHeight="false">
+		<RenderObject3D model="data/models/dolls/ump9.khm" diffuseTex="data/models/dolls/ump9.dds"/>
+
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+		<PhysicalParams health="300"/>
+
+		<Human type="GoodGuy"
+			unit="GFL-UNIT-404"
+			class="GFL-DOLL-UMP9">
+
+			<Id name="404-UMP9" portrait="data/textures/portraits/gfl_ump9.dds" gender="0" voicePack="cia_female"/>
+			<FOV degrees="135" distanceMeters="999" eyeRadiusMeters="1"/>
+			<Brain suppressionRecovery="80.0"/>
+
+			<Mobility>
+				<MoveSpeed min="1.3" defaultMetersPerSec="2.5" max="10"/>
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
+			</Mobility>
+
+			<Equipment>
+				<Item name="GFL-WEAP-UMP9"/>
+				<Item name="IronSights"/>
+				<Item name="FN57"/>
+				<Item name="IronSights_Pistol"/>
+				<Item name="Concealable LVL2"/>
+				<Item name="Flashbang"/>
+				<Item name="Frag Grenade"/>
+			</Equipment>
+		</Human>
+	</Entity>
+
+	<Entity name="404-VECTOR" type="Human" editorAutoHeight="false">
+		<RenderObject3D model="data/models/dolls/vector.khm" diffuseTex="data/models/dolls/vector.dds"/>
+
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+		<PhysicalParams health="300"/>
+
+		<Human type="GoodGuy"
+			unit="GFL-UNIT-404"
+			class="GFL-DOLL-VECTOR">
+
+			<Id name="404-VECTOR" portrait="data/textures/portraits/gfl_vector.dds" gender="0" voicePack="cia_female"/>
+			<FOV degrees="135" distanceMeters="999" eyeRadiusMeters="1"/>
+			<Brain suppressionRecovery="80.0"/>
+
+			<Mobility>
+				<MoveSpeed min="1.3" defaultMetersPerSec="2.5" max="10"/>
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
+			</Mobility>
+
+			<Equipment>
+				<Item name="GFL-WEAP-VECTOR"/>
+				<Item name="IronSights"/>
+				<Item name="FN57"/>
+				<Item name="IronSights_Pistol"/>
+				<Item name="Concealable LVL2"/>
+				<Item name="Flashbang"/>
+				<Item name="Frag Grenade"/>
+			</Equipment>
+		</Human>
+	</Entity>
+
+	<Entity name="CAFE-M1903" type="Human" editorAutoHeight="false">
+		<RenderObject3D model="data/models/dolls/m1903.khm" diffuseTex="data/models/dolls/m1903.dds"/>
+
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+		<PhysicalParams health="300"/>
+
+		<Human type="GoodGuy"
+			unit="GFL-UNIT-CAFE"
+			class="GFL-DOLL-M1903">
+
+			<Id name="CAFE-M1903" portrait="data/textures/portraits/gfl_m1903.dds" gender="0" voicePack="cia_female"/>
+			<FOV degrees="135" distanceMeters="999" eyeRadiusMeters="1"/>
+			<Brain suppressionRecovery="80.0"/>
+
+			<Mobility>
+				<MoveSpeed min="1.3" defaultMetersPerSec="2.5" max="10"/>
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
+			</Mobility>
+
+			<Equipment>
+				<Item name="GFL-WEAP-M1903"/>
+				<Item name="IronSights"/>
+				<Item name="FN57"/>
+				<Item name="IronSights_Pistol"/>
+				<Item name="Concealable LVL2"/>
+				<Item name="Flashbang"/>
+				<Item name="Frag Grenade"/>
+			</Equipment>
+		</Human>
+	</Entity>
+
+	<Entity name="CAFE-WA2000" type="Human" editorAutoHeight="false">
+		<RenderObject3D model="data/models/dolls/wa2000.khm" diffuseTex="data/models/dolls/wa2000.dds"/>
+
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+		<PhysicalParams health="300"/>
+
+		<Human type="GoodGuy"
+			unit="GFL-UNIT-CAFE"
+			class="GFL-DOLL-WA2000">
+
+			<Id name="CAFE-WA2000" portrait="data/textures/portraits/gfl_wa2000.dds" gender="0" voicePack="cia_female"/>
+			<FOV degrees="135" distanceMeters="999" eyeRadiusMeters="1"/>
+			<Brain suppressionRecovery="80.0"/>
+
+			<Mobility>
+				<MoveSpeed min="1.3" defaultMetersPerSec="2.5" max="10"/>
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
+			</Mobility>
+
+			<Equipment>
+				<Item name="GFL-WEAP-WA2000"/>
+				<Item name="IronSights"/>
+				<Item name="FN57"/>
+				<Item name="IronSights_Pistol"/>
+				<Item name="Concealable LVL2"/>
+				<Item name="Flashbang"/>
+				<Item name="Frag Grenade"/>
+			</Equipment>
+		</Human>
+	</Entity>
+
+	<Entity name="CAFE-G36" type="Human" editorAutoHeight="false">
+		<RenderObject3D model="data/models/dolls/g36.khm" diffuseTex="data/models/dolls/g36.dds"/>
+
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+		<PhysicalParams health="300"/>
+
+		<Human type="GoodGuy"
+			unit="GFL-UNIT-CAFE"
+			class="GFL-DOLL-G36">
+
+			<Id name="CAFE-G36" portrait="data/textures/portraits/gfl_g36.dds" gender="0" voicePack="cia_female"/>
+			<FOV degrees="135" distanceMeters="999" eyeRadiusMeters="1"/>
+			<Brain suppressionRecovery="80.0"/>
+
+			<Mobility>
+				<MoveSpeed min="1.3" defaultMetersPerSec="2.5" max="10"/>
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
+			</Mobility>
+
+			<Equipment>
+				<Item name="GFL-WEAP-G36"/>
+				<Item name="IronSights"/>
+				<Item name="FN57"/>
+				<Item name="IronSights_Pistol"/>
+				<Item name="Concealable LVL2"/>
+				<Item name="Flashbang"/>
+				<Item name="Frag Grenade"/>
+			</Equipment>
+		</Human>
+	</Entity>
+
+	<Entity name="CAFE-XCR" type="Human" editorAutoHeight="false">
+		<RenderObject3D model="data/models/dolls/xcr.khm" diffuseTex="data/models/dolls/xcr.dds"/>
+
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+		<PhysicalParams health="300"/>
+
+		<Human type="GoodGuy"
+			unit="GFL-UNIT-CAFE"
+			class="GFL-DOLL-XCR">
+
+			<Id name="CAFE-XCR" portrait="data/textures/portraits/gfl_xcr.dds" gender="0" voicePack="cia_female"/>
+			<FOV degrees="110" distanceMeters="999" eyeRadiusMeters="0.6"/>
+			<Brain suppressionRecovery="40.0"/>
+
+			<Mobility>
+				<MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10"/>
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
+			</Mobility>
+
+			<Equipment>
+				<Item name="GFL-WEAP-XCR"/>
+				<Item name="IronSights"/>
+				<Item name="FN57"/>
+				<Item name="IronSights_Pistol"/>
+				<Item name="Concealable LVL2"/>
+				<Item name="Flashbang"/>
+				<Item name="Frag Grenade"/>
+			</Equipment>
+		</Human>
+	</Entity>
+
+</Entities>

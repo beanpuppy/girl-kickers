@@ -1,0 +1,67 @@
+<!--
+"title" uniquely identifies the mod name in Steam Workshop. Once published to workshop, the mod name can no longer be changed.
+"description" what is says
+"author" what is says
+"tags" only show up in Steam Workshop. comma-separated values. preferably one of: 
+	Missions,Campaign,New Unit,UI,Equipment,Sound,Translation,Total Conversion,Other
+"gameVersion" game version with which the mod is compatible (if the game says we're at 0.35 gameVersion="35". If the game says 1.24 gameVersion="124")
+"changeNotes" only used when updating an already published mod, redundant otherwise
+"languageMod" should only be valid if this adds a new language to the game, in which case it will show up in the Languages options list
+-->
+<Mod title="Girls&apos; Frontline 2: Door Kickers" gameVersion="112" author="beanpuppy" description="[h2]Girls' Frontline 2: Door Kickers[/h2]
+
+[code]Commander, you're here. Good.
+
+We've been assigned operations in the contaminated zones. The areas are still unstable; Hostile forces have moved in, taken hostages, fortified positions. Someone needs to clear them out.
+
+I know it's dangerous work, but... we'll be careful. Just give us the orders and we'll see it through.
+
+What do you say, Commander?[/code]
+
+[h3]Overview[/h3]
+This mod imports tactical dolls from Girls' Frontline 2: Exilium as playable units in Door Kickers. Each doll comes equipped with their signature weapon and is grouped by their faction affiliations for tactical operations.
+
+[h3]Units[/h3]
+Task Force DEFY
+[list]
+[*] Voymastina
+[*] Alva
+[/list]
+
+H.I.D.E 404
+[list]
+[*] Klukai
+[*] Mechty
+[*] Andoris
+[*] Belka
+[*] Leva
+[*] Lenna
+[*] Vector
+[/list]
+
+Zucchero Café
+[list]
+[*] Springfield
+[*] Makiatto
+[*] Centaureissi
+[*] Sharkry
+[/list]
+
+[i]Note: Only dolls currently available in GFL2 are/will be included.[/i]
+
+[h3]To-do[/h3]
+This mod is an early work in progress with several elements still incomplete or missing, such as:
+[list]
+[*] UI elements
+[*] Sound/voice overs
+[*] Weapon customisation
+[*] Unit doctrines
+[*] Tuning numbers and balancing
+[/list]
+
+[h3]Credits[/h3]
+[list]
+[*] MICA Team - Girls' Frontline 2: Exilium
+[*] kenji1997 - AssetStudio fork for model extraction
+[/list]
+" changeNotes="" languageMod="" tags="Playable Units,Equipment,UI" />

@@ -1,0 +1,164 @@
+<Units>
+    <Unit
+        name="GFL-UNIT-DEFY"
+        nameUI="@GFL-UNIT-DEFY-NAME"
+        description="@GFL-UNIT-DEFY-DESC"
+        flagTex="data/textures/gfl_defy_bg.dds"
+        flagColor="E4E4E4"
+        movie="data/movies/unlock_swat.ogv"
+        rndNameEntry="@#GFL-UNIT-DEFY-NAME-RND"
+		voicepack="commander_eng"
+		incapacitationChance="100"
+		incapacitationChanceCrit="100">
+
+        <Classes>
+            <Class name="GFL-DOLL-AN94" nameUI="ALVA" description="@DOLL-AN94-DESC" numSlots="1" supply="100" iconTex="data/textures/gui/deploy/class_icon_undercover.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2"/>
+            <Class name="GFL-DOLL-AK15" nameUI="VOYMASTINA" description="@DOLL-AK15-DESC" numSlots="1" supply="100" iconTex="data/textures/gui/deploy/class_icon_undercover.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2"/>
+        </Classes>
+
+        <TrooperRanks>
+            <Rank name="@agent_rank_0" xpNeeded="0"         badgeTex="data/textures/gui/customization/cia_rank_01.dds"/>
+            <Rank name="@agent_rank_1" xpNeeded="700"       badgeTex="data/textures/gui/customization/cia_rank_02.dds"/>
+            <Rank name="@agent_rank_2" xpNeeded="2300"      badgeTex="data/textures/gui/customization/cia_rank_03.dds"/>
+            <Rank name="@agent_rank_3" xpNeeded="5600"      badgeTex="data/textures/gui/customization/cia_rank_04.dds"/>
+            <Rank name="@agent_rank_4" xpNeeded="11800"     badgeTex="data/textures/gui/customization/cia_rank_05.dds"/>
+            <Rank name="@agent_rank_5" xpNeeded="22400"     badgeTex="data/textures/gui/customization/cia_rank_06.dds"/>
+            <Rank name="@agent_rank_6" xpNeeded="38400"     badgeTex="data/textures/gui/customization/cia_rank_07.dds"/>
+            <Rank name="@agent_rank_7" xpNeeded="60200"     badgeTex="data/textures/gui/customization/cia_rank_08.dds"/>
+            <Rank name="@agent_rank_8" xpNeeded="86400"     badgeTex="data/textures/gui/customization/cia_rank_09.dds"/>
+            <Rank name="@agent_rank_9" xpNeeded="126400"    badgeTex="data/textures/gui/customization/cia_rank_10.dds"/>
+        </TrooperRanks>
+
+        <Ranks>
+            <Rank xpNeeded="0"      badgeTex=""/>
+            <Rank xpNeeded="4000"   badgeTex=""/>
+            <Rank xpNeeded="9000"   badgeTex=""/>
+            <Rank xpNeeded="14980"  badgeTex=""/>
+            <Rank xpNeeded="21920"  badgeTex=""/>
+            <Rank xpNeeded="29800"  badgeTex=""/>
+            <Rank xpNeeded="38600"  badgeTex=""/>
+            <Rank xpNeeded="48310"  badgeTex=""/>
+            <Rank xpNeeded="58900"  badgeTex=""/>
+            <Rank xpNeeded="70360"  badgeTex=""/>
+            <Rank xpNeeded="82680"  badgeTex=""/>
+            <Rank xpNeeded="95820"  badgeTex=""/>
+            <Rank xpNeeded="109790" badgeTex=""/>
+            <Rank xpNeeded="124550" badgeTex=""/>
+            <Rank xpNeeded="140100" badgeTex=""/>
+            <Rank xpNeeded="156420" badgeTex=""/>
+        </Ranks>
+
+        <Doctrine doctrinePointsPerSquadLevel="3">
+        </Doctrine>
+    </Unit>
+
+    <Unit
+        name="GFL-UNIT-404"
+        nameUI="@GFL-UNIT-404-NAME"
+        description="@GFL-UNIT-404-DESC"
+        flagTex="data/textures/gfl_404_bg.dds"
+        flagColor="E4E4E4"
+        movie="data/movies/unlock_swat.ogv"
+        rndNameEntry="@#GFL-UNIT-404-NAME-RND"
+		voicepack="commander_eng"
+		incapacitationChance="90"
+		incapacitationChanceCrit="60">
+
+        <Classes>
+            <Class name="GFL-DOLL-HK416" nameUI="KLUKAI" description="@DOLL-HK416-DESC" numSlots="1" supply="100" iconTex="data/textures/gui/deploy/class_icon_undercover.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2"/>
+            <Class name="GFL-DOLL-G11" nameUI="MECHTY" description="@DOLL-G11-DESC" numSlots="1" supply="100" iconTex="data/textures/gui/deploy/class_icon_undercover.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2"/>
+            <Class name="GFL-DOLL-G36K" nameUI="ANDORIS" description="@DOLL-G36K-DESC" numSlots="1" supply="100" iconTex="data/textures/gui/deploy/class_icon_undercover.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2"/>
+            <Class name="GFL-DOLL-G28" nameUI="BELKA" description="@DOLL-G28-DESC" numSlots="1" supply="100" iconTex="data/textures/gui/deploy/class_icon_undercover.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2"/>
+            <Class name="GFL-DOLL-UMP45" nameUI="LEVA" description="@DOLL-UMP45-DESC" numSlots="1" supply="100" iconTex="data/textures/gui/deploy/class_icon_undercover.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2"/>
+            <Class name="GFL-DOLL-UMP9" nameUI="LENNA" description="@DOLL-UMP9-DESC" numSlots="1" supply="100" iconTex="data/textures/gui/deploy/class_icon_undercover.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2"/>
+            <Class name="GFL-DOLL-VECTOR" nameUI="VECTOR" description="@DOLL-VECTOR-DESC" numSlots="1" supply="100" iconTex="data/textures/gui/deploy/class_icon_undercover.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2"/>
+        </Classes>
+
+        <TrooperRanks>
+            <Rank name="@agent_rank_0" xpNeeded="0"         badgeTex="data/textures/gui/customization/cia_rank_01.dds"/>
+            <Rank name="@agent_rank_1" xpNeeded="700"       badgeTex="data/textures/gui/customization/cia_rank_02.dds"/>
+            <Rank name="@agent_rank_2" xpNeeded="2300"      badgeTex="data/textures/gui/customization/cia_rank_03.dds"/>
+            <Rank name="@agent_rank_3" xpNeeded="5600"      badgeTex="data/textures/gui/customization/cia_rank_04.dds"/>
+            <Rank name="@agent_rank_4" xpNeeded="11800"     badgeTex="data/textures/gui/customization/cia_rank_05.dds"/>
+            <Rank name="@agent_rank_5" xpNeeded="22400"     badgeTex="data/textures/gui/customization/cia_rank_06.dds"/>
+            <Rank name="@agent_rank_6" xpNeeded="38400"     badgeTex="data/textures/gui/customization/cia_rank_07.dds"/>
+            <Rank name="@agent_rank_7" xpNeeded="60200"     badgeTex="data/textures/gui/customization/cia_rank_08.dds"/>
+            <Rank name="@agent_rank_8" xpNeeded="86400"     badgeTex="data/textures/gui/customization/cia_rank_09.dds"/>
+            <Rank name="@agent_rank_9" xpNeeded="126400"    badgeTex="data/textures/gui/customization/cia_rank_10.dds"/>
+        </TrooperRanks>
+
+        <Ranks>
+            <Rank xpNeeded="0"      badgeTex=""/>
+            <Rank xpNeeded="4000"   badgeTex=""/>
+            <Rank xpNeeded="9000"   badgeTex=""/>
+            <Rank xpNeeded="14980"  badgeTex=""/>
+            <Rank xpNeeded="21920"  badgeTex=""/>
+            <Rank xpNeeded="29800"  badgeTex=""/>
+            <Rank xpNeeded="38600"  badgeTex=""/>
+            <Rank xpNeeded="48310"  badgeTex=""/>
+            <Rank xpNeeded="58900"  badgeTex=""/>
+            <Rank xpNeeded="70360"  badgeTex=""/>
+            <Rank xpNeeded="82680"  badgeTex=""/>
+            <Rank xpNeeded="95820"  badgeTex=""/>
+            <Rank xpNeeded="109790" badgeTex=""/>
+            <Rank xpNeeded="124550" badgeTex=""/>
+            <Rank xpNeeded="140100" badgeTex=""/>
+            <Rank xpNeeded="156420" badgeTex=""/>
+        </Ranks>
+
+        <Doctrine doctrinePointsPerSquadLevel="3">
+        </Doctrine>
+    </Unit>
+
+    <Unit
+        name="GFL-UNIT-CAFE"
+        nameUI="@GFL-UNIT-CAFE-NAME"
+        description="@GFL-UNIT-CAFE-DESC"
+        flagTex="data/textures/gfl_cafe_bg.dds"
+        flagColor="D67849"
+        movie="data/movies/unlock_swat.ogv"
+        rndNameEntry="@#GFL-UNIT-CAFE-NAME-RND"
+		voicepack="commander_eng"
+		incapacitationChance="90"
+		incapacitationChanceCrit="60">
+
+        <Classes>
+            <Class name="GFL-DOLL-M1903" nameUI="SPRINGFIELD" description="@DOLL-M1903-DESC" numSlots="1" supply="100" iconTex="data/textures/gui/deploy/class_icon_undercover.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2"/>
+            <Class name="GFL-DOLL-WA2000" nameUI="MAKIATTO" description="@DOLL-WA2000-DESC" numSlots="1" supply="100" iconTex="data/textures/gui/deploy/class_icon_undercover.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2"/>
+            <Class name="GFL-DOLL-G36" nameUI="CENTAUREISSI" description="@DOLL-G36-DESC" numSlots="1" supply="100" iconTex="data/textures/gui/deploy/class_icon_undercover.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2"/>
+            <Class name="GFL-DOLL-XCR" nameUI="SHARKRY" description="@DOLL-XCR-DESC" numSlots="1" supply="100" iconTex="data/textures/gui/deploy/class_icon_undercover.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2"/>
+        </Classes>
+
+        <TrooperRanks>
+            <Rank name="@agent_rank_0" xpNeeded="0"         badgeTex="data/textures/gui/customization/cia_rank_01.dds"/>
+            <Rank name="@agent_rank_1" xpNeeded="700"       badgeTex="data/textures/gui/customization/cia_rank_02.dds"/>
+            <Rank name="@agent_rank_2" xpNeeded="2300"      badgeTex="data/textures/gui/customization/cia_rank_03.dds"/>
+            <Rank name="@agent_rank_3" xpNeeded="5600"      badgeTex="data/textures/gui/customization/cia_rank_04.dds"/>
+            <Rank name="@agent_rank_4" xpNeeded="11800"     badgeTex="data/textures/gui/customization/cia_rank_05.dds"/>
+            <Rank name="@agent_rank_5" xpNeeded="22400"     badgeTex="data/textures/gui/customization/cia_rank_06.dds"/>
+            <Rank name="@agent_rank_6" xpNeeded="38400"     badgeTex="data/textures/gui/customization/cia_rank_07.dds"/>
+            <Rank name="@agent_rank_7" xpNeeded="60200"     badgeTex="data/textures/gui/customization/cia_rank_08.dds"/>
+            <Rank name="@agent_rank_8" xpNeeded="86400"     badgeTex="data/textures/gui/customization/cia_rank_09.dds"/>
+            <Rank name="@agent_rank_9" xpNeeded="126400"    badgeTex="data/textures/gui/customization/cia_rank_10.dds"/>
+        </TrooperRanks>
+
+        <Ranks>
+            <Rank xpNeeded="0"      badgeTex=""/>
+            <Rank xpNeeded="4000"   badgeTex=""/>
+            <Rank xpNeeded="9000"   badgeTex=""/>
+            <Rank xpNeeded="14980"  badgeTex=""/>
+            <Rank xpNeeded="21920"  badgeTex=""/>
+            <Rank xpNeeded="29800"  badgeTex=""/>
+            <Rank xpNeeded="38600"  badgeTex=""/>
+            <Rank xpNeeded="48310"  badgeTex=""/>
+            <Rank xpNeeded="58900"  badgeTex=""/>
+            <Rank xpNeeded="70360"  badgeTex=""/>
+            <Rank xpNeeded="82680"  badgeTex=""/>
+            <Rank xpNeeded="95820"  badgeTex=""/>
+            <Rank xpNeeded="109790" badgeTex=""/>
+            <Rank xpNeeded="124550" badgeTex=""/>
+            <Rank xpNeeded="140100" badgeTex=""/>
+            <Rank xpNeeded="156420" badgeTex=""/>
+        </Ranks>
+    </Unit>
+</Units>

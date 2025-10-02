@@ -1,0 +1,53 @@
+<FirearmAttackTypes>
+    <AttackType name="AN94_Hyperburst">
+        <ModifiableParams
+            minAimTime="300"
+            maxAimTime="400"
+            minShots="2"
+            maxShots="2"
+            resetTime="50"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="10"
+            critChanceAdd="+5"
+        />
+    </AttackType>
+
+    <AttackType name="M1903_PrecisionShotClose">
+        <ModifiableParams
+            minAimTime="400" 
+            maxAimTime="400"
+            minShots="1" 
+            maxShots="1"
+            resetTime="1200"
+            accuracyAdd="-70"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="M1903_PrecisionShotMid">
+        <ModifiableParams
+            minAimTime="400" 
+            maxAimTime="700"
+            minShots="1" 
+            maxShots="1"
+            resetTime="1200"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="M1903_PrecisionShotFar">
+        <ModifiableParams
+            minAimTime="700" 
+            maxAimTime="800"
+            minShots="1" 
+            maxShots="1"
+            resetTime="1200"
+            accuracyAdd="-20"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="20"
+        />
+    </AttackType>
+</FirearmAttackTypes>
