@@ -48,7 +48,39 @@
             <Rank xpNeeded="156420" badgeTex=""/>
         </Ranks>
 
-        <Doctrine doctrinePointsPerSquadLevel="3">
+        <Doctrine doctrinePointsPerSquadLevel="1">
+            <!-- Pattern Remolding -->
+            <Node name="GFL_CQCProtocols">
+                <Node name="GFL_OverwhelmingForce"/>
+            </Node>
+            <Node name="GFL_RapidDeployment">
+                <Node name="GFL_WeaponTransition"/>
+                <Node name="GFL_CombatEfficiency"/>
+            </Node>
+            <Node name="GFL_SupressionProtocols"/>
+            <Node name="GFL_LethalPrecision"/>
+
+            <!-- Neural Helix -->
+            <Node name="GFL_FemaleGorilla"/>
+            <Node name="GFL_AlphaProtocol"/>
+			<Node name="GFL_PerfectMortality"/>
+			<Node name="GFL_IceAndBlood"/>
+
+            <!-- Calibration -->
+            <Node name="GFL_OptimizedPerformance"/>
+            <Node name="GFL_CommunicationProtocols">
+                <Node name="GFL_AdvancedProtocols">
+                    <Node name="GFL_TacticalIntelligence" numLevels="2"/>
+                    <Node name="GFL_InformationExtraction"/>
+                </Node>
+            </Node>
+
+            <!-- Vet -->
+            <Node name="GFL_BattlefieldEchoes" minSquadLevel="10" numLevels="3"/>
+            <Node name="GFL_ViolentMomentum" minSquadLevel="10"/>
+            <Node name="GFL_TacticalIndependence" minSquadLevel="10">
+                <Node name="GFL_SquadDefiance" minSquadLevel="10" numLevels="2"/>
+            </Node>
         </Doctrine>
     </Unit>
 
@@ -106,7 +138,7 @@
             <Rank xpNeeded="156420" badgeTex=""/>
         </Ranks>
 
-        <Doctrine doctrinePointsPerSquadLevel="3">
+        <Doctrine doctrinePointsPerSquadLevel="1">
         </Doctrine>
     </Unit>
 

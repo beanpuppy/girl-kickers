@@ -1,4 +1,19 @@
 <Equipment>
+	<Bind eqp="GFL_OcularEnhancement">
+		<to name="GFL-UNIT-DEFY"/>
+		<to name="GFL-UNIT-404"/>
+		<to name="GFL-UNIT-CAFE"/>
+	</Bind>
+
+	<Helmet name="GFL_OcularEnhancement" inventoryBinding="Helmet" unlockCost="0"
+		tooltip="@helmet_gfl_ocular_name" description="@helmet_gfl_ocular_desc" img="data/models/humans/attachments/nvg_01_ui.dds">
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
+		<ConcealmentModifier add="0" />
+		<Params nvgByDefault="true">
+			<ProtectionArc degrees="360" coveragePercent="0" piercingProtectionLevel="0" />
+		</Params>
+	</Helmet>
+
 	<Bind to="GFL-UNIT-DEFY">
 		<eqp name="GFL-WEAP-AK15"/>
 		<eqp name="GFL-WEAP-AN94"/>
@@ -30,8 +45,8 @@
 		<eqp name="Slap Charge"/>
 		<eqp name="Slap Charge Kit"/>
 		<eqp name="TEC Torch"/>
-        
-    	<!-- Gear -->
+
+		<!-- Gear -->
 		<eqp name="Spy Camera"/>
         <eqp name="Dynamic Hammer"/>
         <eqp name="Bolt Cutter"/>
@@ -41,8 +56,8 @@
         <eqp name="RPG 26 CIA BOps"/>
         <eqp name="M320HE"/>
         <eqp name="M320HEDP"/>
-        
-    	<!-- NVG -->
+
+		<!-- NVG -->
 		<eqp name="NVG"/>
         <eqp name="NVG_02"/>
 
@@ -88,8 +103,8 @@
 		<eqp name="Slap Charge"/>
 		<eqp name="Slap Charge Kit"/>
 		<eqp name="TEC Torch"/>
-        
-    	<!-- Gear -->
+
+		<!-- Gear -->
 		<eqp name="Spy Camera"/>
         <eqp name="Dynamic Hammer"/>
         <eqp name="Bolt Cutter"/>
@@ -99,8 +114,8 @@
         <eqp name="RPG 26 CIA BOps"/>
         <eqp name="M320HE"/>
         <eqp name="M320HEDP"/>
-        
-    	<!-- NVG -->
+
+		<!-- NVG -->
 		<eqp name="NVG"/>
         <eqp name="NVG_02"/>
 
@@ -143,8 +158,8 @@
 		<eqp name="Slap Charge"/>
 		<eqp name="Slap Charge Kit"/>
 		<eqp name="TEC Torch"/>
-        
-    	<!-- Gear -->
+
+		<!-- Gear -->
 		<eqp name="Spy Camera"/>
         <eqp name="Dynamic Hammer"/>
         <eqp name="Bolt Cutter"/>
@@ -154,8 +169,8 @@
         <eqp name="RPG 26 CIA BOps"/>
         <eqp name="M320HE"/>
         <eqp name="M320HEDP"/>
-        
-    	<!-- NVG -->
+
+		<!-- NVG -->
 		<eqp name="NVG"/>
         <eqp name="NVG_02"/>
 

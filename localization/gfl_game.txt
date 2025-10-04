@@ -1,4 +1,3 @@
-
 @GFL-UNIT-DEFY-NAME=Task Force DEFY
 @GFL-UNIT-DEFY-DESC=An elite team of newer model Tactical Dolls capable of great autonomy in the field, hence the name of the team. They form the most effective combat squad in the Neo-Soviet Union.
 @#GFL-UNIT-DEFY-NAME-RND=Task Force DEFY
@@ -84,6 +83,13 @@
 @WEAP-XCR-NAME=XCR-L Standard
 @WEAP-XCR-DESC=The XCR is a line of American rifles by Robinson Armament Co. It was developed for the Special Operations Forces Combat Assault Rifle competition (which would be won by FN's SCAR line) but ultimately never joined it.
 
+@helmet_gfl_ocular_name=Night Eyes
+@helmet_gfl_ocular_desc=Enhanced optical systems for night vision integration. Allows direct NVG interface without physical mounting hardware.
+
+@menu_doctrine_branch_remolder=PATTERN REMOLDER
+@menu_doctrine_branch_neuralhelix=NEURAL HELIX
+@menu_doctrine_branch_calibration=CALIBTRATION
+
 @doctrine_gfl_femalegorilla_name=The Female Gorilla
 @doctrine_gfl_femalegorilla_descr=Voymastina intimidates anyone in her presense. Enemies within her raduis gain reduced accuracy, supression recovery, and aim time.
 @buff_gfl_femalegorillabuff=Intimidated by Voymastina
@@ -94,3 +100,56 @@
 
 @doctrine_gfl_perfectmortality_name=Perfect Mortality
 @doctrine_gfl_perfectmortality_descr=Death gives meaning to existence. Greatly increases incapacitation chance over death, enables self-repair, and fights harder when wounded.
+
+@doctrine_gfl_iceandblood_name=Ice & Blood
+@doctrine_gfl_iceandblood_descr=Cold precision meets violent efficiency. Faster target acquisition, increased critical chance on consecutive kills, and resistance to suppression.
+
+@doctrine_gfl_optimized_name=Optimized Performance Mode
+@doctrine_gfl_optimized_descr=Enhanced output and task efficiency algorithms. Increases movement speed by 15% and all field skill speeds by 40%. Reduces equipment swap time for technical tools.
+
+@doctrine_gfl_commprotocols_name=Communication Protocols
+@doctrine_gfl_commprotocols_descr=Language modules enable basic civilian interaction. Allows ordering civilians to safety.
+
+@doctrine_gfl_advancedprotocols_name=Advanced Protocols
+@doctrine_gfl_advancedprotocols_descr=Full communication suite with command authority. Enables directing civilians to specific exits and clearing rooms of non-combatants.
+
+@doctrine_gfl_tacticalintel_name=Tactical Intelligence
+@doctrine_gfl_tacticalintel_descr=Pre-mission data analysis reveals critical objectives. Makes 2 objectives, hostages, or bombs visible for 10 seconds per squad level at mission start.
+
+@doctrine_gfl_infoextraction_name=Information Extraction
+@doctrine_gfl_infoextraction_descr=Advanced interrogation protocols for gathering tactical intelligence. Allows persuading civilians and surrendered enemies to reveal nearby threats.
+
+@doctrine_gfl_cqc_name=CQC Protocols
+@doctrine_gfl_cqc_descr=Close quarters combat subroutines. Significantly improves melee stun duration, damage output, strike speed, and overall mobility.
+
+@doctrine_gfl_overwhelming_name=Overwhelming Force
+@doctrine_gfl_overwhelming_descr=Maximum force authorization with precision targeting protocols. Drastically increases melee lethality and attack speed. Enables critical backstab techniques and improves point-blank engagement effectiveness.
+
+@doctrine_gfl_rapideploy_name=Rapid Deployment
+@doctrine_gfl_rapideploy_descr=Mobility optimization for rifle-equipped units. Increases movement speed while maintaining combat readiness. Reduces weapon ready and guard times significantly.
+
+@doctrine_gfl_transition_name=Weapon Transition Drills
+@doctrine_gfl_transition_descr=Automated sidearm deployment protocols. Enables instant pistol transition when primary weapon empties. Drastically improves pistol swap speed and close-range effectiveness.
+
+@doctrine_gfl_combateff_name=Combat Efficiency
+@doctrine_gfl_combateff_descr=Comprehensive rifle optimization protocols combining precision and speed. Improves accuracy, aim time, and follow-up shot placement across all engagement ranges.
+
+@doctrine_gfl_suppression_name=Suppression Protocols
+@doctrine_gfl_suppression_descr=Coordinated suppressive fire patterns with target vulnerability analysis. Increases suppression output significantly and provides accuracy bonuses against suppressed targets. Reduces effectiveness of enemy cover when suppressed.
+
+@doctrine_gfl_lethalprecision_name=Lethal Precision
+@doctrine_gfl_lethalprecision_descr=Optimized targeting algorithms prioritize vital areas. Significantly increases critical hit probability and reduces target acquisition time. Marksman rifles gain enhanced headshot capability.
+
+@doctrine_gfl_battleechoes_name=Battlefield Echoes
+@doctrine_gfl_battleechoes_descr=Residual combat data from previous engagements reveals enemy positions. Neural network analysis exposes a hostile unit per level near spawn points at mission start.
+
+@doctrine_gfl_momentum_name=Violent Momentum
+@doctrine_gfl_momentum_descr=Combat acceleration systems activate on enemy elimination. Dramatically increases movement and target acquisition speed for sustained assaults.
+
+@doctrine_gfl_tacticalindep_name=Tactical Independence
+@doctrine_gfl_tacticalindep_descr=The squad becomes more independant. Improves suppression recovery, flinch resistance, and rapid target switching for isolated units.
+
+@doctrine_gfl_squaddefiance_name=Squad Defiance
+@doctrine_gfl_squaddefiance_descr=Standing firm against overwhelming odds. Each level increases frontal armor coverage and damage resistance. Squad eliminations rally nearby allies with offensive and defensive bonuses.
+
+@buff_gfl_defiant=Rallied by defiant stand

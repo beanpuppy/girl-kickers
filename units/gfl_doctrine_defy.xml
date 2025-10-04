@@ -192,7 +192,7 @@ Buffs and debuffs - Apply doctrine effects to other humans, permanent or tempora
 -->
 
 <DoctrineNodes>
-	<Node name="GFL_FemaleGorilla" nameUI="@doctrine_gfl_femalegorilla_name" description="@doctrine_gfl_femalegorilla_descr">
+	<Node name="GFL_FemaleGorilla" nameUI="@doctrine_gfl_femalegorilla_name" description="@doctrine_gfl_femalegorilla_descr" texturePrefix="data/textures/gui/doctrines/doctrine_empty">
 		<GiveBuff nodeName="GFL_FemaleGorilla_Apply" target="self" targetClass="GFL-DOLL-AK15"/>
 	</Node>
 	<Node name="GFL_FemaleGorilla_Apply">
@@ -209,7 +209,7 @@ Buffs and debuffs - Apply doctrine effects to other humans, permanent or tempora
 		/>
 	</Node>
 
-	<Node name="GFL_AlphaProtocol" nameUI="@doctrine_gfl_alphaprotocol_name" description="@doctrine_gfl_alphaprotocol_descr">
+	<Node name="GFL_AlphaProtocol" nameUI="@doctrine_gfl_alphaprotocol_name" description="@doctrine_gfl_alphaprotocol_descr" texturePrefix="data/textures/gui/doctrines/doctrine_empty">
 		<GiveBuff nodeName="GFL_AlphaLeadership" target="self" targetClass="GFL-DOLL-AN94"/>
 	</Node>
 	<Node name="GFL_AlphaLeadership">
@@ -231,7 +231,7 @@ Buffs and debuffs - Apply doctrine effects to other humans, permanent or tempora
 		/>
 	</Node>
 
-	<Node name="GFL_PerfectMortality" nameUI="@doctrine_gfl_perfectmortality_name" description="@doctrine_gfl_perfectmortality_descr">
+	<Node name="GFL_PerfectMortality" nameUI="@doctrine_gfl_perfectmortality_name" description="@doctrine_gfl_perfectmortality_descr" texturePrefix="data/textures/gui/doctrines/doctrine_empty">
 		<Enable name="SurvivalRate" value="2"/> 
 		<Enable name="SelfFirstAid"/>
 		<AttackTypeModifier minRange="0" maxRange="50" onlyWhenDamaged="true"
@@ -239,14 +239,14 @@ Buffs and debuffs - Apply doctrine effects to other humans, permanent or tempora
 			accuracyAdd="10"/>
 	</Node>
 
-	<Node name="GFL_IceAndBlood" nameUI="@doctrine_gfl_iceandblood_name" description="@doctrine_gfl_iceandblood_descr">
+	<Node name="GFL_IceAndBlood" nameUI="@doctrine_gfl_iceandblood_name" description="@doctrine_gfl_iceandblood_descr" texturePrefix="data/textures/gui/doctrines/doctrine_empty">
 		<EquipmentModifier
 			conditioning="10"
 			flinchResistance="10"/>
 		<AttackTypeModifier minRange="0" maxRange="30"
 			accuracyAdd="15"
 			critChanceAdd="8"/>
-		<GiveBuff nodeName="GFL_DEFYCoordination" target="friends_in_radius" radius="8.0" durationMs="4000" when="kill"/>
+		<GiveBuff nodeName="GFL_DEFYCoordination" target="friends_in_radius" radius="8.0" durationMs="4000" when="kill" texturePrefix="data/textures/gui/doctrines/doctrine_empty"/>
 	</Node>
 	<Node name="GFL_DEFYCoordination" description="@buff_gfl_defycoordination">
 		<AttackTypeModifier minRange="0" maxRange="50"
@@ -254,5 +254,166 @@ Buffs and debuffs - Apply doctrine effects to other humans, permanent or tempora
 			resetTime="-30"/>
 		<EquipmentModifier
 			suppressionRecoveryAdd="25"/>
+	</Node>
+
+	<Node name="GFL_OptimizedPerformance" nameUI="@doctrine_gfl_optimized_name" description="@doctrine_gfl_optimized_descr" texturePrefix="data/textures/gui/doctrines/doctrine_empty">
+		<EquipmentModifier
+			conditioning="15"
+			efficiencyPercent="40"/>
+		<EquipmentModifier target="ExplosiveCharge"
+			changeInTime="-100"
+			changeOutTime="-80"/>
+		<EquipmentModifier target="Lockpick"
+			changeInTime="-150"
+			changeOutTime="-100"/>
+		<EquipmentModifier target="TECTorch"
+			changeInTime="-100"
+			changeOutTime="-80"/>
+	</Node>
+
+	<Node name="GFL_CommunicationProtocols" nameUI="@doctrine_gfl_commprotocols_name" description="@doctrine_gfl_commprotocols_descr" texturePrefix="data/textures/gui/doctrines/doctrine_empty">
+		<Enable name="BasicLanguage" value="4.0"/>
+	</Node>
+
+	<Node name="GFL_AdvancedProtocols" nameUI="@doctrine_gfl_advancedprotocols_name" description="@doctrine_gfl_advancedprotocols_descr" texturePrefix="data/textures/gui/doctrines/doctrine_empty">
+		<Enable name="AdvancedLanguage"/>
+	</Node>
+
+	<Node name="GFL_TacticalIntelligence" nameUI="@doctrine_gfl_tacticalintel_name" description="@doctrine_gfl_tacticalintel_descr" texturePrefix="data/textures/gui/doctrines/doctrine_empty">
+		<Enable name="AdvanceIntel" value="2"/> 
+	</Node>
+
+	<Node name="GFL_InformationExtraction" nameUI="@doctrine_gfl_infoextraction_name" description="@doctrine_gfl_infoextraction_descr" texturePrefix="data/textures/gui/doctrines/doctrine_empty">
+		<Enable name="Persuasion" value="100"/>
+	</Node>
+
+	<Node name="GFL_CQCProtocols" nameUI="@doctrine_gfl_cqc_name" description="@doctrine_gfl_cqc_descr" texturePrefix="data/textures/gui/doctrines/doctrine_empty">
+		<EquipmentModifier
+			meleeStunBonus="100"
+			meleeDamageBonus="50"
+			meleeSpeedAdd="80"
+			conditioning="8"/>  
+	</Node>
+
+	<Node name="GFL_OverwhelmingForce" nameUI="@doctrine_gfl_overwhelming_name" description="@doctrine_gfl_overwhelming_descr" texturePrefix="data/textures/gui/doctrines/doctrine_empty">
+		<EquipmentModifier
+			meleeDamageBonus="150"
+			meleeStunBonus="50" 
+			meleeSpeedAdd="100"/>
+		<Enable name="Backstabbing"/>
+		<AttackTypeModifier minRange="0" maxRange="3"
+			critChanceAdd="25"/>
+	</Node>
+
+	<Node name="GFL_RapidDeployment" nameUI="@doctrine_gfl_rapideploy_name" description="@doctrine_gfl_rapideploy_descr" texturePrefix="data/textures/gui/doctrines/doctrine_empty">
+		<Enable name="SpeedyRifles" value="15"/>
+		<EquipmentModifier target="rifle"
+			readyTime="-60"
+			guardTime="-40"/>
+		<EquipmentModifier
+			conditioning="10"/>
+	</Node>
+
+	<Node name="GFL_WeaponTransition" nameUI="@doctrine_gfl_transition_name" description="@doctrine_gfl_transition_descr" texturePrefix="data/textures/gui/doctrines/doctrine_empty">
+		<Enable name="PistolTransition"/>
+		<EquipmentModifier target="pistol"
+			changeInTime="-250"
+			changeOutTime="-150"
+			readyTime="-40"/>
+		<AttackTypeModifier target="pistol" minRange="0" maxRange="10"
+			minAimTime="-60"
+			maxAimTime="-80"
+			accuracyAdd="15"/>
+	</Node>
+
+	<Node name="GFL_CombatEfficiency" nameUI="@doctrine_gfl_combateff_name" description="@doctrine_gfl_combateff_descr" texturePrefix="data/textures/gui/doctrines/doctrine_empty">
+		<AttackTypeModifier target="rifle" minRange="0" maxRange="20"
+			accuracyAdd="30"
+			followupShotAccuracyAdd="10"
+			minAimTime="-80"
+			maxAimTime="-100"
+			resetTime="-60"/>
+		<AttackTypeModifier target="rifle" minRange="20" maxRange="50"
+			accuracyAdd="20"
+			followupShotAccuracyAdd="5"
+			minAimTime="-60"
+			maxAimTime="-80"/>
+		<EquipmentModifier target="rifle"
+			readyTime="-60"
+			guardTime="-40"/>
+	</Node>
+
+	<Node name="GFL_SuppressionProtocols" nameUI="@doctrine_gfl_suppression_name" description="@doctrine_gfl_suppression_descr" texturePrefix="data/textures/gui/doctrines/doctrine_empty">
+		<EquipmentModifier target="rifle"
+			suppressionScale="+0.5"/>
+		<EquipmentModifier target="lmg"
+			suppressionScale="+0.75"/>
+		<AttackTypeModifier minRange="0" maxRange="50" onlyOnSuppressed="true"
+			accuracyAdd="20"
+			critChanceAdd="15"
+			coverReductionMin="10"
+			coverReductionMax="5"/>
+	</Node>
+
+	<Node name="GFL_LethalPrecision" nameUI="@doctrine_gfl_lethalprecision_name" description="@doctrine_gfl_lethalprecision_descr" texturePrefix="data/textures/gui/doctrines/doctrine_empty">
+		<AttackTypeModifier target="rifle" minRange="0" maxRange="15"
+			minAimTime="-60"
+			maxAimTime="-80"
+			critChanceAdd="12"/>
+		<AttackTypeModifier target="rifle" minRange="15" maxRange="30"
+			minAimTime="-50"
+			maxAimTime="-60"
+			critChanceAdd="8"/>
+		<AttackTypeModifier target="rifle" minRange="30" maxRange="60"
+			minAimTime="-40"
+			maxAimTime="-50"
+			critChanceAdd="5"/>
+		<AttackTypeModifier target="dmr" minRange="0" maxRange="50"
+			critChanceAdd="10"
+			headshotOnShot="2"/>
+	</Node>
+
+	<Node name="GFL_BattlefieldEchoes" nameUI="@doctrine_gfl_battleechoes_name" description="@doctrine_gfl_battleechoes_descr" texturePrefix="data/textures/gui/doctrines/doctrine_empty">
+		<Enable name="HumintNetwork" value="1"/>
+	</Node>
+
+	<Node name="GFL_ViolentMomentum" nameUI="@doctrine_gfl_momentum_name" description="@doctrine_gfl_momentum_descr" texturePrefix="data/textures/gui/doctrines/doctrine_empty">
+		<GiveBuff nodeName="GFL_MomentumBuff" when="kill" durationMs="8000"/>
+	</Node>
+	<Node name="GFL_MomentumBuff">
+		<EquipmentModifier conditioning="20"/>
+		<AttackTypeModifier minRange="0" maxRange="30"
+			minAimTime="-100"
+			resetTime="-80"/>
+	</Node>
+
+	<Node name="GFL_TacticalIndependence" nameUI="@doctrine_gfl_tacticalindep_name" description="@doctrine_gfl_tacticalindep_descr" texturePrefix="data/textures/gui/doctrines/doctrine_empty">
+		<EquipmentModifier
+			suppressionRecoveryAdd="40"
+			flinchResistance="15"/>
+		<AttackTypeModifier minRange="0" maxRange="30"
+			quickSwitchAimTimeMultiplier="70"
+			nearbyTargetBonusCloseness="30"/>
+	</Node>
+
+	<Node name="GFL_SquadDefiance" nameUI="@doctrine_gfl_squaddefiance_name" description="@doctrine_gfl_squaddefiance_descr" texturePrefix="data/textures/gui/doctrines/doctrine_empty">
+		<EquipmentModifier
+			extraCoverage90="8"
+			extraProtection90="3"
+			flinchResistance="10"/>
+		<GiveBuff nodeName="GFL_DefiantRally" when="kill" durationMs="8000"/>
+	</Node>
+
+	<Node name="GFL_DefiantRally">
+		<GiveBuff nodeName="GFL_RallyEffect" target="friends_in_radius" radius="10.0" durationMs="8000"/>
+	</Node>
+
+	<Node name="GFL_RallyEffect" description="@buff_gfl_defiant">
+		<EquipmentModifier
+			suppressionRecoveryAdd="50"
+			conditioning="15"/>
+		<AttackTypeModifier minRange="0" maxRange="30"
+			accuracyAdd="15"
+			critChanceAdd="10"/>
 	</Node>
 </DoctrineNodes>
