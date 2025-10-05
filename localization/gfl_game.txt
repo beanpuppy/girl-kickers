@@ -86,6 +86,15 @@
 @helmet_gfl_ocular_name=Night Eyes
 @helmet_gfl_ocular_desc=Enhanced optical systems for night vision integration. Allows direct NVG interface without physical mounting hardware.
 
+@armor_gfl_reactive_name=Reactive Shielding
+@armor_gfl_reactive_desc=Integrated defensive matrix. Provides ballistic protection without external armor plating.
+
+@armor_gfl_matrix_name=Combat Matrix
+@armor_gfl_matrix_desc=Enhanced defensive field generator. Improved protection with minimal system load.
+
+@armor_gfl_hardened_name=Hardened Core
+@armor_gfl_hardened_desc=Maximum protection configuration. Reinforced defensive systems provide superior ballistic resistance.
+
 @menu_doctrine_branch_remolder=PATTERN REMOLDER
 @menu_doctrine_branch_neuralhelix=NEURAL HELIX
 @menu_doctrine_branch_calibration=CALIBTRATION

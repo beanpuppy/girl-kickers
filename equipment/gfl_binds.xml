@@ -14,6 +14,69 @@
 		</Params>
 	</Helmet>
 
+	<Bind eqp="GFL_ReactiveShielding">
+		<to name="GFL-UNIT-DEFY"/>
+		<to name="GFL-UNIT-404"/>
+		<to name="GFL-UNIT-CAFE"/>
+	</Bind>
+
+	<Armor name="GFL_ReactiveShielding" inventoryBinding="Armor" unlockCost="0" 
+		tooltip="@armor_gfl_reactive_name" 
+		description="@armor_gfl_reactive_desc" 
+		img="data/models/equipment/armor_noplates_ui.dds">
+		
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+		<ConcealmentModifier add="0"/>
+		
+		<Params>
+			<ProtectionArc degrees="90" coveragePercent="70" piercingProtectionLevel="60"/>
+			<ProtectionArc degrees="180" coveragePercent="50" piercingProtectionLevel="40"/>
+			<ProtectionArc degrees="360" coveragePercent="30" piercingProtectionLevel="20"/>
+		</Params>
+	</Armor>
+
+	<Bind eqp="GFL_CombatMatrix">
+		<to name="GFL-UNIT-DEFY"/>
+		<to name="GFL-UNIT-404"/>
+		<to name="GFL-UNIT-CAFE"/>
+	</Bind>
+
+	<Armor name="GFL_CombatMatrix" inventoryBinding="Armor" unlockCost="3" 
+		tooltip="@armor_gfl_matrix_name" 
+		description="@armor_gfl_matrix_desc" 
+		img="data/models/equipment/armor_softlevelii_ui.dds">
+		
+		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="-2"/>
+		<ConcealmentModifier add="0"/>
+		
+		<Params>
+			<ProtectionArc degrees="90" coveragePercent="75" piercingProtectionLevel="70"/>
+			<ProtectionArc degrees="180" coveragePercent="60" piercingProtectionLevel="50"/>
+			<ProtectionArc degrees="360" coveragePercent="40" piercingProtectionLevel="30"/>
+		</Params>
+	</Armor>
+
+	<Bind eqp="GFL_HardenedCore">
+		<to name="GFL-UNIT-DEFY"/>
+		<to name="GFL-UNIT-404"/>
+		<to name="GFL-UNIT-CAFE"/>
+	</Bind>
+
+	<Armor name="GFL_HardenedCore" inventoryBinding="Armor" unlockCost="6" 
+		tooltip="@armor_gfl_hardened_name" 
+		description="@armor_gfl_hardened_desc" 
+		img="data/models/equipment/armor_softleveliiia_ui.dds">
+		
+		<MobilityModifiers moveSpeedModifierPercent="-5" turnSpeedModifierPercent="-3"/>
+		<ConcealmentModifier add="-1"/>
+		
+		<Params>
+			<ProtectionArc degrees="90" coveragePercent="85" piercingProtectionLevel="85"/>
+			<ProtectionArc degrees="180" coveragePercent="70" piercingProtectionLevel="65"/>
+			<ProtectionArc degrees="360" coveragePercent="50" piercingProtectionLevel="45"/>
+		</Params>
+	</Armor>
+
 	<Bind to="GFL-UNIT-DEFY">
 		<eqp name="GFL-WEAP-AK15"/>
 		<eqp name="GFL-WEAP-AN94"/>
