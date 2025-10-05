@@ -1,25 +1,15 @@
-<!--
-"title" uniquely identifies the mod name in Steam Workshop. Once published to workshop, the mod name can no longer be changed.
-"description" what is says
-"author" what is says
-"tags" only show up in Steam Workshop. comma-separated values. preferably one of: 
-	Missions,Campaign,New Unit,UI,Equipment,Sound,Translation,Total Conversion,Other
-"gameVersion" game version with which the mod is compatible (if the game says we're at 0.35 gameVersion="35". If the game says 1.24 gameVersion="124")
-"changeNotes" only used when updating an already published mod, redundant otherwise
-"languageMod" should only be valid if this adds a new language to the game, in which case it will show up in the Languages options list
--->
-<Mod title="Girls&apos; Frontline 2: Door Kickers" gameVersion="112" author="beanpuppy" description="[h2]Girls' Frontline 2: Door Kickers[/h2]
+<Mod title="Girls&apos; Frontline 2: Door Kickers" gameVersion="112" author="beanpuppy" description="[h2]Girls&apos; Frontline 2: Door Kickers[/h2]
 
-[code]Commander, you're here. Good.
+[code]Commander, you&apos;re here. Good.
 
-We've been assigned operations in the contaminated zones. The areas are still unstable; Hostile forces have moved in, taken hostages, fortified positions. Someone needs to clear them out.
+We&apos;ve been assigned operations in the contaminated zones. The areas are still unstable; Hostile forces have moved in, taken hostages, fortified positions. Someone needs to clear them out.
 
-I know it's dangerous work, but... we'll be careful. Just give us the orders and we'll see it through.
+I know it&apos;s dangerous work, but... we&apos;ll be careful. Just give us the orders and we&apos;ll see it through.
 
 What do you say, Commander?[/code]
 
 [h3]Overview[/h3]
-This mod imports tactical dolls from Girls' Frontline 2: Exilium as playable units in Door Kickers. Each doll comes equipped with their signature weapon and is grouped by their faction affiliations for tactical operations.
+This mod imports tactical dolls from Girls&apos; Frontline 2: Exilium as playable units in Door Kickers. Each doll comes equipped with their signature weapon and is grouped by their faction affiliations for tactical operations.
 
 [h3]Units[/h3]
 Task Force DEFY
@@ -63,8 +53,8 @@ Want to help or contribute? Visit the [url=https://github.com/beanpuppy/girl-kic
 
 [h3]Credits[/h3]
 [list]
-[*] MICA Team - Girls' Frontline 2: Exilium
+[*] MICA Team - Girls&apos; Frontline 2: Exilium
 [*] kenji1997 - AssetStudio fork for model extraction
 [*] [url=https://www.instagram.com/luwiss96/]Luwis96[/url] - Commissioned weapon UI images 
 [/list]
-" changeNotes="" languageMod="" tags="Playable Units,Equipment,UI" />
+" changeNotes="" languageMod="" tags="Playable Units,Equipment,UI" ugcId="3580762170"/>
