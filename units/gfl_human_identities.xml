@@ -6,8 +6,8 @@
 	<Portrait tex="data/textures/portraits/gfl_g11.dds" unit="GFL-UNIT-404" class="GFL-DOLL-G11" gender="0" customName="MECHTY"/>
 	<Portrait tex="data/textures/portraits/gfl_g36k.dds" unit="GFL-UNIT-404" class="GFL-DOLL-G36K" gender="0" customName="ANDORIS"/>
 	<Portrait tex="data/textures/portraits/gfl_g28.dds" unit="GFL-UNIT-404" class="GFL-DOLL-G28" gender="0" customName="BELKA"/>
-	<Portrait tex="data/textures/portraits/gfl_ump45.dds" unit="GFL-UNIT-404" class="GFL-DOLL-UMP45" gender="0" customName="UMP45"/>
-	<Portrait tex="data/textures/portraits/gfl_ump9.dds" unit="GFL-UNIT-404" class="GFL-DOLL-UMP9" gender="0" customName="UMP9"/>
+	<Portrait tex="data/textures/portraits/gfl_ump45.dds" unit="GFL-UNIT-404" class="GFL-DOLL-UMP45" gender="0" customName="LEVA"/>
+	<Portrait tex="data/textures/portraits/gfl_ump9.dds" unit="GFL-UNIT-404" class="GFL-DOLL-UMP9" gender="0" customName="LENNA"/>
 	<Portrait tex="data/textures/portraits/gfl_vector.dds" unit="GFL-UNIT-404" class="GFL-DOLL-VECTOR" gender="0" customName="VECTOR"/>
 
 	<Portrait tex="data/textures/portraits/gfl_m1903.dds" unit="GFL-UNIT-CAFE" class="GFL-DOLL-M1903" gender="0" customName="SPRINGFIELD"/>

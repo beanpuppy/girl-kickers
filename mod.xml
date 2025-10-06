@@ -57,4 +57,6 @@ Want to help or contribute? Visit the [url=https://github.com/beanpuppy/girl-kic
 [*] kenji1997 - AssetStudio fork for model extraction
 [*] [url=https://www.instagram.com/luwiss96/]Luwis96[/url] - Commissioned weapon UI images 
 [/list]
-" changeNotes="" languageMod="" tags="Playable Units,Equipment,UI" ugcId="3580762170"/>
+" changeNotes="Fix to use Leva and Lenna as names instead of UMP45 and UMP9 in game.
+Fix wordings in DEFY doctrines.
+Fix loadout page to be able to unequip equipment." languageMod="" tags="Playable Units,Equipment,UI" ugcId="3580762170"/>

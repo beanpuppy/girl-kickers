@@ -114,7 +114,7 @@
 @doctrine_gfl_iceandblood_descr=Cold precision meets violent efficiency. Faster target acquisition, increased critical chance on consecutive kills, and resistance to suppression.
 
 @doctrine_gfl_optimized_name=Optimized Performance Mode
-@doctrine_gfl_optimized_descr=Enhanced output and task efficiency algorithms. Increases movement speed by 15% and all field skill speeds by 40%. Reduces equipment swap time for technical tools.
+@doctrine_gfl_optimized_descr=Enhanced output and task efficiency algorithms. Increases movement and all field skill speeds. Reduces equipment swap time for technical tools.
 
 @doctrine_gfl_commprotocols_name=Communication Protocols
 @doctrine_gfl_commprotocols_descr=Language modules enable basic civilian interaction. Allows ordering civilians to safety.
@@ -123,13 +123,13 @@
 @doctrine_gfl_advancedprotocols_descr=Full communication suite with command authority. Enables directing civilians to specific exits and clearing rooms of non-combatants.
 
 @doctrine_gfl_tacticalintel_name=Tactical Intelligence
-@doctrine_gfl_tacticalintel_descr=Pre-mission data analysis reveals critical objectives. Makes 2 objectives, hostages, or bombs visible for 10 seconds per squad level at mission start.
+@doctrine_gfl_tacticalintel_descr=Pre-mission data analysis reveals critical objectives. Makes 2 objectives, hostages, or bombs visible for 10 seconds per node level at mission start.
 
 @doctrine_gfl_infoextraction_name=Information Extraction
 @doctrine_gfl_infoextraction_descr=Advanced interrogation protocols for gathering tactical intelligence. Allows persuading civilians and surrendered enemies to reveal nearby threats.
 
-@doctrine_gfl_cqc_name=CQC Protocols
-@doctrine_gfl_cqc_descr=Close quarters combat subroutines. Significantly improves melee stun duration, damage output, strike speed, and overall mobility.
+@doctrine_gfl_cqc_name=CQB Protocols
+@doctrine_gfl_cqc_descr=Close quarters battle subroutines. Significantly improves melee stun duration, damage output, strike speed, and overall mobility.
 
 @doctrine_gfl_overwhelming_name=Overwhelming Force
 @doctrine_gfl_overwhelming_descr=Maximum force authorization with precision targeting protocols. Drastically increases melee lethality and attack speed. Enables critical backstab techniques and improves point-blank engagement effectiveness.

@@ -82,7 +82,6 @@
 		<eqp name="GFL-WEAP-AN94"/>
 
 		<!-- Pistols -->
-        <eqp name="FN57"/>
         <eqp name="M9 Pistol"/>
         <eqp name="M17 Pistol"/>
 		<eqp name="M18 Pistol"/>
@@ -128,6 +127,16 @@
         <eqp name="Concealable LVL2"/>
 		<eqp name="Concealable LVL3"/>
         <eqp name="Tactical Lining"/>
+
+		<eqp name="EmptyUtility"/>
+        <eqp name="EmptySecondary"/>
+        <eqp name="EmptyPrimary"/>
+        <eqp name="EmptyHelmet"/>
+        <eqp name="EmptyHelmetNVG"/>
+        <eqp name="EmptyArmor"/>
+        <eqp name="EmptySupportGear"/>
+        <eqp name="EmptyPrimaryMuzzle"/>
+        <eqp name="EmptySecondaryMuzzle"/>
 	</Bind>
 
 	<Bind to="GFL-UNIT-404">
@@ -140,7 +149,6 @@
 		<eqp name="GFL-WEAP-VECTOR"/>
 
 		<!-- Pistols -->
-        <eqp name="FN57"/>
         <eqp name="M9 Pistol"/>
         <eqp name="M17 Pistol"/>
 		<eqp name="M18 Pistol"/>
@@ -186,6 +194,16 @@
         <eqp name="Concealable LVL2"/>
 		<eqp name="Concealable LVL3"/>
         <eqp name="Tactical Lining"/>
+
+		<eqp name="EmptyUtility"/>
+        <eqp name="EmptySecondary"/>
+        <eqp name="EmptyPrimary"/>
+        <eqp name="EmptyHelmet"/>
+        <eqp name="EmptyHelmetNVG"/>
+        <eqp name="EmptyArmor"/>
+        <eqp name="EmptySupportGear"/>
+        <eqp name="EmptyPrimaryMuzzle"/>
+        <eqp name="EmptySecondaryMuzzle"/>
 	</Bind>
 
 	<Bind to="GFL-UNIT-CAFE">
@@ -195,7 +213,6 @@
 		<eqp name="GFL-WEAP-XCR"/>
 
 		<!-- Pistols -->
-        <eqp name="FN57"/>
         <eqp name="M9 Pistol"/>
         <eqp name="M17 Pistol"/>
 		<eqp name="M18 Pistol"/>
@@ -241,5 +258,15 @@
         <eqp name="Concealable LVL2"/>
 		<eqp name="Concealable LVL3"/>
         <eqp name="Tactical Lining"/>
+
+		<eqp name="EmptyUtility"/>
+        <eqp name="EmptySecondary"/>
+        <eqp name="EmptyPrimary"/>
+        <eqp name="EmptyHelmet"/>
+        <eqp name="EmptyHelmetNVG"/>
+        <eqp name="EmptyArmor"/>
+        <eqp name="EmptySupportGear"/>
+        <eqp name="EmptyPrimaryMuzzle"/>
+        <eqp name="EmptySecondaryMuzzle"/>
 	</Bind>
 </Equipment>

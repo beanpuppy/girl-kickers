@@ -57,7 +57,7 @@
                 <Node name="GFL_WeaponTransition"/>
                 <Node name="GFL_CombatEfficiency"/>
             </Node>
-            <Node name="GFL_SupressionProtocols"/>
+            <Node name="GFL_SuppressionProtocols"/>
             <Node name="GFL_LethalPrecision"/>
 
             <!-- Neural Helix -->
