@@ -55,8 +55,6 @@ Want to help or contribute? Visit the [url=https://github.com/beanpuppy/girl-kic
 [list]
 [*] MICA Team - Girls&apos; Frontline 2: Exilium
 [*] kenji1997 - AssetStudio fork for model extraction
-[*] [url=https://www.instagram.com/luwiss96/]Luwis96[/url] - Commissioned weapon UI images 
+[*] [url=https://www.instagram.com/luwiss96/]Luwis96[/url] - Commissioned weapon UI images
 [/list]
-" changeNotes="Fix to use Leva and Lenna as names instead of UMP45 and UMP9 in game.
-Fix wordings in DEFY doctrines.
-Fix loadout page to be able to unequip equipment." languageMod="" tags="Playable Units,Equipment,UI" ugcId="3580762170"/>
+" changeNotes="Add ability for all units to kick down locked doors - this requires making a new squad." languageMod="" tags="Playable Units,Equipment,UI" ugcId="3580762170"/>

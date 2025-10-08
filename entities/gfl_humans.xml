@@ -25,6 +25,7 @@
 				<Item name="IronSights_Pistol"/>
 				<Item name="Flashbang"/>
 				<Item name="Frag Grenade"/>
+				<Item name="FeetOfSteel"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -55,6 +56,7 @@
 				<Item name="IronSights_Pistol"/>
 				<Item name="Flashbang"/>
 				<Item name="Frag Grenade"/>
+				<Item name="FeetOfSteel"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -85,6 +87,7 @@
 				<Item name="IronSights_Pistol"/>
 				<Item name="Flashbang"/>
 				<Item name="Frag Grenade"/>
+				<Item name="FeetOfSteel"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -115,6 +118,7 @@
 				<Item name="IronSights_Pistol"/>
 				<Item name="Flashbang"/>
 				<Item name="Frag Grenade"/>
+				<Item name="FeetOfSteel"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -145,6 +149,7 @@
 				<Item name="IronSights_Pistol"/>
 				<Item name="Flashbang"/>
 				<Item name="Frag Grenade"/>
+				<Item name="FeetOfSteel"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -175,6 +180,7 @@
 				<Item name="IronSights_Pistol"/>
 				<Item name="Flashbang"/>
 				<Item name="Frag Grenade"/>
+				<Item name="FeetOfSteel"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -205,6 +211,7 @@
 				<Item name="IronSights_Pistol"/>
 				<Item name="Flashbang"/>
 				<Item name="Frag Grenade"/>
+				<Item name="FeetOfSteel"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -235,6 +242,7 @@
 				<Item name="IronSights_Pistol"/>
 				<Item name="Flashbang"/>
 				<Item name="Frag Grenade"/>
+				<Item name="FeetOfSteel"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -265,6 +273,7 @@
 				<Item name="IronSights_Pistol"/>
 				<Item name="Flashbang"/>
 				<Item name="Frag Grenade"/>
+				<Item name="FeetOfSteel"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -295,6 +304,7 @@
 				<Item name="IronSights_Pistol"/>
 				<Item name="Flashbang"/>
 				<Item name="Frag Grenade"/>
+				<Item name="FeetOfSteel"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -325,6 +335,7 @@
 				<Item name="IronSights_Pistol"/>
 				<Item name="Flashbang"/>
 				<Item name="Frag Grenade"/>
+				<Item name="FeetOfSteel"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -355,6 +366,7 @@
 				<Item name="IronSights_Pistol"/>
 				<Item name="Flashbang"/>
 				<Item name="Frag Grenade"/>
+				<Item name="FeetOfSteel"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -385,6 +397,7 @@
 				<Item name="IronSights_Pistol"/>
 				<Item name="Flashbang"/>
 				<Item name="Frag Grenade"/>
+				<Item name="FeetOfSteel"/>
 			</Equipment>
 		</Human>
 	</Entity>
