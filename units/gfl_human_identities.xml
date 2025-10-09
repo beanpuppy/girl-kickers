@@ -1,17 +1,95 @@
 <HumanIdentities>
-	<Portrait tex="data/textures/portraits/gfl_an94.dds" unit="GFL-UNIT-DEFY" class="GFL-DOLL-AN94" gender="0" customName="ALVA"/>
-	<Portrait tex="data/textures/portraits/gfl_ak15.dds" unit="GFL-UNIT-DEFY" class="GFL-DOLL-AK15" gender="0" customName="VOYMASTINA"/>
+	<Portrait
+        tex="data/textures/portraits/gfl_an94.dds"
+        unit="GFL-UNIT-DEFY"
+        class="GFL-DOLL-AN94"
+        gender="0"
+        customName="ALVA"
+    />
+	<Portrait
+        tex="data/textures/portraits/gfl_ak15.dds"
+        unit="GFL-UNIT-DEFY"
+        class="GFL-DOLL-AK15"
+        gender="0"
+        customName="VOYMASTINA"
+    />
 
-	<Portrait tex="data/textures/portraits/gfl_hk416.dds" unit="GFL-UNIT-404" class="GFL-DOLL-HK416" gender="0" customName="KLUKAI"/>
-	<Portrait tex="data/textures/portraits/gfl_g11.dds" unit="GFL-UNIT-404" class="GFL-DOLL-G11" gender="0" customName="MECHTY"/>
-	<Portrait tex="data/textures/portraits/gfl_g36k.dds" unit="GFL-UNIT-404" class="GFL-DOLL-G36K" gender="0" customName="ANDORIS"/>
-	<Portrait tex="data/textures/portraits/gfl_g28.dds" unit="GFL-UNIT-404" class="GFL-DOLL-G28" gender="0" customName="BELKA"/>
-	<Portrait tex="data/textures/portraits/gfl_ump45.dds" unit="GFL-UNIT-404" class="GFL-DOLL-UMP45" gender="0" customName="LEVA"/>
-	<Portrait tex="data/textures/portraits/gfl_ump9.dds" unit="GFL-UNIT-404" class="GFL-DOLL-UMP9" gender="0" customName="LENNA"/>
-	<Portrait tex="data/textures/portraits/gfl_vector.dds" unit="GFL-UNIT-404" class="GFL-DOLL-VECTOR" gender="0" customName="VECTOR"/>
+	<Portrait
+        tex="data/textures/portraits/gfl_hk416.dds"
+        unit="GFL-UNIT-404"
+        class="GFL-DOLL-HK416"
+        gender="0"
+        customName="KLUKAI"
+    />
+	<Portrait
+        tex="data/textures/portraits/gfl_g11.dds"
+        unit="GFL-UNIT-404"
+        class="GFL-DOLL-G11"
+        gender="0"
+        customName="MECHTY"
+    />
+	<Portrait
+        tex="data/textures/portraits/gfl_g36k.dds"
+        unit="GFL-UNIT-404"
+        class="GFL-DOLL-G36K"
+        gender="0"
+        customName="ANDORIS"
+    />
+	<Portrait
+        tex="data/textures/portraits/gfl_g28.dds"
+        unit="GFL-UNIT-404"
+        class="GFL-DOLL-G28"
+        gender="0"
+        customName="BELKA"
+    />
+	<Portrait
+        tex="data/textures/portraits/gfl_ump45.dds"
+        unit="GFL-UNIT-404"
+        class="GFL-DOLL-UMP45"
+        gender="0"
+        customName="LEVA"
+    />
+	<Portrait
+        tex="data/textures/portraits/gfl_ump9.dds"
+        unit="GFL-UNIT-404"
+        class="GFL-DOLL-UMP9"
+        gender="0"
+        customName="LENNA"
+    />
+	<Portrait
+        tex="data/textures/portraits/gfl_vector.dds"
+        unit="GFL-UNIT-404"
+        class="GFL-DOLL-VECTOR"
+        gender="0"
+        customName="VECTOR"
+    />
 
-	<Portrait tex="data/textures/portraits/gfl_m1903.dds" unit="GFL-UNIT-CAFE" class="GFL-DOLL-M1903" gender="0" customName="SPRINGFIELD"/>
-	<Portrait tex="data/textures/portraits/gfl_wa2000.dds" unit="GFL-UNIT-CAFE" class="GFL-DOLL-WA2000" gender="0" customName="MAKIATTO"/>
-	<Portrait tex="data/textures/portraits/gfl_g36.dds" unit="GFL-UNIT-CAFE" class="GFL-DOLL-G36" gender="0" customName="CENTAUREISSI"/>
-	<Portrait tex="data/textures/portraits/gfl_xcr.dds" unit="GFL-UNIT-CAFE" class="GFL-DOLL-XCR" gender="0" customName="SHARKRY"/>
+	<Portrait
+        tex="data/textures/portraits/gfl_m1903.dds"
+        unit="GFL-UNIT-CAFE"
+        class="GFL-DOLL-M1903"
+        gender="0"
+        customName="SPRINGFIELD"
+    />
+	<Portrait
+        tex="data/textures/portraits/gfl_wa2000.dds"
+        unit="GFL-UNIT-CAFE"
+        class="GFL-DOLL-WA2000"
+        gender="0"
+        customName="MAKIATTO"
+    />
+	<Portrait
+        tex="data/textures/portraits/gfl_g36.dds"
+        unit="GFL-UNIT-CAFE"
+        class="GFL-DOLL-G36"
+        gender="0"
+        customName="CENTAUREISSI"
+    />
+	<Portrait
+        tex="data/textures/portraits/gfl_xcr.dds"
+        unit="GFL-UNIT-CAFE"
+        class="GFL-DOLL-XCR"
+        gender="0"
+        customName="SHARKRY"
+    />
 </HumanIdentities>

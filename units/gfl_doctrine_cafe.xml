@@ -1,0 +1,180 @@
+<DoctrineNodes>
+	<Node
+        name="GFL_CAFE_PathOfProtection"
+        nameUI="@doctrine_gfl_cafe_pathofprotection_name"
+        description="@doctrine_gfl_cafe_pathofprotection_descr"
+        texturePrefix="data/textures/gui/doctrines/doctrine_empty"
+    >
+		<GiveBuff
+            nodeName="GFL_CAFE_MaternalWatch"
+            target="self"
+            targetClass="GFL-DOLL-M1903"
+        />
+	</Node>
+
+	<Node name="GFL_CAFE_MaternalWatch">
+		<GiveBuff
+            nodeName="GFL_CAFE_ProtectiveAura"
+            target="friends_in_radius"
+            radius="6.0"
+        />
+	</Node>
+
+	<Node name="GFL_CAFE_ProtectiveAura" description="@buff_gfl_cafe_protective">
+		<EquipmentModifier suppressionRecoveryAdd="15" flinchResistance="15" />
+		<AttackTypeModifier minRange="0" maxRange="999" accuracyAdd="8" />
+	</Node>
+
+	<Node
+        name="GFL_CAFE_AbsoluteMentalDefense"
+        nameUI="@doctrine_gfl_cafe_absolutementaldefense_name"
+        description="@doctrine_gfl_cafe_absolutementaldefense_descr"
+        texturePrefix="data/textures/gui/doctrines/doctrine_empty"
+    >
+		<GiveBuff
+            nodeName="GFL_CAFE_MentalFortitude"
+            target="self"
+            targetClass="GFL-DOLL-WA2000"
+        />
+	</Node>
+
+	<Node name="GFL_CAFE_MentalFortitude">
+		<EquipmentModifier flinchResistance="25" suppressionRecoveryAdd="20" />
+		<AttackTypeModifier
+            target="dmr"
+            minRange="15"
+            maxRange="60"
+            accuracyAdd="18"
+            critChanceAdd="12"
+        />
+	</Node>
+
+	<Node
+        name="GFL_CAFE_PerfectService"
+        nameUI="@doctrine_gfl_cafe_perfectservice_name"
+        description="@doctrine_gfl_cafe_perfectservice_descr"
+        texturePrefix="data/textures/gui/doctrines/doctrine_empty"
+    >
+		<GiveBuff
+            nodeName="GFL_CAFE_MaidsDuty"
+            target="self"
+            targetClass="GFL-DOLL-G36"
+        />
+	</Node>
+
+	<Node name="GFL_CAFE_MaidsDuty">
+		<GiveBuff
+            nodeName="GFL_CAFE_MeticulousService"
+            target="friends_in_radius"
+            radius="6.0"
+        />
+	</Node>
+
+	<Node name="GFL_CAFE_MeticulousService" description="@buff_gfl_cafe_meticulous">
+		<EquipmentModifier conditioning="10" />
+		<AttackTypeModifier
+            minRange="0"
+            maxRange="999"
+            accuracyAdd="10"
+            minAimTime="-40"
+            maxAimTime="-50"
+        />
+	</Node>
+
+	<Node
+        name="GFL_CAFE_SpotlightCharge"
+        nameUI="@doctrine_gfl_cafe_spotlightcharge_name"
+        description="@doctrine_gfl_cafe_spotlightcharge_descr"
+        texturePrefix="data/textures/gui/doctrines/doctrine_empty"
+    >
+		<GiveBuff
+            nodeName="GFL_CAFE_RecklessEnergy"
+            target="self"
+            targetClass="GFL-DOLL-XCR"
+        />
+	</Node>
+
+	<Node name="GFL_CAFE_RecklessEnergy">
+		<EquipmentModifier conditioning="20" />
+		<AttackTypeModifier
+            target="rifle"
+            minRange="0"
+            maxRange="25"
+            accuracyAdd="15"
+            critChanceAdd="10"
+            minAimTime="-70"
+            maxAimTime="-90"
+        />
+	</Node>
+
+	<Node
+        name="GFL_CAFE_SparklingNight"
+        nameUI="@doctrine_gfl_cafe_sparklingnight_name"
+        description="@doctrine_gfl_cafe_sparklingnight_descr"
+        texturePrefix="data/textures/gui/doctrines/doctrine_empty"
+    >
+		<Enable name="HumintNetwork" value="1" />
+	</Node>
+
+	<Node
+        name="GFL_CAFE_LongSummer"
+        nameUI="@doctrine_gfl_cafe_longsummer_name"
+        description="@doctrine_gfl_cafe_longsummer_descr"
+        texturePrefix="data/textures/gui/doctrines/doctrine_empty"
+    >
+		<Enable name="SurvivalRate" value="1" />
+		<Enable name="SelfFirstAid" />
+		<EquipmentModifier
+            suppressionRecoveryAdd="15"
+            flinchResistance="10"
+            extraCoverage90="5"
+            extraProtection90="2"
+        />
+	</Node>
+
+	<Node
+        name="GFL_CAFE_BelovedMacchiato"
+        nameUI="@doctrine_gfl_cafe_belovedmacchiato_name"
+        description="@doctrine_gfl_cafe_belovedmacchiato_descr"
+        texturePrefix="data/textures/gui/doctrines/doctrine_empty"
+    >
+		<EquipmentModifier suppressionRecoveryAdd="20" flinchResistance="10" />
+		<AttackTypeModifier
+            minRange="0"
+            maxRange="35"
+            accuracyAdd="12"
+            critChanceAdd="8"
+        />
+		<GiveBuff
+            nodeName="GFL_CAFE_SweetMorale"
+            target="friends_in_radius"
+            radius="8.0"
+            durationMs="5000"
+            when="kill"
+        />
+	</Node>
+
+	<Node name="GFL_CAFE_SweetMorale" description="@buff_gfl_cafe_sweetmorale">
+		<EquipmentModifier suppressionRecoveryAdd="30" conditioning="15" />
+		<AttackTypeModifier minRange="0" maxRange="999" accuracyAdd="10" />
+	</Node>
+
+	<Node
+        name="GFL_CAFE_VelvetLatte"
+        nameUI="@doctrine_gfl_cafe_velvetlatte_name"
+        description="@doctrine_gfl_cafe_velvetlatte_descr"
+        texturePrefix="data/textures/gui/doctrines/doctrine_empty"
+    >
+		<EquipmentModifier conditioning="10" />
+		<AttackTypeModifier
+            minRange="0"
+            maxRange="50"
+            accuracyAdd="18"
+            critChanceAdd="10"
+            minAimTime="-60"
+            maxAimTime="-80"
+            resetTime="-60"
+        />
+		<AttackTypeModifier minRange="15" maxRange="50" headshotOnShot="2" />
+	</Node>
+</DoctrineNodes>

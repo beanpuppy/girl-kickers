@@ -1,4 +1,7 @@
 <GUIItems>
+	<!-- ================================================================================
+	     DOCTRINE SCREEN - SHARED UI ELEMENTS
+	     ================================================================================ -->
 	<Item name="Doctrine_Screen" sizeX="1290" sizeY="1380" hidden="true">
 		<OnOpen>
 			<Action type="PlaySound" target="gui_customize_equip" />
@@ -25,7 +28,13 @@
 			<!--  Escape and Space  -->
 			<Action type="Click" target="Doctrine_Screen_Back" />
 		</OnKeyDown>
-		<Item origin="0 0" sizeX="9999" sizeY="9999" blurBackground="true" blurColor="a0a0a0"> </Item>
+		<Item
+            origin="0 0"
+            sizeX="9999"
+            sizeY="9999"
+            blurBackground="true"
+            blurColor="a0a0a0"
+        > </Item>
 		<!--  clicking on this (the background) will close the screen
 		 note that the the "background" item below should also 'stealFocus'
 	 -->
@@ -38,11 +47,23 @@
 			</OnRClickDown>
 		</Item>
 		<!--  total doctrine points available  -->
-		<StaticImage name="#available_doctrinepoints_ttip" origin="170 30" align="rt"
-			tooltip="change by game">
-			<RenderObject2D texture="data/textures/gui/doctrines/customization_doctrine.dds" />
-			<StaticText align="t" name="#available_doctrinepoints" origin="0 -120" text="32"
-				font="header_3" textColor="f97b03" />
+		<StaticImage
+            name="#available_doctrinepoints_ttip"
+            origin="170 30"
+            align="rt"
+            tooltip="change by game"
+        >
+			<RenderObject2D
+                texture="data/textures/gui/doctrines/customization_doctrine.dds"
+            />
+			<StaticText
+                align="t"
+                name="#available_doctrinepoints"
+                origin="0 -120"
+                text="32"
+                font="header_3"
+                textColor="f97b03"
+            />
 		</StaticImage>
 		<!--  total battlehonors
 	<StaticImage origin="170 -190" align="rt" tooltip="@customization_battlehonors_ttip">
@@ -53,13 +74,22 @@
 	 -->
 		<!--  background  -->
 		<StaticImage stealFocus="true">
-			<RenderObject2D texture="data/textures/gui/menu_darkbrown_background.tga" sizeX="1290"
-				sizeY="1444" color="ffffffc8" />
-			<StaticText text="@menu_m_doctrine" origin="24 674" align="l" font="header_2"
-				textColor="f97b03" />
+			<RenderObject2D
+                texture="data/textures/gui/menu_darkbrown_background.tga"
+                sizeX="1290"
+                sizeY="1444"
+                color="ffffffc8"
+            />
+			<StaticText
+                text="@menu_m_doctrine"
+                origin="24 674"
+                align="l"
+                font="header_2"
+                textColor="f97b03"
+            />
 		</StaticImage>
 		<Item name="#DoctrineTree_Parent" align="i">
-			<!-- 
+			<!--
 			Game code adds here the item named #UnitName_DoctrineTree
 			eg <Item name="#Rangers_Doctrine"> ...
 
@@ -67,24 +97,51 @@
 		 -->
 		</Item>
 		<Button name="#Doctrine_Reset" align="rb" origin="-20 20">
-			<ButtonText text="@menu_doctrine_reset" origin="-4 0" align="r" font="header_2"
-				textColor="f0e3cc" />
+			<ButtonText
+                text="@menu_doctrine_reset"
+                origin="-4 0"
+                align="r"
+                font="header_2"
+                textColor="f0e3cc"
+            />
 			<OnHover>
-				<ButtonText text="@menu_doctrine_reset" align="r" origin="-4 0" font="header_2"
-					textColor="211e1d" />
-				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" align="l"
-					color="f0e3cc" flipX="true" />
+				<ButtonText
+                    text="@menu_doctrine_reset"
+                    align="r"
+                    origin="-4 0"
+                    font="header_2"
+                    textColor="211e1d"
+                />
+				<RenderObject2D
+                    texture="data/textures/gui/button_hover_01.tga"
+                    align="l"
+                    color="f0e3cc"
+                    flipX="true"
+                />
 			</OnHover>
 			<OnClick>
 				<Action type="TriggerEvent" target="GUI_GAME_DOCTRINE_RESET" />
 			</OnClick>
 		</Button>
 		<Button name="Doctrine_Screen_Back" align="lb" origin="20 20">
-			<ButtonText text="@menu_generic_back" align="l" font="header_2" textColor="f0e3cc" />
+			<ButtonText
+                text="@menu_generic_back"
+                align="l"
+                font="header_2"
+                textColor="f0e3cc"
+            />
 			<OnHover>
-				<ButtonText text="@menu_generic_back" align="l" font="header_2" textColor="211e1d" />
-				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" align="l"
-					color="f0e3cc" />
+				<ButtonText
+                    text="@menu_generic_back"
+                    align="l"
+                    font="header_2"
+                    textColor="211e1d"
+                />
+				<RenderObject2D
+                    texture="data/textures/gui/button_hover_01.tga"
+                    align="l"
+                    color="f0e3cc"
+                />
 			</OnHover>
 			<OnClick>
 				<!--  hides the doctrine screen and either goes back to Squads screen or to nothing
@@ -93,7 +150,11 @@
 			</OnClick>
 		</Button>
 	</Item>
-	<!-- 
+
+	<!-- ================================================================================
+	     TASK FORCE DEFY - DOCTRINE TREE
+	     ================================================================================ -->
+	<!--
 	Game code adds this item as a child to #DoctrineTree_Parent
 	The name must be #UnitName_Doctrine
  -->
@@ -103,11 +164,15 @@
 		<Button name="#template_doctrine_button" hidden="true">
 			<!--  texture is defined in the doctrine node by a prefix, then we add the _normal.dds
 			suffix  -->
-			<RenderObject2D texture="data/textures/gui/doctrines/doctrine_empty_normal.dds" />
+			<RenderObject2D
+                texture="data/textures/gui/doctrines/doctrine_empty_normal.dds"
+            />
 			<OnHover>
 				<!--  texture is defined in the doctrine node by a prefix, then we add the _hover.dds
 				suffix  -->
-				<RenderObject2D texture="data/textures/gui/doctrines/doctrine_empty_hover.dds" />
+				<RenderObject2D
+                    texture="data/textures/gui/doctrines/doctrine_empty_hover.dds"
+                />
 			</OnHover>
 			<OnClick>
 				<Action type="PlaySound" target="gui_customize_equip" />
@@ -118,75 +183,136 @@
 				<Action type="TriggerEvent" target="GUI_GAME_DOCTRINE_REMOVE" />
 			</OnRClickDown>
 			<StaticImage name="#doctrinenode_disabled">
-				<RenderObject2D texture="data/textures/gui/doctrines/doctrine_empty_normal.dds"
-					color="928a7c" />
+				<RenderObject2D
+                    texture="data/textures/gui/doctrines/doctrine_empty_normal.dds"
+                    color="928a7c"
+                />
 			</StaticImage>
 			<StaticImage name="#doctrinenode_full">
-				<RenderObject2D texture="data/textures/gui/doctrines/doctrine_empty_hover.dds" />
+				<RenderObject2D
+                    texture="data/textures/gui/doctrines/doctrine_empty_hover.dds"
+                />
 			</StaticImage>
 			<StaticImage name="#doctrinenode_active">
-				<RenderObject2D texture="data/textures/gui/doctrines/doctrine_active.dds"
-					sizeX="124" sizeY="124" />
+				<RenderObject2D
+                    texture="data/textures/gui/doctrines/doctrine_active.dds"
+                    sizeX="124"
+                    sizeY="124"
+                />
 			</StaticImage>
 			<Item name="#doctrinenode_does_not_pass_requirements" hidden="true" />
 			<!--  just a marker for the tooltip to know when to show required level  -->
 			<StaticImage name="#doctrinenode_num_levels_bg" align="lb" origin="0 0">
-				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="44" sizeY="36"
-					color="40392be6" />
-				<StaticText name="#doctrinenode_num_levels" text="4" font="header_5"
-					textColor="ffffff">
-					<StaticText hidden="true" name="#doctrinenode_num_levels_color_full"
-						textColor="f97b03" />
-					<StaticText hidden="true" name="#doctrinenode_num_levels_color_part"
-						textColor="ffffff" />
+				<RenderObject2D
+                    texture="data/textures/gui/square.tga"
+                    sizeX="44"
+                    sizeY="36"
+                    color="40392be6"
+                />
+				<StaticText
+                    name="#doctrinenode_num_levels"
+                    text="4"
+                    font="header_5"
+                    textColor="ffffff"
+                >
+					<StaticText
+                        hidden="true"
+                        name="#doctrinenode_num_levels_color_full"
+                        textColor="f97b03"
+                    />
+					<StaticText
+                        hidden="true"
+                        name="#doctrinenode_num_levels_color_part"
+                        textColor="ffffff"
+                    />
 				</StaticText>
 			</StaticImage>
 		</Button>
 		<Item name="handguns" align="lt" sizeX="400" sizeY="780" origin="20 -70">
 			<StaticImage origin="0 0" align="lt">
-				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="400" sizeY="780"
-					color="211e1d80" />
+				<RenderObject2D
+                    texture="data/textures/gui/square.tga"
+                    sizeX="400"
+                    sizeY="780"
+                    color="211e1d80"
+                />
 				<StaticImage origin="0 0" align="lt">
-					<RenderObject2D texture="data/textures/gui/squads/rangers_bg_01.dds" sizeX="400"
-						sizeY="490" color="0000004d" />
+					<RenderObject2D
+                        texture="data/textures/gui/squads/rangers_bg_01.dds"
+                        sizeX="400"
+                        sizeY="490"
+                        color="0000004d"
+                    />
 				</StaticImage>
 				<StaticImage origin="0 0" align="lt">
-					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="400" sizeY="72"
-						color="211e1d40" />
+					<RenderObject2D
+                        texture="data/textures/gui/square.tga"
+                        sizeX="400"
+                        sizeY="72"
+                        color="211e1d40"
+                    />
 				</StaticImage>
 				<StaticImage origin="0 0" align="lt">
-					<RenderObject2D texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds"
-						sizeX="190" sizeY="75" color="0c0b0b33" />
+					<RenderObject2D
+                        texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds"
+                        sizeX="190"
+                        sizeY="75"
+                        color="0c0b0b33"
+                    />
 				</StaticImage>
 				<StaticImage origin="0 0" align="rt">
-					<RenderObject2D texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds"
-						flipX="true" sizeX="190" sizeY="75" color="0c0b0b33" />
+					<RenderObject2D
+                        texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds"
+                        flipX="true"
+                        sizeX="190"
+                        sizeY="75"
+                        color="0c0b0b33"
+                    />
 				</StaticImage>
 				<Item sizeX="400" sizeY="72" align="lt">
-					<StaticText text="@menu_doctrine_branch_remolder" font="header_3"
-						fontAutoDownsize="false" textColor="f0e3cc" />
+					<StaticText
+                        text="@menu_doctrine_branch_calibration"
+                        font="header_3"
+                        fontAutoDownsize="false"
+                        textColor="f0e3cc"
+                    />
 				</Item>
 			</StaticImage>
 			<Item name="GFL_LethalPrecision" origin="100 -160" align="lt"> </Item>
 			<Item name="GFL_RapidDeployment" origin="100 -340" align="lt">
 				<Item name="#child_link_inactive">
 					<StaticImage origin="0 -60" align="t">
-						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="8" sizeY="44"
-							color="716b5f" />
+						<RenderObject2D
+                            texture="data/textures/gui/square.tga"
+                            sizeX="8"
+                            sizeY="44"
+                            color="716b5f"
+                        />
 						<StaticImage origin="0 -16" align="b">
-							<RenderObject2D texture="data/textures/gui/doctrines/doctrine_arrow.dds"
-								color="716b5f" />
+							<RenderObject2D
+                                texture="data/textures/gui/doctrines/doctrine_arrow.dds"
+                                color="716b5f"
+                            />
 						</StaticImage>
 						<StaticImage origin="8 0" align="l">
-							<RenderObject2D texture="data/textures/gui/square.tga" sizeX="200"
-								sizeY="8" color="716b5f" />
+							<RenderObject2D
+                                texture="data/textures/gui/square.tga"
+                                sizeX="200"
+                                sizeY="8"
+                                color="716b5f"
+                            />
 							<StaticImage origin="0 0" align="rt">
-								<RenderObject2D texture="data/textures/gui/square.tga" sizeX="8"
-									sizeY="26" color="716b5f" />
+								<RenderObject2D
+                                    texture="data/textures/gui/square.tga"
+                                    sizeX="8"
+                                    sizeY="26"
+                                    color="716b5f"
+                                />
 								<StaticImage origin="0 -16" align="b">
 									<RenderObject2D
-										texture="data/textures/gui/doctrines/doctrine_arrow.dds"
-										color="716b5f" />
+                                        texture="data/textures/gui/doctrines/doctrine_arrow.dds"
+                                        color="716b5f"
+                                    />
 								</StaticImage>
 							</StaticImage>
 						</StaticImage>
@@ -194,22 +320,37 @@
 				</Item>
 				<Item name="#child_link_active">
 					<StaticImage origin="0 -60" align="t">
-						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="8" sizeY="44"
-							color="f97b03" />
+						<RenderObject2D
+                            texture="data/textures/gui/square.tga"
+                            sizeX="8"
+                            sizeY="44"
+                            color="f97b03"
+                        />
 						<StaticImage origin="0 -16" align="b">
-							<RenderObject2D texture="data/textures/gui/doctrines/doctrine_arrow.dds"
-								color="f97b03" />
+							<RenderObject2D
+                                texture="data/textures/gui/doctrines/doctrine_arrow.dds"
+                                color="f97b03"
+                            />
 						</StaticImage>
 						<StaticImage origin="8 0" align="l">
-							<RenderObject2D texture="data/textures/gui/square.tga" sizeX="200"
-								sizeY="8" color="f97b03" />
+							<RenderObject2D
+                                texture="data/textures/gui/square.tga"
+                                sizeX="200"
+                                sizeY="8"
+                                color="f97b03"
+                            />
 							<StaticImage origin="0 0" align="rt">
-								<RenderObject2D texture="data/textures/gui/square.tga" sizeX="8"
-									sizeY="26" color="f97b03" />
+								<RenderObject2D
+                                    texture="data/textures/gui/square.tga"
+                                    sizeX="8"
+                                    sizeY="26"
+                                    color="f97b03"
+                                />
 								<StaticImage origin="0 -16" align="b">
 									<RenderObject2D
-										texture="data/textures/gui/doctrines/doctrine_arrow.dds"
-										color="f97b03" />
+                                        texture="data/textures/gui/doctrines/doctrine_arrow.dds"
+                                        color="f97b03"
+                                    />
 								</StaticImage>
 							</StaticImage>
 						</StaticImage>
@@ -219,103 +360,177 @@
 			<Item name="GFL_CQCProtocols" origin="-100 -160" align="rt">
 				<Item name="#child_link_inactive">
 					<StaticImage origin="0 -60" align="t">
-						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="8" sizeY="44"
-							color="716b5f" />
+						<RenderObject2D
+                            texture="data/textures/gui/square.tga"
+                            sizeX="8"
+                            sizeY="44"
+                            color="716b5f"
+                        />
 						<StaticImage origin="0 -16" align="b">
-							<RenderObject2D texture="data/textures/gui/doctrines/doctrine_arrow.dds"
-								color="716b5f" />
+							<RenderObject2D
+                                texture="data/textures/gui/doctrines/doctrine_arrow.dds"
+                                color="716b5f"
+                            />
 						</StaticImage>
 					</StaticImage>
 				</Item>
 				<Item name="#child_link_active">
 					<StaticImage origin="0 -60" align="t">
-						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="8" sizeY="44"
-							color="f97b03" />
+						<RenderObject2D
+                            texture="data/textures/gui/square.tga"
+                            sizeX="8"
+                            sizeY="44"
+                            color="f97b03"
+                        />
 						<StaticImage origin="0 -16" align="b">
-							<RenderObject2D texture="data/textures/gui/doctrines/doctrine_arrow.dds"
-								color="f97b03" />
+							<RenderObject2D
+                                texture="data/textures/gui/doctrines/doctrine_arrow.dds"
+                                color="f97b03"
+                            />
 						</StaticImage>
 					</StaticImage>
 				</Item>
 			</Item>
-			<Item name="GFL_SuppressionProtocols" origin="100 -340" align="lt"> </Item>
 			<Item name="GFL_OverwhelmingForce" origin="-100 -340" align="rt"> </Item>
 			<Item name="GFL_WeaponTransition" origin="100 -520" align="lt"> </Item>
 			<Item name="GFL_CombatEfficiency" origin="-100 -520" align="rt"> </Item>
+			<Item name="GFL_SuppressionProtocols" origin="0 -700" align="t"> </Item>
 		</Item>
 		<Item name="rifles" align="t" sizeX="400" sizeY="780" origin="0 -70">
 			<StaticImage origin="0 0" align="t">
-				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="400" sizeY="780"
-					color="211e1d80" />
+				<RenderObject2D
+                    texture="data/textures/gui/square.tga"
+                    sizeX="400"
+                    sizeY="780"
+                    color="211e1d80"
+                />
 				<StaticImage origin="0 0" align="lt">
-					<RenderObject2D texture="data/textures/gui/squads/rangers_bg_01.dds" sizeX="400"
-						sizeY="490" color="0000004d" />
+					<RenderObject2D
+                        texture="data/textures/gui/squads/rangers_bg_01.dds"
+                        sizeX="400"
+                        sizeY="490"
+                        color="0000004d"
+                    />
 				</StaticImage>
 				<StaticImage origin="0 0" align="lt">
-					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="400" sizeY="72"
-						color="211e1d40" />
+					<RenderObject2D
+                        texture="data/textures/gui/square.tga"
+                        sizeX="400"
+                        sizeY="72"
+                        color="211e1d40"
+                    />
 				</StaticImage>
 				<StaticImage origin="0 0" align="lt">
-					<RenderObject2D texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds"
-						sizeX="190" sizeY="75" color="0c0b0b33" />
+					<RenderObject2D
+                        texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds"
+                        sizeX="190"
+                        sizeY="75"
+                        color="0c0b0b33"
+                    />
 				</StaticImage>
 				<StaticImage origin="0 0" align="rt">
-					<RenderObject2D texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds"
-						flipX="true" sizeX="190" sizeY="75" color="0c0b0b33" />
+					<RenderObject2D
+                        texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds"
+                        flipX="true"
+                        sizeX="190"
+                        sizeY="75"
+                        color="0c0b0b33"
+                    />
 				</StaticImage>
 				<Item sizeX="400" sizeY="72" align="lt">
-					<StaticText text="@menu_doctrine_branch_neuralhelix" font="header_3"
-						fontAutoDownsize="false" textColor="f0e3cc" />
+					<StaticText
+                        text="@menu_doctrine_branch_neuralhelix"
+                        font="header_3"
+                        fontAutoDownsize="false"
+                        textColor="f0e3cc"
+                    />
 				</Item>
 			</StaticImage>
-			<Item name="GFL_FemaleGorilla" origin="100 -160" align="lt"> </Item>
-			<Item name="GFL_AlphaProtocol" origin="-100 -160" align="rt"> </Item>
-			<Item name="GFL_PerfectMortality" origin="100 -340" align="lt"></Item>
-			<Item name="GFL_IceAndBlood" origin="-100 -340" align="rt"> </Item>
+			<Item name="GFL_DEFY_FemaleGorilla" origin="100 -160" align="lt"> </Item>
+			<Item name="GFL_DEFY_AlphaProtocol" origin="-100 -160" align="rt"> </Item>
+			<Item name="GFL_DEFY_PerfectMortality" origin="100 -340" align="lt" />
+			<Item name="GFL_DEFY_IceAndBlood" origin="-100 -340" align="rt"> </Item>
 		</Item>
 		<Item name="support" align="rt" sizeX="400" sizeY="780" origin="-20 -70">
 			<StaticImage origin="0 0" align="lt">
-				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="400" sizeY="780"
-					color="211e1d80" />
+				<RenderObject2D
+                    texture="data/textures/gui/square.tga"
+                    sizeX="400"
+                    sizeY="780"
+                    color="211e1d80"
+                />
 				<StaticImage origin="0 0" align="lt">
-					<RenderObject2D texture="data/textures/gui/squads/rangers_bg_01.dds" sizeX="400"
-						sizeY="490" color="0000004d" />
+					<RenderObject2D
+                        texture="data/textures/gui/squads/rangers_bg_01.dds"
+                        sizeX="400"
+                        sizeY="490"
+                        color="0000004d"
+                    />
 				</StaticImage>
 				<StaticImage origin="0 0" align="lt">
-					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="400" sizeY="72"
-						color="211e1d40" />
+					<RenderObject2D
+                        texture="data/textures/gui/square.tga"
+                        sizeX="400"
+                        sizeY="72"
+                        color="211e1d40"
+                    />
 				</StaticImage>
 				<StaticImage origin="0 0" align="lt">
-					<RenderObject2D texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds"
-						sizeX="190" sizeY="75" color="0c0b0b33" />
+					<RenderObject2D
+                        texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds"
+                        sizeX="190"
+                        sizeY="75"
+                        color="0c0b0b33"
+                    />
 				</StaticImage>
 				<StaticImage origin="0 0" align="rt">
-					<RenderObject2D texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds"
-						flipX="true" sizeX="190" sizeY="75" color="0c0b0b33" />
+					<RenderObject2D
+                        texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds"
+                        flipX="true"
+                        sizeX="190"
+                        sizeY="75"
+                        color="0c0b0b33"
+                    />
 				</StaticImage>
 				<Item sizeX="400" sizeY="72" align="lt">
-					<StaticText text="@menu_doctrine_branch_calibration" font="header_3"
-						fontAutoDownsize="false" textColor="f0e3cc" />
+					<StaticText
+                        text="@menu_doctrine_branch_remolder"
+                        font="header_3"
+                        fontAutoDownsize="false"
+                        textColor="f0e3cc"
+                    />
 				</Item>
 			</StaticImage>
 			<Item name="GFL_CommunicationProtocols" origin="100 -160" align="lt">
 				<Item name="#child_link_inactive">
 					<StaticImage origin="0 -60" align="t">
-						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="8" sizeY="44"
-							color="716b5f" />
+						<RenderObject2D
+                            texture="data/textures/gui/square.tga"
+                            sizeX="8"
+                            sizeY="44"
+                            color="716b5f"
+                        />
 						<StaticImage origin="0 -16" align="b">
-							<RenderObject2D texture="data/textures/gui/doctrines/doctrine_arrow.dds"
-								color="716b5f" />
+							<RenderObject2D
+                                texture="data/textures/gui/doctrines/doctrine_arrow.dds"
+                                color="716b5f"
+                            />
 						</StaticImage>
 					</StaticImage>
 				</Item>
 				<Item name="#child_link_active">
 					<StaticImage origin="0 -60" align="t">
-						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="8" sizeY="44"
-							color="f97b03" />
+						<RenderObject2D
+                            texture="data/textures/gui/square.tga"
+                            sizeX="8"
+                            sizeY="44"
+                            color="f97b03"
+                        />
 						<StaticImage origin="0 -16" align="b">
-							<RenderObject2D texture="data/textures/gui/doctrines/doctrine_arrow.dds"
-								color="f97b03" />
+							<RenderObject2D
+                                texture="data/textures/gui/doctrines/doctrine_arrow.dds"
+                                color="f97b03"
+                            />
 						</StaticImage>
 					</StaticImage>
 				</Item>
@@ -323,22 +538,37 @@
 			<Item name="GFL_AdvancedProtocols" origin="100 -340" align="lt">
 				<Item name="#child_link_inactive">
 					<StaticImage origin="0 -60" align="t">
-						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="8" sizeY="44"
-							color="716b5f" />
+						<RenderObject2D
+                            texture="data/textures/gui/square.tga"
+                            sizeX="8"
+                            sizeY="44"
+                            color="716b5f"
+                        />
 						<StaticImage origin="0 -16" align="b">
-							<RenderObject2D texture="data/textures/gui/doctrines/doctrine_arrow.dds"
-								color="716b5f" />
+							<RenderObject2D
+                                texture="data/textures/gui/doctrines/doctrine_arrow.dds"
+                                color="716b5f"
+                            />
 						</StaticImage>
 						<StaticImage origin="8 0" align="l">
-							<RenderObject2D texture="data/textures/gui/square.tga" sizeX="200"
-								sizeY="8" color="716b5f" />
+							<RenderObject2D
+                                texture="data/textures/gui/square.tga"
+                                sizeX="200"
+                                sizeY="8"
+                                color="716b5f"
+                            />
 							<StaticImage origin="0 0" align="rt">
-								<RenderObject2D texture="data/textures/gui/square.tga" sizeX="8"
-									sizeY="26" color="716b5f" />
+								<RenderObject2D
+                                    texture="data/textures/gui/square.tga"
+                                    sizeX="8"
+                                    sizeY="26"
+                                    color="716b5f"
+                                />
 								<StaticImage origin="0 -16" align="b">
 									<RenderObject2D
-										texture="data/textures/gui/doctrines/doctrine_arrow.dds"
-										color="716b5f" />
+                                        texture="data/textures/gui/doctrines/doctrine_arrow.dds"
+                                        color="716b5f"
+                                    />
 								</StaticImage>
 							</StaticImage>
 						</StaticImage>
@@ -346,22 +576,37 @@
 				</Item>
 				<Item name="#child_link_active">
 					<StaticImage origin="0 -60" align="t">
-						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="8" sizeY="44"
-							color="f97b03" />
+						<RenderObject2D
+                            texture="data/textures/gui/square.tga"
+                            sizeX="8"
+                            sizeY="44"
+                            color="f97b03"
+                        />
 						<StaticImage origin="0 -16" align="b">
-							<RenderObject2D texture="data/textures/gui/doctrines/doctrine_arrow.dds"
-								color="f97b03" />
+							<RenderObject2D
+                                texture="data/textures/gui/doctrines/doctrine_arrow.dds"
+                                color="f97b03"
+                            />
 						</StaticImage>
 						<StaticImage origin="8 0" align="l">
-							<RenderObject2D texture="data/textures/gui/square.tga" sizeX="200"
-								sizeY="8" color="f97b03" />
+							<RenderObject2D
+                                texture="data/textures/gui/square.tga"
+                                sizeX="200"
+                                sizeY="8"
+                                color="f97b03"
+                            />
 							<StaticImage origin="0 0" align="rt">
-								<RenderObject2D texture="data/textures/gui/square.tga" sizeX="8"
-									sizeY="26" color="f97b03" />
+								<RenderObject2D
+                                    texture="data/textures/gui/square.tga"
+                                    sizeX="8"
+                                    sizeY="26"
+                                    color="f97b03"
+                                />
 								<StaticImage origin="0 -16" align="b">
 									<RenderObject2D
-										texture="data/textures/gui/doctrines/doctrine_arrow.dds"
-										color="f97b03" />
+                                        texture="data/textures/gui/doctrines/doctrine_arrow.dds"
+                                        color="f97b03"
+                                    />
 								</StaticImage>
 							</StaticImage>
 						</StaticImage>
@@ -374,114 +619,1356 @@
 		</Item>
 		<Item name="vet" align="l" origin="20 -380" sizeX="1250" sizeY="400">
 			<StaticImage origin="0 0" align="lt">
-				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="1250" sizeY="400"
-					color="211e1d80" />
+				<RenderObject2D
+                    texture="data/textures/gui/square.tga"
+                    sizeX="1250"
+                    sizeY="400"
+                    color="211e1d80"
+                />
 				<StaticImage origin="0 0" align="lt">
-					<RenderObject2D texture="data/textures/gui/squads/rangers_bg_01.dds"
-						sizeX="1250" sizeY="290" color="00000080" />
+					<RenderObject2D
+                        texture="data/textures/gui/squads/rangers_bg_01.dds"
+                        sizeX="1250"
+                        sizeY="290"
+                        color="00000080"
+                    />
 				</StaticImage>
 				<StaticImage origin="0 0" align="lt">
-					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="1250" sizeY="90"
-						color="4a4a4a80" />
+					<RenderObject2D
+                        texture="data/textures/gui/square.tga"
+                        sizeX="1250"
+                        sizeY="90"
+                        color="4a4a4a80"
+                    />
 				</StaticImage>
 				<StaticImage origin="0 0" align="lb">
-					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="1250" sizeY="8"
-						color="4a4a4a80" />
+					<RenderObject2D
+                        texture="data/textures/gui/square.tga"
+                        sizeX="1250"
+                        sizeY="8"
+                        color="4a4a4a80"
+                    />
 				</StaticImage>
 				<StaticImage origin="0 -90" align="lt">
-					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="8" sizeY="302"
-						color="4a4a4a80" />
+					<RenderObject2D
+                        texture="data/textures/gui/square.tga"
+                        sizeX="8"
+                        sizeY="302"
+                        color="4a4a4a80"
+                    />
 				</StaticImage>
 				<StaticImage origin="0 -90" align="rt">
-					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="8" sizeY="302"
-						color="4a4a4a80" />
+					<RenderObject2D
+                        texture="data/textures/gui/square.tga"
+                        sizeX="8"
+                        sizeY="302"
+                        color="4a4a4a80"
+                    />
 				</StaticImage>
 				<StaticImage origin="0 0" align="lt">
-					<RenderObject2D texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds"
-						sizeX="220" sizeY="95" color="0c0b0b33" />
+					<RenderObject2D
+                        texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds"
+                        sizeX="220"
+                        sizeY="95"
+                        color="0c0b0b33"
+                    />
 				</StaticImage>
 				<StaticImage origin="0 0" align="rt">
-					<RenderObject2D texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds"
-						flipX="true" sizeX="220" sizeY="95" color="0c0b0b33" />
+					<RenderObject2D
+                        texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds"
+                        flipX="true"
+                        sizeX="220"
+                        sizeY="95"
+                        color="0c0b0b33"
+                    />
 				</StaticImage>
 				<Item sizeX="750" sizeY="100" origin="0 5" align="t">
-					<StaticText text="@menu_doctrine_level_vet" font="header_2"
-						fontAutoDownsize="true" textColor="f0e3cc" />
+					<StaticText
+                        text="@menu_doctrine_level_vet"
+                        font="header_2"
+                        fontAutoDownsize="true"
+                        textColor="f0e3cc"
+                    />
 				</Item>
 				<StaticImage origin="-420 -24" align="t">
 					<RenderObject2D texture="data/textures/gui/missions/pack_stars.tga" />
 				</StaticImage>
 				<StaticImage origin="-470 -24" align="t">
-					<RenderObject2D texture="data/textures/gui/missions/pack_stars.tga"
-						color="f0e3cc" />
+					<RenderObject2D
+                        texture="data/textures/gui/missions/pack_stars.tga"
+                        color="f0e3cc"
+                    />
 				</StaticImage>
 				<StaticImage origin="-520 -24" align="t">
-					<RenderObject2D texture="data/textures/gui/missions/pack_stars.tga"
-						color="f0e3cc" />
+					<RenderObject2D
+                        texture="data/textures/gui/missions/pack_stars.tga"
+                        color="f0e3cc"
+                    />
 				</StaticImage>
 				<StaticImage origin="420 -24" align="t">
 					<RenderObject2D texture="data/textures/gui/missions/pack_stars.tga" />
 				</StaticImage>
 				<StaticImage origin="470 -24" align="t">
-					<RenderObject2D texture="data/textures/gui/missions/pack_stars.tga"
-						color="f0e3cc" />
+					<RenderObject2D
+                        texture="data/textures/gui/missions/pack_stars.tga"
+                        color="f0e3cc"
+                    />
 				</StaticImage>
 				<StaticImage origin="520 -24" align="t">
-					<RenderObject2D texture="data/textures/gui/missions/pack_stars.tga"
-						color="f0e3cc" />
+					<RenderObject2D
+                        texture="data/textures/gui/missions/pack_stars.tga"
+                        color="f0e3cc"
+                    />
 				</StaticImage>
 			</StaticImage>
 
-			<Item name="GFL_TacticalIndependence" origin="-300 -220" align="t">
+			<Item name="GFL_DEFY_TacticalIndependence" origin="-300 -220" align="t">
 				<Item name="#child_link_inactive">
 					<StaticImage origin="60 0" align="l">
-						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="63" sizeY="8"
-							color="716b5f" />
+						<RenderObject2D
+                            texture="data/textures/gui/square.tga"
+                            sizeX="63"
+                            sizeY="8"
+                            color="716b5f"
+                        />
 						<StaticImage origin="16 0" align="r">
 							<RenderObject2D
-								texture="data/textures/gui/doctrines/gfl_doctrine_horizontal_arrow.dds"
-								color="716b5f" />
+                                texture="data/textures/gui/doctrines/gfl_doctrine_horizontal_arrow.dds"
+                                color="716b5f"
+                            />
 						</StaticImage>
 					</StaticImage>
 				</Item>
 				<Item name="#child_link_active">
 					<StaticImage origin="60 0" align="l">
-						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="63" sizeY="8"
-							color="f97b03" />
+						<RenderObject2D
+                            texture="data/textures/gui/square.tga"
+                            sizeX="63"
+                            sizeY="8"
+                            color="f97b03"
+                        />
 						<StaticImage origin="16 0" align="r">
 							<RenderObject2D
-								texture="data/textures/gui/doctrines/gfl_doctrine_horizontal_arrow.dds"
-								color="f97b03" />
+                                texture="data/textures/gui/doctrines/gfl_doctrine_horizontal_arrow.dds"
+                                color="f97b03"
+                            />
 						</StaticImage>
 					</StaticImage>
 				</Item>
 			</Item>
-			<Item name="GFL_SquadDefiance" origin="-100 -220" align="t"> </Item>
-			<Item name="GFL_BattlefieldEchoes" origin="100 -220" align="t"> </Item>
-			<Item name="GFL_ViolentMomentum" origin="300 -220" align="t"> </Item>
+			<Item name="GFL_DEFY_SquadDefiance" origin="-100 -220" align="t"> </Item>
+			<Item name="GFL_DEFY_BattlefieldEchoes" origin="100 -220" align="t"> </Item>
+			<Item name="GFL_DEFY_ViolentMomentum" origin="300 -220" align="t"> </Item>
 		</Item>
 	</Item>
-	<Item name="Doctrine_Node_Tooltip" sizeX="600" sizeY="250" origin="0 0" hidden="true">
+
+	<!-- ================================================================================
+	     H.I.D.E. 404 - DOCTRINE TREE
+	     ================================================================================ -->
+	<Item name="#GFL-UNIT-404_DoctrineTree" align="i" hidden="true">
+		<!--  this will be cloned and added below each #doctrine_name item that corresponds to a
+		doctrine node  -->
+		<Button name="#template_doctrine_button" hidden="true">
+			<!--  texture is defined in the doctrine node by a prefix, then we add the _normal.dds
+			suffix  -->
+			<RenderObject2D
+                texture="data/textures/gui/doctrines/doctrine_empty_normal.dds"
+            />
+			<OnHover>
+				<!--  texture is defined in the doctrine node by a prefix, then we add the _hover.dds
+				suffix  -->
+				<RenderObject2D
+                    texture="data/textures/gui/doctrines/doctrine_empty_hover.dds"
+                />
+			</OnHover>
+			<OnClick>
+				<Action type="PlaySound" target="gui_customize_equip" />
+				<Action type="TriggerEvent" target="GUI_GAME_DOCTRINE_SELECT" />
+			</OnClick>
+			<OnRClickDown>
+				<Action type="PlaySound" target="gui_customize_equip" />
+				<Action type="TriggerEvent" target="GUI_GAME_DOCTRINE_REMOVE" />
+			</OnRClickDown>
+			<StaticImage name="#doctrinenode_disabled">
+				<RenderObject2D
+                    texture="data/textures/gui/doctrines/doctrine_empty_normal.dds"
+                    color="928a7c"
+                />
+			</StaticImage>
+			<StaticImage name="#doctrinenode_full">
+				<RenderObject2D
+                    texture="data/textures/gui/doctrines/doctrine_empty_hover.dds"
+                />
+			</StaticImage>
+			<StaticImage name="#doctrinenode_active">
+				<RenderObject2D
+                    texture="data/textures/gui/doctrines/doctrine_active.dds"
+                    sizeX="124"
+                    sizeY="124"
+                />
+			</StaticImage>
+			<Item name="#doctrinenode_does_not_pass_requirements" hidden="true" />
+			<!--  just a marker for the tooltip to know when to show required level  -->
+			<StaticImage name="#doctrinenode_num_levels_bg" align="lb" origin="0 0">
+				<RenderObject2D
+                    texture="data/textures/gui/square.tga"
+                    sizeX="44"
+                    sizeY="36"
+                    color="40392be6"
+                />
+				<StaticText
+                    name="#doctrinenode_num_levels"
+                    text="4"
+                    font="header_5"
+                    textColor="ffffff"
+                >
+					<StaticText
+                        hidden="true"
+                        name="#doctrinenode_num_levels_color_full"
+                        textColor="f97b03"
+                    />
+					<StaticText
+                        hidden="true"
+                        name="#doctrinenode_num_levels_color_part"
+                        textColor="ffffff"
+                    />
+				</StaticText>
+			</StaticImage>
+		</Button>
+		<Item name="handguns" align="lt" sizeX="400" sizeY="780" origin="20 -70">
+			<StaticImage origin="0 0" align="lt">
+				<RenderObject2D
+                    texture="data/textures/gui/square.tga"
+                    sizeX="400"
+                    sizeY="780"
+                    color="211e1d80"
+                />
+				<StaticImage origin="0 0" align="lt">
+					<RenderObject2D
+                        texture="data/textures/gui/squads/rangers_bg_01.dds"
+                        sizeX="400"
+                        sizeY="490"
+                        color="0000004d"
+                    />
+				</StaticImage>
+				<StaticImage origin="0 0" align="lt">
+					<RenderObject2D
+                        texture="data/textures/gui/square.tga"
+                        sizeX="400"
+                        sizeY="72"
+                        color="211e1d40"
+                    />
+				</StaticImage>
+				<StaticImage origin="0 0" align="lt">
+					<RenderObject2D
+                        texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds"
+                        sizeX="190"
+                        sizeY="75"
+                        color="0c0b0b33"
+                    />
+				</StaticImage>
+				<StaticImage origin="0 0" align="rt">
+					<RenderObject2D
+                        texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds"
+                        flipX="true"
+                        sizeX="190"
+                        sizeY="75"
+                        color="0c0b0b33"
+                    />
+				</StaticImage>
+				<Item sizeX="400" sizeY="72" align="lt">
+					<StaticText
+                        text="@menu_doctrine_branch_calibration"
+                        font="header_3"
+                        fontAutoDownsize="false"
+                        textColor="f0e3cc"
+                    />
+				</Item>
+			</StaticImage>
+			<Item name="GFL_LethalPrecision" origin="100 -160" align="lt"> </Item>
+			<Item name="GFL_RapidDeployment" origin="100 -340" align="lt">
+				<Item name="#child_link_inactive">
+					<StaticImage origin="0 -60" align="t">
+						<RenderObject2D
+                            texture="data/textures/gui/square.tga"
+                            sizeX="8"
+                            sizeY="44"
+                            color="716b5f"
+                        />
+						<StaticImage origin="0 -16" align="b">
+							<RenderObject2D
+                                texture="data/textures/gui/doctrines/doctrine_arrow.dds"
+                                color="716b5f"
+                            />
+						</StaticImage>
+						<StaticImage origin="8 0" align="l">
+							<RenderObject2D
+                                texture="data/textures/gui/square.tga"
+                                sizeX="200"
+                                sizeY="8"
+                                color="716b5f"
+                            />
+							<StaticImage origin="0 0" align="rt">
+								<RenderObject2D
+                                    texture="data/textures/gui/square.tga"
+                                    sizeX="8"
+                                    sizeY="26"
+                                    color="716b5f"
+                                />
+								<StaticImage origin="0 -16" align="b">
+									<RenderObject2D
+                                        texture="data/textures/gui/doctrines/doctrine_arrow.dds"
+                                        color="716b5f"
+                                    />
+								</StaticImage>
+							</StaticImage>
+						</StaticImage>
+					</StaticImage>
+				</Item>
+				<Item name="#child_link_active">
+					<StaticImage origin="0 -60" align="t">
+						<RenderObject2D
+                            texture="data/textures/gui/square.tga"
+                            sizeX="8"
+                            sizeY="44"
+                            color="f97b03"
+                        />
+						<StaticImage origin="0 -16" align="b">
+							<RenderObject2D
+                                texture="data/textures/gui/doctrines/doctrine_arrow.dds"
+                                color="f97b03"
+                            />
+						</StaticImage>
+						<StaticImage origin="8 0" align="l">
+							<RenderObject2D
+                                texture="data/textures/gui/square.tga"
+                                sizeX="200"
+                                sizeY="8"
+                                color="f97b03"
+                            />
+							<StaticImage origin="0 0" align="rt">
+								<RenderObject2D
+                                    texture="data/textures/gui/square.tga"
+                                    sizeX="8"
+                                    sizeY="26"
+                                    color="f97b03"
+                                />
+								<StaticImage origin="0 -16" align="b">
+									<RenderObject2D
+                                        texture="data/textures/gui/doctrines/doctrine_arrow.dds"
+                                        color="f97b03"
+                                    />
+								</StaticImage>
+							</StaticImage>
+						</StaticImage>
+					</StaticImage>
+				</Item>
+			</Item>
+			<Item name="GFL_CQCProtocols" origin="-100 -160" align="rt">
+				<Item name="#child_link_inactive">
+					<StaticImage origin="0 -60" align="t">
+						<RenderObject2D
+                            texture="data/textures/gui/square.tga"
+                            sizeX="8"
+                            sizeY="44"
+                            color="716b5f"
+                        />
+						<StaticImage origin="0 -16" align="b">
+							<RenderObject2D
+                                texture="data/textures/gui/doctrines/doctrine_arrow.dds"
+                                color="716b5f"
+                            />
+						</StaticImage>
+					</StaticImage>
+				</Item>
+				<Item name="#child_link_active">
+					<StaticImage origin="0 -60" align="t">
+						<RenderObject2D
+                            texture="data/textures/gui/square.tga"
+                            sizeX="8"
+                            sizeY="44"
+                            color="f97b03"
+                        />
+						<StaticImage origin="0 -16" align="b">
+							<RenderObject2D
+                                texture="data/textures/gui/doctrines/doctrine_arrow.dds"
+                                color="f97b03"
+                            />
+						</StaticImage>
+					</StaticImage>
+				</Item>
+			</Item>
+			<Item name="GFL_OverwhelmingForce" origin="-100 -340" align="rt"> </Item>
+			<Item name="GFL_WeaponTransition" origin="100 -520" align="lt"> </Item>
+			<Item name="GFL_CombatEfficiency" origin="-100 -520" align="rt"> </Item>
+			<Item name="GFL_SuppressionProtocols" origin="0 -700" align="t"> </Item>
+		</Item>
+		<Item name="rifles" align="t" sizeX="400" sizeY="780" origin="0 -70">
+			<StaticImage origin="0 0" align="t">
+				<RenderObject2D
+                    texture="data/textures/gui/square.tga"
+                    sizeX="400"
+                    sizeY="780"
+                    color="211e1d80"
+                />
+				<StaticImage origin="0 0" align="lt">
+					<RenderObject2D
+                        texture="data/textures/gui/squads/rangers_bg_01.dds"
+                        sizeX="400"
+                        sizeY="490"
+                        color="0000004d"
+                    />
+				</StaticImage>
+				<StaticImage origin="0 0" align="lt">
+					<RenderObject2D
+                        texture="data/textures/gui/square.tga"
+                        sizeX="400"
+                        sizeY="72"
+                        color="211e1d40"
+                    />
+				</StaticImage>
+				<StaticImage origin="0 0" align="lt">
+					<RenderObject2D
+                        texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds"
+                        sizeX="190"
+                        sizeY="75"
+                        color="0c0b0b33"
+                    />
+				</StaticImage>
+				<StaticImage origin="0 0" align="rt">
+					<RenderObject2D
+                        texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds"
+                        flipX="true"
+                        sizeX="190"
+                        sizeY="75"
+                        color="0c0b0b33"
+                    />
+				</StaticImage>
+				<Item sizeX="400" sizeY="72" align="lt">
+					<StaticText
+                        text="@menu_doctrine_branch_neuralhelix"
+                        font="header_3"
+                        fontAutoDownsize="false"
+                        textColor="f0e3cc"
+                    />
+				</Item>
+			</StaticImage>
+			<Item name="GFL_404_DreamWonderland" origin="100 -160" align="lt"> </Item>
+			<Item name="GFL_404_NoticeMeBigSis" origin="-100 -160" align="rt"> </Item>
+			<Item name="GFL_404_ShadowsFury" origin="100 -340" align="lt" />
+			<Item name="GFL_404_DepressiveMentality" origin="-100 -340" align="rt"> </Item>
+			<Item name="GFL_404_DelayedResponse" origin="0 -520" align="t"> </Item>
+		</Item>
+		<Item name="support" align="rt" sizeX="400" sizeY="780" origin="-20 -70">
+			<StaticImage origin="0 0" align="lt">
+				<RenderObject2D
+                    texture="data/textures/gui/square.tga"
+                    sizeX="400"
+                    sizeY="780"
+                    color="211e1d80"
+                />
+				<StaticImage origin="0 0" align="lt">
+					<RenderObject2D
+                        texture="data/textures/gui/squads/rangers_bg_01.dds"
+                        sizeX="400"
+                        sizeY="490"
+                        color="0000004d"
+                    />
+				</StaticImage>
+				<StaticImage origin="0 0" align="lt">
+					<RenderObject2D
+                        texture="data/textures/gui/square.tga"
+                        sizeX="400"
+                        sizeY="72"
+                        color="211e1d40"
+                    />
+				</StaticImage>
+				<StaticImage origin="0 0" align="lt">
+					<RenderObject2D
+                        texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds"
+                        sizeX="190"
+                        sizeY="75"
+                        color="0c0b0b33"
+                    />
+				</StaticImage>
+				<StaticImage origin="0 0" align="rt">
+					<RenderObject2D
+                        texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds"
+                        flipX="true"
+                        sizeX="190"
+                        sizeY="75"
+                        color="0c0b0b33"
+                    />
+				</StaticImage>
+				<Item sizeX="400" sizeY="72" align="lt">
+					<StaticText
+                        text="@menu_doctrine_branch_remolder"
+                        font="header_3"
+                        fontAutoDownsize="false"
+                        textColor="f0e3cc"
+                    />
+				</Item>
+			</StaticImage>
+			<Item name="GFL_CommunicationProtocols" origin="100 -160" align="lt">
+				<Item name="#child_link_inactive">
+					<StaticImage origin="0 -60" align="t">
+						<RenderObject2D
+                            texture="data/textures/gui/square.tga"
+                            sizeX="8"
+                            sizeY="44"
+                            color="716b5f"
+                        />
+						<StaticImage origin="0 -16" align="b">
+							<RenderObject2D
+                                texture="data/textures/gui/doctrines/doctrine_arrow.dds"
+                                color="716b5f"
+                            />
+						</StaticImage>
+					</StaticImage>
+				</Item>
+				<Item name="#child_link_active">
+					<StaticImage origin="0 -60" align="t">
+						<RenderObject2D
+                            texture="data/textures/gui/square.tga"
+                            sizeX="8"
+                            sizeY="44"
+                            color="f97b03"
+                        />
+						<StaticImage origin="0 -16" align="b">
+							<RenderObject2D
+                                texture="data/textures/gui/doctrines/doctrine_arrow.dds"
+                                color="f97b03"
+                            />
+						</StaticImage>
+					</StaticImage>
+				</Item>
+			</Item>
+			<Item name="GFL_AdvancedProtocols" origin="100 -340" align="lt">
+				<Item name="#child_link_inactive">
+					<StaticImage origin="0 -60" align="t">
+						<RenderObject2D
+                            texture="data/textures/gui/square.tga"
+                            sizeX="8"
+                            sizeY="44"
+                            color="716b5f"
+                        />
+						<StaticImage origin="0 -16" align="b">
+							<RenderObject2D
+                                texture="data/textures/gui/doctrines/doctrine_arrow.dds"
+                                color="716b5f"
+                            />
+						</StaticImage>
+						<StaticImage origin="8 0" align="l">
+							<RenderObject2D
+                                texture="data/textures/gui/square.tga"
+                                sizeX="200"
+                                sizeY="8"
+                                color="716b5f"
+                            />
+							<StaticImage origin="0 0" align="rt">
+								<RenderObject2D
+                                    texture="data/textures/gui/square.tga"
+                                    sizeX="8"
+                                    sizeY="26"
+                                    color="716b5f"
+                                />
+								<StaticImage origin="0 -16" align="b">
+									<RenderObject2D
+                                        texture="data/textures/gui/doctrines/doctrine_arrow.dds"
+                                        color="716b5f"
+                                    />
+								</StaticImage>
+							</StaticImage>
+						</StaticImage>
+					</StaticImage>
+				</Item>
+				<Item name="#child_link_active">
+					<StaticImage origin="0 -60" align="t">
+						<RenderObject2D
+                            texture="data/textures/gui/square.tga"
+                            sizeX="8"
+                            sizeY="44"
+                            color="f97b03"
+                        />
+						<StaticImage origin="0 -16" align="b">
+							<RenderObject2D
+                                texture="data/textures/gui/doctrines/doctrine_arrow.dds"
+                                color="f97b03"
+                            />
+						</StaticImage>
+						<StaticImage origin="8 0" align="l">
+							<RenderObject2D
+                                texture="data/textures/gui/square.tga"
+                                sizeX="200"
+                                sizeY="8"
+                                color="f97b03"
+                            />
+							<StaticImage origin="0 0" align="rt">
+								<RenderObject2D
+                                    texture="data/textures/gui/square.tga"
+                                    sizeX="8"
+                                    sizeY="26"
+                                    color="f97b03"
+                                />
+								<StaticImage origin="0 -16" align="b">
+									<RenderObject2D
+                                        texture="data/textures/gui/doctrines/doctrine_arrow.dds"
+                                        color="f97b03"
+                                    />
+								</StaticImage>
+							</StaticImage>
+						</StaticImage>
+					</StaticImage>
+				</Item>
+			</Item>
+			<Item name="GFL_TacticalIntelligence" origin="100 -520" align="lt"> </Item>
+			<Item name="GFL_InformationExtraction" origin="-100 -520" align="rt"> </Item>
+			<Item name="GFL_OptimizedPerformance" origin="-100 -160" align="rt"> </Item>
+		</Item>
+		<Item name="vet" align="l" origin="20 -380" sizeX="1250" sizeY="400">
+			<StaticImage origin="0 0" align="lt">
+				<RenderObject2D
+                    texture="data/textures/gui/square.tga"
+                    sizeX="1250"
+                    sizeY="400"
+                    color="211e1d80"
+                />
+				<StaticImage origin="0 0" align="lt">
+					<RenderObject2D
+                        texture="data/textures/gui/squads/rangers_bg_01.dds"
+                        sizeX="1250"
+                        sizeY="290"
+                        color="00000080"
+                    />
+				</StaticImage>
+				<StaticImage origin="0 0" align="lt">
+					<RenderObject2D
+                        texture="data/textures/gui/square.tga"
+                        sizeX="1250"
+                        sizeY="90"
+                        color="e5e5e580"
+                    />
+				</StaticImage>
+				<StaticImage origin="0 0" align="lb">
+					<RenderObject2D
+                        texture="data/textures/gui/square.tga"
+                        sizeX="1250"
+                        sizeY="8"
+                        color="e5e5e580"
+                    />
+				</StaticImage>
+				<StaticImage origin="0 -90" align="lt">
+					<RenderObject2D
+                        texture="data/textures/gui/square.tga"
+                        sizeX="8"
+                        sizeY="302"
+                        color="e5e5e580"
+                    />
+				</StaticImage>
+				<StaticImage origin="0 -90" align="rt">
+					<RenderObject2D
+                        texture="data/textures/gui/square.tga"
+                        sizeX="8"
+                        sizeY="302"
+                        color="e5e5e580"
+                    />
+				</StaticImage>
+				<StaticImage origin="0 0" align="lt">
+					<RenderObject2D
+                        texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds"
+                        sizeX="220"
+                        sizeY="95"
+                        color="0c0b0b33"
+                    />
+				</StaticImage>
+				<StaticImage origin="0 0" align="rt">
+					<RenderObject2D
+                        texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds"
+                        flipX="true"
+                        sizeX="220"
+                        sizeY="95"
+                        color="0c0b0b33"
+                    />
+				</StaticImage>
+				<Item sizeX="750" sizeY="100" origin="0 5" align="t">
+					<StaticText
+                        text="@menu_doctrine_level_vet"
+                        font="header_2"
+                        fontAutoDownsize="true"
+                        textColor="f0e3cc"
+                    />
+				</Item>
+				<StaticImage origin="-420 -24" align="t">
+					<RenderObject2D texture="data/textures/gui/missions/pack_stars.tga" />
+				</StaticImage>
+				<StaticImage origin="-470 -24" align="t">
+					<RenderObject2D
+                        texture="data/textures/gui/missions/pack_stars.tga"
+                        color="f0e3cc"
+                    />
+				</StaticImage>
+				<StaticImage origin="-520 -24" align="t">
+					<RenderObject2D
+                        texture="data/textures/gui/missions/pack_stars.tga"
+                        color="f0e3cc"
+                    />
+				</StaticImage>
+				<StaticImage origin="420 -24" align="t">
+					<RenderObject2D texture="data/textures/gui/missions/pack_stars.tga" />
+				</StaticImage>
+				<StaticImage origin="470 -24" align="t">
+					<RenderObject2D
+                        texture="data/textures/gui/missions/pack_stars.tga"
+                        color="f0e3cc"
+                    />
+				</StaticImage>
+				<StaticImage origin="520 -24" align="t">
+					<RenderObject2D
+                        texture="data/textures/gui/missions/pack_stars.tga"
+                        color="f0e3cc"
+                    />
+				</StaticImage>
+			</StaticImage>
+
+			<Item name="GFL_404_HighValueTarget" origin="-300 -220" align="t"> </Item>
+			<Item name="GFL_404_PhantomSignal" origin="-100 -220" align="t"> </Item>
+			<Item name="GFL_404_DamageControl" origin="100 -220" align="t"> </Item>
+			<Item name="GFL_404_CloseQuartersDominance" origin="300 -220" align="t"> </Item>
+		</Item>
+	</Item>
+
+	<!-- ================================================================================
+	     ZUCCHERO CAFÉ - DOCTRINE TREE
+	     ================================================================================ -->
+	<Item name="#GFL-UNIT-CAFE_DoctrineTree" align="i" hidden="true">
+		<!--  this will be cloned and added below each #doctrine_name item that corresponds to a
+		doctrine node  -->
+		<Button name="#template_doctrine_button" hidden="true">
+			<!--  texture is defined in the doctrine node by a prefix, then we add the _normal.dds
+			suffix  -->
+			<RenderObject2D
+                texture="data/textures/gui/doctrines/doctrine_empty_normal.dds"
+            />
+			<OnHover>
+				<!--  texture is defined in the doctrine node by a prefix, then we add the _hover.dds
+				suffix  -->
+				<RenderObject2D
+                    texture="data/textures/gui/doctrines/doctrine_empty_hover.dds"
+                />
+			</OnHover>
+			<OnClick>
+				<Action type="PlaySound" target="gui_customize_equip" />
+				<Action type="TriggerEvent" target="GUI_GAME_DOCTRINE_SELECT" />
+			</OnClick>
+			<OnRClickDown>
+				<Action type="PlaySound" target="gui_customize_equip" />
+				<Action type="TriggerEvent" target="GUI_GAME_DOCTRINE_REMOVE" />
+			</OnRClickDown>
+			<StaticImage name="#doctrinenode_disabled">
+				<RenderObject2D
+                    texture="data/textures/gui/doctrines/doctrine_empty_normal.dds"
+                    color="928a7c"
+                />
+			</StaticImage>
+			<StaticImage name="#doctrinenode_full">
+				<RenderObject2D
+                    texture="data/textures/gui/doctrines/doctrine_empty_hover.dds"
+                />
+			</StaticImage>
+			<StaticImage name="#doctrinenode_active">
+				<RenderObject2D
+                    texture="data/textures/gui/doctrines/doctrine_active.dds"
+                    sizeX="124"
+                    sizeY="124"
+                />
+			</StaticImage>
+			<Item name="#doctrinenode_does_not_pass_requirements" hidden="true" />
+			<!--  just a marker for the tooltip to know when to show required level  -->
+			<StaticImage name="#doctrinenode_num_levels_bg" align="lb" origin="0 0">
+				<RenderObject2D
+                    texture="data/textures/gui/square.tga"
+                    sizeX="44"
+                    sizeY="36"
+                    color="40392be6"
+                />
+				<StaticText
+                    name="#doctrinenode_num_levels"
+                    text="4"
+                    font="header_5"
+                    textColor="ffffff"
+                >
+					<StaticText
+                        hidden="true"
+                        name="#doctrinenode_num_levels_color_full"
+                        textColor="f97b03"
+                    />
+					<StaticText
+                        hidden="true"
+                        name="#doctrinenode_num_levels_color_part"
+                        textColor="ffffff"
+                    />
+				</StaticText>
+			</StaticImage>
+		</Button>
+		<Item name="handguns" align="lt" sizeX="400" sizeY="780" origin="20 -70">
+			<StaticImage origin="0 0" align="lt">
+				<RenderObject2D
+                    texture="data/textures/gui/square.tga"
+                    sizeX="400"
+                    sizeY="780"
+                    color="211e1d80"
+                />
+				<StaticImage origin="0 0" align="lt">
+					<RenderObject2D
+                        texture="data/textures/gui/squads/rangers_bg_01.dds"
+                        sizeX="400"
+                        sizeY="490"
+                        color="0000004d"
+                    />
+				</StaticImage>
+				<StaticImage origin="0 0" align="lt">
+					<RenderObject2D
+                        texture="data/textures/gui/square.tga"
+                        sizeX="400"
+                        sizeY="72"
+                        color="211e1d40"
+                    />
+				</StaticImage>
+				<StaticImage origin="0 0" align="lt">
+					<RenderObject2D
+                        texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds"
+                        sizeX="190"
+                        sizeY="75"
+                        color="0c0b0b33"
+                    />
+				</StaticImage>
+				<StaticImage origin="0 0" align="rt">
+					<RenderObject2D
+                        texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds"
+                        flipX="true"
+                        sizeX="190"
+                        sizeY="75"
+                        color="0c0b0b33"
+                    />
+				</StaticImage>
+				<Item sizeX="400" sizeY="72" align="lt">
+					<StaticText
+                        text="@menu_doctrine_branch_calibration"
+                        font="header_3"
+                        fontAutoDownsize="false"
+                        textColor="f0e3cc"
+                    />
+				</Item>
+			</StaticImage>
+			<Item name="GFL_LethalPrecision" origin="100 -160" align="lt"> </Item>
+			<Item name="GFL_RapidDeployment" origin="100 -340" align="lt">
+				<Item name="#child_link_inactive">
+					<StaticImage origin="0 -60" align="t">
+						<RenderObject2D
+                            texture="data/textures/gui/square.tga"
+                            sizeX="8"
+                            sizeY="44"
+                            color="716b5f"
+                        />
+						<StaticImage origin="0 -16" align="b">
+							<RenderObject2D
+                                texture="data/textures/gui/doctrines/doctrine_arrow.dds"
+                                color="716b5f"
+                            />
+						</StaticImage>
+						<StaticImage origin="8 0" align="l">
+							<RenderObject2D
+                                texture="data/textures/gui/square.tga"
+                                sizeX="200"
+                                sizeY="8"
+                                color="716b5f"
+                            />
+							<StaticImage origin="0 0" align="rt">
+								<RenderObject2D
+                                    texture="data/textures/gui/square.tga"
+                                    sizeX="8"
+                                    sizeY="26"
+                                    color="716b5f"
+                                />
+								<StaticImage origin="0 -16" align="b">
+									<RenderObject2D
+                                        texture="data/textures/gui/doctrines/doctrine_arrow.dds"
+                                        color="716b5f"
+                                    />
+								</StaticImage>
+							</StaticImage>
+						</StaticImage>
+					</StaticImage>
+				</Item>
+				<Item name="#child_link_active">
+					<StaticImage origin="0 -60" align="t">
+						<RenderObject2D
+                            texture="data/textures/gui/square.tga"
+                            sizeX="8"
+                            sizeY="44"
+                            color="f97b03"
+                        />
+						<StaticImage origin="0 -16" align="b">
+							<RenderObject2D
+                                texture="data/textures/gui/doctrines/doctrine_arrow.dds"
+                                color="f97b03"
+                            />
+						</StaticImage>
+						<StaticImage origin="8 0" align="l">
+							<RenderObject2D
+                                texture="data/textures/gui/square.tga"
+                                sizeX="200"
+                                sizeY="8"
+                                color="f97b03"
+                            />
+							<StaticImage origin="0 0" align="rt">
+								<RenderObject2D
+                                    texture="data/textures/gui/square.tga"
+                                    sizeX="8"
+                                    sizeY="26"
+                                    color="f97b03"
+                                />
+								<StaticImage origin="0 -16" align="b">
+									<RenderObject2D
+                                        texture="data/textures/gui/doctrines/doctrine_arrow.dds"
+                                        color="f97b03"
+                                    />
+								</StaticImage>
+							</StaticImage>
+						</StaticImage>
+					</StaticImage>
+				</Item>
+			</Item>
+			<Item name="GFL_CQCProtocols" origin="-100 -160" align="rt">
+				<Item name="#child_link_inactive">
+					<StaticImage origin="0 -60" align="t">
+						<RenderObject2D
+                            texture="data/textures/gui/square.tga"
+                            sizeX="8"
+                            sizeY="44"
+                            color="716b5f"
+                        />
+						<StaticImage origin="0 -16" align="b">
+							<RenderObject2D
+                                texture="data/textures/gui/doctrines/doctrine_arrow.dds"
+                                color="716b5f"
+                            />
+						</StaticImage>
+					</StaticImage>
+				</Item>
+				<Item name="#child_link_active">
+					<StaticImage origin="0 -60" align="t">
+						<RenderObject2D
+                            texture="data/textures/gui/square.tga"
+                            sizeX="8"
+                            sizeY="44"
+                            color="f97b03"
+                        />
+						<StaticImage origin="0 -16" align="b">
+							<RenderObject2D
+                                texture="data/textures/gui/doctrines/doctrine_arrow.dds"
+                                color="f97b03"
+                            />
+						</StaticImage>
+					</StaticImage>
+				</Item>
+			</Item>
+			<Item name="GFL_OverwhelmingForce" origin="-100 -340" align="rt"> </Item>
+			<Item name="GFL_WeaponTransition" origin="100 -520" align="lt"> </Item>
+			<Item name="GFL_CombatEfficiency" origin="-100 -520" align="rt"> </Item>
+			<Item name="GFL_SuppressionProtocols" origin="0 -700" align="t"> </Item>
+		</Item>
+		<Item name="rifles" align="t" sizeX="400" sizeY="780" origin="0 -70">
+			<StaticImage origin="0 0" align="t">
+				<RenderObject2D
+                    texture="data/textures/gui/square.tga"
+                    sizeX="400"
+                    sizeY="780"
+                    color="211e1d80"
+                />
+				<StaticImage origin="0 0" align="lt">
+					<RenderObject2D
+                        texture="data/textures/gui/squads/rangers_bg_01.dds"
+                        sizeX="400"
+                        sizeY="490"
+                        color="0000004d"
+                    />
+				</StaticImage>
+				<StaticImage origin="0 0" align="lt">
+					<RenderObject2D
+                        texture="data/textures/gui/square.tga"
+                        sizeX="400"
+                        sizeY="72"
+                        color="211e1d40"
+                    />
+				</StaticImage>
+				<StaticImage origin="0 0" align="lt">
+					<RenderObject2D
+                        texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds"
+                        sizeX="190"
+                        sizeY="75"
+                        color="0c0b0b33"
+                    />
+				</StaticImage>
+				<StaticImage origin="0 0" align="rt">
+					<RenderObject2D
+                        texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds"
+                        flipX="true"
+                        sizeX="190"
+                        sizeY="75"
+                        color="0c0b0b33"
+                    />
+				</StaticImage>
+				<Item sizeX="400" sizeY="72" align="lt">
+					<StaticText
+                        text="@menu_doctrine_branch_neuralhelix"
+                        font="header_3"
+                        fontAutoDownsize="false"
+                        textColor="f0e3cc"
+                    />
+				</Item>
+			</StaticImage>
+			<Item name="GFL_CAFE_PathOfProtection" origin="100 -160" align="lt"> </Item>
+			<Item
+                name="GFL_CAFE_AbsoluteMentalDefense"
+                origin="-100 -160"
+                align="rt"
+            > </Item>
+			<Item name="GFL_CAFE_PerfectService" origin="100 -340" align="lt" />
+			<Item name="GFL_CAFE_SpotlightCharge" origin="-100 -340" align="rt"> </Item>
+		</Item>
+		<Item name="support" align="rt" sizeX="400" sizeY="780" origin="-20 -70">
+			<StaticImage origin="0 0" align="lt">
+				<RenderObject2D
+                    texture="data/textures/gui/square.tga"
+                    sizeX="400"
+                    sizeY="780"
+                    color="211e1d80"
+                />
+				<StaticImage origin="0 0" align="lt">
+					<RenderObject2D
+                        texture="data/textures/gui/squads/rangers_bg_01.dds"
+                        sizeX="400"
+                        sizeY="490"
+                        color="0000004d"
+                    />
+				</StaticImage>
+				<StaticImage origin="0 0" align="lt">
+					<RenderObject2D
+                        texture="data/textures/gui/square.tga"
+                        sizeX="400"
+                        sizeY="72"
+                        color="211e1d40"
+                    />
+				</StaticImage>
+				<StaticImage origin="0 0" align="lt">
+					<RenderObject2D
+                        texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds"
+                        sizeX="190"
+                        sizeY="75"
+                        color="0c0b0b33"
+                    />
+				</StaticImage>
+				<StaticImage origin="0 0" align="rt">
+					<RenderObject2D
+                        texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds"
+                        flipX="true"
+                        sizeX="190"
+                        sizeY="75"
+                        color="0c0b0b33"
+                    />
+				</StaticImage>
+				<Item sizeX="400" sizeY="72" align="lt">
+					<StaticText
+                        text="@menu_doctrine_branch_remolder"
+                        font="header_3"
+                        fontAutoDownsize="false"
+                        textColor="f0e3cc"
+                    />
+				</Item>
+			</StaticImage>
+			<Item name="GFL_CommunicationProtocols" origin="100 -160" align="lt">
+				<Item name="#child_link_inactive">
+					<StaticImage origin="0 -60" align="t">
+						<RenderObject2D
+                            texture="data/textures/gui/square.tga"
+                            sizeX="8"
+                            sizeY="44"
+                            color="716b5f"
+                        />
+						<StaticImage origin="0 -16" align="b">
+							<RenderObject2D
+                                texture="data/textures/gui/doctrines/doctrine_arrow.dds"
+                                color="716b5f"
+                            />
+						</StaticImage>
+					</StaticImage>
+				</Item>
+				<Item name="#child_link_active">
+					<StaticImage origin="0 -60" align="t">
+						<RenderObject2D
+                            texture="data/textures/gui/square.tga"
+                            sizeX="8"
+                            sizeY="44"
+                            color="f97b03"
+                        />
+						<StaticImage origin="0 -16" align="b">
+							<RenderObject2D
+                                texture="data/textures/gui/doctrines/doctrine_arrow.dds"
+                                color="f97b03"
+                            />
+						</StaticImage>
+					</StaticImage>
+				</Item>
+			</Item>
+			<Item name="GFL_AdvancedProtocols" origin="100 -340" align="lt">
+				<Item name="#child_link_inactive">
+					<StaticImage origin="0 -60" align="t">
+						<RenderObject2D
+                            texture="data/textures/gui/square.tga"
+                            sizeX="8"
+                            sizeY="44"
+                            color="716b5f"
+                        />
+						<StaticImage origin="0 -16" align="b">
+							<RenderObject2D
+                                texture="data/textures/gui/doctrines/doctrine_arrow.dds"
+                                color="716b5f"
+                            />
+						</StaticImage>
+						<StaticImage origin="8 0" align="l">
+							<RenderObject2D
+                                texture="data/textures/gui/square.tga"
+                                sizeX="200"
+                                sizeY="8"
+                                color="716b5f"
+                            />
+							<StaticImage origin="0 0" align="rt">
+								<RenderObject2D
+                                    texture="data/textures/gui/square.tga"
+                                    sizeX="8"
+                                    sizeY="26"
+                                    color="716b5f"
+                                />
+								<StaticImage origin="0 -16" align="b">
+									<RenderObject2D
+                                        texture="data/textures/gui/doctrines/doctrine_arrow.dds"
+                                        color="716b5f"
+                                    />
+								</StaticImage>
+							</StaticImage>
+						</StaticImage>
+					</StaticImage>
+				</Item>
+				<Item name="#child_link_active">
+					<StaticImage origin="0 -60" align="t">
+						<RenderObject2D
+                            texture="data/textures/gui/square.tga"
+                            sizeX="8"
+                            sizeY="44"
+                            color="f97b03"
+                        />
+						<StaticImage origin="0 -16" align="b">
+							<RenderObject2D
+                                texture="data/textures/gui/doctrines/doctrine_arrow.dds"
+                                color="f97b03"
+                            />
+						</StaticImage>
+						<StaticImage origin="8 0" align="l">
+							<RenderObject2D
+                                texture="data/textures/gui/square.tga"
+                                sizeX="200"
+                                sizeY="8"
+                                color="f97b03"
+                            />
+							<StaticImage origin="0 0" align="rt">
+								<RenderObject2D
+                                    texture="data/textures/gui/square.tga"
+                                    sizeX="8"
+                                    sizeY="26"
+                                    color="f97b03"
+                                />
+								<StaticImage origin="0 -16" align="b">
+									<RenderObject2D
+                                        texture="data/textures/gui/doctrines/doctrine_arrow.dds"
+                                        color="f97b03"
+                                    />
+								</StaticImage>
+							</StaticImage>
+						</StaticImage>
+					</StaticImage>
+				</Item>
+			</Item>
+			<Item name="GFL_TacticalIntelligence" origin="100 -520" align="lt"> </Item>
+			<Item name="GFL_InformationExtraction" origin="-100 -520" align="rt"> </Item>
+			<Item name="GFL_OptimizedPerformance" origin="-100 -160" align="rt"> </Item>
+		</Item>
+		<Item name="vet" align="l" origin="20 -380" sizeX="1250" sizeY="400">
+			<StaticImage origin="0 0" align="lt">
+				<RenderObject2D
+                    texture="data/textures/gui/square.tga"
+                    sizeX="1250"
+                    sizeY="400"
+                    color="211e1d80"
+                />
+				<StaticImage origin="0 0" align="lt">
+					<RenderObject2D
+                        texture="data/textures/gui/squads/rangers_bg_01.dds"
+                        sizeX="1250"
+                        sizeY="290"
+                        color="00000080"
+                    />
+				</StaticImage>
+				<StaticImage origin="0 0" align="lt">
+					<RenderObject2D
+                        texture="data/textures/gui/square.tga"
+                        sizeX="1250"
+                        sizeY="90"
+                        color="f97b0380"
+                    />
+				</StaticImage>
+				<StaticImage origin="0 0" align="lb">
+					<RenderObject2D
+                        texture="data/textures/gui/square.tga"
+                        sizeX="1250"
+                        sizeY="8"
+                        color="f97b0380"
+                    />
+				</StaticImage>
+				<StaticImage origin="0 -90" align="lt">
+					<RenderObject2D
+                        texture="data/textures/gui/square.tga"
+                        sizeX="8"
+                        sizeY="302"
+                        color="f97b0380"
+                    />
+				</StaticImage>
+				<StaticImage origin="0 -90" align="rt">
+					<RenderObject2D
+                        texture="data/textures/gui/square.tga"
+                        sizeX="8"
+                        sizeY="302"
+                        color="f97b0380"
+                    />
+				</StaticImage>
+				<StaticImage origin="0 0" align="lt">
+					<RenderObject2D
+                        texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds"
+                        sizeX="220"
+                        sizeY="95"
+                        color="0c0b0b33"
+                    />
+				</StaticImage>
+				<StaticImage origin="0 0" align="rt">
+					<RenderObject2D
+                        texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds"
+                        flipX="true"
+                        sizeX="220"
+                        sizeY="95"
+                        color="0c0b0b33"
+                    />
+				</StaticImage>
+				<Item sizeX="750" sizeY="100" origin="0 5" align="t">
+					<StaticText
+                        text="@menu_doctrine_level_vet"
+                        font="header_2"
+                        fontAutoDownsize="true"
+                        textColor="f0e3cc"
+                    />
+				</Item>
+				<StaticImage origin="-420 -24" align="t">
+					<RenderObject2D texture="data/textures/gui/missions/pack_stars.tga" />
+				</StaticImage>
+				<StaticImage origin="-470 -24" align="t">
+					<RenderObject2D
+                        texture="data/textures/gui/missions/pack_stars.tga"
+                        color="f0e3cc"
+                    />
+				</StaticImage>
+				<StaticImage origin="-520 -24" align="t">
+					<RenderObject2D
+                        texture="data/textures/gui/missions/pack_stars.tga"
+                        color="f0e3cc"
+                    />
+				</StaticImage>
+				<StaticImage origin="420 -24" align="t">
+					<RenderObject2D texture="data/textures/gui/missions/pack_stars.tga" />
+				</StaticImage>
+				<StaticImage origin="470 -24" align="t">
+					<RenderObject2D
+                        texture="data/textures/gui/missions/pack_stars.tga"
+                        color="f0e3cc"
+                    />
+				</StaticImage>
+				<StaticImage origin="520 -24" align="t">
+					<RenderObject2D
+                        texture="data/textures/gui/missions/pack_stars.tga"
+                        color="f0e3cc"
+                    />
+				</StaticImage>
+			</StaticImage>
+
+			<Item name="GFL_CAFE_SparklingNight" origin="-300 -220" align="t"> </Item>
+			<Item name="GFL_CAFE_LongSummer" origin="-100 -220" align="t"> </Item>
+			<Item name="GFL_CAFE_BelovedMacchiato" origin="100 -220" align="t"> </Item>
+			<Item name="GFL_CAFE_VelvetLatte" origin="300 -220" align="t"> </Item>
+		</Item>
+	</Item>
+
+	<!-- ================================================================================
+	     DOCTRINE TOOLTIP
+	     ================================================================================ -->
+	<Item
+        name="Doctrine_Node_Tooltip"
+        sizeX="600"
+        sizeY="250"
+        origin="0 0"
+        hidden="true"
+    >
 		<OnOpen>
 			<Action type="SetForeground" target="this" />
 		</OnOpen>
 		<Item name="#doctrine_ttip_size_min" hidden="true" sizeX="600" sizeY="200" />
 		<!--  sizeY is enough for 4 lines  -->
 		<!--  resized by the game. Will keep minimum width/height as the item above  -->
-		<Item name="#doctrine_ttip_section_main" origin="0 0" align="lt" blurBackground="true"
-			blurColor="404040" sizeX="600" sizeY="200">
-			<StaticText name="#doctrine_ttip_name" origin="15 -8" align="lt" font="header_4"
-				textColor="f97b03" text="DOCTRINE NAME">
+		<Item
+            name="#doctrine_ttip_section_main"
+            origin="0 0"
+            align="lt"
+            blurBackground="true"
+            blurColor="404040"
+            sizeX="600"
+            sizeY="200"
+        >
+			<StaticText
+                name="#doctrine_ttip_name"
+                origin="15 -8"
+                align="lt"
+                font="header_4"
+                textColor="f97b03"
+                text="DOCTRINE NAME"
+            >
 				<!--  resized by the game  -->
 				<StaticImage name="#doctrine_ttip_section_bar" origin="0 -44" align="lt">
-					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="570" sizeY="4"
-						color="f97b03" />
+					<RenderObject2D
+                        texture="data/textures/gui/square.tga"
+                        sizeX="570"
+                        sizeY="4"
+                        color="f97b03"
+                    />
 				</StaticImage>
 			</StaticText>
-			<StaticText name="#doctrine_ttip_descr" origin="15 -60" align="lt" wordWrap="true"
-				font="paragraph_2" textColor="f0e3cc" text="Description goes here" />
+			<StaticText
+                name="#doctrine_ttip_descr"
+                origin="15 -60"
+                align="lt"
+                wordWrap="true"
+                font="paragraph_2"
+                textColor="f0e3cc"
+                text="Description goes here"
+            />
 		</Item>
-		<!-- 
+		<!--
 		position for the following two is changed in code by the game.
 		depending on which one is visible, it will be added as a child to the one before it. The origin
 		given here acts a an offset to space it from what's above.
@@ -495,14 +1982,31 @@
 		text="LEVEL 2 +20%"/>
 	</Item>
 	 -->
-		<Item name="#doctrine_ttip_section_required" origin="0 -54" align="lb" blurBackground="true"
-			blurColor="404040" sizeX="600" sizeY="50">
+		<Item
+            name="#doctrine_ttip_section_required"
+            origin="0 -54"
+            align="lb"
+            blurBackground="true"
+            blurColor="404040"
+            sizeX="600"
+            sizeY="50"
+        >
 			<StaticImage align="l" origin="15 0">
-				<RenderObject2D texture="data/textures/gui/locked_icon.dds" color="f93703ff"
-					scaleX="0.28" scaleY="0.28" />
+				<RenderObject2D
+                    texture="data/textures/gui/locked_icon.dds"
+                    color="f93703ff"
+                    scaleX="0.28"
+                    scaleY="0.28"
+                />
 			</StaticImage>
-			<StaticText name="#doctrine_ttip_section_required_text" align="r" origin="-15 0"
-				font="header_4" textColor="f93703" text="@menu_doctrine_required_level" />
+			<StaticText
+                name="#doctrine_ttip_section_required_text"
+                align="r"
+                origin="-15 0"
+                font="header_4"
+                textColor="f93703"
+                text="@menu_doctrine_required_level"
+            />
 		</Item>
 	</Item>
 </GUIItems>

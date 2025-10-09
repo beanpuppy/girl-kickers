@@ -1,198 +1,287 @@
 <GUIItems>
 	<Item name="Menu_Main_Background_GFL-UNIT-DEFY" hidden="true">
 		<OnOpen>
-			<Action type="Hide" target="#MainMenuLogo"/>
+			<Action type="Hide" target="#MainMenuLogo" />
 		</OnOpen>
 		<OnClose>
-			<Action type="Show" target="#MainMenuLogo"/>
+			<Action type="Show" target="#MainMenuLogo" />
 		</OnClose>
-		<Item name="#parallax_speed" origin="2.0 0"/>
-		<Item name="#parallax_mouse_scale" origin="0.0 0.0"/>
+		<Item name="#parallax_speed" origin="2.0 0" />
+		<Item name="#parallax_mouse_scale" origin="0.0 0.0" />
 		<Item name="#parallax_elements">
 			<Item>
 				<StaticImage origin="0 0">
-					<RenderObject2D texture="data/textures/gui/keyart_Rangers/rangers_bg_01_back.dds"/>
-					<Item name="#parallax_layer_speed" origin="0.5 0"/>
+					<RenderObject2D
+                        texture="data/textures/gui/keyart_Rangers/rangers_bg_01_back.dds"
+                    />
+					<Item name="#parallax_layer_speed" origin="0.5 0" />
 				</StaticImage>
 			</Item>
 		</Item>
 
 		<Item>
 			<StaticImage origin="0 380">
-				<RenderObject2D texture="data/textures/gui/keyart_defy/dk2_logo.dds"/>
+				<RenderObject2D texture="data/textures/gui/keyart_defy/dk2_logo.dds" />
 			</StaticImage>
 		</Item>
 
 		<Item>
 			<StaticImage origin="0 -200" hidden="false">
-				<RenderObject2D texture="data/textures/gui/keyart_Rangers/rangers_bg_01_scrolling_dust.dds" texRepeatX="3" texRepeatY="1" sizeX="4300" sizeY="1300" color="ff9a00" blendMode="screen"/>
-				<ImageAnim type="scroll" speed="0.01" direction="1 0"/>
-				<Item name="#parallax_layer_speed" origin="6.0 0"/>
+				<RenderObject2D
+                    texture="data/textures/gui/keyart_Rangers/rangers_bg_01_scrolling_dust.dds"
+                    texRepeatX="3"
+                    texRepeatY="1"
+                    sizeX="4300"
+                    sizeY="1300"
+                    color="ff9a00"
+                    blendMode="screen"
+                />
+				<ImageAnim type="scroll" speed="0.01" direction="1 0" />
+				<Item name="#parallax_layer_speed" origin="6.0 0" />
 			</StaticImage>
 		</Item>
-		
+
 		<Item>
 			<StaticImage origin="100 -200" hidden="false">
-				<RenderObject2D texture="data/textures/gui/keyart_Rangers/rangers_bg_01_fore_dust.dds"
-					color="ff5a00" blendMode="add_masked"/>
-				<Item name="#parallax_layer_speed" origin="20 0"/>
+				<RenderObject2D
+                    texture="data/textures/gui/keyart_Rangers/rangers_bg_01_fore_dust.dds"
+                    color="ff5a00"
+                    blendMode="add_masked"
+                />
+				<Item name="#parallax_layer_speed" origin="20 0" />
 			</StaticImage>
 		</Item>
-		
+
 		<Item>
 			<StaticImage origin="0 -300" hidden="false">
-				<RenderObject2D texture="data/textures/gui/keyart_Rangers/rangers_bg_01_fore_dust.dds"
-					color="ffe700" blendMode="add_masked"/>
-				<Item name="#parallax_layer_speed" origin="20 0"/>
+				<RenderObject2D
+                    texture="data/textures/gui/keyart_Rangers/rangers_bg_01_fore_dust.dds"
+                    color="ffe700"
+                    blendMode="add_masked"
+                />
+				<Item name="#parallax_layer_speed" origin="20 0" />
 			</StaticImage>
 		</Item>
-		
-		
+
+
 		<Item>
 			<StaticImage origin="0 -200" hidden="false">
-				<RenderObject2D texture="data/textures/gui/keyart_Rangers/rangers_bg_01_scrolling_dust.dds" texRepeatX="2" sizeX="4300" sizeY="2000" color="ff5a00" blendMode="add_masked"/>
-				<ImageAnim type="scroll" speed="0.02" direction="1 0"/>
-				<Item name="#parallax_layer_speed" origin="25 0"/>
+				<RenderObject2D
+                    texture="data/textures/gui/keyart_Rangers/rangers_bg_01_scrolling_dust.dds"
+                    texRepeatX="2"
+                    sizeX="4300"
+                    sizeY="2000"
+                    color="ff5a00"
+                    blendMode="add_masked"
+                />
+				<ImageAnim type="scroll" speed="0.02" direction="1 0" />
+				<Item name="#parallax_layer_speed" origin="25 0" />
 			</StaticImage>
 		</Item>
 
 		<Item>
 			<StaticImage origin="0 -200" hidden="false">
-				<RenderObject2D texture="data/textures/gui/keyart_Rangers/rangers_bg_01_scrolling_dust.dds" texRepeatX="2" sizeX="4100" sizeY="2000" flipX="true" color="ff9a00" blendMode="add_masked"/>
-				<ImageAnim type="scroll" speed="0.04" direction="-1 0"/>
-				<Item name="#parallax_layer_speed" origin="40 0"/>
+				<RenderObject2D
+                    texture="data/textures/gui/keyart_Rangers/rangers_bg_01_scrolling_dust.dds"
+                    texRepeatX="2"
+                    sizeX="4100"
+                    sizeY="2000"
+                    flipX="true"
+                    color="ff9a00"
+                    blendMode="add_masked"
+                />
+				<ImageAnim type="scroll" speed="0.04" direction="-1 0" />
+				<Item name="#parallax_layer_speed" origin="40 0" />
 			</StaticImage>
 		</Item>
 	</Item>
 
 	<Item name="Menu_Main_Background_GFL-UNIT-404" hidden="true">
 		<OnOpen>
-			<Action type="Hide" target="#MainMenuLogo"/>
+			<Action type="Hide" target="#MainMenuLogo" />
 		</OnOpen>
 		<OnClose>
-			<Action type="Show" target="#MainMenuLogo"/>
+			<Action type="Show" target="#MainMenuLogo" />
 		</OnClose>
-		<Item name="#parallax_speed" origin="2.0 0"/>
-		<Item name="#parallax_mouse_scale" origin="0.0 0.0"/>
+		<Item name="#parallax_speed" origin="2.0 0" />
+		<Item name="#parallax_mouse_scale" origin="0.0 0.0" />
 		<Item name="#parallax_elements">
 			<Item>
 				<StaticImage origin="0 0">
-					<RenderObject2D texture="data/textures/gui/keyart_404/bg_01_back.dds"/>
-					<Item name="#parallax_layer_speed" origin="0.5 0"/>
+					<RenderObject2D texture="data/textures/gui/keyart_404/bg_01_back.dds" />
+					<Item name="#parallax_layer_speed" origin="0.5 0" />
 				</StaticImage>
 			</Item>
 		</Item>
 
 		<Item>
 			<StaticImage origin="0 380">
-				<RenderObject2D texture="data/textures/gui/keyart_404/dk2_logo.dds"/>
+				<RenderObject2D texture="data/textures/gui/keyart_404/dk2_logo.dds" />
 			</StaticImage>
 		</Item>
 
 		<Item>
 			<StaticImage origin="0 -200" hidden="false">
-				<RenderObject2D texture="data/textures/gui/keyart_Rangers/rangers_bg_01_scrolling_dust.dds" texRepeatX="3" texRepeatY="1" sizeX="4300" sizeY="1300" color="ff9a00" blendMode="screen"/>
-				<ImageAnim type="scroll" speed="0.01" direction="1 0"/>
-				<Item name="#parallax_layer_speed" origin="6.0 0"/>
+				<RenderObject2D
+                    texture="data/textures/gui/keyart_Rangers/rangers_bg_01_scrolling_dust.dds"
+                    texRepeatX="3"
+                    texRepeatY="1"
+                    sizeX="4300"
+                    sizeY="1300"
+                    color="ff9a00"
+                    blendMode="screen"
+                />
+				<ImageAnim type="scroll" speed="0.01" direction="1 0" />
+				<Item name="#parallax_layer_speed" origin="6.0 0" />
 			</StaticImage>
 		</Item>
-		
+
 		<Item>
 			<StaticImage origin="100 -200" hidden="false">
-				<RenderObject2D texture="data/textures/gui/keyart_Rangers/rangers_bg_01_fore_dust.dds"
-					color="ff5a00" blendMode="add_masked"/>
-				<Item name="#parallax_layer_speed" origin="20 0"/>
+				<RenderObject2D
+                    texture="data/textures/gui/keyart_Rangers/rangers_bg_01_fore_dust.dds"
+                    color="ff5a00"
+                    blendMode="add_masked"
+                />
+				<Item name="#parallax_layer_speed" origin="20 0" />
 			</StaticImage>
 		</Item>
-		
+
 		<Item>
 			<StaticImage origin="0 -300" hidden="false">
-				<RenderObject2D texture="data/textures/gui/keyart_Rangers/rangers_bg_01_fore_dust.dds"
-					color="ffe700" blendMode="add_masked"/>
-				<Item name="#parallax_layer_speed" origin="20 0"/>
+				<RenderObject2D
+                    texture="data/textures/gui/keyart_Rangers/rangers_bg_01_fore_dust.dds"
+                    color="ffe700"
+                    blendMode="add_masked"
+                />
+				<Item name="#parallax_layer_speed" origin="20 0" />
 			</StaticImage>
 		</Item>
-		
-		
+
+
 		<Item>
 			<StaticImage origin="0 -200" hidden="false">
-				<RenderObject2D texture="data/textures/gui/keyart_Rangers/rangers_bg_01_scrolling_dust.dds" texRepeatX="2" sizeX="4300" sizeY="2000" color="ff5a00" blendMode="add_masked"/>
-				<ImageAnim type="scroll" speed="0.02" direction="1 0"/>
-				<Item name="#parallax_layer_speed" origin="25 0"/>
+				<RenderObject2D
+                    texture="data/textures/gui/keyart_Rangers/rangers_bg_01_scrolling_dust.dds"
+                    texRepeatX="2"
+                    sizeX="4300"
+                    sizeY="2000"
+                    color="ff5a00"
+                    blendMode="add_masked"
+                />
+				<ImageAnim type="scroll" speed="0.02" direction="1 0" />
+				<Item name="#parallax_layer_speed" origin="25 0" />
 			</StaticImage>
 		</Item>
 
 		<Item>
 			<StaticImage origin="0 -200" hidden="false">
-				<RenderObject2D texture="data/textures/gui/keyart_Rangers/rangers_bg_01_scrolling_dust.dds" texRepeatX="2" sizeX="4100" sizeY="2000" flipX="true" color="ff9a00" blendMode="add_masked"/>
-				<ImageAnim type="scroll" speed="0.04" direction="-1 0"/>
-				<Item name="#parallax_layer_speed" origin="40 0"/>
+				<RenderObject2D
+                    texture="data/textures/gui/keyart_Rangers/rangers_bg_01_scrolling_dust.dds"
+                    texRepeatX="2"
+                    sizeX="4100"
+                    sizeY="2000"
+                    flipX="true"
+                    color="ff9a00"
+                    blendMode="add_masked"
+                />
+				<ImageAnim type="scroll" speed="0.04" direction="-1 0" />
+				<Item name="#parallax_layer_speed" origin="40 0" />
 			</StaticImage>
 		</Item>
 	</Item>
 
 	<Item name="Menu_Main_Background_GFL-UNIT-CAFE" hidden="true">
 		<OnOpen>
-			<Action type="Hide" target="#MainMenuLogo"/>
+			<Action type="Hide" target="#MainMenuLogo" />
 		</OnOpen>
 		<OnClose>
-			<Action type="Show" target="#MainMenuLogo"/>
+			<Action type="Show" target="#MainMenuLogo" />
 		</OnClose>
-		<Item name="#parallax_speed" origin="2.0 0"/>
-		<Item name="#parallax_mouse_scale" origin="0.0 0.0"/>
+		<Item name="#parallax_speed" origin="2.0 0" />
+		<Item name="#parallax_mouse_scale" origin="0.0 0.0" />
 		<Item name="#parallax_elements">
 			<Item>
 				<StaticImage origin="0 0">
-					<RenderObject2D texture="data/textures/gui/keyart_cafe/bg_01_back.dds"/>
-					<Item name="#parallax_layer_speed" origin="0.5 0"/>
+					<RenderObject2D texture="data/textures/gui/keyart_cafe/bg_01_back.dds" />
+					<Item name="#parallax_layer_speed" origin="0.5 0" />
 				</StaticImage>
 			</Item>
 		</Item>
 
 		<Item>
 			<StaticImage origin="0 380">
-				<RenderObject2D texture="data/textures/gui/keyart_cafe/dk2_logo.dds"/>
+				<RenderObject2D texture="data/textures/gui/keyart_cafe/dk2_logo.dds" />
 			</StaticImage>
 		</Item>
 
 		<Item>
 			<StaticImage origin="0 -200" hidden="false">
-				<RenderObject2D texture="data/textures/gui/keyart_Rangers/rangers_bg_01_scrolling_dust.dds" texRepeatX="3" texRepeatY="1" sizeX="4300" sizeY="1300" color="ff9a00" blendMode="screen"/>
-				<ImageAnim type="scroll" speed="0.01" direction="1 0"/>
-				<Item name="#parallax_layer_speed" origin="6.0 0"/>
+				<RenderObject2D
+                    texture="data/textures/gui/keyart_Rangers/rangers_bg_01_scrolling_dust.dds"
+                    texRepeatX="3"
+                    texRepeatY="1"
+                    sizeX="4300"
+                    sizeY="1300"
+                    color="ff9a00"
+                    blendMode="screen"
+                />
+				<ImageAnim type="scroll" speed="0.01" direction="1 0" />
+				<Item name="#parallax_layer_speed" origin="6.0 0" />
 			</StaticImage>
 		</Item>
-		
+
 		<Item>
 			<StaticImage origin="100 -200" hidden="false">
-				<RenderObject2D texture="data/textures/gui/keyart_Rangers/rangers_bg_01_fore_dust.dds"
-					color="ff5a00" blendMode="add_masked"/>
-				<Item name="#parallax_layer_speed" origin="20 0"/>
+				<RenderObject2D
+                    texture="data/textures/gui/keyart_Rangers/rangers_bg_01_fore_dust.dds"
+                    color="ff5a00"
+                    blendMode="add_masked"
+                />
+				<Item name="#parallax_layer_speed" origin="20 0" />
 			</StaticImage>
 		</Item>
-		
+
 		<Item>
 			<StaticImage origin="0 -300" hidden="false">
-				<RenderObject2D texture="data/textures/gui/keyart_Rangers/rangers_bg_01_fore_dust.dds"
-					color="ffe700" blendMode="add_masked"/>
-				<Item name="#parallax_layer_speed" origin="20 0"/>
+				<RenderObject2D
+                    texture="data/textures/gui/keyart_Rangers/rangers_bg_01_fore_dust.dds"
+                    color="ffe700"
+                    blendMode="add_masked"
+                />
+				<Item name="#parallax_layer_speed" origin="20 0" />
 			</StaticImage>
 		</Item>
-		
-		
+
+
 		<Item>
 			<StaticImage origin="0 -200" hidden="false">
-				<RenderObject2D texture="data/textures/gui/keyart_Rangers/rangers_bg_01_scrolling_dust.dds" texRepeatX="2" sizeX="4300" sizeY="2000" color="ff5a00" blendMode="add_masked"/>
-				<ImageAnim type="scroll" speed="0.02" direction="1 0"/>
-				<Item name="#parallax_layer_speed" origin="25 0"/>
+				<RenderObject2D
+                    texture="data/textures/gui/keyart_Rangers/rangers_bg_01_scrolling_dust.dds"
+                    texRepeatX="2"
+                    sizeX="4300"
+                    sizeY="2000"
+                    color="ff5a00"
+                    blendMode="add_masked"
+                />
+				<ImageAnim type="scroll" speed="0.02" direction="1 0" />
+				<Item name="#parallax_layer_speed" origin="25 0" />
 			</StaticImage>
 		</Item>
 
 		<Item>
 			<StaticImage origin="0 -200" hidden="false">
-				<RenderObject2D texture="data/textures/gui/keyart_Rangers/rangers_bg_01_scrolling_dust.dds" texRepeatX="2" sizeX="4100" sizeY="2000" flipX="true" color="ff9a00" blendMode="add_masked"/>
-				<ImageAnim type="scroll" speed="0.04" direction="-1 0"/>
-				<Item name="#parallax_layer_speed" origin="40 0"/>
+				<RenderObject2D
+                    texture="data/textures/gui/keyart_Rangers/rangers_bg_01_scrolling_dust.dds"
+                    texRepeatX="2"
+                    sizeX="4100"
+                    sizeY="2000"
+                    flipX="true"
+                    color="ff9a00"
+                    blendMode="add_masked"
+                />
+				<ImageAnim type="scroll" speed="0.04" direction="-1 0" />
+				<Item name="#parallax_layer_speed" origin="40 0" />
 			</StaticImage>
 		</Item>
 	</Item>

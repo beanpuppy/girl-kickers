@@ -14,9 +14,9 @@
 
     <AttackType name="M1903_PrecisionShotClose">
         <ModifiableParams
-            minAimTime="400" 
+            minAimTime="400"
             maxAimTime="400"
-            minShots="1" 
+            minShots="1"
             maxShots="1"
             resetTime="1200"
             accuracyAdd="-70"
@@ -27,9 +27,9 @@
 
     <AttackType name="M1903_PrecisionShotMid">
         <ModifiableParams
-            minAimTime="400" 
+            minAimTime="400"
             maxAimTime="700"
-            minShots="1" 
+            minShots="1"
             maxShots="1"
             resetTime="1200"
             accuracyAdd="0"
@@ -40,9 +40,9 @@
 
     <AttackType name="M1903_PrecisionShotFar">
         <ModifiableParams
-            minAimTime="700" 
+            minAimTime="700"
             maxAimTime="800"
-            minShots="1" 
+            minShots="1"
             maxShots="1"
             resetTime="1200"
             accuracyAdd="-20"

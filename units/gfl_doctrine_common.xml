@@ -1,0 +1,406 @@
+<!--
+
+Doctrine nodes and their effects are defined here for all units.
+
+The relationships between nodes (inheritance, minimum squad level, max points you can put into a node) are defined in units.xml, for each unit separately.
+A node can by referenced by the doctrine of multiple units.
+If you change names here, make sure you also change them in units.xml and in gui/doctrine.xml.
+
+Parameters:
+	'name' is the one we reference in units.xml/doctrine.xml, it can have max 48 characters!!!
+	'nameUI' is the one that shows up for the user
+	'description' shows up in the tooltip
+	'texturePrefix' is the texture for this node, but only the prefix. We then add additional suffixes like *_normal.dds, *_hover.dds
+
+You can apply doctrine effects on humans directly by adding a <Doctrine name="NodeName"/> in the Entity/Human template xml. See the SWAT Leader template for an example
+
+************
+Doctrine nodes can modify any "ModifiableParams" field from attacktypes/equipment. Currently only ADDING to existing params is possible. Replacing/Multiplying is not supported, unless specified in the param's name.
+
+For Equipment, use <EquipmentModifier />
+	- if 'target' is not specified,
+		- it will apply modifiers once, on the human directly. Used for stuff like "suppressionRecoveryAdd", melee bonuses and the global modifiers below
+	- if 'target' is specified, it can point to various things:
+		- every piece of equipment if set to 'all'
+		- the equipment name to which we're gonna apply the modifiers
+		- an entire category of firearms: pistol / rifle / shotgun / rpg (defined in the firearm as category="name")
+		- an entire category of equipment, specified by the equipment type: Firearm / Armor / Shield / Grenade / SpyCamera / ExplosiveCharge / Lockpick / LockpickMachine / Crowbar / DynamicHammer / SuicideBomb / Ammo / Scope / TECTorch / Disguise / Helmet / HelmetNVG / FeetOfSteel
+	There are also a few extra parameters you can add only in <EquipmentModifier /> elements with no 'target':
+	- conditioning - percent increase in move and turn times. So conditioning="50" will make them move 50% faster, but still capped by their max move speed
+	- coverPercentAdd - percent increase to default cover protection chance of 50%
+	- efficiencyPercent - percent increase to speed of field skills, like defusing and sabotaging
+	- flinchResistance - less chance to flinch by reducing damage taken by this amount ( so 10 resistance means a 30dmg hit is considered a 20dmg hit for flinch chance)
+	- beingSpottedRate - percent change to speed at which enemies see through your disguise when being suspicious
+	- extraCoverage90 - gives a bonus to 'coveragePercent' on equipped body armor hits in the front 90 degree arc. Does not affect helmets
+	- extraProtection90 - same, for protectionLevel
+	- suppressionScale - percent increase to suppression inflicted (e.g., "+0.5" = 50% more suppression)
+	See !help_equipment.txt for more equipment details, like melee bonuses
+
+For attack types, use <AttackTypeModifier />
+	<AttackTypeModifier target="rifle" minRange="3" maxRange="10" onlyFromCover="true"
+	/>
+	- minRange/maxRange interval needs to be defined and will only apply for attacktypes that cross into that interval
+	- if 'target' is not specified, the modifier will get applied to all attack types for all weapons
+	- if 'target' is specified, it can be either of:
+		- the name of a specific firearm
+		- the category of the firearm: pistol / rifle / shotgun / rpg / etc.
+		- the name of a specific scope
+		- the category of the scope (defined in the Scope as category="name")
+		- the name of a specific attack type (in which case the minRange/maxRange interval doesn't need to be specified)
+	- if onlyFromCover="true" it will only apply the bonuses while shooter is in cover
+	- if onlyOnSuppressed="true" it will only apply the bonuses when the TARGET is suppressed
+	- if onlyWhenDamaged="true" it will only apply the bonuses when shooter is damaged
+
+	Additional AttackTypeModifier parameters:
+	- roundsPerSecondAdd - increases rate of fire (e.g., "+0.5" = 0.5 more rounds per second)
+	- followupShotAccuracyAdd - accuracy bonus on consecutive shots (for burst/auto fire)
+	- headshotOnShot - chance per shot to force a headshot (e.g., "3" = 3% chance per shot)
+	- coverReductionMin/coverReductionMax - reduces enemy cover effectiveness (positive values ignore cover better, negative values make cover more effective)
+	- quickSwitchAimTimeMultiplier - percent multiplier for aim time when engaging a target within 1 second of shooting a different one (e.g., "75" = 75% of normal aim time = 25% faster)
+	- nearbyTargetBonusCloseness - percent of distance threshold for nearby target bonus. When killing a target, if new target is within this % of distance to first target, use resetTime instead of aimTime. At 7m with "50" closeness, new target must be within 3.5m (7m * 0.5) of old target
+
+	So min/maxRange needs to be specified in all cases except when targeting a specific attack type
+
+************
+You can enable attack types, which will now take precedence over other attack types with the same range using:
+	<Enable name="Rangers_SAShotAimedFire_two"/>
+
+	Where in the base weapon you'd have:
+		<AttackTypes>
+			<AttackType name="Rangers_SAShotAimedFire" rangeMeters="7"/>
+			<AttackType name="Rangers_SAShotAimedFire_two" rangeMeters="7" disabled="true"/>
+			...
+		</AttackTypes>
+	You can now consider 'Rangers_SAShotAimedFire' as *disabled*
+
+
+Or you can also enable an attack type with a different range:
+	<Enable name="Rangers_SAShotAimedFire_two"/>
+
+	Where in the base weapon you'd have:
+		<AttackTypes>
+			<AttackType name="Rangers_SAShotAimedFire" rangeMeters="7"/>
+			<AttackType name="Rangers_SAShotAimedFire_two" rangeMeters="9" disabled="true"/>
+			<AttackType name="Rangers_SAShotAimedFireLong" rangeMeters="14"/>
+			...
+		</AttackTypes>
+	The firearm will now use:
+		Rangers_SAShotAimedFire within [0, 7]
+		Rangers_SAShotAimedFire_two within [7, 9]
+		Rangers_SAShotAimedFireLong within[9, 14]
+	Whereas before, it would have used:
+		Rangers_SAShotAimedFire within [0, 7]
+		Rangers_SAShotAimedFireLong within[7, 14]
+
+
+************
+There are also hardcoded skills, which you can set by using:
+	<Enable name="skillName"/>
+
+	Some of them might require a configurable number (we can only do one):
+	<Enable name="extraStuff" value="5"/>
+
+
+CURRENTLY IMPLEMENTED SKILLS:
+	SurvivalRate - campaign only: doubles chance to become incapacitated instead of dying (doubles if 2 points, increases by 1.5 if one point)
+	PistolTransition - auto-switches to pistol when empty on main
+	SelfFirstAid - campaign only: heals at end of mission instead of next day
+	AdvancedLanguage - enables order to send Civilians to nearest exit / out of the room
+	Backstabbing - melee deals more stun / damage when hitting from behind
+	PriorityBombers - prioritize suicide bombers and will have a 2x crit chance on them
+	SpeedyRifles - increases move/turn speed when a rifle is equipped and is not firing (in READY state)
+	AdvanceIntel - make visible 1 objective/hostage/bomb, per level. Number of objectives per level is set in 'val'. Duration of visibility is 10 seconds
+	HumintNetwork - reveal some of the enemies at mission start, in range of spawning. Number of enemies per level is set in 'val'
+	Persuasion - adds new order: persuade for Civilians and Surrendered Enemies, to reveal nearby enemies as red ghosts. Number of revealed enemies is set in 'val'. Radius is hardcoded to 10m.
+	Ambush - keeps the shooting from stealth UNAWARE bonus for 100ms per-point
+	Concealment - gives extra concealment equal to skill value
+	ConcealPistols - reduces pistol concealment penalty by skill amount
+	BasicLanguage - scares nearby civilians away. use skill amount as scare radius
+
+	Note: these can also be applied to default on the humans, by specifying/creating a doctrine that enables the skill
+			eg having the human from human_goodguys.xml specify <Doctrine name="CIA_Persuasion" />
+
+************
+Buffs and debuffs - Apply doctrine effects to other humans, permanent or temporary, using a few simple rules
+
+	Use the <GiveBuff> node with the following attributes
+		target			- who to apply the buff to.Values are "friends_in_radius", "enemies_in_radius", "friends_behind_me" or "self"(default)
+		targetClass		- only targets with this class get the buff ( Use with "self" to make Doctrines that only apply to specific classes, see MilitiaTraining )
+		targetHasEquipped - only targets with this equipment get the buff ( it can be 1. a specific equipment name 2. a category of firearm 3. a category of equipment, like Grenade )
+		when			- "kill" or "always"(default). "kill" means the effect is applied when the buff GIVER makes a kill
+		radius			- radius in meters (for non-self targets, including "friends_behind_me")
+		durationMs		- buff duration in milliseconds (defaults to -1 for permanent effects)
+		nodeName		- Doctrine node to apply to the target. This is how you choose the buff effect, by making a new Doctrine <Node> and using its name here
+	Temporary buffs show a text line in the human tooltip, using the buff <Node>'s "description" attribute (so NOT the <GiveBuff> doctrine, but the "nodeName" doctrine)
+
+	Multiple buffs on the same target with the same name will extend the duration, using the latest expiration time.
+
+	See "Elite_ViolenceOfAction" doctrine for a more complex buff behavior example:
+		The "Elite_ViolenceOfAction" doctrine gives "self" a temporary buff called "Violent" whenever you make a kill
+			"Violent" is a buff which gives enemies in radius a temporary debuff called "ScaredShitless" which lowers their suppression resistance
+		Since "Violent" doesn't have a "description" it will not show up on the Trooper tooltip while active
+
+	IMPORTANT LIMITATION: Temporary buffs can't change targeted EquipmentModifier settings, like "reloadSpeed" or "changeOutTime"
+		But AttackTypes, Skills and global EquipmentModifier settings like "conditioning" or "suppressionRecoveryAdd" will work on temporary buffs
+		This is a concession we've made for the sake of performance
+
+
+	USAGE EXAMPLES
+
+		adds to the changeOutTime param for all items of the current squad
+		<EquipmentModifier target="all"
+			changeOutTime="+80"
+		/>
+
+		adds to the changeOutTime param for all pistols of the current squad, by using their 'category' param (pistol/rifle/shotgun/rpg).
+		<EquipmentModifier target="pistol"
+			changeOutTime="+80"
+		/>
+
+		adds to the changeOutTime param for a specific weapon
+		<EquipmentModifier target="MP5A"
+			changeOutTime="+80"
+		/>
+
+		adds to the accuracy param for all attacktypes of the current squad (for all their weapons), within the specified range
+		<AttackTypeModifier minRange="0" maxRange="30"
+			accuracyAdd="+50"
+		/>
+
+		adds to the accuracy param for the attacktypes of all rifles of the current squad, within the specified range
+		<AttackTypeModifier target="rifle" minRange="3" maxRange="10"
+			accuracyAdd="+50"
+		/>
+
+		adds to the accuracy param for a specific attacktype (range is not needed in this case)
+		<AttackTypeModifier target="Rangers_PumpAimedFireLong"
+			accuracyAdd="+50"
+		/>
+
+		enables an attack type, which if it has the same range, will take precedence over the non-disabled one, effectively replacing it.
+			disabled attack types are defined in the base weapon, with disabled="true"
+
+		read main header (above) for more info.
+		<Enable name="Rangers_SAShotAimedFire_two"/>
+
+
+		this is how you setup a hardcoded skill, ie those that cannot be achieved via modifiers
+		<Enable name="bla" value="0.0"/>
+
+	    this is how you setup a buff
+		<Node name="Elite_ViolenceOfAction" nameUI="@doctrine_rangers_elite_violenceofaction_name" description="@doctrine_rangers_elite_violenceofaction_descr" texturePrefix="data/textures/gui/doctrines/doctrine_violence_of_action">
+			<GiveBuff nodeName="Violent" when="kill" durationMs="8000" />
+		</Node>
+		<Node name="Violent" >
+			<GiveBuff nodeName="ScaredShitless" target="enemies_in_radius" radius="7.0" durationMs="5000" />
+		</Node>
+		<Node name="ScaredShitless" nameUI="" description="@buff_scaredshitless">
+			<EquipmentModifier
+				suppressionRecoveryAdd="-50"
+			/>
+		</Node>
+-->
+<DoctrineNodes>
+	<!-- Pattern Remolding -->
+	<Node
+        name="GFL_OptimizedPerformance"
+        nameUI="@doctrine_gfl_optimized_name"
+        description="@doctrine_gfl_optimized_descr"
+        texturePrefix="data/textures/gui/doctrines/doctrine_empty"
+    >
+		<EquipmentModifier conditioning="15" efficiencyPercent="40" />
+		<EquipmentModifier
+            target="ExplosiveCharge"
+            changeInTime="-100"
+            changeOutTime="-80"
+        />
+		<EquipmentModifier target="Lockpick" changeInTime="-150" changeOutTime="-100" />
+		<EquipmentModifier target="TECTorch" changeInTime="-100" changeOutTime="-80" />
+	</Node>
+
+	<Node
+        name="GFL_CommunicationProtocols"
+        nameUI="@doctrine_gfl_commprotocols_name"
+        description="@doctrine_gfl_commprotocols_descr"
+        texturePrefix="data/textures/gui/doctrines/doctrine_empty"
+    >
+		<Enable name="BasicLanguage" value="4.0" />
+	</Node>
+
+	<Node
+        name="GFL_AdvancedProtocols"
+        nameUI="@doctrine_gfl_advancedprotocols_name"
+        description="@doctrine_gfl_advancedprotocols_descr"
+        texturePrefix="data/textures/gui/doctrines/doctrine_empty"
+    >
+		<Enable name="AdvancedLanguage" />
+	</Node>
+
+	<Node
+        name="GFL_TacticalIntelligence"
+        nameUI="@doctrine_gfl_tacticalintel_name"
+        description="@doctrine_gfl_tacticalintel_descr"
+        texturePrefix="data/textures/gui/doctrines/doctrine_empty"
+    >
+		<Enable name="AdvanceIntel" value="2" />
+	</Node>
+
+	<Node
+        name="GFL_InformationExtraction"
+        nameUI="@doctrine_gfl_infoextraction_name"
+        description="@doctrine_gfl_infoextraction_descr"
+        texturePrefix="data/textures/gui/doctrines/doctrine_empty"
+    >
+		<Enable name="Persuasion" value="100" />
+	</Node>
+
+	<!-- Calibration -->
+	<Node
+        name="GFL_CQCProtocols"
+        nameUI="@doctrine_gfl_cqc_name"
+        description="@doctrine_gfl_cqc_descr"
+        texturePrefix="data/textures/gui/doctrines/doctrine_empty"
+    >
+		<EquipmentModifier
+            meleeStunBonus="100"
+            meleeDamageBonus="50"
+            meleeSpeedAdd="80"
+            conditioning="8"
+        />
+	</Node>
+
+	<Node
+        name="GFL_OverwhelmingForce"
+        nameUI="@doctrine_gfl_overwhelming_name"
+        description="@doctrine_gfl_overwhelming_descr"
+        texturePrefix="data/textures/gui/doctrines/doctrine_empty"
+    >
+		<EquipmentModifier
+            meleeDamageBonus="150"
+            meleeStunBonus="50"
+            meleeSpeedAdd="100"
+        />
+		<Enable name="Backstabbing" />
+		<AttackTypeModifier minRange="0" maxRange="3" critChanceAdd="25" />
+	</Node>
+
+	<Node
+        name="GFL_RapidDeployment"
+        nameUI="@doctrine_gfl_rapideploy_name"
+        description="@doctrine_gfl_rapideploy_descr"
+        texturePrefix="data/textures/gui/doctrines/doctrine_empty"
+    >
+		<Enable name="SpeedyRifles" value="15" />
+		<EquipmentModifier target="rifle" readyTime="-60" guardTime="-40" />
+		<EquipmentModifier conditioning="10" />
+	</Node>
+
+	<Node
+        name="GFL_WeaponTransition"
+        nameUI="@doctrine_gfl_transition_name"
+        description="@doctrine_gfl_transition_descr"
+        texturePrefix="data/textures/gui/doctrines/doctrine_empty"
+    >
+		<Enable name="PistolTransition" />
+		<EquipmentModifier
+            target="pistol"
+            changeInTime="-250"
+            changeOutTime="-150"
+            readyTime="-40"
+        />
+		<AttackTypeModifier
+            target="pistol"
+            minRange="0"
+            maxRange="10"
+            minAimTime="-60"
+            maxAimTime="-80"
+            accuracyAdd="15"
+        />
+	</Node>
+
+	<Node
+        name="GFL_CombatEfficiency"
+        nameUI="@doctrine_gfl_combateff_name"
+        description="@doctrine_gfl_combateff_descr"
+        texturePrefix="data/textures/gui/doctrines/doctrine_empty"
+    >
+		<AttackTypeModifier
+            target="rifle"
+            minRange="0"
+            maxRange="20"
+            accuracyAdd="30"
+            followupShotAccuracyAdd="10"
+            minAimTime="-80"
+            maxAimTime="-100"
+            resetTime="-60"
+        />
+		<AttackTypeModifier
+            target="rifle"
+            minRange="20"
+            maxRange="50"
+            accuracyAdd="20"
+            followupShotAccuracyAdd="5"
+            minAimTime="-60"
+            maxAimTime="-80"
+        />
+		<EquipmentModifier target="rifle" readyTime="-60" guardTime="-40" />
+	</Node>
+
+	<Node
+        name="GFL_SuppressionProtocols"
+        nameUI="@doctrine_gfl_suppression_name"
+        description="@doctrine_gfl_suppression_descr"
+        texturePrefix="data/textures/gui/doctrines/doctrine_empty"
+    >
+		<EquipmentModifier target="rifle" suppressionScale="+0.5" />
+		<EquipmentModifier target="lmg" suppressionScale="+0.75" />
+		<AttackTypeModifier
+            minRange="0"
+            maxRange="50"
+            onlyOnSuppressed="true"
+            accuracyAdd="20"
+            critChanceAdd="15"
+            coverReductionMin="10"
+            coverReductionMax="5"
+        />
+	</Node>
+
+	<Node
+        name="GFL_LethalPrecision"
+        nameUI="@doctrine_gfl_lethalprecision_name"
+        description="@doctrine_gfl_lethalprecision_descr"
+        texturePrefix="data/textures/gui/doctrines/doctrine_empty"
+    >
+		<AttackTypeModifier
+            target="rifle"
+            minRange="0"
+            maxRange="15"
+            minAimTime="-60"
+            maxAimTime="-80"
+            critChanceAdd="12"
+        />
+		<AttackTypeModifier
+            target="rifle"
+            minRange="15"
+            maxRange="30"
+            minAimTime="-50"
+            maxAimTime="-60"
+            critChanceAdd="8"
+        />
+		<AttackTypeModifier
+            target="rifle"
+            minRange="30"
+            maxRange="60"
+            minAimTime="-40"
+            maxAimTime="-50"
+            critChanceAdd="5"
+        />
+		<AttackTypeModifier
+            target="dmr"
+            minRange="0"
+            maxRange="50"
+            critChanceAdd="10"
+            headshotOnShot="2"
+        />
+	</Node>
+</DoctrineNodes>

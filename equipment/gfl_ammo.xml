@@ -3,7 +3,7 @@
 	roundsPerSecond			- required
 	audibleSoundRadius		- required, in meters
 	physicsImpactForce		- required, only affect hit objects
-	
+
 	numPellets				- optional, overrides weapon default number of pellets
 	accuracyAdd 			- optional, default 0
 	accuracyMultiplier 		- optional, default 100 - In percents. Multiplies final accuracy amount ( after scopes, attack types and accuracyAdd are applied )
@@ -12,153 +12,211 @@
 	damageType				- optional, default 0 - Can be changed for rare modding reasons to fake more powerful weapons
  -->
 
-    <Ammo name="473x33_Caseless_G11"
+    <Ammo
+        name="473x33_Caseless_G11"
         tooltip="@ammo_473_caseless_name"
         description="@ammo_473_caseless_desc"
         img="data/models/weapons/attachments/m855_ammo_ui.dds"
     >
-        <Params 
+        <Params
             roundsPerSecond="20"
             audibleSoundRadius="70"
             physicsImpactForce="0.8"
         >
-            <Damage start="22" end="18" startDist="0" endDist="80"/>
-            <CriticalChancePercent start="30" end="20" startDist="0" endDist="50"/>
-            <ArmorPenetration start="55" end="45" startDist="0" endDist="50"/>
+            <Damage start="22" end="18" startDist="0" endDist="80" />
+            <CriticalChancePercent
+                start="30"
+                end="20"
+                startDist="0"
+                endDist="50"
+            />
+            <ArmorPenetration start="55" end="45" startDist="0" endDist="50" />
         </Params>
     </Ammo>
 
-    <Ammo name="3006_M1903_FMJ"
+    <Ammo
+        name="3006_M1903_FMJ"
         tooltip="@ammo_3006_fmj_name"
         description="@ammo_3006_fmj_desc"
         img="data/models/weapons/attachments/m855_ammo_ui.dds"
     >
-        <Params 
+        <Params
             roundsPerSecond="1.5"
             audibleSoundRadius="90"
             physicsImpactForce="1.5"
             overpenetrates="1"
         >
-            <Damage start="32" end="28" startDist="0" endDist="100"/>
-            <CriticalChancePercent start="45" end="35" startDist="0" endDist="100"/>
-            <ArmorPenetration start="75" end="65" startDist="0" endDist="100"/>
+            <Damage start="32" end="28" startDist="0" endDist="100" />
+            <CriticalChancePercent
+                start="45"
+                end="35"
+                startDist="0"
+                endDist="100"
+            />
+            <ArmorPenetration start="75" end="65" startDist="0" endDist="100" />
         </Params>
     </Ammo>
 
-    <Ammo name="3006_M1903_Match" unlockCost="5"
+    <Ammo
+        name="3006_M1903_Match"
+        unlockCost="5"
         tooltip="@ammo_3006_match_name"
         description="@ammo_3006_match_desc"
         img="data/models/weapons/attachments/m855_ammo_ui.dds"
     >
-        <Params 
+        <Params
             roundsPerSecond="1.5"
             audibleSoundRadius="90"
             physicsImpactForce="1.5"
-            accuracyAdd="30" 
+            accuracyAdd="30"
             overpenetrates="1"
         >
-            <Damage start="35" end="30" startDist="0" endDist="100"/>
-            <CriticalChancePercent start="55" end="40" startDist="0" endDist="100"/>
-            <ArmorPenetration start="80" end="70" startDist="0" endDist="100"/>
+            <Damage start="35" end="30" startDist="0" endDist="100" />
+            <CriticalChancePercent
+                start="55"
+                end="40"
+                startDist="0"
+                endDist="100"
+            />
+            <ArmorPenetration start="80" end="70" startDist="0" endDist="100" />
         </Params>
     </Ammo>
 
-    <Ammo name="300WM_WA2000_FMJ"
+    <Ammo
+        name="300WM_WA2000_FMJ"
         tooltip="@ammo_300wm_fmj_name"
         description="@ammo_300wm_fmj_desc"
         img="data/models/weapons/attachments/m855_ammo_ui.dds"
     >
-        <Params 
-            roundsPerSecond="2.5" 
+        <Params
+            roundsPerSecond="2.5"
             audibleSoundRadius="95"
             physicsImpactForce="1.8"
             overpenetrates="1"
         >
-            <Damage start="35" end="30" startDist="0" endDist="100"/>
-            <CriticalChancePercent start="40" end="35" startDist="0" endDist="100"/>
-            <ArmorPenetration start="75" end="70" startDist="0" endDist="100"/>
+            <Damage start="35" end="30" startDist="0" endDist="100" />
+            <CriticalChancePercent
+                start="40"
+                end="35"
+                startDist="0"
+                endDist="100"
+            />
+            <ArmorPenetration start="75" end="70" startDist="0" endDist="100" />
         </Params>
     </Ammo>
 
-    <Ammo name="300WM_WA2000_Match" unlockCost="6"
+    <Ammo
+        name="300WM_WA2000_Match"
+        unlockCost="6"
         tooltip="@ammo_300wm_match_name"
         description="@ammo_300wm_match_desc"
         img="data/models/weapons/attachments/m855_ammo_ui.dds"
     >
-        <Params 
+        <Params
             roundsPerSecond="2.5"
             audibleSoundRadius="95"
             physicsImpactForce="1.8"
             accuracyAdd="30"
             overpenetrates="1"
         >
-            <Damage start="38" end="33" startDist="0" endDist="100"/>
-            <CriticalChancePercent start="50" end="40" startDist="0" endDist="100"/>
-            <ArmorPenetration start="80" end="75" startDist="0" endDist="100"/>
+            <Damage start="38" end="33" startDist="0" endDist="100" />
+            <CriticalChancePercent
+                start="50"
+                end="40"
+                startDist="0"
+                endDist="100"
+            />
+            <ArmorPenetration start="80" end="75" startDist="0" endDist="100" />
         </Params>
     </Ammo>
 
-    <Ammo name="45ACPFMJ_UMP45"
+    <Ammo
+        name="45ACPFMJ_UMP45"
         tooltip="@ammo_45acp_fmj_name"
         description="@ammo_45acp_fmj_desc"
         img="data/models/weapons/attachments/m855_ammo_ui.dds"
     >
-        <Params 
-            roundsPerSecond="10"  
-            audibleSoundRadius="70"
-            physicsImpactForce="1.2"
-        >
-            <Damage start="28" end="20" startDist="0" endDist="40"/>
-            <CriticalChancePercent start="35" end="20" startDist="0" endDist="30"/>
-            <ArmorPenetration start="45" end="35" startDist="0" endDist="30"/>
-        </Params>
-    </Ammo>
-
-    <Ammo name="45ACPJHP_UMP45" unlockCost="3"
-        tooltip="@ammo_45acp_jhp_name"
-        description="@ammo_45acp_jhp_desc"
-        img="data/models/weapons/attachments/m855_ammo_ui.dds"
-    >
-        <Params 
+        <Params
             roundsPerSecond="10"
             audibleSoundRadius="70"
             physicsImpactForce="1.2"
         >
-            <Damage start="32" end="22" startDist="0" endDist="40"/>
-            <CriticalChancePercent start="45" end="25" startDist="0" endDist="30"/>
-            <ArmorPenetration start="30" end="25" startDist="0" endDist="30"/>
+            <Damage start="28" end="20" startDist="0" endDist="40" />
+            <CriticalChancePercent
+                start="35"
+                end="20"
+                startDist="0"
+                endDist="30"
+            />
+            <ArmorPenetration start="45" end="35" startDist="0" endDist="30" />
         </Params>
     </Ammo>
 
-    <Ammo name="45ACPFMJ_Vector"
+    <Ammo
+        name="45ACPJHP_UMP45"
+        unlockCost="3"
+        tooltip="@ammo_45acp_jhp_name"
+        description="@ammo_45acp_jhp_desc"
+        img="data/models/weapons/attachments/m855_ammo_ui.dds"
+    >
+        <Params
+            roundsPerSecond="10"
+            audibleSoundRadius="70"
+            physicsImpactForce="1.2"
+        >
+            <Damage start="32" end="22" startDist="0" endDist="40" />
+            <CriticalChancePercent
+                start="45"
+                end="25"
+                startDist="0"
+                endDist="30"
+            />
+            <ArmorPenetration start="30" end="25" startDist="0" endDist="30" />
+        </Params>
+    </Ammo>
+
+    <Ammo
+        name="45ACPFMJ_Vector"
         tooltip="@ammo_45acp_fmj_name"
         description="@ammo_45acp_fmj_vector_desc"
         img="data/models/weapons/attachments/m855_ammo_ui.dds"
     >
-        <Params 
+        <Params
             roundsPerSecond="20"
             audibleSoundRadius="75"
             physicsImpactForce="1.2"
         >
-            <Damage start="26" end="18" startDist="0" endDist="40"/>
-            <CriticalChancePercent start="30" end="20" startDist="0" endDist="30"/>
-            <ArmorPenetration start="45" end="35" startDist="0" endDist="30"/>
+            <Damage start="26" end="18" startDist="0" endDist="40" />
+            <CriticalChancePercent
+                start="30"
+                end="20"
+                startDist="0"
+                endDist="30"
+            />
+            <ArmorPenetration start="45" end="35" startDist="0" endDist="30" />
         </Params>
     </Ammo>
 
-    <Ammo name="45ACPJHP_Vector" unlockCost="3"
+    <Ammo
+        name="45ACPJHP_Vector"
+        unlockCost="3"
         tooltip="@ammo_45acp_jhp_name"
         description="@ammo_45acp_jhp_vector_desc"
         img="data/models/weapons/attachments/m855_ammo_ui.dds"
     >
-        <Params 
+        <Params
             roundsPerSecond="20"
             audibleSoundRadius="75"
             physicsImpactForce="1.2"
         >
-            <Damage start="30" end="20" startDist="0" endDist="40"/>
-            <CriticalChancePercent start="40" end="25" startDist="0" endDist="30"/>
-            <ArmorPenetration start="30" end="25" startDist="0" endDist="30"/>
+            <Damage start="30" end="20" startDist="0" endDist="40" />
+            <CriticalChancePercent
+                start="40"
+                end="25"
+                startDist="0"
+                endDist="30"
+            />
+            <ArmorPenetration start="30" end="25" startDist="0" endDist="30" />
         </Params>
     </Ammo>
 </Equipment>

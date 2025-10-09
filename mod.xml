@@ -1,4 +1,8 @@
-<Mod title="Girls&apos; Frontline 2: Door Kickers" gameVersion="112" author="beanpuppy" description="[h2]Girls&apos; Frontline 2: Door Kickers[/h2]
+<Mod
+    title="Girls&apos; Frontline 2: Door Kickers"
+    gameVersion="112"
+    author="beanpuppy"
+    description="[h2]Girls&apos; Frontline 2: Door Kickers[/h2]
 
 [code]Commander, you&apos;re here. Good.
 
@@ -57,4 +61,9 @@ Want to help or contribute? Visit the [url=https://github.com/beanpuppy/girl-kic
 [*] kenji1997 - AssetStudio fork for model extraction
 [*] [url=https://www.instagram.com/luwiss96/]Luwis96[/url] - Commissioned weapon UI images
 [/list]
-" changeNotes="Add ability for all units to kick down locked doors - this requires making a new squad." languageMod="" tags="Playable Units,Equipment,UI" ugcId="3580762170"/>
+"
+    changeNotes="Add ability for all units to kick down locked doors - this requires making a new squad."
+    languageMod=""
+    tags="Playable Units,Equipment,UI"
+    ugcId="3580762170"
+/>

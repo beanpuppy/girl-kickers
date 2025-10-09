@@ -1,2 +1,306 @@
 <DoctrineNodes>
+	<Node
+        name="GFL_404_DreamWonderland"
+        nameUI="@doctrine_gfl_404_dreamwonderland_name"
+        description="@doctrine_gfl_404_dreamwonderland_descr"
+        texturePrefix="data/textures/gui/doctrines/doctrine_empty"
+    >
+		<GiveBuff
+            nodeName="GFL_404_PatchMode"
+            target="self"
+            targetClass="GFL-DOLL-G11"
+        />
+	</Node>
+
+	<!-- Patch Mode: Defensive, always active on G11 -->
+	<Node name="GFL_404_PatchMode">
+		<EquipmentModifier
+            flinchResistance="30"
+            extraCoverage90="8"
+            extraProtection90="3"
+            suppressionRecoveryAdd="20"
+        />
+		<!-- On kill: drinks energy drink, switches to Turbo Mode -->
+		<GiveBuff nodeName="GFL_404_TurboMode" when="kill" durationMs="7000" />
+	</Node>
+
+	<!-- Turbo Mode: Cancels defense, pure offense glass cannon -->
+	<Node name="GFL_404_TurboMode" description="@buff_gfl_404_turbomode">
+		<!-- Cancel Patch Mode defenses -->
+		<EquipmentModifier
+            flinchResistance="-30"
+            extraCoverage90="-8"
+            extraProtection90="-3"
+            suppressionRecoveryAdd="-20"
+        />
+		<!-- Add offensive bonuses -->
+		<EquipmentModifier conditioning="25" />
+		<AttackTypeModifier
+            minRange="0"
+            maxRange="50"
+            accuracyAdd="25"
+            critChanceAdd="15"
+            minAimTime="-100"
+            maxAimTime="-120"
+            resetTime="-80"
+        />
+	</Node>
+
+	<Node
+        name="GFL_404_NoticeMeBigSis"
+        nameUI="@doctrine_gfl_404_noticemebigsis_name"
+        description="@doctrine_gfl_404_noticemebigsis_descr"
+        texturePrefix="data/textures/gui/doctrines/doctrine_empty"
+    >
+		<GiveBuff
+            nodeName="GFL_404_EliteAspirations"
+            target="self"
+            targetClass="GFL-DOLL-HK416"
+        />
+	</Node>
+
+	<Node name="GFL_404_EliteAspirations">
+		<GiveBuff
+            nodeName="GFL_404_BelkaInspired"
+            target="friends_in_radius"
+            targetClass="GFL-DOLL-G28"
+            radius="6.0"
+        />
+	</Node>
+
+	<Node name="GFL_404_BelkaInspired" description="@buff_gfl_404_belkainspired">
+		<EquipmentModifier conditioning="10" />
+		<AttackTypeModifier
+            target="dmr"
+            minRange="15"
+            maxRange="60"
+            accuracyAdd="20"
+            critChanceAdd="12"
+            minAimTime="-60"
+            maxAimTime="-80"
+        />
+		<AttackTypeModifier
+            minRange="0"
+            maxRange="15"
+            accuracyAdd="12"
+            critChanceAdd="8"
+        />
+	</Node>
+
+	<Node
+        name="GFL_404_ShadowsFury"
+        nameUI="@doctrine_gfl_404_shadowsfury_name"
+        description="@doctrine_gfl_404_shadowsfury_descr"
+        texturePrefix="data/textures/gui/doctrines/doctrine_empty"
+    >
+		<GiveBuff
+            nodeName="GFL_404_SistersBond"
+            target="self"
+            targetClass="GFL-DOLL-UMP45"
+        />
+	</Node>
+
+	<!-- UMP45 provides buffs to UMP9 -->
+	<Node name="GFL_404_SistersBond">
+		<!-- Baseline: UMP9 comfortable near big sister -->
+		<GiveBuff
+            nodeName="GFL_404_ShadowPresence"
+            target="friends_in_radius"
+            targetClass="GFL-DOLL-UMP9"
+            radius="6.0"
+        />
+		<!-- When UMP45 fights, UMP9 enters protective fury -->
+		<GiveBuff
+            nodeName="GFL_404_FuryUnleashed"
+            target="friends_in_radius"
+            targetClass="GFL-DOLL-UMP9"
+            when="kill"
+            radius="10.0"
+            durationMs="8000"
+        />
+	</Node>
+
+	<!-- UMP9's baseline buff when near UMP45 -->
+	<Node name="GFL_404_ShadowPresence" description="@buff_gfl_404_shadowpresence">
+		<EquipmentModifier conditioning="8" suppressionRecoveryAdd="20" />
+		<AttackTypeModifier
+            target="smg"
+            minRange="0"
+            maxRange="15"
+            accuracyAdd="12"
+            minAimTime="-40"
+        />
+	</Node>
+
+	<!-- UMP9's fury mode when UMP45 is in combat -->
+	<Node name="GFL_404_FuryUnleashed" description="@buff_gfl_404_furyunleashed">
+		<EquipmentModifier conditioning="20" />
+		<AttackTypeModifier
+            minRange="0"
+            maxRange="20"
+            accuracyAdd="20"
+            critChanceAdd="15"
+            minAimTime="-80"
+            maxAimTime="-100"
+            resetTime="-60"
+        />
+	</Node>
+
+	<Node
+        name="GFL_404_DepressiveMentality"
+        nameUI="@doctrine_gfl_404_depressivementality_name"
+        description="@doctrine_gfl_404_depressivementality_descr"
+        texturePrefix="data/textures/gui/doctrines/doctrine_empty"
+    >
+		<GiveBuff
+            nodeName="GFL_404_DepressiveResilience"
+            target="self"
+            targetClass="GFL-DOLL-VECTOR"
+        />
+	</Node>
+
+	<!-- Vector's pessimistic but resilient nature -->
+	<Node name="GFL_404_DepressiveResilience">
+		<!-- Always prepared for the worst -->
+		<EquipmentModifier suppressionRecoveryAdd="30" flinchResistance="15" />
+		<!-- When damaged: pushes through to the very last moment -->
+		<AttackTypeModifier
+            minRange="0"
+            maxRange="30"
+            onlyWhenDamaged="true"
+            accuracyAdd="20"
+            critChanceAdd="15"
+            minAimTime="-100"
+            maxAimTime="-120"
+            resetTime="-80"
+        />
+	</Node>
+
+	<Node
+        name="GFL_404_DelayedResponse"
+        nameUI="@doctrine_gfl_404_delayedresponse_name"
+        description="@doctrine_gfl_404_delayedresponse_descr"
+        texturePrefix="data/textures/gui/doctrines/doctrine_empty"
+    >
+		<GiveBuff
+            nodeName="GFL_404_IntelligenceOfficer"
+            target="self"
+            targetClass="GFL-DOLL-G36K"
+        />
+	</Node>
+
+	<!-- Andoris: Expert intel, sluggish combat -->
+	<Node name="GFL_404_IntelligenceOfficer">
+		<!-- Intelligence gathering expertise -->
+		<Enable name="HumintNetwork" value="2" />
+		<!-- Well protected despite system issues -->
+		<EquipmentModifier extraCoverage90="5" extraProtection90="2" />
+		<!-- Combat penalties: crashes and delayed responses -->
+		<EquipmentModifier conditioning="-8" />
+		<AttackTypeModifier
+            minRange="0"
+            maxRange="999"
+            minAimTime="+40"
+            maxAimTime="+50"
+            resetTime="+30"
+        />
+	</Node>
+
+	<Node
+        name="GFL_404_HighValueTarget"
+        nameUI="@doctrine_gfl_404_highvaluetarget_name"
+        description="@doctrine_gfl_404_highvaluetarget_descr"
+        texturePrefix="data/textures/gui/doctrines/doctrine_empty"
+    >
+		<!-- Priority targeting system -->
+		<Enable name="PriorityBombers" />
+		<!-- Professional target acquisition and elimination -->
+		<AttackTypeModifier
+            minRange="0"
+            maxRange="50"
+            accuracyAdd="20"
+            minAimTime="-70"
+            maxAimTime="-90"
+            headshotOnShot="2"
+        />
+		<!-- Multi-target engagement -->
+		<AttackTypeModifier
+            minRange="0"
+            maxRange="35"
+            quickSwitchAimTimeMultiplier="70"
+            nearbyTargetBonusCloseness="30"
+        />
+	</Node>
+
+	<Node
+        name="GFL_404_PhantomSignal"
+        nameUI="@doctrine_gfl_404_phantomsignal_name"
+        description="@doctrine_gfl_404_phantomsignal_descr"
+        texturePrefix="data/textures/gui/doctrines/doctrine_empty"
+    >
+		<!-- Electronic warfare broadcasting -->
+		<GiveBuff
+            nodeName="GFL_404_SignalJammed"
+            target="enemies_in_radius"
+            radius="5.0"
+        />
+	</Node>
+
+	<!-- Enemy debuff from EW jamming -->
+	<Node name="GFL_404_SignalJammed" description="@buff_gfl_404_signaljammed">
+		<!-- Communication and targeting systems disrupted -->
+		<EquipmentModifier suppressionRecoveryAdd="-20" />
+		<AttackTypeModifier
+            minRange="0"
+            maxRange="999"
+            accuracyAdd="-12"
+            minAimTime="+35"
+            maxAimTime="+50"
+            resetTime="+25"
+        />
+	</Node>
+
+	<Node
+        name="GFL_404_DamageControl"
+        nameUI="@doctrine_gfl_404_damagecontrol_name"
+        description="@doctrine_gfl_404_damagecontrol_descr"
+        texturePrefix="data/textures/gui/doctrines/doctrine_empty"
+    >
+		<!-- Always ready for problems -->
+		<EquipmentModifier
+            suppressionRecoveryAdd="40"
+            flinchResistance="15"
+            conditioning="12"
+        />
+		<!-- Crisis management: when damaged, clean up harder -->
+		<AttackTypeModifier
+            minRange="0"
+            maxRange="35"
+            onlyWhenDamaged="true"
+            accuracyAdd="15"
+            critChanceAdd="10"
+            minAimTime="-60"
+            resetTime="-50"
+        />
+	</Node>
+
+	<Node
+        name="GFL_404_CloseQuartersDominance"
+        nameUI="@doctrine_gfl_404_cqcdominance_name"
+        description="@doctrine_gfl_404_cqcdominance_descr"
+        texturePrefix="data/textures/gui/doctrines/doctrine_empty"
+    >
+		<!-- Aggressive movement and positioning -->
+		<EquipmentModifier conditioning="12" />
+		<!-- Close-range lethality -->
+		<AttackTypeModifier
+            minRange="0"
+            maxRange="15"
+            accuracyAdd="20"
+            critChanceAdd="15"
+            minAimTime="-80"
+            maxAimTime="-100"
+            resetTime="-60"
+        />
+	</Node>
 </DoctrineNodes>
