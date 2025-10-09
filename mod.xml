@@ -62,7 +62,11 @@ Want to help or contribute? Visit the [url=https://github.com/beanpuppy/girl-kic
 [*] [url=https://www.instagram.com/luwiss96/]Luwis96[/url] - Commissioned weapon UI images
 [/list]
 "
-    changeNotes="Add ability for all units to kick down locked doors - this requires making a new squad."
+    changeNotes="Fix one of DEFY doctrine nodes not being visible.
+Add initial doctrines for 404 and Zucchero (no UI art).
+Add suppressive fire ability to weapons: AK-15, G36, and G36K.
+Small balance changes.
+"
     languageMod=""
     tags="Playable Units,Equipment,UI"
     ugcId="3580762170"
