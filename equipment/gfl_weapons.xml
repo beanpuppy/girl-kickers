@@ -135,6 +135,7 @@
             accuracyStartDist="8"
             accuracyEndDist="45"
             suppressionScale="1.1"
+            suppressArea="1"
         />
 
 		<Params
@@ -153,6 +154,10 @@
 			<AttackType name="CIA_AKAimedFire" rangeMeters="40" />
 			<AttackType name="CIA_AKAimedFireXX" rangeMeters="9999" />
 		</AttackTypes>
+
+		<AttackTypesSuppressiveFire>
+			<AttackType name="AreaSuppression_Auto" rangeMeters="9999" />
+		</AttackTypesSuppressiveFire>
 
 		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
 			<Flare particles="FX_MUZZLE_FLASH_RIFLE_01" />
@@ -394,6 +399,7 @@
             accuracyEnd="50"
             accuracyStartDist="7"
             accuracyEndDist="45"
+            suppressArea="1"
         />
 
 		<Params
@@ -412,6 +418,10 @@
 			<AttackType name="NWS_CarbineAimedFire" rangeMeters="40" />
 			<AttackType name="NWS_CarbineAimedFireXX" rangeMeters="9999" />
 		</AttackTypes>
+
+		<AttackTypesSuppressiveFire>
+			<AttackType name="AreaSuppression_Auto" rangeMeters="9999" />
+		</AttackTypesSuppressiveFire>
 
 		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
 			<Flare particles="FX_MUZZLE_FLASH_RIFLE_01" />
@@ -751,6 +761,7 @@
             accuracyEnd="60"
             accuracyStartDist="10"
             accuracyEndDist="60"
+            suppressArea="1"
         />
 
 		<Params
@@ -770,6 +781,10 @@
 			<AttackType name="NWS_CarbineAimedFire" rangeMeters="40" />
 			<AttackType name="NWS_CarbineAimedFireXX" rangeMeters="9999" />
 		</AttackTypes>
+
+		<AttackTypesSuppressiveFire>
+			<AttackType name="AreaSuppression_Auto" rangeMeters="9999" />
+		</AttackTypesSuppressiveFire>
 
 		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
 			<Flare particles="FX_MUZZLE_FLASH_RIFLE_01" />
