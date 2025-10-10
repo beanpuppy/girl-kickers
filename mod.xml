@@ -1,8 +1,4 @@
-<Mod
-    title="Girls&apos; Frontline 2: Door Kickers"
-    gameVersion="112"
-    author="beanpuppy"
-    description="[h2]Girls&apos; Frontline 2: Door Kickers[/h2]
+<Mod title="Girls&apos; Frontline 2: Door Kickers" gameVersion="112" author="beanpuppy" description="[h2]Girls&apos; Frontline 2: Door Kickers[/h2]
 
 [code]Commander, you&apos;re here. Good.
 
@@ -59,15 +55,9 @@ Want to help or contribute? Visit the [url=https://github.com/beanpuppy/girl-kic
 [list]
 [*] MICA Team - Girls&apos; Frontline 2: Exilium
 [*] kenji1997 - AssetStudio fork for model extraction
-[*] [url=https://www.instagram.com/luwiss96/]Luwis96[/url] - Commissioned weapon UI images
+[*] [url=https://www.instagram.com/luwiss96/]Luwis96[/url] - Commissioned weapon UI images 
 [/list]
-"
-    changeNotes="Fix one of DEFY doctrine nodes not being visible.
-Add initial doctrines for 404 and Zucchero (no UI art).
-Add suppressive fire ability to weapons: AK-15, G36, and G36K.
-Small balance changes.
-"
-    languageMod=""
-    tags="Playable Units,Equipment,UI"
-    ugcId="3580762170"
-/>
+" changeNotes="Fix Andoris doctine not revealing enemies at mission start.
+Balance changes:
+- Minor health reduction to all dolls.
+- Reduce rate of fire and increase damage of M1903 and WA2000." languageMod="" tags="Playable Units,Equipment,UI" ugcId="3580762170"/>
