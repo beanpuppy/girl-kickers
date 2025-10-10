@@ -3,12 +3,35 @@
 		<to name="GFL-UNIT-DEFY" />
 		<to name="GFL-UNIT-404" />
 		<to name="GFL-UNIT-CAFE" />
+		<to name="GFL-UNIT-GROZA" />
 	</Bind>
 
 	<Bind eqp="GFL_OcularEnhancement">
 		<to name="GFL-UNIT-DEFY" />
 		<to name="GFL-UNIT-404" />
 		<to name="GFL-UNIT-CAFE" />
+		<to name="GFL-UNIT-GROZA" />
+	</Bind>
+
+	<Bind eqp="GFL_ReactiveShielding">
+		<to name="GFL-UNIT-DEFY" />
+		<to name="GFL-UNIT-404" />
+		<to name="GFL-UNIT-CAFE" />
+		<to name="GFL-UNIT-GROZA" />
+	</Bind>
+
+	<Bind eqp="GFL_CombatMatrix">
+		<to name="GFL-UNIT-DEFY" />
+		<to name="GFL-UNIT-404" />
+		<to name="GFL-UNIT-CAFE" />
+		<to name="GFL-UNIT-GROZA" />
+	</Bind>
+
+	<Bind eqp="GFL_HardenedCore">
+		<to name="GFL-UNIT-DEFY" />
+		<to name="GFL-UNIT-404" />
+		<to name="GFL-UNIT-CAFE" />
+		<to name="GFL-UNIT-GROZA" />
 	</Bind>
 
 	<Helmet
@@ -25,12 +48,6 @@
 			<ProtectionArc degrees="360" coveragePercent="0" piercingProtectionLevel="0" />
 		</Params>
 	</Helmet>
-
-	<Bind eqp="GFL_ReactiveShielding">
-		<to name="GFL-UNIT-DEFY" />
-		<to name="GFL-UNIT-404" />
-		<to name="GFL-UNIT-CAFE" />
-	</Bind>
 
 	<Armor
         name="GFL_ReactiveShielding"
@@ -57,12 +74,6 @@
             />
 		</Params>
 	</Armor>
-
-	<Bind eqp="GFL_CombatMatrix">
-		<to name="GFL-UNIT-DEFY" />
-		<to name="GFL-UNIT-404" />
-		<to name="GFL-UNIT-CAFE" />
-	</Bind>
 
 	<Armor
         name="GFL_CombatMatrix"
@@ -93,12 +104,6 @@
 		</Params>
 	</Armor>
 
-	<Bind eqp="GFL_HardenedCore">
-		<to name="GFL-UNIT-DEFY" />
-		<to name="GFL-UNIT-404" />
-		<to name="GFL-UNIT-CAFE" />
-	</Bind>
-
 	<Armor
         name="GFL_HardenedCore"
         inventoryBinding="Armor"
@@ -128,10 +133,15 @@
 		</Params>
 	</Armor>
 
-	<Bind to="GFL-UNIT-DEFY">
-		<eqp name="GFL-WEAP-AK15" />
-		<eqp name="GFL-WEAP-AN94" />
+    <Bind to="GFL-DOLL-AK15">
+        <eqp name="GFL-WEAP-AK15" />
+    </Bind>
 
+    <Bind to="GFL-DOLL-AN94">
+        <eqp name="GFL-WEAP-AN94" />
+    </Bind>
+
+	<Bind to="GFL-UNIT-DEFY">
 		<!-- Pistols -->
         <eqp name="M9 Pistol" />
         <eqp name="M17 Pistol" />
@@ -189,16 +199,36 @@
         <eqp name="EmptyPrimaryMuzzle" />
         <eqp name="EmptySecondaryMuzzle" />
 	</Bind>
+
+    <Bind to="GFL-DOLL-HK416">
+        <eqp name="GFL-WEAP-HK416" />
+    </Bind>
+
+    <Bind to="GFL-DOLL-G11">
+        <eqp name="GFL-WEAP-G11" />
+    </Bind>
+
+    <Bind to="GFL-DOLL-G36K">
+        <eqp name="GFL-WEAP-G36K" />
+    </Bind>
+
+    <Bind to="GFL-DOLL-G28">
+        <eqp name="GFL-WEAP-G28" />
+    </Bind>
+
+    <Bind to="GFL-DOLL-UMP45">
+        <eqp name="GFL-WEAP-UMP45" />
+    </Bind>
+
+    <Bind to="GFL-DOLL-UMP9">
+        <eqp name="GFL-WEAP-UMP9" />
+    </Bind>
+
+    <Bind to="GFL-DOLL-VECTOR">
+        <eqp name="GFL-WEAP-VECTOR" />
+    </Bind>
 
 	<Bind to="GFL-UNIT-404">
-		<eqp name="GFL-WEAP-HK416" />
-		<eqp name="GFL-WEAP-G11" />
-		<eqp name="GFL-WEAP-G36K" />
-		<eqp name="GFL-WEAP-G28" />
-		<eqp name="GFL-WEAP-UMP45" />
-		<eqp name="GFL-WEAP-UMP9" />
-		<eqp name="GFL-WEAP-VECTOR" />
-
 		<!-- Pistols -->
         <eqp name="M9 Pistol" />
         <eqp name="M17 Pistol" />
@@ -257,12 +287,86 @@
         <eqp name="EmptySecondaryMuzzle" />
 	</Bind>
 
-	<Bind to="GFL-UNIT-CAFE">
-		<eqp name="GFL-WEAP-M1903" />
-		<eqp name="GFL-WEAP-WA2000" />
-		<eqp name="GFL-WEAP-G36" />
-		<eqp name="GFL-WEAP-XCR" />
+    <Bind to="GFL-DOLL-M1903">
+        <eqp name="GFL-WEAP-M1903" />
+    </Bind>
 
+    <Bind to="GFL-DOLL-WA2000">
+        <eqp name="GFL-WEAP-WA2000" />
+    </Bind>
+
+    <Bind to="GFL-DOLL-G36">
+        <eqp name="GFL-WEAP-G36" />
+    </Bind>
+
+    <Bind to="GFL-DOLL-XCR">
+        <eqp name="GFL-WEAP-XCR" />
+    </Bind>
+
+	<Bind to="GFL-UNIT-CAFE">
+		<!-- Pistols -->
+        <eqp name="M9 Pistol" />
+        <eqp name="M17 Pistol" />
+		<eqp name="M18 Pistol" />
+        <eqp name="G19X Pistol" />
+        <eqp name="G2240 Pistol" />
+        <eqp name="1911 Pistol" />
+
+		<!-- Utility -->
+		<eqp name="Stinger Single" />
+        <eqp name="Stinger" />
+        <eqp name="Slap Charge Kit" />
+        <eqp name="Smoke Grenade Single" />
+		<eqp name="Smoke Grenade" />
+		<eqp name="Smoke Grenade Kit" />
+		<eqp name="Frag Grenade Single" />
+        <eqp name="Frag Grenade" />
+		<eqp name="Frag Grenade Kit" />
+		<eqp name="Flashbang Single" />
+        <eqp name="Flashbang" />
+		<eqp name="Flashbang Kit" />
+		<eqp name="Molotov Single" />
+        <eqp name="Molotov Pyro" />
+		<eqp name="Slap Charge" />
+		<eqp name="Slap Charge Kit" />
+		<eqp name="TEC Torch" />
+
+		<!-- Gear -->
+		<eqp name="Spy Camera" />
+        <eqp name="Dynamic Hammer" />
+        <eqp name="Bolt Cutter" />
+        <eqp name="Breaching Charge" />
+        <eqp name="Breacher Shotgun" />
+        <eqp name="AT4 Rocket Launcher" />
+        <eqp name="RPG 26 CIA BOps" />
+        <eqp name="M320HE" />
+        <eqp name="M320HEDP" />
+
+		<!-- NVG -->
+		<eqp name="NVG" />
+        <eqp name="NVG_02" />
+
+		<!-- Armor -->
+        <eqp name="Concealable LVL2" />
+		<eqp name="Concealable LVL3" />
+        <eqp name="Tactical Lining" />
+
+		<eqp name="EmptyUtility" />
+        <eqp name="EmptySecondary" />
+        <eqp name="EmptyPrimary" />
+        <eqp name="EmptyHelmet" />
+        <eqp name="EmptyHelmetNVG" />
+        <eqp name="EmptyArmor" />
+        <eqp name="EmptySupportGear" />
+        <eqp name="EmptyPrimaryMuzzle" />
+        <eqp name="EmptySecondaryMuzzle" />
+	</Bind>
+
+    <Bind to="GFL-DOLL-HARE">
+        <eqp name="GFL-WEAP-HARE" />
+    </Bind>
+
+	<Bind to="GFL-UNIT-GROZA">
 		<!-- Pistols -->
         <eqp name="M9 Pistol" />
         <eqp name="M17 Pistol" />

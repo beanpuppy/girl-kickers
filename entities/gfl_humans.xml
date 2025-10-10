@@ -63,7 +63,7 @@
 			<Brain suppressionRecovery="80.0" />
 
 			<Mobility>
-				<MoveSpeed min="1.3" defaultMetersPerSec="2.5" max="10" />
+				<MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
 				<TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
 			</Mobility>
 
@@ -143,7 +143,7 @@
 			<Brain suppressionRecovery="60.0" />
 
 			<Mobility>
-				<MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10" />
+				<MoveSpeed min="1.1" defaultMetersPerSec="2.5" max="10" />
 				<TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
 			</Mobility>
 
@@ -183,7 +183,7 @@
 			<Brain suppressionRecovery="60.0" />
 
 			<Mobility>
-				<MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10" />
+				<MoveSpeed min="1.1" defaultMetersPerSec="2.5" max="10" />
 				<TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
 			</Mobility>
 
@@ -223,7 +223,7 @@
 			<Brain suppressionRecovery="60.0" />
 
 			<Mobility>
-				<MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10" />
+				<MoveSpeed min="1.1" defaultMetersPerSec="2.5" max="10" />
 				<TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
 			</Mobility>
 
@@ -263,7 +263,7 @@
 			<Brain suppressionRecovery="80.0" />
 
 			<Mobility>
-				<MoveSpeed min="1.3" defaultMetersPerSec="2.5" max="10" />
+				<MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
 				<TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
 			</Mobility>
 
@@ -303,7 +303,7 @@
 			<Brain suppressionRecovery="80.0" />
 
 			<Mobility>
-				<MoveSpeed min="1.3" defaultMetersPerSec="2.5" max="10" />
+				<MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
 				<TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
 			</Mobility>
 
@@ -383,7 +383,7 @@
 			<Brain suppressionRecovery="80.0" />
 
 			<Mobility>
-				<MoveSpeed min="1.3" defaultMetersPerSec="2.5" max="10" />
+				<MoveSpeed min="1.3" defaultMetersPerSec="2.2" max="10" />
 				<TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
 			</Mobility>
 
@@ -423,7 +423,7 @@
 			<Brain suppressionRecovery="80.0" />
 
 			<Mobility>
-				<MoveSpeed min="1.3" defaultMetersPerSec="2.5" max="10" />
+				<MoveSpeed min="1.3" defaultMetersPerSec="2.2" max="10" />
 				<TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
 			</Mobility>
 
@@ -503,13 +503,52 @@
 			<Brain suppressionRecovery="60.0" />
 
 			<Mobility>
-				<MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10" />
+				<MoveSpeed min="1.1" defaultMetersPerSec="2.5" max="10" />
 				<TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
 			</Mobility>
 
 			<Equipment>
 				<Item name="GFL-WEAP-XCR" />
 				<Item name="IronSights" />
+				<Item name="M9 Pistol" />
+				<Item name="IronSights_Pistol" />
+				<Item name="Flashbang" />
+				<Item name="Frag Grenade" />
+				<Item name="FeetOfSteel" />
+			</Equipment>
+		</Human>
+	</Entity>
+
+	<Entity name="GROZA-HARE" type="Human" editorAutoHeight="false">
+		<RenderObject3D
+            model="data/models/dolls/hare.khm"
+            diffuseTex="data/models/dolls/hare.dds"
+        />
+
+		<Breakable
+            template="GenericTrooperGibs"
+            breakOnDamage="explosive"
+            deleteOnDeath="false"
+        />
+		<PhysicalParams health="300" />
+
+		<Human type="GoodGuy" unit="GFL-UNIT-GROZA" class="GFL-DOLL-HARE">
+			<Id
+                name="CAFE-HARE"
+                portrait="data/textures/portraits/gfl_hare.dds"
+                gender="0"
+                voicePack="cia_female"
+            />
+			<FOV degrees="135" distanceMeters="999" eyeRadiusMeters="0.6" />
+			<Brain suppressionRecovery="100" />
+
+			<Mobility>
+				<MoveSpeed min="2" defaultMetersPerSec="3.3" max="15" />
+				<TurnSpeed min="12" defaultMetersPerSec="18" max="30" />
+			</Mobility>
+
+			<Equipment>
+				<Item name="GFL-WEAP-HARE" />
 				<Item name="M9 Pistol" />
 				<Item name="IronSights_Pistol" />
 				<Item name="Flashbang" />

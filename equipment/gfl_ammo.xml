@@ -219,4 +219,14 @@
             <ArmorPenetration start="30" end="25" startDist="0" endDist="30" />
         </Params>
     </Ammo>
+
+    <Ammo name="hare_no_ammo" tooltip="@no_ammo_name" description="@no_ammo_desc" img="data/models/weapons/attachments/no_ammo_ui.dds">
+        <Params roundsPerSecond="2" audibleSoundRadius="1.2" physicsImpactForce="0">
+            <Damage start="100" end="100" startDist="0" endDist="4"/>
+            <CriticalChancePercent start="50" end="50" startDist="0" endDist="4"/>
+            <ArmorPenetration start="100" end="100" startDist="0" endDist="4"/>
+        </Params>
+    </Ammo>
+
+    <Scope name="no_sights" inventoryBinding="PrimaryWeaponScope" tooltip="@scope_no_sights_name" description="@scope_no_sights_desc" img="data/models/weapons/attachments/no_sights_ui.dds"><Params/></Scope>
 </Equipment>

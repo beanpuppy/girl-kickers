@@ -496,4 +496,102 @@
             <Node name="GFL_CAFE_VelvetLatte" minSquadLevel="10" />
         </Doctrine>
     </Unit>
+
+    <Unit
+        name="GFL-UNIT-GROZA"
+        nameUI="@GFL-UNIT-GROZA-NAME"
+        description="@GFL-UNIT-GROZA-DESC"
+        flagTex="data/textures/gfl_groza_bg.dds"
+        flagColor="a1251f"
+        movie="data/movies/unlock_swat.ogv"
+        rndNameEntry="@#GFL-UNIT-GROZA-NAME-RND"
+        voicepack="commander_eng"
+        incapacitationChance="80"
+        incapacitationChanceCrit="25"
+    >
+        <Classes>
+            <Class
+                name="GFL-DOLL-HARE"
+                nameUI="KROLIK"
+                description="@DOLL-HARE-DESC"
+                numSlots="1"
+                supply="100"
+                iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
+                upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2"
+                maxUpgradeable="2"
+            />
+        </Classes>
+
+        <TrooperRanks>
+            <Rank
+                name="@agent_rank_0"
+                xpNeeded="0"
+                badgeTex="data/textures/gui/customization/cia_rank_01.dds"
+            />
+            <Rank
+                name="@agent_rank_1"
+                xpNeeded="700"
+                badgeTex="data/textures/gui/customization/cia_rank_02.dds"
+            />
+            <Rank
+                name="@agent_rank_2"
+                xpNeeded="2300"
+                badgeTex="data/textures/gui/customization/cia_rank_03.dds"
+            />
+            <Rank
+                name="@agent_rank_3"
+                xpNeeded="5600"
+                badgeTex="data/textures/gui/customization/cia_rank_04.dds"
+            />
+            <Rank
+                name="@agent_rank_4"
+                xpNeeded="11800"
+                badgeTex="data/textures/gui/customization/cia_rank_05.dds"
+            />
+            <Rank
+                name="@agent_rank_5"
+                xpNeeded="22400"
+                badgeTex="data/textures/gui/customization/cia_rank_06.dds"
+            />
+            <Rank
+                name="@agent_rank_6"
+                xpNeeded="38400"
+                badgeTex="data/textures/gui/customization/cia_rank_07.dds"
+            />
+            <Rank
+                name="@agent_rank_7"
+                xpNeeded="60200"
+                badgeTex="data/textures/gui/customization/cia_rank_08.dds"
+            />
+            <Rank
+                name="@agent_rank_8"
+                xpNeeded="86400"
+                badgeTex="data/textures/gui/customization/cia_rank_09.dds"
+            />
+            <Rank
+                name="@agent_rank_9"
+                xpNeeded="126400"
+                badgeTex="data/textures/gui/customization/cia_rank_10.dds"
+            />
+        </TrooperRanks>
+
+        <Ranks>
+            <Rank xpNeeded="0" badgeTex="" />
+            <Rank xpNeeded="4000" badgeTex="" />
+            <Rank xpNeeded="9000" badgeTex="" />
+            <Rank xpNeeded="14980" badgeTex="" />
+            <Rank xpNeeded="21920" badgeTex="" />
+            <Rank xpNeeded="29800" badgeTex="" />
+            <Rank xpNeeded="38600" badgeTex="" />
+            <Rank xpNeeded="48310" badgeTex="" />
+            <Rank xpNeeded="58900" badgeTex="" />
+            <Rank xpNeeded="70360" badgeTex="" />
+            <Rank xpNeeded="82680" badgeTex="" />
+            <Rank xpNeeded="95820" badgeTex="" />
+            <Rank xpNeeded="109790" badgeTex="" />
+            <Rank xpNeeded="124550" badgeTex="" />
+            <Rank xpNeeded="140100" badgeTex="" />
+            <Rank xpNeeded="156420" badgeTex="" />
+        </Ranks>
+    </Unit>
 </Units>

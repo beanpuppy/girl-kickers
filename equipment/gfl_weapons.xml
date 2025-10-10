@@ -1149,4 +1149,54 @@
 			<Empty name="gen_empty" />
 		</Sounds>
 	</Firearm>
+
+    <Bind eqp="GFL-WEAP-HARE">
+		<to name="hare_no_ammo"/>
+		<to name="no_sights"/>
+	</Bind>
+ 	<Firearm name="GFL-WEAP-HARE" inventoryBinding="PrimaryWeapon" category="melee" unlockCost="6"
+			tooltip="@WEAP-HARE-NAME"
+			description="@WEAP-HARE-DESC"
+			img="data/models/weapons/sword_ui.dds"
+
+			animationSet="melee"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-5" turnSpeedModifierPercent="-2"/>
+		<RenderObject3D model="data/models/weapons/hare.khm" skipGOSSAO="true" diffuseTex="data/models/weapons/hare.dds" />
+
+		<ModifiableParams
+			changeInTime="800"
+			changeOutTime="600"
+			efficiencyPercent="100"
+			audibleSoundRadius="1.2"
+
+			meleeDamageBonus="50"
+			meleeReach="1.2"
+			meleeAttackCooldown="450"
+			meleeAttackDuration="300"
+			roundsPerMagazine="0"
+
+			reloadTime="5"
+			reloadEmptyTime="5"
+			readyTime="20"
+			guardTime="20"
+
+			accuracyStart="90"
+			accuracyEnd="90"
+			accuracyStartDist="0"
+			accuracyEndDist="5"
+		/>
+
+		<Params
+			operationInfoText="@firearm_operation_melee"
+		/>
+
+		<AttackTypes>
+			<AttackType name="Rangers_PumpAimedFire" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<Sounds>
+			<Fire name="melee_hit"/>
+		</Sounds>
+	</Firearm>
 </Equipment>

@@ -92,4 +92,12 @@
         gender="0"
         customName="SHARKRY"
     />
+
+	<Portrait
+        tex="data/textures/portraits/gfl_hare.dds"
+        unit="GFL-UNIT-GROZA"
+        class="GFL-DOLL-HARE"
+        gender="0"
+        customName="KROLIK"
+    />
 </HumanIdentities>

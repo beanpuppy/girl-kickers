@@ -83,6 +83,19 @@
 @WEAP-XCR-NAME=XCR-L Standard
 @WEAP-XCR-DESC=The XCR is a line of American rifles by Robinson Armament Co. It was developed for the Special Operations Forces Combat Assault Rifle competition (which would be won by FN's SCAR line) but ultimately never joined it.
 
+@GFL-UNIT-GROZA-NAME=Groza Squad
+@GFL-UNIT-GROZA-DESC=Groza Squad
+@#GFL-UNIT-GROZA-NAME-RND=Groza Squad
+
+@DOLL-HARE-DESC=She has a bit of a temper and shows little interest in matters unrelated to herself, but her sense of responsibility is beyond reproach. Even if she is assigned a mission she absolutely detests, such as "serving as Nemesis' exclusive translator", she will still give it her all.
+@WEAP-HARE-NAME=Hare
+@WEAP-HARE-DESC=A melee weapon highly compatible with Krolik. Modified based on her combat preferences and painted with a skin that matches Krolik's colors.
+
+@no_ammo_name=None
+@no_ammo_desc=
+@scope_no_sights_name=None
+@scope_no_sights_desc=
+
 @helmet_gfl_ocular_name=Night Eyes
 @helmet_gfl_ocular_desc=Enhanced optical systems for night vision integration. Allows direct NVG interface without physical mounting hardware.
 
