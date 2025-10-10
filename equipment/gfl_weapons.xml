@@ -1150,6 +1150,7 @@
 		</Sounds>
 	</Firearm>
 
+<!-- Hare -->
     <Bind eqp="GFL-WEAP-HARE">
 		<to name="hare_no_ammo"/>
 		<to name="no_sights"/>
