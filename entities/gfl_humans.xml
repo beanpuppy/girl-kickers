@@ -10,7 +10,7 @@
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-		<PhysicalParams health="300" />
+		<PhysicalParams health="275" />
 
 		<Human type="GoodGuy" unit="GFL-UNIT-DEFY" class="GFL-DOLL-AN94">
 			<Id
@@ -90,7 +90,7 @@
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-		<PhysicalParams health="300" />
+		<PhysicalParams health="275" />
 
 		<Human type="GoodGuy" unit="GFL-UNIT-404" class="GFL-DOLL-HK416">
 			<Id
@@ -130,7 +130,7 @@
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-		<PhysicalParams health="200" />
+		<PhysicalParams health="175" />
 
 		<Human type="GoodGuy" unit="GFL-UNIT-404" class="GFL-DOLL-G11">
 			<Id
@@ -139,8 +139,8 @@
                 gender="0"
                 voicePack="cia_female"
             />
-			<FOV degrees="110" distanceMeters="999" eyeRadiusMeters="0.6" />
-			<Brain suppressionRecovery="40.0" />
+			<FOV degrees="120" distanceMeters="999" eyeRadiusMeters="0.6" />
+			<Brain suppressionRecovery="60.0" />
 
 			<Mobility>
 				<MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10" />
@@ -170,7 +170,7 @@
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-		<PhysicalParams health="200" />
+		<PhysicalParams health="175" />
 
 		<Human type="GoodGuy" unit="GFL-UNIT-404" class="GFL-DOLL-G36K">
 			<Id
@@ -179,8 +179,8 @@
                 gender="0"
                 voicePack="cia_female"
             />
-			<FOV degrees="110" distanceMeters="999" eyeRadiusMeters="0.6" />
-			<Brain suppressionRecovery="40.0" />
+			<FOV degrees="120" distanceMeters="999" eyeRadiusMeters="0.6" />
+			<Brain suppressionRecovery="60.0" />
 
 			<Mobility>
 				<MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10" />
@@ -210,7 +210,7 @@
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-		<PhysicalParams health="200" />
+		<PhysicalParams health="175" />
 
 		<Human type="GoodGuy" unit="GFL-UNIT-404" class="GFL-DOLL-G28">
 			<Id
@@ -219,8 +219,8 @@
                 gender="0"
                 voicePack="cia_female"
             />
-			<FOV degrees="110" distanceMeters="999" eyeRadiusMeters="0.6" />
-			<Brain suppressionRecovery="40.0" />
+			<FOV degrees="120" distanceMeters="999" eyeRadiusMeters="0.6" />
+			<Brain suppressionRecovery="60.0" />
 
 			<Mobility>
 				<MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10" />
@@ -250,7 +250,7 @@
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-		<PhysicalParams health="300" />
+		<PhysicalParams health="250" />
 
 		<Human type="GoodGuy" unit="GFL-UNIT-404" class="GFL-DOLL-UMP45">
 			<Id
@@ -290,7 +290,7 @@
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-		<PhysicalParams health="300" />
+		<PhysicalParams health="250" />
 
 		<Human type="GoodGuy" unit="GFL-UNIT-404" class="GFL-DOLL-UMP9">
 			<Id
@@ -330,7 +330,7 @@
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-		<PhysicalParams health="300" />
+		<PhysicalParams health="250" />
 
 		<Human type="GoodGuy" unit="GFL-UNIT-404" class="GFL-DOLL-VECTOR">
 			<Id
@@ -370,7 +370,7 @@
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-		<PhysicalParams health="300" />
+		<PhysicalParams health="225" />
 
 		<Human type="GoodGuy" unit="GFL-UNIT-CAFE" class="GFL-DOLL-M1903">
 			<Id
@@ -410,7 +410,7 @@
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-		<PhysicalParams health="300" />
+		<PhysicalParams health="225" />
 
 		<Human type="GoodGuy" unit="GFL-UNIT-CAFE" class="GFL-DOLL-WA2000">
 			<Id
@@ -450,7 +450,7 @@
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-		<PhysicalParams health="300" />
+		<PhysicalParams health="250" />
 
 		<Human type="GoodGuy" unit="GFL-UNIT-CAFE" class="GFL-DOLL-G36">
 			<Id
@@ -490,7 +490,7 @@
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-		<PhysicalParams health="300" />
+		<PhysicalParams health="225" />
 
 		<Human type="GoodGuy" unit="GFL-UNIT-CAFE" class="GFL-DOLL-XCR">
 			<Id
@@ -499,8 +499,8 @@
                 gender="0"
                 voicePack="cia_female"
             />
-			<FOV degrees="110" distanceMeters="999" eyeRadiusMeters="0.6" />
-			<Brain suppressionRecovery="40.0" />
+			<FOV degrees="130" distanceMeters="999" eyeRadiusMeters="0.6" />
+			<Brain suppressionRecovery="60.0" />
 
 			<Mobility>
 				<MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10" />

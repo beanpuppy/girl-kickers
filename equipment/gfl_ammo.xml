@@ -41,12 +41,12 @@
         img="data/models/weapons/attachments/m855_ammo_ui.dds"
     >
         <Params
-            roundsPerSecond="1.5"
+            roundsPerSecond="1"
             audibleSoundRadius="90"
             physicsImpactForce="1.5"
             overpenetrates="1"
         >
-            <Damage start="32" end="28" startDist="0" endDist="100" />
+            <Damage start="45" end="40" startDist="0" endDist="100" />
             <CriticalChancePercent
                 start="45"
                 end="35"
@@ -65,13 +65,13 @@
         img="data/models/weapons/attachments/m855_ammo_ui.dds"
     >
         <Params
-            roundsPerSecond="1.5"
+            roundsPerSecond="1"
             audibleSoundRadius="90"
             physicsImpactForce="1.5"
             accuracyAdd="30"
             overpenetrates="1"
         >
-            <Damage start="35" end="30" startDist="0" endDist="100" />
+            <Damage start="50" end="44" startDist="0" endDist="100" />
             <CriticalChancePercent
                 start="55"
                 end="40"
@@ -89,12 +89,12 @@
         img="data/models/weapons/attachments/m855_ammo_ui.dds"
     >
         <Params
-            roundsPerSecond="2.5"
+            roundsPerSecond="1.5"
             audibleSoundRadius="95"
             physicsImpactForce="1.8"
             overpenetrates="1"
         >
-            <Damage start="35" end="30" startDist="0" endDist="100" />
+            <Damage start="40" end="35" startDist="0" endDist="100" />
             <CriticalChancePercent
                 start="40"
                 end="35"
@@ -113,13 +113,13 @@
         img="data/models/weapons/attachments/m855_ammo_ui.dds"
     >
         <Params
-            roundsPerSecond="2.5"
+            roundsPerSecond="1.5"
             audibleSoundRadius="95"
             physicsImpactForce="1.8"
             accuracyAdd="30"
             overpenetrates="1"
         >
-            <Damage start="38" end="33" startDist="0" endDist="100" />
+            <Damage start="45" end="40" startDist="0" endDist="100" />
             <CriticalChancePercent
                 start="50"
                 end="40"
