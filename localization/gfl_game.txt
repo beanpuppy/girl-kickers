@@ -100,6 +100,7 @@
 @GFL-UNIT-GROZA-DESC=Groza Squad
 @#GFL-UNIT-GROZA-NAME-RND=Groza Squad
 
+@DOLL-HARE-NAME=KROLIK
 @DOLL-HARE-DESC=She has a bit of a temper and shows little interest in matters unrelated to herself, but her sense of responsibility is beyond reproach. Even if she is assigned a mission she absolutely detests, such as "serving as Nemesis' exclusive translator", she will still give it her all.
 @WEAP-HARE-NAME=Hare
 @WEAP-HARE-DESC=A melee weapon highly compatible with Krolik. Modified based on her combat preferences and painted with a skin that matches Krolik's colors.

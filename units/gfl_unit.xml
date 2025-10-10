@@ -512,7 +512,7 @@
         <Classes>
             <Class
                 name="GFL-DOLL-HARE"
-                nameUI="KROLIK"
+                nameUI="@DOLL-HARE-NAME"
                 description="@DOLL-HARE-DESC"
                 numSlots="1"
                 supply="100"
