@@ -182,6 +182,7 @@
         description="@doctrine_gfl_404_delayedresponse_descr"
         texturePrefix="data/textures/gui/doctrines/doctrine_empty"
     >
+		<Enable name="HumintNetwork" value="2" />
 		<GiveBuff
             nodeName="GFL_404_IntelligenceOfficer"
             target="self"
@@ -191,11 +192,7 @@
 
 	<!-- Andoris: Expert intel, sluggish combat -->
 	<Node name="GFL_404_IntelligenceOfficer">
-		<!-- Intelligence gathering expertise -->
-		<Enable name="HumintNetwork" value="2" />
-		<!-- Well protected despite system issues -->
 		<EquipmentModifier extraCoverage90="5" extraProtection90="2" />
-		<!-- Combat penalties: crashes and delayed responses -->
 		<EquipmentModifier conditioning="-8" />
 		<AttackTypeModifier
             minRange="0"
