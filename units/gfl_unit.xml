@@ -14,7 +14,7 @@
         <Classes>
             <Class
                 name="GFL-DOLL-AN94"
-                nameUI="ALVA"
+                nameUI="@DOLL-AN94-NAME"
                 description="@DOLL-AN94-DESC"
                 numSlots="1"
                 supply="100"
@@ -24,7 +24,7 @@
             />
             <Class
                 name="GFL-DOLL-AK15"
-                nameUI="VOYMASTINA"
+                nameUI="@DOLL-AK15-NAME"
                 description="@DOLL-AK15-DESC"
                 numSlots="1"
                 supply="100"
@@ -161,7 +161,7 @@
         <Classes>
             <Class
                 name="GFL-DOLL-HK416"
-                nameUI="KLUKAI"
+                nameUI="@DOLL-HK416-NAME"
                 description="@DOLL-HK416-DESC"
                 numSlots="1"
                 supply="100"
@@ -171,7 +171,7 @@
             />
             <Class
                 name="GFL-DOLL-G11"
-                nameUI="MECHTY"
+                nameUI="@DOLL-G11-NAME"
                 description="@DOLL-G11-DESC"
                 numSlots="1"
                 supply="100"
@@ -181,7 +181,7 @@
             />
             <Class
                 name="GFL-DOLL-G36K"
-                nameUI="ANDORIS"
+                nameUI="@DOLL-G36K-NAME"
                 description="@DOLL-G36K-DESC"
                 numSlots="1"
                 supply="100"
@@ -191,7 +191,7 @@
             />
             <Class
                 name="GFL-DOLL-G28"
-                nameUI="BELKA"
+                nameUI="@DOLL-G28-NAME"
                 description="@DOLL-G28-DESC"
                 numSlots="1"
                 supply="100"
@@ -201,7 +201,7 @@
             />
             <Class
                 name="GFL-DOLL-UMP45"
-                nameUI="LEVA"
+                nameUI="@DOLL-UMP45-NAME"
                 description="@DOLL-UMP45-DESC"
                 numSlots="1"
                 supply="100"
@@ -211,7 +211,7 @@
             />
             <Class
                 name="GFL-DOLL-UMP9"
-                nameUI="LENNA"
+                nameUI="@DOLL-UMP9-NAME"
                 description="@DOLL-UMP9-DESC"
                 numSlots="1"
                 supply="100"
@@ -221,7 +221,7 @@
             />
             <Class
                 name="GFL-DOLL-VECTOR"
-                nameUI="VECTOR"
+                nameUI="@DOLL-VECTOR-NAME"
                 description="@DOLL-VECTOR-DESC"
                 numSlots="1"
                 supply="100"
@@ -350,7 +350,7 @@
         <Classes>
             <Class
                 name="GFL-DOLL-M1903"
-                nameUI="SPRINGFIELD"
+                nameUI="@DOLL-M1903-NAME"
                 description="@DOLL-M1903-DESC"
                 numSlots="1"
                 supply="100"
@@ -360,7 +360,7 @@
             />
             <Class
                 name="GFL-DOLL-WA2000"
-                nameUI="MAKIATTO"
+                nameUI="@DOLL-WA2000-NAME"
                 description="@DOLL-WA2000-DESC"
                 numSlots="1"
                 supply="100"
@@ -370,7 +370,7 @@
             />
             <Class
                 name="GFL-DOLL-G36"
-                nameUI="CENTAUREISSI"
+                nameUI="@DOLL-G36-NAME"
                 description="@DOLL-G36-DESC"
                 numSlots="1"
                 supply="100"
@@ -380,7 +380,7 @@
             />
             <Class
                 name="GFL-DOLL-XCR"
-                nameUI="SHARKRY"
+                nameUI="@DOLL-XCR-NAME"
                 description="@DOLL-XCR-DESC"
                 numSlots="1"
                 supply="100"
