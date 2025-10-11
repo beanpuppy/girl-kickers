@@ -579,7 +579,7 @@
                 gender="0"
                 voicePack="cia_female"
             />
-			<FOV degrees="130" distanceMeters="999" eyeRadiusMeters="0.6" />
+			<FOV degrees="135" distanceMeters="999" eyeRadiusMeters="0.6" />
 			<Brain suppressionRecovery="80" />
 
 			<Mobility>
@@ -619,7 +619,7 @@
                 gender="0"
                 voicePack="cia_female"
             />
-			<FOV degrees="135" distanceMeters="999" eyeRadiusMeters="0.6" />
+			<FOV degrees="130" distanceMeters="999" eyeRadiusMeters="0.6" />
 			<Brain suppressionRecovery="100" />
 
 			<Mobility>

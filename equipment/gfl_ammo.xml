@@ -272,7 +272,7 @@
         name="hare_no_ammo"
         tooltip="@no_ammo_name"
         description="@no_ammo_desc"
-        img="data/models/weapons/attachments/no_ammo_ui.dds"
+        img="data/models/signatures/attachments/no_ammo_ui.dds"
     >
         <Params
             roundsPerSecond="2"
@@ -295,7 +295,7 @@
         inventoryBinding="PrimaryWeaponScope"
         tooltip="@scope_no_sights_name"
         description="@scope_no_sights_desc"
-        img="data/models/weapons/attachments/no_sights_ui.dds"
+        img="data/models/signatures/attachments/no_sights_ui.dds"
     >
         <Params />
     </Scope>

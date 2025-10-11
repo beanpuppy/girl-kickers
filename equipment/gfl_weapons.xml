@@ -20,17 +20,17 @@
         unlockCost="0"
         tooltip="@WEAP-AN94-NAME"
         description="@WEAP-AN94-DESC"
-        img="data/models/weapons/an94_ui.dds"
+        img="data/models/signatures/an94_ui.dds"
         animationSet="rifle"
     >
 		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="0" />
 		<ConcealmentModifier add="-2" />
 
 		<RenderObject3D
-            model="data/models/weapons/an94.khm"
+            model="data/models/signatures/an94.khm"
             attachSlot="prop_front_rifle"
             skipGOSSAO="true"
-            diffuseTex="data/models/weapons/an94.dds"
+            diffuseTex="data/models/signatures/an94.dds"
         />
 
 		<ModifiableParams
@@ -106,17 +106,17 @@
         unlockCost="0"
         tooltip="@WEAP-AK15-NAME"
         description="@WEAP-AK15-DESC"
-        img="data/models/weapons/ak15_ui.dds"
+        img="data/models/signatures/ak15_ui.dds"
         animationSet="rifle"
     >
 		<MobilityModifiers moveSpeedModifierPercent="-4" turnSpeedModifierPercent="0" />
 		<ConcealmentModifier add="-2" />
 
 		<RenderObject3D
-            model="data/models/weapons/ak15.khm"
+            model="data/models/signatures/ak15.khm"
             attachSlot="prop_front_rifle"
             skipGOSSAO="true"
-            diffuseTex="data/models/weapons/ak15.dds"
+            diffuseTex="data/models/signatures/ak15.dds"
         />
 
 		<ModifiableParams
@@ -199,17 +199,17 @@
         unlockCost="0"
         tooltip="@WEAP-HK416-NAME"
         description="@WEAP-HK416-DESC"
-        img="data/models/weapons/hk416_ui.dds"
+        img="data/models/signatures/hk416_ui.dds"
         animationSet="rifle"
     >
 		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="0" />
 		<ConcealmentModifier add="-2" />
 
 		<RenderObject3D
-            model="data/models/weapons/hk416.khm"
+            model="data/models/signatures/hk416.khm"
             attachSlot="prop_front_rifle"
             skipGOSSAO="true"
-            diffuseTex="data/models/weapons/hk416.dds"
+            diffuseTex="data/models/signatures/hk416.dds"
         />
 
 		<ModifiableParams
@@ -284,17 +284,17 @@
         unlockCost="0"
         tooltip="@WEAP-G11-NAME"
         description="@WEAP-G11-DESC"
-        img="data/models/weapons/g11_ui.dds"
+        img="data/models/signatures/g11_ui.dds"
         animationSet="rifle"
     >
 		<MobilityModifiers moveSpeedModifierPercent="-5" turnSpeedModifierPercent="0" />
 		<ConcealmentModifier add="-3" />
 
 		<RenderObject3D
-            model="data/models/weapons/g11.khm"
+            model="data/models/signatures/g11.khm"
             attachSlot="prop_front_rifle"
             skipGOSSAO="true"
-            diffuseTex="data/models/weapons/g11.dds"
+            diffuseTex="data/models/signatures/g11.dds"
         />
 
 		<ModifiableParams
@@ -371,17 +371,17 @@
         unlockCost="0"
         tooltip="@WEAP-G36K-NAME"
         description="@WEAP-G36K-DESC"
-        img="data/models/weapons/g36k_ui.dds"
+        img="data/models/signatures/g36k_ui.dds"
         animationSet="rifle"
     >
 		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="0" />
 		<ConcealmentModifier add="-3" />
 
 		<RenderObject3D
-            model="data/models/weapons/g36k.khm"
+            model="data/models/signatures/g36k.khm"
             attachSlot="prop_front_rifle"
             skipGOSSAO="true"
-            diffuseTex="data/models/weapons/g36k.dds"
+            diffuseTex="data/models/signatures/g36k.dds"
         />
 
 		<ModifiableParams
@@ -462,17 +462,17 @@
         unlockCost="0"
         tooltip="@WEAP-G28-NAME"
         description="@WEAP-G28-DESC"
-        img="data/models/weapons/g28_ui.dds"
+        img="data/models/signatures/g28_ui.dds"
         animationSet="rifle"
     >
 		<MobilityModifiers moveSpeedModifierPercent="-5" turnSpeedModifierPercent="0" />
 		<ConcealmentModifier add="-3" />
 
 		<RenderObject3D
-            model="data/models/weapons/g28.khm"
+            model="data/models/signatures/g28.khm"
             attachSlot="prop_front_rifle"
             skipGOSSAO="true"
-            diffuseTex="data/models/weapons/g28.dds"
+            diffuseTex="data/models/signatures/g28.dds"
         />
 
 		<ModifiableParams
@@ -547,7 +547,7 @@
         unlockCost="0"
         tooltip="@WEAP-M1903-NAME"
         description="@WEAP-M1903-DESC"
-        img="data/models/weapons/m1903_ui.dds"
+        img="data/models/signatures/m1903_ui.dds"
         animationSet="rifle"
     >
 		<MobilityModifiers
@@ -557,10 +557,10 @@
 		<ConcealmentModifier add="-4" />
 
 		<RenderObject3D
-            model="data/models/weapons/m1903.khm"
+            model="data/models/signatures/m1903.khm"
             attachSlot="prop_back_rifle"
             skipGOSSAO="true"
-            diffuseTex="data/models/weapons/m1903.dds"
+            diffuseTex="data/models/signatures/m1903.dds"
         />
 
 
@@ -638,7 +638,7 @@
         unlockCost="0"
         tooltip="@WEAP-WA2000-NAME"
         description="@WEAP-WA2000-DESC"
-        img="data/models/weapons/wa2000_ui.dds"
+        img="data/models/signatures/wa2000_ui.dds"
         animationSet="rifle"
     >
 		<MobilityModifiers
@@ -648,10 +648,10 @@
 		<ConcealmentModifier add="-5" />
 
 		<RenderObject3D
-            model="data/models/weapons/wa2000.khm"
+            model="data/models/signatures/wa2000.khm"
             attachSlot="prop_back_rifle"
             skipGOSSAO="true"
-            diffuseTex="data/models/weapons/wa2000.dds"
+            diffuseTex="data/models/signatures/wa2000.dds"
         />
 
 		<ModifiableParams
@@ -730,7 +730,7 @@
         unlockCost="0"
         tooltip="@WEAP-G36-NAME"
         description="@WEAP-G36-DESC"
-        img="data/models/weapons/g36_ui.dds"
+        img="data/models/signatures/g36_ui.dds"
         animationSet="rifle"
     >
 		<MobilityModifiers
@@ -740,10 +740,10 @@
 		<ConcealmentModifier add="-3" />
 
 		<RenderObject3D
-            model="data/models/weapons/g36.khm"
+            model="data/models/signatures/g36.khm"
             attachSlot="prop_front_rifle"
             skipGOSSAO="true"
-            diffuseTex="data/models/weapons/g36.dds"
+            diffuseTex="data/models/signatures/g36.dds"
         />
 
 		<ModifiableParams
@@ -826,7 +826,7 @@
         unlockCost="0"
         tooltip="@WEAP-XCR-NAME"
         description="@WEAP-XCR-DESC"
-        img="data/models/weapons/xcr_ui.dds"
+        img="data/models/signatures/xcr_ui.dds"
         animationSet="rifle"
     >
 		<MobilityModifiers
@@ -836,10 +836,10 @@
 		<ConcealmentModifier add="-2" />
 
 		<RenderObject3D
-            model="data/models/weapons/xcr.khm"
+            model="data/models/signatures/xcr.khm"
             attachSlot="prop_front_rifle"
             skipGOSSAO="true"
-            diffuseTex="data/models/weapons/g28.dds"
+            diffuseTex="data/models/signatures/g28.dds"
         />
 
 		<ModifiableParams
@@ -913,17 +913,17 @@
         unlockCost="0"
         tooltip="@WEAP-UMP45-NAME"
         description="@WEAP-UMP45-DESC"
-        img="data/models/weapons/ump45_ui.dds"
+        img="data/models/signatures/ump45_ui.dds"
         animationSet="rifle"
     >
 		<MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0" />
 		<ConcealmentModifier add="-1" />
 
 		<RenderObject3D
-            model="data/models/weapons/ump45.khm"
+            model="data/models/signatures/ump45.khm"
             attachSlot="prop_front_rifle"
             skipGOSSAO="true"
-            diffuseTex="data/models/weapons/g28.dds"
+            diffuseTex="data/models/signatures/g28.dds"
         />
 
 		<ModifiableParams
@@ -999,17 +999,17 @@
         unlockCost="0"
         tooltip="@WEAP-UMP9-NAME"
         description="@WEAP-UMP9-DESC"
-        img="data/models/weapons/ump9_ui.dds"
+        img="data/models/signatures/ump9_ui.dds"
         animationSet="rifle"
     >
 		<MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0" />
 		<ConcealmentModifier add="-1" />
 
 		<RenderObject3D
-            model="data/models/weapons/ump9.khm"
+            model="data/models/signatures/ump9.khm"
             attachSlot="prop_front_rifle"
             skipGOSSAO="true"
-            diffuseTex="data/models/weapons/g28.dds"
+            diffuseTex="data/models/signatures/g28.dds"
         />
 
 		<ModifiableParams
@@ -1083,17 +1083,17 @@
         unlockCost="0"
         tooltip="@WEAP-VECTOR-NAME"
         description="@WEAP-VECTOR-DESC"
-        img="data/models/weapons/vector_ui.dds"
+        img="data/models/signatures/vector_ui.dds"
         animationSet="rifle"
     >
 		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="0" />
 		<ConcealmentModifier add="-1" />
 
 		<RenderObject3D
-            model="data/models/weapons/vector.khm"
+            model="data/models/signatures/vector.khm"
             attachSlot="prop_front_rifle"
             skipGOSSAO="true"
-            diffuseTex="data/models/weapons/vector.dds"
+            diffuseTex="data/models/signatures/vector.dds"
         />
 
 		<ModifiableParams
@@ -1172,17 +1172,17 @@
         unlockCost="0"
         tooltip="@WEAP-OTS14-NAME"
         description="@WEAP-OTS14-DESC"
-        img="data/models/weapons/hk416_ui.dds"
+        img="data/models/signatures/hk416_ui.dds"
         animationSet="rifle"
     >
 		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="0" />
 		<ConcealmentModifier add="-2" />
 
 		<RenderObject3D
-            model="data/models/weapons/ots14.khm"
+            model="data/models/signatures/ots14.khm"
             attachSlot="prop_front_rifle"
             skipGOSSAO="true"
-            diffuseTex="data/models/weapons/ots14.dds"
+            diffuseTex="data/models/signatures/ots14.dds"
         />
 
 		<ModifiableParams
@@ -1256,7 +1256,7 @@
         unlockCost="0"
         tooltip="@WEAP-OM50-NAME"
         description="@WEAP-OM50-DESC"
-        img="data/models/weapons/hk416_ui.dds"
+        img="data/models/signatures/hk416_ui.dds"
         animationSet="rifle"
     >
 		<MobilityModifiers
@@ -1266,10 +1266,10 @@
 		<ConcealmentModifier add="-5" />
 
 		<RenderObject3D
-            model="data/models/weapons/om50.khm"
+            model="data/models/signatures/om50.khm"
             attachSlot="prop_back_rifle"
             skipGOSSAO="true"
-            diffuseTex="data/models/weapons/om50.dds"
+            diffuseTex="data/models/signatures/om50.dds"
         />
 
 		<ModifiableParams
@@ -1345,9 +1345,9 @@
             turnSpeedModifierPercent="-2"
         />
 		<RenderObject3D
-            model="data/models/weapons/hare.khm"
+            model="data/models/signatures/hare.khm"
             skipGOSSAO="true"
-            diffuseTex="data/models/weapons/hare.dds"
+            diffuseTex="data/models/signatures/hare.dds"
         />
 
 		<ModifiableParams
@@ -1396,17 +1396,17 @@
         unlockCost="0"
         tooltip="@WEAP-CURVA-NAME"
         description="@WEAP-CURVA-DESC"
-        img="data/models/weapons/hk416_ui.dds"
+        img="data/models/signatures/hk416_ui.dds"
         animationSet="pistol"
     >
 		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
 		<ConcealmentModifier add="2" />
 
 		<RenderObject3D
-            model="data/models/weapons/curva.khm"
+            model="data/models/signatures/curva.khm"
             attachSlot="prop_hip_pistol"
             skipGOSSAO="true"
-            diffuseTex="data/models/weapons/curva.dds"
+            diffuseTex="data/models/signatures/curva.dds"
         />
 
 		<ModifiableParams
@@ -1431,7 +1431,7 @@
             caliberInfoText="@firearm_caliber_380_name"
             operationInfoText="@firearm_operation_doubleaction_name"
             ejectingShellEntity="BulletCasingSmall"
-            magazineEntity="pistol_mag"
+            magazineEntity="pm63_mag"
             ai_rangeMin="0.0"
             ai_rangeOptimal="4.0"
             ai_rangeMax="10.0"
@@ -1481,7 +1481,7 @@
         unlockCost="0"
         tooltip="@WEAP-VEPR12-NAME"
         description="@WEAP-VEPR12-DESC"
-        img="data/models/weapons/hk416_ui.dds"
+        img="data/models/signatures/hk416_ui.dds"
         animationSet="shotgun_m1014"
     >
 		<MobilityModifiers
@@ -1491,10 +1491,10 @@
 		<ConcealmentModifier add="-3" />
 
 		<RenderObject3D
-            model="data/models/weapons/vepr12.khm"
+            model="data/models/signatures/vepr12.khm"
             attachSlot="prop_front_rifle"
             skipGOSSAO="true"
-            diffuseTex="data/models/weapons/vepr12.dds"
+            diffuseTex="data/models/signatures/vepr12.dds"
         />
 
 		<ModifiableParams

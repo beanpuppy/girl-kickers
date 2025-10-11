@@ -164,7 +164,7 @@
                     texture="data/textures/gui/square.tga"
                     sizeX="8"
                     sizeY="148"
-                    color="e5e5e5"
+                    color="888888"
                 />
 		</StaticImage>
 
@@ -218,7 +218,7 @@
                     texture="data/textures/gui/square.tga"
                     sizeX="8"
                     sizeY="148"
-                    color="e5e5e5"
+                    color="888888"
                 />
 		</StaticImage>
 
@@ -272,7 +272,7 @@
                     texture="data/textures/gui/square.tga"
                     sizeX="8"
                     sizeY="148"
-                    color="e5e5e5"
+                    color="888888"
                 />
 		</StaticImage>
 
@@ -326,7 +326,7 @@
                     texture="data/textures/gui/square.tga"
                     sizeX="8"
                     sizeY="148"
-                    color="e5e5e5"
+                    color="888888"
                 />
 		</StaticImage>
 
@@ -380,7 +380,7 @@
                     texture="data/textures/gui/square.tga"
                     sizeX="8"
                     sizeY="148"
-                    color="e5e5e5"
+                    color="888888"
                 />
 		</StaticImage>
 
@@ -488,7 +488,7 @@
                     texture="data/textures/gui/square.tga"
                     sizeX="8"
                     sizeY="148"
-                    color="e5e5e5"
+                    color="888888"
                 />
 		</StaticImage>
 

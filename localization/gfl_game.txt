@@ -261,7 +261,7 @@
 @buff_gfl_cafe_protective=Protective Aura
 
 @doctrine_gfl_cafe_absolutementaldefense_name=Absolute Mental Defense
-@doctrine_gfl_cafe_absolutementaldefense_descr="D-Don't barge into someone's personal space!" Makiatto's unshakeable focus and mental fortitude under pressure. Her exceptional discipline allows her to resist suppression and maintain precision even in chaotic situations, delivering accurate long-range fire when others would falter.
+@doctrine_gfl_cafe_absolutementaldefense_descr=D-Don't barge into someone's personal space! Makiatto's unshakeable focus and mental fortitude under pressure. Her exceptional discipline allows her to resist suppression and maintain precision even in chaotic situations, delivering accurate long-range fire when others would falter.
 
 @doctrine_gfl_cafe_perfectservice_name=Perfect Service
 @doctrine_gfl_cafe_perfectservice_descr=Centaureissi's meticulous attention to detail and dutiful nature. Her presence instills discipline and precision in nearby allies, improving their efficiency and accuracy through her example of perfect execution.
@@ -284,3 +284,36 @@
 
 @doctrine_gfl_cafe_velvetlatte_name=Velvet Latte
 @doctrine_gfl_cafe_velvetlatte_descr=One sip feels like velvet gently brushing your tongue. Smooth, refined execution with exceptional precision and timing. Professional marksmanship delivers accurate, lethal shots with minimal hesitation.
+
+@doctrine_gfl_groza_perfectcover_name=Perfect Cover
+@doctrine_gfl_groza_perfectcover_descr=An exceptional leader provides perfect cover for every action of their teammates. Groza's composed presence steadies her squad under fire, enhancing their resilience and accuracy when fighting from cover.
+
+@buff_gfl_groza_protectiveaura=Protected by Groza
+
+@doctrine_gfl_groza_stellarpursuit_name=Stellar Pursuit
+@doctrine_gfl_groza_stellarpursuit_descr=Stars align in distant convergence... threads pulled taut across the void... a path illuminated by what has already fallen... the pursuit ends where light meets shadow.
+
+@buff_gfl_groza_faterevealed=Guided by Nemesis
+
+@doctrine_gfl_groza_tameyourrabbit_name=How To Tame Your Rabbit
+@doctrine_gfl_groza_tameyourrabbit_descr=A fierce temper burns beneath the surface, but her sense of responsibility never wavers. When wounded, the rabbit bares her teeth; Faster, fiercer, unyielding. She will give it her all, even if she absolutely detests it.
+
+@doctrine_gfl_groza_cavityprotection_name=Cavity Protection
+@doctrine_gfl_groza_cavityprotection_descr=Cheerful and enthusiastic, yet cold and clinical when necessary. Colgates' advanced medical protocols provide maximum protection. The syringe saves lives, enhanced survival capabilities keep the squad operational. 9 out of 10 squad members agree.
+
+@doctrine_gfl_groza_centerstage_name=Center Stage
+@doctrine_gfl_groza_centerstage_descr=Leading from the front with unwavering confidence, Vepley takes center stage on the battlefield with shotgun in hand. Her meticulously prepared performance inspires all who follow in her wake, boosting their morale and combat effectiveness. A perfect performance, dedicated to all Vepley fans who support her.
+
+@buff_gfl_groza_backupdancer=Following Vepley
+
+@doctrine_gfl_groza_neverleftbehind_name=Never Left Behind
+@doctrine_gfl_groza_neverleftbehind_descr=They were all abandoned once. Now they've sworn it would never happen again. Not to themselves, not to anyone in their squad. When members fall, the others fight with desperate determination to bring them home. No one gets left behind.
+
+@doctrine_gfl_groza_hardlessons_name=Hard Lessons
+@doctrine_gfl_groza_hardlessons_descr=Experience is the cruelest teacher. Everyone carries scars from their past, literal or otherwise. Those lessons were paid for in blood and suffering, but they learned well. Threats are identified and neutralized before they can claim another victim.
+
+@doctrine_gfl_groza_strengthinnumbers_name=Strength in Numbers
+@doctrine_gfl_groza_strengthinnumbers_descr=Squad cohesion provides tangible tactical advantages. Enhanced coordination, mutual support, and collective awareness improve overall combat effectiveness. Teamwork multiplies individual capabilities.
+
+@doctrine_gfl_groza_readtheroom_name=Read the Room
+@doctrine_gfl_groza_readtheroom_descr=Different backgrounds provide different perspectives. Each member notices what others might miss; Movement patterns, structural weaknesses, tactical opportunities. Pre-mission assessment reveals enemy positions before entry.

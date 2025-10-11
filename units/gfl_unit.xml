@@ -151,7 +151,7 @@
         nameUI="@GFL-UNIT-404-NAME"
         description="@GFL-UNIT-404-DESC"
         flagTex="data/textures/gfl_404_bg.dds"
-        flagColor="E4E4E4"
+        flagColor="888888"
         movie="data/movies/unlock_swat.ogv"
         rndNameEntry="@#GFL-UNIT-404-NAME-RND"
         voicepack="commander_eng"
@@ -633,5 +633,40 @@
             <Rank xpNeeded="140100" badgeTex="" />
             <Rank xpNeeded="156420" badgeTex="" />
         </Ranks>
+
+        <Doctrine doctrinePointsPerSquadLevel="1">
+            <Node name="GFL_CQCProtocols">
+                <Node name="GFL_OverwhelmingForce" />
+            </Node>
+            <Node name="GFL_RapidDeployment">
+                <Node name="GFL_WeaponTransition" />
+                <Node name="GFL_CombatEfficiency" />
+            </Node>
+            <Node name="GFL_SuppressionProtocols" />
+            <Node name="GFL_LethalPrecision" />
+
+            <Node name="GFL_GROZA_PerfectCover" />
+            <Node name="GFL_GROZA_StellarPursuit" />
+            <Node name="GFL_GROZA_TameYourRabbit" />
+            <Node name="GFL_GROZA_CavityProtection" />
+            <Node name="GFL_GROZA_CenterStage" />
+
+            <Node name="GFL_OptimizedPerformance" />
+            <Node name="GFL_CommunicationProtocols">
+                <Node name="GFL_AdvancedProtocols">
+                    <Node name="GFL_TacticalIntelligence" numLevels="2" />
+                    <Node name="GFL_InformationExtraction" />
+                </Node>
+            </Node>
+
+            <Node name="GFL_GROZA_NeverLeftBehind" minSquadLevel="10" />
+            <Node name="GFL_GROZA_HardLessons" minSquadLevel="10" />
+            <Node name="GFL_GROZA_StrengthInNumbers" minSquadLevel="10" />
+            <Node
+                name="GFL_GROZA_ReadTheRoom"
+                minSquadLevel="10"
+                numLevels="3"
+            />
+        </Doctrine>
     </Unit>
 </Units>
