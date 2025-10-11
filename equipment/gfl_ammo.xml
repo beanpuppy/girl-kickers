@@ -219,4 +219,84 @@
             <ArmorPenetration start="30" end="25" startDist="0" endDist="30" />
         </Params>
     </Ammo>
+
+    <Ammo
+        name="50BMG_OM50_FMJ"
+        tooltip="@ammo_50bmg_fmj_name"
+        description="@ammo_50bmg_fmj_desc"
+        img="data/models/weapons/attachments/m855_ammo_ui.dds"
+    >
+        <Params
+            roundsPerSecond="0.8"
+            audibleSoundRadius="110"
+            physicsImpactForce="2.5"
+            overpenetrates="1"
+        >
+            <Damage start="68" end="62" startDist="0" endDist="100" />
+            <CriticalChancePercent
+                start="50"
+                end="40"
+                startDist="0"
+                endDist="100"
+            />
+            <ArmorPenetration start="90" end="85" startDist="0" endDist="100" />
+        </Params>
+    </Ammo>
+
+    <Ammo
+        name="50BMG_OM50_Match"
+        unlockCost="8"
+        tooltip="@ammo_50bmg_match_name"
+        description="@ammo_50bmg_match_desc"
+        img="data/models/weapons/attachments/m855_ammo_ui.dds"
+    >
+        <Params
+            roundsPerSecond="0.8"
+            audibleSoundRadius="110"
+            physicsImpactForce="2.5"
+            accuracyAdd="40"
+            overpenetrates="1"
+        >
+            <Damage start="74" end="68" startDist="0" endDist="100" />
+            <CriticalChancePercent
+                start="60"
+                end="50"
+                startDist="0"
+                endDist="100"
+            />
+            <ArmorPenetration start="95" end="90" startDist="0" endDist="100" />
+        </Params>
+    </Ammo>
+
+    <Ammo
+        name="hare_no_ammo"
+        tooltip="@no_ammo_name"
+        description="@no_ammo_desc"
+        img="data/models/signatures/attachments/no_ammo_ui.dds"
+    >
+        <Params
+            roundsPerSecond="2"
+            audibleSoundRadius="1.2"
+            physicsImpactForce="0"
+        >
+            <Damage start="100" end="100" startDist="0" endDist="4" />
+            <CriticalChancePercent
+                start="50"
+                end="50"
+                startDist="0"
+                endDist="4"
+            />
+            <ArmorPenetration start="100" end="100" startDist="0" endDist="4" />
+        </Params>
+    </Ammo>
+
+    <Scope
+        name="no_sights"
+        inventoryBinding="PrimaryWeaponScope"
+        tooltip="@scope_no_sights_name"
+        description="@scope_no_sights_desc"
+        img="data/models/signatures/attachments/no_sights_ui.dds"
+    >
+        <Params />
+    </Scope>
 </Equipment>

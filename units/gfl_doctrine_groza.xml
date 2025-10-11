@@ -1,0 +1,222 @@
+<DoctrineNodes>
+	<Node
+        name="GFL_GROZA_PerfectCover"
+        nameUI="@doctrine_gfl_groza_perfectcover_name"
+        description="@doctrine_gfl_groza_perfectcover_descr"
+        texturePrefix="data/textures/gui/doctrines/doctrine_empty"
+    >
+		<GiveBuff
+            nodeName="GFL_GROZA_LeaderPresence"
+            target="self"
+            targetClass="GFL-DOLL-OTS14"
+        />
+	</Node>
+
+	<Node name="GFL_GROZA_LeaderPresence">
+		<EquipmentModifier flinchResistance="18" suppressionRecoveryAdd="18" />
+		<AttackTypeModifier
+            minRange="0"
+            maxRange="999"
+            onlyFromCover="true"
+            accuracyAdd="12"
+        />
+		<GiveBuff
+            nodeName="GFL_GROZA_ProtectiveAura"
+            target="friends_in_radius"
+            radius="7.0"
+        />
+	</Node>
+
+	<Node
+        name="GFL_GROZA_ProtectiveAura"
+        description="@buff_gfl_groza_protectiveaura"
+    >
+		<EquipmentModifier flinchResistance="18" suppressionRecoveryAdd="18" />
+		<AttackTypeModifier
+            minRange="0"
+            maxRange="999"
+            onlyFromCover="true"
+            accuracyAdd="12"
+        />
+	</Node>
+
+	<Node
+        name="GFL_GROZA_StellarPursuit"
+        nameUI="@doctrine_gfl_groza_stellarpursuit_name"
+        description="@doctrine_gfl_groza_stellarpursuit_descr"
+        texturePrefix="data/textures/gui/doctrines/doctrine_empty"
+    >
+		<GiveBuff
+            nodeName="GFL_GROZA_Divination"
+            target="self"
+            targetClass="GFL-DOLL-OM50"
+        />
+	</Node>
+
+	<Node name="GFL_GROZA_Divination">
+		<GiveBuff
+            nodeName="GFL_GROZA_FateRevealed"
+            target="friends_in_radius"
+            radius="8.0"
+            when="kill"
+            durationMs="6000"
+        />
+	</Node>
+
+	<Node name="GFL_GROZA_FateRevealed" description="@buff_gfl_groza_faterevealed">
+		<AttackTypeModifier
+            minRange="0"
+            maxRange="999"
+            accuracyAdd="12"
+            critChanceAdd="8"
+        />
+	</Node>
+
+	<Node
+        name="GFL_GROZA_TameYourRabbit"
+        nameUI="@doctrine_gfl_groza_tameyourrabbit_name"
+        description="@doctrine_gfl_groza_tameyourrabbit_descr"
+        texturePrefix="data/textures/gui/doctrines/doctrine_empty"
+    >
+		<Enable name="Backstabbing" />
+		<GiveBuff
+            nodeName="GFL_GROZA_RabbitsFury"
+            target="self"
+            targetClass="GFL-DOLL-HARE"
+        />
+	</Node>
+
+	<Node name="GFL_GROZA_RabbitsFury">
+		<EquipmentModifier conditioning="30" meleeStunBonus="20" meleeSpeedAdd="60" />
+		<EquipmentModifier
+            onlyWhenDamaged="true"
+            conditioning="20"
+            suppressionRecoveryAdd="25"
+            extraCoverage90="15"
+            extraProtection90="3"
+        />
+	</Node>
+
+	<Node
+        name="GFL_GROZA_CavityProtection"
+        nameUI="@doctrine_gfl_groza_cavityprotection_name"
+        description="@doctrine_gfl_groza_cavityprotection_descr"
+        texturePrefix="data/textures/gui/doctrines/doctrine_empty"
+    >
+		<Enable name="SurvivalRate" value="2" />
+		<Enable name="SelfFirstAid" />
+		<EquipmentModifier
+            onlyWhenDamaged="true"
+            flinchResistance="20"
+            extraCoverage90="10"
+            extraProtection90="2"
+        />
+	</Node>
+
+	<Node
+        name="GFL_GROZA_CenterStage"
+        nameUI="@doctrine_gfl_groza_centerstage_name"
+        description="@doctrine_gfl_groza_centerstage_descr"
+        texturePrefix="data/textures/gui/doctrines/doctrine_empty"
+    >
+		<GiveBuff
+            nodeName="GFL_GROZA_SpotlightPresence"
+            target="self"
+            targetClass="GFL-DOLL-VEPR12"
+        />
+	</Node>
+
+	<Node name="GFL_GROZA_SpotlightPresence">
+		<EquipmentModifier conditioning="20" />
+		<AttackTypeModifier
+            minRange="0"
+            maxRange="15"
+            accuracyAdd="15"
+            critChanceAdd="10"
+            minAimTime="-80"
+            maxAimTime="-100"
+        />
+		<GiveBuff nodeName="GFL_GROZA_BackupDancer" target="friends_behind_me" />
+	</Node>
+
+	<Node name="GFL_GROZA_BackupDancer" description="@buff_gfl_groza_backupdancer">
+		<EquipmentModifier conditioning="15" suppressionRecoveryAdd="20" />
+		<AttackTypeModifier minRange="0" maxRange="999" accuracyAdd="8" />
+	</Node>
+
+	<Node
+        name="GFL_GROZA_NeverLeftBehind"
+        nameUI="@doctrine_gfl_groza_neverleftbehind_name"
+        description="@doctrine_gfl_groza_neverleftbehind_descr"
+        texturePrefix="data/textures/gui/doctrines/doctrine_empty"
+    >
+		<EquipmentModifier
+            conditioning="10"
+            suppressionRecoveryAdd="15"
+            flinchResistance="10"
+        />
+		<AttackTypeModifier minRange="0" maxRange="999" accuracyAdd="8" />
+		<EquipmentModifier
+            onlyWhenDamaged="true"
+            conditioning="25"
+            suppressionRecoveryAdd="30"
+            flinchResistance="15"
+        />
+		<AttackTypeModifier
+            minRange="0"
+            maxRange="999"
+            onlyWhenDamaged="true"
+            accuracyAdd="15"
+            minAimTime="-60"
+            maxAimTime="-80"
+        />
+	</Node>
+
+	<Node
+        name="GFL_GROZA_HardLessons"
+        nameUI="@doctrine_gfl_groza_hardlessons_name"
+        description="@doctrine_gfl_groza_hardlessons_descr"
+        texturePrefix="data/textures/gui/doctrines/doctrine_empty"
+    >
+		<Enable name="PriorityBombers" />
+		<AttackTypeModifier
+            minRange="0"
+            maxRange="40"
+            accuracyAdd="12"
+            critChanceAdd="8"
+            minAimTime="-40"
+            maxAimTime="-60"
+        />
+	</Node>
+
+	<Node
+        name="GFL_GROZA_StrengthInNumbers"
+        nameUI="@doctrine_gfl_groza_strengthinnumbers_name"
+        description="@doctrine_gfl_groza_strengthinnumbers_descr"
+        texturePrefix="data/textures/gui/doctrines/doctrine_empty"
+    >
+		<EquipmentModifier
+            conditioning="15"
+            suppressionRecoveryAdd="20"
+            flinchResistance="12"
+        />
+		<AttackTypeModifier minRange="0" maxRange="999" accuracyAdd="10" />
+	</Node>
+
+	<Node
+        name="GFL_GROZA_ReadTheRoom"
+        nameUI="@doctrine_gfl_groza_readtheroom_name"
+        description="@doctrine_gfl_groza_readtheroom_descr"
+        texturePrefix="data/textures/gui/doctrines/doctrine_empty"
+    >
+		<Enable name="HumintNetwork" value="1" />
+		<EquipmentModifier conditioning="12" />
+		<AttackTypeModifier
+            minRange="0"
+            maxRange="999"
+            accuracyAdd="10"
+            minAimTime="-50"
+            maxAimTime="-70"
+        />
+	</Node>
+</DoctrineNodes>
