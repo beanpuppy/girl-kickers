@@ -109,11 +109,17 @@
 @DOLL-OM50-DESC=Passionate in mysticism and divination, she always carries a magical divination tool known as the "Prism". Her divination results are often expressed in a cryptic and enigmatic manner. Though she can be difficult to communicate with, she remains a dependable companion.
 @WEAP-OM50-NAME=OM 50 Nemesis
 @WEAP-OM50-DESC=The OM 50 Nemesis, now designated SAN 511, is a .50 BMG bolt-action rifle produced by the Swiss branch of SIG Sauer.
+@firearm_caliber_50bmg_name=.50 BMG
+@ammo_50bmg_fmj_name=.50 BMG FMJ
+@ammo_50bmg_fmj_desc=Massive anti-materiel cartridge with devastating power. Extreme penetration and stopping power at extended ranges. Loud report.
+@ammo_50bmg_match_name=.50 BMG Match
+@ammo_50bmg_match_desc=Premium match-grade .50 BMG ammunition. Exceptional accuracy and consistency for surgical precision at extreme distances. Devastating terminal performance.
 
 @DOLL-HARE-NAME=KROLIK
 @DOLL-HARE-DESC=She has a bit of a temper and shows little interest in matters unrelated to herself, but her sense of responsibility is beyond reproach. Even if she is assigned a mission she absolutely detests, such as "serving as Nemesis' exclusive translator", she will still give it her all.
 @WEAP-HARE-NAME=Hare
 @WEAP-HARE-DESC=A melee weapon highly compatible with Krolik. Modified based on her combat preferences and painted with a skin that matches Krolik's colors.
+@firearm_operation_melee=Melee
 
 @no_ammo_name=None
 @no_ammo_desc=
@@ -124,10 +130,11 @@
 @DOLL-CURVA-DESC=Although she often appears cheerful and enthusiastic, her face can sometimes take on a completely different, cold expression. The syringe in her hand - is it meant to save lives, or take them?
 @WEAP-CURVA-NAME=Taurus Curve
 @WEAP-CURVA-DESC=The Curve is a concealed-carry .380 ACP pistol by Brazilian company Taurus Armas.
+@firearm_operation_doubleaction_name=Double Action
 
 @DOLL-VEPR12-NAME=VEPLEY
 @DOLL-VEPR12-DESC=An idol who shines on the unique stage, the "battlefield"! She prepares meticulously every day for her next performance - this way, she will not easily trip or bump into others again.
-@WEAP-VEPR12-NAME=Vepr-12 
+@WEAP-VEPR12-NAME=Vepr-12
 @WEAP-VEPR12-DESC=The Vepr-12 is a semi-automatic shotgun derived from the RPK by Molot Oruzhie Ltd. It shouldn't be confused with the Vepr Ukrainian bullpup rifle.
 
 @helmet_gfl_ocular_name=Night Eyes

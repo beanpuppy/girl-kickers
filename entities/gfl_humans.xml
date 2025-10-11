@@ -548,7 +548,8 @@
 			</Mobility>
 
 			<Equipment>
-				<Item name="GFL-WEAP-HARE" />
+				<Item name="GFL-WEAP-OTS14" />
+				<Item name="IronSights" />
 				<Item name="M9 Pistol" />
 				<Item name="IronSights_Pistol" />
 				<Item name="Flashbang" />
@@ -587,7 +588,8 @@
 			</Mobility>
 
 			<Equipment>
-				<Item name="GFL-WEAP-HARE" />
+				<Item name="GFL-WEAP-OM50" />
+				<Item name="LPVO_6X" />
 				<Item name="M9 Pistol" />
 				<Item name="IronSights_Pistol" />
 				<Item name="Flashbang" />
@@ -665,9 +667,7 @@
 			</Mobility>
 
 			<Equipment>
-				<Item name="GFL-WEAP-HARE" />
-				<Item name="M9 Pistol" />
-				<Item name="IronSights_Pistol" />
+				<Item name="GFL-WEAP-CURVA" />
 				<Item name="Flashbang" />
 				<Item name="Frag Grenade" />
 				<Item name="FeetOfSteel" />
@@ -704,7 +704,8 @@
 			</Mobility>
 
 			<Equipment>
-				<Item name="GFL-WEAP-HARE" />
+				<Item name="GFL-WEAP-VEPR12" />
+				<Item name="IronSights" />
 				<Item name="M9 Pistol" />
 				<Item name="IronSights_Pistol" />
 				<Item name="Flashbang" />

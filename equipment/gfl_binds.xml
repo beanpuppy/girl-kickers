@@ -363,34 +363,54 @@
 	</Bind>
 
     <Bind to="GFL-DOLL-OTS14">
-        <eqp name="GFL-WEAP-HARE" />
-    </Bind>
+        <eqp name="GFL-WEAP-OTS14" />
 
-    <Bind to="GFL-DOLL-OM50">
-        <eqp name="GFL-WEAP-HARE" />
-    </Bind>
-
-    <Bind to="GFL-DOLL-HARE">
-        <eqp name="GFL-WEAP-HARE" />
-    </Bind>
-
-    <Bind to="GFL-DOLL-CURVA">
-        <eqp name="GFL-WEAP-HARE" />
-    </Bind>
-
-    <Bind to="GFL-DOLL-VEPR12">
-        <eqp name="GFL-WEAP-HARE" />
-    </Bind>
-
-	<Bind to="GFL-UNIT-GROZA">
-		<!-- Pistols -->
         <eqp name="M9 Pistol" />
         <eqp name="M17 Pistol" />
 		<eqp name="M18 Pistol" />
         <eqp name="G19X Pistol" />
         <eqp name="G2240 Pistol" />
         <eqp name="1911 Pistol" />
+    </Bind>
 
+    <Bind to="GFL-DOLL-OM50">
+        <eqp name="GFL-WEAP-OM50" />
+
+        <eqp name="M9 Pistol" />
+        <eqp name="M17 Pistol" />
+		<eqp name="M18 Pistol" />
+        <eqp name="G19X Pistol" />
+        <eqp name="G2240 Pistol" />
+        <eqp name="1911 Pistol" />
+    </Bind>
+
+    <Bind to="GFL-DOLL-HARE">
+        <eqp name="GFL-WEAP-HARE" />
+
+        <eqp name="M9 Pistol" />
+        <eqp name="M17 Pistol" />
+		<eqp name="M18 Pistol" />
+        <eqp name="G19X Pistol" />
+        <eqp name="G2240 Pistol" />
+        <eqp name="1911 Pistol" />
+    </Bind>
+
+    <Bind to="GFL-DOLL-CURVA">
+        <eqp name="GFL-WEAP-CURVA" />
+    </Bind>
+
+    <Bind to="GFL-DOLL-VEPR12">
+        <eqp name="GFL-WEAP-VEPR12" />
+
+        <eqp name="M9 Pistol" />
+        <eqp name="M17 Pistol" />
+		<eqp name="M18 Pistol" />
+        <eqp name="G19X Pistol" />
+        <eqp name="G2240 Pistol" />
+        <eqp name="1911 Pistol" />
+    </Bind>
+
+	<Bind to="GFL-UNIT-GROZA">
 		<!-- Utility -->
 		<eqp name="Stinger Single" />
         <eqp name="Stinger" />

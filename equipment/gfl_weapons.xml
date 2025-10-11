@@ -1150,54 +1150,402 @@
 		</Sounds>
 	</Firearm>
 
-<!-- Hare -->
-    <Bind eqp="GFL-WEAP-HARE">
-		<to name="hare_no_ammo"/>
-		<to name="no_sights"/>
-	</Bind>
- 	<Firearm name="GFL-WEAP-HARE" inventoryBinding="PrimaryWeapon" category="melee" unlockCost="6"
-			tooltip="@WEAP-HARE-NAME"
-			description="@WEAP-HARE-DESC"
-			img="data/models/weapons/sword_ui.dds"
+<!-- OTS-14 (Groza) -->
+	<Bind eqp="GFL-WEAP-OTS14">
+		<to name="762x39FMJ7N23_Type56NWS" />
+		<to name="762x39FMJM43_Type56NWS" />
+		<to name="762x39FMJM43_Type56CIA" />
 
-			animationSet="melee"
-		>
-		<MobilityModifiers moveSpeedModifierPercent="-5" turnSpeedModifierPercent="-2"/>
-		<RenderObject3D model="data/models/weapons/hare.khm" skipGOSSAO="true" diffuseTex="data/models/weapons/hare.dds" />
+		<to name="IronSights" />
+		<to name="M68CCO" />
+		<to name="Holosight" />
+		<to name="HoloMag3X" />
+		<to name="M150RCO" />
+		<to name="SpecterDR" />
+		<to name="LPVO_6X" />
+		<to name="LPVO_8X" />
+	</Bind>
+	<Firearm
+        name="GFL-WEAP-OTS14"
+        inventoryBinding="PrimaryWeapon"
+        category="rifle"
+        unlockCost="0"
+        tooltip="@WEAP-OTS14-NAME"
+        description="@WEAP-OTS14-DESC"
+        img="data/models/weapons/hk416_ui.dds"
+        animationSet="rifle"
+    >
+		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="0" />
+		<ConcealmentModifier add="-2" />
+
+		<RenderObject3D
+            model="data/models/weapons/ots14.khm"
+            attachSlot="prop_front_rifle"
+            skipGOSSAO="true"
+            diffuseTex="data/models/weapons/ots14.dds"
+        />
 
 		<ModifiableParams
-			changeInTime="800"
-			changeOutTime="600"
-			efficiencyPercent="100"
-			audibleSoundRadius="1.2"
-
-			meleeDamageBonus="50"
-			meleeReach="1.2"
-			meleeAttackCooldown="450"
-			meleeAttackDuration="300"
-			roundsPerMagazine="0"
-
-			reloadTime="5"
-			reloadEmptyTime="5"
-			readyTime="20"
-			guardTime="20"
-
-			accuracyStart="90"
-			accuracyEnd="90"
-			accuracyStartDist="0"
-			accuracyEndDist="5"
-		/>
+            numPellets="1"
+            roundsPerMagazine="30"
+            closedBolt="1"
+            cyclicReload="0"
+            reloadTime="2100"
+            reloadEmptyTime="2800"
+            changeInTime="0"
+            changeOutTime="0"
+            readyTime="380"
+            guardTime="200"
+            accuracyStart="150"
+            accuracyEnd="65"
+            accuracyStartDist="8"
+            accuracyEndDist="45"
+            suppressionScale="1.0"
+        />
 
 		<Params
-			operationInfoText="@firearm_operation_melee"
-		/>
+            caliberInfoText="@firearm_caliber_762x39_name"
+            operationInfoText="@firearm_operation_semifull_name"
+            ejectingShellEntity="BulletCasingLarge"
+            magazineEntity="m4_mag"
+            ai_rangeMin="1.0"
+            ai_rangeOptimal="15.0"
+            ai_rangeMax="45.0"
+        />
 
 		<AttackTypes>
-			<AttackType name="Rangers_PumpAimedFire" rangeMeters="9999"/>
+			<AttackType name="Rangers_RapidFire" rangeMeters="7" />
+			<AttackType name="Rangers_RapidFireMed" rangeMeters="18" />
+			<AttackType name="Rangers_CarbineAimedFire" rangeMeters="40" />
+			<AttackType name="Rangers_CarbineAimedFireXX" rangeMeters="9999" />
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_01" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_02" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_03" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
+		</MuzzleFlash>
+
+		<Sounds>
+			<Equip name="rifle_eqp" />
+			<Unequip name="rifle_neqp" />
+			<Reload name="rifle_reld" />
+			<ReloadEmpty name="rifle_reldempt" />
+			<Fire name="akm_fire" />
+			<ShellDrop name="rifle_shell_drop" />
+			<Empty name="gen_empty" />
+		</Sounds>
+	</Firearm>
+
+<!-- OM-50 (Nemesis) -->
+	<Bind eqp="GFL-WEAP-OM50">
+		<to name="50BMG_OM50_FMJ" />
+		<to name="50BMG_OM50_Match" />
+
+		<to name="LPVO_6X" />
+		<to name="LPVO_8X" />
+		<to name="LROMK4_3_10X" />
+		<to name="LROMK6_3_18X" />
+		<to name="LROPM_5_25X" />
+	</Bind>
+	<Firearm
+        name="GFL-WEAP-OM50"
+        inventoryBinding="PrimaryWeapon"
+        category="dmr"
+        unlockCost="0"
+        tooltip="@WEAP-OM50-NAME"
+        description="@WEAP-OM50-DESC"
+        img="data/models/weapons/hk416_ui.dds"
+        animationSet="rifle"
+    >
+		<MobilityModifiers
+            moveSpeedModifierPercent="-12"
+            turnSpeedModifierPercent="-4"
+        />
+		<ConcealmentModifier add="-5" />
+
+		<RenderObject3D
+            model="data/models/weapons/om50.khm"
+            attachSlot="prop_back_rifle"
+            skipGOSSAO="true"
+            diffuseTex="data/models/weapons/om50.dds"
+        />
+
+		<ModifiableParams
+            numPellets="1"
+            roundsPerMagazine="5"
+            closedBolt="1"
+            cyclicReload="1"
+            reloadTime="3200"
+            reloadEmptyTime="4000"
+            changeInTime="1000"
+            changeOutTime="900"
+            readyTime="650"
+            guardTime="400"
+            accuracyStart="240"
+            accuracyEnd="210"
+            accuracyStartDist="0"
+            accuracyEndDist="100"
+            suppressionScale="1.6"
+        />
+
+		<Params
+            caliberInfoText="@firearm_caliber_50bmg_name"
+            operationInfoText="@firearm_operation_boltaction_name"
+            ejectingShellEntity="BulletCasingLarge"
+            magazineEntity="dragunov_mag"
+            ai_rangeMin="10.0"
+            ai_rangeOptimal="50.0"
+            ai_rangeMax="100.0"
+            ai_stopWhenShooting="true"
+        />
+
+		<AttackTypes>
+			<AttackType name="OM50_PrecisionShotClose" rangeMeters="10" />
+			<AttackType name="OM50_PrecisionShotMid" rangeMeters="40" />
+			<AttackType name="OM50_PrecisionShotFar" rangeMeters="9999" />
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_01" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_02" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_03" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
+		</MuzzleFlash>
+
+		<Sounds>
+			<Equip name="rifle_eqp" />
+			<Unequip name="rifle_neqp" />
+			<Reload name="rifle_reld" />
+			<ReloadEmpty name="rifle_reldempt" />
+			<Fire name="m110csass_fire" />
+			<ShellDrop name="rifle_shell_drop" />
+			<Empty name="gen_empty" />
+		</Sounds>
+	</Firearm>
+
+<!-- Hare -->
+    <Bind eqp="GFL-WEAP-HARE">
+		<to name="hare_no_ammo" />
+		<to name="no_sights" />
+	</Bind>
+ 	<Firearm
+        name="GFL-WEAP-HARE"
+        inventoryBinding="PrimaryWeapon"
+        category="melee"
+        unlockCost="6"
+        tooltip="@WEAP-HARE-NAME"
+        description="@WEAP-HARE-DESC"
+        img="data/models/weapons/sword_ui.dds"
+        animationSet="melee"
+    >
+		<MobilityModifiers
+            moveSpeedModifierPercent="-5"
+            turnSpeedModifierPercent="-2"
+        />
+		<RenderObject3D
+            model="data/models/weapons/hare.khm"
+            skipGOSSAO="true"
+            diffuseTex="data/models/weapons/hare.dds"
+        />
+
+		<ModifiableParams
+            changeInTime="800"
+            changeOutTime="600"
+            efficiencyPercent="100"
+            audibleSoundRadius="1.2"
+            meleeDamageBonus="50"
+            meleeReach="1.2"
+            meleeAttackCooldown="450"
+            meleeAttackDuration="300"
+            roundsPerMagazine="0"
+            reloadTime="5"
+            reloadEmptyTime="5"
+            readyTime="20"
+            guardTime="20"
+            accuracyStart="90"
+            accuracyEnd="90"
+            accuracyStartDist="0"
+            accuracyEndDist="5"
+        />
+
+		<Params operationInfoText="@firearm_operation_melee" />
+
+		<AttackTypes>
+			<AttackType name="Rangers_PumpAimedFire" rangeMeters="9999" />
 		</AttackTypes>
 
 		<Sounds>
-			<Fire name="melee_hit"/>
+			<Fire name="melee_hit" />
+		</Sounds>
+	</Firearm>
+
+<!-- Curva (Taurus Curve) -->
+	<Bind eqp="GFL-WEAP-CURVA">
+		<to name="380JHP90GR_PPK" />
+		<to name="380EHP70GR_PPK" />
+
+		<to name="no_sights" />
+	</Bind>
+
+	<Firearm
+        name="GFL-WEAP-CURVA"
+        inventoryBinding="PrimaryWeapon"
+        category="pistol"
+        unlockCost="0"
+        tooltip="@WEAP-CURVA-NAME"
+        description="@WEAP-CURVA-DESC"
+        img="data/models/weapons/hk416_ui.dds"
+        animationSet="pistol"
+    >
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
+		<ConcealmentModifier add="2" />
+
+		<RenderObject3D
+            model="data/models/weapons/curva.khm"
+            attachSlot="prop_hip_pistol"
+            skipGOSSAO="true"
+            diffuseTex="data/models/weapons/curva.dds"
+        />
+
+		<ModifiableParams
+            numPellets="1"
+            roundsPerMagazine="6"
+            closedBolt="1"
+            cyclicReload="0"
+            reloadTime="1500"
+            reloadEmptyTime="2000"
+            changeInTime="300"
+            changeOutTime="200"
+            readyTime="240"
+            guardTime="120"
+            accuracyStart="70"
+            accuracyEnd="30"
+            accuracyStartDist="0"
+            accuracyEndDist="12"
+            suppressionScale="0.65"
+        />
+
+		<Params
+            caliberInfoText="@firearm_caliber_380_name"
+            operationInfoText="@firearm_operation_doubleaction_name"
+            ejectingShellEntity="BulletCasingSmall"
+            magazineEntity="pistol_mag"
+            ai_rangeMin="0.0"
+            ai_rangeOptimal="4.0"
+            ai_rangeMax="10.0"
+            ai_stopWhenShooting="false"
+        />
+
+		<AttackTypes>
+			<AttackType name="Rangers_PistolAimedFireShort9mil" rangeMeters="6" />
+			<AttackType name="Rangers_PistolAimedFire9mil" rangeMeters="10" />
+			<AttackType name="Rangers_PistolAimedFireLong9milXX" rangeMeters="9999" />
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Pistol">
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_01" />
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_02" />
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_03" />
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_04" />
+		</MuzzleFlash>
+
+		<Sounds>
+			<Equip name="pistol_eqp" />
+			<Unequip name="pistol_neqp" />
+			<Reload name="pistol_reld" />
+			<ReloadEmpty name="pistol_reldempt" />
+			<Fire name="pistol_fire" />
+			<ShellDrop name="pistol_shell_drop" />
+			<Empty name="gen_empty" />
+		</Sounds>
+	</Firearm>
+
+<!-- Vepr-12 -->
+	<Bind eqp="GFL-WEAP-VEPR12">
+		<to name="12GA00BUCK_M1014" />
+		<to name="12GA00BUCK8_M500" />
+		<to name="12GANO4BUCK_M500" />
+
+		<to name="IronSights" />
+		<to name="M68CCO" />
+		<to name="Holosight" />
+		<to name="M150RCO" />
+	</Bind>
+
+	<Firearm
+        name="GFL-WEAP-VEPR12"
+        inventoryBinding="PrimaryWeapon"
+        category="shotgun"
+        unlockCost="0"
+        tooltip="@WEAP-VEPR12-NAME"
+        description="@WEAP-VEPR12-DESC"
+        img="data/models/weapons/hk416_ui.dds"
+        animationSet="shotgun_m1014"
+    >
+		<MobilityModifiers
+            moveSpeedModifierPercent="-7"
+            turnSpeedModifierPercent="-2"
+        />
+		<ConcealmentModifier add="-3" />
+
+		<RenderObject3D
+            model="data/models/weapons/vepr12.khm"
+            attachSlot="prop_front_rifle"
+            skipGOSSAO="true"
+            diffuseTex="data/models/weapons/vepr12.dds"
+        />
+
+		<ModifiableParams
+            numPellets="9"
+            roundsPerMagazine="8"
+            closedBolt="1"
+            cyclicReload="0"
+            reloadTime="2400"
+            reloadEmptyTime="3100"
+            changeInTime="0"
+            changeOutTime="0"
+            readyTime="420"
+            guardTime="200"
+            accuracyStart="120"
+            accuracyEnd="10"
+            accuracyStartDist="0"
+            accuracyEndDist="100"
+            suppressionScale="0.16"
+        />
+
+		<Params
+            caliberInfoText="@firearm_caliber_12gauge_name"
+            operationInfoText="@firearm_operation_semiauto_name"
+            ejectingShellEntity="BulletCasingShotgun"
+            ai_rangeMin="1.0"
+            ai_rangeOptimal="7.0"
+            ai_rangeMax="15.0"
+            ai_stopWhenShooting="false"
+        />
+
+		<AttackTypes>
+			<AttackType name="Rangers_SAShotAimedFire" rangeMeters="7" />
+			<AttackType name="Rangers_SAShotAimedFireLong" rangeMeters="15" />
+			<AttackType name="Rangers_SAShotAimedFireLongXX" rangeMeters="9999" />
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Pistol">
+			<Flare particles="FX_MUZZLE_FLASH_SHOTGUN_01" />
+			<Flare particles="FX_MUZZLE_FLASH_SHOTGUN_02" />
+			<Flare particles="FX_MUZZLE_FLASH_SHOTGUN_03" />
+			<Flare particles="FX_MUZZLE_FLASH_SHOTGUN_04" />
+		</MuzzleFlash>
+
+		<Sounds>
+			<Equip name="870br_eqp" />
+			<Unequip name="870br_neqp" />
+			<Reload name="870br_reld" />
+			<ReloadEmpty name="870br_reld" />
+			<Fire name="m1014_fire" />
+			<ShellDrop name="shotgun_shell_drop" />
+			<Empty name="gen_empty" />
 		</Sounds>
 	</Firearm>
 </Equipment>

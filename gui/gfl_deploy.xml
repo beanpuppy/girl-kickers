@@ -746,7 +746,13 @@
 	<Action type="Show" target="GFL-UNIT-GROZA" />
 </EventActionBatch>
 
-<Item name="GFL-UNIT-GROZA" origin="0 -172" hidden="true" align="rt" sizeX="380">
+<Item
+        name="GFL-UNIT-GROZA"
+        origin="0 -172"
+        hidden="true"
+        align="rt"
+        sizeX="380"
+    >
 	<OnOpen>
 		<Action type="AddMeToParent" target="#unit_header" />
 	</OnOpen>
@@ -778,7 +784,7 @@
                     texture="data/textures/gui/square.tga"
                     sizeX="8"
                     sizeY="148"
-                    color="e5e5e5"
+                    color="a1251f"
                 />
 		</StaticImage>
 
@@ -832,7 +838,7 @@
                     texture="data/textures/gui/square.tga"
                     sizeX="8"
                     sizeY="148"
-                    color="e5e5e5"
+                    color="a1251f"
                 />
 		</StaticImage>
 
@@ -886,7 +892,7 @@
                     texture="data/textures/gui/square.tga"
                     sizeX="8"
                     sizeY="148"
-                    color="e5e5e5"
+                    color="a1251f"
                 />
 		</StaticImage>
 
@@ -940,7 +946,7 @@
                     texture="data/textures/gui/square.tga"
                     sizeX="8"
                     sizeY="148"
-                    color="e5e5e5"
+                    color="a1251f"
                 />
 		</StaticImage>
 
@@ -994,7 +1000,7 @@
                     texture="data/textures/gui/square.tga"
                     sizeX="8"
                     sizeY="148"
-                    color="e5e5e5"
+                    color="a1251f"
                 />
 		</StaticImage>
 

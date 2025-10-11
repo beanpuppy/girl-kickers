@@ -50,4 +50,43 @@
             critChanceAdd="20"
         />
     </AttackType>
+
+    <AttackType name="OM50_PrecisionShotClose">
+        <ModifiableParams
+            minAimTime="500"
+            maxAimTime="500"
+            minShots="1"
+            maxShots="1"
+            resetTime="1500"
+            accuracyAdd="-80"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="OM50_PrecisionShotMid">
+        <ModifiableParams
+            minAimTime="500"
+            maxAimTime="900"
+            minShots="1"
+            maxShots="1"
+            resetTime="1500"
+            accuracyAdd="10"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="5"
+        />
+    </AttackType>
+
+    <AttackType name="OM50_PrecisionShotFar">
+        <ModifiableParams
+            minAimTime="900"
+            maxAimTime="1000"
+            minShots="1"
+            maxShots="1"
+            resetTime="1500"
+            accuracyAdd="-10"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="25"
+        />
+    </AttackType>
 </FirearmAttackTypes>
