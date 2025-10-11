@@ -100,6 +100,16 @@
 @GFL-UNIT-GROZA-DESC=Groza Squad
 @#GFL-UNIT-GROZA-NAME-RND=Groza Squad
 
+@DOLL-OTS14-NAME=GROZA
+@DOLL-OTS14-DESC=A mature and composed elite Doll, she is undeniably the squad's core. Despite the squad members' diverse personalities, she seamlessly unites their strengths. With her presence, nothing will become a problem.
+@WEAP-OTS14-NAME=OTs-14
+@WEAP-OTS14-DESC=The OTs-14 'Groza' ("Thunderstorm") is a bullpup-configured, modular assault rifle system developed during the early 1990s by V. Telesh and Ju. Lebedev at the TsKIB SOO (Central Design Bureau for Sporting and Hunting Arms). Like its predecessor project the OTs-12 'Tiss', the design of the 'Groza' is based on the AKS-74U, and was an attempt to integrate all the best features from the various close quarter combat weapons in service into one singular unit. OTs-14 units have a great amount of interchangeable parts with the standard AK-74U.
+
+@DOLL-OM50-NAME=NEMESIS
+@DOLL-OM50-DESC=Passionate in mysticism and divination, she always carries a magical divination tool known as the "Prism". Her divination results are often expressed in a cryptic and enigmatic manner. Though she can be difficult to communicate with, she remains a dependable companion.
+@WEAP-OM50-NAME=OM 50 Nemesis
+@WEAP-OM50-DESC=The OM 50 Nemesis, now designated SAN 511, is a .50 BMG bolt-action rifle produced by the Swiss branch of SIG Sauer.
+
 @DOLL-HARE-NAME=KROLIK
 @DOLL-HARE-DESC=She has a bit of a temper and shows little interest in matters unrelated to herself, but her sense of responsibility is beyond reproach. Even if she is assigned a mission she absolutely detests, such as "serving as Nemesis' exclusive translator", she will still give it her all.
 @WEAP-HARE-NAME=Hare
@@ -109,6 +119,16 @@
 @no_ammo_desc=
 @scope_no_sights_name=None
 @scope_no_sights_desc=
+
+@DOLL-CURVA-NAME=COLPHNE
+@DOLL-CURVA-DESC=Although she often appears cheerful and enthusiastic, her face can sometimes take on a completely different, cold expression. The syringe in her hand - is it meant to save lives, or take them?
+@WEAP-CURVA-NAME=Taurus Curve
+@WEAP-CURVA-DESC=The Curve is a concealed-carry .380 ACP pistol by Brazilian company Taurus Armas.
+
+@DOLL-VEPR12-NAME=VEPLEY
+@DOLL-VEPR12-DESC=An idol who shines on the unique stage, the "battlefield"! She prepares meticulously every day for her next performance - this way, she will not easily trip or bump into others again.
+@WEAP-VEPR12-NAME=Vepr-12 
+@WEAP-VEPR12-DESC=The Vepr-12 is a semi-automatic shotgun derived from the RPK by Molot Oruzhie Ltd. It shouldn't be confused with the Vepr Ukrainian bullpup rifle.
 
 @helmet_gfl_ocular_name=Night Eyes
 @helmet_gfl_ocular_desc=Enhanced optical systems for night vision integration. Allows direct NVG interface without physical mounting hardware.

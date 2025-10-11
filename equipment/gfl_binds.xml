@@ -362,7 +362,23 @@
         <eqp name="EmptySecondaryMuzzle" />
 	</Bind>
 
+    <Bind to="GFL-DOLL-OTS14">
+        <eqp name="GFL-WEAP-HARE" />
+    </Bind>
+
+    <Bind to="GFL-DOLL-OM50">
+        <eqp name="GFL-WEAP-HARE" />
+    </Bind>
+
     <Bind to="GFL-DOLL-HARE">
+        <eqp name="GFL-WEAP-HARE" />
+    </Bind>
+
+    <Bind to="GFL-DOLL-CURVA">
+        <eqp name="GFL-WEAP-HARE" />
+    </Bind>
+
+    <Bind to="GFL-DOLL-VEPR12">
         <eqp name="GFL-WEAP-HARE" />
     </Bind>
 

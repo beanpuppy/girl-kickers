@@ -519,6 +519,84 @@
 		</Human>
 	</Entity>
 
+	<Entity name="GROZA-OTS14" type="Human" editorAutoHeight="false">
+		<RenderObject3D
+            model="data/models/dolls/ots14.khm"
+            diffuseTex="data/models/dolls/ots14.dds"
+        />
+
+		<Breakable
+            template="GenericTrooperGibs"
+            breakOnDamage="explosive"
+            deleteOnDeath="false"
+        />
+		<PhysicalParams health="250" />
+
+		<Human type="GoodGuy" unit="GFL-UNIT-GROZA" class="GFL-DOLL-OTS14">
+			<Id
+                name="GROZA-OTS14"
+                portrait="data/textures/portraits/gfl_ots14.dds"
+                gender="0"
+                voicePack="cia_female"
+            />
+			<FOV degrees="130" distanceMeters="999" eyeRadiusMeters="0.6" />
+			<Brain suppressionRecovery="90" />
+
+			<Mobility>
+				<MoveSpeed min="1.1" defaultMetersPerSec="2.5" max="10" />
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+			</Mobility>
+
+			<Equipment>
+				<Item name="GFL-WEAP-HARE" />
+				<Item name="M9 Pistol" />
+				<Item name="IronSights_Pistol" />
+				<Item name="Flashbang" />
+				<Item name="Frag Grenade" />
+				<Item name="FeetOfSteel" />
+			</Equipment>
+		</Human>
+	</Entity>
+
+	<Entity name="GROZA-OM50" type="Human" editorAutoHeight="false">
+		<RenderObject3D
+            model="data/models/dolls/om50.khm"
+            diffuseTex="data/models/dolls/om50.dds"
+        />
+
+		<Breakable
+            template="GenericTrooperGibs"
+            breakOnDamage="explosive"
+            deleteOnDeath="false"
+        />
+		<PhysicalParams health="250" />
+
+		<Human type="GoodGuy" unit="GFL-UNIT-GROZA" class="GFL-DOLL-OM50">
+			<Id
+                name="GROZA-OM50"
+                portrait="data/textures/portraits/gfl_om50.dds"
+                gender="0"
+                voicePack="cia_female"
+            />
+			<FOV degrees="130" distanceMeters="999" eyeRadiusMeters="0.6" />
+			<Brain suppressionRecovery="80" />
+
+			<Mobility>
+				<MoveSpeed min="1.3" defaultMetersPerSec="2.2" max="10" />
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+			</Mobility>
+
+			<Equipment>
+				<Item name="GFL-WEAP-HARE" />
+				<Item name="M9 Pistol" />
+				<Item name="IronSights_Pistol" />
+				<Item name="Flashbang" />
+				<Item name="Frag Grenade" />
+				<Item name="FeetOfSteel" />
+			</Equipment>
+		</Human>
+	</Entity>
+
 	<Entity name="GROZA-HARE" type="Human" editorAutoHeight="false">
 		<RenderObject3D
             model="data/models/dolls/hare.khm"
@@ -534,7 +612,7 @@
 
 		<Human type="GoodGuy" unit="GFL-UNIT-GROZA" class="GFL-DOLL-HARE">
 			<Id
-                name="CAFE-HARE"
+                name="GROZA-HARE"
                 portrait="data/textures/portraits/gfl_hare.dds"
                 gender="0"
                 voicePack="cia_female"
@@ -558,4 +636,81 @@
 		</Human>
 	</Entity>
 
+	<Entity name="GROZA-CURVA" type="Human" editorAutoHeight="false">
+		<RenderObject3D
+            model="data/models/dolls/curva.khm"
+            diffuseTex="data/models/dolls/curva.dds"
+        />
+
+		<Breakable
+            template="GenericTrooperGibs"
+            breakOnDamage="explosive"
+            deleteOnDeath="false"
+        />
+		<PhysicalParams health="225" />
+
+		<Human type="GoodGuy" unit="GFL-UNIT-GROZA" class="GFL-DOLL-CURVA">
+			<Id
+                name="GROZA-CURVA"
+                portrait="data/textures/portraits/gfl_curva.dds"
+                gender="0"
+                voicePack="cia_female"
+            />
+			<FOV degrees="120" distanceMeters="999" eyeRadiusMeters="0.6" />
+			<Brain suppressionRecovery="60" />
+
+			<Mobility>
+				<MoveSpeed min="1.1" defaultMetersPerSec="2.5" max="10" />
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+			</Mobility>
+
+			<Equipment>
+				<Item name="GFL-WEAP-HARE" />
+				<Item name="M9 Pistol" />
+				<Item name="IronSights_Pistol" />
+				<Item name="Flashbang" />
+				<Item name="Frag Grenade" />
+				<Item name="FeetOfSteel" />
+			</Equipment>
+		</Human>
+	</Entity>
+
+	<Entity name="GROZA-VEPR12" type="Human" editorAutoHeight="false">
+		<RenderObject3D
+            model="data/models/dolls/vepr12.khm"
+            diffuseTex="data/models/dolls/vepr12.dds"
+        />
+
+		<Breakable
+            template="GenericTrooperGibs"
+            breakOnDamage="explosive"
+            deleteOnDeath="false"
+        />
+		<PhysicalParams health="225" />
+
+		<Human type="GoodGuy" unit="GFL-UNIT-GROZA" class="GFL-DOLL-VEPR12">
+			<Id
+                name="GROZA-VEPR12"
+                portrait="data/textures/portraits/gfl_vepr12.dds"
+                gender="0"
+                voicePack="cia_female"
+            />
+			<FOV degrees="120" distanceMeters="999" eyeRadiusMeters="0.6" />
+			<Brain suppressionRecovery="60" />
+
+			<Mobility>
+				<MoveSpeed min="1.1" defaultMetersPerSec="2.5" max="10" />
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+			</Mobility>
+
+			<Equipment>
+				<Item name="GFL-WEAP-HARE" />
+				<Item name="M9 Pistol" />
+				<Item name="IronSights_Pistol" />
+				<Item name="Flashbang" />
+				<Item name="Frag Grenade" />
+				<Item name="FeetOfSteel" />
+			</Equipment>
+		</Human>
+	</Entity>
 </Entities>

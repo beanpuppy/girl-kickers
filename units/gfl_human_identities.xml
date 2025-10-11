@@ -94,10 +94,38 @@
     />
 
 	<Portrait
+        tex="data/textures/portraits/gfl_ots14.dds"
+        unit="GFL-UNIT-GROZA"
+        class="GFL-DOLL-OTS14"
+        gender="0"
+        customName="GROZA"
+    />
+	<Portrait
+        tex="data/textures/portraits/gfl_om50.dds"
+        unit="GFL-UNIT-GROZA"
+        class="GFL-DOLL-OM50"
+        gender="0"
+        customName="NEMESIS"
+    />
+	<Portrait
         tex="data/textures/portraits/gfl_hare.dds"
         unit="GFL-UNIT-GROZA"
         class="GFL-DOLL-HARE"
         gender="0"
         customName="KROLIK"
+    />
+	<Portrait
+        tex="data/textures/portraits/gfl_curva.dds"
+        unit="GFL-UNIT-GROZA"
+        class="GFL-DOLL-CURVA"
+        gender="0"
+        customName="COLPHNE"
+    />
+	<Portrait
+        tex="data/textures/portraits/gfl_vepr12.dds"
+        unit="GFL-UNIT-GROZA"
+        class="GFL-DOLL-VEPR12"
+        gender="0"
+        customName="VEPLEY"
     />
 </HumanIdentities>

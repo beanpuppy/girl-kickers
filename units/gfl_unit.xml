@@ -511,9 +511,49 @@
     >
         <Classes>
             <Class
+                name="GFL-DOLL-OTS14"
+                nameUI="@DOLL-OTS14-NAME"
+                description="@DOLL-OTS14-DESC"
+                numSlots="1"
+                supply="100"
+                iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
+                upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2"
+                maxUpgradeable="2"
+            />
+            <Class
+                name="GFL-DOLL-OM50"
+                nameUI="@DOLL-OM50-NAME"
+                description="@DOLL-OM50-DESC"
+                numSlots="1"
+                supply="100"
+                iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
+                upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2"
+                maxUpgradeable="2"
+            />
+            <Class
                 name="GFL-DOLL-HARE"
                 nameUI="@DOLL-HARE-NAME"
                 description="@DOLL-HARE-DESC"
+                numSlots="1"
+                supply="100"
+                iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
+                upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2"
+                maxUpgradeable="2"
+            />
+            <Class
+                name="GFL-DOLL-CURVA"
+                nameUI="@DOLL-CURVA-NAME"
+                description="@DOLL-CURVA-DESC"
+                numSlots="1"
+                supply="100"
+                iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
+                upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2"
+                maxUpgradeable="2"
+            />
+            <Class
+                name="GFL-DOLL-VEPR12"
+                nameUI="@DOLL-VEPR12-NAME"
+                description="@DOLL-VEPR12-DESC"
                 numSlots="1"
                 supply="100"
                 iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
