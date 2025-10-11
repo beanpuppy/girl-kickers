@@ -62,8 +62,8 @@
 
         <AttackTypes>
 			<AttackType name="AN94_Hyperburst" rangeMeters="10" />
-			<AttackType name="NWS_CarbineAimedFire" rangeMeters="20" />
-			<AttackType name="NWS_CarbineAimedFireXX" rangeMeters="9999" />
+			<AttackType name="Rangers_CarbineAimedFire" rangeMeters="20" />
+			<AttackType name="Rangers_CarbineAimedFireXX" rangeMeters="9999" />
 		</AttackTypes>
 
 		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
@@ -240,10 +240,10 @@
         />
 
         <AttackTypes>
-			<AttackType name="NWS_RapidFire" rangeMeters="7" />
-			<AttackType name="NWS_RapidFireMed" rangeMeters="18" />
-			<AttackType name="NWS_CarbineAimedFire" rangeMeters="40" />
-			<AttackType name="NWS_CarbineAimedFireXX" rangeMeters="9999" />
+			<AttackType name="Rangers_RapidFire" rangeMeters="7" />
+			<AttackType name="Rangers_RapidFireMed" rangeMeters="18" />
+			<AttackType name="Rangers_CarbineAimedFire" rangeMeters="40" />
+			<AttackType name="Rangers_CarbineAimedFireXX" rangeMeters="9999" />
 		</AttackTypes>
 
 		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
@@ -413,10 +413,10 @@
         />
 
         <AttackTypes>
-			<AttackType name="NWS_RapidFire" rangeMeters="7" />
-			<AttackType name="NWS_RapidFireMed" rangeMeters="18" />
-			<AttackType name="NWS_CarbineAimedFire" rangeMeters="40" />
-			<AttackType name="NWS_CarbineAimedFireXX" rangeMeters="9999" />
+			<AttackType name="Rangers_RapidFire" rangeMeters="7" />
+			<AttackType name="Rangers_RapidFireMed" rangeMeters="18" />
+			<AttackType name="Rangers_CarbineAimedFire" rangeMeters="40" />
+			<AttackType name="Rangers_CarbineAimedFireXX" rangeMeters="9999" />
 		</AttackTypes>
 
 		<AttackTypesSuppressiveFire>
@@ -956,9 +956,9 @@
         />
 
 		<AttackTypes>
-			<AttackType name="NWS_SMGUntrainedAutoFire" rangeMeters="7" />
-			<AttackType name="NWS_SMGControlledBurst" rangeMeters="12" />
-			<AttackType name="NWS_SMGAimedFire" rangeMeters="20" />
+			<AttackType name="Rangers_SMGAutoFire" rangeMeters="7" />
+			<AttackType name="Rangers_SMGBurstFire" rangeMeters="12" />
+			<AttackType name="Rangers_CarbineAimedFire" rangeMeters="20" />
 			<AttackType name="Rangers_CarbineAimedFireXX" rangeMeters="9999" />
 		</AttackTypes>
 
@@ -1041,9 +1041,9 @@
         />
 
 		<AttackTypes>
-			<AttackType name="NWS_SMGUntrainedAutoFire" rangeMeters="7" />
-			<AttackType name="NWS_SMGControlledBurst" rangeMeters="12" />
-			<AttackType name="NWS_SMGAimedFire" rangeMeters="20" />
+			<AttackType name="Rangers_SMGAutoFire" rangeMeters="7" />
+			<AttackType name="Rangers_SMGBurstFire" rangeMeters="12" />
+			<AttackType name="Rangers_CarbineAimedFire" rangeMeters="20" />
 			<AttackType name="Rangers_CarbineAimedFireXX" rangeMeters="9999" />
 		</AttackTypes>
 
@@ -1126,9 +1126,9 @@
         />
 
 		<AttackTypes>
-			<AttackType name="NWS_SMGUntrainedAutoFire" rangeMeters="7" />
-			<AttackType name="NWS_SMGControlledBurst" rangeMeters="12" />
-			<AttackType name="NWS_SMGAimedFire" rangeMeters="20" />
+			<AttackType name="Rangers_SMGAutoFire" rangeMeters="7" />
+			<AttackType name="Rangers_SMGBurstFire" rangeMeters="12" />
+			<AttackType name="Rangers_CarbineAimedFire" rangeMeters="20" />
 			<AttackType name="Rangers_CarbineAimedFireXX" rangeMeters="9999" />
 		</AttackTypes>
 
