@@ -10,8 +10,11 @@ This script prepares MMD (PMX) models for use in Door Kickers 2 by:
 6. Creating new UVs with Smart UV Project
 7. Baking all materials to a single texture
 8. Replacing materials with the baked texture
+9. Converting the texture to DDS (requires ImageMagick)
 """
 
+import shutil
+import subprocess
 from pathlib import Path
 
 import bpy
@@ -625,6 +628,23 @@ def main():
     bpy.ops.wm.save_as_mainfile(filepath=str(blend_path))
     print(f"Saved blend file to {blend_path}")
 
+    # Convert PNG to DDS (Linux only, requires ImageMagick)
+    dds_path = OUTPUT_DIR / f"{model_name}.dds"
+    if shutil.which("magick"):
+        print(f"\nConverting texture to DDS...")
+        try:
+            subprocess.run(
+                ["magick", str(output_path), "-define", "dds:compression=dxt5", str(dds_path)],
+                check=True,
+            )
+            print(f"Saved DDS to {dds_path}")
+        except subprocess.CalledProcessError as e:
+            print(f"DDS conversion failed: {e}")
+            dds_path = None
+    else:
+        print("\nImageMagick not found, skipping DDS conversion")
+        dds_path = None
+
     print(f"\n{'=' * 60}")
     print("DONE!")
     print(f"{'=' * 60}")
@@ -632,6 +652,8 @@ def main():
     print(f"Verts: {len(main_mesh.data.vertices)}")
     print(f"Faces: {len(main_mesh.data.polygons)}")
     print(f"Texture: {output_path}")
+    if dds_path:
+        print(f"DDS:     {dds_path}")
     print(f"Blend:   {blend_path}")
     print("\nNext step:")
     print(f"  mise run add-weights {blend_path} /path/to/reference.khm")
