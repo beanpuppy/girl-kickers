@@ -13,8 +13,8 @@ run = 'zip -r khm_tools.zip blender -x "blender/__pycache__/*"'
 
 [tasks.prepare-mmd]
 description = "Prepare MMD model for DK2 (import, clean, bake textures)"
-run = 'blender --background --python tools/mmd_converter/prepare_mmd.py -- --pmx "$1" --name "$2"'
+run = 'blender --background --python tools/mmd_converter/prepare_mmd.py --'
 
 [tasks.add-weights]
 description = "Add DK2 armature and automatic weights to prepared model"
-run = 'blender --background --python tools/mmd_converter/add_weights.py -- --blend "$1" --reference "$2"'
+run = 'blender --background --python tools/mmd_converter/add_weights.py --'
