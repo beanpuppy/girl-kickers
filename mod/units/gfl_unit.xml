@@ -1033,10 +1033,171 @@
             <Node name="GFL_FROST_SpicyCandy" />
 
             <!-- Veteran -->
-            <Node name="GFL_FROST_CombatReadiness" minSquadLevel="10" />
-            <Node name="GFL_FROST_GriffinEfficiency" minSquadLevel="10" />
-            <Node name="GFL_FROST_AdvancedIntelNetwork" minSquadLevel="10" numLevels="3" />
-            <Node name="GFL_FROST_TacticalAdaptation" minSquadLevel="10" />
+            <Node name="GFL_FROST_CombatReadiness" />
+            <Node name="GFL_FROST_GriffinEfficiency" />
+            <Node name="GFL_FROST_AdvancedIntelNetwork" numLevels="3" />
+            <Node name="GFL_FROST_TacticalAdaptation" />
+        </Doctrine>
+    </Unit>
+	
+    <Unit
+        name="GFL-UNIT-MONSOON"
+        nameUI="@GFL-UNIT-MONSOON-NAME"
+        description="@GFL-UNIT-MONSOON-DESC"
+        flagTex="data/textures/gfl_monsoon_bg.dds"
+        flagColor="E4E4E4"
+        movie="data/movies/gfl_unlock_monsoon.ogv"
+        rndNameEntry="@#GFL-UNIT-MONSOON-NAME-RND"
+        voicepack="commander_eng"
+        incapacitationChance="90"
+        incapacitationChanceCrit="40"
+    >
+        <Classes>
+			<Class
+                name="GFL-DOLL-QBZ95"
+                nameUI="@DOLL-QBZ95-NAME"
+                description="@DOLL-QBZ95-DESC"
+                numSlots="1"
+                supply="100"
+                iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
+                upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2"
+                maxUpgradeable="2"
+            />
+			<Class
+                name="GFL-DOLL-QBZ97"
+                nameUI="@DOLL-QBZ97-NAME"
+                description="@DOLL-QBZ97-DESC"
+                numSlots="1"
+                supply="100"
+                iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
+                upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2"
+                maxUpgradeable="2"
+            />
+            <Class
+                name="GFL-DOLL-CSLS06"
+                nameUI="@DOLL-CSLS06-NAME"
+                description="@DOLL-CSLS06-DESC"
+                numSlots="1"
+                supply="100"
+                iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
+                upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2"
+                maxUpgradeable="2"
+            />
+            <Class
+                name="GFL-DOLL-CZ75"
+                nameUI="@DOLL-CZ75-NAME"
+                description="@DOLL-CZ75-DESC"
+                numSlots="1"
+                supply="100"
+                iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
+                upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2"
+                maxUpgradeable="2"
+            />
+        </Classes>
+
+        <TrooperRanks>
+            <Rank
+                name="@agent_rank_0"
+                xpNeeded="0"
+                badgeTex="data/textures/gui/customization/cia_rank_01.dds"
+            />
+            <Rank
+                name="@agent_rank_1"
+                xpNeeded="700"
+                badgeTex="data/textures/gui/customization/cia_rank_02.dds"
+            />
+            <Rank
+                name="@agent_rank_2"
+                xpNeeded="2300"
+                badgeTex="data/textures/gui/customization/cia_rank_03.dds"
+            />
+            <Rank
+                name="@agent_rank_3"
+                xpNeeded="5600"
+                badgeTex="data/textures/gui/customization/cia_rank_04.dds"
+            />
+            <Rank
+                name="@agent_rank_4"
+                xpNeeded="11800"
+                badgeTex="data/textures/gui/customization/cia_rank_05.dds"
+            />
+            <Rank
+                name="@agent_rank_5"
+                xpNeeded="22400"
+                badgeTex="data/textures/gui/customization/cia_rank_06.dds"
+            />
+            <Rank
+                name="@agent_rank_6"
+                xpNeeded="38400"
+                badgeTex="data/textures/gui/customization/cia_rank_07.dds"
+            />
+            <Rank
+                name="@agent_rank_7"
+                xpNeeded="60200"
+                badgeTex="data/textures/gui/customization/cia_rank_08.dds"
+            />
+            <Rank
+                name="@agent_rank_8"
+                xpNeeded="86400"
+                badgeTex="data/textures/gui/customization/cia_rank_09.dds"
+            />
+            <Rank
+                name="@agent_rank_9"
+                xpNeeded="126400"
+                badgeTex="data/textures/gui/customization/cia_rank_10.dds"
+            />
+        </TrooperRanks>
+
+        <Ranks>
+            <Rank xpNeeded="0" badgeTex="" />
+            <Rank xpNeeded="4000" badgeTex="" />
+            <Rank xpNeeded="9000" badgeTex="" />
+            <Rank xpNeeded="14980" badgeTex="" />
+            <Rank xpNeeded="21920" badgeTex="" />
+            <Rank xpNeeded="29800" badgeTex="" />
+            <Rank xpNeeded="38600" badgeTex="" />
+            <Rank xpNeeded="48310" badgeTex="" />
+            <Rank xpNeeded="58900" badgeTex="" />
+            <Rank xpNeeded="70360" badgeTex="" />
+            <Rank xpNeeded="82680" badgeTex="" />
+            <Rank xpNeeded="95820" badgeTex="" />
+            <Rank xpNeeded="109790" badgeTex="" />
+            <Rank xpNeeded="124550" badgeTex="" />
+            <Rank xpNeeded="140100" badgeTex="" />
+            <Rank xpNeeded="156420" badgeTex="" />
+        </Ranks>
+
+        <Doctrine doctrinePointsPerSquadLevel="1">
+            <Node name="Handguns_ReloadDrills" />
+            <Node name="GFL_CQCProtocols">
+                <Node name="GFL_OverwhelmingForce" />
+            </Node>
+            <Node name="GFL_RapidDeployment">
+                <Node name="GFL_WeaponTransition" />
+                <Node name="GFL_CombatEfficiency" />
+            </Node>
+            <Node name="GFL_SuppressionProtocols" />
+            <Node name="GFL_LethalPrecision" />
+
+            <Node name="GFL_OptimizedPerformance" />
+            <Node name="GFL_CommunicationProtocols">
+                <Node name="GFL_AdvancedProtocols">
+                    <Node name="GFL_TacticalIntelligence" numLevels="2" />
+                    <Node name="GFL_InformationExtraction" />
+                </Node>
+            </Node>
+
+            <!-- Neural Helix -->
+            <Node name="GFL_FROST_CommonRail" />
+            <Node name="GFL_FROST_AuroraCurtain" />
+            <Node name="GFL_FROST_SweetsStockpile" />
+            <Node name="GFL_FROST_SpicyCandy" />
+
+            <!-- Veteran -->
+            <Node name="GFL_FROST_CombatReadiness" />
+            <Node name="GFL_FROST_GriffinEfficiency" />
+            <Node name="GFL_FROST_AdvancedIntelNetwork" numLevels="3" />
+            <Node name="GFL_FROST_TacticalAdaptation" />
         </Doctrine>
     </Unit>
 </Units>

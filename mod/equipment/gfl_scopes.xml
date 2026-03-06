@@ -1,0 +1,910 @@
+<!--
+	EquipmentModifier can change anything from the weapon's <ModifiableParams>.
+		NOTE1: if the param is NOT defined in the base equipment, we consider the default to be zero, so we add the modifiers on top of zero.
+		NOTE2: these are specific to Optics currently, other equipment types cannot modify values.
+
+	Same for AttackTypeModifier, can modify anything from the current AttackType if it's inside the defined range
+		NOTE: minAimTime2/maxAimTime2 are unique to Scopes. Instead of adding to the attacktype aimTime, we defined a new range of aimtime (for the range defined in the scope), which will be added on top of the aimTime from the attacktype
+ex:
+
+	<EquipmentModifier
+		changeInTime="-50"
+		readyTime="-20"
+		reloadTime="-100"
+	/>
+
+	<AttackTypeModifier minRange="5" maxRange="10"
+		minAimTime2="-50"
+		maxAimTime2="-50"
+		resetTime="-50"
+		accuracyAdd="+30"
+		critChanceAdd="+30"
+	/>
+
+	<AttackTypeModifier minRange="10" maxRange="50"
+		minAimTime2="-50"
+		maxAimTime2="-50"
+		resetTime="-50"
+		accuracyAdd="+30"
+		critChanceAdd="+30"
+	/>
+
+
+-->
+
+
+<!-- 
+		Scope Names so binding will be easier
+		
+		<to name="scope_GFL_IronSights_Primary" />
+		<to name="scope_GFL_RedDot_Rifle" />
+		<to name="scope_GFL_Holosight" />
+		<to name="scope_GFL_M68CCO" />
+		<to name="scope_GFL_M150RCO" />
+		<to name="scope_GFL_HoloMag3x" />
+		<to name="scope_GFL_SpecterDR" />
+		<to name="scope_GFL_LPVO_6X" />
+		<to name="scope_GFL_LPVO_8X" />
+		<to name="scope_GFL_LROMK4_3_10X" />
+		<to name="scope_GFL_LROMK6_3_18X" />
+		<to name="scope_GFL_LROPM_5_25X" />
+		
+		For Rifles
+		
+		<to name="scope_GFL_IronSights_Primary" />
+		<to name="scope_GFL_RedDot_Rifle" />
+		<to name="scope_GFL_Holosight" />
+		<to name="scope_GFL_M68CCO" />
+		<to name="scope_GFL_M150RCO" />
+		<to name="scope_GFL_HoloMag3x" />
+		<to name="scope_GFL_SpecterDR" />
+		<to name="scope_GFL_LPVO_6X" />
+		
+		For SMGs
+		
+		<to name="scope_GFL_IronSights_Primary" />
+		<to name="scope_GFL_RedDot_Rifle" />
+		<to name="scope_GFL_Holosight" />
+		<to name="scope_GFL_M68CCO" />
+		<to name="scope_GFL_M150RCO" />
+		<to name="scope_GFL_HoloMag3x" />
+		<to name="scope_GFL_SpecterDR" />
+		
+		For Snipers
+		
+		<to name="scope_GFL_IronSights_Primary" />
+		<to name="scope_GFL_M150RCO" />
+		<to name="scope_GFL_HoloMag3x" />
+		<to name="scope_GFL_SpecterDR" />
+		<to name="scope_GFL_LPVO_6X" />
+		<to name="scope_GFL_LPVO_8X" />
+		<to name="scope_GFL_LROMK4_3_10X" />
+		<to name="scope_GFL_LROMK6_3_18X" />
+		<to name="scope_GFL_LROPM_5_25X" />
+		
+		For Handguns
+		
+		<to name="scope_GFL_IronSights_Secondary" />
+		<to name="scope_GFL_RedDot_Pistol" />
+-->
+
+
+<Equipment>
+	<Scope name="scope_GFL_IronSights_Primary"
+			inventoryBinding="PrimaryWeaponScope"
+			tooltip="@scope_GFL_ironsights_name"
+			description="@scope_GFL_ironsights_desc"
+			img="data/models/weapons/attachments/iron_sights_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="3"/>
+		<Params>
+		
+			<AttackTypeModifier minRange="0" maxRange="7">
+				<AddTo
+					minAimTime2="-170"
+					maxAimTime2="-120"
+					critChanceAdd="+5"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="7" maxRange="15">
+				<AddTo
+					minAimTime2="-170"
+					maxAimTime2="-120"
+					critChanceAdd="+5"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="15" maxRange="25">
+				<AddTo
+					minAimTime2="-160"
+					maxAimTime2="-110"
+					critChanceAdd="+5"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="25" maxRange="50">
+				<AddTo
+					minAimTime2="-100"
+					maxAimTime2="+50"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="50" maxRange="100">
+				<AddTo
+					minAimTime2="+50"
+					maxAimTime2="+0"
+					critChanceAdd="+20"
+				/>
+			</AttackTypeModifier>
+			
+		</Params>
+	</Scope>
+
+	<Scope name="scope_GFL_IronSights_Secondary"
+			inventoryBinding="SecondaryWeaponScope"
+			tooltip="@scope_GFL_ironsights_name"
+			description="@scope_GFL_ironsights_desc"
+			img="data/models/weapons/attachments/iron_sights_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="3"/>
+		<Params>
+		
+			<AttackTypeModifier minRange="0" maxRange="7">
+				<AddTo
+					minAimTime2="-170"
+					maxAimTime2="-120"
+					critChanceAdd="+15"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="7" maxRange="15">
+				<AddTo
+					minAimTime2="-170"
+					maxAimTime2="-120"
+					critChanceAdd="+15"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="15" maxRange="25">
+				<AddTo
+					minAimTime2="-160"
+					maxAimTime2="-110"
+					critChanceAdd="+15"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="25" maxRange="50">
+				<AddTo
+					minAimTime2="-100"
+					maxAimTime2="+50"
+					critChanceAdd="+10"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="50" maxRange="100">
+				<AddTo
+					minAimTime2="+50"
+					maxAimTime2="+0"
+					critChanceAdd="+5"
+				/>
+			</AttackTypeModifier>
+			
+		</Params>
+	</Scope>
+
+	<Scope name="scope_GFL_RedDot_Pistol"
+			unlockCost="0"
+			inventoryBinding="SecondaryWeaponScope"
+			tooltip="@scope_GFL_smallreddot_name"
+			description="@scope_GFL_smallreddot_desc"
+			img="data/models/weapons/attachments/rmr_ui.dds"
+		>
+		
+		<RenderObject3D model="data/models/weapons/attachments/red_dot_pistol.khm" attachSlot="optics_socket_pistol" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/red_dot_pistol.dds"/>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params>
+		
+			<AttackTypeModifier minRange="0" maxRange="7">
+				<AddTo
+					minAimTime2="-160"
+					maxAimTime2="-110"
+					critChanceAdd="+30"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="7" maxRange="15">
+				<AddTo
+					minAimTime2="-160"
+					maxAimTime2="-110"
+					critChanceAdd="+30"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="15" maxRange="25">
+				<AddTo
+					minAimTime2="-150"
+					maxAimTime2="-100"
+					critChanceAdd="+25"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="25" maxRange="50">
+				<AddTo
+					minAimTime2="-100"
+					maxAimTime2="-50"
+					critChanceAdd="-20"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="50" maxRange="100">
+				<AddTo
+					minAimTime2="+70"
+					maxAimTime2="+20"
+					critChanceAdd="-50"
+				/>
+			</AttackTypeModifier>
+			
+		</Params>
+
+	</Scope>
+	
+	<Scope name="scope_GFL_RedDot_Rifle"
+			unlockCost="0"
+			inventoryBinding="PrimaryWeaponScope"
+			tooltip="@scope_GFL_smallreddot_name"
+			description="@scope_GFL_smallreddot_desc"
+			img="data/models/weapons/attachments/rmr_ui.dds"
+		>
+		
+		<RenderObject3D model="data/models/weapons/attachments/red_dot_pistol.khm" attachSlot="optics_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/red_dot_pistol.dds"/>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params>
+		
+			<AttackTypeModifier minRange="0" maxRange="7">
+				<AddTo
+					minAimTime2="-160"
+					maxAimTime2="-110"
+					critChanceAdd="+20"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="7" maxRange="15">
+				<AddTo
+					minAimTime2="-160"
+					maxAimTime2="-110"
+					critChanceAdd="+20"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="15" maxRange="25">
+				<AddTo
+					minAimTime2="-150"
+					maxAimTime2="-100"
+					critChanceAdd="+10"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="25" maxRange="50">
+				<AddTo
+					minAimTime2="-100"
+					maxAimTime2="-50"
+					critChanceAdd="-20"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="50" maxRange="100">
+				<AddTo
+					minAimTime2="+70"
+					maxAimTime2="+20"
+					critChanceAdd="-50"
+				/>
+			</AttackTypeModifier>
+			
+		</Params>
+
+	</Scope>
+
+	<Scope name="scope_GFL_Holosight" unlockCost="2"
+			inventoryBinding="PrimaryWeaponScope"
+			tooltip="@scope_GFL_holosight_name"
+			description="@scope_GFL_holosight_desc"
+			img="data/models/weapons/attachments/holosight_ui.dds"
+		>
+		<RenderObject3D model="data/models/weapons/attachments/scope_holosight_01.khm" attachSlot="optics_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/scope_holosight_01b.dds"/>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+		<ConcealmentModifier add="-1"/>
+		
+		<Params>
+		
+			<AttackTypeModifier minRange="0" maxRange="7">
+				<AddTo
+					minAimTime2="-150"
+					maxAimTime2="-100"
+					critChanceAdd="+10"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="7" maxRange="15">
+				<AddTo
+					minAimTime2="-150"
+					maxAimTime2="-100"
+					critChanceAdd="+30"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="15" maxRange="25">
+				<AddTo
+					minAimTime2="-150"
+					maxAimTime2="-100"
+					critChanceAdd="+20"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="25" maxRange="50">
+				<AddTo
+					minAimTime2="-100"
+					maxAimTime2="-100"
+					critChanceAdd="+0"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="50" maxRange="100">
+				<AddTo
+					minAimTime2="+50"
+					maxAimTime2="+20"
+					critChanceAdd="-50"
+				/>
+			</AttackTypeModifier>
+			
+		</Params>
+		
+	</Scope>
+	
+	
+	<Scope name="scope_GFL_M68CCO"
+			inventoryBinding="PrimaryWeaponScope"
+			tooltip="@scope_GFL_largereddot_name"
+			description="@scope_GFL_largereddot_desc"
+			img="data/models/weapons/attachments/m68_cco_ui.dds"
+		>
+		<RenderObject3D model="data/models/weapons/attachments/scope_m68_cco.khm" attachSlot="optics_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/scope_m68_cco.dds"/>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+		<ConcealmentModifier add="-1"/>
+
+		<Params>
+		
+			<AttackTypeModifier minRange="0" maxRange="7">
+				<AddTo
+					minAimTime2="-155"
+					maxAimTime2="-105"
+					critChanceAdd="+15"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="7" maxRange="15">
+				<AddTo
+					minAimTime2="-155"
+					maxAimTime2="-105"
+					critChanceAdd="+25"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="15" maxRange="25">
+				<AddTo
+					minAimTime2="-150"
+					maxAimTime2="-100"
+					critChanceAdd="+25"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="25" maxRange="50">
+				<AddTo
+					minAimTime2="-100"
+					maxAimTime2="-100"
+					critChanceAdd="+10"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="50" maxRange="100">
+				<AddTo
+					minAimTime2="+70"
+					maxAimTime2="+20"
+					critChanceAdd="-50"
+				/>
+			</AttackTypeModifier>
+			
+		</Params>
+
+	</Scope>
+	
+		<Scope name="scope_GFL_HoloMag3x" unlockCost="2"
+			inventoryBinding="PrimaryWeaponScope"
+			tooltip="@scope_GFL_holomag3x_name"
+			description="@scope_GFL_holomag3x_desc"
+			img="data/models/weapons/attachments/holo_magnifier_combo_ui.dds"
+		>
+		<RenderObject3D model="data/models/weapons/attachments/holo_magnifier_combo.khm" attachSlot="optics_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/holo_magnifier_combo.dds"/>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+		<ConcealmentModifier add="-2"/>
+		
+		<Params>
+		
+			<AttackTypeModifier minRange="0" maxRange="7">
+				<AddTo
+					minAimTime2="-140"
+					maxAimTime2="-90"
+					critChanceAdd="+10"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="7" maxRange="15">
+				<AddTo
+					minAimTime2="-140"
+					maxAimTime2="-90"
+					critChanceAdd="+25"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="15" maxRange="25">
+				<AddTo
+					minAimTime2="-140"
+					maxAimTime2="-90"
+					critChanceAdd="+25"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="25" maxRange="50">
+				<AddTo
+					minAimTime2="-120"
+					maxAimTime2="-90"
+					critChanceAdd="+20"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="50" maxRange="100">
+				<AddTo
+					minAimTime2="+0"
+					maxAimTime2="+0"
+					critChanceAdd="-50"
+				/>
+			</AttackTypeModifier>
+			
+		</Params>
+		
+	</Scope>
+
+	<Scope name="scope_GFL_M150RCO" unlockCost="2"
+			inventoryBinding="PrimaryWeaponScope"
+			tooltip="@scope_GFL_4x_name"
+			description="@scope_GFL_4x_desc"
+			category="magnified"
+			img="data/models/weapons/attachments/acog_4x_ui.dds"
+		>
+		<RenderObject3D model="data/models/weapons/attachments/scope_m150_acog4x.khm" attachSlot="optics_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/scope_m150_acog4x.dds"/>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+		<ConcealmentModifier add="-2"/>
+		
+		<Params>
+		
+			<AttackTypeModifier minRange="0" maxRange="7">
+				<AddTo
+					minAimTime2="-120"
+					maxAimTime2="-80"
+					critChanceAdd="-5"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="7" maxRange="15">
+				<AddTo
+					minAimTime2="-120"
+					maxAimTime2="-80"
+					critChanceAdd="+10"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="15" maxRange="25">
+				<AddTo
+					minAimTime2="-160"
+					maxAimTime2="-110"
+					critChanceAdd="+35"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="25" maxRange="50">
+				<AddTo
+					minAimTime2="-150"
+					maxAimTime2="-100"
+					critChanceAdd="+25"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="50" maxRange="100">
+				<AddTo
+					minAimTime2="-100"
+					maxAimTime2="-200"
+					critChanceAdd="+0"
+				/>
+			</AttackTypeModifier>
+			
+		</Params>
+		
+	</Scope>
+
+	<Scope name="scope_GFL_SpecterDR" unlockCost="2"
+			inventoryBinding="PrimaryWeaponScope"
+			tooltip="@scope_GFL_SpecterDR_name"
+			description="@scope_GFL_SpecterDR_desc"
+			img="data/models/weapons/attachments/specter_dr_ui.dds"
+		>
+		<RenderObject3D model="data/models/weapons/attachments/scope_spectredr.khm" attachSlot="optics_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/scope_spectredra.dds"/>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+		<ConcealmentModifier add="-3"/>
+		
+		<Params>
+		
+			<EquipmentModifier>
+				<AddTo
+					readyTime="+50"
+				/>
+			</EquipmentModifier>
+			
+			<AttackTypeModifier minRange="0" maxRange="7">
+				<AddTo
+					minAimTime2="-120"
+					maxAimTime2="-70"
+					critChanceAdd="+10"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="7" maxRange="15">
+				<AddTo
+					minAimTime2="-140"
+					maxAimTime2="-90"
+					critChanceAdd="+25"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="15" maxRange="25">
+				<AddTo
+					minAimTime2="-150"
+					maxAimTime2="-110"
+					critChanceAdd="+30"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="25" maxRange="50">
+				<AddTo
+					minAimTime2="-150"
+					maxAimTime2="-100"
+					critChanceAdd="+25"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="50" maxRange="100">
+				<AddTo
+					minAimTime2="-100"
+					maxAimTime2="-200"
+					critChanceAdd="+0"
+				/>
+			</AttackTypeModifier>
+			
+		</Params>
+		
+	</Scope>
+
+	<Scope name="scope_GFL_LPVO_6X" unlockCost="2"
+			inventoryBinding="PrimaryWeaponScope"
+			tooltip="@scope_GFL_lpvo6x_name"
+			description="@scope_GFL_lpvo6x_desc"
+			img="data/models/weapons/attachments/lpvo_6x_ui.dds"
+		>
+		<RenderObject3D model="data/models/weapons/attachments/scope_lpvo_6x.khm" attachSlot="optics_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/scope_lpvo_6x.dds"/>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="-10"/>
+		<ConcealmentModifier add="-4"/>
+		
+		<Params>
+		
+			<EquipmentModifier>
+				<AddTo
+					readyTime="+50"
+				/>
+			</EquipmentModifier>
+			
+			<AttackTypeModifier minRange="0" maxRange="7">
+				<AddTo
+					minAimTime2="-120"
+					maxAimTime2="-70"
+					critChanceAdd="+20"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="7" maxRange="15">
+				<AddTo
+					minAimTime2="-130"
+					maxAimTime2="-80"
+					critChanceAdd="+25"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="15" maxRange="25">
+				<AddTo
+					minAimTime2="-150"
+					maxAimTime2="-100"
+					critChanceAdd="+40"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="25" maxRange="50">
+				<AddTo
+					minAimTime2="-200"
+					maxAimTime2="-150"
+					critChanceAdd="+60"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="50" maxRange="100">
+				<AddTo
+					minAimTime2="-200"
+					maxAimTime2="-150"
+					critChanceAdd="+20"
+				/>
+			</AttackTypeModifier>
+			
+		</Params>
+		
+	</Scope>
+
+	<Scope name="scope_GFL_LPVO_8X" unlockCost="2"
+			inventoryBinding="PrimaryWeaponScope"
+			tooltip="@scope_GFL_lpvo8x_name"
+			description="@scope_GFL_lpvo8x_desc"
+			img="data/models/weapons/attachments/lpvo_8x_ui.dds"
+		>
+		<RenderObject3D model="data/models/weapons/attachments/scope_lpvo_8x.khm" attachSlot="optics_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/scope_lpvo_8x.dds"/>
+		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="-13"/>
+		<ConcealmentModifier add="-4"/>
+		
+		<Params>
+		
+			<EquipmentModifier>
+				<AddTo
+					readyTime="+50"
+				/>
+			</EquipmentModifier>
+			
+			<AttackTypeModifier minRange="0" maxRange="7">
+				<AddTo
+					minAimTime2="-120"
+					maxAimTime2="-70"
+					critChanceAdd="+30"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="7" maxRange="15">
+				<AddTo
+					minAimTime2="-130"
+					maxAimTime2="-80"
+					critChanceAdd="+35"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="15" maxRange="25">
+				<AddTo
+					minAimTime2="-150"
+					maxAimTime2="-100"
+					critChanceAdd="+40"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="25" maxRange="50">
+				<AddTo
+					minAimTime2="-250"
+					maxAimTime2="-200"
+					critChanceAdd="+60"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="50" maxRange="100">
+				<AddTo
+					minAimTime2="-300"
+					maxAimTime2="-250"
+					critChanceAdd="+30"
+				/>
+			</AttackTypeModifier>
+			
+		</Params>
+		
+	</Scope>
+
+	<Scope name="scope_GFL_LROMK4_3_10X" unlockCost="2"
+			inventoryBinding="PrimaryWeaponScope"
+			tooltip="@scope_GFL_lromk4_name"
+			description="@scope_GFL_lromk4_desc"
+			img="data/models/weapons/attachments/lro_mk4_ui.dds"
+		>
+		<RenderObject3D model="data/models/weapons/attachments/scope_lromk4.khm" attachSlot="optics_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/scope_lromk4.dds"/>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="-15"/>
+		<ConcealmentModifier add="-5"/>
+		
+		<Params>
+		
+			<EquipmentModifier>
+				<AddTo
+					readyTime="+50"
+				/>
+			</EquipmentModifier>
+			
+			<AttackTypeModifier minRange="0" maxRange="7">
+				<AddTo
+					minAimTime2="+150"
+					maxAimTime2="+150"
+					critChanceAdd="+30"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="7" maxRange="15">
+				<AddTo
+					minAimTime2="+100"
+					maxAimTime2="+100"
+					critChanceAdd="+35"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="15" maxRange="25">
+				<AddTo
+					minAimTime2="-170"
+					maxAimTime2="-120"
+					critChanceAdd="+45"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="25" maxRange="50">
+				<AddTo
+					minAimTime2="-250"
+					maxAimTime2="-200"
+					critChanceAdd="+45"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="50" maxRange="100">
+				<AddTo
+					minAimTime2="-300"
+					maxAimTime2="-250"
+					critChanceAdd="+30"
+				/>
+			</AttackTypeModifier>
+			
+		</Params>
+		
+	</Scope>
+
+	<Scope name="scope_GFL_LROMK6_3_18X" unlockCost="2"
+			inventoryBinding="PrimaryWeaponScope"
+			tooltip="@scope_GFL_lromk6_3_18_name"
+			description="@scope_GFL_lromk6_3_18_desc"
+			img="data/models/weapons/attachments/lro_mk6_ui.dds"
+		>
+		<RenderObject3D model="data/models/weapons/attachments/scope_lromk6_3_18.khm" attachSlot="optics_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/scope_lromk6_3_18.dds"/>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="-20"/>
+		<ConcealmentModifier add="-5"/>
+		
+		<Params>
+		
+			<EquipmentModifier>
+				<AddTo
+					readyTime="+50"
+				/>
+			</EquipmentModifier>
+			
+			<AttackTypeModifier minRange="0" maxRange="7">
+				<AddTo
+					minAimTime2="+150"
+					maxAimTime2="+150"
+					critChanceAdd="+35"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="7" maxRange="15">
+				<AddTo
+					minAimTime2="+100"
+					maxAimTime2="+100"
+					critChanceAdd="+45"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="15" maxRange="25">
+				<AddTo
+					minAimTime2="-170"
+					maxAimTime2="-120"
+					critChanceAdd="+45"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="25" maxRange="50">
+				<AddTo
+					minAimTime2="-350"
+					maxAimTime2="-300"
+					critChanceAdd="+50"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="50" maxRange="100">
+				<AddTo
+					minAimTime2="-450"
+					maxAimTime2="-400"
+					critChanceAdd="+60"
+				/>
+			</AttackTypeModifier>
+			
+		</Params>
+		
+	</Scope>
+
+	
+
+	<Scope name="scope_GFL_LROPM_5_25X" unlockCost="6"
+			inventoryBinding="PrimaryWeaponScope"
+			tooltip="@scope_GFL_lropm5_25_name"
+			description="@scope_GFL_lropm5_25_desc"
+			img="data/models/weapons/attachments/pm_lro_5_25_ui.dds"
+		>
+		<RenderObject3D model="data/models/weapons/attachments/scope_lropm5_25.khm" attachSlot="optics_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/scope_lropm5_25.dds"/>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="-25"/>
+		<ConcealmentModifier add="-5"/>
+		
+		<Params>
+		
+			<EquipmentModifier>
+				<AddTo
+					readyTime="+50"
+				/>
+			</EquipmentModifier>
+			
+			<AttackTypeModifier minRange="0" maxRange="7">
+				<AddTo
+					minAimTime2="+350"
+					maxAimTime2="+350"
+					critChanceAdd="+35"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="7" maxRange="15">
+				<AddTo
+					minAimTime2="+300"
+					maxAimTime2="+300"
+					critChanceAdd="+45"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="15" maxRange="25">
+				<AddTo
+					minAimTime2="-170"
+					maxAimTime2="-120"
+					critChanceAdd="+60"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="25" maxRange="50">
+				<AddTo
+					minAimTime2="-550"
+					maxAimTime2="-500"
+					critChanceAdd="+60"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="50" maxRange="100">
+				<AddTo
+					minAimTime2="-650"
+					maxAimTime2="-600"
+					critChanceAdd="+80"
+				/>
+			</AttackTypeModifier>
+			
+		</Params>
+		
+	</Scope>
+	
+</Equipment>

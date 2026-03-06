@@ -2,6 +2,233 @@
 @GFL-UNIT-GIRL-DESC="We need to head to the frontline... the GIRLS' FRONTLINE 2: EXILIUM"\n                                ― Shikikan (probably)
 @#GFL-UNIT-GIRL-NAME-RND=Girls' Frontline
 
+
+
+
+
+@menu_doctrine_branch_calibration=CALIBRATION
+@menu_doctrine_branch_neuralhelix=NEURAL HELIX
+@menu_doctrine_branch_remolder=PATTERN REMOLDER
+
+@doctrine_gfl_optimized_name=Optimized Performance Mode
+@doctrine_gfl_optimized_descr=Enhanced output and task efficiency algorithms. Increases movement and all field skill speeds. Reduces equipment swap time for technical tools.
+
+@doctrine_gfl_commprotocols_name=Communication Protocols
+@doctrine_gfl_commprotocols_descr=Language modules enable basic civilian interaction. Allows ordering civilians to safety.
+
+@doctrine_gfl_advancedprotocols_name=Advanced Protocols
+@doctrine_gfl_advancedprotocols_descr=Full communication suite with command authority. Enables directing civilians to specific exits and clearing rooms of non-combatants.
+
+@doctrine_gfl_tacticalintel_name=Tactical Intelligence
+@doctrine_gfl_tacticalintel_descr=Pre-mission data analysis reveals critical objectives. Makes 2 objectives, hostages, or bombs visible for 10 seconds per node level at mission start.
+
+@doctrine_gfl_infoextraction_name=Information Extraction
+@doctrine_gfl_infoextraction_descr=Advanced interrogation protocols for gathering tactical intelligence. Allows persuading civilians and surrendered enemies to reveal nearby threats.
+
+@doctrine_gfl_cqc_name=CQB Protocols
+@doctrine_gfl_cqc_descr=Close quarters battle subroutines. Significantly improves melee stun duration, damage output, strike speed, and overall mobility.
+
+@doctrine_gfl_overwhelming_name=Overwhelming Force
+@doctrine_gfl_overwhelming_descr=Maximum force authorization with precision targeting protocols. Drastically increases melee lethality and attack speed, improving point-blank engagement effectiveness.
+
+@doctrine_gfl_rapideploy_name=Rapid Deployment
+@doctrine_gfl_rapideploy_descr=Mobility optimization for rifle-equipped units. Increases movement speed while maintaining combat readiness. Reduces weapon ready and guard times significantly.
+
+@doctrine_gfl_transition_name=Weapon Transition Drills
+@doctrine_gfl_transition_descr=Automated sidearm deployment protocols. Enables instant pistol transition when primary weapon empties. Drastically improves pistol swap speed and close-range effectiveness.
+
+@doctrine_gfl_combateff_name=Combat Efficiency
+@doctrine_gfl_combateff_descr=Comprehensive rifle optimization protocols combining precision and speed. Improves accuracy, aim time, and follow-up shot placement across all engagement ranges.
+
+@doctrine_gfl_suppression_name=Suppression Protocols
+@doctrine_gfl_suppression_descr=Coordinated suppressive fire patterns with target vulnerability analysis. Increases suppression output significantly and provides accuracy bonuses against suppressed targets. Reduces effectiveness of enemy cover when suppressed.
+
+@doctrine_gfl_lethalprecision_name=Lethal Precision
+@doctrine_gfl_lethalprecision_descr=Optimized targeting algorithms prioritize vital areas. Significantly increases critical hit probability and reduces target acquisition time. Marksman rifles gain enhanced headshot capability.
+
+
+
+
+
+
+@helmet_gfl_ocular_name=Night Eyes
+@helmet_gfl_ocular_desc=Enhanced optical systems for night vision integration. Allows direct NVG interface without physical mounting hardware.
+
+@armor_gfl_reactive_name=Reactive Shielding
+@armor_gfl_reactive_desc=Integrated defensive matrix. Provides ballistic protection without external armor plating.
+
+@armor_gfl_matrix_name=Combat Matrix
+@armor_gfl_matrix_desc=Enhanced defensive field generator. Improved protection with minimal system load.
+
+@armor_gfl_hardened_name=Hardened Core
+@armor_gfl_hardened_desc=Maximum protection configuration. Reinforced defensive systems provide superior ballistic resistance.
+
+@scope_GFL_ironsights_name=Iron sights
+@scope_GFL_ironsights_desc=Standard ironsights for basic aim guidance. Provides the quickest aim time at the cost of precision. T-Dolls being sent with nothing but iron sights tend to rely on just their built-in sensor packages in close range fights, removing the need to "consult" the sights during target aquisition, allowing the doll to process shooting protocols faster.
+
+@scope_GFL_smallreddot_name=RMR T4 Red Dot 1x
+@scope_GFL_smallreddot_desc=A red dot sight so small it can fit to pistol slides. Nearly weightless for a Doll, it provides the best aim time while allowing precise shots at close range, but the red dot sight eventually becomes a hindrance for scoring killshots at long range.
+
+@scope_GFL_holosight_name=EOT 518 Holo-sight 1x
+@scope_GFL_holosight_desc=The favored optical attachment of most T-Dolls engaging at close to medium range. Yhis sight magically projects a reticle over the target, with drop marks for medium-range shooting. Most Doll's under the Shikikan's command train with this sight in shooting drills that their protocols are optimized with its bulk and heft.
+
+@scope_GFL_largereddot_name=ITI Mars Red Dot 1x
+@scope_GFL_largereddot_desc=Minimalistic sight that simply paints a red dot over the target. Zeroed farther than its smaller Red Dot cousin, it allows a faster response than the holosight while maintaining a steady precision advantage at all relevant ranges.
+
+@scope_GFL_holomag3x_name=EOT XPS3 3x
+@scope_GFL_holomag3x_desc=Holo-sight with a 3x magnifier for those situations you need more magnification without losing too much on your close range benefits. It is a bit heavier though.
+
+@scope_GFL_4x_name=ACOG 4x
+@scope_GFL_4x_desc=Simple magnified optic for shooting at medium ranges, with little weight penalty, but makes close range shooting more difficult due to its static configuration.
+
+@scope_GFL_SpecterDR_name=ELCAN Specter 1x/4x
+@scope_GFL_SpecterDR_desc=Excellent optic suited for close-in AND medium range work, though a little heavy. A small price to pay for an optic perfect for generalized use.
+
+@scope_GFL_lpvo6x_name=EOT Vudu 1-6x
+@scope_GFL_lpvo6x_desc=A Low Power Variable Optic that works great at ranges up to 25m and even more. The entry point of the heavier scopes, this scope provides greater precision at the cost of hindered aim time at close range. Perfect for sniper Dolls who you still want to assist in close range fights while still specializing in long range.
+
+@scope_GFL_lpvo8x_name=PM II Rifle Scope 1-8x
+@scope_GFL_lpvo8x_desc=A good all-around assaulter optic that truly shines at ranges farther than 25m. Another excellent attachment for sniper Dolls that you still wish to participate in close quarters combat while maintaining their capability to take out targets at long range, but a bit heavier than its 1-6x cousin.
+
+@scope_GFL_lromk4_name=ART2 3.5-10x
+@scope_GFL_lromk4_desc=Entry level optic for dedicated marksman duties. Provides powerful benefits at mid-to-long range, but is very heavy and very unwieldy at close range.
+
+@scope_GFL_lromk6_3_18_name=Leopold Mark 6 3-18x
+@scope_GFL_lromk6_3_18_desc=A marksman optic specialized in the 25 to 50m range zone, and adequate elsewhere. Provides powerful benefits at mid-to-long range, but is very heavy and very unwieldy at close range. It is recommended to bring a handgun to switch into if you decide to have your Doll's equipping this to have any chance dueling with any close targets.
+
+@scope_GFL_lropm5_25_name=PM 5-25X56 5-25x
+@scope_GFL_lropm5_25_desc=A heavy and cumbersome optic that brings maximum precision from 25m out. Enhances the Doll's equipped weapon by intense degrees at long range, but suffers greatly at close range. It is a requirement to bring a reliable sidearm or have the Doll equipping this sit out any room-to-room fights.
+
+@GEAR-MEDIC-GRENADE-NAME=2x Medic Grenade
+@GEAR-MEDIC-GRENADE-DESC=Experimental grenade that repairs damage to all units within the blast radius. Use with caution in mixed engagements to avoid healing enemy units.
+@GEAR-MEDIC-GRENADE-TTIP=Throw medic grenade
+@menu_game_medic_grenade_none_ttip=No more medic grenades
+
+@armor_gfl_recframe_name=16Lab Recreation Frame
+@armor_recframe_desc=Doll body frame developed by Persica to give your Dolls a closer approximation of the human experience, enabling them to participate in activities outside their normal design parameters, such as tasting and savoring food.\n\nThis frame offers no real protection for the Doll’s Neural Core beyond its synthetic skin, in exchange this frame increases the Doll's motor function performance by 20%, which could be useful in specific combat scenarios.\n\nMayling strongly disapproves of deploying Dolls into combat with this frame, citing the extreme risk posed by its complete lack of protection qualities, which almost guarantees her pulling an all-nighter reuploading the Doll's Neural Cloud into a new frame.
+
+@armor_gfl_lawframe_name=Security Frame Mk.II
+@armor_gfl_lawframe_desc=Doll body frame extensively used by Dolls working in security and law enforcement in Green and White Zones.\n\nFeatures self-lubricating joints that grant increased motor function performance by 12% for on-foot chases while still offering decent protection against small arms fire from common armed criminals thanks to the anti-ballistic gel layer underneath the synthetic skin.
+
+@armor_gfl_combatframe_name=B.R.I.E.F. Combat Frame
+@armor_gfl_combatframe_desc=Doll body frame developed and approved by B.R.I.E.F. for extensive combat use in Yellow Zones.\n\nIts heterogeneous anti-ballistic gel–carbide weave matrix shrugs off the shoddy intermediate rounds favored by the Varjagers, while maintaining enough thermal transfer efficiency to enable efficient heat dissipation in scorching wasteland climates.\n\nIncidentally, it’s perfect for the Commander’s deployment in Nowheraki.
+
+@armor_gfl_eliteframe_name=I.O.P. Elite Frame
+@armor_gfl_eliteframe_desc=Doll body frame developed by I.O.P. for Elite Dolls such as the famous AR Team, Task Force DEFY and Klukai, formerly Gr 416.\n\nIt features higher quality artificial musculature that enhances the motor function performance of a doll even when at combat load, allowing the installation of subdermal matrices that can resist strong intermediate rounds.\n\nDue to the improved musculature generating more heat when in action, the subdermal matrices are installed in a way that covers only specific angles of the frame to retain the required heat dissipation index for optimal operation. This is no problem ofcourse for Elite Dolls that operate in a squad that cover each other's tangos.
+
+@armor_gfl_grafframe_name=H-Frame "Deichgraf"
+@armor_gfl_grafframe_desc=Doll body frame developed by the collaborative efforts of Mayling, Springfield and Bathilde to produce a frame that can be made with Elmo's in-house facilities with defensive capabilities that would equal the default frames of Elite Dolls.\n\nUsing an inexpensive method of applying matriced armored synthskin over a reinforced subdermal layer that protects the vital parts of the frame, the result is a well armored frame with notoriously poor heat dissipation capability, causing mobility issues.\n\nIts name is inspired from the secretive, seemingly unkillable weapons platform "Deichgraf" the Commander has fought countless times.
+
+@armor_gfl_rhinoframe_name=NSRG R-Endoskeleton
+@armor_gfl_rhinoframe_desc="Nosorog Reactive Endoskeleton", an experimental Doll body frame provided by the Commander's specific female contact in NOMFA to support his endeavors in Nowheraki.\n\nDesigned by the NSU to enable Machine Gun T-Dolls to provide heavy frontline machinegun fire undaunted, this frame is equipped with an extremely powerful energy-based hardkill active protection system that can eliminate most firearms projectiles heading towards the Doll with an 80% success rate.\n\nThis APS covers 70 degree arc in front of the Doll.\n\nAs a consequence, the frame itself is extremely heavy from the APS components and generates an insane amount of heat that it directly interferes with a Neural Core's processing rate, causing it to prioritize mobility commands the least.
+
+@helmet_gfl_basic_name=Basic Core
+@helmet_gfl_basic_desc=Standard Neural Core housing that provides standard Doll survivability protocols against critical hits to essential Doll Frame components.
+
+@helmet_gfl_vanguard_name=Vanguard Core
+@helmet_gfl_vanguard_desc=Remolding Core designed for Vanguard Dolls. Enhances the Doll's movement speed by an incredible degree at the cost of room clearing capability and a reduction to the Doll's survivability against critical hits to essential Doll Frame components.
+
+@helmet_gfl_sentinel_name=Sentinel Core
+@helmet_gfl_sentinel_desc=Remolding Core designed for Sentinel Dolls. Enhances the Doll's room clearing capability by an incredible degree at the cost of a reduction to the Doll's survivability against critical hits to essential Doll Frame components.
+
+@helmet_gfl_bulwark_name=Bulwark Core
+@helmet_gfl_bulwark_desc=Remolding Core designed for Bulwark Dolls. Enhances the Doll's survivability against critical hits to essential Doll Frame components at the cost of reduced overall mobility.
+
+@helmet_gfl_support_name=Support Core
+@helmet_gfl_support_desc=Remolding Core designed for Support Dolls. Enhances the Doll's general mobility and room clearing capability at the cost of a steep reduction to the Doll's survivability against critical hits to essential Doll Frame components.
+
+@helmet_gfl_nvg1_name=Night Eyes TIS
+@helmet_gfl_nvg1_desc=Thermal Imaging System designed by Mayling to integrate seamlessly to the optical components of any Doll Frame the Commander deploys in the field. Mayling claims it is based on the Wolf Eyes System of DEFY... but Groza claims no significant power drain is happening during its use, but nonetheless impressed that it is very effective.
+
+
+
+
+
+
+
+
+@ammo_556_fmj_epr_name=URNC 62gr EPR
+@ammo_556_fmj_epr_desc=Standard performance FMJ rounds sourced from common channels such as the Underground Brokers and NOMFA. Fires and burns cleanly even in the harshest conditions, ensuring retention of its damage and penetration at range.
+
+@ammo_556_apf_sf_name=SF Armor Piercing Frangible
+@ammo_556_apf_sf_desc=Powerful intermediate rounds designed to penetrate body armor and cause severe damage upon penetration, at the cost of rapid loss of penetration power beyond 10 meters. Rumored to be designed by the Sangvis Ferri Ringleader Beluga for use against the Commander's Dolls who are known to be armored against most intermediate rounds.
+
+@ammo_919_jhp_over_name=NOMFA 124gr JHP +P
+@ammo_919_jhp_over_desc=Overpressure, low-caliber JHP rounds designed to penetrate low-level armor while causing as much damage as possible on a tiny payload. While repeated use of this ammo type Regularly purchased by PMCs and civilians in the Yellow Zones looking to maximize the power of their handguns, SMGs and PDWs.\n\nRumor has it that +P rounds increase the cyclic rate of some guns.
+
+@ammo_919_squeak_flash_name=ELMO Squeak Flash
+@ammo_919_squeak_flash_desc =Custom chemical rounds that produces a distinct high-pitched squeak and disorienting wisps of light upon impact. Materialized from one of Cheeta's shooting range pranks to the Commander, it is now refined for suppression against both humans and ELIDs. Mayling describes the effect of having one explode close as like hearing nails sharply grind a chalkboard through your tinnitus while being flashed by a strobe light.\n\nWhile not designed to penetrate armor, the damage this ammunition can cause on exposed flesh should not be underestimated.
+
+@ammo_556x39_fmj_nsu_name=NSU 57gr FMJ
+@ammo_556x39_fmj_nsu_desc=Neo Soviet Union's standard service intermediate round that has aims to replace the ubiquitous 7.62x39mm service round. It performs roughly the same as its predecessor with a slight reduction on overall damage.
+
+@ammo_556x39_supercavitator_defy_name=DEFY Supercav Soft
+@ammo_556x39_supercavitator_defy_desc=Custom rounds designed for underwater combat against soft targets. When fired underwater, it generates cavitation bubble thanks to its flat, disc shaped nose, allowing the bullet to drag against air instead of water. While all of these qualities seem useless in the environment of Nowheraki, the bullet itself still acts as a overengineered JHP round on land with improved ballistics at range.
+
+@ammo_762x39_fmj_nsu_name=NSU 123gr FMJ
+@ammo_762x39_fmj_nsu_desc=Standard performance FMJ rounds made en masse for the old AK rifles of the KCCO. Large and intimidating among its intermediate peers, it boasts higher damage and penetration at close range.
+
+@ammo_762x39_jhe_elid_name=NSU Anti-ELID JHE
+@ammo_762x39_jhe_elid_desc=Custom intermediate rounds designed to destroy ELIDs via micro explosive that trigger upon skin penetration. While the effectiveness of this ammunition is extremely dubious due to the microexplosive system adding too much weight onto the bullet, causing significant performance problems, it is still quite horrifying when given to the hands of someone who can wield it.
+
+@ammo_473_fmj_404_name=404 51gr CL FMJ
+@ammo_473_fmj_404_desc=Caseless rounds developed during the first Cold War which are now being made in house by H.I.D.E. 404 for Mechty's use. Thanks to its design, a lot of rounds can be packed in a small space while maintaining the standard performance of a 5.56mm round, at the cost of potential heat issues. Logisically heavy to produce given the resources of a small organization as H.I.D.E. 404, a sly Mechty can sometimes be heard making excuses of saving ammunition costs by letting her sit out on some missions. Klukai ofcourse, is never pleased to hear this.
+
+@ammo_473_frang_404_name=16Lab ISS Frangible
+@ammo_473_frang_404_desc=Caseless rounds for theoretical use in space stations. It is designed to be frangible as to prevent overpenetration and any damage to space station hulls on a miss. In Nowheraki, it just gives Mechty the option for high-damage rounds at the cost of penetration power. Interestingly, it is quite easier to manufacture than the FMJ counterpart.
+
+@ammo_762_fmj_epr_name=URNC 130gr EPR
+@ammo_762_fmj_epr_desc=Standard performance FMJ rounds sourced from common channels such as the Underground Brokers and NOMFA. Fires and burns cleanly even in the harshest conditions, ensuring retention of its damage and penetration at range.
+
+@ammo_45_jhp_over_name=NOMFA 185gr JHP +P
+@ammo_45_jhp_over_desc=Overpressure, low-caliber JHP rounds designed to penetrate low-level armor while causing as much damage as possible on a tiny payload. While repeated use of this ammo type Regularly purchased by PMCs and civilians in the Yellow Zones looking to maximize the power of their handguns, SMGs and PDWs.\n\nRumor has it that +P rounds increase the cyclic rate of some guns.
+
+@ammo_45_ew_spec_name=404 .45 EW Spec
+@ammo_45_ew_spec_desc=Specialized rounds for electronic warfare and human-type suppression. Upon impact, the rounds detonate into tiny high-pitched EMP fields that can bring targets to their knees. This comes at a cost of a low-energy projectile that has extremely reduced stopping power.
+
+@ammo_919_ew_spec_name=404 9x19mm EW Spec
+@ammo_919_ew_spec_desc=Specialized rounds for electronic warfare and human-type suppression. Upon impact, the rounds detonate into tiny high-pitched EMP fields that can bring targets to their knees. This comes at a cost of a low-energy projectile that has extremely reduced stopping power.
+
+@ammo_45_fmj_urnc_name=URNC 230gr FMJ
+@ammo_45_fmj_urnc_desc=Standard performance FMJ rounds sourced from common channels such as the Underground Brokers and NOMFA. This one is particularly designed for PDWs with an extremely very high cyclic rate.
+
+@ammo_45_jhp_inc_name=404 JHP Incendiary
+@ammo_45_jhp_inc_desc=JHP rounds with incendiary payloads inserted in the hollowed area. Due to the size of the payload, the additional effect it causes is negligible, but Vector insists that these rounds provide her a way to express her "art" in the battlefield.
+
+@ammo_3006_fmj_name=URNC 130gr FMJ
+@ammo_3006_fmj_desc=Standard full-power cartridge ammunition excellent for engaging targets at long ranges. While the design itself is antiquated, it is still widely used in the Yellow Zones today.
+
+@ammo_3006_lait_name=ZCH SEPR "Cafe au Lait"
+@ammo_3006_lait_desc=Specialized enhanced performance rounds crafted by Springfield herself to catch up with the performance of her assault rifle wielding peers. Its able to retain its power after penetrating a target, increasing Springfield's crowd control capability at the cost of some lethality.
+
+@ammo_300wm_fmj_name=NOMFA 180gr FMJ
+@ammo_300wm_fmj_desc=Standard high-power cartridge ammunition excellent for engaging targets at long ranges. Preferred sniping round by big game hunters, law enforcement and mercenaries.
+
+@ammo_300wm_macchiato_name=ZCH Endothermic "Macchiato"
+@ammo_300wm_macchiato_desc=Specialized rounds designed for Makiatto's specifications for suppressing HVT's for capture. When fired, it leaves a strong trail of endothermic energy that can heavily disorient both senses and sensors. However the altered composition of the bullet prevents it from effective at overpenetrating bodies.
+
+@ammo_556_tiramisu_name=ZCH Frangible "Tiramisu"
+@ammo_556_tiramisu_desc=Specialized rounds designed for Centaureissi's specifications for quickly taking out soft targets and minimizing environmental destruction to keep things clean after combat. The rounds are designed to break apart upon impact which is very effective against flesh, but nearly negligible against any forms of hard armor.
+
+@ammo_762x39_fmj_duplex_name=ELMO Duplex FMJ
+@ammo_762x39_fmj_duplex_desc=Experimental round developed by Mayling as a gift for Groza. It utilizes two bullets stacked on each other inside a standard cartridge. The result is each bullet fires two projectiles in hopes of increasing hit probability at the cost of some accuracy. While the concept is weird, Groza appreciates the extra firepower she can pack in her trusty OTs-14.
+
+@ammo_50bmg_fmj_name=URNC 750gr FMJ
+@ammo_50bmg_fmj_desc=Standard full-power cartridge whose design stands the test of time. Commonly used by vehicle mounted machineguns and anti-materiel rifles. Exceptionally devastating against almost everything in the battlefield save for dedicated armor that is designed to resist tank rounds.
+
+@ammo_50bmg_remover_name=ELMO Remover HEIAP
+@ammo_50bmg_remover_desc=Powerful round produced in-house in the ELMO foundries for support gunner drone use. It uses the highest yield explosive available at the cheapest cost so it can be produced under a tight budget, at the cost of some ballistic performance. The round was titled as the "Remover" by Mayling herself after a conversation with Nemesis about its effectiveness with her weapon.
+
+
+
+
+@ammo_58x42_fmj_name=NOMFA 64gr Light
+@ammo_58x42_fmj_desc=Standard performance FMJ rounds that are a bit larger than most intermediate rounds. It is believed that it is superior to the 5.56 but the analysis papers that support this notion has been long lost in time. Nontheless it is still produced to be used by specific assault rifles.
+
+
+
+
+
 @GFL-UNIT-DEFY-NAME=Task Force DEFY
 @GFL-UNIT-DEFY-DESC=An elite team of newer model Tactical Dolls capable of great autonomy in the field, hence the name of the team. They form the most effective combat squad in the Neo-Soviet Union.
 @#GFL-UNIT-DEFY-NAME-RND=Task Force DEFY
@@ -15,6 +242,41 @@
 @DOLL-AN94-DESC=A Doll from the Neo-Soviet Union’s Bureau of State Security and the prototype for the Wolf Pack Project, now leader of Task Force DEFY. After becoming the leader of DEFY, she’s taken over her former partner as the new alpha wolf, earned the respect of her squad members and became better at socializing. What she wants is for Task Force DEFY to endure, and to unravel Paradeus’ new plot. She really loves cats.
 @WEAP-AN94-NAME=AN-94
 @WEAP-AN94-DESC=The AN-94, or Avtomat Nikonova 1994, is a 5.45x39mm caliber gas-operated Russian firearm made by PO Izhmash made during Project Abakan. Project Abakan was a Russian assault rifle program that took place from 1980 to 1994. Being the only outcome from the project, AN-94 was awarded with the name Abakan. The GRAU designation for the AN-94 is '6P33'.
+
+@doctrine_gfl_defy_femalegorilla_name=The Female Gorilla
+@doctrine_gfl_defy_femalegorilla_descr=Voymastina intimidates anyone in her presense. Enemies within her radius gain reduced accuracy, supression recovery, and aim time.
+@buff_gfl_defy_femalegorillabuff=Intimidated by Voymastina
+
+@doctrine_gfl_defy_alphaprotocol_name=Alpha Protocol
+@doctrine_gfl_defy_alphaprotocol_descr=Alva leads DEFY as its new alpha operator. When she eliminates targets, allies within gain accuracy, suppression recovery, and movement speed for 5 seconds.
+@buff_gfl_defy_tacticalsynchronization=Synchronized with Alva
+
+@doctrine_gfl_defy_perfectmortality_name=Perfect Mortality
+@doctrine_gfl_defy_perfectmortality_descr=Death gives meaning to existence. Greatly increases incapacitation chance over death, enables self-repair, and fights harder when wounded.
+
+@doctrine_gfl_defy_iceandblood_name=Ice & Blood
+@doctrine_gfl_defy_iceandblood_descr=Cold precision meets violent efficiency. Faster target acquisition, increased critical chance on consecutive kills, and resistance to suppression.
+
+@buff_gfl_defy_defycoordination=DEFY Coordination
+
+@doctrine_gfl_defy_battleechoes_name=Battlefield Echoes
+@doctrine_gfl_defy_battleechoes_descr=Residual combat data from previous engagements reveals enemy positions. Neural network analysis exposes a hostile unit per level near spawn points at mission start.
+
+@doctrine_gfl_defy_momentum_name=Violent Momentum
+@doctrine_gfl_defy_momentum_descr=Combat acceleration systems activate on enemy elimination. Dramatically increases movement and target acquisition speed for sustained assaults.
+
+@doctrine_gfl_defy_tacticalindep_name=Tactical Independence
+@doctrine_gfl_defy_tacticalindep_descr=The squad becomes more independant. Improves suppression recovery, flinch resistance, and rapid target switching for isolated units.
+
+@doctrine_gfl_defy_squaddefiance_name=Squad Defiance
+@doctrine_gfl_defy_squaddefiance_descr=Standing firm against overwhelming odds. Each level increases frontal armor coverage and damage resistance. Squad eliminations rally nearby allies with offensive and defensive bonuses.
+
+@buff_gfl_defy_defiant=Rallied by defiant stand
+
+
+
+
+
 
 @GFL-UNIT-404-NAME=H.I.D.E 404
 @GFL-UNIT-404-DESC=A mercenary unit of tactical dolls specialising in covert operations and electronic warfare, known for completing contracts through any means necessary regardless of collateral damage.
@@ -70,170 +332,6 @@
 @GEAR-VECTOR-GRENADE-TTIP=Throw Searing Finale
 @menu_game_vector_grenade_none_ttip=Out of Confectance Index
 
-@GFL-UNIT-CAFE-NAME=Zucchero Café
-@GFL-UNIT-CAFE-DESC=A group of service and support dolls operating from a café base, providing backup services and logistics while maintaining their cover as hospitality workers in civilian territory.
-@#GFL-UNIT-CAFE-NAME-RND=Zucchero Café
-
-@DOLL-M1903-NAME=SPRINGFIELD
-@DOLL-M1903-DESC=Former manager of the Integrated Logistics Department, current manager of Zucchero Café, leader of an underground intelligence network… These identities converge into the Doll smiling before you: Springfield. Gentle, unyielding, kind and rational, she's the picture of reliability for her loved ones, and her personality attracts a wide variety of people to her. She's not above bending the rules to get her way, however… But you won't tell anybody, right?
-@WEAP-M1903-NAME=M1903 Springfield
-@WEAP-M1903-DESC=Officially designated the 'United States Rifle, Caliber .30-06, Model of 1903' and referred by the troops as the '03' or simply as the 'Springfield', the M1903 Springfield is an American magazine fed, bolt-action repeating rifle. It served as the main infantry rifle of US forces during World War 1, and it remains popular today as a civilian firearm, historical collector's piece, competitive shooting rifle, and military drill rifle.
-@firearm_caliber_3006_name=.30-06 Springfield
-@firearm_operation_boltaction_name=Bolt Action
-@ammo_3006_fmj_name=.30-06 M2 Ball
-@ammo_3006_fmj_desc=Standard military full metal jacket round. High power rifle cartridge with excellent range and penetration.
-@ammo_3006_match_name=.30-06 Match Grade
-@ammo_3006_match_desc=Precision manufactured ammunition with consistent powder loads and match bullets for superior accuracy and terminal performance.
-
-@DOLL-WA2000-NAME=MAKIATTO
-@DOLL-WA2000-DESC=A calm, proud, yet awkward Doll who isn't good at expressing herself. She loves fluffy little animals and overly sweet macchiatos. Always a loner, her gaze often lingers somewhere. When will she finally get the response she's been longing for?
-@WEAP-WA2000-NAME=Walther WA2000
-@WEAP-WA2000-DESC=Walther WA2000 is a semi-automatic, bullpup configured sniper rifle designed and produced by Carl Walther GmbH Sportwaffen. Designed between 1970s–1980s and produced between 1982-1988, originally designed for and advertised to law enforcement units in response to the 1972 Munich Olympics Massacre.
-@firearm_caliber_300wm_name=.300 Winchester Magnum
-@ammo_300wm_fmj_name=.300 Win Mag FMJ
-@ammo_300wm_fmj_desc=High-velocity magnum round designed for long-range precision shooting. Superior ballistics and terminal performance.
-@ammo_300wm_match_name=.300 Win Mag Match
-@ammo_300wm_match_desc=Premium match-grade ammunition with selected components for maximum accuracy and consistency at extreme ranges.
-
-@DOLL-G36-NAME=CENTAUREISSI
-@DOLL-G36-DESC=A humble yet principled Doll. She brews aromatic coffee and stands as the steadfast guardian of the café - she is the irreplaceable shield of "Zucchero".
-@WEAP-G36-NAME=G36
-@WEAP-G36-DESC=The G36 is a gas-operated select-fire 5.56x45mm rifle developed by German arms manufacturer Heckler and Koch. It was designed as a replacement for the venerable G3 battle rifle, which had served West Germany throughout the Cold War.
-
-@DOLL-XCR-NAME=SHARKRY
-@DOLL-XCR-DESC=A mischievous, impish Doll whose sweet smiles hide a cute cunning. She is hungry not only for the stage but also for the boundless adoration from her customers.
-@WEAP-XCR-NAME=XCR-L Standard
-@WEAP-XCR-DESC=The XCR is a line of American rifles by Robinson Armament Co. It was developed for the Special Operations Forces Combat Assault Rifle competition (which would be won by FN's SCAR line) but ultimately never joined it.
-
-@GFL-UNIT-GROZA-NAME=Groza Squad
-@GFL-UNIT-GROZA-DESC=The Commander's premier squad aboard the Elmo MCV. A diverse group of dolls united under Groza's leadership in the contaminated zones.
-@#GFL-UNIT-GROZA-NAME-RND=Groza Squad
-
-@DOLL-OTS14-NAME=GROZA
-@DOLL-OTS14-DESC=A mature and composed elite Doll, she is undeniably the squad's core. Despite the squad members' diverse personalities, she seamlessly unites their strengths. With her presence, nothing will become a problem.
-@WEAP-OTS14-NAME=OTs-14
-@WEAP-OTS14-DESC=The OTs-14 'Groza' ("Thunderstorm") is a bullpup-configured, modular assault rifle system developed during the early 1990s by V. Telesh and Ju. Lebedev at the TsKIB SOO (Central Design Bureau for Sporting and Hunting Arms). Like its predecessor project the OTs-12 'Tiss', the design of the 'Groza' is based on the AKS-74U, and was an attempt to integrate all the best features from the various close quarter combat weapons in service into one singular unit. OTs-14 units have a great amount of interchangeable parts with the standard AK-74U.
-
-@DOLL-OM50-NAME=NEMESIS
-@DOLL-OM50-DESC=Passionate in mysticism and divination, she always carries a magical divination tool known as the "Prism". Her divination results are often expressed in a cryptic and enigmatic manner. Though she can be difficult to communicate with, she remains a dependable companion.
-@WEAP-OM50-NAME=OM 50 Nemesis
-@WEAP-OM50-DESC=The OM 50 Nemesis, now designated SAN 511, is a .50 BMG bolt-action rifle produced by the Swiss branch of SIG Sauer.
-@firearm_caliber_50bmg_name=.50 BMG
-@ammo_50bmg_fmj_name=.50 BMG FMJ
-@ammo_50bmg_fmj_desc=Massive anti-materiel cartridge with devastating power. Extreme penetration and stopping power at extended ranges. Loud report.
-@ammo_50bmg_match_name=.50 BMG Match
-@ammo_50bmg_match_desc=Premium match-grade .50 BMG ammunition. Exceptional accuracy and consistency for surgical precision at extreme distances. Devastating terminal performance.
-
-@DOLL-HARE-NAME=KROLIK
-@DOLL-HARE-DESC=She has a bit of a temper and shows little interest in matters unrelated to herself, but her sense of responsibility is beyond reproach. Even if she is assigned a mission she absolutely detests, such as "serving as Nemesis' exclusive translator", she will still give it her all.
-@WEAP-HARE-NAME=Hare
-@WEAP-HARE-DESC=A melee weapon highly compatible with Krolik. Modified based on her combat preferences and painted with a skin that matches Krolik's colors.
-@firearm_operation_melee=Melee
-
-@armor_gfl_hare_name=Shield & Plate
-@armor_gfl_hare_desc=Tactical shield combined with reinforced plating. Krolik's shield provides exceptional frontal coverage while charging into close quarters. Limited mobility and rear protection.
-
-@armor_gfl_hare_heavy_name=Heavy Shield Rig
-@armor_gfl_hare_heavy_desc=Reinforced full-coverage shield system with additional side and rear armor plating. Provides comprehensive protection at the cost of significantly reduced mobility and increased profile. For when Krolik needs to tank through heavy fire.
-
-@no_ammo_name=None
-@no_ammo_desc=
-@scope_no_sights_name=None
-@scope_no_sights_desc=
-
-@DOLL-CURVA-NAME=COLPHNE
-@DOLL-CURVA-DESC=Although she often appears cheerful and enthusiastic, her face can sometimes take on a completely different, cold expression. The syringe in her hand - is it meant to save lives, or take them?
-@WEAP-CURVA-NAME=Taurus Curve
-@WEAP-CURVA-DESC=The Curve is a concealed-carry .380 ACP pistol by Brazilian company Taurus Armas.
-@firearm_operation_doubleaction_name=Double Action
-
-@DOLL-VEPR12-NAME=VEPLEY
-@DOLL-VEPR12-DESC=An idol who shines on the unique stage, the "battlefield"! She prepares meticulously every day for her next performance - this way, she will not easily trip or bump into others again.
-@WEAP-VEPR12-NAME=Vepr-12
-@WEAP-VEPR12-DESC=The Vepr-12 is a semi-automatic shotgun derived from the RPK by Molot Oruzhie Ltd. It shouldn't be confused with the Vepr Ukrainian bullpup rifle.
-
-@helmet_gfl_ocular_name=Night Eyes
-@helmet_gfl_ocular_desc=Enhanced optical systems for night vision integration. Allows direct NVG interface without physical mounting hardware.
-
-@armor_gfl_reactive_name=Reactive Shielding
-@armor_gfl_reactive_desc=Integrated defensive matrix. Provides ballistic protection without external armor plating.
-
-@armor_gfl_matrix_name=Combat Matrix
-@armor_gfl_matrix_desc=Enhanced defensive field generator. Improved protection with minimal system load.
-
-@armor_gfl_hardened_name=Hardened Core
-@armor_gfl_hardened_desc=Maximum protection configuration. Reinforced defensive systems provide superior ballistic resistance.
-
-@menu_doctrine_branch_calibration=CALIBTRATION
-@menu_doctrine_branch_neuralhelix=NEURAL HELIX
-@menu_doctrine_branch_remolder=PATTERN REMOLDER
-
-@doctrine_gfl_defy_femalegorilla_name=The Female Gorilla
-@doctrine_gfl_defy_femalegorilla_descr=Voymastina intimidates anyone in her presense. Enemies within her radius gain reduced accuracy, supression recovery, and aim time.
-@buff_gfl_defy_femalegorillabuff=Intimidated by Voymastina
-
-@doctrine_gfl_defy_alphaprotocol_name=Alpha Protocol
-@doctrine_gfl_defy_alphaprotocol_descr=Alva leads DEFY as its new alpha operator. When she eliminates targets, allies within gain accuracy, suppression recovery, and movement speed for 5 seconds.
-@buff_gfl_defy_tacticalsynchronization=Synchronized with Alva
-
-@doctrine_gfl_defy_perfectmortality_name=Perfect Mortality
-@doctrine_gfl_defy_perfectmortality_descr=Death gives meaning to existence. Greatly increases incapacitation chance over death, enables self-repair, and fights harder when wounded.
-
-@doctrine_gfl_defy_iceandblood_name=Ice & Blood
-@doctrine_gfl_defy_iceandblood_descr=Cold precision meets violent efficiency. Faster target acquisition, increased critical chance on consecutive kills, and resistance to suppression.
-
-@buff_gfl_defy_defycoordination=DEFY Coordination
-
-@doctrine_gfl_optimized_name=Optimized Performance Mode
-@doctrine_gfl_optimized_descr=Enhanced output and task efficiency algorithms. Increases movement and all field skill speeds. Reduces equipment swap time for technical tools.
-
-@doctrine_gfl_commprotocols_name=Communication Protocols
-@doctrine_gfl_commprotocols_descr=Language modules enable basic civilian interaction. Allows ordering civilians to safety.
-
-@doctrine_gfl_advancedprotocols_name=Advanced Protocols
-@doctrine_gfl_advancedprotocols_descr=Full communication suite with command authority. Enables directing civilians to specific exits and clearing rooms of non-combatants.
-
-@doctrine_gfl_tacticalintel_name=Tactical Intelligence
-@doctrine_gfl_tacticalintel_descr=Pre-mission data analysis reveals critical objectives. Makes 2 objectives, hostages, or bombs visible for 10 seconds per node level at mission start.
-
-@doctrine_gfl_infoextraction_name=Information Extraction
-@doctrine_gfl_infoextraction_descr=Advanced interrogation protocols for gathering tactical intelligence. Allows persuading civilians and surrendered enemies to reveal nearby threats.
-
-@doctrine_gfl_cqc_name=CQB Protocols
-@doctrine_gfl_cqc_descr=Close quarters battle subroutines. Significantly improves melee stun duration, damage output, strike speed, and overall mobility.
-
-@doctrine_gfl_overwhelming_name=Overwhelming Force
-@doctrine_gfl_overwhelming_descr=Maximum force authorization with precision targeting protocols. Drastically increases melee lethality and attack speed, improving point-blank engagement effectiveness.
-
-@doctrine_gfl_rapideploy_name=Rapid Deployment
-@doctrine_gfl_rapideploy_descr=Mobility optimization for rifle-equipped units. Increases movement speed while maintaining combat readiness. Reduces weapon ready and guard times significantly.
-
-@doctrine_gfl_transition_name=Weapon Transition Drills
-@doctrine_gfl_transition_descr=Automated sidearm deployment protocols. Enables instant pistol transition when primary weapon empties. Drastically improves pistol swap speed and close-range effectiveness.
-
-@doctrine_gfl_combateff_name=Combat Efficiency
-@doctrine_gfl_combateff_descr=Comprehensive rifle optimization protocols combining precision and speed. Improves accuracy, aim time, and follow-up shot placement across all engagement ranges.
-
-@doctrine_gfl_suppression_name=Suppression Protocols
-@doctrine_gfl_suppression_descr=Coordinated suppressive fire patterns with target vulnerability analysis. Increases suppression output significantly and provides accuracy bonuses against suppressed targets. Reduces effectiveness of enemy cover when suppressed.
-
-@doctrine_gfl_lethalprecision_name=Lethal Precision
-@doctrine_gfl_lethalprecision_descr=Optimized targeting algorithms prioritize vital areas. Significantly increases critical hit probability and reduces target acquisition time. Marksman rifles gain enhanced headshot capability.
-
-@doctrine_gfl_defy_battleechoes_name=Battlefield Echoes
-@doctrine_gfl_defy_battleechoes_descr=Residual combat data from previous engagements reveals enemy positions. Neural network analysis exposes a hostile unit per level near spawn points at mission start.
-
-@doctrine_gfl_defy_momentum_name=Violent Momentum
-@doctrine_gfl_defy_momentum_descr=Combat acceleration systems activate on enemy elimination. Dramatically increases movement and target acquisition speed for sustained assaults.
-
-@doctrine_gfl_defy_tacticalindep_name=Tactical Independence
-@doctrine_gfl_defy_tacticalindep_descr=The squad becomes more independant. Improves suppression recovery, flinch resistance, and rapid target switching for isolated units.
-
-@doctrine_gfl_defy_squaddefiance_name=Squad Defiance
-@doctrine_gfl_defy_squaddefiance_descr=Standing firm against overwhelming odds. Each level increases frontal armor coverage and damage resistance. Squad eliminations rally nearby allies with offensive and defensive bonuses.
-
-@buff_gfl_defy_defiant=Rallied by defiant stand
-
 @doctrine_gfl_404_dreamwonderland_name=Dream Wonderland
 @doctrine_gfl_404_dreamwonderland_descr=Mechty operates in Patch Mode: enhanced defensive systems reduce incoming damage and stability loss. Upon eliminating a target, she consumes an energy drink and enters Turbo Mode for 7 seconds: sacrificing all defenses for explosive offensive power.
 
@@ -270,6 +368,45 @@
 @doctrine_gfl_404_cqcdominance_name=Close Quarters Dominance
 @doctrine_gfl_404_cqcdominance_descr=Squad 404's aggressive breach tactics and close-range expertise. Exceptional movement speed combined with devastating accuracy and lethality in confined spaces.
 
+
+
+
+
+@GFL-UNIT-CAFE-NAME=Zucchero Café
+@GFL-UNIT-CAFE-DESC=A group of service and support dolls operating from a café base, providing backup services and logistics while maintaining their cover as hospitality workers in civilian territory.
+@#GFL-UNIT-CAFE-NAME-RND=Zucchero Café
+
+@DOLL-M1903-NAME=SPRINGFIELD
+@DOLL-M1903-DESC=Former manager of the Integrated Logistics Department, current manager of Zucchero Café, leader of an underground intelligence network… These identities converge into the Doll smiling before you: Springfield. Gentle, unyielding, kind and rational, she's the picture of reliability for her loved ones, and her personality attracts a wide variety of people to her. She's not above bending the rules to get her way, however… But you won't tell anybody, right?
+@WEAP-M1903-NAME=M1903 Springfield
+@WEAP-M1903-DESC=Officially designated the 'United States Rifle, Caliber .30-06, Model of 1903' and referred by the troops as the '03' or simply as the 'Springfield', the M1903 Springfield is an American magazine fed, bolt-action repeating rifle. It served as the main infantry rifle of US forces during World War 1, and it remains popular today as a civilian firearm, historical collector's piece, competitive shooting rifle, and military drill rifle.
+@firearm_caliber_3006_name=.30-06 Springfield
+@firearm_operation_boltaction_name=Bolt Action
+@bbammo_3006_fmj_name=.30-06 M2 Ball
+@bbammo_3006_fmj_desc=Standard military full metal jacket round. High power rifle cartridge with excellent range and penetration.
+@ammo_3006_match_name=.30-06 Match Grade
+@ammo_3006_match_desc=Precision manufactured ammunition with consistent powder loads and match bullets for superior accuracy and terminal performance.
+
+@DOLL-WA2000-NAME=MAKIATTO
+@DOLL-WA2000-DESC=A calm, proud, yet awkward Doll who isn't good at expressing herself. She loves fluffy little animals and overly sweet macchiatos. Always a loner, her gaze often lingers somewhere. When will she finally get the response she's been longing for?
+@WEAP-WA2000-NAME=Walther WA2000
+@WEAP-WA2000-DESC=Walther WA2000 is a semi-automatic, bullpup configured sniper rifle designed and produced by Carl Walther GmbH Sportwaffen. Designed between 1970s–1980s and produced between 1982-1988, originally designed for and advertised to law enforcement units in response to the 1972 Munich Olympics Massacre.
+@firearm_caliber_300wm_name=.300 Winchester Magnum
+@bbammo_300wm_fmj_name=.300 Win Mag FMJ
+@bbammo_300wm_fmj_desc=High-velocity magnum round designed for long-range precision shooting. Superior ballistics and terminal performance.
+@ammo_300wm_match_name=.300 Win Mag Match
+@ammo_300wm_match_desc=Premium match-grade ammunition with selected components for maximum accuracy and consistency at extreme ranges.
+
+@DOLL-G36-NAME=CENTAUREISSI
+@DOLL-G36-DESC=A humble yet principled Doll. She brews aromatic coffee and stands as the steadfast guardian of the café - she is the irreplaceable shield of "Zucchero".
+@WEAP-G36-NAME=G36
+@WEAP-G36-DESC=The G36 is a gas-operated select-fire 5.56x45mm rifle developed by German arms manufacturer Heckler and Koch. It was designed as a replacement for the venerable G3 battle rifle, which had served West Germany throughout the Cold War.
+
+@DOLL-XCR-NAME=SHARKRY
+@DOLL-XCR-DESC=A mischievous, impish Doll whose sweet smiles hide a cute cunning. She is hungry not only for the stage but also for the boundless adoration from her customers.
+@WEAP-XCR-NAME=XCR-L Standard
+@WEAP-XCR-DESC=The XCR is a line of American rifles by Robinson Armament Co. It was developed for the Special Operations Forces Combat Assault Rifle competition (which would be won by FN's SCAR line) but ultimately never joined it.
+
 @doctrine_gfl_cafe_pathofprotection_name=Path of Protection
 @doctrine_gfl_cafe_pathofprotection_descr=Springfield's elegant and watchful presence inspires confidence in allies. Her gentle yet vigilant nature creates a protective aura that helps teammates stay calm under fire and maintain their composure.
 
@@ -299,6 +436,58 @@
 
 @doctrine_gfl_cafe_velvetlatte_name=Velvet Latte
 @doctrine_gfl_cafe_velvetlatte_descr=One sip feels like velvet gently brushing your tongue. Smooth, refined execution with exceptional precision and timing. Professional marksmanship delivers accurate, lethal shots with minimal hesitation.
+
+
+
+
+
+
+@GFL-UNIT-GROZA-NAME=Groza Squad
+@GFL-UNIT-GROZA-DESC=The Commander's premier squad aboard the Elmo MCV. A diverse group of dolls united under Groza's leadership in the contaminated zones.
+@#GFL-UNIT-GROZA-NAME-RND=Groza Squad
+
+@DOLL-OTS14-NAME=GROZA
+@DOLL-OTS14-DESC=A mature and composed elite Doll, she is undeniably the squad's core. Despite the squad members' diverse personalities, she seamlessly unites their strengths. With her presence, nothing will become a problem.
+@WEAP-OTS14-NAME=OTs-14
+@WEAP-OTS14-DESC=The OTs-14 'Groza' ("Thunderstorm") is a bullpup-configured, modular assault rifle system developed during the early 1990s by V. Telesh and Ju. Lebedev at the TsKIB SOO (Central Design Bureau for Sporting and Hunting Arms). Like its predecessor project the OTs-12 'Tiss', the design of the 'Groza' is based on the AKS-74U, and was an attempt to integrate all the best features from the various close quarter combat weapons in service into one singular unit. OTs-14 units have a great amount of interchangeable parts with the standard AK-74U.
+
+@DOLL-OM50-NAME=NEMESIS
+@DOLL-OM50-DESC=Passionate in mysticism and divination, she always carries a magical divination tool known as the "Prism". Her divination results are often expressed in a cryptic and enigmatic manner. Though she can be difficult to communicate with, she remains a dependable companion.
+@WEAP-OM50-NAME=OM 50 Nemesis
+@WEAP-OM50-DESC=The OM 50 Nemesis, now designated SAN 511, is a .50 BMG bolt-action rifle produced by the Swiss branch of SIG Sauer.
+@firearm_caliber_50bmg_name=.50 BMG
+@bbammo_50bmg_fmj_name=.50 BMG FMJ
+@bbammo_50bmg_fmj_desc=Massive anti-materiel cartridge with devastating power. Extreme penetration and stopping power at extended ranges. Loud report.
+@bbammo_50bmg_match_name=.50 BMG Match
+@bbammo_50bmg_match_desc=Premium match-grade .50 BMG ammunition. Exceptional accuracy and consistency for surgical precision at extreme distances. Devastating terminal performance.
+
+@DOLL-HARE-NAME=KROLIK
+@DOLL-HARE-DESC=She has a bit of a temper and shows little interest in matters unrelated to herself, but her sense of responsibility is beyond reproach. Even if she is assigned a mission she absolutely detests, such as "serving as Nemesis' exclusive translator", she will still give it her all.
+@WEAP-HARE-NAME=Hare
+@WEAP-HARE-DESC=A melee weapon highly compatible with Krolik. Modified based on her combat preferences and painted with a skin that matches Krolik's colors.
+@firearm_operation_melee=Melee
+
+@armor_gfl_hare_name=Shield & Plate
+@armor_gfl_hare_desc=Tactical shield combined with reinforced plating. Krolik's shield provides exceptional frontal coverage while charging into close quarters. Limited mobility and rear protection.
+
+@armor_gfl_hare_heavy_name=Heavy Shield Rig
+@armor_gfl_hare_heavy_desc=Reinforced full-coverage shield system with additional side and rear armor plating. Provides comprehensive protection at the cost of significantly reduced mobility and increased profile. For when Krolik needs to tank through heavy fire.
+
+@no_ammo_name=None
+@no_ammo_desc=
+@scope_no_sights_name=None
+@scope_no_sights_desc=
+
+@DOLL-CURVA-NAME=COLPHNE
+@DOLL-CURVA-DESC=Although she often appears cheerful and enthusiastic, her face can sometimes take on a completely different, cold expression. The syringe in her hand - is it meant to save lives, or take them?
+@WEAP-CURVA-NAME=Taurus Curve
+@WEAP-CURVA-DESC=The Curve is a concealed-carry .380 ACP pistol by Brazilian company Taurus Armas.
+@firearm_operation_doubleaction_name=Double Action
+
+@DOLL-VEPR12-NAME=VEPLEY
+@DOLL-VEPR12-DESC=An idol who shines on the unique stage, the "battlefield"! She prepares meticulously every day for her next performance - this way, she will not easily trip or bump into others again.
+@WEAP-VEPR12-NAME=Vepr-12
+@WEAP-VEPR12-DESC=The Vepr-12 is a semi-automatic shotgun derived from the RPK by Molot Oruzhie Ltd. It shouldn't be confused with the Vepr Ukrainian bullpup rifle.
 
 @doctrine_gfl_groza_perfectcover_name=Perfect Cover
 @doctrine_gfl_groza_perfectcover_descr=An exceptional leader provides perfect cover for every action of their teammates. Groza's composed presence steadies her squad under fire, enhancing their resilience and accuracy when fighting from cover.
@@ -333,13 +522,13 @@
 @doctrine_gfl_groza_readtheroom_name=Read the Room
 @doctrine_gfl_groza_readtheroom_descr=Different backgrounds provide different perspectives. Each member notices what others might miss; Movement patterns, structural weaknesses, tactical opportunities. Pre-mission assessment reveals enemy positions before entry.
 
-@GEAR-MEDIC-GRENADE-NAME=2x Medic Grenade
-@GEAR-MEDIC-GRENADE-DESC=Experimental grenade that repairs damage to all units within the blast radius. Use with caution in mixed engagements to avoid healing enemy units.
-@GEAR-MEDIC-GRENADE-TTIP=Throw medic grenade
-@menu_game_medic_grenade_none_ttip=No more medic grenades
+
+
+
+
 
 @GFL-UNIT-ELMOCE-NAME=Elmo Combined Echelon
-@GFL-UNIT-ELMOCE-DESC=The Combined echelon of the Elmo MCV, made of wandering dolls who joined the Elmo after the Mephisto Agreement was relaxed.
+@GFL-UNIT-ELMOCE-DESC=The combined echelon of the Elmo MCV formed from wandering dolls who joined the Elmo after the Groza Squad when the Mephisto Agreement was relaxed.
 @#GFL-UNIT-ELMOCE-NAME-RND=Elmo Combined Echelon
 
 @DOLL-PKPSP-NAME=PERITYA
@@ -376,6 +565,21 @@
 @WEAP-VSK94-DESC=The VSK-94 is a Russian suppressed sniper rifle chambered in 9×39mm subsonic ammunition. Developed from the 9A-91, it features an integral suppressor and serves as a designated marksman rifle for covert operations.
 @firearm_caliber_939_name=9×39mm
 
+@DOLL-DP12-NAME=HELEN
+@DOLL-DP12-DESC=In the chaos of Griffin’s disbandment, Helen accepted a corporate position at Mangi Security Service while still looking for the Commander. Her new job revealed excellent intelligence gathering abilities, leading to her selection for Project Coronal Storm, and her neural cloud was used as the basis for the Third-Generation Doll Cocoon. Moving in the shadows, Helen uses her ingenuity and official authority in the highest circles of information to shed light on the dark plot of the URNC conglomerate.
+@WEAP-DP12-NAME=DP-12
+@WEAP-DP12-DESC=The DP-12 is a bullpup double-barrel pump-action shotgun with dual magazine tubes. Each pump cycles both barrels for devastating close-range firepower.
+
+@DOLL-LEWIS-NAME=LEWIS
+@DOLL-LEWIS-DESC=Lewis was created by Universal Anything Services as a designer of collectible toys, but was later converted into a Tactical Doll and hired by Griffin & Kryuger. After G&K's restructuring, she joined the AI and quantum technology research company 42LAB on Persica's request. As a toy designer, Lewis always hated war and leaving G&K should have been her opportunity to never set foot on the battlefield again. But to create a future for all children and protect their smile, she has decided to remain on the path of the T-Doll.
+@WEAP-LEWIS-NAME=Lewis Machine Gun
+@WEAP-LEWIS-DESC=The Lewis Gun is a WWI-era light machine gun chambered in .303 British. Featuring a distinctive top-mounted 47-round pan magazine and characteristic cooling shroud, it was one of the most widely used light machine guns of the Great War.
+
+@ammo_303brit_lewis_name=.303 British FMJ
+@ammo_303brit_lewis_desc=Standard full metal jacket .303 British ammunition for the Lewis Gun. Balanced performance for suppressive fire.
+@ammo_303brit_ap_lewis_name=.303 British AP
+@ammo_303brit_ap_lewis_desc=Armor-piercing .303 British ammunition. Enhanced penetration at the cost of reduced stopping power.
+
 @doctrine_gfl_elmoce_catandmouse_name=Impromptu Cat and Mouse Game
 @doctrine_gfl_elmoce_catandmouse_descr=Peritya's relaxed predator instincts awaken on the battlefield. Her LMG suppression pins enemies like a cat toying with mice, while her deadly accuracy pounces on those frozen in fear.
 @buff_gfl_elmoce_terrifiedmouse=Hunted by Peritya
@@ -410,20 +614,10 @@
 @doctrine_gfl_elmoce_veteranmarks_name=Veteran Marksmanship
 @doctrine_gfl_elmoce_veteranmarks_descr=Years of combat experience across diverse environments have honed their shooting skills. Superior accuracy and lethality at all ranges with any weapon.
 
-@DOLL-DP12-NAME=HELEN
-@DOLL-DP12-DESC=In the chaos of Griffin’s disbandment, Helen accepted a corporate position at Mangi Security Service while still looking for the Commander. Her new job revealed excellent intelligence gathering abilities, leading to her selection for Project Coronal Storm, and her neural cloud was used as the basis for the Third-Generation Doll Cocoon. Moving in the shadows, Helen uses her ingenuity and official authority in the highest circles of information to shed light on the dark plot of the URNC conglomerate.
-@WEAP-DP12-NAME=DP-12
-@WEAP-DP12-DESC=The DP-12 is a bullpup double-barrel pump-action shotgun with dual magazine tubes. Each pump cycles both barrels for devastating close-range firepower.
 
-@DOLL-LEWIS-NAME=LEWIS
-@DOLL-LEWIS-DESC=Lewis was created by Universal Anything Services as a designer of collectible toys, but was later converted into a Tactical Doll and hired by Griffin & Kryuger. After G&K's restructuring, she joined the AI and quantum technology research company 42LAB on Persica's request. As a toy designer, Lewis always hated war and leaving G&K should have been her opportunity to never set foot on the battlefield again. But to create a future for all children and protect their smile, she has decided to remain on the path of the T-Doll.
-@WEAP-LEWIS-NAME=Lewis Machine Gun
-@WEAP-LEWIS-DESC=The Lewis Gun is a WWI-era light machine gun chambered in .303 British. Featuring a distinctive top-mounted 47-round pan magazine and characteristic cooling shroud, it was one of the most widely used light machine guns of the Great War.
 
-@ammo_303brit_lewis_name=.303 British FMJ
-@ammo_303brit_lewis_desc=Standard full metal jacket .303 British ammunition for the Lewis Gun. Balanced performance for suppressive fire.
-@ammo_303brit_ap_lewis_name=.303 British AP
-@ammo_303brit_ap_lewis_desc=Armor-piercing .303 British ammunition. Enhanced penetration at the cost of reduced stopping power.
+
+
 
 @GFL-UNIT-FROST-NAME=Frostfall Squad
 @GFL-UNIT-FROST-DESC=Operating under Griffin & Kryuger in the post-Contamination era, they represent the PMC's enduring presence despite its diminished status.
@@ -433,6 +627,11 @@
 @DOLL-QBZ191-DESC=A Doll who steps up to shoulder heavy responsibilities. She dedicates her time and energy to Griffin, while perfectly maintaining her individuality, thanks to her precise and efficient work planning. She never deviates, never breaks the rules; rather than changing the plan, she prefers to change reality.
 @WEAP-QBZ191-NAME=QBZ-191
 @WEAP-QBZ191-DESC=The QBZ-191 is a modular assault rifle developed as China's next-generation standard infantry weapon. Chambered in 5.8×42mm, it features improved ergonomics, modularity, and reliability compared to its predecessors.
+
+@ammo_58x42_dbp191_name=5.8×42mm DBP191
+@ammo_58x42_dbp191_desc=Current standard 5.8×42mm ammunition for the QBZ-191.
+@ammo_58x42_dbp88_name=5.8×42mm DBP88 Heavy
+@ammo_58x42_dbp88_desc=Heavy variant with longer streamlined bullet and steel core. Enhanced performance at close range with superior penetration.
 
 @DOLL-AKALFA-NAME=TOLOLO
 @DOLL-AKALFA-DESC=A serene Doll who finds solace under the starry sky. Hidden beneath her reticence is a delicate and sensitive soul. When the world slumbers, she confides in the vast cosmos and delights in the stars that seem to shine just for her.
@@ -449,10 +648,6 @@
 @WEAP-MP7-NAME=MP7
 @WEAP-MP7-DESC=The Heckler & Koch MP7 is a compact personal defense weapon firing 4.6×30mm armor-piercing ammunition. Its high rate of fire and excellent penetration make it effective against armored targets despite its compact size.
 
-@ammo_58x42_dbp191_name=5.8×42mm DBP191
-@ammo_58x42_dbp191_desc=Current standard 5.8×42mm ammunition for the QBZ-191.
-@ammo_58x42_dbp88_name=5.8×42mm DBP88 Heavy
-@ammo_58x42_dbp88_desc=Heavy variant with longer streamlined bullet and steel core. Enhanced performance at extended ranges with superior penetration.
 @firearm_caliber_58x42_name=5.8×42mm
 
 @doctrine_gfl_frost_commonrail_name=Common Rail
@@ -482,3 +677,36 @@
 
 @doctrine_gfl_frost_tacticaladaptation_name=Tactical Adaptation
 @doctrine_gfl_frost_tacticaladaptation_descr=Experience across varied combat scenarios enables tactical flexibility. Enhanced accuracy and target acquisition at all ranges.
+
+
+
+
+
+
+@GFL-UNIT-MONSOON-NAME=Monsoon Squad
+@GFL-UNIT-MONSOON-DESC=A group of wandering musicians made up of T-Dolls formerly from G&K. Both their music and fighting abilities strike deep into their target's hearts.
+@#GFL-UNIT-MONSOON-NAME-RND=Monsoon Squad
+
+@DOLL-QBZ95-NAME=DAIYAN
+@DOLL-QBZ95-DESC=A gentle and reserved Doll who roams the lands with her guzheng and her bandmates from "Monsoon". When she plucks the strings, she evokes the deepest desires buried in the hearts of her listenersーlistening to all, and embracing all. After G&K was restructured, Daiyan left and picked up the guzheng again as a wandering musician.
+
+@WEAP-QBZ95-NAME=QBZ-95
+@WEAP-QBZ95-DESC=Placeholder
+
+@DOLL-QBZ97-NAME=JIANGYU
+@DOLL-QBZ97-DESC=A lively and enthusiastic Doll who follows in her older sister's footsteps with a carefree spirit. She roams the lands with her bandmates, bringing fresh and fiery notes to "Monsoon". Jiangyu is not only a reliable T-Doll in combat, but a true crowd-pleaser on stage. Using her agility and vivacity, she goes above and beyond to put on exciting performances. She may stumble occasionally, but her enthusiasm will cut through any difficulty.
+
+@WEAP-QBZ97-NAME=QBZ-97
+@WEAP-QBZ97-DESC=Placeholder
+
+@DOLL-CSLS06-NAME=ZHAOHUI
+@DOLL-CSLS06-DESC=A stoic Doll with rich combat experience, she is unpretentious and decisive in action. As the leader of Monsoon Squad, she excels in combat and handling team affairs but is still a novice at lightening the mood. Don't hesitate to welcome herーa hero pursuing justice is always worthy of trust.
+
+@WEAP-CSLS06-NAME=CS/LS06
+@WEAP-CSLS06-DESC=The CS/LS06 is a submachinegun with a top-loaded helical magazine. Its it is designed to be as most compact as possible while being able to equip a sizable magazine.
+
+@DOLL-CZ75-NAME=FAYE
+@DOLL-CZ75-DESC=A grim, nimble doll with the air of a delinquent. She has actual experience with hand-to-hand fighting techniques, and is easily annoyed by slow-paced people. However, what makes her distinct is that she's extraordinarily broad-minded, and can be generously forgiving regarding the daily issues brought about by any dolls with a problem.
+
+@WEAP-CZ75-NAME=CZ 75
+@WEAP-CZ75-DESC=A semi-automatic handgun chambered in 9x19 Parabellum. Introduced in Czechoslovakia as early as 1975, it is one of the first semi-automatic pistols that can be fired by simply pulling the trigger and supported by a staggered column magazine. This allowed unparalleled firepower in such a compact package during the times it was introduced.
