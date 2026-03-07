@@ -1,5 +1,5 @@
 <Entities>
-	<Entity name="GIRL-AN94" type="Human" editorAutoHeight="false">
+    <Entity name="GIRL-AN94" type="Human" editorAutoHeight="false">
         <RenderObject3D
             model="data/models/dolls/an94.khm"
             diffuseTex="data/models/dolls/an94.dds"
@@ -32,14 +32,14 @@
                 <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
-				<Item name="GFL_BasicCore" />
-				<Item name="GFL_NightVision" />
-				<Item name="GFL_CombatFrame" />	
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />    
             </Equipment>
         </Human>
     </Entity>
 
-	<Entity name="GIRL-AK15" type="Human" editorAutoHeight="false">
+    <Entity name="GIRL-AK15" type="Human" editorAutoHeight="false">
         <RenderObject3D
             model="data/models/dolls/ak15.khm"
             diffuseTex="data/models/dolls/ak15.dds"
@@ -72,14 +72,14 @@
                 <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfTitanium" />
                 <Item name="GFL_Lockpick" />
-				<Item name="GFL_BasicCore" />
-				<Item name="GFL_NightVision" />
-				<Item name="GFL_CombatFrame" />	
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />    
             </Equipment>
         </Human>
     </Entity>
 
-	<Entity name="GIRL-HK416" type="Human" editorAutoHeight="false">
+    <Entity name="GIRL-HK416" type="Human" editorAutoHeight="false">
         <RenderObject3D
             model="data/models/dolls/hk416.khm"
             diffuseTex="data/models/dolls/hk416.dds"
@@ -112,14 +112,14 @@
                 <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
-				<Item name="GFL_BasicCore" />
-				<Item name="GFL_NightVision" />
-				<Item name="GFL_CombatFrame" />	
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />    
             </Equipment>
         </Human>
     </Entity>
 
-	<Entity name="GIRL-G11" type="Human" editorAutoHeight="false">
+    <Entity name="GIRL-G11" type="Human" editorAutoHeight="false">
         <RenderObject3D
             model="data/models/dolls/g11.khm"
             diffuseTex="data/models/dolls/g11.dds"
@@ -152,14 +152,14 @@
                 <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
-				<Item name="GFL_BasicCore" />
-				<Item name="GFL_NightVision" />
-				<Item name="GFL_CombatFrame" />	
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />    
             </Equipment>
         </Human>
     </Entity>
 
-	<Entity name="GIRL-G36K" type="Human" editorAutoHeight="false">
+    <Entity name="GIRL-G36K" type="Human" editorAutoHeight="false">
         <RenderObject3D
             model="data/models/dolls/g36k.khm"
             diffuseTex="data/models/dolls/g36k.dds"
@@ -192,14 +192,14 @@
                 <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
-				<Item name="GFL_BasicCore" />
-				<Item name="GFL_NightVision" />
-				<Item name="GFL_CombatFrame" />	
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />    
             </Equipment>
         </Human>
     </Entity>
 
-	<Entity name="GIRL-G28" type="Human" editorAutoHeight="false">
+    <Entity name="GIRL-G28" type="Human" editorAutoHeight="false">
         <RenderObject3D
             model="data/models/dolls/g28.khm"
             diffuseTex="data/models/dolls/g28.dds"
@@ -232,14 +232,14 @@
                 <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
-				<Item name="GFL_BasicCore" />
-				<Item name="GFL_NightVision" />
-				<Item name="GFL_CombatFrame" />	
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />    
             </Equipment>
         </Human>
     </Entity>
 
-	<Entity name="GIRL-UMP45" type="Human" editorAutoHeight="false">
+    <Entity name="GIRL-UMP45" type="Human" editorAutoHeight="false">
         <RenderObject3D
             model="data/models/dolls/ump45.khm"
             diffuseTex="data/models/dolls/ump45.dds"
@@ -272,14 +272,14 @@
                 <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
-				<Item name="GFL_BasicCore" />
-				<Item name="GFL_NightVision" />
-				<Item name="GFL_CombatFrame" />	
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />    
             </Equipment>
         </Human>
     </Entity>
 
-	<Entity name="GIRL-UMP9" type="Human" editorAutoHeight="false">
+    <Entity name="GIRL-UMP9" type="Human" editorAutoHeight="false">
         <RenderObject3D
             model="data/models/dolls/ump9.khm"
             diffuseTex="data/models/dolls/ump9.dds"
@@ -312,14 +312,14 @@
                 <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
-				<Item name="GFL_BasicCore" />
-				<Item name="GFL_NightVision" />
-				<Item name="GFL_CombatFrame" />	
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />    
             </Equipment>
         </Human>
     </Entity>
 
-	<Entity name="GIRL-VECTOR" type="Human" editorAutoHeight="false">
+    <Entity name="GIRL-VECTOR" type="Human" editorAutoHeight="false">
         <RenderObject3D
             model="data/models/dolls/vector.khm"
             diffuseTex="data/models/dolls/vector.dds"
@@ -352,15 +352,15 @@
                 <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
-				<Item name="GFL_BasicCore" />
-				<Item name="GFL_NightVision" />
-				<Item name="GFL_CombatFrame" />
-				<Item name="GFL-GEAR-VECTOR-GRENADE" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
+                <Item name="GFL-GEAR-VECTOR-GRENADE" />
             </Equipment>
         </Human>
     </Entity>
 
-	<Entity name="GIRL-M1903" type="Human" editorAutoHeight="false">
+    <Entity name="GIRL-M1903" type="Human" editorAutoHeight="false">
         <RenderObject3D
             model="data/models/dolls/m1903.khm"
             diffuseTex="data/models/dolls/m1903.dds"
@@ -393,14 +393,14 @@
                 <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
-				<Item name="GFL_BasicCore" />
-				<Item name="GFL_NightVision" />
-				<Item name="GFL_CombatFrame" />	
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />    
             </Equipment>
         </Human>
     </Entity>
 
-	<Entity name="GIRL-WA2000" type="Human" editorAutoHeight="false">
+    <Entity name="GIRL-WA2000" type="Human" editorAutoHeight="false">
         <RenderObject3D
             model="data/models/dolls/wa2000.khm"
             diffuseTex="data/models/dolls/wa2000.dds"
@@ -433,14 +433,14 @@
                 <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
-				<Item name="GFL_BasicCore" />
-				<Item name="GFL_NightVision" />
-				<Item name="GFL_CombatFrame" />	
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />    
             </Equipment>
         </Human>
     </Entity>
 
-	<Entity name="GIRL-G36" type="Human" editorAutoHeight="false">
+    <Entity name="GIRL-G36" type="Human" editorAutoHeight="false">
         <RenderObject3D
             model="data/models/dolls/g36.khm"
             diffuseTex="data/models/dolls/g36.dds"
@@ -473,14 +473,14 @@
                 <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
-				<Item name="GFL_BasicCore" />
-				<Item name="GFL_NightVision" />
-				<Item name="GFL_CombatFrame" />	
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />    
             </Equipment>
         </Human>
     </Entity>
 
-	<Entity name="GIRL-XCR" type="Human" editorAutoHeight="false">
+    <Entity name="GIRL-XCR" type="Human" editorAutoHeight="false">
         <RenderObject3D
             model="data/models/dolls/xcr.khm"
             diffuseTex="data/models/dolls/xcr.dds"
@@ -513,14 +513,14 @@
                 <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
-				<Item name="GFL_BasicCore" />
-				<Item name="GFL_NightVision" />
-				<Item name="GFL_CombatFrame" />	
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />    
             </Equipment>
         </Human>
     </Entity>
 
-	<Entity name="GIRL-OTS14" type="Human" editorAutoHeight="false">
+    <Entity name="GIRL-OTS14" type="Human" editorAutoHeight="false">
         <RenderObject3D
             model="data/models/dolls/ots14.khm"
             diffuseTex="data/models/dolls/ots14.dds"
@@ -553,14 +553,14 @@
                 <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
-				<Item name="GFL_BasicCore" />
-				<Item name="GFL_NightVision" />
-				<Item name="GFL_CombatFrame" />	
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />    
             </Equipment>
         </Human>
     </Entity>
 
-	<Entity name="GIRL-OM50" type="Human" editorAutoHeight="false">
+    <Entity name="GIRL-OM50" type="Human" editorAutoHeight="false">
         <RenderObject3D
             model="data/models/dolls/om50.khm"
             diffuseTex="data/models/dolls/om50.dds"
@@ -593,14 +593,14 @@
                 <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
-				<Item name="GFL_BasicCore" />
-				<Item name="GFL_NightVision" />
-				<Item name="GFL_CombatFrame" />	
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />    
             </Equipment>
         </Human>
     </Entity>
 
-	<Entity name="GIRL-HARE" type="Human" editorAutoHeight="false">
+    <Entity name="GIRL-HARE" type="Human" editorAutoHeight="false">
         <RenderObject3D
             model="data/models/dolls/hare.khm"
             diffuseTex="data/models/dolls/hare.dds"
@@ -632,14 +632,14 @@
                 <Item name="GFL-WEAP-HARE" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
-				<Item name="GFL_BasicCore" />
-				<Item name="GFL_NightVision" />
-				<Item name="GFL_CombatFrame" />	
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />    
             </Equipment>
         </Human>
     </Entity>
 
-	<Entity name="GIRL-CURVA" type="Human" editorAutoHeight="false">
+    <Entity name="GIRL-CURVA" type="Human" editorAutoHeight="false">
         <RenderObject3D
             model="data/models/dolls/curva.khm"
             diffuseTex="data/models/dolls/curva.dds"
@@ -672,14 +672,14 @@
                 <Item name="scope_GFL_IronSights_Secondary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
-				<Item name="GFL_BasicCore" />
-				<Item name="GFL_NightVision" />
-				<Item name="GFL_CombatFrame" />	
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />    
             </Equipment>
         </Human>
     </Entity>
 
-	<Entity name="GIRL-VEPR12" type="Human" editorAutoHeight="false">
+    <Entity name="GIRL-VEPR12" type="Human" editorAutoHeight="false">
         <RenderObject3D
             model="data/models/dolls/vepr12.khm"
             diffuseTex="data/models/dolls/vepr12.dds"
@@ -712,14 +712,14 @@
                 <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
-				<Item name="GFL_BasicCore" />
-				<Item name="GFL_NightVision" />
-				<Item name="GFL_CombatFrame" />	
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />    
             </Equipment>
         </Human>
     </Entity>
 
-	<Entity name="GIRL-PKPSP" type="Human" editorAutoHeight="false">
+    <Entity name="GIRL-PKPSP" type="Human" editorAutoHeight="false">
         <RenderObject3D
             model="data/models/dolls/pkpsp.khm"
             diffuseTex="data/models/dolls/pkpsp.dds"
@@ -752,14 +752,14 @@
                 <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
-				<Item name="GFL_BasicCore" />
-				<Item name="GFL_NightVision" />
-				<Item name="GFL_CombatFrame" />	
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />    
             </Equipment>
         </Human>
     </Entity>
 
-	<Entity name="GIRL-SPAS12" type="Human" editorAutoHeight="false">
+    <Entity name="GIRL-SPAS12" type="Human" editorAutoHeight="false">
         <RenderObject3D
             model="data/models/dolls/spas12.khm"
             diffuseTex="data/models/dolls/spas12.dds"
@@ -792,14 +792,14 @@
                 <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
-				<Item name="GFL_BasicCore" />
-				<Item name="GFL_NightVision" />
-				<Item name="GFL_CombatFrame" />	
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />    
             </Equipment>
         </Human>
     </Entity>
 
-	<Entity name="GIRL-TYPE97S" type="Human" editorAutoHeight="false">
+    <Entity name="GIRL-TYPE97S" type="Human" editorAutoHeight="false">
         <RenderObject3D
             model="data/models/dolls/type97s.khm"
             diffuseTex="data/models/dolls/type97s.dds"
@@ -832,14 +832,14 @@
                 <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
-				<Item name="GFL_BasicCore" />
-				<Item name="GFL_NightVision" />
-				<Item name="GFL_CombatFrame" />	
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />    
             </Equipment>
         </Human>
     </Entity>
 
-	<Entity name="GIRL-MP5" type="Human" editorAutoHeight="false">
+    <Entity name="GIRL-MP5" type="Human" editorAutoHeight="false">
         <RenderObject3D
             model="data/models/dolls/mp5.khm"
             diffuseTex="data/models/dolls/mp5.dds"
@@ -871,14 +871,14 @@
                 <Item name="GFL-WEAP-MP5" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
-				<Item name="GFL_BasicCore" />
-				<Item name="GFL_NightVision" />
-				<Item name="GFL_CombatFrame" />	
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />    
             </Equipment>
         </Human>
     </Entity>
 
-	<Entity name="GIRL-PA15" type="Human" editorAutoHeight="false">
+    <Entity name="GIRL-PA15" type="Human" editorAutoHeight="false">
         <RenderObject3D
             model="data/models/dolls/pa15.khm"
             diffuseTex="data/models/dolls/pa15.dds"
@@ -911,14 +911,14 @@
                 <Item name="scope_GFL_IronSights_Secondary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
-				<Item name="GFL_BasicCore" />
-				<Item name="GFL_NightVision" />
-				<Item name="GFL_CombatFrame" />	
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />    
             </Equipment>
         </Human>
     </Entity>
 
-	<Entity name="GIRL-VSK94" type="Human" editorAutoHeight="false">
+    <Entity name="GIRL-VSK94" type="Human" editorAutoHeight="false">
         <RenderObject3D
             model="data/models/dolls/vsk94.khm"
             diffuseTex="data/models/dolls/vsk94.dds"
@@ -951,14 +951,14 @@
                 <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
-				<Item name="GFL_BasicCore" />
-				<Item name="GFL_NightVision" />
-				<Item name="GFL_CombatFrame" />	
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />    
             </Equipment>
         </Human>
     </Entity>
 
-	<Entity name="GIRL-DP12" type="Human" editorAutoHeight="false">
+    <Entity name="GIRL-DP12" type="Human" editorAutoHeight="false">
         <RenderObject3D
             model="data/models/dolls/dp12.khm"
             diffuseTex="data/models/dolls/dp12.dds"
@@ -991,14 +991,14 @@
                 <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
-				<Item name="GFL_BasicCore" />
-				<Item name="GFL_NightVision" />
-				<Item name="GFL_CombatFrame" />	
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />    
             </Equipment>
         </Human>
     </Entity>
 
-	<Entity name="GIRL-LEWIS" type="Human" editorAutoHeight="false">
+    <Entity name="GIRL-LEWIS" type="Human" editorAutoHeight="false">
         <RenderObject3D
             model="data/models/dolls/lewis.khm"
             diffuseTex="data/models/dolls/lewis.dds"
@@ -1031,14 +1031,14 @@
                 <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
-				<Item name="GFL_BasicCore" />
-				<Item name="GFL_NightVision" />
-				<Item name="GFL_CombatFrame" />	
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />    
             </Equipment>
         </Human>
     </Entity>
 
-	<Entity name="GIRL-QBZ191" type="Human" editorAutoHeight="false">
+    <Entity name="GIRL-QBZ191" type="Human" editorAutoHeight="false">
         <RenderObject3D
             model="data/models/dolls/qbz191.khm"
             diffuseTex="data/models/dolls/qbz191.dds"
@@ -1071,14 +1071,14 @@
                 <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
-				<Item name="GFL_BasicCore" />
-				<Item name="GFL_NightVision" />
-				<Item name="GFL_CombatFrame" />	
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />    
             </Equipment>
         </Human>
     </Entity>
 
-	<Entity name="GIRL-AKALFA" type="Human" editorAutoHeight="false">
+    <Entity name="GIRL-AKALFA" type="Human" editorAutoHeight="false">
         <RenderObject3D
             model="data/models/dolls/akalfa.khm"
             diffuseTex="data/models/dolls/akalfa.dds"
@@ -1111,14 +1111,14 @@
                 <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
-				<Item name="GFL_BasicCore" />
-				<Item name="GFL_NightVision" />
-				<Item name="GFL_CombatFrame" />	
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />    
             </Equipment>
         </Human>
     </Entity>
 
-	<Entity name="GIRL-AA12" type="Human" editorAutoHeight="false">
+    <Entity name="GIRL-AA12" type="Human" editorAutoHeight="false">
         <RenderObject3D
             model="data/models/dolls/aa12.khm"
             diffuseTex="data/models/dolls/aa12.dds"
@@ -1151,14 +1151,14 @@
                 <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
-				<Item name="GFL_BasicCore" />
-				<Item name="GFL_NightVision" />
-				<Item name="GFL_CombatFrame" />	
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />    
             </Equipment>
         </Human>
     </Entity>
 
-	<Entity name="GIRL-MP7" type="Human" editorAutoHeight="false">
+    <Entity name="GIRL-MP7" type="Human" editorAutoHeight="false">
         <RenderObject3D
             model="data/models/dolls/mp7.khm"
             diffuseTex="data/models/dolls/mp7.dds"
@@ -1191,14 +1191,14 @@
                 <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
-				<Item name="GFL_BasicCore" />
-				<Item name="GFL_NightVision" />
-				<Item name="GFL_CombatFrame" />	
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />    
             </Equipment>
         </Human>
     </Entity>
 
-	<Entity name="GIRL-QBZ95" type="Human" editorAutoHeight="false">
+    <Entity name="GIRL-QBZ95" type="Human" editorAutoHeight="false">
         <RenderObject3D
             model="data/models/dolls/type95.khm"
             diffuseTex="data/models/dolls/type95.dds"
@@ -1231,14 +1231,14 @@
                 <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
-				<Item name="GFL_BasicCore" />
-				<Item name="GFL_NightVision" />
-				<Item name="GFL_CombatFrame" />	
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />    
             </Equipment>
         </Human>
     </Entity>
 
-	<Entity name="GIRL-QBZ97" type="Human" editorAutoHeight="false">
+    <Entity name="GIRL-QBZ97" type="Human" editorAutoHeight="false">
         <RenderObject3D
             model="data/models/dolls/type97.khm"
             diffuseTex="data/models/dolls/type97.dds"
@@ -1271,14 +1271,14 @@
                 <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
-				<Item name="GFL_BasicCore" />
-				<Item name="GFL_NightVision" />
-				<Item name="GFL_CombatFrame" />	
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />    
             </Equipment>
         </Human>
     </Entity>
 
-	<Entity name="GIRL-CSLS06" type="Human" editorAutoHeight="false">
+    <Entity name="GIRL-CSLS06" type="Human" editorAutoHeight="false">
         <RenderObject3D
             model="data/models/dolls/csls06.khm"
             diffuseTex="data/models/dolls/csls06.dds"
@@ -1311,14 +1311,14 @@
                 <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
-				<Item name="GFL_BasicCore" />
-				<Item name="GFL_NightVision" />
-				<Item name="GFL_CombatFrame" />	
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />    
             </Equipment>
         </Human>
     </Entity>
 
-	<Entity name="GIRL-CZ75" type="Human" editorAutoHeight="false">
+    <Entity name="GIRL-CZ75" type="Human" editorAutoHeight="false">
         <RenderObject3D
             model="data/models/dolls/cz75.khm"
             diffuseTex="data/models/dolls/cz75.dds"
@@ -1351,9 +1351,9 @@
                 <Item name="scope_GFL_IronSights_Secondary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
-				<Item name="GFL_BasicCore" />
-				<Item name="GFL_NightVision" />
-				<Item name="GFL_CombatFrame" />	
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />    
             </Equipment>
         </Human>
     </Entity>

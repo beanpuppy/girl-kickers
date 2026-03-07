@@ -64,39 +64,40 @@
 @armor_gfl_hardened_desc=Maximum protection configuration. Reinforced defensive systems provide superior ballistic resistance.
 
 @scope_GFL_ironsights_name=Iron sights
+
 @scope_GFL_ironsights_desc=Standard ironsights for basic aim guidance. Provides the quickest aim time at the cost of precision. T-Dolls being sent with nothing but iron sights tend to rely on just their built-in sensor packages in close range fights, removing the need to "consult" the sights during target aquisition, allowing the doll to process shooting protocols faster.
 
-@scope_GFL_smallreddot_name=RMR T4 Red Dot 1x
+@scope_GFL_smallreddot_name=Micro Red Dot 1x
 @scope_GFL_smallreddot_desc=A red dot sight so small it can fit to pistol slides. Nearly weightless for a Doll, it provides the best aim time while allowing precise shots at close range, but the red dot sight eventually becomes a hindrance for scoring killshots at long range.
 
-@scope_GFL_holosight_name=EOT 518 Holo-sight 1x
+@scope_GFL_holosight_name=Holo-sight 1x
 @scope_GFL_holosight_desc=The favored optical attachment of most T-Dolls engaging at close to medium range. Yhis sight magically projects a reticle over the target, with drop marks for medium-range shooting. Most Doll's under the Shikikan's command train with this sight in shooting drills that their protocols are optimized with its bulk and heft.
 
-@scope_GFL_largereddot_name=ITI Mars Red Dot 1x
+@scope_GFL_largereddot_name=M68 Red Dot 1x
 @scope_GFL_largereddot_desc=Minimalistic sight that simply paints a red dot over the target. Zeroed farther than its smaller Red Dot cousin, it allows a faster response than the holosight while maintaining a steady precision advantage at all relevant ranges.
 
-@scope_GFL_holomag3x_name=EOT XPS3 3x
+@scope_GFL_holomag3x_name=Holo / Magnifier 3x
 @scope_GFL_holomag3x_desc=Holo-sight with a 3x magnifier for those situations you need more magnification without losing too much on your close range benefits. It is a bit heavier though.
 
-@scope_GFL_4x_name=ACOG 4x
+@scope_GFL_4x_name=Combat Optic 4x
 @scope_GFL_4x_desc=Simple magnified optic for shooting at medium ranges, with little weight penalty, but makes close range shooting more difficult due to its static configuration.
 
-@scope_GFL_SpecterDR_name=ELCAN Specter 1x/4x
+@scope_GFL_SpecterDR_name=Dual Role Optic 1/4x
 @scope_GFL_SpecterDR_desc=Excellent optic suited for close-in AND medium range work, though a little heavy. A small price to pay for an optic perfect for generalized use.
 
-@scope_GFL_lpvo6x_name=EOT Vudu 1-6x
+@scope_GFL_lpvo6x_name=LPVO 1-6x
 @scope_GFL_lpvo6x_desc=A Low Power Variable Optic that works great at ranges up to 25m and even more. The entry point of the heavier scopes, this scope provides greater precision at the cost of hindered aim time at close range. Perfect for sniper Dolls who you still want to assist in close range fights while still specializing in long range.
 
-@scope_GFL_lpvo8x_name=PM II Rifle Scope 1-8x
+@scope_GFL_lpvo8x_name=LPVO 1-8x
 @scope_GFL_lpvo8x_desc=A good all-around assaulter optic that truly shines at ranges farther than 25m. Another excellent attachment for sniper Dolls that you still wish to participate in close quarters combat while maintaining their capability to take out targets at long range, but a bit heavier than its 1-6x cousin.
 
-@scope_GFL_lromk4_name=ART2 3.5-10x
+@scope_GFL_lromk4_name=LR Optic 3.5-10x
 @scope_GFL_lromk4_desc=Entry level optic for dedicated marksman duties. Provides powerful benefits at mid-to-long range, but is very heavy and very unwieldy at close range.
 
-@scope_GFL_lromk6_3_18_name=Leopold Mark 6 3-18x
+@scope_GFL_lromk6_3_18_name=LR Optic 3-18x
 @scope_GFL_lromk6_3_18_desc=A marksman optic specialized in the 25 to 50m range zone, and adequate elsewhere. Provides powerful benefits at mid-to-long range, but is very heavy and very unwieldy at close range. It is recommended to bring a handgun to switch into if you decide to have your Doll's equipping this to have any chance dueling with any close targets.
 
-@scope_GFL_lropm5_25_name=PM 5-25X56 5-25x
+@scope_GFL_lropm5_25_name=LR Optic 5-25x
 @scope_GFL_lropm5_25_desc=A heavy and cumbersome optic that brings maximum precision from 25m out. Enhances the Doll's equipped weapon by intense degrees at long range, but suffers greatly at close range. It is a requirement to bring a reliable sidearm or have the Doll equipping this sit out any room-to-room fights.
 
 @GEAR-MEDIC-GRENADE-NAME=2x Medic Grenade
@@ -107,20 +108,20 @@
 @armor_gfl_recframe_name=16Lab Recreation Frame
 @armor_recframe_desc=Doll body frame developed by Persica to give your Dolls a closer approximation of the human experience, enabling them to participate in activities outside their normal design parameters, such as tasting and savoring food.\n\nThis frame offers no real protection for the Doll’s Neural Core beyond its synthetic skin, in exchange this frame increases the Doll's motor function performance by 20%, which could be useful in specific combat scenarios.\n\nMayling strongly disapproves of deploying Dolls into combat with this frame, citing the extreme risk posed by its complete lack of protection qualities, which almost guarantees her pulling an all-nighter reuploading the Doll's Neural Cloud into a new frame.
 
-@armor_gfl_lawframe_name=Security Frame Mk.II
+@armor_gfl_lawframe_name=Law Enforcement Frame Mk.II
 @armor_gfl_lawframe_desc=Doll body frame extensively used by Dolls working in security and law enforcement in Green and White Zones.\n\nFeatures self-lubricating joints that grant increased motor function performance by 12% for on-foot chases while still offering decent protection against small arms fire from common armed criminals thanks to the anti-ballistic gel layer underneath the synthetic skin.
 
 @armor_gfl_combatframe_name=B.R.I.E.F. Combat Frame
-@armor_gfl_combatframe_desc=Doll body frame developed and approved by B.R.I.E.F. for extensive combat use in Yellow Zones.\n\nIts heterogeneous anti-ballistic gel–carbide weave matrix shrugs off the shoddy intermediate rounds favored by the Varjagers, while maintaining enough thermal transfer efficiency to enable efficient heat dissipation in scorching wasteland climates.\n\nIncidentally, it’s perfect for the Commander’s deployment in Nowheraki.
+@armor_gfl_Combatframe_desc=Doll body frame developed and approved by B.R.I.E.F. for extensive combat use in Yellow Zones.\n\nIts heterogeneous anti-ballistic gel–carbide weave matrix shrugs off the shoddy intermediate rounds favored by the Varjagers, while maintaining enough thermal transfer efficiency to enable efficient heat dissipation in scorching wasteland climates.\n\nIncidentally, it’s perfect for the Commander’s deployment in Nowheraki.
 
 @armor_gfl_eliteframe_name=I.O.P. Elite Frame
 @armor_gfl_eliteframe_desc=Doll body frame developed by I.O.P. for Elite Dolls such as the famous AR Team, Task Force DEFY and Klukai, formerly Gr 416.\n\nIt features higher quality artificial musculature that enhances the motor function performance of a doll even when at combat load, allowing the installation of subdermal matrices that can resist strong intermediate rounds.\n\nDue to the improved musculature generating more heat when in action, the subdermal matrices are installed in a way that covers only specific angles of the frame to retain the required heat dissipation index for optimal operation. This is no problem ofcourse for Elite Dolls that operate in a squad that cover each other's tangos.
 
-@armor_gfl_grafframe_name=H-Frame "Deichgraf"
+@armor_gfl_grafframe_name=High-Endurance Frame "Deichgraf"
 @armor_gfl_grafframe_desc=Doll body frame developed by the collaborative efforts of Mayling, Springfield and Bathilde to produce a frame that can be made with Elmo's in-house facilities with defensive capabilities that would equal the default frames of Elite Dolls.\n\nUsing an inexpensive method of applying matriced armored synthskin over a reinforced subdermal layer that protects the vital parts of the frame, the result is a well armored frame with notoriously poor heat dissipation capability, causing mobility issues.\n\nIts name is inspired from the secretive, seemingly unkillable weapons platform "Deichgraf" the Commander has fought countless times.
 
-@armor_gfl_rhinoframe_name=NSRG R-Endoskeleton
-@armor_gfl_rhinoframe_desc="Nosorog Reactive Endoskeleton", an experimental Doll body frame provided by the Commander's specific female contact in NOMFA to support his endeavors in Nowheraki.\n\nDesigned by the NSU to enable Machine Gun T-Dolls to provide heavy frontline machinegun fire undaunted, this frame is equipped with an extremely powerful energy-based hardkill active protection system that can eliminate most firearms projectiles heading towards the Doll with an 80% success rate.\n\nThis APS covers 70 degree arc in front of the Doll.\n\nAs a consequence, the frame itself is extremely heavy from the APS components and generates an insane amount of heat that it directly interferes with a Neural Core's processing rate, causing it to prioritize mobility commands the least.
+@armor_gfl_rhinoframe_name=Nosorog Reactive Endoskeleton
+@armor_gfl_rhinoframe_desc=An experimental Doll body frame provided by the Commander's specific female contact in NOMFA to support his endeavors in Nowheraki.\n\nDesigned by the NSU to enable Machine Gun T-Dolls to provide heavy frontline machinegun fire undaunted, this frame is equipped with an extremely powerful energy-based hardkill active protection system that can eliminate most firearms projectiles heading towards the Doll with an 80% success rate.\n\nThis APS covers 70 degree arc in front of the Doll.\n\nAs a consequence, the frame itself is extremely heavy from the APS components and generates an insane amount of heat that it directly interferes with a Neural Core's processing rate, causing it to prioritize mobility commands the least.
 
 @helmet_gfl_basic_name=Basic Core
 @helmet_gfl_basic_desc=Standard Neural Core housing that provides standard Doll survivability protocols against critical hits to essential Doll Frame components.
@@ -160,7 +161,7 @@
 @ammo_919_squeak_flash_desc =Custom chemical rounds that produces a distinct high-pitched squeak and disorienting wisps of light upon impact. Materialized from one of Cheeta's shooting range pranks to the Commander, it is now refined for suppression against both humans and ELIDs. Mayling describes the effect of having one explode close as like hearing nails sharply grind a chalkboard through your tinnitus while being flashed by a strobe light.\n\nWhile not designed to penetrate armor, the damage this ammunition can cause on exposed flesh should not be underestimated.
 
 @ammo_556x39_fmj_nsu_name=NSU 57gr FMJ
-@ammo_556x39_fmj_nsu_desc=Neo Soviet Union's standard service intermediate round that has aims to replace the ubiquitous 7.62x39mm service round. It performs roughly the same as its predecessor with a slight reduction on overall damage.
+@ammo_556x39_fmj_nsu_name=Neo Soviet Union's standard service intermediate round that has aims to replace the ubiquitous 7.62x39mm service round. It performs roughly the same as its predecessor with a slight reduction on overall damage.
 
 @ammo_556x39_supercavitator_defy_name=DEFY Supercav Soft
 @ammo_556x39_supercavitator_defy_desc=Custom rounds designed for underwater combat against soft targets. When fired underwater, it generates cavitation bubble thanks to its flat, disc shaped nose, allowing the bullet to drag against air instead of water. While all of these qualities seem useless in the environment of Nowheraki, the bullet itself still acts as a overengineered JHP round on land with improved ballistics at range.
@@ -218,16 +219,6 @@
 
 @ammo_50bmg_remover_name=ELMO Remover HEIAP
 @ammo_50bmg_remover_desc=Powerful round produced in-house in the ELMO foundries for support gunner drone use. It uses the highest yield explosive available at the cheapest cost so it can be produced under a tight budget, at the cost of some ballistic performance. The round was titled as the "Remover" by Mayling herself after a conversation with Nemesis about its effectiveness with her weapon.
-
-
-
-
-@ammo_58x42_fmj_name=NOMFA 64gr Light
-@ammo_58x42_fmj_desc=Standard performance FMJ rounds that are a bit larger than most intermediate rounds. It is believed that it is superior to the 5.56 but the analysis papers that support this notion has been long lost in time. Nontheless it is still produced to be used by specific assault rifles.
-
-
-
-
 
 @GFL-UNIT-DEFY-NAME=Task Force DEFY
 @GFL-UNIT-DEFY-DESC=An elite team of newer model Tactical Dolls capable of great autonomy in the field, hence the name of the team. They form the most effective combat squad in the Neo-Soviet Union.
@@ -691,19 +682,19 @@
 @DOLL-QBZ95-DESC=A gentle and reserved Doll who roams the lands with her guzheng and her bandmates from "Monsoon". When she plucks the strings, she evokes the deepest desires buried in the hearts of her listenersーlistening to all, and embracing all. After G&K was restructured, Daiyan left and picked up the guzheng again as a wandering musician.
 
 @WEAP-QBZ95-NAME=QBZ-95
-@WEAP-QBZ95-DESC=Placeholder
+@WEAP-QBZ95-DESC=The QBZ-95 is a bullpup configured, selective fire rifle manufactured by Arsenal 266 (part of Norinco) and Arsenal 296 (under Jianshe Corp). The rifle's designation "QBZ" stands for "light weapon (Qīng Wŭqì) - rifle (Bùqiāng) - automatic (Zìdòng)", in keeping with the coding standards of the Chinese defense industry.
 
 @DOLL-QBZ97-NAME=JIANGYU
 @DOLL-QBZ97-DESC=A lively and enthusiastic Doll who follows in her older sister's footsteps with a carefree spirit. She roams the lands with her bandmates, bringing fresh and fiery notes to "Monsoon". Jiangyu is not only a reliable T-Doll in combat, but a true crowd-pleaser on stage. Using her agility and vivacity, she goes above and beyond to put on exciting performances. She may stumble occasionally, but her enthusiasm will cut through any difficulty.
 
 @WEAP-QBZ97-NAME=QBZ-97
-@WEAP-QBZ97-DESC=Placeholder
+@WEAP-QBZ97-DESC=The QBZ-97 is essentially a QBZ-95 chambered for the 5.56x45mm NATO cartridge, and was a model developed primarily for international export. The two rifles are commonly referred to as the 'Type 95' and 'Type 97' to indicate the year they completed development and entered service.
 
 @DOLL-CSLS06-NAME=ZHAOHUI
 @DOLL-CSLS06-DESC=A stoic Doll with rich combat experience, she is unpretentious and decisive in action. As the leader of Monsoon Squad, she excels in combat and handling team affairs but is still a novice at lightening the mood. Don't hesitate to welcome herーa hero pursuing justice is always worthy of trust.
 
 @WEAP-CSLS06-NAME=CS/LS06
-@WEAP-CSLS06-DESC=The CS/LS06 is a submachinegun with a top-loaded helical magazine. Its it is designed to be as most compact as possible while being able to equip a sizable magazine.
+@WEAP-CSLS06-DESC=The CS/LS06 is a submachine-gun with a top-loaded helical magazine. Its it is designed to be as most compact as possible while being able to equip a sizable magazine.
 
 @DOLL-CZ75-NAME=FAYE
 @DOLL-CZ75-DESC=A grim, nimble doll with the air of a delinquent. She has actual experience with hand-to-hand fighting techniques, and is easily annoyed by slow-paced people. However, what makes her distinct is that she's extraordinarily broad-minded, and can be generously forgiving regarding the daily issues brought about by any dolls with a problem.

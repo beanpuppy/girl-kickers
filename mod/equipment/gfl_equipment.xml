@@ -2,7 +2,7 @@
 
 <!-- Legacy Equipment Start -->
 
-	<Helmet
+    <Helmet
         name="GFL_OcularEnhancement"
         inventoryBinding="Helmet"
         unlockCost="0"
@@ -100,7 +100,7 @@
             />
         </Params>
     </Armor>
-	
+    
 <!-- Legacy Equipment End -->
 
 <!-- Basic Girlkick -->
@@ -131,27 +131,27 @@
     
 <!-- Doll Lockpick -->
     
-	<Lockpick name="GFL_Lockpick" inventoryBinding="SupportGear2"
-			tooltip="@support_gear_lockpic_name"
-			img="data/models/equipment/lockpick_ui.dds"
+    <Lockpick name="GFL_Lockpick" inventoryBinding="SupportGear2"
+            tooltip="@support_gear_lockpic_name"
+            img="data/models/equipment/lockpick_ui.dds"
 
-			animationSet="generic_device"
-			soundUse="lockpick_use"
-			crouchOnUse="true"
-		>
-		<!-- the efficiency percent is multiplied by the door's lockpick time to get the final lockpicking time -->
-		<ModifiableParams
-			efficiencyPercent="400"
-			changeInTime="100"
-			changeOutTime="100"
-			audibleSoundRadius="1.5"
-		/>
-		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
-	</Lockpick>
-	
+            animationSet="generic_device"
+            soundUse="lockpick_use"
+            crouchOnUse="true"
+        >
+        <!-- the efficiency percent is multiplied by the door's lockpick time to get the final lockpicking time -->
+        <ModifiableParams
+            efficiencyPercent="400"
+            changeInTime="100"
+            changeOutTime="100"
+            audibleSoundRadius="1.5"
+        />
+        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+    </Lockpick>
+    
 <!-- Recreation Frame -->
 
-	<Armor
+    <Armor
         name="GFL_RecFrame"
         inventoryBinding="Armor"
         unlockCost="0"
@@ -164,10 +164,10 @@
 
         <Params>
             <ProtectionArc 
-				degrees="90" 
-				coveragePercent="10" 
-				piercingProtectionLevel="90" 
-			/>
+                degrees="90" 
+                coveragePercent="10" 
+                piercingProtectionLevel="90" 
+            />
             <ProtectionArc
                 degrees="270"
                 coveragePercent="10"
@@ -180,10 +180,10 @@
             />
         </Params>
     </Armor>
-	
+    
 <!-- Law Enforcement Frame Mk.II -->
 
-	<Armor
+    <Armor
         name="GFL_LawFrame"
         inventoryBinding="Armor"
         unlockCost="0"
@@ -196,10 +196,10 @@
 
         <Params>
             <ProtectionArc 
-				degrees="90" 
-				coveragePercent="50" 
-				piercingProtectionLevel="40" 
-			/>
+                degrees="90" 
+                coveragePercent="50" 
+                piercingProtectionLevel="40" 
+            />
             <ProtectionArc
                 degrees="270"
                 coveragePercent="30"
@@ -212,10 +212,10 @@
             />
         </Params>
     </Armor>
-	
+    
 <!-- B.R.I.E.F. Combat Frame -->
-	
-	<Armor
+    
+    <Armor
         name="GFL_CombatFrame"
         inventoryBinding="Armor"
         unlockCost="0"
@@ -228,10 +228,10 @@
 
         <Params>
             <ProtectionArc 
-				degrees="90" 
-				coveragePercent="50" 
-				piercingProtectionLevel="50" 
-			/>
+                degrees="90" 
+                coveragePercent="50" 
+                piercingProtectionLevel="50" 
+            />
             <ProtectionArc
                 degrees="270"
                 coveragePercent="30"
@@ -244,11 +244,11 @@
             />
         </Params>
     </Armor>
-	
-	
+    
+    
 <!-- I.O.P. Elite Frame -->
-	
-	<Armor
+    
+    <Armor
         name="GFL_EliteFrame"
         inventoryBinding="Armor"
         unlockCost="9"
@@ -261,10 +261,10 @@
 
         <Params>
             <ProtectionArc 
-				degrees="84" 
-				coveragePercent="50" 
-				piercingProtectionLevel="60" 
-			/>
+                degrees="84" 
+                coveragePercent="50" 
+                piercingProtectionLevel="60" 
+            />
             <ProtectionArc
                 degrees="270"
                 coveragePercent="30"
@@ -277,11 +277,11 @@
             />
         </Params>
     </Armor>
-	
-	
+    
+    
 <!-- High-Endurance Frame "Deichgraf"  -->
-	
-	<Armor
+    
+    <Armor
         name="GFL_GrafFrame"
         inventoryBinding="Armor"
         unlockCost="12"
@@ -294,10 +294,10 @@
 
         <Params>
             <ProtectionArc 
-				degrees="90" 
-				coveragePercent="60" 
-				piercingProtectionLevel="60" 
-			/>
+                degrees="90" 
+                coveragePercent="60" 
+                piercingProtectionLevel="60" 
+            />
             <ProtectionArc
                 degrees="270"
                 coveragePercent="40"
@@ -310,10 +310,10 @@
             />
         </Params>
     </Armor>
-	
+    
 <!-- Nosorog Reactive Endoskeleton  -->
-	
-	<Armor
+    
+    <Armor
         name="GFL_RhinoFrame"
         inventoryBinding="Armor"
         unlockCost="0" unlockCostBH="1"
@@ -326,10 +326,10 @@
 
         <Params>
             <ProtectionArc 
-				degrees="70" 
-				coveragePercent="80" 
-				piercingProtectionLevel="80" 
-			/>
+                degrees="70" 
+                coveragePercent="80" 
+                piercingProtectionLevel="80" 
+            />
             <ProtectionArc
                 degrees="270"
                 coveragePercent="10"
@@ -342,10 +342,10 @@
             />
         </Params>
     </Armor>
-	
+    
 <!-- Basic Core -->
-	
-	<Helmet
+    
+    <Helmet
         name="GFL_BasicCore"
         inventoryBinding="Helmet"
         unlockCost="0"
@@ -357,16 +357,16 @@
         <ConcealmentModifier add="0" />
         <Params nvgByDefault="true">
             <ProtectionArc 
-				degrees="360" 
-				coveragePercent="50" 
-				piercingProtectionLevel="60" 
-			/>
+                degrees="360" 
+                coveragePercent="50" 
+                piercingProtectionLevel="60" 
+            />
         </Params>
     </Helmet>
-	
+    
 <!-- Vanguard Core -->
-	
-	<Helmet
+    
+    <Helmet
         name="GFL_VanguardCore"
         inventoryBinding="Helmet"
         unlockCost="0"
@@ -378,16 +378,16 @@
         <ConcealmentModifier add="0" />
         <Params nvgByDefault="true">
             <ProtectionArc 
-				degrees="360" 
-				coveragePercent="30" 
-				piercingProtectionLevel="60" 
-			/>
+                degrees="360" 
+                coveragePercent="30" 
+                piercingProtectionLevel="60" 
+            />
         </Params>
     </Helmet>
 
 <!-- Sentinel Core -->
 
-	<Helmet
+    <Helmet
         name="GFL_SentinelCore"
         inventoryBinding="Helmet"
         unlockCost="0"
@@ -399,16 +399,16 @@
         <ConcealmentModifier add="0" />
         <Params nvgByDefault="true">
             <ProtectionArc 
-				degrees="360" 
-				coveragePercent="20" 
-				piercingProtectionLevel="60" 
-			/>
+                degrees="360" 
+                coveragePercent="20" 
+                piercingProtectionLevel="60" 
+            />
         </Params>
     </Helmet>
 
 <!-- Bulwark Core -->
 
-	<Helmet
+    <Helmet
         name="GFL_BulwarkCore"
         inventoryBinding="Helmet"
         unlockCost="0"
@@ -420,16 +420,16 @@
         <ConcealmentModifier add="0" />
         <Params nvgByDefault="true">
             <ProtectionArc 
-				degrees="360"
-				coveragePercent="80" 
-				piercingProtectionLevel="90" 
-			/>
+                degrees="360"
+                coveragePercent="80" 
+                piercingProtectionLevel="90" 
+            />
         </Params>
     </Helmet>
 
 <!-- Support Core -->
 
-	<Helmet
+    <Helmet
         name="GFL_SupportCore"
         inventoryBinding="Helmet"
         unlockCost="0"
@@ -441,28 +441,28 @@
         <ConcealmentModifier add="0" />
         <Params nvgByDefault="true">
             <ProtectionArc 
-				degrees="360" 
-				coveragePercent="30" 
-				piercingProtectionLevel="60" 
-			/>
+                degrees="360" 
+                coveragePercent="30" 
+                piercingProtectionLevel="60" 
+            />
         </Params>
     </Helmet>
-	
+    
 <!-- Night Eyes TIS -->
 
-	<HelmetNVG 
-			name="GFL_NightVision" 
-			inventoryBinding="HelmetNVG"
-			tooltip="@helmet_gfl_nvg1_name"
-			description="@helmet_gfl_nvg1_desc"
-			img="data/models/humans/attachments/nvg_03_ui.dds"
-		>
-		<ModifiableParams
-			fovDegrees="90"
-			fovRadiusMeters="0.42"
-			fovRangeMeters="999"
-		/>
-	</HelmetNVG>
-	
+    <HelmetNVG 
+            name="GFL_NightVision" 
+            inventoryBinding="HelmetNVG"
+            tooltip="@helmet_gfl_nvg1_name"
+            description="@helmet_gfl_nvg1_desc"
+            img="data/models/humans/attachments/nvg_03_ui.dds"
+        >
+        <ModifiableParams
+            fovDegrees="90"
+            fovRadiusMeters="0.42"
+            fovRangeMeters="999"
+        />
+    </HelmetNVG>
+    
 
 </Equipment>

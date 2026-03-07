@@ -1039,7 +1039,7 @@
             <Node name="GFL_FROST_TacticalAdaptation" />
         </Doctrine>
     </Unit>
-	
+    
     <Unit
         name="GFL-UNIT-MONSOON"
         nameUI="@GFL-UNIT-MONSOON-NAME"
@@ -1053,7 +1053,7 @@
         incapacitationChanceCrit="40"
     >
         <Classes>
-			<Class
+            <Class
                 name="GFL-DOLL-QBZ95"
                 nameUI="@DOLL-QBZ95-NAME"
                 description="@DOLL-QBZ95-DESC"
@@ -1063,7 +1063,7 @@
                 upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2"
                 maxUpgradeable="2"
             />
-			<Class
+            <Class
                 name="GFL-DOLL-QBZ97"
                 nameUI="@DOLL-QBZ97-NAME"
                 description="@DOLL-QBZ97-DESC"
