@@ -65,13 +65,13 @@
 
 @scope_GFL_ironsights_name=Iron sights
 
-@scope_GFL_ironsights_desc=Standard ironsights for basic aim guidance. Provides the quickest aim time at the cost of precision. T-Dolls being sent with nothing but iron sights tend to rely on just their built-in sensor packages in close range fights, removing the need to "consult" the sights during target aquisition, allowing the doll to process shooting protocols faster.
+@scope_GFL_ironsights_desc=Standard ironsights for basic aim guidance. Provides the quickest aim time at the cost of precision. T-Dolls being sent with nothing but iron sights tend to rely on just their built-in sensor packages in close range fights, removing the need to "consult" the sights during target acquisition, allowing the doll to process shooting protocols faster.
 
 @scope_GFL_smallreddot_name=Micro Red Dot 1x
 @scope_GFL_smallreddot_desc=A red dot sight so small it can fit to pistol slides. Nearly weightless for a Doll, it provides the best aim time while allowing precise shots at close range, but the red dot sight eventually becomes a hindrance for scoring killshots at long range.
 
 @scope_GFL_holosight_name=Holo-sight 1x
-@scope_GFL_holosight_desc=The favored optical attachment of most T-Dolls engaging at close to medium range. Yhis sight magically projects a reticle over the target, with drop marks for medium-range shooting. Most Doll's under the Shikikan's command train with this sight in shooting drills that their protocols are optimized with its bulk and heft.
+@scope_GFL_holosight_desc=The favored optical attachment of most T-Dolls engaging at close to medium range. This sight magically projects a reticle over the target, with drop marks for medium-range shooting. Most Dolls under the Shikikan's command train with this sight in shooting drills that their protocols are optimized with its bulk and heft.
 
 @scope_GFL_largereddot_name=M68 Red Dot 1x
 @scope_GFL_largereddot_desc=Minimalistic sight that simply paints a red dot over the target. Zeroed farther than its smaller Red Dot cousin, it allows a faster response than the holosight while maintaining a steady precision advantage at all relevant ranges.
@@ -112,10 +112,11 @@
 @armor_gfl_lawframe_desc=Doll body frame extensively used by Dolls working in security and law enforcement in Green and White Zones.\n\nFeatures self-lubricating joints that grant increased motor function performance by 12% for on-foot chases while still offering decent protection against small arms fire from common armed criminals thanks to the anti-ballistic gel layer underneath the synthetic skin.
 
 @armor_gfl_combatframe_name=B.R.I.E.F. Combat Frame
-@armor_gfl_Combatframe_desc=Doll body frame developed and approved by B.R.I.E.F. for extensive combat use in Yellow Zones.\n\nIts heterogeneous anti-ballistic gel–carbide weave matrix shrugs off the shoddy intermediate rounds favored by the Varjagers, while maintaining enough thermal transfer efficiency to enable efficient heat dissipation in scorching wasteland climates.\n\nIncidentally, it’s perfect for the Commander’s deployment in Nowheraki.
+@support_gear_lockpick_name=Lockpick
+@armor_gfl_combatframe_desc=Doll body frame developed and approved by B.R.I.E.F. for extensive combat use in Yellow Zones.\n\nIts heterogeneous anti-ballistic gel–carbide weave matrix shrugs off the shoddy intermediate rounds favored by the Varjagers, while maintaining enough thermal transfer efficiency to enable efficient heat dissipation in scorching wasteland climates.\n\nIncidentally, it’s perfect for the Commander’s deployment in Nowheraki.
 
 @armor_gfl_eliteframe_name=I.O.P. Elite Frame
-@armor_gfl_eliteframe_desc=Doll body frame developed by I.O.P. for Elite Dolls such as the famous AR Team, Task Force DEFY and Klukai, formerly Gr 416.\n\nIt features higher quality artificial musculature that enhances the motor function performance of a doll even when at combat load, allowing the installation of subdermal matrices that can resist strong intermediate rounds.\n\nDue to the improved musculature generating more heat when in action, the subdermal matrices are installed in a way that covers only specific angles of the frame to retain the required heat dissipation index for optimal operation. This is no problem ofcourse for Elite Dolls that operate in a squad that cover each other's tangos.
+@armor_gfl_eliteframe_desc=Doll body frame developed by I.O.P. for Elite Dolls such as the famous AR Team, Task Force DEFY and Klukai, formerly Gr 416.\n\nIt features higher quality artificial musculature that enhances the motor function performance of a doll even when at combat load, allowing the installation of subdermal matrices that can resist strong intermediate rounds.\n\nDue to the improved musculature generating more heat when in action, the subdermal matrices are installed in a way that covers only specific angles of the frame to retain the required heat dissipation index for optimal operation. This is no problem of course for Elite Dolls that operate in a squad that cover each other's tangos.
 
 @armor_gfl_grafframe_name=High-Endurance Frame "Deichgraf"
 @armor_gfl_grafframe_desc=Doll body frame developed by the collaborative efforts of Mayling, Springfield and Bathilde to produce a frame that can be made with Elmo's in-house facilities with defensive capabilities that would equal the default frames of Elite Dolls.\n\nUsing an inexpensive method of applying matriced armored synthskin over a reinforced subdermal layer that protects the vital parts of the frame, the result is a well armored frame with notoriously poor heat dissipation capability, causing mobility issues.\n\nIts name is inspired from the secretive, seemingly unkillable weapons platform "Deichgraf" the Commander has fought countless times.
@@ -158,10 +159,10 @@
 @ammo_919_jhp_over_desc=Overpressure, low-caliber JHP rounds designed to penetrate low-level armor while causing as much damage as possible on a tiny payload. While repeated use of this ammo type Regularly purchased by PMCs and civilians in the Yellow Zones looking to maximize the power of their handguns, SMGs and PDWs.\n\nRumor has it that +P rounds increase the cyclic rate of some guns.
 
 @ammo_919_squeak_flash_name=ELMO Squeak Flash
-@ammo_919_squeak_flash_desc =Custom chemical rounds that produces a distinct high-pitched squeak and disorienting wisps of light upon impact. Materialized from one of Cheeta's shooting range pranks to the Commander, it is now refined for suppression against both humans and ELIDs. Mayling describes the effect of having one explode close as like hearing nails sharply grind a chalkboard through your tinnitus while being flashed by a strobe light.\n\nWhile not designed to penetrate armor, the damage this ammunition can cause on exposed flesh should not be underestimated.
+@ammo_919_squeak_flash_desc=Custom chemical rounds that produces a distinct high-pitched squeak and disorienting wisps of light upon impact. Materialized from one of Cheeta's shooting range pranks to the Commander, it is now refined for suppression against both humans and ELIDs. Mayling describes the effect of having one explode close as like hearing nails sharply grind a chalkboard through your tinnitus while being flashed by a strobe light.
 
 @ammo_556x39_fmj_nsu_name=NSU 57gr FMJ
-@ammo_556x39_fmj_nsu_name=Neo Soviet Union's standard service intermediate round that has aims to replace the ubiquitous 7.62x39mm service round. It performs roughly the same as its predecessor with a slight reduction on overall damage.
+@ammo_556x39_fmj_nsu_desc=Neo Soviet Union's standard service intermediate round that has aims to replace the ubiquitous 7.62x39mm service round. It performs roughly the same as its predecessor with a slight reduction on overall damage.
 
 @ammo_556x39_supercavitator_defy_name=DEFY Supercav Soft
 @ammo_556x39_supercavitator_defy_desc=Custom rounds designed for underwater combat against soft targets. When fired underwater, it generates cavitation bubble thanks to its flat, disc shaped nose, allowing the bullet to drag against air instead of water. While all of these qualities seem useless in the environment of Nowheraki, the bullet itself still acts as a overengineered JHP round on land with improved ballistics at range.
@@ -173,7 +174,7 @@
 @ammo_762x39_jhe_elid_desc=Custom intermediate rounds designed to destroy ELIDs via micro explosive that trigger upon skin penetration. While the effectiveness of this ammunition is extremely dubious due to the microexplosive system adding too much weight onto the bullet, causing significant performance problems, it is still quite horrifying when given to the hands of someone who can wield it.
 
 @ammo_473_fmj_404_name=404 51gr CL FMJ
-@ammo_473_fmj_404_desc=Caseless rounds developed during the first Cold War which are now being made in house by H.I.D.E. 404 for Mechty's use. Thanks to its design, a lot of rounds can be packed in a small space while maintaining the standard performance of a 5.56mm round, at the cost of potential heat issues. Logisically heavy to produce given the resources of a small organization as H.I.D.E. 404, a sly Mechty can sometimes be heard making excuses of saving ammunition costs by letting her sit out on some missions. Klukai ofcourse, is never pleased to hear this.
+@ammo_473_fmj_404_desc=Caseless rounds developed during the first Cold War which are now being made in house by H.I.D.E. 404 for Mechty's use. Thanks to its design, a lot of rounds can be packed in a small space while maintaining the standard performance of a 5.56mm round, at the cost of potential heat issues. Logisically heavy to produce given the resources of a small organization as H.I.D.E. 404, a sly Mechty can sometimes be heard making excuses of saving ammunition costs by letting her sit out on some missions. Klukai of course, is never pleased to hear this.
 
 @ammo_473_frang_404_name=16Lab ISS Frangible
 @ammo_473_frang_404_desc=Caseless rounds for theoretical use in space stations. It is designed to be frangible as to prevent overpenetration and any damage to space station hulls on a miss. In Nowheraki, it just gives Mechty the option for high-damage rounds at the cost of penetration power. Interestingly, it is quite easier to manufacture than the FMJ counterpart.
@@ -220,6 +221,9 @@
 @ammo_50bmg_remover_name=ELMO Remover HEIAP
 @ammo_50bmg_remover_desc=Powerful round produced in-house in the ELMO foundries for support gunner drone use. It uses the highest yield explosive available at the cheapest cost so it can be produced under a tight budget, at the cost of some ballistic performance. The round was titled as the "Remover" by Mayling herself after a conversation with Nemesis about its effectiveness with her weapon.
 
+@ammo_50bmg_match_name=NOMFA Match Grade
+@ammo_50bmg_match_desc=Premium match-grade .50 BMG ammunition with precision-loaded components for maximum accuracy and consistency at extreme ranges. The tighter tolerances and superior ballistics make it ideal for precise long-range engagements.
+
 @GFL-UNIT-DEFY-NAME=Task Force DEFY
 @GFL-UNIT-DEFY-DESC=An elite team of newer model Tactical Dolls capable of great autonomy in the field, hence the name of the team. They form the most effective combat squad in the Neo-Soviet Union.
 @#GFL-UNIT-DEFY-NAME-RND=Task Force DEFY
@@ -257,7 +261,7 @@
 @doctrine_gfl_defy_momentum_descr=Combat acceleration systems activate on enemy elimination. Dramatically increases movement and target acquisition speed for sustained assaults.
 
 @doctrine_gfl_defy_tacticalindep_name=Tactical Independence
-@doctrine_gfl_defy_tacticalindep_descr=The squad becomes more independant. Improves suppression recovery, flinch resistance, and rapid target switching for isolated units.
+@doctrine_gfl_defy_tacticalindep_descr=The squad becomes more independent. Improves suppression recovery, flinch resistance, and rapid target switching for isolated units.
 
 @doctrine_gfl_defy_squaddefiance_name=Squad Defiance
 @doctrine_gfl_defy_squaddefiance_descr=Standing firm against overwhelming odds. Each level increases frontal armor coverage and damage resistance. Squad eliminations rally nearby allies with offensive and defensive bonuses.
@@ -283,8 +287,6 @@
 @WEAP-G11-NAME=G11
 @WEAP-G11-DESC=During the Cold War, caseless ammunition was one of NATO's top projects, in order to achieve both easier ammunition storage/logistics and faster rate of fire. In the end, almost every project ended in failure or lost interest, with the exception of Heckler & Koch's G11. In theory, caseless munitions can achieve faster rates of weapon fire, since the process of the bolt unlocking followed by brass extraction and ejection is not needed with a bullet that doesn't come with a case; the weapon only needs to fire, load a new cartridge, and repeat.
 @firearm_caliber_473x33_name=4.73×33mm Caseless
-@ammo_473_caseless_name=4.73x33mm Caseless
-@ammo_473_caseless_desc=Revolutionary caseless ammunition. No brass ejection, higher capacity magazines, and extremely high rate of fire in burst mode.
 
 @DOLL-G36K-NAME=ANDORIS
 @DOLL-G36K-DESC=A gentle Doll whose sweet smile and gaze could melt ice and snow. But if she's been looking and smiling at you for too long, she's probably crashed. Because of this quirk, Andoris cannot give it her all on the battlefield. But what she lacks in firepower, she makes up for in intelligence gathering. Andoris is an expert intelligence officer due to her large storage space, and can pick up details anyone else would have missed. Using her abilities outside of the battlefield, Andoris has found a way of life and a home.
@@ -301,10 +303,6 @@
 @WEAP-UMP45-NAME=UMP45
 @WEAP-UMP45-DESC=The UMP (Universale Maschinenpistole, German for "Universal Submachine Gun") is a submachine gun developed and manufactured by Heckler & Koch. The UMP is a blowback-operated select-fire submachine gun firing from a closed bolt. It features a polymer stock that is able to be folded for compactness, a paddle-style magazine release, and a handguard that is able to accept accessories, such as vertical foregrips. The barrel is approximately 8 inches long, and there may be rails on top of the receiver to mount optics.
 @firearm_caliber_45acp_name=.45 ACP
-@ammo_45acp_fmj_name=.45 ACP FMJ
-@ammo_45acp_fmj_desc=Standard full metal jacket. Heavy, subsonic round with good stopping power.
-@ammo_45acp_jhp_name=.45 ACP JHP
-@ammo_45acp_jhp_desc=Jacketed hollow point for maximum expansion. Higher damage but less armor penetration.
 
 @DOLL-UMP9-NAME=LENNA
 @DOLL-UMP9-DESC=Lenna followed Kalina when she left G&K to join the Paramilitary Supervision Bureau in her quality as "a Doll who can handle responsibilities". She remains uncomfortable when separated from her beloved sister, and cherishes the memories of the time she spent fighting with her close companions. Her occupation and bodies have changed, but she's remains the same and will give you a big smile and hug when you're reunited.
@@ -315,8 +313,6 @@
 @DOLL-VECTOR-DESC=A regularly pessimistic Doll. However, as the leader of H.I.D.E. 404's Team B, Vector will absolutely push through and endure till the very last moment with her teammates in the face of adversity, no matter how depressing the outcomes of her calculations.
 @WEAP-VECTOR-NAME=KRISS Vector
 @WEAP-VECTOR-DESC=The KRISS Vector is a series of weapons based upon the parent submachine gun design developed by the American firearms company KRISS USA, formerly Transformational Defense Industries (TDI). The various weapons in the Vector family use an unconventional delayed blowback system combined with an in-line design to reduce perceived recoil and muzzle climb.
-@ammo_45acp_fmj_vector_desc=Standard FMJ optimized for the Vector's high rate of fire.
-@ammo_45acp_jhp_vector_desc=Hollow point rounds for maximum damage in CQB situations.
 
 @GEAR-VECTOR-GRENADE-NAME=x5 Searing Finale
 @GEAR-VECTOR-GRENADE-DESC=Incendiary grenades with a small explosive charge that spreads its fiery payload further and stunning nearby enemies at the explosion point. Paint terror into their bones and clear your canvas.
@@ -373,8 +369,6 @@
 @WEAP-M1903-DESC=Officially designated the 'United States Rifle, Caliber .30-06, Model of 1903' and referred by the troops as the '03' or simply as the 'Springfield', the M1903 Springfield is an American magazine fed, bolt-action repeating rifle. It served as the main infantry rifle of US forces during World War 1, and it remains popular today as a civilian firearm, historical collector's piece, competitive shooting rifle, and military drill rifle.
 @firearm_caliber_3006_name=.30-06 Springfield
 @firearm_operation_boltaction_name=Bolt Action
-@bbammo_3006_fmj_name=.30-06 M2 Ball
-@bbammo_3006_fmj_desc=Standard military full metal jacket round. High power rifle cartridge with excellent range and penetration.
 @ammo_3006_match_name=.30-06 Match Grade
 @ammo_3006_match_desc=Precision manufactured ammunition with consistent powder loads and match bullets for superior accuracy and terminal performance.
 
@@ -383,8 +377,6 @@
 @WEAP-WA2000-NAME=Walther WA2000
 @WEAP-WA2000-DESC=Walther WA2000 is a semi-automatic, bullpup configured sniper rifle designed and produced by Carl Walther GmbH Sportwaffen. Designed between 1970s–1980s and produced between 1982-1988, originally designed for and advertised to law enforcement units in response to the 1972 Munich Olympics Massacre.
 @firearm_caliber_300wm_name=.300 Winchester Magnum
-@bbammo_300wm_fmj_name=.300 Win Mag FMJ
-@bbammo_300wm_fmj_desc=High-velocity magnum round designed for long-range precision shooting. Superior ballistics and terminal performance.
 @ammo_300wm_match_name=.300 Win Mag Match
 @ammo_300wm_match_desc=Premium match-grade ammunition with selected components for maximum accuracy and consistency at extreme ranges.
 
@@ -447,10 +439,6 @@
 @WEAP-OM50-NAME=OM 50 Nemesis
 @WEAP-OM50-DESC=The OM 50 Nemesis, now designated SAN 511, is a .50 BMG bolt-action rifle produced by the Swiss branch of SIG Sauer.
 @firearm_caliber_50bmg_name=.50 BMG
-@bbammo_50bmg_fmj_name=.50 BMG FMJ
-@bbammo_50bmg_fmj_desc=Massive anti-materiel cartridge with devastating power. Extreme penetration and stopping power at extended ranges. Loud report.
-@bbammo_50bmg_match_name=.50 BMG Match
-@bbammo_50bmg_match_desc=Premium match-grade .50 BMG ammunition. Exceptional accuracy and consistency for surgical precision at extreme distances. Devastating terminal performance.
 
 @DOLL-HARE-NAME=KROLIK
 @DOLL-HARE-DESC=She has a bit of a temper and shows little interest in matters unrelated to herself, but her sense of responsibility is beyond reproach. Even if she is assigned a mission she absolutely detests, such as "serving as Nemesis' exclusive translator", she will still give it her all.
@@ -473,6 +461,10 @@
 @DOLL-CURVA-DESC=Although she often appears cheerful and enthusiastic, her face can sometimes take on a completely different, cold expression. The syringe in her hand - is it meant to save lives, or take them?
 @WEAP-CURVA-NAME=Taurus Curve
 @WEAP-CURVA-DESC=The Curve is a concealed-carry .380 ACP pistol by Brazilian company Taurus Armas.
+@ammo_380acp_fmj_name=URNC 95gr FMJ
+@ammo_380acp_fmj_desc=Standard .380 ACP full metal jacket rounds. A lightweight cartridge with modest stopping power, favoured for its low recoil and concealability. What it lacks in punch it makes up for in shot placement.
+@ammo_380acp_squeak_flash_name=ELMO Squeak Flash
+@ammo_380acp_squeak_flash_desc=Experimental .380 ACP chemical rounds adapted from Cheeta's 9mm Squeak Flash design. Produces a high-pitched squeak and disorienting flash on impact. Highly effective at suppressing targets despite the small calibre, though armour penetration is poor.
 @firearm_operation_doubleaction_name=Double Action
 
 @DOLL-VEPR12-NAME=VEPLEY
@@ -527,13 +519,25 @@
 @WEAP-PKPSP-NAME=PKP-SP GPMG
 @WEAP-PKPSP-DESC=The PKP Pecheneg is a Russian 7.62×54mmR general-purpose machine gun featuring a heavy, forced-air-cooled barrel with radial cooling ribs. The PKP-SP is a modernized variant with Picatinny rails for accessories.
 @firearm_caliber_762x54_name=7.62×54mmR
-@ammo_762x54r_pkp_name=7.62×54mmR FMJ
-@ammo_762x54r_pkp_desc=Russian full metal jacket machine gun ammunition. High rate of fire with good penetration and range.
+@ammo_762x54r_fmj_nsu_name=NSU 150gr FMJ
+@ammo_762x54r_fmj_nsu_desc=Standard full-power machine gun ammunition manufactured by the Neo Soviet Union for belt-fed weapons. The heavy bullet delivers punishing damage and consistent penetration at all ranges, designed to keep firing until there is nothing left standing.
 
 @DOLL-SPAS12-NAME=SABRINA
 @DOLL-SPAS12-DESC=A Doll passionate abouut culinary research and enjoying food, the kitchen is her new battlefield. Loves sharing her cooking process, though aroma may have boundaries, her smile spreads through the network, infecting every viewer.
 @WEAP-SPAS12-NAME=SPAS-12
 @WEAP-SPAS12-DESC=The Franchi SPAS-12 is an Italian dual-mode combat shotgun that can operate as either semi-automatic or pump-action. Chambered in 12 gauge, it became iconic through its appearances in action films and video games.
+
+@ammo_12g00buck_name=URNC 00 Buckshot
+@ammo_12g00buck_desc=Standard 12 gauge 00 buckshot loaded with nine pellets. A proven close-quarters load that delivers devastating spread damage against soft targets, though its effectiveness drops sharply at range.
+
+@ammo_12gcalciumbirdshot_name=ELMO Calcium Birdshot
+@ammo_12gcalciumbirdshot_desc=Experimental 12 gauge shells loaded with thirty-two lightweight calcium composite pellets. The extreme pellet count creates a wide spread pattern ideal for hitting fast-moving targets, but each pellet carries minimal energy and is nearly useless against armour.
+
+@ammo_12grfslug_name=NOMFA RF Slug
+@ammo_12grfslug_desc=A single high-mass rifled slug designed for maximum accuracy and stopping power in a shotgun platform. Excellent penetration and damage against single targets, trading the spread of buckshot for precision.
+
+@ammo_12gsuperheavyslugs_name=ELMO Super Heavy Slugs
+@ammo_12gsuperheavyslugs_desc=Oversized slugs loaded four to a shell using a stacked configuration. Each slug carries significant mass and penetration power, combining the spread advantage of buckshot with the armour-defeating properties of a slug.
 
 @DOLL-TYPE97S-NAME=QIUHUA
 @DOLL-TYPE97S-DESC=A cheerful and optimistic Doll who hunts for delicacies in the Yellow Zone and helps feed settlements in the harsh contaminated lands. A wandering hero who won't let a single bad deed go unpunished. “Adding ketchup to sweet and sour pork is a sin, but if you like it that much, I'll let it slide.”
@@ -555,6 +559,8 @@
 @WEAP-VSK94-NAME=VSK-94
 @WEAP-VSK94-DESC=The VSK-94 is a Russian suppressed sniper rifle chambered in 9×39mm subsonic ammunition. Developed from the 9A-91, it features an integral suppressor and serves as a designated marksman rifle for covert operations.
 @firearm_caliber_939_name=9×39mm
+@ammo_9x39subsonic_fmj_name=NSU 16gr Subsonic FMJ
+@ammo_9x39subsonic_fmj_desc=Specialised subsonic ammunition designed for suppressed weapons. The heavy bullet travels below the speed of sound, eliminating the sonic crack and allowing the VSK-94's integral suppressor to be fully effective. Penetration is respectable thanks to the bullet's mass and hardened core.
 
 @DOLL-DP12-NAME=HELEN
 @DOLL-DP12-DESC=In the chaos of Griffin’s disbandment, Helen accepted a corporate position at Mangi Security Service while still looking for the Commander. Her new job revealed excellent intelligence gathering abilities, leading to her selection for Project Coronal Storm, and her neural cloud was used as the basis for the Third-Generation Doll Cocoon. Moving in the shadows, Helen uses her ingenuity and official authority in the highest circles of information to shed light on the dark plot of the URNC conglomerate.
@@ -619,10 +625,6 @@
 @WEAP-QBZ191-NAME=QBZ-191
 @WEAP-QBZ191-DESC=The QBZ-191 is a modular assault rifle developed as China's next-generation standard infantry weapon. Chambered in 5.8×42mm, it features improved ergonomics, modularity, and reliability compared to its predecessors.
 
-@ammo_58x42_dbp191_name=5.8×42mm DBP191
-@ammo_58x42_dbp191_desc=Current standard 5.8×42mm ammunition for the QBZ-191.
-@ammo_58x42_dbp88_name=5.8×42mm DBP88 Heavy
-@ammo_58x42_dbp88_desc=Heavy variant with longer streamlined bullet and steel core. Enhanced performance at close range with superior penetration.
 
 @DOLL-AKALFA-NAME=TOLOLO
 @DOLL-AKALFA-DESC=A serene Doll who finds solace under the starry sky. Hidden beneath her reticence is a delicate and sensitive soul. When the world slumbers, she confides in the vast cosmos and delights in the stars that seem to shine just for her.
@@ -638,8 +640,13 @@
 @DOLL-MP7-DESC=This Doll with a ceaseless fountain of inspiration is Griffin's Queen of Inventions. Undeterred by countless setbacks, her mind churns out a whirlwind of quirky, headache-inducing ideas. Yet, when the moment demands it, she always manages to come up with ingenious solutions.
 @WEAP-MP7-NAME=MP7
 @WEAP-MP7-DESC=The Heckler & Koch MP7 is a compact personal defense weapon firing 4.6×30mm armor-piercing ammunition. Its high rate of fire and excellent penetration make it effective against armored targets despite its compact size.
+@firearm_caliber_46x30_name=4.6×30mm
+@ammo_46x30_ap_name=HK 31gr AP
+@ammo_46x30_ap_desc=Purpose-built armour-piercing ammunition for the MP7 platform. The small, high-velocity projectile with a hardened steel penetrator defeats body armour that stops conventional pistol rounds, though the tiny calibre limits raw stopping power.
 
 @firearm_caliber_58x42_name=5.8×42mm
+@ammo_58x42_fmj_name=NSU 77gr FMJ
+@ammo_58x42_fmj_desc=Standard service ammunition for the Chinese 5.8×42mm cartridge. A modern intermediate round with flat trajectory and consistent penetration, designed for the PLA's latest generation of small arms.
 
 @doctrine_gfl_frost_commonrail_name=Common Rail
 @doctrine_gfl_frost_commonrail_descr=Always have faith in your allies, but also have a contingency plan in place. When Qiongjiu eliminates a target, nearby allies within 8 meters gain accuracy and suppression recovery for 5 seconds.

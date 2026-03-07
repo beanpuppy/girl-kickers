@@ -2059,11 +2059,11 @@
         />
     </AttackType>
     
-    <AttackType name="GFL_TYPE97S_BurstFireExt">
-        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
+    <AttackType name="GFL_DP12_DoubleShotMed">
+        <!-- Ranges under 28m. -->
         <ModifiableParams
-            minAimTime="700"
-            maxAimTime="900"
+            minAimTime="350"
+            maxAimTime="500"
             roundsPerSecondOverride="0"
             minShots="1"
             maxShots="2"

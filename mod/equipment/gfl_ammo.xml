@@ -101,9 +101,9 @@
         img="data/models/weapons/attachments/m855a1_ammo_ui.dds"
     >
         <!-- Rounds per Second should reflect the actual RPM of the gun/60. -->
-        <Params 
+        <Params
             roundsPerSecond="14.2"
-            audibleSoundRadius="100"
+            audibleSoundRadius="40"
             physicsImpactForce="2.0"
             silenced="1"
         >
@@ -141,6 +141,41 @@
             roundsPerSecond="4"
             audibleSoundRadius="50"
             physicsImpactForce="1.5"
+        >
+            <Damage 
+                start="28" 
+                end="26" 
+                startDist="0" 
+                endDist="40"
+            />
+            <CriticalChancePercent 
+                start="20" 
+                end="20" 
+                startDist="0" 
+                endDist="50"
+            />
+            <ArmorPenetration 
+                start="50" 
+                end="20" 
+                startDist="0" 
+                endDist="70"
+            />
+        </Params>
+    </Ammo>
+
+<!-- PA-15 FLORENCE (SUPPRESSED) -->
+
+    <Ammo 
+        name="919JHPOVER_GFL_PA15-SUP"
+        tooltip="@ammo_919_jhp_over_name"
+        description="@ammo_919_jhp_over_desc"
+        img="data/models/weapons/attachments/m882_ammo_ui.dds"
+    >
+        <Params
+            roundsPerSecond="4"
+            audibleSoundRadius="30"
+            physicsImpactForce="1.5"
+            silenced="1"
         >
             <Damage 
                 start="28" 
@@ -233,8 +268,43 @@
             />
         </Params>
     </Ammo>
-    
-    <Ammo 
+
+<!-- AN-94 ALVA (SUPPRESSED) -->
+
+    <Ammo
+        name="545x39FMJAP_GFL_AN94-SUP"
+        tooltip="@ammo_556x39_fmj_nsu_name"
+        description="@ammo_556x39_fmj_nsu_desc"
+        img="data/models/weapons/attachments/m855_ammo_ui.dds"
+    >
+        <Params
+            roundsPerSecond="10"
+            audibleSoundRadius="40"
+            physicsImpactForce="1.5"
+            silenced="1"
+        >
+            <Damage
+                start="28"
+                end="22"
+                startDist="0"
+                endDist="100"
+            />
+            <CriticalChancePercent
+                start="-5"
+                end="-5"
+                startDist="0"
+                endDist="100"
+            />
+            <ArmorPenetration
+                start="50"
+                end="50"
+                startDist="0"
+                endDist="100"
+            />
+        </Params>
+    </Ammo>
+
+    <Ammo
         name="545x39SUPCAV_GFL_AN94" unlockCost="6"
         tooltip="@ammo_556x39_supercavitator_defy_name"
         description="@ammo_556x39_supercavitator_defy_desc"
@@ -302,7 +372,43 @@
         </Params>
     </Ammo>
 
-    <Ammo 
+<!-- AK-15 VOYMASTINA (SUPPRESSED) -->
+
+    <Ammo
+        name="762x39FMJNSU_GFL_AK15-SUP"
+        tooltip="@ammo_762x39_fmj_nsu_name"
+        description="@ammo_762x39_fmj_nsu_desc"
+        img="data/models/weapons/attachments/m855_ammo_ui.dds"
+    >
+        <Params
+            roundsPerSecond="11.7"
+            audibleSoundRadius="40"
+            physicsImpactForce="2.0"
+            suppressionScale="1.15"
+            silenced="1"
+        >
+            <Damage
+                start="30"
+                end="30"
+                startDist="0"
+                endDist="100"
+            />
+            <CriticalChancePercent
+                start="-20"
+                end="-20"
+                startDist="0"
+                endDist="100"
+            />
+            <ArmorPenetration
+                start="60"
+                end="50"
+                startDist="0"
+                endDist="100"
+            />
+        </Params>
+    </Ammo>
+
+    <Ammo
         name="762x39ANTIELID_GFL_AK15" unlockCost="6"
         tooltip="@ammo_762x39_jhe_elid_name"
         description="@ammo_762x39_jhe_elid_desc"
@@ -369,8 +475,43 @@
             />
         </Params>
     </Ammo>
-    
-    <Ammo 
+
+<!-- HK416 KLUKAI (SUPPRESSED) -->
+
+    <Ammo
+        name="556FMJEPR_GFL_416-SUP"
+        tooltip="@ammo_556_fmj_epr_name"
+        description="@ammo_556_fmj_epr_desc"
+        img="data/models/weapons/attachments/mk318_ammo_ui.dds"
+    >
+        <Params
+            roundsPerSecond="14.2"
+            audibleSoundRadius="40"
+            physicsImpactForce="2.0"
+            silenced="1"
+        >
+            <Damage
+                start="28"
+                end="24"
+                startDist="0"
+                endDist="100"
+            />
+            <CriticalChancePercent
+                start="-20"
+                end="-20"
+                startDist="0"
+                endDist="100"
+            />
+            <ArmorPenetration
+                start="50"
+                end="50"
+                startDist="0"
+                endDist="100"
+            />
+        </Params>
+    </Ammo>
+
+    <Ammo
         name="556APFSF_GFL_416" unlockCost="6"
         tooltip="@ammo_556_apf_sf_name"
         description="@ammo_556_apf_sf_desc"
@@ -439,7 +580,7 @@
     </Ammo>
     
     <Ammo
-        name="473ISSFRANG_GFL_G11"
+        name="473ISSFRANG_GFL_G11" unlockCost="6"
         tooltip="@ammo_473_frang_404_name"
         description="@ammo_473_frang_404_desc"
         img="data/models/weapons/attachments/m855_ammo_ui.dds"
@@ -611,6 +752,41 @@
         </Params>
     </Ammo>
 
+<!-- UMP45 LEVA (SUPPRESSED) -->
+
+    <Ammo
+        name="45ACPJHPOVER_GFL_UMP45-SUP"
+        tooltip="@ammo_45_jhp_over_name"
+        description="@ammo_45_jhp_over_desc"
+        img="data/models/weapons/attachments/m855_ammo_ui.dds"
+    >
+        <Params
+            roundsPerSecond="11.7"
+            audibleSoundRadius="30"
+            physicsImpactForce="1.7"
+            silenced="1"
+        >
+            <Damage
+                start="30"
+                end="28"
+                startDist="0"
+                endDist="40"
+            />
+            <CriticalChancePercent
+                start="-15"
+                end="-15"
+                startDist="0"
+                endDist="100"
+            />
+            <ArmorPenetration
+                start="40"
+                end="20"
+                startDist="0"
+                endDist="100"
+            />
+        </Params>
+    </Ammo>
+
     <Ammo
         name="45ACPEWSPEC_GFL_UMP45" unlockCost="6"
         tooltip="@ammo_45_ew_spec_name"
@@ -678,8 +854,43 @@
             />
         </Params>
     </Ammo>
-    
-    <Ammo 
+
+<!-- UMP9 LENNA (SUPPRESSED) -->
+
+    <Ammo
+        name="919JHPOVER_GFL_UMP9-SUP"
+        tooltip="@ammo_919_jhp_over_name"
+        description="@ammo_919_jhp_over_desc"
+        img="data/models/weapons/attachments/m1152_ammo_ui.dds"
+    >
+        <Params
+            roundsPerSecond="12.5"
+            audibleSoundRadius="25"
+            physicsImpactForce="1.5"
+            silenced="1"
+        >
+            <Damage
+                start="28"
+                end="26"
+                startDist="0"
+                endDist="40"
+            />
+            <CriticalChancePercent
+                start="-15"
+                end="-15"
+                startDist="0"
+                endDist="50"
+            />
+            <ArmorPenetration
+                start="50"
+                end="20"
+                startDist="0"
+                endDist="70"
+            />
+        </Params>
+    </Ammo>
+
+    <Ammo
         name="919EWSPEC_GFL_UMP9" unlockCost="6"
         tooltip="@ammo_919_ew_spec_name"
         description="@ammo_919_ew_spec_desc"
@@ -749,7 +960,7 @@
     </Ammo>
     
     <Ammo
-        name="45JHPINC_GFL_VECTOR"
+        name="45JHPINC_GFL_VECTOR" unlockCost="6"
         tooltip="@ammo_45_jhp_inc_name"
         description="@ammo_45_jhp_inc_desc"
         img="data/models/weapons/attachments/m855_ammo_ui.dds"
@@ -814,7 +1025,43 @@
             />
         </Params>
     </Ammo>
-    
+
+<!-- M1903 SPRINGFIELD (SUPPRESSED) -->
+
+    <Ammo
+        name="3006FMJ_GFL_M1903-SUP"
+        tooltip="@ammo_3006_fmj_name"
+        description="@ammo_3006_fmj_desc"
+        img="data/models/weapons/attachments/m855_ammo_ui.dds"
+    >
+        <Params
+            roundsPerSecond="0.7"
+            audibleSoundRadius="50"
+            physicsImpactForce="4.0"
+            suppressionScale="1.5"
+            silenced="1"
+        >
+            <Damage
+                start="62"
+                end="58"
+                startDist="0"
+                endDist="100"
+            />
+            <CriticalChancePercent
+                start="50"
+                end="50"
+                startDist="0"
+                endDist="100"
+            />
+            <ArmorPenetration
+                start="60"
+                end="60"
+                startDist="0"
+                endDist="100"
+            />
+        </Params>
+    </Ammo>
+
     <Ammo
         name="3006LAIT_GFL_M1903"
         tooltip="@ammo_3006_lait_name"
@@ -910,7 +1157,44 @@
             />
         </Params>
     </Ammo>
-    
+
+<!-- WA2000 MAKIATTO (SUPPRESSED) -->
+
+    <Ammo
+        name="300WMFMJ_GFL_WA2000-SUP"
+        tooltip="@ammo_300wm_fmj_name"
+        description="@ammo_300wm_fmj_desc"
+        img="data/models/weapons/attachments/m855_ammo_ui.dds"
+    >
+        <Params
+            roundsPerSecond="0.7"
+            audibleSoundRadius="50"
+            physicsImpactForce="2.0"
+            overpenetrates="1"
+            suppressionScale="1.5"
+            silenced="1"
+        >
+            <Damage
+                start="62"
+                end="58"
+                startDist="0"
+                endDist="100"
+            />
+            <CriticalChancePercent
+                start="60"
+                end="60"
+                startDist="0"
+                endDist="100"
+            />
+            <ArmorPenetration
+                start="60"
+                end="60"
+                startDist="0"
+                endDist="100"
+            />
+        </Params>
+    </Ammo>
+
     <Ammo
         name="300WMMACCHIATO_GFL_WA2000"
         tooltip="@ammo_300wm_macchiato_name"
@@ -1003,8 +1287,43 @@
             />
         </Params>
     </Ammo>
-    
-    <Ammo 
+
+<!-- G36 CENTAUREISSI (SUPPRESSED) -->
+
+    <Ammo
+        name="556FMJEPR_GFL_G36-SUP"
+        tooltip="@ammo_556_fmj_epr_name"
+        description="@ammo_556_fmj_epr_desc"
+        img="data/models/weapons/attachments/m855a1_ammo_ui.dds"
+    >
+        <Params
+            roundsPerSecond="12.5"
+            audibleSoundRadius="40"
+            physicsImpactForce="2.0"
+            silenced="1"
+        >
+            <Damage
+                start="28"
+                end="24"
+                startDist="0"
+                endDist="100"
+            />
+            <CriticalChancePercent
+                start="-20"
+                end="-20"
+                startDist="0"
+                endDist="100"
+            />
+            <ArmorPenetration
+                start="50"
+                end="50"
+                startDist="0"
+                endDist="100"
+            />
+        </Params>
+    </Ammo>
+
+    <Ammo
         name="556TIRAMISU_GFL_G36" unlockCost="6"
         tooltip="@ammo_556_tiramisu_name"
         description="@ammo_556_tiramisu_desc"
@@ -1107,7 +1426,40 @@
             />
         </Params>
     </Ammo>
-    
+
+    <Ammo
+        name="762x39FMJNSU_GFL_OTS14-SUP"
+        tooltip="@ammo_762x39_fmj_nsu_name"
+        description="@ammo_762x39_fmj_nsu_desc"
+        img="data/models/weapons/attachments/m855_ammo_ui.dds"
+    >
+        <Params
+            roundsPerSecond="12.5"
+            audibleSoundRadius="40"
+            physicsImpactForce="2.0"
+            silenced="1"
+        >
+            <Damage
+                start="32"
+                end="28"
+                startDist="0"
+                endDist="100"
+            />
+            <CriticalChancePercent
+                start="-20"
+                end="-20"
+                startDist="0"
+                endDist="100"
+            />
+            <ArmorPenetration
+                start="60"
+                end="50"
+                startDist="0"
+                endDist="100"
+            />
+        </Params>
+    </Ammo>
+
 <!-- OM-50 NEMESIS -->
 
     <Ammo
@@ -1146,7 +1498,7 @@
     </Ammo>
     
     <Ammo
-        name="50BMGREMOVER_GFL_OM50"
+        name="50BMGREMOVER_GFL_OM50" unlockCost="6"
         tooltip="@ammo_50bmg_remover_name"
         description="@ammo_50bmg_remover_desc"
         img="data/models/weapons/attachments/m855_ammo_ui.dds"
@@ -1155,12 +1507,11 @@
             roundsPerSecond="0.6"
             audibleSoundRadius="150"
             physicsImpactForce="3.0"
-            overpenetrates="1"
         >
         
             <Damage 
-                start="99" 
-                end="99" 
+                start="80" 
+                end="80" 
                 startDist="0" 
                 endDist="100"
             />
@@ -1171,8 +1522,8 @@
                 endDist="100"
             />
             <ArmorPenetration 
-                start="80" 
-                end="80" 
+                start="90" 
+                end="90" 
                 startDist="0" 
                 endDist="100"
             />  
@@ -1319,7 +1670,40 @@
             />
         </Params>
     </Ammo>
-    
+
+    <Ammo
+        name="380FMJURNC_GFL_CURVA-SUP"
+        tooltip="@ammo_380acp_fmj_name"
+        description="@ammo_380acp_fmj_desc"
+        img="data/models/weapons/attachments/m1152_ammo_ui.dds"
+    >
+        <Params
+            roundsPerSecond="3"
+            audibleSoundRadius="30"
+            physicsImpactForce="1.5"
+            silenced="1"
+        >
+            <Damage
+                start="22"
+                end="18"
+                startDist="0"
+                endDist="100"
+            />
+            <CriticalChancePercent
+                start="30"
+                end="30"
+                startDist="0"
+                endDist="50"
+            />
+            <ArmorPenetration
+                start="30"
+                end="20"
+                startDist="0"
+                endDist="100"
+            />
+        </Params>
+    </Ammo>
+
 <!-- VEPR-12 VEPLEY -->
 
     <Ammo 
@@ -1358,9 +1742,9 @@
     </Ammo>
     
     <Ammo 
-        name="12GASUPERHEAVYSLUG_GFL_VEPR12" UnlockCost="6"
+        name="12GASUPERHEAVYSLUG_GFL_VEPR12" unlockCost="6"
         tooltip="@ammo_12gsuperheavyslugs_name"
-        description="@ammo_12guperheavyslugs_desc"
+        description="@ammo_12gsuperheavyslugs_desc"
         img="data/models/weapons/attachments/m257_buckshot_ammo24_ui.dds"
     >
         <!-- Rounds per Second should reflect the actual RPM of the gun/60. -->
@@ -1464,7 +1848,7 @@
     </Ammo>
     
     <Ammo 
-        name="12GACALCIUMBIRDSHOT_GFL_SPAS12" UnlockCost="6"
+        name="12GACALCIUMBIRDSHOT_GFL_SPAS12" unlockCost="6"
         tooltip="@ammo_12gcalciumbirdshot_name"
         description="@ammo_12gcalciumbirdshot_desc"
         img="data/models/weapons/attachments/m257_buckshot_ammo24_ui.dds"
@@ -1539,7 +1923,7 @@
 <!-- MP5 PERI -->
 
     <Ammo 
-        name="919JHPOVER_GFL_UMP9"
+        name="919JHPOVER_GFL_MP5"
         tooltip="@ammo_919_jhp_over_name"
         description="@ammo_919_jhp_over_desc"
         img="data/models/weapons/attachments/m1152_ammo_ui.dds"
@@ -1604,7 +1988,40 @@
             />
         </Params>
     </Ammo>
-    
+
+    <Ammo
+        name="919JHPOVER_GFL_MP5-SUP"
+        tooltip="@ammo_919_jhp_over_name"
+        description="@ammo_919_jhp_over_desc"
+        img="data/models/weapons/attachments/m1152_ammo_ui.dds"
+    >
+        <Params
+            roundsPerSecond="13.3"
+            audibleSoundRadius="25"
+            physicsImpactForce="1.5"
+            silenced="1"
+        >
+            <Damage
+                start="22"
+                end="20"
+                startDist="0"
+                endDist="50"
+            />
+            <CriticalChancePercent
+                start="-20"
+                end="-20"
+                startDist="0"
+                endDist="100"
+            />
+            <ArmorPenetration
+                start="40"
+                end="30"
+                startDist="0"
+                endDist="100"
+            />
+        </Params>
+    </Ammo>
+
 <!-- VSK-94 NIKKETA -->
     
     <Ammo 
@@ -1773,7 +2190,7 @@
 <!-- QBZ-191 QIONGJIU -->
 
     <Ammo     
-            name="58x42FMJ_GFL_QBZ95"
+            name="58x42FMJ_GFL_QBZ191"
             tooltip="@ammo_58x42_fmj_name"
             description="@ammo_58x42_fmj_desc"
             img="data/models/weapons/attachments/m855_ammo_ui.dds"
@@ -1804,8 +2221,40 @@
             />
         </Params>
     </Ammo>
-    
-    
+
+    <Ammo
+        name="58x42FMJ_GFL_QBZ191-SUP"
+        tooltip="@ammo_58x42_fmj_name"
+        description="@ammo_58x42_fmj_desc"
+        img="data/models/weapons/attachments/m855_ammo_ui.dds"
+    >
+        <Params
+            roundsPerSecond="12.5"
+            audibleSoundRadius="40"
+            physicsImpactForce="2.0"
+            silenced="1"
+        >
+            <Damage
+                start="30"
+                end="30"
+                startDist="0"
+                endDist="100"
+            />
+            <CriticalChancePercent
+                start="-20"
+                end="-20"
+                startDist="0"
+                endDist="100"
+            />
+            <ArmorPenetration
+                start="60"
+                end="50"
+                startDist="0"
+                endDist="100"
+            />
+        </Params>
+    </Ammo>
+
 <!-- AK-ALFA TOLOLO -->
 
     <Ammo name="762x39FMJNSU_GFL_AKALFA"
@@ -1840,8 +2289,41 @@
             />
         </Params>
     </Ammo>
- 
-    
+
+    <Ammo
+        name="762x39FMJNSU_GFL_AKALFA-SUP"
+        tooltip="@ammo_762x39_fmj_nsu_name"
+        description="@ammo_762x39_fmj_nsu_desc"
+        img="data/models/weapons/attachments/m855_ammo_ui.dds"
+    >
+        <Params
+            roundsPerSecond="10"
+            audibleSoundRadius="40"
+            physicsImpactForce="2.0"
+            suppressionScale="1.15"
+            silenced="1"
+        >
+            <Damage
+                start="30"
+                end="30"
+                startDist="0"
+                endDist="100"
+            />
+            <CriticalChancePercent
+                start="-20"
+                end="-20"
+                startDist="0"
+                endDist="100"
+            />
+            <ArmorPenetration
+                start="60"
+                end="50"
+                startDist="0"
+                endDist="100"
+            />
+        </Params>
+    </Ammo>
+
 <!-- AA-12 LIND -->
 
     <Ammo 
@@ -1947,7 +2429,40 @@
             />
         </Params>
     </Ammo>
-    
+
+    <Ammo
+        name="46x30AP_GFL_MP7-SUP"
+        tooltip="@ammo_46x30_ap_name"
+        description="@ammo_46x30_ap_desc"
+        img="data/models/weapons/attachments/m855_ammo_ui.dds"
+    >
+        <Params
+            roundsPerSecond="15.8"
+            audibleSoundRadius="25"
+            physicsImpactForce="1.0"
+            silenced="1"
+        >
+            <Damage
+                start="22"
+                end="18"
+                startDist="0"
+                endDist="100"
+            />
+            <CriticalChancePercent
+                start="-25"
+                end="-25"
+                startDist="0"
+                endDist="100"
+            />
+            <ArmorPenetration
+                start="60"
+                end="50"
+                startDist="0"
+                endDist="100"
+            />
+        </Params>
+    </Ammo>
+
 <!-- QBZ-95 DAIYAN -->
     
     <Ammo     
@@ -2017,7 +2532,40 @@
             />
         </Params>
     </Ammo>
-    
+
+    <Ammo
+        name="556FMJEPR_GFL_QBZ97-SUP"
+        tooltip="@ammo_556_fmj_epr_name"
+        description="@ammo_556_fmj_epr_desc"
+        img="data/models/weapons/attachments/m855a1_ammo_ui.dds"
+    >
+        <Params
+            roundsPerSecond="10.8"
+            audibleSoundRadius="40"
+            physicsImpactForce="2.0"
+            silenced="1"
+        >
+            <Damage
+                start="28"
+                end="24"
+                startDist="0"
+                endDist="100"
+            />
+            <CriticalChancePercent
+                start="-20"
+                end="-20"
+                startDist="0"
+                endDist="100"
+            />
+            <ArmorPenetration
+                start="50"
+                end="50"
+                startDist="0"
+                endDist="100"
+            />
+        </Params>
+    </Ammo>
+
 <!-- CS/LS06 ZHAOHUI -->
 
     <Ammo 
@@ -2052,7 +2600,40 @@
             />
         </Params>
     </Ammo>
-    
+
+    <Ammo
+        name="919JHPOVER_GFL_CSLS06-SUP"
+        tooltip="@ammo_919_jhp_over_name"
+        description="@ammo_919_jhp_over_desc"
+        img="data/models/weapons/attachments/m1152_ammo_ui.dds"
+    >
+        <Params
+            roundsPerSecond="13.3"
+            audibleSoundRadius="25"
+            physicsImpactForce="1.5"
+            silenced="1"
+        >
+            <Damage
+                start="28"
+                end="26"
+                startDist="0"
+                endDist="40"
+            />
+            <CriticalChancePercent
+                start="-15"
+                end="-15"
+                startDist="0"
+                endDist="50"
+            />
+            <ArmorPenetration
+                start="50"
+                end="20"
+                startDist="0"
+                endDist="70"
+            />
+        </Params>
+    </Ammo>
+
 <!-- CZ75 FAYE -->
 
     <Ammo 
@@ -2087,7 +2668,38 @@
             />
         </Params>
     </Ammo>
-    
 
-    
+    <Ammo
+        name="919JHPOVER_GFL_CZ75-SUP"
+        tooltip="@ammo_919_jhp_over_name"
+        description="@ammo_919_jhp_over_desc"
+        img="data/models/weapons/attachments/m882_ammo_ui.dds"
+    >
+        <Params
+            roundsPerSecond="4"
+            audibleSoundRadius="30"
+            physicsImpactForce="1.5"
+            silenced="1"
+        >
+            <Damage
+                start="28"
+                end="26"
+                startDist="0"
+                endDist="40"
+            />
+            <CriticalChancePercent
+                start="20"
+                end="20"
+                startDist="0"
+                endDist="50"
+            />
+            <ArmorPenetration
+                start="50"
+                end="20"
+                startDist="0"
+                endDist="70"
+            />
+        </Params>
+    </Ammo>
+
 </Equipment>
