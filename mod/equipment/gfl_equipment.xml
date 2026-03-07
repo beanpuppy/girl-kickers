@@ -1,108 +1,5 @@
 <Equipment>
 
-<!-- Legacy Equipment Start -->
-
-    <Helmet
-        name="GFL_OcularEnhancement"
-        inventoryBinding="Helmet"
-        unlockCost="0"
-        tooltip="@helmet_gfl_ocular_name"
-        description="@helmet_gfl_ocular_desc"
-        img="data/models/humans/attachments/nvg_01_ui.dds"
-    >
-        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
-        <ConcealmentModifier add="0" />
-        <Params nvgByDefault="true">
-            <ProtectionArc degrees="360" coveragePercent="0" piercingProtectionLevel="0" />
-        </Params>
-    </Helmet>
-
-    <Armor
-        name="GFL_ReactiveShielding"
-        inventoryBinding="Armor"
-        unlockCost="0"
-        tooltip="@armor_gfl_reactive_name"
-        description="@armor_gfl_reactive_desc"
-        img="data/models/equipment/armor_noplates_ui.dds"
-    >
-        <MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0" />
-        <ConcealmentModifier add="0" />
-
-        <Params>
-            <ProtectionArc degrees="90" coveragePercent="55" piercingProtectionLevel="50" />
-            <ProtectionArc
-                degrees="180"
-                coveragePercent="30"
-                piercingProtectionLevel="30"
-            />
-            <ProtectionArc
-                degrees="360"
-                coveragePercent="30"
-                piercingProtectionLevel="20"
-            />
-        </Params>
-    </Armor>
-
-    <Armor
-        name="GFL_CombatMatrix"
-        inventoryBinding="Armor"
-        unlockCost="3"
-        tooltip="@armor_gfl_matrix_name"
-        description="@armor_gfl_matrix_desc"
-        img="data/models/equipment/armor_softlevelii_ui.dds"
-    >
-        <MobilityModifiers
-            moveSpeedModifierPercent="-5"
-            turnSpeedModifierPercent="-3"
-        />
-        <ConcealmentModifier add="0" />
-
-        <Params>
-            <ProtectionArc degrees="90" coveragePercent="60" piercingProtectionLevel="60" />
-            <ProtectionArc
-                degrees="180"
-                coveragePercent="40"
-                piercingProtectionLevel="40"
-            />
-            <ProtectionArc
-                degrees="360"
-                coveragePercent="40"
-                piercingProtectionLevel="30"
-            />
-        </Params>
-    </Armor>
-
-    <Armor
-        name="GFL_HardenedCore"
-        inventoryBinding="Armor"
-        unlockCost="6"
-        tooltip="@armor_gfl_hardened_name"
-        description="@armor_gfl_hardened_desc"
-        img="data/models/equipment/armor_softleveliiia_ui.dds"
-    >
-        <MobilityModifiers
-            moveSpeedModifierPercent="-12"
-            turnSpeedModifierPercent="-6"
-        />
-        <ConcealmentModifier add="-1" />
-
-        <Params>
-            <ProtectionArc degrees="90" coveragePercent="65" piercingProtectionLevel="70" />
-            <ProtectionArc
-                degrees="180"
-                coveragePercent="50"
-                piercingProtectionLevel="55"
-            />
-            <ProtectionArc
-                degrees="360"
-                coveragePercent="50"
-                piercingProtectionLevel="40"
-            />
-        </Params>
-    </Armor>
-
-<!-- Legacy Equipment End -->
-
 <!-- Basic Girlkick -->
 
     <FeetOfSteel name="GFL_FeetOfGunmetal" inventoryBinding="SupportGear3">
@@ -157,7 +54,7 @@
         unlockCost="0"
         tooltip="@armor_gfl_recframe_name"
         description="@armor_recframe_desc"
-        img="data/models/equipment/martyrs_armour_ui.dds"
+        img="data/models/equipment/recreationframe_ui.dds"
     >
         <MobilityModifiers moveSpeedModifierPercent="20" turnSpeedModifierPercent="10" />
         <ConcealmentModifier add="8" />
@@ -189,7 +86,7 @@
         unlockCost="0"
         tooltip="@armor_gfl_lawframe_name"
         description="@armor_gfl_lawframe_desc"
-        img="data/models/equipment/armor_noplates_ui.dds"
+        img="data/models/equipment/lawframe_ui.dds"
     >
         <MobilityModifiers moveSpeedModifierPercent="12" turnSpeedModifierPercent="10" />
         <ConcealmentModifier add="0" />
@@ -221,7 +118,7 @@
         unlockCost="0"
         tooltip="@armor_gfl_combatframe_name"
         description="@armor_gfl_combatframe_desc"
-        img="data/models/equipment/armor_basic_ui.dds"
+        img="data/models/equipment/briefframe_ui.dds"
     >
         <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
         <ConcealmentModifier add="0" />
@@ -254,7 +151,7 @@
         unlockCost="9"
         tooltip="@armor_gfl_eliteframe_name"
         description="@armor_gfl_eliteframe_desc"
-        img="data/models/equipment/armor_jump_swimmeriv_ui.dds"
+        img="data/models/equipment/iopframe_ui.dds"
     >
         <MobilityModifiers moveSpeedModifierPercent="5" turnSpeedModifierPercent="5" />
         <ConcealmentModifier add="0" />
@@ -287,7 +184,7 @@
         unlockCost="12"
         tooltip="@armor_gfl_grafframe_name"
         description="@armor_gfl_grafframe_desc"
-        img="data/models/equipment/armor_leveliv_ui.dds"
+        img="data/models/equipment/heframe_ui.dds"
     >
         <MobilityModifiers moveSpeedModifierPercent="-20" turnSpeedModifierPercent="0" />
         <ConcealmentModifier add="-8" />
@@ -319,7 +216,7 @@
         unlockCost="0" unlockCostBH="1"
         tooltip="@armor_gfl_rhinoframe_name"
         description="@armor_gfl_rhinoframe_desc"
-        img="data/models/equipment/armor_tacvestiv_ui.dds"
+        img="data/models/equipment/rhinoframe_ui.dds"
     >
         <MobilityModifiers moveSpeedModifierPercent="-50" turnSpeedModifierPercent="-30" />
         <ConcealmentModifier add="-20" />
@@ -455,7 +352,7 @@
             inventoryBinding="HelmetNVG"
             tooltip="@helmet_gfl_nvg1_name"
             description="@helmet_gfl_nvg1_desc"
-            img="data/models/humans/attachments/nvg_03_ui.dds"
+            img="data/models/dolls/attachments/nighteyes_ui.dds"
         >
         <ModifiableParams
             fovDegrees="90"
