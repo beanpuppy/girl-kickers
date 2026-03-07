@@ -1039,7 +1039,7 @@
             <Node name="GFL_FROST_TacticalAdaptation" />
         </Doctrine>
     </Unit>
-    
+
     <Unit
         name="GFL-UNIT-MONSOON"
         nameUI="@GFL-UNIT-MONSOON-NAME"

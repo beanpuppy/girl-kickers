@@ -6,8 +6,8 @@
 
         <!-- Pistols -->
         <eqp name="M9 Pistol" />
-        
-        <!-- Armor -->        
+
+        <!-- Armor -->
         <eqp name="GFL_RecFrame" />
         <eqp name="GFL_LawFrame" />
         <eqp name="GFL_CombatFrame" />
@@ -20,14 +20,14 @@
         <eqp name="GFL_SentinelCore" />
         <eqp name="GFL_BulwarkCore" />
         <eqp name="GFL_SupportCore" />
-        
+
         <!-- NVG -->
         <eqp name="GFL_NightVision" />
-        
+
         <!-- Utility -->
         <eqp name="GFL_FeetOfTitanium" />
         <eqp name="GFL_Lockpick" />
-        
+
         <eqp name="Stinger" />
         <eqp name="Smoke Grenade" />
         <eqp name="Smoke Grenade Kit" />
@@ -67,8 +67,8 @@
 
         <!-- Pistols -->
         <eqp name="M9 Pistol" />
-        
-        <!-- Armor -->        
+
+        <!-- Armor -->
         <eqp name="GFL_RecFrame" />
         <eqp name="GFL_LawFrame" />
         <eqp name="GFL_CombatFrame" />
@@ -81,14 +81,14 @@
         <eqp name="GFL_SentinelCore" />
         <eqp name="GFL_BulwarkCore" />
         <eqp name="GFL_SupportCore" />
-        
+
         <!-- NVG -->
         <eqp name="GFL_NightVision" />
-        
+
         <!-- Utility -->
         <eqp name="GFL_FeetOfGunmetal" />
         <eqp name="GFL_Lockpick" />
-        
+
         <eqp name="Stinger" />
         <eqp name="Smoke Grenade" />
         <eqp name="Smoke Grenade Kit" />
@@ -126,9 +126,9 @@
         <eqp name="GFL-WEAP-HK416" />
 
         <!-- Pistols -->
-        <eqp name="M9 Pistol" />
-        
-        <!-- Armor -->        
+        <eqp name="G17 Pistol CIA BOps" />
+
+        <!-- Armor -->
         <eqp name="GFL_RecFrame" />
         <eqp name="GFL_LawFrame" />
         <eqp name="GFL_CombatFrame" />
@@ -141,14 +141,14 @@
         <eqp name="GFL_SentinelCore" />
         <eqp name="GFL_BulwarkCore" />
         <eqp name="GFL_SupportCore" />
-        
+
         <!-- NVG -->
         <eqp name="GFL_NightVision" />
-        
+
         <!-- Utility -->
         <eqp name="GFL_FeetOfGunmetal" />
         <eqp name="GFL_Lockpick" />
-        
+
         <eqp name="Stinger" />
         <eqp name="Smoke Grenade" />
         <eqp name="Smoke Grenade Kit" />
@@ -187,8 +187,8 @@
 
         <!-- Pistols -->
         <eqp name="M9 Pistol" />
-        
-        <!-- Armor -->        
+
+        <!-- Armor -->
         <eqp name="GFL_RecFrame" />
         <eqp name="GFL_LawFrame" />
         <eqp name="GFL_CombatFrame" />
@@ -201,14 +201,14 @@
         <eqp name="GFL_SentinelCore" />
         <eqp name="GFL_BulwarkCore" />
         <eqp name="GFL_SupportCore" />
-        
+
         <!-- NVG -->
         <eqp name="GFL_NightVision" />
-        
+
         <!-- Utility -->
         <eqp name="GFL_FeetOfGunmetal" />
         <eqp name="GFL_Lockpick" />
-        
+
         <eqp name="Stinger" />
         <eqp name="Smoke Grenade" />
         <eqp name="Smoke Grenade Kit" />
@@ -248,8 +248,8 @@
 
         <!-- Pistols -->
         <eqp name="M9 Pistol" />
-        
-        <!-- Armor -->        
+
+        <!-- Armor -->
         <eqp name="GFL_RecFrame" />
         <eqp name="GFL_LawFrame" />
         <eqp name="GFL_CombatFrame" />
@@ -262,14 +262,14 @@
         <eqp name="GFL_SentinelCore" />
         <eqp name="GFL_BulwarkCore" />
         <eqp name="GFL_SupportCore" />
-        
+
         <!-- NVG -->
         <eqp name="GFL_NightVision" />
-        
+
         <!-- Utility -->
         <eqp name="GFL_FeetOfGunmetal" />
         <eqp name="GFL_Lockpick" />
-        
+
         <eqp name="Stinger" />
         <eqp name="Smoke Grenade" />
         <eqp name="Smoke Grenade Kit" />
@@ -308,8 +308,8 @@
 
         <!-- Pistols -->
         <eqp name="M9 Pistol" />
-        
-        <!-- Armor -->        
+
+        <!-- Armor -->
         <eqp name="GFL_RecFrame" />
         <eqp name="GFL_LawFrame" />
         <eqp name="GFL_CombatFrame" />
@@ -322,14 +322,14 @@
         <eqp name="GFL_SentinelCore" />
         <eqp name="GFL_BulwarkCore" />
         <eqp name="GFL_SupportCore" />
-        
+
         <!-- NVG -->
         <eqp name="GFL_NightVision" />
-        
+
         <!-- Utility -->
         <eqp name="GFL_FeetOfGunmetal" />
         <eqp name="GFL_Lockpick" />
-        
+
         <eqp name="Stinger" />
         <eqp name="Smoke Grenade" />
         <eqp name="Smoke Grenade Kit" />
@@ -368,8 +368,8 @@
 
         <!-- Pistols -->
         <eqp name="M9 Pistol" />
-        
-        <!-- Armor -->        
+
+        <!-- Armor -->
         <eqp name="GFL_RecFrame" />
         <eqp name="GFL_LawFrame" />
         <eqp name="GFL_CombatFrame" />
@@ -382,14 +382,14 @@
         <eqp name="GFL_SentinelCore" />
         <eqp name="GFL_BulwarkCore" />
         <eqp name="GFL_SupportCore" />
-        
+
         <!-- NVG -->
         <eqp name="GFL_NightVision" />
-        
+
         <!-- Utility -->
         <eqp name="GFL_FeetOfGunmetal" />
         <eqp name="GFL_Lockpick" />
-        
+
         <eqp name="Stinger" />
         <eqp name="Smoke Grenade" />
         <eqp name="Smoke Grenade Kit" />
@@ -428,8 +428,8 @@
 
         <!-- Pistols -->
         <eqp name="M9 Pistol" />
-        
-        <!-- Armor -->        
+
+        <!-- Armor -->
         <eqp name="GFL_RecFrame" />
         <eqp name="GFL_LawFrame" />
         <eqp name="GFL_CombatFrame" />
@@ -442,14 +442,14 @@
         <eqp name="GFL_SentinelCore" />
         <eqp name="GFL_BulwarkCore" />
         <eqp name="GFL_SupportCore" />
-        
+
         <!-- NVG -->
         <eqp name="GFL_NightVision" />
-        
+
         <!-- Utility -->
         <eqp name="GFL_FeetOfGunmetal" />
         <eqp name="GFL_Lockpick" />
-        
+
         <eqp name="Stinger" />
         <eqp name="Smoke Grenade" />
         <eqp name="Smoke Grenade Kit" />
@@ -489,8 +489,8 @@
 
         <!-- Pistols -->
         <eqp name="M9 Pistol" />
-        
-        <!-- Armor -->        
+
+        <!-- Armor -->
         <eqp name="GFL_RecFrame" />
         <eqp name="GFL_LawFrame" />
         <eqp name="GFL_CombatFrame" />
@@ -503,14 +503,14 @@
         <eqp name="GFL_SentinelCore" />
         <eqp name="GFL_BulwarkCore" />
         <eqp name="GFL_SupportCore" />
-        
+
         <!-- NVG -->
         <eqp name="GFL_NightVision" />
-        
+
         <!-- Utility -->
         <eqp name="GFL_FeetOfGunmetal" />
         <eqp name="GFL_Lockpick" />
-        
+
         <eqp name="Stinger" />
         <eqp name="Smoke Grenade" />
         <eqp name="Smoke Grenade Kit" />
@@ -549,8 +549,8 @@
 
         <!-- Pistols -->
         <eqp name="M9 Pistol" />
-        
-        <!-- Armor -->        
+
+        <!-- Armor -->
         <eqp name="GFL_RecFrame" />
         <eqp name="GFL_LawFrame" />
         <eqp name="GFL_CombatFrame" />
@@ -563,14 +563,14 @@
         <eqp name="GFL_SentinelCore" />
         <eqp name="GFL_BulwarkCore" />
         <eqp name="GFL_SupportCore" />
-        
+
         <!-- NVG -->
         <eqp name="GFL_NightVision" />
-        
+
         <!-- Utility -->
         <eqp name="GFL_FeetOfGunmetal" />
         <eqp name="GFL_Lockpick" />
-        
+
         <eqp name="Stinger" />
         <eqp name="Smoke Grenade" />
         <eqp name="Smoke Grenade Kit" />
@@ -609,8 +609,8 @@
 
         <!-- Pistols -->
         <eqp name="M9 Pistol" />
-        
-        <!-- Armor -->        
+
+        <!-- Armor -->
         <eqp name="GFL_RecFrame" />
         <eqp name="GFL_LawFrame" />
         <eqp name="GFL_CombatFrame" />
@@ -623,14 +623,14 @@
         <eqp name="GFL_SentinelCore" />
         <eqp name="GFL_BulwarkCore" />
         <eqp name="GFL_SupportCore" />
-        
+
         <!-- NVG -->
         <eqp name="GFL_NightVision" />
-        
+
         <!-- Utility -->
         <eqp name="GFL_FeetOfGunmetal" />
         <eqp name="GFL_Lockpick" />
-        
+
         <eqp name="Stinger" />
         <eqp name="Smoke Grenade" />
         <eqp name="Smoke Grenade Kit" />
@@ -670,8 +670,8 @@
 
         <!-- Pistols -->
         <eqp name="M9 Pistol" />
-        
-        <!-- Armor -->        
+
+        <!-- Armor -->
         <eqp name="GFL_RecFrame" />
         <eqp name="GFL_LawFrame" />
         <eqp name="GFL_CombatFrame" />
@@ -684,14 +684,14 @@
         <eqp name="GFL_SentinelCore" />
         <eqp name="GFL_BulwarkCore" />
         <eqp name="GFL_SupportCore" />
-        
+
         <!-- NVG -->
         <eqp name="GFL_NightVision" />
-        
+
         <!-- Utility -->
         <eqp name="GFL_FeetOfGunmetal" />
         <eqp name="GFL_Lockpick" />
-        
+
         <eqp name="Stinger" />
         <eqp name="Smoke Grenade" />
         <eqp name="Smoke Grenade Kit" />
@@ -729,8 +729,8 @@
 
         <!-- Pistols -->
         <eqp name="M9 Pistol" />
-        
-        <!-- Armor -->        
+
+        <!-- Armor -->
         <eqp name="GFL_RecFrame" />
         <eqp name="GFL_LawFrame" />
         <eqp name="GFL_CombatFrame" />
@@ -743,14 +743,14 @@
         <eqp name="GFL_SentinelCore" />
         <eqp name="GFL_BulwarkCore" />
         <eqp name="GFL_SupportCore" />
-        
+
         <!-- NVG -->
         <eqp name="GFL_NightVision" />
-        
+
         <!-- Utility -->
         <eqp name="GFL_FeetOfGunmetal" />
         <eqp name="GFL_Lockpick" />
-        
+
         <eqp name="Stinger" />
         <eqp name="Smoke Grenade" />
         <eqp name="Smoke Grenade Kit" />
@@ -789,8 +789,8 @@
 
         <!-- Pistols -->
         <eqp name="M9 Pistol" />
-        
-        <!-- Armor -->        
+
+        <!-- Armor -->
         <eqp name="GFL_RecFrame" />
         <eqp name="GFL_LawFrame" />
         <eqp name="GFL_CombatFrame" />
@@ -803,14 +803,14 @@
         <eqp name="GFL_SentinelCore" />
         <eqp name="GFL_BulwarkCore" />
         <eqp name="GFL_SupportCore" />
-        
+
         <!-- NVG -->
         <eqp name="GFL_NightVision" />
-        
+
         <!-- Utility -->
         <eqp name="GFL_FeetOfGunmetal" />
         <eqp name="GFL_Lockpick" />
-        
+
         <eqp name="Stinger" />
         <eqp name="Smoke Grenade" />
         <eqp name="Smoke Grenade Kit" />
@@ -842,15 +842,15 @@
         <eqp name="EmptyPrimaryMuzzle" />
         <eqp name="EmptySecondaryMuzzle" />
     </Bind>
-    
+
 
     <Bind to="GFL-DOLL-OM50">
         <eqp name="GFL-WEAP-OM50" />
 
         <!-- Pistols -->
         <eqp name="M9 Pistol" />
-        
-        <!-- Armor -->        
+
+        <!-- Armor -->
         <eqp name="GFL_RecFrame" />
         <eqp name="GFL_LawFrame" />
         <eqp name="GFL_CombatFrame" />
@@ -863,14 +863,14 @@
         <eqp name="GFL_SentinelCore" />
         <eqp name="GFL_BulwarkCore" />
         <eqp name="GFL_SupportCore" />
-        
+
         <!-- NVG -->
         <eqp name="GFL_NightVision" />
-        
+
         <!-- Utility -->
         <eqp name="GFL_FeetOfGunmetal" />
         <eqp name="GFL_Lockpick" />
-        
+
         <eqp name="Stinger" />
         <eqp name="Smoke Grenade" />
         <eqp name="Smoke Grenade Kit" />
@@ -964,8 +964,8 @@
 
     <Bind to="GFL-DOLL-HARE">
         <eqp name="GFL-WEAP-HARE" />
-        
-        <!-- Armor -->        
+
+        <!-- Armor -->
         <eqp name="GFL_RecFrame" />
         <eqp name="GFL_LawFrame" />
         <eqp name="GFL_CombatFrame" />
@@ -978,14 +978,14 @@
         <eqp name="GFL_SentinelCore" />
         <eqp name="GFL_BulwarkCore" />
         <eqp name="GFL_SupportCore" />
-        
+
         <!-- NVG -->
         <eqp name="GFL_NightVision" />
-        
+
         <!-- Utility -->
         <eqp name="GFL_FeetOfGunmetal" />
         <eqp name="GFL_Lockpick" />
-        
+
         <eqp name="Stinger" />
         <eqp name="Smoke Grenade" />
         <eqp name="Smoke Grenade Kit" />
@@ -1020,10 +1020,7 @@
         <eqp name="GFL-WEAP-CURVA" />
         <eqp name="GFL-GEAR-MEDIC-GRENADE" />
 
-        <!-- Pistols -->
-        <eqp name="M9 Pistol" />
-        
-        <!-- Armor -->        
+        <!-- Armor -->
         <eqp name="GFL_RecFrame" />
         <eqp name="GFL_LawFrame" />
         <eqp name="GFL_CombatFrame" />
@@ -1036,14 +1033,14 @@
         <eqp name="GFL_SentinelCore" />
         <eqp name="GFL_BulwarkCore" />
         <eqp name="GFL_SupportCore" />
-        
+
         <!-- NVG -->
         <eqp name="GFL_NightVision" />
-        
+
         <!-- Utility -->
         <eqp name="GFL_FeetOfGunmetal" />
         <eqp name="GFL_Lockpick" />
-        
+
         <eqp name="Stinger" />
         <eqp name="Smoke Grenade" />
         <eqp name="Smoke Grenade Kit" />
@@ -1082,8 +1079,8 @@
 
         <!-- Pistols -->
         <eqp name="M9 Pistol" />
-        
-        <!-- Armor -->        
+
+        <!-- Armor -->
         <eqp name="GFL_RecFrame" />
         <eqp name="GFL_LawFrame" />
         <eqp name="GFL_CombatFrame" />
@@ -1096,14 +1093,14 @@
         <eqp name="GFL_SentinelCore" />
         <eqp name="GFL_BulwarkCore" />
         <eqp name="GFL_SupportCore" />
-        
+
         <!-- NVG -->
         <eqp name="GFL_NightVision" />
-        
+
         <!-- Utility -->
         <eqp name="GFL_FeetOfGunmetal" />
         <eqp name="GFL_Lockpick" />
-        
+
         <eqp name="Stinger" />
         <eqp name="Smoke Grenade" />
         <eqp name="Smoke Grenade Kit" />
@@ -1142,8 +1139,8 @@
 
         <!-- Pistols -->
         <eqp name="M9 Pistol" />
-        
-        <!-- Armor -->        
+
+        <!-- Armor -->
         <eqp name="GFL_RecFrame" />
         <eqp name="GFL_LawFrame" />
         <eqp name="GFL_CombatFrame" />
@@ -1156,14 +1153,14 @@
         <eqp name="GFL_SentinelCore" />
         <eqp name="GFL_BulwarkCore" />
         <eqp name="GFL_SupportCore" />
-        
+
         <!-- NVG -->
         <eqp name="GFL_NightVision" />
-        
+
         <!-- Utility -->
         <eqp name="GFL_FeetOfGunmetal" />
         <eqp name="GFL_Lockpick" />
-        
+
         <eqp name="Stinger" />
         <eqp name="Smoke Grenade" />
         <eqp name="Smoke Grenade Kit" />
@@ -1202,8 +1199,8 @@
 
         <!-- Pistols -->
         <eqp name="M9 Pistol" />
-        
-        <!-- Armor -->        
+
+        <!-- Armor -->
         <eqp name="GFL_RecFrame" />
         <eqp name="GFL_LawFrame" />
         <eqp name="GFL_CombatFrame" />
@@ -1216,14 +1213,14 @@
         <eqp name="GFL_SentinelCore" />
         <eqp name="GFL_BulwarkCore" />
         <eqp name="GFL_SupportCore" />
-        
+
         <!-- NVG -->
         <eqp name="GFL_NightVision" />
-        
+
         <!-- Utility -->
         <eqp name="GFL_FeetOfGunmetal" />
         <eqp name="GFL_Lockpick" />
-        
+
         <eqp name="Stinger" />
         <eqp name="Smoke Grenade" />
         <eqp name="Smoke Grenade Kit" />
@@ -1262,8 +1259,8 @@
 
         <!-- Pistols -->
         <eqp name="M9 Pistol" />
-        
-        <!-- Armor -->        
+
+        <!-- Armor -->
         <eqp name="GFL_RecFrame" />
         <eqp name="GFL_LawFrame" />
         <eqp name="GFL_CombatFrame" />
@@ -1276,14 +1273,14 @@
         <eqp name="GFL_SentinelCore" />
         <eqp name="GFL_BulwarkCore" />
         <eqp name="GFL_SupportCore" />
-        
+
         <!-- NVG -->
         <eqp name="GFL_NightVision" />
-        
+
         <!-- Utility -->
         <eqp name="GFL_FeetOfGunmetal" />
         <eqp name="GFL_Lockpick" />
-        
+
         <eqp name="Stinger" />
         <eqp name="Smoke Grenade" />
         <eqp name="Smoke Grenade Kit" />
@@ -1322,8 +1319,8 @@
 
         <!-- Pistols -->
         <eqp name="M9 Pistol" />
-        
-        <!-- Armor -->        
+
+        <!-- Armor -->
         <eqp name="GFL_RecFrame" />
         <eqp name="GFL_LawFrame" />
         <eqp name="GFL_CombatFrame" />
@@ -1336,14 +1333,14 @@
         <eqp name="GFL_SentinelCore" />
         <eqp name="GFL_BulwarkCore" />
         <eqp name="GFL_SupportCore" />
-        
+
         <!-- NVG -->
         <eqp name="GFL_NightVision" />
-        
+
         <!-- Utility -->
         <eqp name="GFL_FeetOfGunmetal" />
         <eqp name="GFL_Lockpick" />
-        
+
         <eqp name="Stinger" />
         <eqp name="Smoke Grenade" />
         <eqp name="Smoke Grenade Kit" />
@@ -1381,10 +1378,7 @@
         <eqp name="GFL-WEAP-PA15" />
         <eqp name="GFL-GEAR-MEDIC-GRENADE" />
 
-        <!-- Pistols -->
-        <eqp name="M9 Pistol" />
-        
-        <!-- Armor -->        
+        <!-- Armor -->
         <eqp name="GFL_RecFrame" />
         <eqp name="GFL_LawFrame" />
         <eqp name="GFL_CombatFrame" />
@@ -1397,14 +1391,14 @@
         <eqp name="GFL_SentinelCore" />
         <eqp name="GFL_BulwarkCore" />
         <eqp name="GFL_SupportCore" />
-        
+
         <!-- NVG -->
         <eqp name="GFL_NightVision" />
-        
+
         <!-- Utility -->
         <eqp name="GFL_FeetOfGunmetal" />
         <eqp name="GFL_Lockpick" />
-        
+
         <eqp name="Stinger" />
         <eqp name="Smoke Grenade" />
         <eqp name="Smoke Grenade Kit" />
@@ -1443,8 +1437,8 @@
 
         <!-- Pistols -->
         <eqp name="M9 Pistol" />
-        
-        <!-- Armor -->        
+
+        <!-- Armor -->
         <eqp name="GFL_RecFrame" />
         <eqp name="GFL_LawFrame" />
         <eqp name="GFL_CombatFrame" />
@@ -1457,14 +1451,14 @@
         <eqp name="GFL_SentinelCore" />
         <eqp name="GFL_BulwarkCore" />
         <eqp name="GFL_SupportCore" />
-        
+
         <!-- NVG -->
         <eqp name="GFL_NightVision" />
-        
+
         <!-- Utility -->
         <eqp name="GFL_FeetOfGunmetal" />
         <eqp name="GFL_Lockpick" />
-        
+
         <eqp name="Stinger" />
         <eqp name="Smoke Grenade" />
         <eqp name="Smoke Grenade Kit" />
@@ -1503,8 +1497,8 @@
 
         <!-- Pistols -->
         <eqp name="M9 Pistol" />
-        
-        <!-- Armor -->        
+
+        <!-- Armor -->
         <eqp name="GFL_RecFrame" />
         <eqp name="GFL_LawFrame" />
         <eqp name="GFL_CombatFrame" />
@@ -1517,14 +1511,14 @@
         <eqp name="GFL_SentinelCore" />
         <eqp name="GFL_BulwarkCore" />
         <eqp name="GFL_SupportCore" />
-        
+
         <!-- NVG -->
         <eqp name="GFL_NightVision" />
-        
+
         <!-- Utility -->
         <eqp name="GFL_FeetOfGunmetal" />
         <eqp name="GFL_Lockpick" />
-        
+
         <eqp name="Stinger" />
         <eqp name="Smoke Grenade" />
         <eqp name="Smoke Grenade Kit" />
@@ -1563,8 +1557,8 @@
 
         <!-- Pistols -->
         <eqp name="M9 Pistol" />
-        
-        <!-- Armor -->        
+
+        <!-- Armor -->
         <eqp name="GFL_RecFrame" />
         <eqp name="GFL_LawFrame" />
         <eqp name="GFL_CombatFrame" />
@@ -1577,14 +1571,14 @@
         <eqp name="GFL_SentinelCore" />
         <eqp name="GFL_BulwarkCore" />
         <eqp name="GFL_SupportCore" />
-        
+
         <!-- NVG -->
         <eqp name="GFL_NightVision" />
-        
+
         <!-- Utility -->
         <eqp name="GFL_FeetOfGunmetal" />
         <eqp name="GFL_Lockpick" />
-        
+
         <eqp name="Stinger" />
         <eqp name="Smoke Grenade" />
         <eqp name="Smoke Grenade Kit" />
@@ -1623,8 +1617,8 @@
 
         <!-- Pistols -->
         <eqp name="M9 Pistol" />
-        
-        <!-- Armor -->        
+
+        <!-- Armor -->
         <eqp name="GFL_RecFrame" />
         <eqp name="GFL_LawFrame" />
         <eqp name="GFL_CombatFrame" />
@@ -1637,14 +1631,14 @@
         <eqp name="GFL_SentinelCore" />
         <eqp name="GFL_BulwarkCore" />
         <eqp name="GFL_SupportCore" />
-        
+
         <!-- NVG -->
         <eqp name="GFL_NightVision" />
-        
+
         <!-- Utility -->
         <eqp name="GFL_FeetOfGunmetal" />
         <eqp name="GFL_Lockpick" />
-        
+
         <eqp name="Stinger" />
         <eqp name="Smoke Grenade" />
         <eqp name="Smoke Grenade Kit" />
@@ -1683,8 +1677,8 @@
 
         <!-- Pistols -->
         <eqp name="M9 Pistol" />
-        
-        <!-- Armor -->        
+
+        <!-- Armor -->
         <eqp name="GFL_RecFrame" />
         <eqp name="GFL_LawFrame" />
         <eqp name="GFL_CombatFrame" />
@@ -1697,14 +1691,14 @@
         <eqp name="GFL_SentinelCore" />
         <eqp name="GFL_BulwarkCore" />
         <eqp name="GFL_SupportCore" />
-        
+
         <!-- NVG -->
         <eqp name="GFL_NightVision" />
-        
+
         <!-- Utility -->
         <eqp name="GFL_FeetOfGunmetal" />
         <eqp name="GFL_Lockpick" />
-        
+
         <eqp name="Stinger" />
         <eqp name="Smoke Grenade" />
         <eqp name="Smoke Grenade Kit" />
@@ -1743,8 +1737,8 @@
 
         <!-- Pistols -->
         <eqp name="M9 Pistol" />
-        
-        <!-- Armor -->        
+
+        <!-- Armor -->
         <eqp name="GFL_RecFrame" />
         <eqp name="GFL_LawFrame" />
         <eqp name="GFL_CombatFrame" />
@@ -1757,14 +1751,14 @@
         <eqp name="GFL_SentinelCore" />
         <eqp name="GFL_BulwarkCore" />
         <eqp name="GFL_SupportCore" />
-        
+
         <!-- NVG -->
         <eqp name="GFL_NightVision" />
-        
+
         <!-- Utility -->
         <eqp name="GFL_FeetOfGunmetal" />
         <eqp name="GFL_Lockpick" />
-        
+
         <eqp name="Stinger" />
         <eqp name="Smoke Grenade" />
         <eqp name="Smoke Grenade Kit" />
@@ -1804,8 +1798,8 @@
 
         <!-- Pistols -->
         <eqp name="M9 Pistol" />
-        
-        <!-- Armor -->        
+
+        <!-- Armor -->
         <eqp name="GFL_RecFrame" />
         <eqp name="GFL_LawFrame" />
         <eqp name="GFL_CombatFrame" />
@@ -1818,14 +1812,14 @@
         <eqp name="GFL_SentinelCore" />
         <eqp name="GFL_BulwarkCore" />
         <eqp name="GFL_SupportCore" />
-        
+
         <!-- NVG -->
         <eqp name="GFL_NightVision" />
-        
+
         <!-- Utility -->
         <eqp name="GFL_FeetOfGunmetal" />
         <eqp name="GFL_Lockpick" />
-        
+
         <eqp name="Stinger" />
         <eqp name="Smoke Grenade" />
         <eqp name="Smoke Grenade Kit" />

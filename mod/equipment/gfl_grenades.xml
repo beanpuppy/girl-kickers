@@ -54,7 +54,7 @@
 
 <!-- Searing Finale -->
     <Grenade
-        name="GFL-GEAR-VECTOR-GRENADE" 
+        name="GFL-GEAR-VECTOR-GRENADE"
         inventoryBinding="SupportGear1"
         quantity="5"
         tooltip="@GEAR-VECTOR-GRENADE-NAME"
@@ -64,26 +64,26 @@
         soundUse="grenade_use"
         animationSet="grenade"
     >
-    
-        <RenderObject3D 
-            model="data/models/equipment/smoke_grenade.khm" 
+
+        <RenderObject3D
+            model="data/models/equipment/smoke_grenade.khm"
             skipGOSSAO="true" diffuseTex="data/models/equipment/smoke_grenade.dds"
         />
-    
+
         <ConcealmentModifier add="-2"/>
-    
-        <MobilityModifiers 
-            moveSpeedModifierPercent="-1" 
+
+        <MobilityModifiers
+            moveSpeedModifierPercent="-1"
             turnSpeedModifierPercent="0"
         />
-    
+
         <ModifiableParams
             changeInTime="0"
             changeOutTime="0"
             throwTime="1000"
             throwTimeCorner="1400"
         />
-    
+
         <Projectile
             bodyTemplate="SmokeGrenade"
             trailParticles="SmokeGrenadeTrail"
@@ -111,46 +111,46 @@
         />
 
         <Shrapnel projectileSource="VECTOR_Extra_MolotovShrapnel" min="6" max="6" spreadRadius="2.5" />
-    
+
         <EffectRange radiusMeters="2.0">
-            <StunEffect 
-                chancePercent="100" 
-                innerRangeTimeMSec="1500" 
+            <StunEffect
+                chancePercent="100"
+                innerRangeTimeMSec="1500"
                 outerRangeTimeMSec="1500"
-            /> 
-            <DamageEffect 
-                chancePercent="100" 
-                damage="55" damageType="0"  
+            />
+            <DamageEffect
+                chancePercent="100"
+                damage="55" damageType="0"
                 armorPenetration="0"
             />
             <FireEffect durationMSec="9000"/>
-            <DOTEffect 
+            <DOTEffect
                 durationMSec="15000"
                 dps="20.0"
             />
         </EffectRange>
 
         <EffectRange radiusMeters="2.5">
-            <ScatterEffect 
+            <ScatterEffect
                 chancePercent="100"
                 durationMSec="8000"
             />
-            <SuppressEffect 
-                amount="30" 
+            <SuppressEffect
+                amount="30"
                 durationMSec="8000"
             />
             </EffectRange>
-            
+
         <EffectRange radiusMeters="3">
-            <ScatterEffect 
-                chancePercent="100" 
-                armorPenetration="0" 
-                innerRangeTimeMSec="8000" 
+            <ScatterEffect
+                chancePercent="100"
+                armorPenetration="0"
+                innerRangeTimeMSec="8000"
                 outerRangeTimeMSec="5000"
             />
             <SuppressEffect amount="15"/>
-        </EffectRange>            
-            
+        </EffectRange>
+
     </Projectile>
     </Grenade>
 
@@ -184,34 +184,34 @@
     <Shrapnel projectileSource="VECTORX_Extra_MolotovShrapnel" min="6" max="6" spreadRadius="2.5" />
 
         <EffectRange radiusMeters="2.0">
-            <DamageEffect 
-                chancePercent="100" 
-                damage="55" damageType="0"  
+            <DamageEffect
+                chancePercent="100"
+                damage="55" damageType="0"
                 armorPenetration="0"
             />
             <FireEffect durationMSec="9000"/>
-            <DOTEffect 
+            <DOTEffect
                 durationMSec="15000"
                 dps="20.0"
             />
         </EffectRange>
 
         <EffectRange radiusMeters="2.5">
-            <ScatterEffect 
+            <ScatterEffect
                 chancePercent="100"
                 durationMSec="8000"
             />
-            <SuppressEffect 
-                amount="30" 
+            <SuppressEffect
+                amount="30"
                 durationMSec="8000"
             />
             </EffectRange>
-            
+
         <EffectRange radiusMeters="3">
-            <ScatterEffect 
-                chancePercent="100" 
-                armorPenetration="0" 
-                innerRangeTimeMSec="8000" 
+            <ScatterEffect
+                chancePercent="100"
+                armorPenetration="0"
+                innerRangeTimeMSec="8000"
                 outerRangeTimeMSec="5000"
             />
             <SuppressEffect amount="15"/>
@@ -245,34 +245,34 @@
             />
 
         <EffectRange radiusMeters="2.0">
-            <DamageEffect 
-                chancePercent="100" 
-                damage="55" damageType="0"  
+            <DamageEffect
+                chancePercent="100"
+                damage="55" damageType="0"
                 armorPenetration="0"
             />
             <FireEffect durationMSec="1000"/>
-            <DOTEffect 
+            <DOTEffect
                 durationMSec="15000"
                 dps="20.0"
             />
         </EffectRange>
 
         <EffectRange radiusMeters="2.5">
-            <ScatterEffect 
+            <ScatterEffect
                 chancePercent="100"
                 durationMSec="8000"
             />
-            <SuppressEffect 
-                amount="30" 
+            <SuppressEffect
+                amount="30"
                 durationMSec="8000"
             />
             </EffectRange>
-            
+
         <EffectRange radiusMeters="3">
-            <ScatterEffect 
-                chancePercent="100" 
-                armorPenetration="0" 
-                innerRangeTimeMSec="8000" 
+            <ScatterEffect
+                chancePercent="100"
+                armorPenetration="0"
+                innerRangeTimeMSec="8000"
                 outerRangeTimeMSec="5000"
             />
             <SuppressEffect amount="15"/>

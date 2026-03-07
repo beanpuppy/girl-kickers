@@ -33,9 +33,9 @@ ex:
 -->
 
 
-<!-- 
+<!--
         Scope Names so binding will be easier
-        
+
         <to name="scope_GFL_IronSights_Primary" />
         <to name="scope_GFL_RedDot_Rifle" />
         <to name="scope_GFL_Holosight" />
@@ -48,9 +48,9 @@ ex:
         <to name="scope_GFL_LROMK4_3_10X" />
         <to name="scope_GFL_LROMK6_3_18X" />
         <to name="scope_GFL_LROPM_5_25X" />
-        
+
         For Rifles
-        
+
         <to name="scope_GFL_IronSights_Primary" />
         <to name="scope_GFL_RedDot_Rifle" />
         <to name="scope_GFL_Holosight" />
@@ -59,9 +59,9 @@ ex:
         <to name="scope_GFL_HoloMag3x" />
         <to name="scope_GFL_SpecterDR" />
         <to name="scope_GFL_LPVO_6X" />
-        
+
         For SMGs
-        
+
         <to name="scope_GFL_IronSights_Primary" />
         <to name="scope_GFL_RedDot_Rifle" />
         <to name="scope_GFL_Holosight" />
@@ -69,9 +69,9 @@ ex:
         <to name="scope_GFL_M150RCO" />
         <to name="scope_GFL_HoloMag3x" />
         <to name="scope_GFL_SpecterDR" />
-        
+
         For Snipers
-        
+
         <to name="scope_GFL_IronSights_Primary" />
         <to name="scope_GFL_M150RCO" />
         <to name="scope_GFL_HoloMag3x" />
@@ -81,9 +81,9 @@ ex:
         <to name="scope_GFL_LROMK4_3_10X" />
         <to name="scope_GFL_LROMK6_3_18X" />
         <to name="scope_GFL_LROPM_5_25X" />
-        
+
         For Handguns
-        
+
         <to name="scope_GFL_IronSights_Secondary" />
         <to name="scope_GFL_RedDot_Pistol" />
 -->
@@ -98,7 +98,7 @@ ex:
         >
         <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="3"/>
         <Params>
-        
+
             <AttackTypeModifier minRange="0" maxRange="7">
                 <AddTo
                     minAimTime2="-170"
@@ -137,7 +137,7 @@ ex:
                     critChanceAdd="+20"
                 />
             </AttackTypeModifier>
-            
+
         </Params>
     </Scope>
 
@@ -149,7 +149,7 @@ ex:
         >
         <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="3"/>
         <Params>
-        
+
             <AttackTypeModifier minRange="0" maxRange="7">
                 <AddTo
                     minAimTime2="-170"
@@ -189,7 +189,7 @@ ex:
                     critChanceAdd="+5"
                 />
             </AttackTypeModifier>
-            
+
         </Params>
     </Scope>
 
@@ -200,12 +200,12 @@ ex:
             description="@scope_GFL_smallreddot_desc"
             img="data/models/weapons/attachments/rmr_ui.dds"
         >
-        
+
         <RenderObject3D model="data/models/weapons/attachments/red_dot_pistol.khm" attachSlot="optics_socket_pistol" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/red_dot_pistol.dds"/>
         <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
 
         <Params>
-        
+
             <AttackTypeModifier minRange="0" maxRange="7">
                 <AddTo
                     minAimTime2="-160"
@@ -245,11 +245,11 @@ ex:
                     critChanceAdd="-50"
                 />
             </AttackTypeModifier>
-            
+
         </Params>
 
     </Scope>
-    
+
     <Scope name="scope_GFL_RedDot_Rifle"
             unlockCost="0"
             inventoryBinding="PrimaryWeaponScope"
@@ -257,12 +257,12 @@ ex:
             description="@scope_GFL_smallreddot_desc"
             img="data/models/weapons/attachments/rmr_ui.dds"
         >
-        
+
         <RenderObject3D model="data/models/weapons/attachments/red_dot_pistol.khm" attachSlot="optics_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/red_dot_pistol.dds"/>
         <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
 
         <Params>
-        
+
             <AttackTypeModifier minRange="0" maxRange="7">
                 <AddTo
                     minAimTime2="-160"
@@ -302,7 +302,7 @@ ex:
                     critChanceAdd="-50"
                 />
             </AttackTypeModifier>
-            
+
         </Params>
 
     </Scope>
@@ -316,9 +316,9 @@ ex:
         <RenderObject3D model="data/models/weapons/attachments/scope_holosight_01.khm" attachSlot="optics_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/scope_holosight_01b.dds"/>
         <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
         <ConcealmentModifier add="-1"/>
-        
+
         <Params>
-        
+
             <AttackTypeModifier minRange="0" maxRange="7">
                 <AddTo
                     minAimTime2="-150"
@@ -358,12 +358,12 @@ ex:
                     critChanceAdd="-50"
                 />
             </AttackTypeModifier>
-            
+
         </Params>
-        
+
     </Scope>
-    
-    
+
+
     <Scope name="scope_GFL_M68CCO"
             inventoryBinding="PrimaryWeaponScope"
             tooltip="@scope_GFL_largereddot_name"
@@ -375,7 +375,7 @@ ex:
         <ConcealmentModifier add="-1"/>
 
         <Params>
-        
+
             <AttackTypeModifier minRange="0" maxRange="7">
                 <AddTo
                     minAimTime2="-155"
@@ -415,11 +415,11 @@ ex:
                     critChanceAdd="-50"
                 />
             </AttackTypeModifier>
-            
+
         </Params>
 
     </Scope>
-    
+
         <Scope name="scope_GFL_HoloMag3x" unlockCost="2"
             inventoryBinding="PrimaryWeaponScope"
             tooltip="@scope_GFL_holomag3x_name"
@@ -429,9 +429,9 @@ ex:
         <RenderObject3D model="data/models/weapons/attachments/holo_magnifier_combo.khm" attachSlot="optics_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/holo_magnifier_combo.dds"/>
         <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
         <ConcealmentModifier add="-2"/>
-        
+
         <Params>
-        
+
             <AttackTypeModifier minRange="0" maxRange="7">
                 <AddTo
                     minAimTime2="-140"
@@ -471,9 +471,9 @@ ex:
                     critChanceAdd="-50"
                 />
             </AttackTypeModifier>
-            
+
         </Params>
-        
+
     </Scope>
 
     <Scope name="scope_GFL_M150RCO" unlockCost="2"
@@ -486,9 +486,9 @@ ex:
         <RenderObject3D model="data/models/weapons/attachments/scope_m150_acog4x.khm" attachSlot="optics_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/scope_m150_acog4x.dds"/>
         <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
         <ConcealmentModifier add="-2"/>
-        
+
         <Params>
-        
+
             <AttackTypeModifier minRange="0" maxRange="7">
                 <AddTo
                     minAimTime2="-120"
@@ -528,9 +528,9 @@ ex:
                     critChanceAdd="+0"
                 />
             </AttackTypeModifier>
-            
+
         </Params>
-        
+
     </Scope>
 
     <Scope name="scope_GFL_SpecterDR" unlockCost="2"
@@ -542,15 +542,15 @@ ex:
         <RenderObject3D model="data/models/weapons/attachments/scope_spectredr.khm" attachSlot="optics_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/scope_spectredra.dds"/>
         <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
         <ConcealmentModifier add="-3"/>
-        
+
         <Params>
-        
+
             <EquipmentModifier>
                 <AddTo
                     readyTime="+50"
                 />
             </EquipmentModifier>
-            
+
             <AttackTypeModifier minRange="0" maxRange="7">
                 <AddTo
                     minAimTime2="-120"
@@ -590,9 +590,9 @@ ex:
                     critChanceAdd="+0"
                 />
             </AttackTypeModifier>
-            
+
         </Params>
-        
+
     </Scope>
 
     <Scope name="scope_GFL_LPVO_6X" unlockCost="2"
@@ -604,15 +604,15 @@ ex:
         <RenderObject3D model="data/models/weapons/attachments/scope_lpvo_6x.khm" attachSlot="optics_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/scope_lpvo_6x.dds"/>
         <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="-10"/>
         <ConcealmentModifier add="-4"/>
-        
+
         <Params>
-        
+
             <EquipmentModifier>
                 <AddTo
                     readyTime="+50"
                 />
             </EquipmentModifier>
-            
+
             <AttackTypeModifier minRange="0" maxRange="7">
                 <AddTo
                     minAimTime2="-120"
@@ -652,9 +652,9 @@ ex:
                     critChanceAdd="+20"
                 />
             </AttackTypeModifier>
-            
+
         </Params>
-        
+
     </Scope>
 
     <Scope name="scope_GFL_LPVO_8X" unlockCost="2"
@@ -666,15 +666,15 @@ ex:
         <RenderObject3D model="data/models/weapons/attachments/scope_lpvo_8x.khm" attachSlot="optics_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/scope_lpvo_8x.dds"/>
         <MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="-13"/>
         <ConcealmentModifier add="-4"/>
-        
+
         <Params>
-        
+
             <EquipmentModifier>
                 <AddTo
                     readyTime="+50"
                 />
             </EquipmentModifier>
-            
+
             <AttackTypeModifier minRange="0" maxRange="7">
                 <AddTo
                     minAimTime2="-120"
@@ -714,9 +714,9 @@ ex:
                     critChanceAdd="+30"
                 />
             </AttackTypeModifier>
-            
+
         </Params>
-        
+
     </Scope>
 
     <Scope name="scope_GFL_LROMK4_3_10X" unlockCost="2"
@@ -728,15 +728,15 @@ ex:
         <RenderObject3D model="data/models/weapons/attachments/scope_lromk4.khm" attachSlot="optics_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/scope_lromk4.dds"/>
         <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="-15"/>
         <ConcealmentModifier add="-5"/>
-        
+
         <Params>
-        
+
             <EquipmentModifier>
                 <AddTo
                     readyTime="+50"
                 />
             </EquipmentModifier>
-            
+
             <AttackTypeModifier minRange="0" maxRange="7">
                 <AddTo
                     minAimTime2="+150"
@@ -776,9 +776,9 @@ ex:
                     critChanceAdd="+30"
                 />
             </AttackTypeModifier>
-            
+
         </Params>
-        
+
     </Scope>
 
     <Scope name="scope_GFL_LROMK6_3_18X" unlockCost="2"
@@ -790,15 +790,15 @@ ex:
         <RenderObject3D model="data/models/weapons/attachments/scope_lromk6_3_18.khm" attachSlot="optics_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/scope_lromk6_3_18.dds"/>
         <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="-20"/>
         <ConcealmentModifier add="-5"/>
-        
+
         <Params>
-        
+
             <EquipmentModifier>
                 <AddTo
                     readyTime="+50"
                 />
             </EquipmentModifier>
-            
+
             <AttackTypeModifier minRange="0" maxRange="7">
                 <AddTo
                     minAimTime2="+150"
@@ -838,12 +838,12 @@ ex:
                     critChanceAdd="+60"
                 />
             </AttackTypeModifier>
-            
+
         </Params>
-        
+
     </Scope>
 
-    
+
 
     <Scope name="scope_GFL_LROPM_5_25X" unlockCost="6"
             inventoryBinding="PrimaryWeaponScope"
@@ -854,15 +854,15 @@ ex:
         <RenderObject3D model="data/models/weapons/attachments/scope_lropm5_25.khm" attachSlot="optics_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/scope_lropm5_25.dds"/>
         <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="-25"/>
         <ConcealmentModifier add="-5"/>
-        
+
         <Params>
-        
+
             <EquipmentModifier>
                 <AddTo
                     readyTime="+50"
                 />
             </EquipmentModifier>
-            
+
             <AttackTypeModifier minRange="0" maxRange="7">
                 <AddTo
                     minAimTime2="+350"
@@ -902,9 +902,9 @@ ex:
                     critChanceAdd="+80"
                 />
             </AttackTypeModifier>
-            
+
         </Params>
-        
+
     </Scope>
-    
+
 </Equipment>
