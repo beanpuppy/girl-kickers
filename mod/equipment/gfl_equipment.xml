@@ -63,17 +63,17 @@
             <ProtectionArc
                 degrees="90"
                 coveragePercent="10"
-                piercingProtectionLevel="50"
+                piercingProtectionLevel="90"
             />
             <ProtectionArc
                 degrees="270"
                 coveragePercent="10"
-                piercingProtectionLevel="50"
+                piercingProtectionLevel="90"
             />
             <ProtectionArc
                 degrees="360"
                 coveragePercent="10"
-                piercingProtectionLevel="50"
+                piercingProtectionLevel="90"
             />
         </Params>
     </Armor>
@@ -229,13 +229,13 @@
             />
             <ProtectionArc
                 degrees="270"
-                coveragePercent="45"
-                piercingProtectionLevel="55"
+                coveragePercent="10"
+                piercingProtectionLevel="40"
             />
             <ProtectionArc
                 degrees="360"
-                coveragePercent="65"
-                piercingProtectionLevel="65"
+                coveragePercent="10"
+                piercingProtectionLevel="40"
             />
         </Params>
     </Armor>

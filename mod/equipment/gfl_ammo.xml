@@ -794,7 +794,7 @@
         img="data/models/weapons/attachments/m855_ammo_ui.dds"
     >
         <Params
-            roundsPerSecond="11.7"
+            roundsPerSecond="10"
             audibleSoundRadius="50"
             physicsImpactForce="1.5"
             suppressionScale="3.5"
@@ -898,7 +898,7 @@
     >
 
         <Params
-            roundsPerSecond="12.5"
+            roundsPerSecond="11.7"
             audibleSoundRadius="50"
             physicsImpactForce="1.5"
             suppressionScale="3.0"
