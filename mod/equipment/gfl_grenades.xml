@@ -6,7 +6,7 @@
         quantity="2"
         tooltip="@GEAR-MEDIC-GRENADE-NAME"
         description="@GEAR-MEDIC-GRENADE-DESC"
-        img="data/models/equipment/smoke_grenade_ui.dds"
+        img="data/models/equipment/medic_grenade_ui.dds"
         movie="data/movies/smoke_grenade.ogv"
         animationSet="grenade"
         soundUse="grenade_use"
@@ -47,7 +47,7 @@
             </FX>
 
             <EffectRange radiusMeters="2.5">
-                <DamageEffect chancePercent="100" damage="-100" damageType="1" />
+                <DamageEffect chancePercent="100" damage="-30" damageType="1" />
             </EffectRange>
         </Projectile>
     </Grenade>
@@ -219,10 +219,7 @@
         </Projectile>
     </Grenade>
 
-    <Grenade name="VECTORX_Extra_MolotovShrapnel" inventoryBinding="UtilityPouch"
-            animationSet="grenade"
-    >
-
+    <Grenade name="VECTORX_Extra_MolotovShrapnel" inventoryBinding="UtilityPouch" animationSet="grenade">
         <Projectile
             bodyTemplate="MolotovShrapnel"
             trailParticles="Molotov_ExtraTrail"

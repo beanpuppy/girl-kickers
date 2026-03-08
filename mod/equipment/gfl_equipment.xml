@@ -63,17 +63,17 @@
             <ProtectionArc
                 degrees="90"
                 coveragePercent="10"
-                piercingProtectionLevel="90"
+                piercingProtectionLevel="50"
             />
             <ProtectionArc
                 degrees="270"
                 coveragePercent="10"
-                piercingProtectionLevel="90"
+                piercingProtectionLevel="50"
             />
             <ProtectionArc
                 degrees="360"
                 coveragePercent="10"
-                piercingProtectionLevel="90"
+                piercingProtectionLevel="50"
             />
         </Params>
     </Armor>
@@ -229,13 +229,13 @@
             />
             <ProtectionArc
                 degrees="270"
-                coveragePercent="10"
-                piercingProtectionLevel="40"
+                coveragePercent="45"
+                piercingProtectionLevel="55"
             />
             <ProtectionArc
                 degrees="360"
-                coveragePercent="10"
-                piercingProtectionLevel="40"
+                coveragePercent="65"
+                piercingProtectionLevel="65"
             />
         </Params>
     </Armor>
@@ -251,7 +251,7 @@
         img="data/models/dolls/attachments/basiccore_ui.dds"
     >
         <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
-        <ConcealmentModifier add="0" />
+        <ConcealmentModifier add="1" />
         <Params nvgByDefault="true">
             <ProtectionArc
                 degrees="360"
@@ -335,7 +335,7 @@
         img="data/models/dolls/attachments/support_ui.dds"
     >
         <MobilityModifiers moveSpeedModifierPercent="15" turnSpeedModifierPercent="25" />
-        <ConcealmentModifier add="0" />
+        <ConcealmentModifier add="2" />
         <Params nvgByDefault="true">
             <ProtectionArc
                 degrees="360"

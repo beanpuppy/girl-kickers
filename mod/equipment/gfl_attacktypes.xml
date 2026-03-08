@@ -1,13 +1,11 @@
 <FirearmAttackTypes>
 
-<!-- DEV -->
-
 <!-- XCR SHARKRY, THE STANDARD OF ALL ASSAULT RIFLE ATTACK TYPES -->
 <!-- Note: I am not the most hardcore Sharkry simp, but I chose her to be the standard of all longarm type signature weapons because she runs an AR-15 style format rifle chambered in a very common round. Sharkry is never depicted as too exceptional in combat yet she is shown to be able to hold her own in missions with Dolls that have more combat experience with her, namely Makiatto, Springfield and Centaureissi, which makes her a perfect candidate to have most of the dolls based on. -->
-    
+
     <!-- Attack Type ranges will be usually divided into Near (Under 8m), Close (Under 16m), Med (Under 28m) , Far (under 52m), Ext (beyond 52m). This is to help coincide with scope effectiveness. Take note that engagements that happen at Ext ranges are ultra rare, but they do exist.-->
-    
-    
+
+
     <AttackType name="GFL_XCR_BurstFireNear">
         <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
         <ModifiableParams
@@ -17,11 +15,11 @@
             minShots="3"
             maxShots="-1"
             resetTime="250"
-            accuracyAdd="10"
+            accuracyAdd="20"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_XCR_BurstFireClose">
         <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
         <ModifiableParams
@@ -35,7 +33,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_XCR_BurstFireMed">
         <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
         <ModifiableParams
@@ -49,29 +47,29 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_XCR_BurstFireFar">
         <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
         <ModifiableParams
             minAimTime="600"
             maxAimTime="700"
             roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
+            minShots="1"
+            maxShots="3"
             resetTime="400"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_XCR_BurstFireExt">
         <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
         <ModifiableParams
             minAimTime="700"
             maxAimTime="900"
             roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
+            minShots="1"
+            maxShots="3"
             resetTime="500"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
@@ -94,7 +92,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_PA15_MozambiqueDrillClose">
         <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
         <ModifiableParams
@@ -108,7 +106,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_PA15_AimedFireMed">
         <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
         <ModifiableParams
@@ -122,7 +120,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_PA15_AimedFireFar">
         <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
         <ModifiableParams
@@ -136,7 +134,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_PA15_AimedFireExt">
         <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
         <ModifiableParams
@@ -151,13 +149,11 @@
         />
     </AttackType>
 
-<!-- DEV -->
-    
 <!-- DEFY -->
 
     <!-- AN94 ALVA -->
 
-    <AttackType name="GFL_AN94_HyperburstNear">
+    <AttackType name="GFL_AN94_HyperBurstNear">
         <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
         <ModifiableParams
             minAimTime="330"
@@ -166,12 +162,12 @@
             minShots="3"
             maxShots="5"
             resetTime="500"
-            accuracyAdd="10"
+            accuracyAdd="15"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
-    <AttackType name="GFL_AN94_HyperburstClose">
+
+    <AttackType name="GFL_AN94_HyperBurstClose">
         <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
         <ModifiableParams
             minAimTime="350"
@@ -184,8 +180,8 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
-    <AttackType name="GFL_AN94_HyperburstMed">
+
+    <AttackType name="GFL_AN94_HyperBurstMed">
         <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
         <ModifiableParams
             minAimTime="350"
@@ -198,7 +194,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_AN94_HyperBurstFar">
         <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
         <ModifiableParams
@@ -212,7 +208,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_AN94_HyperBurstExt">
         <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
         <ModifiableParams
@@ -226,12 +222,12 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
 
 <!-- DEV -->
-    
+
     <!-- AK-15 VOYMASTINA -->
-    
+
     <AttackType name="GFL_AK15_BurstFireNear">
         <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
         <ModifiableParams
@@ -241,11 +237,11 @@
             minShots="4"
             maxShots="6"
             resetTime="300"
-            accuracyAdd="10"
+            accuracyAdd="20"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_AK15_BurstFireClose">
         <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
         <ModifiableParams
@@ -259,39 +255,39 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_AK15_BurstFireMed">
         <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
         <ModifiableParams
             minAimTime="350"
             maxAimTime="600"
             roundsPerSecondOverride="0"
-            minShots="4"
-            maxShots="6"
+            minShots="3"
+            maxShots="5"
             resetTime="300"
             accuracyAdd="5"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_AK15_BurstFireFar">
         <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
         <ModifiableParams
             minAimTime="600"
             maxAimTime="700"
             roundsPerSecondOverride="0"
-            minShots="4"
-            maxShots="6"
+            minShots="1"
+            maxShots="3"
             resetTime="400"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
 <!-- H.I.D.E. 404 -->
-    
+
     <!-- HK416 KLUKAI -->
-    
+
     <AttackType name="GFL_HK416_BurstFireNear">
         <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
         <ModifiableParams
@@ -301,11 +297,11 @@
             minShots="2"
             maxShots="5"
             resetTime="300"
-            accuracyAdd="5"
+            accuracyAdd="10"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_HK416_BurstFireClose">
         <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
         <ModifiableParams
@@ -319,7 +315,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_HK416_BurstFireMed">
         <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
         <ModifiableParams
@@ -333,29 +329,29 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_HK416_BurstFireFar">
         <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
         <ModifiableParams
             minAimTime="600"
             maxAimTime="700"
             roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
+            minShots="1"
+            maxShots="3"
             resetTime="400"
             accuracyAdd="15"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_HK416_BurstFireExt">
         <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
         <ModifiableParams
             minAimTime="700"
             maxAimTime="900"
             roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
+            minShots="1"
+            maxShots="3"
             resetTime="500"
             accuracyAdd="25"
             followupShotAccuracyAdd="0"
@@ -377,7 +373,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_G11_HyperBurstClose">
         <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
         <ModifiableParams
@@ -391,7 +387,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_G11_HyperBurstMed">
         <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
         <ModifiableParams
@@ -405,7 +401,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_G11_HyperBurstFar">
         <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
         <ModifiableParams
@@ -419,7 +415,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_G11_HyperBurstExt">
         <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
         <ModifiableParams
@@ -433,9 +429,9 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <!-- G36K ANDORIS -->
-    
+
     <AttackType name="GFL_G36K_BurstFireNear">
         <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
         <ModifiableParams
@@ -449,7 +445,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_G36K_BurstFireClose">
         <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
         <ModifiableParams
@@ -463,7 +459,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_G36K_BurstFireMed">
         <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
         <ModifiableParams
@@ -477,37 +473,37 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_G36K_BurstFireFar">
         <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
         <ModifiableParams
             minAimTime="600"
             maxAimTime="700"
             roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
+            minShots="1"
+            maxShots="3"
             resetTime="400"
             accuracyAdd="-5"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_G36K_BurstFireExt">
         <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
         <ModifiableParams
             minAimTime="700"
             maxAimTime="900"
             roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
+            minShots="1"
+            maxShots="3"
             resetTime="500"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <!-- G28 BELKA -->
-    
+
     <AttackType name="GFL_G28_PrecisionFireNear">
         <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
         <ModifiableParams
@@ -521,7 +517,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_G28_PrecisionFireClose">
         <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
         <ModifiableParams
@@ -535,7 +531,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_G28_PrecisionFireCloseMounted">
         <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
         <ModifiableParams
@@ -550,7 +546,7 @@
             critChanceAdd="30"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_G28_PrecisionFireMed">
         <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
         <ModifiableParams
@@ -564,7 +560,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_G28_PrecisionFireMedMounted">
         <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
         <ModifiableParams
@@ -579,7 +575,7 @@
             critChanceAdd="30"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_G28_PrecisionFireFar">
         <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
         <ModifiableParams
@@ -593,7 +589,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_G28_PrecisionFireFarMounted">
         <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
         <ModifiableParams
@@ -608,7 +604,7 @@
             critChanceAdd="30"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_G28_PrecisionFireExt">
         <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
         <ModifiableParams
@@ -622,7 +618,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_G28_PrecisionFireExtMounted">
         <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
         <ModifiableParams
@@ -637,9 +633,9 @@
             critChanceAdd="30"
         />
     </AttackType>
-    
+
     <!-- UMP45 LEVA -->
-    
+
     <AttackType name="GFL_UMP45_RapidFireNear">
         <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
         <ModifiableParams
@@ -653,7 +649,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_UMP45_RapidFireClose">
         <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
         <ModifiableParams
@@ -667,7 +663,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_UMP45_BurstFireMed">
         <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
         <ModifiableParams
@@ -681,38 +677,38 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_UMP45_BurstFireFar">
         <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
         <ModifiableParams
             minAimTime="600"
             maxAimTime="700"
             roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
+            minShots="1"
+            maxShots="2"
             resetTime="400"
             accuracyAdd="5"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_UMP45_BurstFireExt">
         <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
         <ModifiableParams
             minAimTime="700"
             maxAimTime="900"
             roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
+            minShots="1"
+            maxShots="2"
             resetTime="500"
             accuracyAdd="5"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
-    
+
+
     <!-- UMP9 LENNA -->
-    
+
     <AttackType name="GFL_UMP9_RapidFireNear">
         <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
         <ModifiableParams
@@ -726,7 +722,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_UMP9_RapidFireClose">
         <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
         <ModifiableParams
@@ -740,7 +736,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_UMP9_BurstFireMed">
         <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
         <ModifiableParams
@@ -754,37 +750,37 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_UMP9_BurstFireFar">
         <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
         <ModifiableParams
             minAimTime="600"
             maxAimTime="700"
             roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
+            minShots="1"
+            maxShots="2"
             resetTime="400"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_UMP9_BurstFireExt">
         <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
         <ModifiableParams
             minAimTime="700"
             maxAimTime="900"
             roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
+            minShots="1"
+            maxShots="2"
             resetTime="500"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <!-- VECTOR VIVI -->
-    
+
     <AttackType name="GFL_VECTOR_RapidFireNear">
         <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
         <ModifiableParams
@@ -798,7 +794,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_VECTOR_RapidFireClose">
         <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
         <ModifiableParams
@@ -812,7 +808,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_VECTOR_BurstFireMed">
         <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
         <ModifiableParams
@@ -826,29 +822,29 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_VECTOR_BurstFireFar">
         <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
         <ModifiableParams
             minAimTime="600"
             maxAimTime="700"
             roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
+            minShots="1"
+            maxShots="3"
             resetTime="400"
             accuracyAdd="15"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_VECTOR_BurstFireExt">
         <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
         <ModifiableParams
             minAimTime="700"
             maxAimTime="900"
             roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
+            minShots="1"
+            maxShots="3"
             resetTime="500"
             accuracyAdd="20"
             followupShotAccuracyAdd="0"
@@ -858,7 +854,7 @@
 <!-- ZUCCHERO CAFE -->
 
     <!-- M1903 SPRINGFIELD -->
-    
+
     <AttackType name="GFL_M1903_PrecisionFireNear">
         <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
         <ModifiableParams
@@ -872,7 +868,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_M1903_PrecisionFireClose">
         <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
         <ModifiableParams
@@ -886,7 +882,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_M1903_PrecisionFireCloseMounted">
         <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
         <ModifiableParams
@@ -901,7 +897,7 @@
             critChanceAdd="30"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_M1903_PrecisionFireMed">
         <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
         <ModifiableParams
@@ -915,7 +911,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_M1903_PrecisionFireMedMounted">
         <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
         <ModifiableParams
@@ -930,7 +926,7 @@
             critChanceAdd="30"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_M1903_PrecisionFireFar">
         <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
         <ModifiableParams
@@ -944,7 +940,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_M1903_PrecisionFireFarMounted">
         <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
         <ModifiableParams
@@ -959,7 +955,7 @@
             critChanceAdd="30"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_M1903_PrecisionFireExt">
         <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
         <ModifiableParams
@@ -973,7 +969,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_M1903_PrecisionFireExtMounted">
         <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
         <ModifiableParams
@@ -988,9 +984,9 @@
             critChanceAdd="30"
         />
     </AttackType>
-    
+
     <!-- WA2000 Makiatto -->
-    
+
     <AttackType name="GFL_WA2000_PrecisionFireNear">
         <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
         <ModifiableParams
@@ -1004,7 +1000,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_WA2000_PrecisionFireClose">
         <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
         <ModifiableParams
@@ -1018,7 +1014,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_WA2000_PrecisionFireCloseMounted">
         <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
         <ModifiableParams
@@ -1033,7 +1029,7 @@
             critChanceAdd="20"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_WA2000_PrecisionFireMed">
         <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
         <ModifiableParams
@@ -1047,7 +1043,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_WA2000_PrecisionFireMedMounted">
         <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
         <ModifiableParams
@@ -1062,7 +1058,7 @@
             critChanceAdd="20"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_WA2000_PrecisionFireFar">
         <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
         <ModifiableParams
@@ -1076,7 +1072,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_WA2000_PrecisionFireFarMounted">
         <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
         <ModifiableParams
@@ -1091,7 +1087,7 @@
             critChanceAdd="20"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_WA2000_PrecisionFireExt">
         <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
         <ModifiableParams
@@ -1105,7 +1101,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_WA2000_PrecisionFireExtMounted">
         <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
         <ModifiableParams
@@ -1120,9 +1116,9 @@
             critChanceAdd="20"
         />
     </AttackType>
-    
+
     <!-- G36 CENTAUREISSI -->
-    
+
     <AttackType name="GFL_G36_BurstFireNear">
         <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
         <ModifiableParams
@@ -1136,7 +1132,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_G36_BurstFireClose">
         <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
         <ModifiableParams
@@ -1150,7 +1146,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_G36_BurstFireMed">
         <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
         <ModifiableParams
@@ -1164,39 +1160,39 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_G36_BurstFireFar">
         <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
         <ModifiableParams
             minAimTime="600"
             maxAimTime="700"
             roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="4"
+            minShots="1"
+            maxShots="3"
             resetTime="400"
             accuracyAdd="20"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_G36_BurstFireExt">
         <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
         <ModifiableParams
             minAimTime="700"
             maxAimTime="900"
             roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="4"
+            minShots="1"
+            maxShots="3"
             resetTime="500"
             accuracyAdd="20"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
 <!-- GROZA SQUAD -->
 
     <!-- OTS-14 GROZA -->
-    
+
     <AttackType name="GFL_OTS14_BurstFireNear">
         <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
         <ModifiableParams
@@ -1210,7 +1206,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_OTS14_BurstFireClose">
         <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
         <ModifiableParams
@@ -1224,7 +1220,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_OTS14_BurstFireMed">
         <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
         <ModifiableParams
@@ -1238,37 +1234,37 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_OTS14_BurstFireFar">
         <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
         <ModifiableParams
             minAimTime="600"
             maxAimTime="700"
             roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
+            minShots="1"
+            maxShots="3"
             resetTime="400"
             accuracyAdd="-5"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_OTS14_BurstFireExt">
         <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
         <ModifiableParams
             minAimTime="700"
             maxAimTime="900"
             roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
+            minShots="1"
+            maxShots="3"
             resetTime="500"
             accuracyAdd="-5"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <!-- OM50 NEMESIS -->
-    
+
     <AttackType name="GFL_OM50_PrecisionFireNear">
         <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
         <ModifiableParams
@@ -1282,7 +1278,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_OM50_PrecisionFireClose">
         <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
         <ModifiableParams
@@ -1296,7 +1292,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_OM50_PrecisionFireCloseMounted">
         <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
         <ModifiableParams
@@ -1311,7 +1307,7 @@
             critChanceAdd="30"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_OM50_PrecisionFireMed">
         <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
         <ModifiableParams
@@ -1325,7 +1321,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_OM50_PrecisionFireMedMounted">
         <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
         <ModifiableParams
@@ -1340,7 +1336,7 @@
             critChanceAdd="30"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_OM50_PrecisionFireFar">
         <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
         <ModifiableParams
@@ -1354,7 +1350,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_OM50_PrecisionFireFarMounted">
         <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
         <ModifiableParams
@@ -1369,7 +1365,7 @@
             critChanceAdd="30"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_OM50_PrecisionFireExt">
         <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
         <ModifiableParams
@@ -1383,7 +1379,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_OM50_PrecisionFireExtMounted">
         <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
         <ModifiableParams
@@ -1398,9 +1394,9 @@
             critChanceAdd="30"
         />
     </AttackType>
-    
+
     <!-- Hare KROLIK -->
-    
+
     <AttackType name="GFL_HARE_MeleeAttack">
         <ModifiableParams
             minAimTime="250"
@@ -1413,9 +1409,9 @@
             critChanceAdd="0"
         />
     </AttackType>
-    
+
     <!-- Curva COLPHNE -->
-    
+
     <AttackType name="GFL_CURVA_MozambiqueDrillNear">
         <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
         <ModifiableParams
@@ -1429,7 +1425,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_CURVA_MozambiqueDrillClose">
         <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
         <ModifiableParams
@@ -1443,7 +1439,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_CURVA_AimedFireMed">
         <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
         <ModifiableParams
@@ -1457,7 +1453,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_CURVA_AimedFireFar">
         <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
         <ModifiableParams
@@ -1471,7 +1467,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_CURVA_AimedFireExt">
         <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
         <ModifiableParams
@@ -1485,9 +1481,9 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <!-- VEPR-12 VEPLEY -->
-    
+
     <AttackType name="GFL_VEPR12_BurstFireNear">
         <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
         <ModifiableParams
@@ -1502,7 +1498,7 @@
             critChanceAdd="10"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_VEPR12_BurstFireClose">
         <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
         <ModifiableParams
@@ -1517,7 +1513,7 @@
             critChanceAdd="5"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_VEPR12_BurstFireMed">
         <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
         <ModifiableParams
@@ -1531,7 +1527,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_VEPR12_BurstFireFar">
         <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
         <ModifiableParams
@@ -1545,7 +1541,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_VEPR12_BurstFireExt">
         <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
         <ModifiableParams
@@ -1559,9 +1555,9 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
 <!-- ELMO COMBINED ECHELON -->
-    
+
     <!-- PKP-SP PERITYA -->
 
     <AttackType name="GFL_PKPSP_BurstFireNear">
@@ -1577,7 +1573,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_PKPSP_BurstFireNearMounted">
         <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
         <ModifiableParams
@@ -1591,7 +1587,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_PKPSP_BurstFireClose">
         <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
         <ModifiableParams
@@ -1619,7 +1615,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_PKPSP_BurstFireMed">
         <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
         <ModifiableParams
@@ -1647,15 +1643,15 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_PKPSP_BurstFireFar">
         <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
         <ModifiableParams
             minAimTime="600"
             maxAimTime="700"
             roundsPerSecondOverride="0"
-            minShots="5"
-            maxShots="8"
+            minShots="2"
+            maxShots="5"
             resetTime="400"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
@@ -1668,22 +1664,22 @@
             minAimTime="450"
             maxAimTime="600"
             roundsPerSecondOverride="0"
-            minShots="5"
+            minShots="2"
             maxShots="-1"
             resetTime="300"
             accuracyAdd="50"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_PKPSP_BurstFireExt">
         <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
         <ModifiableParams
             minAimTime="700"
             maxAimTime="900"
             roundsPerSecondOverride="0"
-            minShots="5"
-            maxShots="8"
+            minShots="1"
+            maxShots="4"
             resetTime="500"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
@@ -1703,9 +1699,9 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <!-- SPAS-12 SABRINA -->
-    
+
     <AttackType name="GFL_SPAS12_BurstFireNear">
         <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
         <ModifiableParams
@@ -1720,7 +1716,7 @@
             critChanceAdd="10"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_SPAS12_BurstFireClose">
         <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
         <ModifiableParams
@@ -1735,7 +1731,7 @@
             critChanceAdd="5"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_SPAS12_BurstFireMed">
         <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
         <ModifiableParams
@@ -1749,7 +1745,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_SPAS12_BurstFireFar">
         <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
         <ModifiableParams
@@ -1763,7 +1759,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_SPAS12_BurstFireExt">
         <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
         <ModifiableParams
@@ -1777,9 +1773,9 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <!-- TYPE97S QIUHUA -->
-    
+
     <AttackType name="GFL_TYPE97S_BurstFireNear">
         <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
         <ModifiableParams
@@ -1794,7 +1790,7 @@
             critChanceAdd="15"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_TYPE97S_BurstFireClose">
         <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
         <ModifiableParams
@@ -1809,7 +1805,7 @@
             critChanceAdd="10"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_TYPE97S_BurstFireMed">
         <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
         <ModifiableParams
@@ -1823,7 +1819,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_TYPE97S_BurstFireFar">
         <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
         <ModifiableParams
@@ -1837,7 +1833,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_TYPE97S_BurstFireExt">
         <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
         <ModifiableParams
@@ -1851,9 +1847,9 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <!-- MP5 PERI -->
-    
+
     <AttackType name="GFL_MP5_RapidFireNear">
         <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
         <ModifiableParams
@@ -1867,7 +1863,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_MP5_RapidFireClose">
         <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
         <ModifiableParams
@@ -1881,7 +1877,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_MP5_BurstFireMed">
         <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
         <ModifiableParams
@@ -1895,37 +1891,37 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_MP5_BurstFireFar">
         <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
         <ModifiableParams
             minAimTime="600"
             maxAimTime="700"
             roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
+            minShots="1"
+            maxShots="3"
             resetTime="400"
             accuracyAdd="10"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_MP5_BurstFireExt">
         <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
         <ModifiableParams
             minAimTime="700"
             maxAimTime="900"
             roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
+            minShots="1"
+            maxShots="3"
             resetTime="500"
             accuracyAdd="100"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <!-- VSK-94 NIKKETA -->
-    
+
     <AttackType name="GFL_VSK94_BurstFireNear">
         <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
         <ModifiableParams
@@ -1939,7 +1935,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_VSK94_BurstFireClose">
         <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
         <ModifiableParams
@@ -1953,7 +1949,7 @@
             followupShotAccuracyAdd="15"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_VSK94_AimedFireMed">
         <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
         <ModifiableParams
@@ -1961,44 +1957,44 @@
             maxAimTime="600"
             roundsPerSecondOverride="0"
             minShots="1"
-            maxShots="1"
+            maxShots="2"
             resetTime="600"
             accuracyAdd="0"
             followupShotAccuracyAdd="30"
             critChanceAdd="20"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_VSK94_AimedFireFar">
         <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
         <ModifiableParams
             minAimTime="600"
             maxAimTime="700"
             roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
+            minShots="1"
+            maxShots="2"
             resetTime="600"
             accuracyAdd="0"
             followupShotAccuracyAdd="30"
             critChanceAdd="20"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_VSK94_AimedFireExt">
         <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
         <ModifiableParams
             minAimTime="700"
             maxAimTime="900"
             roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
+            minShots="1"
+            maxShots="1"
             resetTime="600"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="20"
         />
     </AttackType>
-    
+
     <!-- DP-12 HELEN -->
 
     <AttackType name="GFL_DP12_DoubleShotNear">
@@ -2015,7 +2011,7 @@
             critChanceAdd="10"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_DP12_DoubleShotClose">
         <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
         <ModifiableParams
@@ -2030,7 +2026,7 @@
             critChanceAdd="10"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_DP12_DoubleShotFar">
         <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
         <ModifiableParams
@@ -2044,7 +2040,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_DP12_DoubleShotExt">
         <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
         <ModifiableParams
@@ -2058,7 +2054,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_DP12_DoubleShotMed">
         <!-- Ranges under 28m. -->
         <ModifiableParams
@@ -2072,9 +2068,9 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <!-- MODEL 1914 LEWIS -->
-    
+
     <AttackType name="GFL_LEWIS_BurstFireNear">
         <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
         <ModifiableParams
@@ -2088,7 +2084,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_LEWIS_BurstFireNearMounted">
         <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
         <ModifiableParams
@@ -2102,7 +2098,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_LEWIS_BurstFireClose">
         <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
         <ModifiableParams
@@ -2130,7 +2126,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_LEWIS_BurstFireMed">
         <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
         <ModifiableParams
@@ -2158,15 +2154,15 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_LEWIS_BurstFireFar">
         <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
         <ModifiableParams
             minAimTime="600"
             maxAimTime="700"
             roundsPerSecondOverride="0"
-            minShots="5"
-            maxShots="8"
+            minShots="3"
+            maxShots="4"
             resetTime="400"
             accuracyAdd="20"
             followupShotAccuracyAdd="0"
@@ -2179,22 +2175,22 @@
             minAimTime="450"
             maxAimTime="600"
             roundsPerSecondOverride="0"
-            minShots="5"
+            minShots="4"
             maxShots="-1"
             resetTime="300"
             accuracyAdd="30"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_LEWIS_BurstFireExt">
         <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
         <ModifiableParams
             minAimTime="700"
             maxAimTime="900"
             roundsPerSecondOverride="0"
-            minShots="5"
-            maxShots="8"
+            minShots="2"
+            maxShots="3"
             resetTime="500"
             accuracyAdd="20"
             followupShotAccuracyAdd="0"
@@ -2207,18 +2203,18 @@
             minAimTime="450"
             maxAimTime="600"
             roundsPerSecondOverride="0"
-            minShots="5"
+            minShots="3"
             maxShots="-1"
             resetTime="300"
             accuracyAdd="30"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
 <!-- FROSTFALL SQUAD -->
 
     <!-- QBZ-191 QIONGJIU -->
-    
+
     <AttackType name="GFL_QBZ191_BurstFireNear">
         <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
         <ModifiableParams
@@ -2232,7 +2228,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_QBZ191_BurstFireClose">
         <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
         <ModifiableParams
@@ -2246,7 +2242,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_QBZ191_BurstFireMed">
         <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
         <ModifiableParams
@@ -2260,29 +2256,29 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_QBZ191_BurstFireFar">
         <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
         <ModifiableParams
             minAimTime="600"
             maxAimTime="700"
             roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
+            minShots="1"
+            maxShots="3"
             resetTime="400"
             accuracyAdd="30"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_QBZ191_BurstFireExt">
         <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
         <ModifiableParams
             minAimTime="700"
             maxAimTime="900"
             roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
+            minShots="1"
+            maxShots="3"
             resetTime="500"
             accuracyAdd="40"
             followupShotAccuracyAdd="0"
@@ -2290,7 +2286,7 @@
     </AttackType>
 
     <!-- AK-ALFA TOLOLO -->
-    
+
     <AttackType name="GFL_AKALFA_BurstFireNear">
         <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
         <ModifiableParams
@@ -2304,7 +2300,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_AKALFA_BurstFireClose">
         <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
         <ModifiableParams
@@ -2318,7 +2314,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_AKALFA_BurstFireMed">
         <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
         <ModifiableParams
@@ -2332,35 +2328,35 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_AKALFA_BurstFireFar">
         <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
         <ModifiableParams
             minAimTime="600"
             maxAimTime="700"
             roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
+            minShots="1"
+            maxShots="3"
             resetTime="400"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_AKALFA_BurstFireExt">
         <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
         <ModifiableParams
             minAimTime="700"
             maxAimTime="900"
             roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
+            minShots="1"
+            maxShots="3"
             resetTime="500"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <!-- AA-12 LIND -->
 
     <AttackType name="GFL_AA12_BurstFireNear">
@@ -2377,7 +2373,7 @@
             critChanceAdd="5"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_AA12_BurstFireClose">
         <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
         <ModifiableParams
@@ -2391,7 +2387,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_AA12_BurstFireMed">
         <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
         <ModifiableParams
@@ -2405,37 +2401,37 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_AA12_BurstFireFar">
         <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
         <ModifiableParams
             minAimTime="600"
             maxAimTime="700"
             roundsPerSecondOverride="0"
-            minShots="2"
-            maxShots="4"
+            minShots="1"
+            maxShots="2"
             resetTime="400"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_AA12_BurstFireExt">
         <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
         <ModifiableParams
             minAimTime="700"
             maxAimTime="900"
             roundsPerSecondOverride="0"
-            minShots="2"
-            maxShots="4"
+            minShots="1"
+            maxShots="2"
             resetTime="500"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <!-- MP7 CHEETA -->
-    
+
     <AttackType name="GFL_MP7_RapidFireNear">
         <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
         <ModifiableParams
@@ -2449,7 +2445,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_MP7_RapidFireClose">
         <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
         <ModifiableParams
@@ -2463,7 +2459,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_MP7_BurstFireMed">
         <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
         <ModifiableParams
@@ -2477,35 +2473,35 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_MP7_BurstFireFar">
         <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
         <ModifiableParams
             minAimTime="600"
             maxAimTime="700"
             roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
+            minShots="1"
+            maxShots="2"
             resetTime="400"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_MP7_BurstFireExt">
         <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
         <ModifiableParams
             minAimTime="700"
             maxAimTime="900"
             roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
+            minShots="1"
+            maxShots="2"
             resetTime="500"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
 <!-- MONSOON SQUAD -->
 
     <!-- QBZ-95 DAIYAN -->
@@ -2523,7 +2519,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_QBZ95_BurstFireClose">
         <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
         <ModifiableParams
@@ -2537,7 +2533,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_QBZ95_BurstFireMed">
         <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
         <ModifiableParams
@@ -2551,35 +2547,35 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_QBZ95_BurstFireFar">
         <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
         <ModifiableParams
             minAimTime="600"
             maxAimTime="700"
             roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
+            minShots="1"
+            maxShots="3"
             resetTime="400"
             accuracyAdd="25"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_QBZ95_BurstFireExt">
         <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
         <ModifiableParams
             minAimTime="700"
             maxAimTime="900"
             roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
+            minShots="1"
+            maxShots="3"
             resetTime="500"
             accuracyAdd="25"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <!-- QBZ-97 JIANGYU -->
 
     <AttackType name="GFL_QBZ97_BurstFireNear">
@@ -2595,7 +2591,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_QBZ97_BurstFireClose">
         <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
         <ModifiableParams
@@ -2609,7 +2605,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_QBZ97_BurstFireMed">
         <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
         <ModifiableParams
@@ -2623,29 +2619,29 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_QBZ97_BurstFireFar">
         <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
         <ModifiableParams
             minAimTime="600"
             maxAimTime="700"
             roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
+            minShots="1"
+            maxShots="3"
             resetTime="400"
             accuracyAdd="25"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_QBZ97_BurstFireExt">
         <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
         <ModifiableParams
             minAimTime="700"
             maxAimTime="900"
             roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
+            minShots="1"
+            maxShots="3"
             resetTime="500"
             accuracyAdd="25"
             followupShotAccuracyAdd="0"
@@ -2653,7 +2649,7 @@
     </AttackType>
 
     <!-- CS/LS06 ZHAOHUI -->
-    
+
     <AttackType name="GFL_CSLS06_RapidFireNear">
         <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
         <ModifiableParams
@@ -2667,7 +2663,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_CSLS06_RapidFireClose">
         <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
         <ModifiableParams
@@ -2681,7 +2677,7 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_CSLS06_BurstFireMed">
         <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
         <ModifiableParams
@@ -2695,94 +2691,22 @@
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_CSLS06_BurstFireFar">
         <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
         <ModifiableParams
             minAimTime="600"
             maxAimTime="700"
             roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
+            minShots="1"
+            maxShots="3"
             resetTime="400"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
-    
+
     <AttackType name="GFL_CSLS06_BurstFireExt">
-        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
-        <ModifiableParams
-            minAimTime="700"
-            maxAimTime="900"
-            roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
-            resetTime="500"
-            accuracyAdd="0"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-    
-    <!-- CZ75 FAYE -->
-    
-    <AttackType name="GFL_CZ75_MozambiqueDrillNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
-        <ModifiableParams
-            minAimTime="180"
-            maxAimTime="200"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="500"
-            accuracyAdd="10"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-    
-    <AttackType name="GFL_CZ75_MozambiqueDrillClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
-        <ModifiableParams
-            minAimTime="200"
-            maxAimTime="200"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="500"
-            accuracyAdd="10"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-    
-    <AttackType name="GFL_CZ75_AimedFireMed">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
-        <ModifiableParams
-            minAimTime="300"
-            maxAimTime="500"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="500"
-            accuracyAdd="0"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-    
-    <AttackType name="GFL_CZ75_AimedFireFar">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
-        <ModifiableParams
-            minAimTime="600"
-            maxAimTime="700"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="500"
-            accuracyAdd="0"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-    
-    <AttackType name="GFL_CZ75_AimedFireExt">
         <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
         <ModifiableParams
             minAimTime="700"
@@ -2796,8 +2720,80 @@
         />
     </AttackType>
 
+    <!-- CZ75 FAYE -->
+
+    <AttackType name="GFL_CZ75_MozambiqueDrillNear">
+        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
+        <ModifiableParams
+            minAimTime="180"
+            maxAimTime="200"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="3"
+            resetTime="500"
+            accuracyAdd="10"
+            followupShotAccuracyAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_CZ75_MozambiqueDrillClose">
+        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
+        <ModifiableParams
+            minAimTime="200"
+            maxAimTime="200"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="3"
+            resetTime="500"
+            accuracyAdd="10"
+            followupShotAccuracyAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_CZ75_AimedFireMed">
+        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
+        <ModifiableParams
+            minAimTime="300"
+            maxAimTime="500"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="3"
+            resetTime="500"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_CZ75_AimedFireFar">
+        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
+        <ModifiableParams
+            minAimTime="600"
+            maxAimTime="700"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="2"
+            resetTime="500"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_CZ75_AimedFireExt">
+        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
+        <ModifiableParams
+            minAimTime="700"
+            maxAimTime="900"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="2"
+            resetTime="500"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+        />
+    </AttackType>
+
 <!-- For Suppression -->
-    
+
     <AttackType name="GFL_AreaSuppression_Auto">
         <ModifiableParams
             minAimTime="250"

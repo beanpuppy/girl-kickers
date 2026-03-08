@@ -608,7 +608,7 @@
         <eqp name="GFL-WEAP-WA2000" />
 
         <!-- Pistols -->
-        <eqp name="M9 Pistol" />
+        <eqp name="G17 Pistol CIA BOps" />
 
         <!-- Armor -->
         <eqp name="GFL_RecFrame" />
@@ -2039,9 +2039,6 @@
     <Bind to="GFL-DOLL-CZ75">
         <eqp name="GFL-WEAP-CZ75" />
         <eqp name="GFL-GEAR-MEDIC-GRENADE" />
-
-        <!-- Pistols -->
-        <eqp name="M9 Pistol" />
 
         <!-- Armor -->
         <eqp name="GFL_RecFrame" />

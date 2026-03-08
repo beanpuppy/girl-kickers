@@ -220,7 +220,7 @@
 
     <Firearm
         name="GFL-WEAP-PA15"
-        inventoryBinding="SecondaryWeapon"
+        inventoryBinding="PrimaryWeapon"
         category="pistol"
         unlockCost="0"
         tooltip="@WEAP-PA15-NAME"
@@ -233,7 +233,7 @@
 
         <RenderObject3D
             model="data/models/signatures/pa15.khm"
-            attachSlot="prop_hip_pistol"
+            attachSlot="prop_sidearm"
             skipGOSSAO="true"
             diffuseTex="data/models/signatures/pa15.dds"
         />
@@ -310,7 +310,7 @@
 
     <Firearm
         name="GFL-WEAP-PA15-SUP"
-        inventoryBinding="SecondaryWeaponMuzzle"
+        inventoryBinding="PrimaryWeaponMuzzle"
         category="pistol"
         unlockCost="0"
         tooltip="@WEAP-PA15-NAME"
@@ -321,7 +321,7 @@
         <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
         <ConcealmentModifier add="0" />
 
-        <RenderObject3D model="data/models/signatures/pa15.khm" attachSlot="prop_hip_pistol" skipGOSSAO="true" diffuseTex="data/models/signatures/pa15.dds"/>
+        <RenderObject3D model="data/models/signatures/pa15.khm" attachSlot="prop_sidearm" skipGOSSAO="true" diffuseTex="data/models/signatures/pa15.dds"/>
         <RenderObject3D model="data/models/weapons/attachments/silencer_01.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/silencer_01a.dds"/>
 
         <ModifiableParams
@@ -371,10 +371,10 @@
         </AttackTypes>
 
         <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Pistol">
-            <Flare particles="FX_MUZZLE_FLASH_PISTOL_05" />
-            <Flare particles="FX_MUZZLE_FLASH_PISTOL_06" />
-            <Flare particles="FX_MUZZLE_FLASH_PISTOL_07" />
-            <Flare particles="FX_MUZZLE_FLASH_PISTOL_08" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_01" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_02" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_03" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_04" />
         </MuzzleFlash>
 
         <Sounds>
@@ -466,16 +466,16 @@
         />
 
         <AttackTypes>
-            <AttackType name="GFL_AN94_HyperburstNear" rangeMeters="8" />
-            <AttackType name="GFL_AN94_HyperburstClose" rangeMeters="16" />
-            <AttackType name="GFL_AN94_HyperburstMed" rangeMeters="28" />
+            <AttackType name="GFL_AN94_HyperBurstNear" rangeMeters="8" />
+            <AttackType name="GFL_AN94_HyperBurstClose" rangeMeters="16" />
+            <AttackType name="GFL_AN94_HyperBurstMed" rangeMeters="28" />
             <AttackType name="GFL_AN94_HyperBurstFar" rangeMeters="52" />
             <AttackType name="GFL_AN94_HyperBurstExt" rangeMeters="9999" />
 
             <!-- For testing purposes -->
-            <!-- <AttackType name="GFL_AN94_HyperburstNear" rangeMeters="7" />
-            <AttackType name="GFL_AN94_HyperburstClose" rangeMeters="9" />
-            <AttackType name="GFL_AN94_HyperburstMed" rangeMeters="12" />
+            <!-- <AttackType name="GFL_AN94_HyperBurstNear" rangeMeters="7" />
+            <AttackType name="GFL_AN94_HyperBurstClose" rangeMeters="9" />
+            <AttackType name="GFL_AN94_HyperBurstMed" rangeMeters="12" />
             <AttackType name="GFL_AN94_HyperBurstFar" rangeMeters="17" />
             <AttackType name="GFL_AN94_HyperBurstExt" rangeMeters="9999" /> -->
         </AttackTypes>
@@ -571,9 +571,9 @@
         />
 
         <AttackTypes>
-            <AttackType name="GFL_AN94_HyperburstNear" rangeMeters="8" />
-            <AttackType name="GFL_AN94_HyperburstClose" rangeMeters="16" />
-            <AttackType name="GFL_AN94_HyperburstMed" rangeMeters="28" />
+            <AttackType name="GFL_AN94_HyperBurstNear" rangeMeters="8" />
+            <AttackType name="GFL_AN94_HyperBurstClose" rangeMeters="16" />
+            <AttackType name="GFL_AN94_HyperBurstMed" rangeMeters="28" />
             <AttackType name="GFL_AN94_HyperBurstFar" rangeMeters="52" />
             <AttackType name="GFL_AN94_HyperBurstExt" rangeMeters="9999" />
         </AttackTypes>
@@ -1240,7 +1240,7 @@
 
         <Params
             caliberInfoText="@firearm_caliber_762x51_name"
-            operationInfoText="@firearm_operation_semifull_name"
+            operationInfoText="@firearm_operation_semiauto_name"
             ejectingShellEntity="BulletCasingLarge"
             magazineEntity="m4_mag"
             ai_rangeMin="1.0"
@@ -1312,7 +1312,7 @@
             model="data/models/signatures/ump45.khm"
             attachSlot="prop_front_rifle"
             skipGOSSAO="true"
-            diffuseTex="data/models/signatures/g28.dds"
+            diffuseTex="data/models/signatures/ump45.dds"
         />
 
         <ModifiableParams
@@ -1405,7 +1405,7 @@
             model="data/models/signatures/ump45.khm"
             attachSlot="prop_front_rifle"
             skipGOSSAO="true"
-            diffuseTex="data/models/signatures/g28.dds"
+            diffuseTex="data/models/signatures/ump45.dds"
         />
         <RenderObject3D
             model="data/models/weapons/attachments/silencer_01.khm"
@@ -1453,10 +1453,10 @@
         </AttackTypes>
 
         <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Pistol">
-            <Flare particles="FX_MUZZLE_FLASH_PISTOL_05" />
-            <Flare particles="FX_MUZZLE_FLASH_PISTOL_06" />
-            <Flare particles="FX_MUZZLE_FLASH_PISTOL_07" />
-            <Flare particles="FX_MUZZLE_FLASH_PISTOL_08" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_01" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_02" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_03" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_04" />
         </MuzzleFlash>
 
         <Sounds>
@@ -1501,7 +1501,7 @@
             model="data/models/signatures/ump9.khm"
             attachSlot="prop_front_rifle"
             skipGOSSAO="true"
-            diffuseTex="data/models/signatures/g28.dds"
+            diffuseTex="data/models/signatures/ump9.dds"
         />
 
         <ModifiableParams
@@ -1595,7 +1595,7 @@
             model="data/models/signatures/ump9.khm"
             attachSlot="prop_front_rifle"
             skipGOSSAO="true"
-            diffuseTex="data/models/signatures/g28.dds"
+            diffuseTex="data/models/signatures/ump9.dds"
         />
         <RenderObject3D
             model="data/models/weapons/attachments/silencer_01.khm"
@@ -1644,10 +1644,10 @@
         </AttackTypes>
 
         <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Pistol">
-            <Flare particles="FX_MUZZLE_FLASH_PISTOL_05" />
-            <Flare particles="FX_MUZZLE_FLASH_PISTOL_06" />
-            <Flare particles="FX_MUZZLE_FLASH_PISTOL_07" />
-            <Flare particles="FX_MUZZLE_FLASH_PISTOL_08" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_01" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_02" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_03" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_04" />
         </MuzzleFlash>
 
         <Sounds>
@@ -2389,7 +2389,7 @@
             caliberInfoText="@firearm_caliber_762x39_name"
             operationInfoText="@firearm_operation_semifull_name"
             ejectingShellEntity="BulletCasingLarge"
-            magazineEntity="m4_mag"
+            magazineEntity="type56_mag"
             ai_rangeMin="1.0"
             ai_rangeOptimal="15.0"
             ai_rangeMax="45.0"
@@ -2494,7 +2494,7 @@
             caliberInfoText="@firearm_caliber_762x39_name"
             operationInfoText="@firearm_operation_semifull_name"
             ejectingShellEntity="BulletCasingLarge"
-            magazineEntity="m4_mag"
+            magazineEntity="type56_mag"
             ai_rangeMin="1.0"
             ai_rangeOptimal="15.0"
             ai_rangeMax="45.0"
@@ -2710,11 +2710,11 @@
         animationSet="pistol"
     >
         <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
-        <ConcealmentModifier add="-2" />
+        <ConcealmentModifier add="0" />
 
         <RenderObject3D
             model="data/models/signatures/curva.khm"
-            attachSlot="prop_hip_pistol"
+            attachSlot="prop_sidearm"
             skipGOSSAO="true"
             diffuseTex="data/models/signatures/curva.dds"
         />
@@ -2799,11 +2799,11 @@
         animationSet="pistol"
     >
         <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
-        <ConcealmentModifier add="-2" />
+        <ConcealmentModifier add="0" />
 
         <RenderObject3D
             model="data/models/signatures/curva.khm"
-            attachSlot="prop_hip_pistol"
+            attachSlot="prop_sidearm"
             skipGOSSAO="true"
             diffuseTex="data/models/signatures/curva.dds"
         />
@@ -2854,10 +2854,10 @@
         </AttackTypes>
 
         <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Pistol">
-            <Flare particles="FX_MUZZLE_FLASH_PISTOL_05" />
-            <Flare particles="FX_MUZZLE_FLASH_PISTOL_06" />
-            <Flare particles="FX_MUZZLE_FLASH_PISTOL_07" />
-            <Flare particles="FX_MUZZLE_FLASH_PISTOL_08" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_01" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_02" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_03" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_04" />
         </MuzzleFlash>
 
         <Sounds>
@@ -3449,10 +3449,10 @@
         </AttackTypes>
 
         <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Pistol">
-            <Flare particles="FX_MUZZLE_FLASH_PISTOL_05" />
-            <Flare particles="FX_MUZZLE_FLASH_PISTOL_06" />
-            <Flare particles="FX_MUZZLE_FLASH_PISTOL_07" />
-            <Flare particles="FX_MUZZLE_FLASH_PISTOL_08" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_01" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_02" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_03" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_04" />
         </MuzzleFlash>
 
         <Sounds>
@@ -3492,7 +3492,7 @@
         animationSet="rifle"
     >
         <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
-        <ConcealmentModifier add="-4" />
+        <ConcealmentModifier add="-6" />
 
         <RenderObject3D
             model="data/models/signatures/vsk94.khm"
@@ -3554,6 +3554,7 @@
             <Flare particles="FX_MUZZLE_FLASH_RIFLE_05" />
             <Flare particles="FX_MUZZLE_FLASH_RIFLE_06" />
             <Flare particles="FX_MUZZLE_FLASH_RIFLE_07" />
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_08" />
         </MuzzleFlash>
 
         <Sounds>
@@ -3990,8 +3991,8 @@
         img="data/models/signatures/akalfa_ui.dds"
         animationSet="rifle"
     >
-        <MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0" />
-        <ConcealmentModifier add="-2" />
+        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="-4" />
 
         <RenderObject3D
             model="data/models/signatures/akalfa.khm"
@@ -4083,8 +4084,8 @@
         img="data/models/signatures/akalfa_ui.dds"
         animationSet="rifle"
     >
-        <MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0" />
-        <ConcealmentModifier add="-2" />
+        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="-4" />
 
         <RenderObject3D
             model="data/models/signatures/akalfa.khm"
@@ -4337,6 +4338,7 @@
             <Flare particles="FX_MUZZLE_FLASH_PISTOL_01" />
             <Flare particles="FX_MUZZLE_FLASH_PISTOL_02" />
             <Flare particles="FX_MUZZLE_FLASH_PISTOL_03" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_04" />
         </MuzzleFlash>
 
         <Sounds>
@@ -4427,9 +4429,10 @@
         </AttackTypes>
 
         <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Pistol">
-            <Flare particles="FX_MUZZLE_FLASH_PISTOL_05" />
-            <Flare particles="FX_MUZZLE_FLASH_PISTOL_06" />
-            <Flare particles="FX_MUZZLE_FLASH_PISTOL_07" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_01" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_02" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_03" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_04" />
         </MuzzleFlash>
 
         <Sounds>
@@ -4918,10 +4921,10 @@
         </AttackTypes>
 
         <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Pistol">
-            <Flare particles="FX_MUZZLE_FLASH_PISTOL_05" />
-            <Flare particles="FX_MUZZLE_FLASH_PISTOL_06" />
-            <Flare particles="FX_MUZZLE_FLASH_PISTOL_07" />
-            <Flare particles="FX_MUZZLE_FLASH_PISTOL_08" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_01" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_02" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_03" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_04" />
         </MuzzleFlash>
 
         <Sounds>
@@ -4946,7 +4949,7 @@
 
     <Firearm
         name="GFL-WEAP-CZ75"
-        inventoryBinding="SecondaryWeapon"
+        inventoryBinding="PrimaryWeapon"
         category="pistol"
         unlockCost="0"
         tooltip="@WEAP-CZ75-NAME"
@@ -4959,7 +4962,7 @@
 
         <RenderObject3D
             model="data/models/signatures/cz75.khm"
-            attachSlot="prop_hip_pistol"
+            attachSlot="prop_sidearm"
             skipGOSSAO="true"
             diffuseTex="data/models/signatures/cz75.dds"
         />
@@ -5035,7 +5038,7 @@
     </Bind>
     <Firearm
         name="GFL-WEAP-CZ75-SUP"
-        inventoryBinding="SecondaryWeaponMuzzle"
+        inventoryBinding="PrimaryWeaponMuzzle"
         category="pistol"
         unlockCost="0"
         tooltip="@WEAP-CZ75-NAME"
@@ -5048,7 +5051,7 @@
 
         <RenderObject3D
             model="data/models/signatures/cz75.khm"
-            attachSlot="prop_hip_pistol"
+            attachSlot="prop_sidearm"
             skipGOSSAO="true"
             diffuseTex="data/models/signatures/cz75.dds"
         />
@@ -5099,10 +5102,10 @@
         </AttackTypes>
 
         <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Pistol">
-            <Flare particles="FX_MUZZLE_FLASH_PISTOL_05" />
-            <Flare particles="FX_MUZZLE_FLASH_PISTOL_06" />
-            <Flare particles="FX_MUZZLE_FLASH_PISTOL_07" />
-            <Flare particles="FX_MUZZLE_FLASH_PISTOL_08" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_01" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_02" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_03" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_04" />
         </MuzzleFlash>
 
         <Sounds>

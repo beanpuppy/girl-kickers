@@ -2,7 +2,7 @@
     <wp
         type="THROW_GRENADE"
         equipment="GFL-GEAR-MEDIC-GRENADE"
-        ui_prefix="data/textures/gui_ingame/waypoints/smoke_grenade"
+        ui_prefix="data/textures/gui_ingame/waypoints/medic_grenade"
         ttip="@GEAR-MEDIC-GRENADE-TTIP"
         ttip_disabled="@menu_generic_cannot_use"
         ttip_empty="@menu_game_medic_grenade_none_ttip"

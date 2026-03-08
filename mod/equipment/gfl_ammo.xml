@@ -206,7 +206,7 @@
     >
         <!-- Rounds per Second should reflect the actual RPM of the gun/60. -->
         <Params
-            roundsPerSecond="6"
+            roundsPerSecond="4"
             audibleSoundRadius="50"
             physicsImpactForce="1.5"
             suppressionScale="3.0"
@@ -794,7 +794,7 @@
         img="data/models/weapons/attachments/m855_ammo_ui.dds"
     >
         <Params
-            roundsPerSecond="10"
+            roundsPerSecond="11.7"
             audibleSoundRadius="50"
             physicsImpactForce="1.5"
             suppressionScale="3.5"
@@ -898,7 +898,7 @@
     >
 
         <Params
-            roundsPerSecond="10.8"
+            roundsPerSecond="12.5"
             audibleSoundRadius="50"
             physicsImpactForce="1.5"
             suppressionScale="3.0"
@@ -1064,6 +1064,7 @@
 
     <Ammo
         name="3006LAIT_GFL_M1903"
+        unlockCost="6"
         tooltip="@ammo_3006_lait_name"
         description="@ammo_3006_lait_desc"
         img="data/models/weapons/attachments/m855_ammo_ui.dds"
@@ -1197,6 +1198,7 @@
 
     <Ammo
         name="300WMMACCHIATO_GFL_WA2000"
+        unlockCost="6"
         tooltip="@ammo_300wm_macchiato_name"
         description="@ammo_300wm_macchiato_desc"
         img="data/models/weapons/attachments/m855_ammo_ui.dds"
@@ -1645,7 +1647,7 @@
     >
         <!-- Rounds per Second should reflect the actual RPM of the gun/60. -->
         <Params
-            roundsPerSecond="4"
+            roundsPerSecond="3"
             audibleSoundRadius="50"
             physicsImpactForce="1.5"
             suppressionScale="6.0"
@@ -2033,7 +2035,7 @@
 
         <Params
             roundsPerSecond="11.7"
-            audibleSoundRadius="100"
+            audibleSoundRadius="30"
             physicsImpactForce="4.0"
             silenced="1"
         >
@@ -2099,6 +2101,7 @@
 
     <Ammo
         name="12GARFSLUG_GFL_DP12"
+        unlockCost="6"
         tooltip="@ammo_12grfslug_name"
         description="@ammo_12grfslug_desc"
         img="data/models/weapons/attachments/m162_buckshot_ammo_ui.dds"
