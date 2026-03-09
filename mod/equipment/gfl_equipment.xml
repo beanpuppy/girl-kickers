@@ -1,7 +1,10 @@
 <Equipment>
-    <FeetOfSteel name="GFL_FeetOfTitanium" inventoryBinding="SupportGear3">
+
+<!-- Basic Girlkick -->
+
+    <FeetOfSteel name="GFL_FeetOfGunmetal" inventoryBinding="SupportGear3">
         <ModifiableParams
-            efficiencyPercent="300"
+            efficiencyPercent="200"
             audibleSoundRadius="12.0"
             timePerKickMsec="1000"
             damagePerKick="80"
@@ -9,4 +12,354 @@
         />
         <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
     </FeetOfSteel>
+
+<!-- Voymastina Girlkick -->
+
+    <FeetOfSteel name="GFL_FeetOfTitanium" inventoryBinding="SupportGear3">
+        <ModifiableParams
+            efficiencyPercent="200"
+            audibleSoundRadius="16.0"
+            timePerKickMsec="800"
+            damagePerKick="200"
+            damageType="2"
+        />
+        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
+    </FeetOfSteel>
+
+<!-- Doll Lockpick -->
+
+    <Lockpick name="GFL_Lockpick" inventoryBinding="SupportGear2"
+            tooltip="@support_gear_lockpick_name"
+            img="data/models/equipment/lockpick_ui.dds"
+
+            animationSet="generic_device"
+            soundUse="lockpick_use"
+            crouchOnUse="true"
+        >
+        <!-- the efficiency percent is multiplied by the door's lockpick time to get the final lockpicking time -->
+        <ModifiableParams
+            efficiencyPercent="400"
+            changeInTime="100"
+            changeOutTime="100"
+            audibleSoundRadius="1.5"
+        />
+        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+    </Lockpick>
+
+<!-- Recreation Frame -->
+
+    <Armor
+        name="GFL_RecFrame"
+        inventoryBinding="Armor"
+        unlockCost="0"
+        tooltip="@armor_gfl_recframe_name"
+        description="@armor_recframe_desc"
+        img="data/models/equipment/recreationframe_ui.dds"
+    >
+        <MobilityModifiers moveSpeedModifierPercent="20" turnSpeedModifierPercent="10" />
+        <ConcealmentModifier add="8" />
+
+        <Params>
+            <ProtectionArc
+                degrees="90"
+                coveragePercent="10"
+                piercingProtectionLevel="90"
+            />
+            <ProtectionArc
+                degrees="270"
+                coveragePercent="10"
+                piercingProtectionLevel="90"
+            />
+            <ProtectionArc
+                degrees="360"
+                coveragePercent="10"
+                piercingProtectionLevel="90"
+            />
+        </Params>
+    </Armor>
+
+<!-- Law Enforcement Frame Mk.II -->
+
+    <Armor
+        name="GFL_LawFrame"
+        inventoryBinding="Armor"
+        unlockCost="0"
+        tooltip="@armor_gfl_lawframe_name"
+        description="@armor_gfl_lawframe_desc"
+        img="data/models/equipment/lawframe_ui.dds"
+    >
+        <MobilityModifiers moveSpeedModifierPercent="12" turnSpeedModifierPercent="10" />
+        <ConcealmentModifier add="0" />
+
+        <Params>
+            <ProtectionArc
+                degrees="90"
+                coveragePercent="50"
+                piercingProtectionLevel="40"
+            />
+            <ProtectionArc
+                degrees="270"
+                coveragePercent="30"
+                piercingProtectionLevel="40"
+            />
+            <ProtectionArc
+                degrees="360"
+                coveragePercent="50"
+                piercingProtectionLevel="40"
+            />
+        </Params>
+    </Armor>
+
+<!-- B.R.I.E.F. Combat Frame -->
+
+    <Armor
+        name="GFL_CombatFrame"
+        inventoryBinding="Armor"
+        unlockCost="0"
+        tooltip="@armor_gfl_combatframe_name"
+        description="@armor_gfl_combatframe_desc"
+        img="data/models/equipment/briefframe_ui.dds"
+    >
+        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="0" />
+
+        <Params>
+            <ProtectionArc
+                degrees="90"
+                coveragePercent="50"
+                piercingProtectionLevel="50"
+            />
+            <ProtectionArc
+                degrees="270"
+                coveragePercent="30"
+                piercingProtectionLevel="40"
+            />
+            <ProtectionArc
+                degrees="360"
+                coveragePercent="50"
+                piercingProtectionLevel="50"
+            />
+        </Params>
+    </Armor>
+
+
+<!-- I.O.P. Elite Frame -->
+
+    <Armor
+        name="GFL_EliteFrame"
+        inventoryBinding="Armor"
+        unlockCost="9"
+        tooltip="@armor_gfl_eliteframe_name"
+        description="@armor_gfl_eliteframe_desc"
+        img="data/models/equipment/iopframe_ui.dds"
+    >
+        <MobilityModifiers moveSpeedModifierPercent="5" turnSpeedModifierPercent="5" />
+        <ConcealmentModifier add="0" />
+
+        <Params>
+            <ProtectionArc
+                degrees="84"
+                coveragePercent="50"
+                piercingProtectionLevel="60"
+            />
+            <ProtectionArc
+                degrees="270"
+                coveragePercent="30"
+                piercingProtectionLevel="30"
+            />
+            <ProtectionArc
+                degrees="360"
+                coveragePercent="50"
+                piercingProtectionLevel="60"
+            />
+        </Params>
+    </Armor>
+
+
+<!-- High-Endurance Frame "Deichgraf"  -->
+
+    <Armor
+        name="GFL_GrafFrame"
+        inventoryBinding="Armor"
+        unlockCost="12"
+        tooltip="@armor_gfl_grafframe_name"
+        description="@armor_gfl_grafframe_desc"
+        img="data/models/equipment/heframe_ui.dds"
+    >
+        <MobilityModifiers moveSpeedModifierPercent="-20" turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="-8" />
+
+        <Params>
+            <ProtectionArc
+                degrees="90"
+                coveragePercent="60"
+                piercingProtectionLevel="60"
+            />
+            <ProtectionArc
+                degrees="270"
+                coveragePercent="40"
+                piercingProtectionLevel="50"
+            />
+            <ProtectionArc
+                degrees="360"
+                coveragePercent="60"
+                piercingProtectionLevel="60"
+            />
+        </Params>
+    </Armor>
+
+<!-- Nosorog Reactive Endoskeleton  -->
+
+    <Armor
+        name="GFL_RhinoFrame"
+        inventoryBinding="Armor"
+        unlockCost="0" unlockCostBH="1"
+        tooltip="@armor_gfl_rhinoframe_name"
+        description="@armor_gfl_rhinoframe_desc"
+        img="data/models/equipment/rhinoframe_ui.dds"
+    >
+        <MobilityModifiers moveSpeedModifierPercent="-50" turnSpeedModifierPercent="-30" />
+        <ConcealmentModifier add="-20" />
+
+        <Params>
+            <ProtectionArc
+                degrees="70"
+                coveragePercent="80"
+                piercingProtectionLevel="80"
+            />
+            <ProtectionArc
+                degrees="270"
+                coveragePercent="10"
+                piercingProtectionLevel="40"
+            />
+            <ProtectionArc
+                degrees="360"
+                coveragePercent="10"
+                piercingProtectionLevel="40"
+            />
+        </Params>
+    </Armor>
+
+<!-- Basic Core -->
+
+    <Helmet
+        name="GFL_BasicCore"
+        inventoryBinding="Helmet"
+        unlockCost="0"
+        tooltip="@helmet_gfl_basic_name"
+        description="@helmet_gfl_basic_desc"
+        img="data/models/dolls/attachments/basiccore_ui.dds"
+    >
+        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="1" />
+        <Params nvgByDefault="true">
+            <ProtectionArc
+                degrees="360"
+                coveragePercent="50"
+                piercingProtectionLevel="60"
+            />
+        </Params>
+    </Helmet>
+
+<!-- Vanguard Core -->
+
+    <Helmet
+        name="GFL_VanguardCore"
+        inventoryBinding="Helmet"
+        unlockCost="0"
+        tooltip="@helmet_gfl_vanguard_name"
+        description="@helmet_gfl_vanguard_desc"
+        img="data/models/dolls/attachments/vanguard_ui.dds"
+    >
+        <MobilityModifiers moveSpeedModifierPercent="30" turnSpeedModifierPercent="-20" />
+        <ConcealmentModifier add="0" />
+        <Params nvgByDefault="true">
+            <ProtectionArc
+                degrees="360"
+                coveragePercent="30"
+                piercingProtectionLevel="60"
+            />
+        </Params>
+    </Helmet>
+
+<!-- Sentinel Core -->
+
+    <Helmet
+        name="GFL_SentinelCore"
+        inventoryBinding="Helmet"
+        unlockCost="0"
+        tooltip="@helmet_gfl_sentinel_name"
+        description="@helmet_gfl_sentinel_desc"
+        img="data/models/dolls/attachments/sentinel_ui.dds"
+    >
+        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="40" />
+        <ConcealmentModifier add="0" />
+        <Params nvgByDefault="true">
+            <ProtectionArc
+                degrees="360"
+                coveragePercent="20"
+                piercingProtectionLevel="60"
+            />
+        </Params>
+    </Helmet>
+
+<!-- Bulwark Core -->
+
+    <Helmet
+        name="GFL_BulwarkCore"
+        inventoryBinding="Helmet"
+        unlockCost="0"
+        tooltip="@helmet_gfl_bulwark_name"
+        description="@helmet_gfl_bulwark_desc"
+        img="data/models/dolls/attachments/bulwark_ui.dds"
+    >
+        <MobilityModifiers moveSpeedModifierPercent="-30" turnSpeedModifierPercent="-20" />
+        <ConcealmentModifier add="0" />
+        <Params nvgByDefault="true">
+            <ProtectionArc
+                degrees="360"
+                coveragePercent="80"
+                piercingProtectionLevel="90"
+            />
+        </Params>
+    </Helmet>
+
+<!-- Support Core -->
+
+    <Helmet
+        name="GFL_SupportCore"
+        inventoryBinding="Helmet"
+        unlockCost="0"
+        tooltip="@helmet_gfl_support_name"
+        description="@helmet_gfl_support_desc"
+        img="data/models/dolls/attachments/support_ui.dds"
+    >
+        <MobilityModifiers moveSpeedModifierPercent="15" turnSpeedModifierPercent="25" />
+        <ConcealmentModifier add="2" />
+        <Params nvgByDefault="true">
+            <ProtectionArc
+                degrees="360"
+                coveragePercent="30"
+                piercingProtectionLevel="60"
+            />
+        </Params>
+    </Helmet>
+
+<!-- Night Eyes TIS -->
+
+    <HelmetNVG
+            name="GFL_NightVision"
+            inventoryBinding="HelmetNVG"
+            tooltip="@helmet_gfl_nvg1_name"
+            description="@helmet_gfl_nvg1_desc"
+            img="data/models/dolls/attachments/nighteyes_ui.dds"
+        >
+        <ModifiableParams
+            fovDegrees="90"
+            fovRadiusMeters="0.42"
+            fovRangeMeters="999"
+        />
+    </HelmetNVG>
+
+
 </Equipment>

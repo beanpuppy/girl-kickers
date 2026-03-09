@@ -491,7 +491,7 @@
 
     </Item> <!-- End Tab Container 0 -->
 
-    <!-- Tab Container 1 (tabs 5-5) -->
+    <!-- Tab Container 1 (tabs 5-6) -->
     <Item
             origin="0 -72"
             name="girl_tab_menu_1"
@@ -607,7 +607,6 @@
                 </StaticImage>
             </StaticImage>
         </Checkbox>
-
     </Item> <!-- End Tab Container 1 -->
 
     <Item origin="8 -144" name="unit_tab0" align="t" hidden="false">

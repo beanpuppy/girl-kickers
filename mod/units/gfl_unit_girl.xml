@@ -1,3 +1,8 @@
+<!-- DEPRECATED: DK2 has a hard limit of 32 classes per unit. GIRL currently
+     has 30 dolls and cannot grow further. Post pol-03 plan: repurpose GIRL as
+     a home for squadless dolls (robella, lainie, etc.) and build a web utility
+     on github pages where players pick up to 32 dolls to generate a custom
+     unit add-on mod. -->
 <Units>
     <Unit
         name="GFL-UNIT-GIRL"

@@ -10,7 +10,7 @@
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-        <PhysicalParams health="275" />
+        <PhysicalParams health="100" />
 
         <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-AN94">
             <Id
@@ -19,23 +19,22 @@
                 gender="0"
                 voicePack="Alva-Voice"
             />
-            <FOV degrees="135" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="80.0" />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="40.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.5" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
             <Equipment>
                 <Item name="GFL-WEAP-AN94" />
-                <Item name="IronSights" />
-                <Item name="M9 Pistol" />
-                <Item name="IronSights_Pistol" />
-                <Item name="Flashbang" />
-                <Item name="Frag Grenade" />
-                <Item name="GFL_FeetOfTitanium" />
-                <Item name="GFL_ReactiveShielding" />
+                <Item name="scope_GFL_IronSights_Primary" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
             </Equipment>
         </Human>
     </Entity>
@@ -51,7 +50,7 @@
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-        <PhysicalParams health="300" />
+        <PhysicalParams health="150" />
 
         <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-AK15">
             <Id
@@ -60,23 +59,22 @@
                 gender="0"
                 voicePack="Voymastina-Voice"
             />
-            <FOV degrees="135" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="80.0" />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="40.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="3.2" max="10" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
             <Equipment>
                 <Item name="GFL-WEAP-AK15" />
-                <Item name="IronSights" />
-                <Item name="M9 Pistol" />
-                <Item name="IronSights_Pistol" />
-                <Item name="Flashbang" />
-                <Item name="Frag Grenade" />
+                <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfTitanium" />
-                <Item name="GFL_ReactiveShielding" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
             </Equipment>
         </Human>
     </Entity>
@@ -92,7 +90,7 @@
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-        <PhysicalParams health="275" />
+        <PhysicalParams health="100" />
 
         <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-HK416">
             <Id
@@ -101,23 +99,22 @@
                 gender="0"
                 voicePack="Clukay-Voice"
             />
-            <FOV degrees="135" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="80.0" />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="40.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.5" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
             <Equipment>
                 <Item name="GFL-WEAP-HK416" />
-                <Item name="IronSights" />
-                <Item name="M9 Pistol" />
-                <Item name="IronSights_Pistol" />
-                <Item name="Flashbang" />
-                <Item name="Frag Grenade" />
-                <Item name="GFL_FeetOfTitanium" />
-                <Item name="GFL_ReactiveShielding" />
+                <Item name="scope_GFL_IronSights_Primary" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
             </Equipment>
         </Human>
     </Entity>
@@ -133,7 +130,7 @@
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-        <PhysicalParams health="175" />
+        <PhysicalParams health="100" />
 
         <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-G11">
             <Id
@@ -142,23 +139,22 @@
                 gender="0"
                 voicePack="Mechty-Voice"
             />
-            <FOV degrees="120" distanceMeters="999" eyeRadiusMeters="0.6" />
-            <Brain suppressionRecovery="60.0" />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="40.0" />
 
             <Mobility>
-                <MoveSpeed min="1.1" defaultMetersPerSec="2.5" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
             <Equipment>
                 <Item name="GFL-WEAP-G11" />
-                <Item name="IronSights" />
-                <Item name="M9 Pistol" />
-                <Item name="IronSights_Pistol" />
-                <Item name="Flashbang" />
-                <Item name="Frag Grenade" />
-                <Item name="FeetOfSteel" />
-                <Item name="GFL_ReactiveShielding" />
+                <Item name="scope_GFL_IronSights_Primary" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
             </Equipment>
         </Human>
     </Entity>
@@ -174,7 +170,7 @@
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-        <PhysicalParams health="175" />
+        <PhysicalParams health="100" />
 
         <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-G36K">
             <Id
@@ -183,23 +179,22 @@
                 gender="0"
                 voicePack="Andoris-Voice"
             />
-            <FOV degrees="120" distanceMeters="999" eyeRadiusMeters="0.6" />
-            <Brain suppressionRecovery="60.0" />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="40.0" />
 
             <Mobility>
-                <MoveSpeed min="1.1" defaultMetersPerSec="2.5" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
             <Equipment>
                 <Item name="GFL-WEAP-G36K" />
-                <Item name="IronSights" />
-                <Item name="M9 Pistol" />
-                <Item name="IronSights_Pistol" />
-                <Item name="Flashbang" />
-                <Item name="GFL-GEAR-MEDIC-GRENADE" />
-                <Item name="FeetOfSteel" />
-                <Item name="GFL_ReactiveShielding" />
+                <Item name="scope_GFL_IronSights_Primary" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
             </Equipment>
         </Human>
     </Entity>
@@ -215,7 +210,7 @@
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-        <PhysicalParams health="175" />
+        <PhysicalParams health="100" />
 
         <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-G28">
             <Id
@@ -224,23 +219,22 @@
                 gender="0"
                 voicePack="Biyoca-Voice"
             />
-            <FOV degrees="120" distanceMeters="999" eyeRadiusMeters="0.6" />
-            <Brain suppressionRecovery="60.0" />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="40.0" />
 
             <Mobility>
-                <MoveSpeed min="1.1" defaultMetersPerSec="2.5" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
             <Equipment>
                 <Item name="GFL-WEAP-G28" />
-                <Item name="IronSights" />
-                <Item name="M9 Pistol" />
-                <Item name="IronSights_Pistol" />
-                <Item name="Flashbang" />
-                <Item name="Frag Grenade" />
-                <Item name="FeetOfSteel" />
-                <Item name="GFL_ReactiveShielding" />
+                <Item name="scope_GFL_IronSights_Primary" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
             </Equipment>
         </Human>
     </Entity>
@@ -256,7 +250,7 @@
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-        <PhysicalParams health="250" />
+        <PhysicalParams health="100" />
 
         <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-UMP45">
             <Id
@@ -265,8 +259,8 @@
                 gender="0"
                 voicePack="Leva-Voice"
             />
-            <FOV degrees="135" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="80.0" />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="40.0" />
 
             <Mobility>
                 <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
@@ -275,13 +269,12 @@
 
             <Equipment>
                 <Item name="GFL-WEAP-UMP45" />
-                <Item name="IronSights" />
-                <Item name="M9 Pistol" />
-                <Item name="IronSights_Pistol" />
-                <Item name="Flashbang" />
-                <Item name="Frag Grenade" />
-                <Item name="FeetOfSteel" />
-                <Item name="GFL_ReactiveShielding" />
+                <Item name="scope_GFL_IronSights_Primary" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
             </Equipment>
         </Human>
     </Entity>
@@ -297,7 +290,7 @@
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-        <PhysicalParams health="250" />
+        <PhysicalParams health="100" />
 
         <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-UMP9">
             <Id
@@ -306,23 +299,22 @@
                 gender="0"
                 voicePack="Lenna-Voice"
             />
-            <FOV degrees="135" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="80.0" />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="40.0" />
 
             <Mobility>
                 <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
             <Equipment>
                 <Item name="GFL-WEAP-UMP9" />
-                <Item name="IronSights" />
-                <Item name="M9 Pistol" />
-                <Item name="IronSights_Pistol" />
-                <Item name="Flashbang" />
-                <Item name="Frag Grenade" />
-                <Item name="FeetOfSteel" />
-                <Item name="GFL_ReactiveShielding" />
+                <Item name="scope_GFL_IronSights_Primary" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
             </Equipment>
         </Human>
     </Entity>
@@ -338,7 +330,7 @@
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-        <PhysicalParams health="250" />
+        <PhysicalParams health="100" />
 
         <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-VECTOR">
             <Id
@@ -347,24 +339,23 @@
                 gender="0"
                 voicePack="Vector-Voice"
             />
-            <FOV degrees="135" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="80.0" />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="40.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.5" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
             <Equipment>
                 <Item name="GFL-WEAP-VECTOR" />
-                <Item name="IronSights" />
-                <Item name="M9 Pistol" />
-                <Item name="IronSights_Pistol" />
-                <Item name="Flashbang" />
-                <Item name="Frag Grenade" />
+                <Item name="scope_GFL_IronSights_Primary" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
                 <Item name="GFL-GEAR-VECTOR-GRENADE" />
-                <Item name="FeetOfSteel" />
-                <Item name="GFL_ReactiveShielding" />
             </Equipment>
         </Human>
     </Entity>
@@ -380,7 +371,7 @@
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-        <PhysicalParams health="225" />
+        <PhysicalParams health="100" />
 
         <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-M1903">
             <Id
@@ -389,23 +380,22 @@
                 gender="0"
                 voicePack="Springfield-Voice"
             />
-            <FOV degrees="135" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="80.0" />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="40.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.2" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
             <Equipment>
                 <Item name="GFL-WEAP-M1903" />
-                <Item name="IronSights" />
-                <Item name="M9 Pistol" />
-                <Item name="IronSights_Pistol" />
-                <Item name="Flashbang" />
-                <Item name="Frag Grenade" />
-                <Item name="GFL_FeetOfTitanium" />
-                <Item name="GFL_ReactiveShielding" />
+                <Item name="scope_GFL_IronSights_Primary" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
             </Equipment>
         </Human>
     </Entity>
@@ -421,7 +411,7 @@
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-        <PhysicalParams health="225" />
+        <PhysicalParams health="100" />
 
         <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-WA2000">
             <Id
@@ -430,23 +420,22 @@
                 gender="0"
                 voicePack="Macqiato-Voice"
             />
-            <FOV degrees="135" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="80.0" />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="40.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.2" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
             <Equipment>
                 <Item name="GFL-WEAP-WA2000" />
-                <Item name="IronSights" />
-                <Item name="M9 Pistol" />
-                <Item name="IronSights_Pistol" />
-                <Item name="Flashbang" />
-                <Item name="Frag Grenade" />
-                <Item name="FeetOfSteel" />
-                <Item name="GFL_ReactiveShielding" />
+                <Item name="scope_GFL_IronSights_Primary" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
             </Equipment>
         </Human>
     </Entity>
@@ -462,7 +451,7 @@
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-        <PhysicalParams health="250" />
+        <PhysicalParams health="100" />
 
         <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-G36">
             <Id
@@ -471,23 +460,22 @@
                 gender="0"
                 voicePack="Centaureissi-Voice"
             />
-            <FOV degrees="135" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="80.0" />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="40.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.5" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
             <Equipment>
                 <Item name="GFL-WEAP-G36" />
-                <Item name="IronSights" />
-                <Item name="M9 Pistol" />
-                <Item name="IronSights_Pistol" />
-                <Item name="Flashbang" />
-                <Item name="Frag Grenade" />
-                <Item name="FeetOfSteel" />
-                <Item name="GFL_ReactiveShielding" />
+                <Item name="scope_GFL_IronSights_Primary" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
             </Equipment>
         </Human>
     </Entity>
@@ -503,7 +491,7 @@
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-        <PhysicalParams health="225" />
+        <PhysicalParams health="100" />
 
         <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-XCR">
             <Id
@@ -512,23 +500,22 @@
                 gender="0"
                 voicePack="Sharkry-Voice"
             />
-            <FOV degrees="130" distanceMeters="999" eyeRadiusMeters="0.6" />
-            <Brain suppressionRecovery="60.0" />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="40.0" />
 
             <Mobility>
-                <MoveSpeed min="1.1" defaultMetersPerSec="2.5" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
             <Equipment>
                 <Item name="GFL-WEAP-XCR" />
-                <Item name="IronSights" />
-                <Item name="M9 Pistol" />
-                <Item name="IronSights_Pistol" />
-                <Item name="Flashbang" />
-                <Item name="Frag Grenade" />
-                <Item name="FeetOfSteel" />
-                <Item name="GFL_ReactiveShielding" />
+                <Item name="scope_GFL_IronSights_Primary" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
             </Equipment>
         </Human>
     </Entity>
@@ -544,7 +531,7 @@
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-        <PhysicalParams health="250" />
+        <PhysicalParams health="100" />
 
         <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-OTS14">
             <Id
@@ -553,23 +540,22 @@
                 gender="0"
                 voicePack="Groza-Voice"
             />
-            <FOV degrees="130" distanceMeters="999" eyeRadiusMeters="0.6" />
-            <Brain suppressionRecovery="90" />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="40.0" />
 
             <Mobility>
-                <MoveSpeed min="1.1" defaultMetersPerSec="2.5" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
             <Equipment>
                 <Item name="GFL-WEAP-OTS14" />
-                <Item name="IronSights" />
-                <Item name="M9 Pistol" />
-                <Item name="IronSights_Pistol" />
-                <Item name="Flashbang" />
-                <Item name="Frag Grenade" />
-                <Item name="GFL_FeetOfTitanium" />
-                <Item name="GFL_ReactiveShielding" />
+                <Item name="scope_GFL_IronSights_Primary" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
             </Equipment>
         </Human>
     </Entity>
@@ -585,7 +571,7 @@
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-        <PhysicalParams health="250" />
+        <PhysicalParams health="100" />
 
         <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-OM50">
             <Id
@@ -594,23 +580,22 @@
                 gender="0"
                 voicePack="Nemesis-Voice"
             />
-            <FOV degrees="135" distanceMeters="999" eyeRadiusMeters="0.6" />
-            <Brain suppressionRecovery="80" />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="40.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.2" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
             <Equipment>
                 <Item name="GFL-WEAP-OM50" />
-                <Item name="LPVO_6X" />
-                <Item name="M9 Pistol" />
-                <Item name="IronSights_Pistol" />
-                <Item name="Flashbang" />
-                <Item name="Frag Grenade" />
-                <Item name="FeetOfSteel" />
-                <Item name="GFL_ReactiveShielding" />
+                <Item name="scope_GFL_IronSights_Primary" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
             </Equipment>
         </Human>
     </Entity>
@@ -626,7 +611,7 @@
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-        <PhysicalParams health="300" />
+        <PhysicalParams health="100" />
 
         <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-HARE">
             <Id
@@ -635,20 +620,21 @@
                 gender="0"
                 voicePack="Charolic-Voice"
             />
-            <FOV degrees="130" distanceMeters="999" eyeRadiusMeters="0.6" />
-            <Brain suppressionRecovery="100" />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="100.0" />
 
             <Mobility>
-                <MoveSpeed min="2" defaultMetersPerSec="3.3" max="15" />
-                <TurnSpeed min="12" defaultMetersPerSec="18" max="30" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="3.5" max="10" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
             <Equipment>
                 <Item name="GFL-WEAP-HARE" />
-                <Item name="GFL-ARMOR-HARE" />
-                <Item name="Flashbang" />
-                <Item name="Frag Grenade" />
-                <Item name="GFL_FeetOfTitanium" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
             </Equipment>
         </Human>
     </Entity>
@@ -664,7 +650,7 @@
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-        <PhysicalParams health="225" />
+        <PhysicalParams health="100" />
 
         <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-CURVA">
             <Id
@@ -673,20 +659,22 @@
                 gender="0"
                 voicePack="Colphne-Voice"
             />
-            <FOV degrees="120" distanceMeters="999" eyeRadiusMeters="0.6" />
-            <Brain suppressionRecovery="60" />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="40.0" />
 
             <Mobility>
-                <MoveSpeed min="1.1" defaultMetersPerSec="2.5" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
             <Equipment>
                 <Item name="GFL-WEAP-CURVA" />
-                <Item name="Flashbang" />
-                <Item name="GFL-GEAR-MEDIC-GRENADE" />
-                <Item name="FeetOfSteel" />
-                <Item name="GFL_ReactiveShielding" />
+                <Item name="scope_GFL_IronSights_Secondary" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
             </Equipment>
         </Human>
     </Entity>
@@ -702,7 +690,7 @@
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-        <PhysicalParams health="225" />
+        <PhysicalParams health="100" />
 
         <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-VEPR12">
             <Id
@@ -711,23 +699,22 @@
                 gender="0"
                 voicePack="Vepley-Voice"
             />
-            <FOV degrees="120" distanceMeters="999" eyeRadiusMeters="0.6" />
-            <Brain suppressionRecovery="60" />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="40.0" />
 
             <Mobility>
-                <MoveSpeed min="1.1" defaultMetersPerSec="2.5" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
             <Equipment>
                 <Item name="GFL-WEAP-VEPR12" />
-                <Item name="IronSights" />
-                <Item name="M9 Pistol" />
-                <Item name="IronSights_Pistol" />
-                <Item name="Flashbang" />
-                <Item name="Frag Grenade" />
-                <Item name="GFL_FeetOfTitanium" />
-                <Item name="GFL_ReactiveShielding" />
+                <Item name="scope_GFL_IronSights_Primary" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
             </Equipment>
         </Human>
     </Entity>
@@ -743,7 +730,7 @@
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-        <PhysicalParams health="250" />
+        <PhysicalParams health="100" />
 
         <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-PKPSP">
             <Id
@@ -752,23 +739,22 @@
                 gender="0"
                 voicePack="Peritya-Voice"
             />
-            <FOV degrees="120" distanceMeters="999" eyeRadiusMeters="0.6" />
-            <Brain suppressionRecovery="60" />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="40.0" />
 
             <Mobility>
-                <MoveSpeed min="1.1" defaultMetersPerSec="2.5" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
             <Equipment>
                 <Item name="GFL-WEAP-PKPSP" />
-                <Item name="IronSights" />
-                <Item name="M9 Pistol" />
-                <Item name="IronSights_Pistol" />
-                <Item name="Flashbang" />
-                <Item name="Frag Grenade" />
-                <Item name="GFL_FeetOfTitanium" />
-                <Item name="GFL_ReactiveShielding" />
+                <Item name="scope_GFL_IronSights_Primary" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
             </Equipment>
         </Human>
     </Entity>
@@ -784,7 +770,7 @@
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-        <PhysicalParams health="225" />
+        <PhysicalParams health="100" />
 
         <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-SPAS12">
             <Id
@@ -793,23 +779,22 @@
                 gender="0"
                 voicePack="Sabrina-Voice"
             />
-            <FOV degrees="120" distanceMeters="999" eyeRadiusMeters="0.6" />
-            <Brain suppressionRecovery="60" />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="40.0" />
 
             <Mobility>
                 <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
             <Equipment>
                 <Item name="GFL-WEAP-SPAS12" />
-                <Item name="IronSights" />
-                <Item name="M9 Pistol" />
-                <Item name="IronSights_Pistol" />
-                <Item name="Flashbang" />
-                <Item name="Frag Grenade" />
-                <Item name="GFL_FeetOfTitanium" />
-                <Item name="GFL_ReactiveShielding" />
+                <Item name="scope_GFL_IronSights_Primary" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
             </Equipment>
         </Human>
     </Entity>
@@ -825,7 +810,7 @@
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-        <PhysicalParams health="225" />
+        <PhysicalParams health="100" />
 
         <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-TYPE97S">
             <Id
@@ -834,23 +819,22 @@
                 gender="0"
                 voicePack="Qiuhua-Voice"
             />
-            <FOV degrees="120" distanceMeters="999" eyeRadiusMeters="0.6" />
-            <Brain suppressionRecovery="60" />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="40.0" />
 
             <Mobility>
                 <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
             <Equipment>
                 <Item name="GFL-WEAP-TYPE97S" />
-                <Item name="IronSights" />
-                <Item name="M9 Pistol" />
-                <Item name="IronSights_Pistol" />
-                <Item name="Flashbang" />
-                <Item name="Frag Grenade" />
-                <Item name="GFL_FeetOfTitanium" />
-                <Item name="GFL_ReactiveShielding" />
+                <Item name="scope_GFL_IronSights_Primary" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
             </Equipment>
         </Human>
     </Entity>
@@ -866,7 +850,7 @@
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-        <PhysicalParams health="175" />
+        <PhysicalParams health="100" />
 
         <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-MP5">
             <Id
@@ -875,23 +859,21 @@
                 gender="0"
                 voicePack="Peri-Voice"
             />
-            <FOV degrees="120" distanceMeters="999" eyeRadiusMeters="0.6" />
-            <Brain suppressionRecovery="60" />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="40.0" />
 
             <Mobility>
                 <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
             <Equipment>
                 <Item name="GFL-WEAP-MP5" />
-                <Item name="IronSights" />
-                <Item name="M9 Pistol" />
-                <Item name="IronSights_Pistol" />
-                <Item name="Flashbang" />
-                <Item name="Frag Grenade" />
-                <Item name="FeetOfSteel" />
-                <Item name="GFL_ReactiveShielding" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
             </Equipment>
         </Human>
     </Entity>
@@ -907,7 +889,7 @@
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-        <PhysicalParams health="175" />
+        <PhysicalParams health="100" />
 
         <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-PA15">
             <Id
@@ -916,20 +898,22 @@
                 gender="0"
                 voicePack="Florence-Voice"
             />
-            <FOV degrees="120" distanceMeters="999" eyeRadiusMeters="0.6" />
-            <Brain suppressionRecovery="60" />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="40.0" />
 
             <Mobility>
                 <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
             <Equipment>
                 <Item name="GFL-WEAP-PA15" />
-                <Item name="Flashbang" />
-                <Item name="GFL-GEAR-MEDIC-GRENADE" />
-                <Item name="FeetOfSteel" />
-                <Item name="GFL_ReactiveShielding" />
+                <Item name="scope_GFL_IronSights_Secondary" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
             </Equipment>
         </Human>
     </Entity>
@@ -945,7 +929,7 @@
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-        <PhysicalParams health="200" />
+        <PhysicalParams health="100" />
 
         <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-VSK94">
             <Id
@@ -954,23 +938,22 @@
                 gender="0"
                 voicePack="Nikketa-Voice"
             />
-            <FOV degrees="135" distanceMeters="999" eyeRadiusMeters="0.6" />
-            <Brain suppressionRecovery="70" />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="40.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.2" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
             <Equipment>
                 <Item name="GFL-WEAP-VSK94" />
-                <Item name="IronSights" />
-                <Item name="M9 Pistol" />
-                <Item name="IronSights_Pistol" />
-                <Item name="Flashbang" />
-                <Item name="Frag Grenade" />
-                <Item name="FeetOfSteel" />
-                <Item name="GFL_ReactiveShielding" />
+                <Item name="scope_GFL_IronSights_Primary" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
             </Equipment>
         </Human>
     </Entity>
@@ -986,7 +969,7 @@
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-        <PhysicalParams health="200" />
+        <PhysicalParams health="100" />
 
         <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-DP12">
             <Id
@@ -995,23 +978,22 @@
                 gender="0"
                 voicePack="Helen-Voice"
             />
-            <FOV degrees="135" distanceMeters="999" eyeRadiusMeters="0.6" />
-            <Brain suppressionRecovery="70" />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="40.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.2" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
             <Equipment>
                 <Item name="GFL-WEAP-DP12" />
-                <Item name="IronSights" />
-                <Item name="M9 Pistol" />
-                <Item name="IronSights_Pistol" />
-                <Item name="Flashbang" />
-                <Item name="Frag Grenade" />
-                <Item name="GFL_FeetOfTitanium" />
-                <Item name="GFL_ReactiveShielding" />
+                <Item name="scope_GFL_IronSights_Primary" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
             </Equipment>
         </Human>
     </Entity>
@@ -1027,7 +1009,7 @@
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-        <PhysicalParams health="200" />
+        <PhysicalParams health="100" />
 
         <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-LEWIS">
             <Id
@@ -1036,23 +1018,22 @@
                 gender="0"
                 voicePack="Lewis-Voice"
             />
-            <FOV degrees="135" distanceMeters="999" eyeRadiusMeters="0.6" />
-            <Brain suppressionRecovery="70" />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="40.0" />
 
             <Mobility>
-                <MoveSpeed min="1.1" defaultMetersPerSec="2.2" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
             <Equipment>
                 <Item name="GFL-WEAP-LEWIS" />
-                <Item name="IronSights" />
-                <Item name="M9 Pistol" />
-                <Item name="IronSights_Pistol" />
-                <Item name="Flashbang" />
-                <Item name="Frag Grenade" />
-                <Item name="GFL_FeetOfTitanium" />
-                <Item name="GFL_ReactiveShielding" />
+                <Item name="scope_GFL_IronSights_Primary" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
             </Equipment>
         </Human>
     </Entity>
@@ -1068,7 +1049,7 @@
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-        <PhysicalParams health="225" />
+        <PhysicalParams health="100" />
 
         <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-QBZ191">
             <Id
@@ -1077,23 +1058,22 @@
                 gender="0"
                 voicePack="Qiongjiu-Voice"
             />
-            <FOV degrees="135" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="80.0" />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="40.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.5" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
             <Equipment>
                 <Item name="GFL-WEAP-QBZ191" />
-                <Item name="IronSights" />
-                <Item name="M9 Pistol" />
-                <Item name="IronSights_Pistol" />
-                <Item name="Flashbang" />
-                <Item name="Frag Grenade" />
-                <Item name="GFL_FeetOfTitanium" />
-                <Item name="GFL_ReactiveShielding" />
+                <Item name="scope_GFL_IronSights_Primary" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
             </Equipment>
         </Human>
     </Entity>
@@ -1109,7 +1089,7 @@
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-        <PhysicalParams health="225" />
+        <PhysicalParams health="100" />
 
         <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-AKALFA">
             <Id
@@ -1118,23 +1098,22 @@
                 gender="0"
                 voicePack="Tololo-Voice"
             />
-            <FOV degrees="135" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="80.0" />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="40.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.5" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
             <Equipment>
                 <Item name="GFL-WEAP-AKALFA" />
-                <Item name="IronSightsAK" />
-                <Item name="M9 Pistol" />
-                <Item name="IronSights_Pistol" />
-                <Item name="Flashbang" />
-                <Item name="Frag Grenade" />
-                <Item name="FeetOfSteel" />
-                <Item name="GFL_ReactiveShielding" />
+                <Item name="scope_GFL_IronSights_Primary" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
             </Equipment>
         </Human>
     </Entity>
@@ -1150,7 +1129,7 @@
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-        <PhysicalParams health="225" />
+        <PhysicalParams health="100" />
 
         <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-AA12">
             <Id
@@ -1159,23 +1138,22 @@
                 gender="0"
                 voicePack="Lind-Voice"
             />
-            <FOV degrees="135" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="75.0" />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="40.0" />
 
             <Mobility>
-                <MoveSpeed min="1.2" defaultMetersPerSec="2.3" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
             <Equipment>
                 <Item name="GFL-WEAP-AA12" />
-                <Item name="IronSights" />
-                <Item name="M9 Pistol" />
-                <Item name="IronSights_Pistol" />
-                <Item name="Flashbang" />
-                <Item name="Frag Grenade" />
-                <Item name="GFL_FeetOfTitanium" />
-                <Item name="GFL_ReactiveShielding" />
+                <Item name="scope_GFL_IronSights_Primary" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
             </Equipment>
         </Human>
     </Entity>
@@ -1191,7 +1169,7 @@
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-        <PhysicalParams health="175" />
+        <PhysicalParams health="100" />
 
         <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-MP7">
             <Id
@@ -1200,23 +1178,182 @@
                 gender="0"
                 voicePack="Cheeta-Voice"
             />
-            <FOV degrees="120" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="75.0" />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="40.0" />
 
             <Mobility>
-                <MoveSpeed min="1.4" defaultMetersPerSec="2.7" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
             <Equipment>
                 <Item name="GFL-WEAP-MP7" />
-                <Item name="IronSights" />
-                <Item name="M9 Pistol" />
-                <Item name="IronSights_Pistol" />
-                <Item name="Flashbang" />
-                <Item name="Frag Grenade" />
-                <Item name="FeetOfSteel" />
-                <Item name="GFL_ReactiveShielding" />
+                <Item name="scope_GFL_IronSights_Primary" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
+            </Equipment>
+        </Human>
+    </Entity>
+
+    <Entity name="GIRL-QBZ95" type="Human" editorAutoHeight="false">
+        <RenderObject3D
+            model="data/models/dolls/type95.khm"
+            diffuseTex="data/models/dolls/type95.dds"
+        />
+
+        <Breakable
+            template="GenericTrooperGibs"
+            breakOnDamage="explosive"
+            deleteOnDeath="false"
+        />
+        <PhysicalParams health="100" />
+
+        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-QBZ95">
+            <Id
+                name="MONSOON-QBZ95"
+                portrait="data/textures/portraits/gfl_type95.dds"
+                gender="0"
+                voicePack="Daiyan-Voice"
+            />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="40.0" />
+
+            <Mobility>
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
+            </Mobility>
+
+            <Equipment>
+                <Item name="GFL-WEAP-QBZ95" />
+                <Item name="scope_GFL_IronSights_Primary" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
+            </Equipment>
+        </Human>
+    </Entity>
+
+    <Entity name="GIRL-QBZ97" type="Human" editorAutoHeight="false">
+        <RenderObject3D
+            model="data/models/dolls/type97.khm"
+            diffuseTex="data/models/dolls/type97.dds"
+        />
+
+        <Breakable
+            template="GenericTrooperGibs"
+            breakOnDamage="explosive"
+            deleteOnDeath="false"
+        />
+        <PhysicalParams health="100" />
+
+        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-QBZ97">
+            <Id
+                name="MONSOON-QBZ97"
+                portrait="data/textures/portraits/gfl_type97.dds"
+                gender="0"
+                voicePack="Daiyan-Voice"
+            />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="40.0" />
+
+            <Mobility>
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
+            </Mobility>
+
+            <Equipment>
+                <Item name="GFL-WEAP-QBZ97" />
+                <Item name="scope_GFL_IronSights_Primary" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
+            </Equipment>
+        </Human>
+    </Entity>
+
+    <Entity name="GIRL-CSLS06" type="Human" editorAutoHeight="false">
+        <RenderObject3D
+            model="data/models/dolls/csls06.khm"
+            diffuseTex="data/models/dolls/csls06.dds"
+        />
+
+        <Breakable
+            template="GenericTrooperGibs"
+            breakOnDamage="explosive"
+            deleteOnDeath="false"
+        />
+        <PhysicalParams health="100" />
+
+        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-CSLS06">
+            <Id
+                name="MONSOON-CSLS06"
+                portrait="data/textures/portraits/gfl_csls06.dds"
+                gender="0"
+                voicePack="ZhaoHui-Voice"
+            />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="40.0" />
+
+            <Mobility>
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
+            </Mobility>
+
+            <Equipment>
+                <Item name="GFL-WEAP-CSLS06" />
+                <Item name="scope_GFL_IronSights_Primary" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
+            </Equipment>
+        </Human>
+    </Entity>
+
+    <Entity name="GIRL-CZ75" type="Human" editorAutoHeight="false">
+        <RenderObject3D
+            model="data/models/dolls/cz75.khm"
+            diffuseTex="data/models/dolls/cz75.dds"
+        />
+
+        <Breakable
+            template="GenericTrooperGibs"
+            breakOnDamage="explosive"
+            deleteOnDeath="false"
+        />
+        <PhysicalParams health="100" />
+
+        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-CZ75">
+            <Id
+                name="MONSOON-CZ75"
+                portrait="data/textures/portraits/gfl_cz75.dds"
+                gender="0"
+                voicePack="Faye-Voice"
+            />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="40.0" />
+
+            <Mobility>
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
+            </Mobility>
+
+            <Equipment>
+                <Item name="GFL-WEAP-CZ75" />
+                <Item name="scope_GFL_IronSights_Secondary" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
             </Equipment>
         </Human>
     </Entity>

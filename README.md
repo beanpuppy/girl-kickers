@@ -1,9 +1,7 @@
-<div align="center">
-  <img src="https://raw.githubusercontent.com/beanpuppy/girl-kickers/refs/heads/main/mod/mod_image.jpg" alt="logo">
-</div>
-
 # Girl Kickers
 Girls' Frontline mod for Door Kickers 2.
+
+[Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3580762170)
 
 ## Development Setup
 

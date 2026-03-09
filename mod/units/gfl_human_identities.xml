@@ -424,4 +424,61 @@
         gender="0"
         customName="CHEETA"
     />
+
+    <Portrait
+        tex="data/textures/portraits/gfl_type95.dds"
+        unit="GFL-UNIT-MONSOON"
+        class="GFL-DOLL-QBZ95"
+        gender="0"
+        customName="DAIYAN"
+    />
+    <Portrait
+        tex="data/textures/portraits/gfl_type95.dds"
+        unit="GFL-UNIT-GIRL"
+        class="GFL-DOLL-QBZ95"
+        gender="0"
+        customName="DAIYAN"
+    />
+    <Portrait
+        tex="data/textures/portraits/gfl_type97.dds"
+        unit="GFL-UNIT-MONSOON"
+        class="GFL-DOLL-QBZ97"
+        gender="0"
+        customName="JIANGYU"
+    />
+    <Portrait
+        tex="data/textures/portraits/gfl_type97.dds"
+        unit="GFL-UNIT-GIRL"
+        class="GFL-DOLL-QBZ97"
+        gender="0"
+        customName="JIANGYU"
+    />
+    <Portrait
+        tex="data/textures/portraits/gfl_csls06.dds"
+        unit="GFL-UNIT-MONSOON"
+        class="GFL-DOLL-CSLS06"
+        gender="0"
+        customName="ZHAOHUI"
+    />
+    <Portrait
+        tex="data/textures/portraits/gfl_csls06.dds"
+        unit="GFL-UNIT-GIRL"
+        class="GFL-DOLL-CSLS06"
+        gender="0"
+        customName="ZHAOHUI"
+    />
+    <Portrait
+        tex="data/textures/portraits/gfl_cz75.dds"
+        unit="GFL-UNIT-MONSOON"
+        class="GFL-DOLL-CZ75"
+        gender="0"
+        customName="FAYE"
+    />
+    <Portrait
+        tex="data/textures/portraits/gfl_cz75.dds"
+        unit="GFL-UNIT-GIRL"
+        class="GFL-DOLL-CZ75"
+        gender="0"
+        customName="FAYE"
+    />
 </HumanIdentities>
