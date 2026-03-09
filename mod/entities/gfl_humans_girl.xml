@@ -81,7 +81,7 @@
 
     <Entity name="GIRL-HK416" type="Human" editorAutoHeight="false">
         <RenderObject3D
-            model="data/models/dolls/hk416.khm"
+            model="data/models/dolls/cubebodies/hk416.khm"
             diffuseTex="data/models/dolls/hk416.dds"
         />
 
@@ -115,6 +115,7 @@
                 <Item name="GFL_BasicCore" />
                 <Item name="GFL_NightVision" />
                 <Item name="GFL_CombatFrame" />
+                <Item name="GFL_SKIN_HK416_DEFAULT" />
             </Equipment>
         </Human>
     </Entity>

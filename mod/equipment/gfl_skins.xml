@@ -30,4 +30,48 @@
         />
     </Scope>
 
+<!-- Klukai Skins -->
+
+    <Bind eqp="GFL_SKIN_HK416_DEFAULT">
+        <to name="GFL-DOLL-HK416" />
+    </Bind>
+    <Scope name="GFL_SKIN_HK416_DEFAULT" inventoryBinding="Custom1"
+        tooltip="@skin_hk416_default_name"
+        description="@skin_hk416_default_desc"
+        img="data/models/dolls/skins/hk416/skin0_ui.dds"
+    >
+        <RenderObject3D
+            model="data/models/dolls/hk416.khm"
+            diffuseTex="data/models/dolls/hk416.dds"
+        />
+    </Scope>
+
+    <Bind eqp="GFL_SKIN_HK416_SKIN1">
+        <to name="GFL-DOLL-HK416" />
+    </Bind>
+    <Scope name="GFL_SKIN_HK416_SKIN1" inventoryBinding="Custom1"
+        tooltip="@skin_hk416_skin1_name"
+        description="@skin_hk416_skin1_desc"
+        img="data/models/dolls/skins/hk416/skin1_ui.dds"
+    >
+        <RenderObject3D
+            model="data/models/dolls/skins/hk416/skin1.khm"
+            diffuseTex="data/models/dolls/skins/hk416/skin1.dds"
+        />
+    </Scope>
+
+    <Bind eqp="GFL_SKIN_HK416_SKIN2">
+        <to name="GFL-DOLL-HK416" />
+    </Bind>
+    <Scope name="GFL_SKIN_HK416_SKIN2" inventoryBinding="Custom1"
+        tooltip="@skin_hk416_skin2_name"
+        description="@skin_hk416_skin2_desc"
+        img="data/models/dolls/skins/hk416/skin2_ui.dds"
+    >
+        <RenderObject3D
+            model="data/models/dolls/skins/hk416/skin2.khm"
+            diffuseTex="data/models/dolls/skins/hk416/skin2.dds"
+        />
+    </Scope>
+
 </Equipment>

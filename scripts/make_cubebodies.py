@@ -92,7 +92,8 @@ def make_cubebody(input_path, output_path):
         if has_skin:
             pos += num_verts * 16  # 4 floats weights per vert
             pos += num_verts * 4   # 4 uchars bone indices per vert
-        # collision data
+        # collision data — save start position to preserve it
+        collision_start = pos
         num_collisions = struct.unpack_from("<i", src, pos)[0]
         pos += 4
         for _ in range(num_collisions):
@@ -117,6 +118,7 @@ def make_cubebody(input_path, output_path):
                 pos += num_mesh_verts * 12
         # bounds (min + max, 2x vec3)
         pos += 24
+        collision_and_bounds_data = src[collision_start:pos]
 
     # Everything from pos onwards is animation + animation mask
     animation_data = src[pos:]
@@ -189,12 +191,8 @@ def make_cubebody(input_path, output_path):
     for _ in range(3):
         out += struct.pack("<BBBB", 1, 0, 0, 0)
 
-    # Collision data: 0 collisions
-    out += struct.pack("<i", 0)
-
-    # Bounds: min and max
-    out += struct.pack("<fff", 0.0, 0.0, 0.0)
-    out += struct.pack("<fff", 0.001, 0.001, 0.0)
+    # Collision data + bounds (preserved from original)
+    out += collision_and_bounds_data
 
     # Animation + animation mask (preserved from original)
     out += animation_data

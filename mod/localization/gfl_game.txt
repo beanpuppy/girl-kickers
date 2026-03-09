@@ -282,6 +282,13 @@
 @WEAP-HK416-NAME=HK416
 @WEAP-HK416-DESC=The Heckler & Koch HK416 is a collaboration project between the US Army Delta Force R&D department and the German firearms company Heckler & Koch, at the request of US Army combat veteran Larry Vickers. The goal was to make a M4 variant that has a shorter profile and lacks the AR-15's direct impingement system.
 
+@skin_hk416_default_name=Blazing Star
+@skin_hk416_default_desc=Klukai's usual outfit. Her ultramarine jacket is the most eye-catching sight on the battlefield, but Klukai has never been afraid of being the center of her enemies' attention -- or rather, that was the aim of choosing her outfit in the first place.
+@skin_hk416_skin1_name=Speed Star
+@skin_hk416_skin1_desc=This is Klukai's riding outfit. Her pure white bodysuit hugs her lovely curves. Like a zephyr or a tempest, this shining knight extends and invitation to you. Mount up, ride out!
+@skin_hk416_skin2_name=Astral Luminous
+@skin_hk416_skin2_desc=Klukai's tactical rider outfit. It combines protective features with combat assisting capabilities, allowing Klukai to weave through the frontlines like a blue streak of lightning.
+
 @DOLL-G11-NAME=MECHTY
 @DOLL-G11-DESC=A Doll who approaches everything with peak laziness, except for gaming and reading manga. She's mastered the ultimate skill: falling asleep anytime, anywhere, under any circumstance. Although she seems to embody the philosophy of "lying flat" to the extreme, she reveals her dependable side in times of crisis, though in her words, "It'd be better if we just never ran into any 'crisis' at all".
 @WEAP-G11-NAME=G11
