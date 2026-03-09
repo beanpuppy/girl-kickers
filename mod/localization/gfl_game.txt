@@ -380,6 +380,11 @@
 @ammo_300wm_match_name=.300 Win Mag Match
 @ammo_300wm_match_desc=Premium match-grade ammunition with selected components for maximum accuracy and consistency at extreme ranges.
 
+@skin_wa2000_default_name=Caramel Melody
+@skin_wa2000_default_desc=Makiatto's usual outfit. She rarely opens her violin case; it holds her most cherished weapon.
+@skin_wa2000_skin1_name=Ballroom Interlude
+@skin_wa2000_skin1_desc=This is the dress that Makiatto wears to the ball. Its simple style, adorned with a familiar ribbon, carries a secret hope--that her dance partner will finally take notice of her.
+
 @DOLL-G36-NAME=CENTAUREISSI
 @DOLL-G36-DESC=A humble yet principled Doll. She brews aromatic coffee and stands as the steadfast guardian of the café - she is the irreplaceable shield of "Zucchero".
 @WEAP-G36-NAME=G36
