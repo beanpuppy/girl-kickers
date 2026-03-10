@@ -1,0 +1,73 @@
+ * going for initialize
+ * started exporting
+ * scene file name: 'ak15_bones.max'
+ * exporting 43 bones
+   * exporting node Bip001 with object id: 0, parent: -1
+   * exporting node Bip001 Pelvis with object id: 1, parent: 0
+   * exporting node Bip001 Spine with object id: 2, parent: 1
+   * exporting node Bip001 L Thigh with object id: 3, parent: 2
+   * exporting node Bip001 L Calf with object id: 4, parent: 3
+   * exporting node Bip001 L Foot with object id: 5, parent: 4
+   * exporting node Bip001 L Toe0 with object id: 6, parent: 5
+   * exporting node Bip001 L Toe0Nub with object id: 7, parent: 6
+   * exporting node Bip001 R Thigh with object id: 8, parent: 2
+   * exporting node Bip001 R Calf with object id: 9, parent: 8
+   * exporting node Bip001 R Foot with object id: 10, parent: 9
+   * exporting node Bip001 R Toe0 with object id: 11, parent: 10
+   * exporting node Bip001 R Toe0Nub with object id: 12, parent: 11
+   * exporting node Bip001 Spine1 with object id: 13, parent: 2
+   * exporting node Bip001 Neck with object id: 14, parent: 13
+   * exporting node Bip001 L Clavicle with object id: 15, parent: 14
+   * exporting node Bip001 L UpperArm with object id: 16, parent: 15
+   * exporting node Bip001 L Forearm with object id: 17, parent: 16
+   * exporting node Bip001 L Hand with object id: 18, parent: 17
+   * exporting node Bip001 L Finger0 with object id: 19, parent: 18
+   * exporting node Bip001 L Finger01 with object id: 20, parent: 19
+   * exporting node Bip001 L Finger0Nub with object id: 21, parent: 20
+   * exporting node Bip001 L Finger1 with object id: 22, parent: 18
+   * exporting node Bip001 L Finger11 with object id: 23, parent: 22
+   * exporting node Bip001 L Finger1Nub with object id: 24, parent: 23
+   * exporting node Bip001 L Finger2 with object id: 25, parent: 18
+   * exporting node Bip001 L Finger21 with object id: 26, parent: 25
+   * exporting node Bip001 L Finger2Nub with object id: 27, parent: 26
+   * exporting node Bip001 R Clavicle with object id: 28, parent: 14
+   * exporting node Bip001 R UpperArm with object id: 29, parent: 28
+   * exporting node Bip001 R Forearm with object id: 30, parent: 29
+   * exporting node Bip001 R Hand with object id: 31, parent: 30
+   * exporting node Bip001 R Finger0 with object id: 32, parent: 31
+   * exporting node Bip001 R Finger01 with object id: 33, parent: 32
+   * exporting node Bip001 R Finger0Nub with object id: 34, parent: 33
+   * exporting node Bip001 R Finger1 with object id: 35, parent: 31
+   * exporting node Bip001 R Finger11 with object id: 36, parent: 35
+   * exporting node Bip001 R Finger1Nub with object id: 37, parent: 36
+   * exporting node Bip001 R Finger2 with object id: 38, parent: 31
+   * exporting node Bip001 R Finger21 with object id: 39, parent: 38
+   * exporting node Bip001 R Finger2Nub with object id: 40, parent: 39
+   * exporting node Bip001 Head with object id: 41, parent: 14
+   * exporting node Bip001 HeadNub with object id: 42, parent: 41
+ * exporting 11 helpers
+   * exporting node shield with object id: 43, parent: 18
+   * exporting node Prop_L with object id: 44, parent: 18
+   * exporting node Prop_R with object id: 45, parent: 31
+   * exporting node prop_back_rifle with object id: 46, parent: 13
+   * exporting node prop_back_rpg with object id: 47, parent: 13
+   * exporting node vest_right with object id: 48, parent: 13
+   * exporting node vest_left with object id: 49, parent: 13
+   * exporting node vest_back_right with object id: 50, parent: 13
+   * exporting node vest_back_left with object id: 51, parent: 13
+   * exporting node prop_front_rifle with object id: 52, parent: 13
+   * exporting node prop_sidearm with object id: 53, parent: 1
+ * exporting 2 meshes
+   * exporting node ak15skin1 with object id: 54, parent: -1
+ * num maps    2
+ * num tx maps 1
+ * num vc maps 0
+ * initial verts / num verts: 28117 / 43285
+ * num faces: 42672
+ * num modifiers: 2
+ * found skin modifier ! 
+ * 28117 skinned vertices ! 
+ * 28117 initial vertices ! 
+ * 43285 remaped vertices ! 
+
+ * exporting collisionNode '@Collision.capsule'
