@@ -399,6 +399,13 @@
 @ammo_3006_match_name=.30-06 Match Grade
 @ammo_3006_match_desc=Precision manufactured ammunition with consistent powder loads and match bullets for superior accuracy and terminal performance.
 
+@skin_m1903_default_name=Clean Military Uniform
+@skin_m1903_default_desc=Springfield's usual outfit. The elegant colors bring out the regal qualities of the outfit, subconsciously inducing those around Springfield to treat her with respect. Her warm smile however, dissipates any sense of awkwardness or need for formaility.
+@skin_m1903_skin1_name=Queen in Radiance
+@skin_m1903_skin1_desc=She is more dazzling and eye-catching than any jewel under the lamplight. A single gentle smile from her is neough to capture the gazes of everyone in front of her.
+@skin_m1903_skin2_name=Enjoy the Fragrance
+@skin_m1903_skin2_desc="It's been a tiring day, Commander. Would you like some coffee? The sweetness and the temperature are just the way you like them."\nShe's perfectly concocted the flavor you like, just like all the coffees from days gone by.
+
 @DOLL-WA2000-NAME=MAKIATTO
 @DOLL-WA2000-DESC=A calm, proud, yet awkward Doll who isn't good at expressing herself. She loves fluffy little animals and overly sweet macchiatos. Always a loner, her gaze often lingers somewhere. When will she finally get the response she's been longing for?
 @WEAP-WA2000-NAME=Walther WA2000
@@ -406,11 +413,6 @@
 @firearm_caliber_300wm_name=.300 Winchester Magnum
 @ammo_300wm_match_name=.300 Win Mag Match
 @ammo_300wm_match_desc=Premium match-grade ammunition with selected components for maximum accuracy and consistency at extreme ranges.
-
-@skin_m1903_default_name=Clean Military Uniform
-@skin_m1903_default_desc=Springfield's usual outfit. The elegant colors bring out the regal qualities of the outfit, subconsciously inducing those around Springfield to treat her with respect. Her warm smile however, dissipates any sense of awkwardness or need for formaility.
-@skin_m1903_skin1_name=Queen in Radiance
-@skin_m1903_skin1_desc=She is more dazzling and eye-catching than any jewel under the lamplight. A single gentle smile from her is neough to capture the gazes of everyone in front of her.
 
 @skin_wa2000_default_name=Caramel Melody
 @skin_wa2000_default_desc=Makiatto's usual outfit. She rarely opens her violin case; it holds her most cherished weapon.

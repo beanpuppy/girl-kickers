@@ -164,6 +164,20 @@
         />
     </Scope>
 
+    <Bind eqp="GFL_SKIN_M1903_SKIN2">
+        <to name="GFL-DOLL-M1903" />
+    </Bind>
+    <Scope name="GFL_SKIN_M1903_SKIN2" inventoryBinding="Custom1"
+        tooltip="@skin_m1903_skin2_name"
+        description="@skin_m1903_skin2_desc"
+        img="data/models/dolls/skins/m1903/skin2_ui.dds"
+    >
+        <RenderObject3D
+            model="data/models/dolls/skins/m1903/skin2.khm"
+            diffuseTex="data/models/dolls/skins/m1903/skin2.dds"
+        />
+    </Scope>
+
 <!-- Alva Skins -->
 
     <Bind eqp="GFL_SKIN_AN94_DEFAULT">
