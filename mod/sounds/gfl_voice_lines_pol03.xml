@@ -1,0 +1,571 @@
+<Sounds>
+  <Pack name="Mosinnagant-Voice" channel="voice">
+    <Sound ID="VOX_DYING">
+      <Path name="data/sounds/voice/Mosinnagant/Series_Die__VO_Mosinnagant_Series_Tone_Negative_002.wav" />
+    </Sound>
+    <Sound ID="VOX_GEAR_FLASH">
+      <Path name="data/sounds/voice/Mosinnagant/Series_Hit__VO_Mosinnagant_Single_Hit_001.wav" />
+    </Sound>
+    <Sound ID="VOX_GEAR_FRAG">
+      <Path name="data/sounds/voice/Mosinnagant/Series_SkillPatk02__VO_Mosinnagant_Series_Tone_Positive_003.wav" />
+    </Sound>
+    <Sound ID="VOX_GEAR_LAUNCHER">
+      <Path name="data/sounds/voice/Mosinnagant/Series_Ultimate__VO_Mosinnagant_Single_Ultimate_SR_001.wav" />
+    </Sound>
+    <Sound ID="VOX_GEAR_MOLOTOV">
+      <Path name="data/sounds/voice/Mosinnagant/Series_Skill02__VO_Mosinnagant_Single_Skill_002.wav" />
+    </Sound>
+    <Sound ID="VOX_GEAR_ROCKET">
+      <Path name="data/sounds/voice/Mosinnagant/Series_Ultimate__VO_Mosinnagant_Single_Ultimate_SR_001.wav" />
+    </Sound>
+    <Sound ID="VOX_GEAR_SMOKE">
+      <Path name="data/sounds/voice/Mosinnagant/Series_Skill01__VO_Mosinnagant_Single_Skill_001.wav" />
+    </Sound>
+    <Sound ID="VOX_GEAR_STINGER"></Sound>
+    <Sound ID="VOX_INJURED">
+      <Path name="data/sounds/voice/Mosinnagant/Series_Tone_Negative_001.wav" />
+    </Sound>
+    <Sound ID="VOX_RELOAD">
+      <Path name="data/sounds/voice/Mosinnagant/Series_Tone_Positive_006.wav" />
+    </Sound>
+    <Sound ID="VOX_RELOAD_PUMP"></Sound>
+    <Sound ID="VOX_TRPR_BOMB_DEFUSING">
+      <Path name="data/sounds/voice/Mosinnagant/Series_Skill01__VO_Mosinnagant_Single_Skill_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_BOMB_LOCATED"></Sound>
+    <Sound ID="VOX_TRPR_CAN_I_SHOOT"></Sound>
+    <Sound ID="VOX_TRPR_CANT"></Sound>
+    <Sound ID="VOX_TRPR_CIV_DOWN">
+      <Path name="data/sounds/voice/Mosinnagant/Series_Tone_Negative_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_CLEAR">
+      <Path name="data/sounds/voice/Mosinnagant/Series_Hit__VO_Mosinnagant_Series_Tone_Positive_008.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_COME">
+      <Path name="data/sounds/voice/Mosinnagant/Series_Up_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_DONE_HERE">
+      <Path name="data/sounds/voice/Mosinnagant/Series_Win__VO_Mosinnagant_Single_Win_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_EVAC">
+      <Path name="data/sounds/voice/Mosinnagant/Series_Up_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_EYESONTARGET">
+      <Path name="data/sounds/voice/Mosinnagant/Series_Chosen_Auto__VO_Mosinnagant_Series_Tone_Positive_010.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_EYESONTARGET_QUIET"></Sound>
+    <Sound ID="VOX_TRPR_FREEZE">
+      <Path name="data/sounds/voice/Mosinnagant/Series_Hit__VO_Mosinnagant_Single_Hit_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_GEAR_CHARGE_PLACE">
+      <Path name="data/sounds/voice/Mosinnagant/Series_Tone_Positive_003.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_GEAR_CHARGE_RDY"></Sound>
+    <Sound ID="VOX_TRPR_GETDOWN"></Sound>
+    <Sound ID="VOX_TRPR_GO_GO_GO">
+      <Path name="data/sounds/voice/Mosinnagant/Series_Battle_Start__VO_Mosinnagant_Series_Tone_Positive_002.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_GO_LOUD"></Sound>
+    <Sound ID="VOX_TRPR_HANDCUFF"></Sound>
+    <Sound ID="VOX_TRPR_HOLDING">
+      <Path name="data/sounds/voice/Mosinnagant/Series_Tone_Positive_005.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_HOST_DOWN">
+      <Path name="data/sounds/voice/Mosinnagant/Series_Tone_Negative_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_HOST_SEC">
+      <Path name="data/sounds/voice/Mosinnagant/Series_Tone_Positive_008.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_HVT_RUNNING"></Sound>
+    <Sound ID="VOX_TRPR_KEEPMOVINGOFF"></Sound>
+    <Sound ID="VOX_TRPR_KEEPMOVINGON"></Sound>
+    <Sound ID="VOX_TRPR_MANDOWN">
+      <Path name="data/sounds/voice/Mosinnagant/Series_Tone_Negative_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_MATCHSPEEDON"></Sound>
+    <Sound ID="VOX_TRPR_MOVING">
+      <Path name="data/sounds/voice/Mosinnagant/Series_Tone_Positive_009.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_NOTANGOS"></Sound>
+    <Sound ID="VOX_TRPR_ON_ALPHA"></Sound>
+    <Sound ID="VOX_TRPR_ON_BRAVO"></Sound>
+    <Sound ID="VOX_TRPR_ON_CHARLIE"></Sound>
+    <Sound ID="VOX_TRPR_ON_DELTA"></Sound>
+    <Sound ID="VOX_TRPR_ONTARGET">
+      <Path name="data/sounds/voice/Mosinnagant/Series_Up_008.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_ORDERS"></Sound>
+    <Sound ID="VOX_TRPR_PASS_ALPHA"></Sound>
+    <Sound ID="VOX_TRPR_PASS_BRAVO"></Sound>
+    <Sound ID="VOX_TRPR_PASS_CHARLIE"></Sound>
+    <Sound ID="VOX_TRPR_PASS_DELTA"></Sound>
+    <Sound ID="VOX_TRPR_PINNED_DOWN">
+      <Path name="data/sounds/voice/Mosinnagant/Series_Up_003.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_PUMPUP">
+      <Path name="data/sounds/voice/Mosinnagant/Series_Up_002.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_ROGER">
+      <Path name="data/sounds/voice/Mosinnagant/Series_Tone_Positive_008.wav" />
+      <Path name="data/sounds/voice/Mosinnagant/Series_Set_Fall__VO_Mosinnagant_Series_Tone_Positive_007.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_SILENTOFF"></Sound>
+    <Sound ID="VOX_TRPR_SILENTON">
+      <Path name="data/sounds/voice/Mosinnagant/Series_Set_Click__VO_Mosinnagant_Series_Tone_Positive_004.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_SUSP_SEC"></Sound>
+    <Sound ID="VOX_TRPR_TANGODOWN">
+      <Path name="data/sounds/voice/Mosinnagant/Series_Kill__VO_Mosinnagant_Single_Kill_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_TANGOS">
+      <Path name="data/sounds/voice/Mosinnagant/Series_Chosen__VO_Mosinnagant_Series_Tone_Positive_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_TARGET_SEC">
+      <Path name="data/sounds/voice/Mosinnagant/Series_Tone_Positive_008.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_TIME_TO_GO">
+      <Path name="data/sounds/voice/Mosinnagant/Series_Lose__VO_Mosinnagant_Single_Lose_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_VIP_DEAD">
+      <Path name="data/sounds/voice/Mosinnagant/Series_Tone_Negative_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_WAIT">
+      <Path name="data/sounds/voice/Mosinnagant/Series_Tone_Positive_005.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_EYES_HOSTAGE"></Sound>
+    <Sound ID="VOX_WARN_GRENADE">
+      <Path name="data/sounds/voice/Mosinnagant/Series_Tone_Positive_003.wav" />
+    </Sound>
+    <Sound ID="VOX_WARN_RPG"></Sound>
+    <Sound ID="VOX_TRPR_BREACHING_DOOR"></Sound>
+    <Sound ID="VOX_TRPR_COMPROMISED"></Sound>
+    <Sound ID="VOX_TRPR_DISGUISED"></Sound>
+  </Pack>
+  <Pack name="Nagant-Voice" channel="voice">
+    <Sound ID="VOX_DYING">
+      <Path name="data/sounds/voice/Nagant/Series_HittedLast__VO_Nagant_Series_Tone_Negative_002.wav" />
+    </Sound>
+    <Sound ID="VOX_GEAR_FLASH">
+      <Path name="data/sounds/voice/Nagant/Series_Shield_Broken__VO_Nagant_Series_Skill01__VO_Nagant_Single_Skill_001.wav" />
+    </Sound>
+    <Sound ID="VOX_GEAR_FRAG">
+      <Path name="data/sounds/voice/Nagant/Series_Hit__VO_Nagant_Single_Hit_001.wav" />
+    </Sound>
+    <Sound ID="VOX_GEAR_LAUNCHER">
+      <Path name="data/sounds/voice/Nagant/Series_Shield_Broken__VO_Nagant_Series_Skill01__VO_Nagant_Single_Skill_001.wav" />
+    </Sound>
+    <Sound ID="VOX_GEAR_MOLOTOV">
+      <Path name="data/sounds/voice/Nagant/Series_Hit__VO_Nagant_Single_Hit_001.wav" />
+    </Sound>
+    <Sound ID="VOX_GEAR_ROCKET">
+      <Path name="data/sounds/voice/Nagant/Series_Shield_Broken__VO_Nagant_Series_Skill01__VO_Nagant_Single_Skill_001.wav" />
+    </Sound>
+    <Sound ID="VOX_GEAR_SMOKE">
+      <Path name="data/sounds/voice/Nagant/Series_Hit__VO_Nagant_Single_Hit_001.wav" />
+    </Sound>
+    <Sound ID="VOX_GEAR_STINGER"></Sound>
+    <Sound ID="VOX_INJURED">
+      <Path name="data/sounds/voice/Nagant/Series_Hitted.wav" />
+      <Path name="data/sounds/voice/Nagant/Series_Shield_Broken__VO_Nagant_Series_Tone_Positive_008.wav" />
+    </Sound>
+    <Sound ID="VOX_RELOAD">
+      <Path name="data/sounds/voice/Nagant/Series_Up_003.wav" />
+    </Sound>
+    <Sound ID="VOX_RELOAD_PUMP"></Sound>
+    <Sound ID="VOX_TRPR_BOMB_DEFUSING">
+      <Path name="data/sounds/voice/Nagant/Series_Shield_Broken__VO_Nagant_Series_Skill01__VO_Nagant_Single_Skill_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_BOMB_LOCATED"></Sound>
+    <Sound ID="VOX_TRPR_CAN_I_SHOOT"></Sound>
+    <Sound ID="VOX_TRPR_CANT"></Sound>
+    <Sound ID="VOX_TRPR_CIV_DOWN">
+      <Path name="data/sounds/voice/Nagant/Series_HittedLast__VO_Nagant_Series_Shield_Broken__VO_Nagant_Series_Tone_Positive_010.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_CLEAR">
+      <Path name="data/sounds/voice/Nagant/Series_Up_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_COME">
+      <Path name="data/sounds/voice/Nagant/Series_Up_004.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_DONE_HERE">
+      <Path name="data/sounds/voice/Nagant/Series_Win__VO_Nagant_Single_Win_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_EVAC">
+      <Path name="data/sounds/voice/Nagant/Series_Up_004.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_EYESONTARGET">
+      <Path name="data/sounds/voice/Nagant/Series_Up_002.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_EYESONTARGET_QUIET">
+      <Path name="data/sounds/voice/Nagant/Series_Cancel__VO_Nagant_Series_Chosen_Auto__VO_Nagant_Series_Tone_Positive_005.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_FREEZE">
+      <Path name="data/sounds/voice/Nagant/Series_Up_006.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_GEAR_CHARGE_PLACE">
+      <Path name="data/sounds/voice/Nagant/Series_Hit__VO_Nagant_Single_Hit_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_GEAR_CHARGE_RDY"></Sound>
+    <Sound ID="VOX_TRPR_GETDOWN"></Sound>
+    <Sound ID="VOX_TRPR_GO_GO_GO">
+      <Path name="data/sounds/voice/Nagant/Series_Chosen__VO_Nagant_Series_Move_Start__VO_Nagant_Series_Tone_Positive_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_GO_LOUD"></Sound>
+    <Sound ID="VOX_TRPR_HANDCUFF"></Sound>
+    <Sound ID="VOX_TRPR_HOLDING">
+      <Path name="data/sounds/voice/Nagant/Series_Up_005.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_HOST_DOWN">
+      <Path name="data/sounds/voice/Nagant/Series_HittedLast__VO_Nagant_Series_Shield_Broken__VO_Nagant_Series_Tone_Positive_010.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_HOST_SEC">
+      <Path name="data/sounds/voice/Nagant/Series_Set_Click__VO_Nagant_Series_Tone_Positive_009.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_HVT_RUNNING"></Sound>
+    <Sound ID="VOX_TRPR_KEEPMOVINGOFF"></Sound>
+    <Sound ID="VOX_TRPR_KEEPMOVINGON"></Sound>
+    <Sound ID="VOX_TRPR_MANDOWN">
+      <Path name="data/sounds/voice/Nagant/Series_Lose__VO_Nagant_Single_Lose_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_MATCHSPEEDON"></Sound>
+    <Sound ID="VOX_TRPR_MOVING">
+      <Path name="data/sounds/voice/Nagant/Series_Cancel__VO_Nagant_Series_Set_Fall__VO_Nagant_Series_Tone_Positive_004.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_NOTANGOS"></Sound>
+    <Sound ID="VOX_TRPR_ON_ALPHA"></Sound>
+    <Sound ID="VOX_TRPR_ON_BRAVO"></Sound>
+    <Sound ID="VOX_TRPR_ON_CHARLIE"></Sound>
+    <Sound ID="VOX_TRPR_ON_DELTA"></Sound>
+    <Sound ID="VOX_TRPR_ONTARGET">
+      <Path name="data/sounds/voice/Nagant/Series_Up_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_ORDERS"></Sound>
+    <Sound ID="VOX_TRPR_PASS_ALPHA"></Sound>
+    <Sound ID="VOX_TRPR_PASS_BRAVO"></Sound>
+    <Sound ID="VOX_TRPR_PASS_CHARLIE"></Sound>
+    <Sound ID="VOX_TRPR_PASS_DELTA"></Sound>
+    <Sound ID="VOX_TRPR_PINNED_DOWN">
+      <Path name="data/sounds/voice/Nagant/Series_Shield_Broken__VO_Nagant_Series_Tone_Positive_008.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_PUMPUP">
+      <Path name="data/sounds/voice/Nagant/Series_Skill02__VO_Nagant_Single_Skill_002.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_ROGER">
+      <Path name="data/sounds/voice/Nagant/Series_Up_007.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_SILENTOFF"></Sound>
+    <Sound ID="VOX_TRPR_SILENTON">
+      <Path name="data/sounds/voice/Nagant/Series_Cancel__VO_Nagant_Series_Chosen_Auto__VO_Nagant_Series_Tone_Positive_005.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_SUSP_SEC"></Sound>
+    <Sound ID="VOX_TRPR_TANGODOWN">
+      <Path name="data/sounds/voice/Nagant/Series_Kill__VO_Nagant_Single_Kill_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_TANGOS">
+      <Path name="data/sounds/voice/Nagant/Series_Set_Click__VO_Nagant_Series_Tone_Positive_009.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_TARGET_SEC">
+      <Path name="data/sounds/voice/Nagant/Series_Up_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_TIME_TO_GO">
+      <Path name="data/sounds/voice/Nagant/Series_Lose__VO_Nagant_Single_Lose_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_VIP_DEAD">
+      <Path name="data/sounds/voice/Nagant/Series_HittedLast__VO_Nagant_Series_Shield_Broken__VO_Nagant_Series_Tone_Positive_010.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_WAIT">
+      <Path name="data/sounds/voice/Nagant/Series_Up_005.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_EYES_HOSTAGE"></Sound>
+    <Sound ID="VOX_WARN_GRENADE">
+      <Path name="data/sounds/voice/Nagant/Series_HittedLast__VO_Nagant_Series_Shield_Broken__VO_Nagant_Series_Tone_Positive_010.wav" />
+    </Sound>
+    <Sound ID="VOX_WARN_RPG"></Sound>
+    <Sound ID="VOX_TRPR_BREACHING_DOOR"></Sound>
+    <Sound ID="VOX_TRPR_COMPROMISED"></Sound>
+    <Sound ID="VOX_TRPR_DISGUISED"></Sound>
+  </Pack>
+  <Pack name="Ksenia-Voice" channel="voice">
+    <Sound ID="VOX_DYING">
+      <Path name="data/sounds/voice/Ksenia/Series_Die__VO_Ksenia_Series_Tone_Negative_002.wav" />
+    </Sound>
+    <Sound ID="VOX_GEAR_FLASH">
+      <Path name="data/sounds/voice/Ksenia/Series_Skill02__VO_Ksenia_Single_Skill_002.wav" />
+    </Sound>
+    <Sound ID="VOX_GEAR_FRAG">
+      <Path name="data/sounds/voice/Ksenia/Series_Hit__VO_Ksenia_Single_Hit_001.wav" />
+    </Sound>
+    <Sound ID="VOX_GEAR_LAUNCHER">
+      <Path name="data/sounds/voice/Ksenia/Series_Ultimate__VO_Ksenia_Single_Ultimate_SR_001.wav" />
+    </Sound>
+    <Sound ID="VOX_GEAR_MOLOTOV">
+      <Path name="data/sounds/voice/Ksenia/Series_Skill01__VO_Ksenia_Single_Skill_001.wav" />
+    </Sound>
+    <Sound ID="VOX_GEAR_ROCKET">
+      <Path name="data/sounds/voice/Ksenia/Series_Ultimate__VO_Ksenia_Single_Ultimate_SR_001.wav" />
+    </Sound>
+    <Sound ID="VOX_GEAR_SMOKE">
+      <Path name="data/sounds/voice/Ksenia/Series_SkillPatk__VO_Ksenia_Series_Up_007.wav" />
+    </Sound>
+    <Sound ID="VOX_GEAR_STINGER"></Sound>
+    <Sound ID="VOX_INJURED">
+      <Path name="data/sounds/voice/Ksenia/Series_Tone_Negative_001.wav" />
+    </Sound>
+    <Sound ID="VOX_RELOAD">
+      <Path name="data/sounds/voice/Ksenia/Series_Tone_Positive_009.wav" />
+    </Sound>
+    <Sound ID="VOX_RELOAD_PUMP"></Sound>
+    <Sound ID="VOX_TRPR_BOMB_DEFUSING">
+      <Path name="data/sounds/voice/Ksenia/Series_Skill01__VO_Ksenia_Single_Skill_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_BOMB_LOCATED"></Sound>
+    <Sound ID="VOX_TRPR_CAN_I_SHOOT"></Sound>
+    <Sound ID="VOX_TRPR_CANT"></Sound>
+    <Sound ID="VOX_TRPR_CIV_DOWN">
+      <Path name="data/sounds/voice/Ksenia/Series_Tone_Negative_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_CLEAR">
+      <Path name="data/sounds/voice/Ksenia/Series_Up_006.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_COME"></Sound>
+    <Sound ID="VOX_TRPR_DONE_HERE">
+      <Path name="data/sounds/voice/Ksenia/Series_Win__VO_Ksenia_Single_Win_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_EVAC">
+      <Path name="data/sounds/voice/Ksenia/Series_Hit__VO_Ksenia_Single_Hit_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_EYESONTARGET">
+      <Path name="data/sounds/voice/Ksenia/Series_Up_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_EYESONTARGET_QUIET"></Sound>
+    <Sound ID="VOX_TRPR_FREEZE">
+      <Path name="data/sounds/voice/Ksenia/Series_Tone_Positive_005.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_GEAR_CHARGE_PLACE">
+      <Path name="data/sounds/voice/Ksenia/Series_Hit__VO_Ksenia_Single_Hit_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_GEAR_CHARGE_RDY"></Sound>
+    <Sound ID="VOX_TRPR_GETDOWN"></Sound>
+    <Sound ID="VOX_TRPR_GO_GO_GO">
+      <Path name="data/sounds/voice/Ksenia/Series_Battle_Start__VO_Ksenia_Series_Tone_Positive_008.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_GO_LOUD"></Sound>
+    <Sound ID="VOX_TRPR_HANDCUFF"></Sound>
+    <Sound ID="VOX_TRPR_HOLDING">
+      <Path name="data/sounds/voice/Ksenia/Series_Chosen__VO_Ksenia_Series_Tone_Positive_007.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_HOST_DOWN">
+      <Path name="data/sounds/voice/Ksenia/Series_Tone_Negative_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_HOST_SEC">
+      <Path name="data/sounds/voice/Ksenia/Series_Set_Click__VO_Ksenia_Series_Tone_Positive_003.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_HVT_RUNNING"></Sound>
+    <Sound ID="VOX_TRPR_KEEPMOVINGOFF"></Sound>
+    <Sound ID="VOX_TRPR_KEEPMOVINGON"></Sound>
+    <Sound ID="VOX_TRPR_MANDOWN">
+      <Path name="data/sounds/voice/Ksenia/Series_Lose__VO_Ksenia_Single_Lose_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_MATCHSPEEDON"></Sound>
+    <Sound ID="VOX_TRPR_MOVING">
+      <Path name="data/sounds/voice/Ksenia/Series_Tone_Positive_010.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_NOTANGOS"></Sound>
+    <Sound ID="VOX_TRPR_ON_ALPHA"></Sound>
+    <Sound ID="VOX_TRPR_ON_BRAVO"></Sound>
+    <Sound ID="VOX_TRPR_ON_CHARLIE"></Sound>
+    <Sound ID="VOX_TRPR_ON_DELTA"></Sound>
+    <Sound ID="VOX_TRPR_ONTARGET">
+      <Path name="data/sounds/voice/Ksenia/Series_Up_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_ORDERS"></Sound>
+    <Sound ID="VOX_TRPR_PASS_ALPHA"></Sound>
+    <Sound ID="VOX_TRPR_PASS_BRAVO"></Sound>
+    <Sound ID="VOX_TRPR_PASS_CHARLIE"></Sound>
+    <Sound ID="VOX_TRPR_PASS_DELTA"></Sound>
+    <Sound ID="VOX_TRPR_PINNED_DOWN">
+      <Path name="data/sounds/voice/Ksenia/Series_Tone_Negative_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_PUMPUP">
+      <Path name="data/sounds/voice/Ksenia/Series_Up_003.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_ROGER">
+      <Path name="data/sounds/voice/Ksenia/Series_Set_Fall__VO_Ksenia_Series_Tone_Positive_001.wav" />
+      <Path name="data/sounds/voice/Ksenia/Series_Cancel__VO_Ksenia_Series_Tone_Positive_002.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_SILENTOFF"></Sound>
+    <Sound ID="VOX_TRPR_SILENTON">
+      <Path name="data/sounds/voice/Ksenia/Series_Tone_Positive_006.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_SUSP_SEC"></Sound>
+    <Sound ID="VOX_TRPR_TANGODOWN">
+      <Path name="data/sounds/voice/Ksenia/Series_Battle_NormalKill__VO_Ksenia_Series_Kill__VO_Ksenia_Single_Kill_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_TANGOS">
+      <Path name="data/sounds/voice/Ksenia/Series_Chosen_Auto__VO_Ksenia_Series_Tone_Positive_004.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_TARGET_SEC">
+      <Path name="data/sounds/voice/Ksenia/Series_Up_006.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_TIME_TO_GO">
+      <Path name="data/sounds/voice/Ksenia/Series_Lose__VO_Ksenia_Single_Lose_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_VIP_DEAD">
+      <Path name="data/sounds/voice/Ksenia/Series_Tone_Negative_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_WAIT">
+      <Path name="data/sounds/voice/Ksenia/Series_Chosen__VO_Ksenia_Series_Tone_Positive_007.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_EYES_HOSTAGE"></Sound>
+    <Sound ID="VOX_WARN_GRENADE">
+      <Path name="data/sounds/voice/Ksenia/Series_Hit__VO_Ksenia_Series_Tone_Positive_005.wav" />
+    </Sound>
+    <Sound ID="VOX_WARN_RPG"></Sound>
+    <Sound ID="VOX_TRPR_BREACHING_DOOR"></Sound>
+    <Sound ID="VOX_TRPR_COMPROMISED"></Sound>
+    <Sound ID="VOX_TRPR_DISGUISED"></Sound>
+  </Pack>
+  <Pack name="Papasha-Voice" channel="voice">
+    <Sound ID="VOX_DYING">
+      <Path name="data/sounds/voice/Papasha/Series_Die__VO_Papasha_Series_Tone_Negative_002.wav" />
+    </Sound>
+    <Sound ID="VOX_GEAR_FLASH">
+      <Path name="data/sounds/voice/Papasha/Series_Tone_Positive_007.wav" />
+    </Sound>
+    <Sound ID="VOX_GEAR_FRAG">
+      <Path name="data/sounds/voice/Papasha/Series_Tone_Positive_003.wav" />
+    </Sound>
+    <Sound ID="VOX_GEAR_LAUNCHER">
+      <Path name="data/sounds/voice/Papasha/Series_Ultimate__VO_Papasha_Single_Ultimate_SSR_001.wav" />
+    </Sound>
+    <Sound ID="VOX_GEAR_MOLOTOV">
+      <Path name="data/sounds/voice/Papasha/Series_Hit__VO_Papasha_Single_Hit_001.wav" />
+    </Sound>
+    <Sound ID="VOX_GEAR_ROCKET">
+      <Path name="data/sounds/voice/Papasha/Series_Ultimate__VO_Papasha_Single_Ultimate_SSR_001.wav" />
+    </Sound>
+    <Sound ID="VOX_GEAR_SMOKE">
+      <Path name="data/sounds/voice/Papasha/Series_Tone_Positive_006.wav" />
+    </Sound>
+    <Sound ID="VOX_GEAR_STINGER"></Sound>
+    <Sound ID="VOX_INJURED">
+      <Path name="data/sounds/voice/Papasha/Series_Hitted__VO_Papasha_Series_HittedLast.wav" />
+      <Path name="data/sounds/voice/Papasha/Series_Cancel__VO_Papasha_Series_Tone_Negative_001.wav" />
+    </Sound>
+    <Sound ID="VOX_RELOAD">
+      <Path name="data/sounds/voice/Papasha/Series_Up_002.wav" />
+    </Sound>
+    <Sound ID="VOX_RELOAD_PUMP"></Sound>
+    <Sound ID="VOX_TRPR_BOMB_DEFUSING">
+      <Path name="data/sounds/voice/Papasha/Series_Up_007.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_BOMB_LOCATED"></Sound>
+    <Sound ID="VOX_TRPR_CAN_I_SHOOT"></Sound>
+    <Sound ID="VOX_TRPR_CANT"></Sound>
+    <Sound ID="VOX_TRPR_CIV_DOWN">
+      <Path name="data/sounds/voice/Papasha/Series_Cancel__VO_Papasha_Series_Tone_Negative_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_CLEAR">
+      <Path name="data/sounds/voice/Papasha/Series_Chosen_Auto__VO_Papasha_Series_Hit__VO_Papasha_Series_Tone_Positive_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_COME">
+      <Path name="data/sounds/voice/Papasha/Series_Up_008.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_DONE_HERE">
+      <Path name="data/sounds/voice/Papasha/Series_Win__VO_Papasha_Single_Win_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_EVAC">
+      <Path name="data/sounds/voice/Papasha/Series_Hit__VO_Papasha_Series_Tone_Positive_003.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_EYESONTARGET">
+      <Path name="data/sounds/voice/Papasha/Series_Set_Fall__VO_Papasha_Series_Tone_Positive_008.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_EYESONTARGET_QUIET"></Sound>
+    <Sound ID="VOX_TRPR_FREEZE"></Sound>
+    <Sound ID="VOX_TRPR_GEAR_CHARGE_PLACE">
+      <Path name="data/sounds/voice/Papasha/Series_Hit__VO_Papasha_Series_Tone_Positive_003.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_GEAR_CHARGE_RDY"></Sound>
+    <Sound ID="VOX_TRPR_GETDOWN"></Sound>
+    <Sound ID="VOX_TRPR_GO_GO_GO">
+      <Path name="data/sounds/voice/Papasha/Series_Battle_Start__VO_Papasha_Series_Tone_Positive_010.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_GO_LOUD"></Sound>
+    <Sound ID="VOX_TRPR_HANDCUFF"></Sound>
+    <Sound ID="VOX_TRPR_HOLDING">
+      <Path name="data/sounds/voice/Papasha/Series_Tone_Positive_004.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_HOST_DOWN">
+      <Path name="data/sounds/voice/Papasha/Series_Cancel__VO_Papasha_Series_Tone_Negative_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_HOST_SEC">
+      <Path name="data/sounds/voice/Papasha/Series_Set_Click__VO_Papasha_Series_Tone_Positive_005.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_HVT_RUNNING"></Sound>
+    <Sound ID="VOX_TRPR_KEEPMOVINGOFF"></Sound>
+    <Sound ID="VOX_TRPR_KEEPMOVINGON"></Sound>
+    <Sound ID="VOX_TRPR_MANDOWN">
+      <Path name="data/sounds/voice/Papasha/Series_Lose__VO_Papasha_Single_Lose_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_MATCHSPEEDON"></Sound>
+    <Sound ID="VOX_TRPR_MOVING">
+      <Path name="data/sounds/voice/Papasha/Series_Chosen__VO_Papasha_Series_Tone_Positive_002.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_NOTANGOS"></Sound>
+    <Sound ID="VOX_TRPR_ON_ALPHA"></Sound>
+    <Sound ID="VOX_TRPR_ON_BRAVO"></Sound>
+    <Sound ID="VOX_TRPR_ON_CHARLIE"></Sound>
+    <Sound ID="VOX_TRPR_ON_DELTA"></Sound>
+    <Sound ID="VOX_TRPR_ONTARGET">
+      <Path name="data/sounds/voice/Papasha/Series_Up_007.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_ORDERS"></Sound>
+    <Sound ID="VOX_TRPR_PASS_ALPHA"></Sound>
+    <Sound ID="VOX_TRPR_PASS_BRAVO"></Sound>
+    <Sound ID="VOX_TRPR_PASS_CHARLIE"></Sound>
+    <Sound ID="VOX_TRPR_PASS_DELTA"></Sound>
+    <Sound ID="VOX_TRPR_PINNED_DOWN">
+      <Path name="data/sounds/voice/Papasha/Series_Cancel__VO_Papasha_Series_Tone_Negative_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_PUMPUP">
+      <Path name="data/sounds/voice/Papasha/Series_Up_003.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_ROGER">
+      <Path name="data/sounds/voice/Papasha/Series_Set_Click__VO_Papasha_Series_Tone_Positive_005.wav" />
+      <Path name="data/sounds/voice/Papasha/Series_Up_004.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_SILENTOFF"></Sound>
+    <Sound ID="VOX_TRPR_SILENTON">
+      <Path name="data/sounds/voice/Papasha/Series_Tone_Positive_009.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_SUSP_SEC"></Sound>
+    <Sound ID="VOX_TRPR_TANGODOWN">
+      <Path name="data/sounds/voice/Papasha/Series_Kill__VO_Papasha_Single_Kill_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_TANGOS">
+      <Path name="data/sounds/voice/Papasha/Series_Chosen_Auto__VO_Papasha_Series_Tone_Positive_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_TARGET_SEC">
+      <Path name="data/sounds/voice/Papasha/Series_Set_Click__VO_Papasha_Series_Tone_Positive_005.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_TIME_TO_GO">
+      <Path name="data/sounds/voice/Papasha/Series_Lose__VO_Papasha_Single_Lose_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_VIP_DEAD">
+      <Path name="data/sounds/voice/Papasha/Series_Cancel__VO_Papasha_Series_Tone_Negative_001.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_WAIT">
+      <Path name="data/sounds/voice/Papasha/Series_Tone_Positive_004.wav" />
+    </Sound>
+    <Sound ID="VOX_TRPR_EYES_HOSTAGE">
+      <Path name="data/sounds/voice/Papasha/Series_Skill02__VO_Papasha_Single_Skill_002.wav" />
+    </Sound>
+    <Sound ID="VOX_WARN_GRENADE">
+      <Path name="data/sounds/voice/Papasha/Series_Skill01__VO_Papasha_Single_Skill_001.wav" />
+    </Sound>
+    <Sound ID="VOX_WARN_RPG"></Sound>
+    <Sound ID="VOX_TRPR_BREACHING_DOOR"></Sound>
+    <Sound ID="VOX_TRPR_COMPROMISED"></Sound>
+    <Sound ID="VOX_TRPR_DISGUISED"></Sound>
+  </Pack>
+</Sounds>

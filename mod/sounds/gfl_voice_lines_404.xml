@@ -241,6 +241,9 @@
                 name="data/sounds/voice/Clukay/Series_Shield_Broken__VO_Clukay_Series_Tone_Negative_002.wav"
             />
     </Sound>
+    <Sound ID="VOX_TRPR_BREACHING_DOOR"></Sound>
+    <Sound ID="VOX_TRPR_COMPROMISED"></Sound>
+    <Sound ID="VOX_TRPR_DISGUISED"></Sound>
   </Pack>
   <Pack name="Mechty-Voice" channel="voice">
     <Sound ID="VOX_DYING">
@@ -485,6 +488,9 @@
     <Sound ID="VOX_WARN_RPG">
       <Path name="data/sounds/voice/Mechty/Series_Tone_Negative_002.wav" />
     </Sound>
+    <Sound ID="VOX_TRPR_BREACHING_DOOR"></Sound>
+    <Sound ID="VOX_TRPR_COMPROMISED"></Sound>
+    <Sound ID="VOX_TRPR_DISGUISED"></Sound>
   </Pack>
   <Pack name="Vector-Voice" channel="voice">
     <Sound ID="VOX_DYING">
@@ -723,6 +729,9 @@
     <Sound ID="VOX_WARN_RPG">
       <Path name="data/sounds/voice/Vector/Series_Tone_Negative_001.wav" />
     </Sound>
+    <Sound ID="VOX_TRPR_BREACHING_DOOR"></Sound>
+    <Sound ID="VOX_TRPR_COMPROMISED"></Sound>
+    <Sound ID="VOX_TRPR_DISGUISED"></Sound>
   </Pack>
   <Pack name="Leva-Voice" channel="voice">
     <Sound ID="VOX_DYING">
@@ -978,6 +987,9 @@
                 name="data/sounds/voice/Leva/Series_Shield_Broken__VO_Leva_Series_Tone_Negative_003.wav"
             />
     </Sound>
+    <Sound ID="VOX_TRPR_BREACHING_DOOR"></Sound>
+    <Sound ID="VOX_TRPR_COMPROMISED"></Sound>
+    <Sound ID="VOX_TRPR_DISGUISED"></Sound>
   </Pack>
   <Pack name="Lenna-Voice" channel="voice">
     <Sound ID="VOX_DYING">
@@ -1209,6 +1221,9 @@
     <Sound ID="VOX_WARN_RPG">
       <Path name="data/sounds/voice/Lenna/Series_Tone_Negative_001.wav" />
     </Sound>
+    <Sound ID="VOX_TRPR_BREACHING_DOOR"></Sound>
+    <Sound ID="VOX_TRPR_COMPROMISED"></Sound>
+    <Sound ID="VOX_TRPR_DISGUISED"></Sound>
   </Pack>
   <Pack name="Andoris-Voice" channel="voice">
     <Sound ID="VOX_DYING">
@@ -1456,6 +1471,9 @@
     <Sound ID="VOX_WARN_RPG">
       <Path name="data/sounds/voice/Andoris/Series_Tone_Negative_001.wav" />
     </Sound>
+    <Sound ID="VOX_TRPR_BREACHING_DOOR"></Sound>
+    <Sound ID="VOX_TRPR_COMPROMISED"></Sound>
+    <Sound ID="VOX_TRPR_DISGUISED"></Sound>
   </Pack>
   <Pack name="Biyoca-Voice" channel="voice">
     <Sound ID="VOX_DYING">
@@ -1703,5 +1721,8 @@
     <Sound ID="VOX_WARN_RPG">
       <Path name="data/sounds/voice/Biyoca/Series_Tone_Negative_001.wav" />
     </Sound>
+    <Sound ID="VOX_TRPR_BREACHING_DOOR"></Sound>
+    <Sound ID="VOX_TRPR_COMPROMISED"></Sound>
+    <Sound ID="VOX_TRPR_DISGUISED"></Sound>
   </Pack>
 </Sounds>

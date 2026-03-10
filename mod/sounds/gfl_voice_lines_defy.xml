@@ -219,6 +219,9 @@
                 name="data/sounds/voice/Alva/Series_Ultimate__VO_Alva_Single_Ultimate_SSR_001.wav"
             />
     </Sound>
+    <Sound ID="VOX_TRPR_BREACHING_DOOR"></Sound>
+    <Sound ID="VOX_TRPR_COMPROMISED"></Sound>
+    <Sound ID="VOX_TRPR_DISGUISED"></Sound>
   </Pack>
   <Pack name="Voymastina-Voice" channel="voice">
     <Sound ID="VOX_DYING">
@@ -466,5 +469,8 @@
     <Sound ID="VOX_WARN_RPG">
       <Path name="data/sounds/voice/Voymastina/Series_Up_002.wav" />
     </Sound>
+    <Sound ID="VOX_TRPR_BREACHING_DOOR"></Sound>
+    <Sound ID="VOX_TRPR_COMPROMISED"></Sound>
+    <Sound ID="VOX_TRPR_DISGUISED"></Sound>
   </Pack>
 </Sounds>

@@ -214,6 +214,9 @@
       <!-- "This is the end!" -->
       <Path name="data/sounds/voice/Daiyan/Series_Ultimate__VO_Daiyan_Single_Ultimate_SSR_001.wav" />
     </Sound>
+    <Sound ID="VOX_TRPR_BREACHING_DOOR"></Sound>
+    <Sound ID="VOX_TRPR_COMPROMISED"></Sound>
+    <Sound ID="VOX_TRPR_DISGUISED"></Sound>
   </Pack>
   <Pack name="Jiangyu-Voice" channel="voice">
     <Sound ID="VOX_DYING">
@@ -418,6 +421,9 @@
     </Sound>
     <Sound ID="VOX_TRPR_WAIT">
     </Sound>
+    <Sound ID="VOX_TRPR_BREACHING_DOOR"></Sound>
+    <Sound ID="VOX_TRPR_COMPROMISED"></Sound>
+    <Sound ID="VOX_TRPR_DISGUISED"></Sound>
   </Pack>
   <Pack name="Faye-Voice" channel="voice">
     <Sound ID="VOX_DYING">
@@ -626,6 +632,9 @@
       <!-- "You're in my way!" -->
       <Path name="data/sounds/voice/Faye/Series_Tone_Positive_007.wav" />
     </Sound>
+    <Sound ID="VOX_TRPR_BREACHING_DOOR"></Sound>
+    <Sound ID="VOX_TRPR_COMPROMISED"></Sound>
+    <Sound ID="VOX_TRPR_DISGUISED"></Sound>
   </Pack>
   <Pack name="ZhaoHui-Voice" channel="voice">
     <Sound ID="VOX_DYING">
@@ -824,5 +833,8 @@
     </Sound>
     <Sound ID="VOX_WARN_RPG">
     </Sound>
+    <Sound ID="VOX_TRPR_BREACHING_DOOR"></Sound>
+    <Sound ID="VOX_TRPR_COMPROMISED"></Sound>
+    <Sound ID="VOX_TRPR_DISGUISED"></Sound>
   </Pack>
 </Sounds>

@@ -243,6 +243,9 @@
     <Sound ID="VOX_WARN_RPG">
       <Path name="data/sounds/voice/Springfield/Series_Up_002.wav" />
     </Sound>
+    <Sound ID="VOX_TRPR_BREACHING_DOOR"></Sound>
+    <Sound ID="VOX_TRPR_COMPROMISED"></Sound>
+    <Sound ID="VOX_TRPR_DISGUISED"></Sound>
   </Pack>
   <Pack name="Macqiato-Voice" channel="voice">
     <Sound ID="VOX_DYING">
@@ -491,6 +494,9 @@
     <Sound ID="VOX_WARN_RPG">
       <Path name="data/sounds/voice/Macqiato/Series_Up_002.wav" />
     </Sound>
+    <Sound ID="VOX_TRPR_BREACHING_DOOR"></Sound>
+    <Sound ID="VOX_TRPR_COMPROMISED"></Sound>
+    <Sound ID="VOX_TRPR_DISGUISED"></Sound>
   </Pack>
   <Pack name="Centaureissi-Voice" channel="voice">
     <Sound ID="VOX_DYING">
@@ -731,6 +737,9 @@
     <Sound ID="VOX_WARN_RPG">
       <Path name="data/sounds/voice/Centaureissi/Series_Up_002.wav" />
     </Sound>
+    <Sound ID="VOX_TRPR_BREACHING_DOOR"></Sound>
+    <Sound ID="VOX_TRPR_COMPROMISED"></Sound>
+    <Sound ID="VOX_TRPR_DISGUISED"></Sound>
   </Pack>
   <Pack name="Sharkry-Voice" channel="voice">
     <Sound ID="VOX_DYING">
@@ -961,5 +970,8 @@
     <Sound ID="VOX_WARN_RPG">
       <Path name="data/sounds/voice/Sharkry/Series_Hitted.wav" />
     </Sound>
+    <Sound ID="VOX_TRPR_BREACHING_DOOR"></Sound>
+    <Sound ID="VOX_TRPR_COMPROMISED"></Sound>
+    <Sound ID="VOX_TRPR_DISGUISED"></Sound>
   </Pack>
 </Sounds>
