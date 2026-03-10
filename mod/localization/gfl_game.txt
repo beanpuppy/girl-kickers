@@ -233,10 +233,20 @@
 @WEAP-AK15-NAME=AK-15
 @WEAP-AK15-DESC=The AK-15 is a variant of the AK-12 chambered for the 7.62×39mm cartridge. Both the AK-12 and AK-15 were developed by the Kalashnikov Group as part of the "Ratnik" ("Warrior", Russian future infantry combat system) program, and have been accepted into Russian military service.
 
+@skin_ak15_default_name=Default
+@skin_ak15_default_desc=Voymastina's default appearance.
+@skin_ak15_skin1_name=Skin 1
+@skin_ak15_skin1_desc=Alternate skin for Voymastina.
+
 @DOLL-AN94-NAME=ALVA
 @DOLL-AN94-DESC=A Doll from the Neo-Soviet Union’s Bureau of State Security and the prototype for the Wolf Pack Project, now leader of Task Force DEFY. After becoming the leader of DEFY, she’s taken over her former partner as the new alpha wolf, earned the respect of her squad members and became better at socializing. What she wants is for Task Force DEFY to endure, and to unravel Paradeus’ new plot. She really loves cats.
 @WEAP-AN94-NAME=AN-94
 @WEAP-AN94-DESC=The AN-94, or Avtomat Nikonova 1994, is a 5.45x39mm caliber gas-operated Russian firearm made by PO Izhmash made during Project Abakan. Project Abakan was a Russian assault rifle program that took place from 1980 to 1994. Being the only outcome from the project, AN-94 was awarded with the name Abakan. The GRAU designation for the AN-94 is '6P33'.
+
+@skin_an94_default_name=Hyper Trigger
+@skin_an94_default_desc=Alva's usual outfit. It's a highly professional special forces battle dress uniform that has next to no ornamentation or personalization, affording mobility and the ability to execute highly-demanding maneuvers in just about any environment.
+@skin_an94_skin1_name=Antje
+@skin_an94_skin1_desc="Commander, I'm not picking up any abnormailities in our surroundings. Currently, I am your assistant Antje... That's a name I didn't expect to be using again."\nDue to the demands of providing undercover close protection, she follows you closely, sticking much closer to you than usual.
 
 @doctrine_gfl_defy_femalegorilla_name=The Female Gorilla
 @doctrine_gfl_defy_femalegorilla_descr=Voymastina intimidates anyone in her presense. Enemies within her radius gain reduced accuracy, supression recovery, and aim time.
@@ -311,6 +321,11 @@
 @WEAP-UMP45-DESC=The UMP (Universale Maschinenpistole, German for "Universal Submachine Gun") is a submachine gun developed and manufactured by Heckler & Koch. The UMP is a blowback-operated select-fire submachine gun firing from a closed bolt. It features a polymer stock that is able to be folded for compactness, a paddle-style magazine release, and a handguard that is able to accept accessories, such as vertical foregrips. The barrel is approximately 8 inches long, and there may be rails on top of the receiver to mount optics.
 @firearm_caliber_45acp_name=.45 ACP
 
+@skin_ump45_default_name=Reasoned Gaze
+@skin_ump45_default_desc=Leva's typical outfit. Infusing her unique personaility into this outfit design which symbolizes rationality reflects how she walks a lonely path but never compromises her principles. This unique contradiction is where Leva's charm lies.
+@skin_ump45_skin1_name=Diamond Flower
+@skin_ump45_skin1_desc="I've taken part in many more parties than in the past. However, there's one that I've been looking forward to; I've never gotten an invite for it... So what are you waiting for, Commander~?"\nShe fixes you with her mirthful eyes, waiting for your answer.
+
 @DOLL-UMP9-NAME=LENNA
 @DOLL-UMP9-DESC=Lenna followed Kalina when she left G&K to join the Paramilitary Supervision Bureau in her quality as "a Doll who can handle responsibilities". She remains uncomfortable when separated from her beloved sister, and cherishes the memories of the time she spent fighting with her close companions. Her occupation and bodies have changed, but she's remains the same and will give you a big smile and hug when you're reunited.
 @WEAP-UMP9-NAME=UMP9
@@ -325,6 +340,11 @@
 @GEAR-VECTOR-GRENADE-DESC=Incendiary grenades with a small explosive charge that spreads its fiery payload further and stunning nearby enemies at the explosion point. Paint terror into their bones and clear your canvas.
 @GEAR-VECTOR-GRENADE-TTIP=Throw Searing Finale
 @menu_game_vector_grenade_none_ttip=Out of Confectance Index
+
+@skin_vector_default_name=Concealment Gear
+@skin_vector_default_desc=Vector's usual outfit. The discreet color scheme allows her to easily hide traces of her activity, allowing Vector to perpetually gain an advantage by always staying ahead in combat.
+@skin_vector_skin1_name=Vivi Sometimes Hides Her Molotovs
+@skin_vector_skin1_desc="I know I still have much room for improvement, Commander. If you have any suggestions, please feel free to tell me."\nHer eyes are sincere as she meets your gaze, yet there's a hint of worry in them.
 
 @doctrine_gfl_404_dreamwonderland_name=Dream Wonderland
 @doctrine_gfl_404_dreamwonderland_descr=Mechty operates in Patch Mode: enhanced defensive systems reduce incoming damage and stability loss. Upon eliminating a target, she consumes an energy drink and enters Turbo Mode for 7 seconds: sacrificing all defenses for explosive offensive power.
@@ -386,6 +406,11 @@
 @firearm_caliber_300wm_name=.300 Winchester Magnum
 @ammo_300wm_match_name=.300 Win Mag Match
 @ammo_300wm_match_desc=Premium match-grade ammunition with selected components for maximum accuracy and consistency at extreme ranges.
+
+@skin_m1903_default_name=Clean Military Uniform
+@skin_m1903_default_desc=Springfield's usual outfit. The elegant colors bring out the regal qualities of the outfit, subconsciously inducing those around Springfield to treat her with respect. Her warm smile however, dissipates any sense of awkwardness or need for formaility.
+@skin_m1903_skin1_name=Queen in Radiance
+@skin_m1903_skin1_desc=She is more dazzling and eye-catching than any jewel under the lamplight. A single gentle smile from her is neough to capture the gazes of everyone in front of her.
 
 @skin_wa2000_default_name=Caramel Melody
 @skin_wa2000_default_desc=Makiatto's usual outfit. She rarely opens her violin case; it holds her most cherished weapon.

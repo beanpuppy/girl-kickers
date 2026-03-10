@@ -1,7 +1,7 @@
 <Entities>
     <Entity name="GIRL-AN94" type="Human" editorAutoHeight="false">
         <RenderObject3D
-            model="data/models/dolls/an94.khm"
+            model="data/models/dolls/cubebodies/an94.khm"
             diffuseTex="data/models/dolls/an94.dds"
         />
 
@@ -35,13 +35,14 @@
                 <Item name="GFL_BasicCore" />
                 <Item name="GFL_NightVision" />
                 <Item name="GFL_CombatFrame" />
+                <Item name="GFL_SKIN_AN94_DEFAULT" />
             </Equipment>
         </Human>
     </Entity>
 
     <Entity name="GIRL-AK15" type="Human" editorAutoHeight="false">
         <RenderObject3D
-            model="data/models/dolls/ak15.khm"
+            model="data/models/dolls/cubebodies/ak15.khm"
             diffuseTex="data/models/dolls/ak15.dds"
         />
 
@@ -75,6 +76,7 @@
                 <Item name="GFL_BasicCore" />
                 <Item name="GFL_NightVision" />
                 <Item name="GFL_CombatFrame" />
+                <Item name="GFL_SKIN_AK15_DEFAULT" />
             </Equipment>
         </Human>
     </Entity>
@@ -242,7 +244,7 @@
 
     <Entity name="GIRL-UMP45" type="Human" editorAutoHeight="false">
         <RenderObject3D
-            model="data/models/dolls/ump45.khm"
+            model="data/models/dolls/cubebodies/ump45.khm"
             diffuseTex="data/models/dolls/ump45.dds"
         />
 
@@ -276,6 +278,7 @@
                 <Item name="GFL_BasicCore" />
                 <Item name="GFL_NightVision" />
                 <Item name="GFL_CombatFrame" />
+                <Item name="GFL_SKIN_UMP45_DEFAULT" />
             </Equipment>
         </Human>
     </Entity>
@@ -322,7 +325,7 @@
 
     <Entity name="GIRL-VECTOR" type="Human" editorAutoHeight="false">
         <RenderObject3D
-            model="data/models/dolls/vector.khm"
+            model="data/models/dolls/cubebodies/vector.khm"
             diffuseTex="data/models/dolls/vector.dds"
         />
 
@@ -357,13 +360,14 @@
                 <Item name="GFL_NightVision" />
                 <Item name="GFL_CombatFrame" />
                 <Item name="GFL-GEAR-VECTOR-GRENADE" />
+                <Item name="GFL_SKIN_VECTOR_DEFAULT" />
             </Equipment>
         </Human>
     </Entity>
 
     <Entity name="GIRL-M1903" type="Human" editorAutoHeight="false">
         <RenderObject3D
-            model="data/models/dolls/m1903.khm"
+            model="data/models/dolls/cubebodies/m1903.khm"
             diffuseTex="data/models/dolls/m1903.dds"
         />
 
@@ -397,6 +401,7 @@
                 <Item name="GFL_BasicCore" />
                 <Item name="GFL_NightVision" />
                 <Item name="GFL_CombatFrame" />
+                <Item name="GFL_SKIN_M1903_DEFAULT" />
             </Equipment>
         </Human>
     </Entity>
