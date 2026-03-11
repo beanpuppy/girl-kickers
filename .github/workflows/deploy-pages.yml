@@ -1,0 +1,79 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths: ['mod/**', 'www/**']
+  workflow_dispatch:
+    inputs:
+      extra_branches:
+        description: 'Comma-separated list of extra branches to deploy (e.g. test,feat/new-ui)'
+        required: false
+        default: ''
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: main
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install ImageMagick
+        run: sudo apt-get update && sudo apt-get install -y imagemagick
+
+      - name: Build main data
+        run: python main/www/unit-builder/build_data.py
+
+      - name: Assemble site root from main
+        run: cp -r main/www _site
+
+      - name: Deploy extra branches
+        if: inputs.extra_branches != ''
+        run: |
+          IFS=',' read -ra BRANCHES <<< "${{ inputs.extra_branches }}"
+          for branch in "${BRANCHES[@]}"; do
+            branch=$(echo "$branch" | xargs)  # trim whitespace
+            slug=$(echo "$branch" | sed 's/[^a-zA-Z0-9]/-/g')
+            echo "::group::Deploying branch '$branch' to /$slug/"
+            git clone --depth 1 --branch "$branch" \
+              "https://github.com/${{ github.repository }}.git" "branch-$slug"
+            if [ -f "branch-$slug/www/unit-builder/build_data.py" ]; then
+              python "branch-$slug/www/unit-builder/build_data.py"
+            fi
+            cp -r "branch-$slug/www" "_site/$slug"
+            rm -rf "branch-$slug"
+            echo "::endgroup::"
+          done
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
