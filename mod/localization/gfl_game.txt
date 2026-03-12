@@ -473,6 +473,11 @@
 @WEAP-OTS14-NAME=OTs-14
 @WEAP-OTS14-DESC=The OTs-14 'Groza' ("Thunderstorm") is a bullpup-configured, modular assault rifle system developed during the early 1990s by V. Telesh and Ju. Lebedev at the TsKIB SOO (Central Design Bureau for Sporting and Hunting Arms). Like its predecessor project the OTs-12 'Tiss', the design of the 'Groza' is based on the AKS-74U, and was an attempt to integrate all the best features from the various close quarter combat weapons in service into one singular unit. OTs-14 units have a great amount of interchangeable parts with the standard AK-74U.
 
+@skin_ots14_default_name=Blade's Aegis
+@skin_ots14_default_desc=Groza typically wears a white trench coat that carries the flames of battle, serving as the beacon for the team's advance.
+@skin_ots14_skin1_name=Dawn of Battle
+@skin_ots14_skin1_desc=The outfit Groza likes to wear when participating in important battles is adorned with falling stars along the hem. When the stars face and daybreak arrives, it marks the moment of victory.
+
 @DOLL-OM50-NAME=NEMESIS
 @DOLL-OM50-DESC=Passionate in mysticism and divination, she always carries a magical divination tool known as the "Prism". Her divination results are often expressed in a cryptic and enigmatic manner. Though she can be difficult to communicate with, she remains a dependable companion.
 @WEAP-OM50-NAME=OM 50 Nemesis
@@ -560,6 +565,11 @@
 @firearm_caliber_762x54_name=7.62×54mmR
 @ammo_762x54r_fmj_nsu_name=NSU 150gr FMJ
 @ammo_762x54r_fmj_nsu_desc=Standard full-power machine gun ammunition manufactured by the Neo Soviet Union for belt-fed weapons. The heavy bullet delivers punishing damage and consistent penetration at all ranges, designed to keep firing until there is nothing left standing.
+
+@skin_pkpsp_default_name=Dual Hunter
+@skin_pkpsp_default_desc=Peritya's typical outfit. The distinct footwear design enhances her agility.
+@skin_pkpsp_skin1_name=Born Huntress
+@skin_pkpsp_skin1_desc=Peritya's sportswear. Light, slim-fitting and doused in bright, showy colors, it adds a touch of liveliness and energy to the otherwise languid Peritya.
 
 @DOLL-SPAS12-NAME=SABRINA
 @DOLL-SPAS12-DESC=A Doll passionate abouut culinary research and enjoying food, the kitchen is her new battlefield. Loves sharing her cooking process, though aroma may have boundaries, her smile spreads through the network, infecting every viewer.
@@ -670,6 +680,11 @@
 @WEAP-AKALFA-NAME=AK-Alfa
 @WEAP-AKALFA-DESC=The AK-Alfa is a modernized variant of the legendary Kalashnikov platform, featuring enhanced accuracy, reduced recoil, and improved ergonomics while maintaining the AK's legendary reliability.
 
+@skin_akalfa_default_name=Grey Meteor
+@skin_akalfa_default_desc=Tololo usually wears a distincitve outfit, always carrying guns and cameras.
+@skin_akalfa_skin1_name=Horizon Cruise
+@skin_akalfa_skin1_desc="The course to the heavens is fixed, but as long as you look up, you'll always be able to find a new direction... Commander, will you search for the way with me?"\nThere's no need for words; her crystal-clear gaze is an offer you can't refuse.
+
 @DOLL-AA12-NAME=LIND
 @DOLL-AA12-DESC=Created as a clinical test subject Doll, Lind distinguished herself with her outstanding gunplay and overwhelming firepower. A member of the original Griffin & Kryuger, she remained in the PMC after its downsizing. After her open-mic late-night radio show stopped, her sweets allowance was cut down and her personal network was upended, Lind’s withdrawal symptoms worsened her social anxiety disorder, but as long as her comrades can be patient with her, she’ll be able to confidently face the future.
 @WEAP-AA12-NAME=AA-12
@@ -747,3 +762,40 @@
 
 @WEAP-CZ75-NAME=CZ 75
 @WEAP-CZ75-DESC=A semi-automatic handgun chambered in 9x19 Parabellum. Introduced in Czechoslovakia as early as 1975, it is one of the first semi-automatic pistols that can be fired by simply pulling the trigger and supported by a staggered column magazine. This allowed unparalleled firepower in such a compact package during the times it was introduced.
+
+@GFL-UNIT-POL03-NAME=POL-03 Security Divisions
+@GFL-UNIT-POL03-DESC=The police forces of the POL-03 Green Zone, who employed many of several former Griffin Dolls.
+@#GFL-UNIT-POL03-NAME-RND=POL-03 Security Divisions
+
+@DOLL-STECHKIN-NAME=KSENIA
+@DOLL-STECHKIN-DESC=A Doll with an unusual obsession with making money, she finds a sense of security by working hard to earn it and then spending it all. However, the time she spends working with her reliable companions is equally her treasure.
+
+@DOLL-NAGANT-NAME=NAGANT
+@DOLL-NAGANT-DESC=A Doll who likes to play the mature grown-up, but looks up to heroes and also aspires to be one. Even after leaving the battlefield, she continues to shine as a security Doll, ensuring peaceful nights.
+
+@DOLL-MOSINNAGANT-NAME=MOSIN-NAGANT
+@DOLL-MOSINNAGANT-DESC=A Doll who loves to help others and strives to improve her negative mindset. Her motto is to never avoid challenges; once motivated, she gives her all. While negative thoughts may linger in her neural cloud, her radiant smile and enthusiastic actions surely inspire many of her companions.
+
+@skin_mosinnagant_default_name=Frost Field Snow Owl
+@skin_mosinnagant_default_desc=Mosin-Nagant's outfit features a fur-lined coat and warm gloves, paired with a Northern Mule in the bitter winter--it's the perfect combo.
+@skin_mosinnagant_skin1_name=Siberian Slide
+@skin_mosinnagant_skin1_desc="The challenges I've faced are like flakes of falling snow... I crunch them underfoot and move on."\nIn her eyes which are fixed on you, there has never been a pall of despair; only a quiet zest for life.
+
+@DOLL-PPSH41-NAME=PAPASHA
+@DOLL-PPSH41-DESC=A warm-hearted Doll who doesn't know how to say "no", she has become a versatile helper through self-study in order to better handle any request. She is willing to give everything to protect everyone. When you encounter difficulties, feel free to rely on herーno matter what it is, Papasha will make it happen!
+
+@WEAP-STECHKIN-NAME=Stechkin APS
+@WEAP-STECHKIN-DESC=A select-fire machine pistol from the Soviet era, the Stechkin was issued to officers and vehicle crews who needed something hotter than the standard Makarov.\n\n20 rounds of 9x18mm and the option to go full auto makes this a surprisingly mean sidearm, but keep the bursts short or the muzzle climbs fast.
+
+@WEAP-NAGANT-NAME=Nagant M1895
+@WEAP-NAGANT-DESC=Old as dirt and twice as reliable. The Nagant's gas-seal cylinder pushes forward on firing, closing the barrel gap — making it one of the only revolvers that actually works suppressed.\n\nSeven rounds, slow to reload through the loading gate. Pick your shots.
+
+@WEAP-MOSINNAGANT-NAME=Mosin-Nagant
+@WEAP-MOSINNAGANT-DESC=The Russian Empire's bolt-action workhorse, still dropping Tangos after 130 years of service. Chambers the full-power 7.62x54mmR round.\n\nSlow to cycle, but one good hit from this thing and the conversation is over. Set up in a cover position and work the bolt.
+
+@WEAP-PPSH41-NAME=PPSh-41
+@WEAP-PPSH41-DESC=Wartime Soviet SMG built from stamped steel and bad intentions. The 71-round drum and ~900 RPM cyclic rate make it a room-clearing monster.\n\n7.62x25mm Tokarev has some punch to it, but practical accuracy drops off fast. Get close, hold the trigger, and let the drum do the talking.
+
+@firearm_caliber_9x18_name=9×18mm Makarov
+@firearm_caliber_762x25_name=7.62×25mm Tokarev
+@firearm_caliber_762x38r_name=7.62×38mmR Nagant

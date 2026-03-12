@@ -238,4 +238,124 @@
         />
     </Scope>
 
+<!-- Mosin-Nagant Skins -->
+
+    <Bind eqp="GFL_SKIN_MOSINNAGANT_DEFAULT">
+        <to name="GFL-DOLL-MOSINNAGANT" />
+    </Bind>
+    <Scope name="GFL_SKIN_MOSINNAGANT_DEFAULT" inventoryBinding="Custom1"
+        tooltip="@skin_mosinnagant_default_name"
+        description="@skin_mosinnagant_default_desc"
+        img="data/models/dolls/skins/mosinnagant/skin0_ui.dds"
+    >
+        <RenderObject3D
+            model="data/models/dolls/mosinnagant.khm"
+            diffuseTex="data/models/dolls/mosinnagant.dds"
+        />
+    </Scope>
+
+    <Bind eqp="GFL_SKIN_MOSINNAGANT_SKIN1">
+        <to name="GFL-DOLL-MOSINNAGANT" />
+    </Bind>
+    <Scope name="GFL_SKIN_MOSINNAGANT_SKIN1" inventoryBinding="Custom1"
+        tooltip="@skin_mosinnagant_skin1_name"
+        description="@skin_mosinnagant_skin1_desc"
+        img="data/models/dolls/skins/mosinnagant/skin1_ui.dds"
+    >
+        <RenderObject3D
+            model="data/models/dolls/skins/mosinnagant/skin1.khm"
+            diffuseTex="data/models/dolls/skins/mosinnagant/skin1.dds"
+        />
+    </Scope>
+
+<!-- Groza Skins -->
+
+    <Bind eqp="GFL_SKIN_OTS14_DEFAULT">
+        <to name="GFL-DOLL-OTS14" />
+    </Bind>
+    <Scope name="GFL_SKIN_OTS14_DEFAULT" inventoryBinding="Custom1"
+        tooltip="@skin_ots14_default_name"
+        description="@skin_ots14_default_desc"
+        img="data/models/dolls/skins/ots14/skin0_ui.dds"
+    >
+        <RenderObject3D
+            model="data/models/dolls/ots14.khm"
+            diffuseTex="data/models/dolls/ots14.dds"
+        />
+    </Scope>
+
+    <Bind eqp="GFL_SKIN_OTS14_SKIN1">
+        <to name="GFL-DOLL-OTS14" />
+    </Bind>
+    <Scope name="GFL_SKIN_OTS14_SKIN1" inventoryBinding="Custom1"
+        tooltip="@skin_ots14_skin1_name"
+        description="@skin_ots14_skin1_desc"
+        img="data/models/dolls/skins/ots14/skin1_ui.dds"
+    >
+        <RenderObject3D
+            model="data/models/dolls/skins/ots14/skin1.khm"
+            diffuseTex="data/models/dolls/skins/ots14/skin1.dds"
+        />
+    </Scope>
+
+<!-- Peritya Skins -->
+
+    <Bind eqp="GFL_SKIN_PKPSP_DEFAULT">
+        <to name="GFL-DOLL-PKPSP" />
+    </Bind>
+    <Scope name="GFL_SKIN_PKPSP_DEFAULT" inventoryBinding="Custom1"
+        tooltip="@skin_pkpsp_default_name"
+        description="@skin_pkpsp_default_desc"
+        img="data/models/dolls/skins/pkpsp/skin0_ui.dds"
+    >
+        <RenderObject3D
+            model="data/models/dolls/pkpsp.khm"
+            diffuseTex="data/models/dolls/pkpsp.dds"
+        />
+    </Scope>
+
+    <Bind eqp="GFL_SKIN_PKPSP_SKIN1">
+        <to name="GFL-DOLL-PKPSP" />
+    </Bind>
+    <Scope name="GFL_SKIN_PKPSP_SKIN1" inventoryBinding="Custom1"
+        tooltip="@skin_pkpsp_skin1_name"
+        description="@skin_pkpsp_skin1_desc"
+        img="data/models/dolls/skins/pkpsp/skin1_ui.dds"
+    >
+        <RenderObject3D
+            model="data/models/dolls/skins/pkpsp/skin1.khm"
+            diffuseTex="data/models/dolls/skins/pkpsp/skin1.dds"
+        />
+    </Scope>
+
+<!-- Tololo Skins -->
+
+    <Bind eqp="GFL_SKIN_AKALFA_DEFAULT">
+        <to name="GFL-DOLL-AKALFA" />
+    </Bind>
+    <Scope name="GFL_SKIN_AKALFA_DEFAULT" inventoryBinding="Custom1"
+        tooltip="@skin_akalfa_default_name"
+        description="@skin_akalfa_default_desc"
+        img="data/models/dolls/skins/akalfa/skin0_ui.dds"
+    >
+        <RenderObject3D
+            model="data/models/dolls/akalfa.khm"
+            diffuseTex="data/models/dolls/akalfa.dds"
+        />
+    </Scope>
+
+    <Bind eqp="GFL_SKIN_AKALFA_SKIN1">
+        <to name="GFL-DOLL-AKALFA" />
+    </Bind>
+    <Scope name="GFL_SKIN_AKALFA_SKIN1" inventoryBinding="Custom1"
+        tooltip="@skin_akalfa_skin1_name"
+        description="@skin_akalfa_skin1_desc"
+        img="data/models/dolls/skins/akalfa/skin1_ui.dds"
+    >
+        <RenderObject3D
+            model="data/models/dolls/skins/akalfa/skin1.khm"
+            diffuseTex="data/models/dolls/skins/akalfa/skin1.dds"
+        />
+    </Scope>
+
 </Equipment>

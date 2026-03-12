@@ -1298,7 +1298,7 @@
     <Firearm
         name="GFL-WEAP-UMP45"
         inventoryBinding="PrimaryWeapon"
-        category="rifle"
+        category="smg"
         unlockCost="0"
         tooltip="@WEAP-UMP45-NAME"
         description="@WEAP-UMP45-DESC"
@@ -1391,7 +1391,7 @@
     <Firearm
         name="GFL-WEAP-UMP45-SUP"
         inventoryBinding="PrimaryWeaponMuzzle"
-        category="rifle"
+        category="smg"
         unlockCost="0"
         tooltip="@WEAP-UMP45-NAME"
         description="@WEAP-UMP45-DESC"
@@ -1487,7 +1487,7 @@
     <Firearm
         name="GFL-WEAP-UMP9"
         inventoryBinding="PrimaryWeapon"
-        category="rifle"
+        category="smg"
         unlockCost="0"
         tooltip="@WEAP-UMP9-NAME"
         description="@WEAP-UMP9-DESC"
@@ -1581,7 +1581,7 @@
     <Firearm
         name="GFL-WEAP-UMP9-SUP"
         inventoryBinding="PrimaryWeaponMuzzle"
-        category="rifle"
+        category="smg"
         unlockCost="0"
         tooltip="@WEAP-UMP9-NAME"
         description="@WEAP-UMP9-DESC"
@@ -1679,7 +1679,7 @@
     <Firearm
         name="GFL-WEAP-VECTOR"
         inventoryBinding="PrimaryWeapon"
-        category="rifle"
+        category="smg"
         unlockCost="0"
         tooltip="@WEAP-VECTOR-NAME"
         description="@WEAP-VECTOR-DESC"
@@ -1776,7 +1776,7 @@
     <Firearm
         name="GFL-WEAP-M1903"
         inventoryBinding="PrimaryWeapon"
-        category="dmr"
+        category="sniper"
         unlockCost="0"
         tooltip="@WEAP-M1903-NAME"
         description="@WEAP-M1903-DESC"
@@ -1876,7 +1876,7 @@
     <Firearm
         name="GFL-WEAP-M1903-SUP"
         inventoryBinding="PrimaryWeaponMuzzle"
-        category="dmr"
+        category="sniper"
         unlockCost="0"
         tooltip="@WEAP-M1903-NAME"
         description="@WEAP-M1903-DESC"
@@ -2551,7 +2551,7 @@
     <Firearm
         name="GFL-WEAP-OM50"
         inventoryBinding="PrimaryWeapon"
-        category="dmr"
+        category="sniper"
         unlockCost="0"
         tooltip="@WEAP-OM50-NAME"
         description="@WEAP-OM50-DESC"
@@ -3292,7 +3292,7 @@
     <Firearm
         name="GFL-WEAP-MP5"
         inventoryBinding="PrimaryWeapon"
-        category="rifle"
+        category="smg"
         unlockCost="0"
         tooltip="@WEAP-MP5-NAME"
         description="@WEAP-MP5-DESC"
@@ -3386,7 +3386,7 @@
     <Firearm
         name="GFL-WEAP-MP5-SUP"
         inventoryBinding="PrimaryWeaponMuzzle"
-        category="rifle"
+        category="smg"
         unlockCost="0"
         tooltip="@WEAP-MP5-NAME"
         description="@WEAP-MP5-DESC"
@@ -4272,7 +4272,7 @@
     <Firearm
         name="GFL-WEAP-MP7"
         inventoryBinding="PrimaryWeapon"
-        category="rifle"
+        category="smg"
         unlockCost="0"
         tooltip="@WEAP-MP7-NAME"
         description="@WEAP-MP7-DESC"
@@ -4366,7 +4366,7 @@
     <Firearm
         name="GFL-WEAP-MP7-SUP"
         inventoryBinding="PrimaryWeaponMuzzle"
-        category="rifle"
+        category="smg"
         unlockCost="0"
         tooltip="@WEAP-MP7-NAME"
         description="@WEAP-MP7-DESC"
@@ -4766,7 +4766,7 @@
     <Firearm
         name="GFL-WEAP-CSLS06"
         inventoryBinding="PrimaryWeapon"
-        category="rifle"
+        category="smg"
         unlockCost="0"
         tooltip="@WEAP-CSLS06-NAME"
         description="@WEAP-CSLS06-DESC"
@@ -4859,7 +4859,7 @@
     <Firearm
         name="GFL-WEAP-CSLS06-SUP"
         inventoryBinding="PrimaryWeaponMuzzle"
-        category="rifle"
+        category="smg"
         unlockCost="0"
         tooltip="@WEAP-CSLS06-NAME"
         description="@WEAP-CSLS06-DESC"
@@ -5115,6 +5115,637 @@
             <ReloadEmpty name="pistol_reldempt" />
             <Fire name="m9sup_fire" />
             <ShellDrop name="pistol_shell_drop" />
+            <Empty name="gen_empty" />
+        </Sounds>
+    </Firearm>
+
+<!-- STECHKIN KSENIA -->
+
+    <Bind eqp="GFL-WEAP-STECHKIN">
+        <to name="919JHP_GFL_STECHKIN" />
+
+        <to name="scope_GFL_IronSights_Secondary" />
+        <to name="scope_GFL_RedDot_Pistol" />
+    </Bind>
+
+    <Firearm
+        name="GFL-WEAP-STECHKIN"
+        inventoryBinding="PrimaryWeapon"
+        category="pistol"
+        unlockCost="0"
+        tooltip="@WEAP-STECHKIN-NAME"
+        description="@WEAP-STECHKIN-DESC"
+        img="data/models/signatures/stechkin_ui.dds"
+        animationSet="pistol"
+    >
+        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="0" />
+
+        <RenderObject3D
+            model="data/models/signatures/stechkin.khm"
+            attachSlot="prop_sidearm"
+            skipGOSSAO="true"
+            diffuseTex="data/models/signatures/stechkin.dds"
+        />
+
+        <ModifiableParams
+            numPellets="1"
+            roundsPerMagazine="20"
+            closedBolt="1"
+            cyclicReload="0"
+            reloadTime="1000"
+            reloadEmptyTime="1100"
+            changeInTime="0"
+            changeOutTime="0"
+            readyTime="80"
+            guardTime="50"
+            accuracyStart="70"
+            accuracyEnd="40"
+            accuracyStartDist="0"
+            accuracyEndDist="50"
+            suppressionScale="0.5"
+        />
+
+        <Params
+            caliberInfoText="@firearm_caliber_9x18_name"
+            operationInfoText="@firearm_operation_semifull_name"
+            ejectingShellEntity="BulletCasingSmall"
+            magazineEntity="pm63_mag"
+            ai_rangeMin="0.0"
+            ai_rangeOptimal="5.0"
+            ai_rangeMax="12.0"
+            ai_stopWhenShooting="false"
+            suppressedSwitch="GFL-WEAP-STECHKIN-SUP"
+        />
+
+        <AttackTypes>
+            <AttackType name="GFL_CZ75_MozambiqueDrillNear" rangeMeters="8" />
+            <AttackType name="GFL_CZ75_MozambiqueDrillClose" rangeMeters="16" />
+            <AttackType name="GFL_CZ75_AimedFireMed" rangeMeters="28" />
+            <AttackType name="GFL_CZ75_AimedFireFar" rangeMeters="52" />
+            <AttackType name="GFL_CZ75_AimedFireExt" rangeMeters="9999" />
+        </AttackTypes>
+
+        <MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Pistol">
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_01" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_02" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_03" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_04" />
+        </MuzzleFlash>
+
+        <Sounds>
+            <Equip name="pistol_eqp" />
+            <Unequip name="pistol_neqp" />
+            <Reload name="pistol_reld" />
+            <ReloadEmpty name="pistol_reldempt" />
+            <Fire name="m9_fire" />
+            <ShellDrop name="pistol_shell_drop" />
+            <Empty name="gen_empty" />
+        </Sounds>
+    </Firearm>
+
+    <Bind eqp="GFL-WEAP-STECHKIN-SUP">
+        <to name="919JHP_GFL_STECHKIN-SUP" />
+
+        <to name="scope_GFL_IronSights_Secondary" />
+        <to name="scope_GFL_RedDot_Pistol" />
+    </Bind>
+    <Firearm
+        name="GFL-WEAP-STECHKIN-SUP"
+        inventoryBinding="PrimaryWeaponMuzzle"
+        category="pistol"
+        unlockCost="0"
+        tooltip="@WEAP-STECHKIN-NAME"
+        description="@WEAP-STECHKIN-DESC"
+        img="data/models/signatures/stechkin_ui.dds"
+        animationSet="pistol"
+    >
+        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="0" />
+
+        <RenderObject3D
+            model="data/models/signatures/stechkin.khm"
+            attachSlot="prop_sidearm"
+            skipGOSSAO="true"
+            diffuseTex="data/models/signatures/stechkin.dds"
+        />
+        <RenderObject3D
+            model="data/models/weapons/attachments/silencer_01.khm"
+            attachSlot="silencer_socket"
+            skipGOSSAO="true"
+            diffuseTex="data/models/weapons/attachments/silencer_01a.dds"
+        />
+
+        <ModifiableParams
+            numPellets="1"
+            roundsPerMagazine="20"
+            closedBolt="1"
+            cyclicReload="0"
+            reloadTime="1000"
+            reloadEmptyTime="1100"
+            changeInTime="0"
+            changeOutTime="0"
+            readyTime="80"
+            guardTime="50"
+            accuracyStart="70"
+            accuracyEnd="40"
+            accuracyStartDist="0"
+            accuracyEndDist="50"
+            suppressionScale="0.5"
+        />
+
+        <Params
+            caliberInfoText="@firearm_caliber_9x18_name"
+            operationInfoText="@firearm_operation_semifull_name"
+            ejectingShellEntity="BulletCasingSmall"
+            magazineEntity="pm63_mag"
+            ai_rangeMin="0.0"
+            ai_rangeOptimal="5.0"
+            ai_rangeMax="12.0"
+            ai_stopWhenShooting="false"
+            suppressedSwitch="GFL-WEAP-STECHKIN"
+            suppressedImg="data/models/weapons/attachments/basic_silencer_ui.dds"
+        />
+
+        <AttackTypes>
+            <AttackType name="GFL_CZ75_MozambiqueDrillNear" rangeMeters="8" />
+            <AttackType name="GFL_CZ75_MozambiqueDrillClose" rangeMeters="16" />
+            <AttackType name="GFL_CZ75_AimedFireMed" rangeMeters="28" />
+            <AttackType name="GFL_CZ75_AimedFireFar" rangeMeters="52" />
+            <AttackType name="GFL_CZ75_AimedFireExt" rangeMeters="9999" />
+        </AttackTypes>
+
+        <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Pistol">
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_01" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_02" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_03" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_04" />
+        </MuzzleFlash>
+
+        <Sounds>
+            <Equip name="pistol_eqp" />
+            <Unequip name="pistol_neqp" />
+            <Reload name="pistol_reld" />
+            <ReloadEmpty name="pistol_reldempt" />
+            <Fire name="m9sup_fire" />
+            <ShellDrop name="pistol_shell_drop" />
+            <Empty name="gen_empty" />
+        </Sounds>
+    </Firearm>
+
+<!-- NAGANT -->
+
+    <Bind eqp="GFL-WEAP-NAGANT">
+        <to name="762NAG_GFL_NAGANT" />
+
+        <to name="scope_GFL_IronSights_Secondary" />
+        <to name="scope_GFL_RedDot_Pistol" />
+    </Bind>
+
+    <Firearm
+        name="GFL-WEAP-NAGANT"
+        inventoryBinding="PrimaryWeapon"
+        category="pistol"
+        unlockCost="0"
+        tooltip="@WEAP-NAGANT-NAME"
+        description="@WEAP-NAGANT-DESC"
+        img="data/models/signatures/nagant_ui.dds"
+        animationSet="pistol"
+    >
+        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="0" />
+
+        <RenderObject3D
+            model="data/models/signatures/nagant.khm"
+            attachSlot="prop_sidearm"
+            skipGOSSAO="true"
+            diffuseTex="data/models/signatures/nagant.dds"
+        />
+
+        <ModifiableParams
+            numPellets="1"
+            roundsPerMagazine="7"
+            closedBolt="1"
+            cyclicReload="0"
+            reloadTime="1000"
+            reloadEmptyTime="1100"
+            changeInTime="0"
+            changeOutTime="0"
+            readyTime="80"
+            guardTime="50"
+            accuracyStart="70"
+            accuracyEnd="40"
+            accuracyStartDist="0"
+            accuracyEndDist="50"
+            suppressionScale="0.5"
+        />
+
+        <Params
+            caliberInfoText="@firearm_caliber_762x38r_name"
+            operationInfoText="@firearm_operation_doubleaction_name"
+            ejectingShellEntity="BulletCasingSmall"
+            magazineEntity="pm63_mag"
+            ai_rangeMin="0.0"
+            ai_rangeOptimal="5.0"
+            ai_rangeMax="12.0"
+            ai_stopWhenShooting="false"
+            suppressedSwitch="GFL-WEAP-NAGANT-SUP"
+        />
+
+        <AttackTypes>
+            <AttackType name="GFL_CZ75_MozambiqueDrillNear" rangeMeters="8" />
+            <AttackType name="GFL_CZ75_MozambiqueDrillClose" rangeMeters="16" />
+            <AttackType name="GFL_CZ75_AimedFireMed" rangeMeters="28" />
+            <AttackType name="GFL_CZ75_AimedFireFar" rangeMeters="52" />
+            <AttackType name="GFL_CZ75_AimedFireExt" rangeMeters="9999" />
+        </AttackTypes>
+
+        <MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Pistol">
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_01" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_02" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_03" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_04" />
+        </MuzzleFlash>
+
+        <Sounds>
+            <Equip name="pistol_eqp" />
+            <Unequip name="pistol_neqp" />
+            <Reload name="pistol_reld" />
+            <ReloadEmpty name="pistol_reldempt" />
+            <Fire name="m9_fire" />
+            <ShellDrop name="pistol_shell_drop" />
+            <Empty name="gen_empty" />
+        </Sounds>
+    </Firearm>
+
+    <Bind eqp="GFL-WEAP-NAGANT-SUP">
+        <to name="762NAG_GFL_NAGANT-SUP" />
+
+        <to name="scope_GFL_IronSights_Secondary" />
+        <to name="scope_GFL_RedDot_Pistol" />
+    </Bind>
+    <Firearm
+        name="GFL-WEAP-NAGANT-SUP"
+        inventoryBinding="PrimaryWeaponMuzzle"
+        category="pistol"
+        unlockCost="0"
+        tooltip="@WEAP-NAGANT-NAME"
+        description="@WEAP-NAGANT-DESC"
+        img="data/models/signatures/nagant_ui.dds"
+        animationSet="pistol"
+    >
+        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="0" />
+
+        <RenderObject3D
+            model="data/models/signatures/nagant.khm"
+            attachSlot="prop_sidearm"
+            skipGOSSAO="true"
+            diffuseTex="data/models/signatures/nagant.dds"
+        />
+        <RenderObject3D
+            model="data/models/weapons/attachments/silencer_01.khm"
+            attachSlot="silencer_socket"
+            skipGOSSAO="true"
+            diffuseTex="data/models/weapons/attachments/silencer_01a.dds"
+        />
+
+        <ModifiableParams
+            numPellets="1"
+            roundsPerMagazine="7"
+            closedBolt="1"
+            cyclicReload="0"
+            reloadTime="1000"
+            reloadEmptyTime="1100"
+            changeInTime="0"
+            changeOutTime="0"
+            readyTime="80"
+            guardTime="50"
+            accuracyStart="70"
+            accuracyEnd="40"
+            accuracyStartDist="0"
+            accuracyEndDist="50"
+            suppressionScale="0.5"
+        />
+
+        <Params
+            caliberInfoText="@firearm_caliber_762x38r_name"
+            operationInfoText="@firearm_operation_doubleaction_name"
+            ejectingShellEntity="BulletCasingSmall"
+            magazineEntity="pm63_mag"
+            ai_rangeMin="0.0"
+            ai_rangeOptimal="5.0"
+            ai_rangeMax="12.0"
+            ai_stopWhenShooting="false"
+            suppressedSwitch="GFL-WEAP-NAGANT"
+            suppressedImg="data/models/weapons/attachments/basic_silencer_ui.dds"
+        />
+
+        <AttackTypes>
+            <AttackType name="GFL_CZ75_MozambiqueDrillNear" rangeMeters="8" />
+            <AttackType name="GFL_CZ75_MozambiqueDrillClose" rangeMeters="16" />
+            <AttackType name="GFL_CZ75_AimedFireMed" rangeMeters="28" />
+            <AttackType name="GFL_CZ75_AimedFireFar" rangeMeters="52" />
+            <AttackType name="GFL_CZ75_AimedFireExt" rangeMeters="9999" />
+        </AttackTypes>
+
+        <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Pistol">
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_01" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_02" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_03" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_04" />
+        </MuzzleFlash>
+
+        <Sounds>
+            <Equip name="pistol_eqp" />
+            <Unequip name="pistol_neqp" />
+            <Reload name="pistol_reld" />
+            <ReloadEmpty name="pistol_reldempt" />
+            <Fire name="m9sup_fire" />
+            <ShellDrop name="pistol_shell_drop" />
+            <Empty name="gen_empty" />
+        </Sounds>
+    </Firearm>
+
+<!-- MOSIN-NAGANT -->
+
+    <Bind eqp="GFL-WEAP-MOSINNAGANT">
+        <to name="762R_GFL_MOSINNAGANT" />
+
+        <to name="scope_GFL_IronSights_Primary" />
+        <to name="scope_GFL_M150RCO" />
+        <to name="scope_GFL_HoloMag3x" />
+        <to name="scope_GFL_SpecterDR" />
+        <to name="scope_GFL_LPVO_6X" />
+        <to name="scope_GFL_LPVO_8X" />
+        <to name="scope_GFL_LROMK4_3_10X" />
+        <to name="scope_GFL_LROMK6_3_18X" />
+        <to name="scope_GFL_LROPM_5_25X" />
+    </Bind>
+
+    <Firearm
+        name="GFL-WEAP-MOSINNAGANT"
+        inventoryBinding="PrimaryWeapon"
+        category="sniper"
+        unlockCost="0"
+        tooltip="@WEAP-MOSINNAGANT-NAME"
+        description="@WEAP-MOSINNAGANT-DESC"
+        img="data/models/signatures/mosinnagant_ui.dds"
+        animationSet="rifle"
+    >
+        <MobilityModifiers
+            moveSpeedModifierPercent="0"
+            turnSpeedModifierPercent="0"
+        />
+        <ConcealmentModifier add="-6" />
+
+        <RenderObject3D
+            model="data/models/signatures/mosinnagant.khm"
+            attachSlot="prop_back_rifle"
+            skipGOSSAO="true"
+            diffuseTex="data/models/signatures/mosinnagant.dds"
+        />
+
+        <ModifiableParams
+            numPellets="1"
+            roundsPerMagazine="5"
+            closedBolt="1"
+            cyclicReload="0"
+            reloadTime="2100"
+            reloadEmptyTime="2200"
+            changeInTime="0"
+            changeOutTime="0"
+            readyTime="360"
+            guardTime="160"
+            accuracyStart="40"
+            accuracyEnd="80"
+            accuracyStartDist="0"
+            accuracyEndDist="50"
+            suppressionScale="8"
+        />
+
+        <Params
+            caliberInfoText="@firearm_caliber_762x54r_name"
+            operationInfoText="@firearm_operation_boltaction_name"
+            ejectingShellEntity="BulletCasingLarge"
+            magazineEntity="dragunov_mag"
+            ai_rangeMin="10.0"
+            ai_rangeOptimal="50.0"
+            ai_rangeMax="100.0"
+            ai_stopWhenShooting="true"
+            suppressedSwitch="GFL-WEAP-MOSINNAGANT-SUP"
+        />
+
+        <AttackTypes>
+            <AttackType name="GFL_OM50_PrecisionFireNear" rangeMeters="8" />
+            <AttackType name="GFL_OM50_PrecisionFireClose" inCoverOverride="GFL_OM50_PrecisionFireCloseMounted" rangeMeters="16" />
+            <AttackType name="GFL_OM50_PrecisionFireMed" inCoverOverride="GFL_OM50_PrecisionFireMedMounted" rangeMeters="28" />
+            <AttackType name="GFL_OM50_PrecisionFireFar" inCoverOverride="GFL_OM50_PrecisionFireFarMounted" rangeMeters="52" />
+            <AttackType name="GFL_OM50_PrecisionFireExt" inCoverOverride="GFL_OM50_PrecisionFireExtMounted" rangeMeters="9999" />
+        </AttackTypes>
+
+        <MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_01" />
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_02" />
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_03" />
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
+        </MuzzleFlash>
+
+        <Sounds>
+            <Equip name="rifle_eqp" />
+            <Unequip name="rifle_neqp" />
+            <Reload name="rifle_reld" />
+            <ReloadEmpty name="rifle_reldempt" />
+            <Fire name="m110csass_fire" />
+            <ShellDrop name="rifle_shell_drop" />
+            <Empty name="gen_empty" />
+        </Sounds>
+    </Firearm>
+
+    <Bind eqp="GFL-WEAP-MOSINNAGANT-SUP">
+        <to name="762R_GFL_MOSINNAGANT-SUP" />
+
+        <to name="scope_GFL_IronSights_Primary" />
+        <to name="scope_GFL_M150RCO" />
+        <to name="scope_GFL_HoloMag3x" />
+        <to name="scope_GFL_SpecterDR" />
+        <to name="scope_GFL_LPVO_6X" />
+        <to name="scope_GFL_LPVO_8X" />
+        <to name="scope_GFL_LROMK4_3_10X" />
+        <to name="scope_GFL_LROMK6_3_18X" />
+        <to name="scope_GFL_LROPM_5_25X" />
+    </Bind>
+    <Firearm
+        name="GFL-WEAP-MOSINNAGANT-SUP"
+        inventoryBinding="PrimaryWeaponMuzzle"
+        category="sniper"
+        unlockCost="0"
+        tooltip="@WEAP-MOSINNAGANT-NAME"
+        description="@WEAP-MOSINNAGANT-DESC"
+        img="data/models/signatures/mosinnagant_ui.dds"
+        animationSet="rifle"
+    >
+        <MobilityModifiers
+            moveSpeedModifierPercent="0"
+            turnSpeedModifierPercent="0"
+        />
+        <ConcealmentModifier add="-6" />
+
+        <RenderObject3D
+            model="data/models/signatures/mosinnagant.khm"
+            attachSlot="prop_back_rifle"
+            skipGOSSAO="true"
+            diffuseTex="data/models/signatures/mosinnagant.dds"
+        />
+        <RenderObject3D
+            model="data/models/weapons/attachments/silencer_01.khm"
+            attachSlot="silencer_socket"
+            skipGOSSAO="true"
+            diffuseTex="data/models/weapons/attachments/silencer_01a.dds"
+        />
+
+        <ModifiableParams
+            numPellets="1"
+            roundsPerMagazine="5"
+            closedBolt="1"
+            cyclicReload="0"
+            reloadTime="2100"
+            reloadEmptyTime="2200"
+            changeInTime="0"
+            changeOutTime="0"
+            readyTime="360"
+            guardTime="160"
+            accuracyStart="40"
+            accuracyEnd="80"
+            accuracyStartDist="0"
+            accuracyEndDist="50"
+            suppressionScale="8"
+        />
+
+        <Params
+            caliberInfoText="@firearm_caliber_762x54r_name"
+            operationInfoText="@firearm_operation_boltaction_name"
+            ejectingShellEntity="BulletCasingLarge"
+            magazineEntity="dragunov_mag"
+            ai_rangeMin="10.0"
+            ai_rangeOptimal="50.0"
+            ai_rangeMax="100.0"
+            ai_stopWhenShooting="true"
+            suppressedSwitch="GFL-WEAP-MOSINNAGANT"
+            suppressedImg="data/models/weapons/attachments/basic_silencer_ui.dds"
+        />
+
+        <AttackTypes>
+            <AttackType name="GFL_OM50_PrecisionFireNear" rangeMeters="8" />
+            <AttackType name="GFL_OM50_PrecisionFireClose" inCoverOverride="GFL_OM50_PrecisionFireCloseMounted" rangeMeters="16" />
+            <AttackType name="GFL_OM50_PrecisionFireMed" inCoverOverride="GFL_OM50_PrecisionFireMedMounted" rangeMeters="28" />
+            <AttackType name="GFL_OM50_PrecisionFireFar" inCoverOverride="GFL_OM50_PrecisionFireFarMounted" rangeMeters="52" />
+            <AttackType name="GFL_OM50_PrecisionFireExt" inCoverOverride="GFL_OM50_PrecisionFireExtMounted" rangeMeters="9999" />
+        </AttackTypes>
+
+        <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Rifle">
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_01" />
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_02" />
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_03" />
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
+        </MuzzleFlash>
+
+        <Sounds>
+            <Equip name="rifle_eqp" />
+            <Unequip name="rifle_neqp" />
+            <Reload name="rifle_reld" />
+            <ReloadEmpty name="rifle_reldempt" />
+            <Fire name="m110csass_fire" />
+            <ShellDrop name="rifle_shell_drop" />
+            <Empty name="gen_empty" />
+        </Sounds>
+    </Firearm>
+
+<!-- PPSH-41 PAPASHA -->
+
+    <Bind eqp="GFL-WEAP-PPSH41">
+        <to name="762TT_GFL_PPSH41" />
+
+        <to name="scope_GFL_IronSights_Primary" />
+        <to name="scope_GFL_RedDot_Rifle" />
+        <to name="scope_GFL_Holosight" />
+        <to name="scope_GFL_M68CCO" />
+        <to name="scope_GFL_M150RCO" />
+        <to name="scope_GFL_HoloMag3x" />
+        <to name="scope_GFL_SpecterDR" />
+    </Bind>
+
+    <Firearm
+        name="GFL-WEAP-PPSH41"
+        inventoryBinding="PrimaryWeapon"
+        category="smg"
+        unlockCost="0"
+        tooltip="@WEAP-PPSH41-NAME"
+        description="@WEAP-PPSH41-DESC"
+        img="data/models/signatures/ppsh14_ui.dds"
+        animationSet="rifle"
+    >
+        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="-2" />
+
+        <RenderObject3D
+            model="data/models/signatures/ppsh14.khm"
+            attachSlot="prop_front_rifle"
+            skipGOSSAO="true"
+            diffuseTex="data/models/signatures/ppsh14.dds"
+        />
+
+        <ModifiableParams
+            numPellets="1"
+            roundsPerMagazine="71"
+            closedBolt="1"
+            cyclicReload="0"
+            reloadTime="1600"
+            reloadEmptyTime="1700"
+            changeInTime="0"
+            changeOutTime="0"
+            readyTime="340"
+            guardTime="160"
+            accuracyStart="85"
+            accuracyEnd="20"
+            accuracyStartDist="0"
+            accuracyEndDist="50"
+            suppressionScale="1.07"
+        />
+
+        <Params
+            caliberInfoText="@firearm_caliber_762x25_name"
+            operationInfoText="@firearm_operation_semifull_name"
+            ejectingShellEntity="BulletCasingSmall"
+            magazineEntity="mp5_mag"
+            ai_rangeMin="1.0"
+            ai_rangeOptimal="10.0"
+            ai_rangeMax="25.0"
+            ai_stopWhenShooting="false"
+        />
+
+        <AttackTypes>
+            <AttackType name="GFL_MP5_RapidFireNear" rangeMeters="8" />
+            <AttackType name="GFL_MP5_RapidFireClose" rangeMeters="16" />
+            <AttackType name="GFL_MP5_BurstFireMed" rangeMeters="28" />
+            <AttackType name="GFL_MP5_BurstFireFar" rangeMeters="52" />
+            <AttackType name="GFL_MP5_BurstFireExt" rangeMeters="9999" />
+        </AttackTypes>
+
+        <MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Pistol">
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_01" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_02" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_03" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_04" />
+        </MuzzleFlash>
+
+        <Sounds>
+            <Equip name="smg_eqp" />
+            <Unequip name="smg_neqp" />
+            <Reload name="smg_reld" />
+            <ReloadEmpty name="smg_reldempt" />
+            <Fire name="mp5a_fire" />
+            <ShellDrop name="smg_shell_drop" />
             <Empty name="gen_empty" />
         </Sounds>
     </Firearm>

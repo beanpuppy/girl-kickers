@@ -24,11 +24,11 @@ def parse_localisation(path: Path) -> dict[str, str]:
 
 
 def parse_entities(path: Path) -> dict[str, dict]:
-    """Parse gfl_humans_girl.xml, return dict keyed by class ID."""
+    """Parse gfl_humans.xml, return dict keyed by class ID."""
     tree = ET.parse(path)
     entities = {}
 
-    for entity_el in tree.findall("Entity"):
+    for bit_index, entity_el in enumerate(tree.findall("Entity")):
         name = entity_el.get("name")
         human = entity_el.find("Human")
         if human is None:
@@ -48,6 +48,7 @@ def parse_entities(path: Path) -> dict[str, dict]:
             equipment.append(item.get("name"))
 
         entities[class_id] = {
+            "bitIndex": bit_index,
             "entityName": name,
             "idName": id_el.get("name"),
             "portrait": id_el.get("portrait"),
@@ -102,7 +103,7 @@ def parse_identities(path: Path) -> dict[str, dict]:
 
 
 def parse_classes(path: Path) -> list[str]:
-    """Parse gfl_unit_girl.xml, return ordered list of class IDs."""
+    """Parse gfl_unit.xml, return ordered list of class IDs."""
     tree = ET.parse(path)
     classes = []
     for cls in tree.findall(".//Class"):
@@ -114,6 +115,11 @@ def parse_weapons(path: Path) -> dict[str, dict]:
     """Parse gfl_weapons.xml, return dict keyed by weapon name."""
     tree = ET.parse(path)
     weapons = {}
+
+    # Collect all weapon names first to check for suppressed variants
+    all_names = {firearm.get("name") for firearm in tree.iter("Firearm")}
+    # Weapons that are integrally suppressed (no -SUP variant needed)
+    integrally_suppressed = {"GFL-WEAP-VSK94"}
 
     for firearm in tree.iter("Firearm"):
         name = firearm.get("name")
@@ -134,6 +140,7 @@ def parse_weapons(path: Path) -> dict[str, dict]:
             "img": firearm.get("img", ""),
             "magazine": mag,
             "fireModeKey": fire_mode_key.lstrip("@"),
+            "hasSuppressor": f"{name}-SUP" in all_names or name in integrally_suppressed,
         }
 
     return weapons
@@ -317,9 +324,9 @@ def build_dolls_json():
     print("Parsing mod data...")
 
     loc = parse_localisation(MOD / "localization" / "gfl_game.txt")
-    entities = parse_entities(MOD / "entities" / "gfl_humans_girl.xml")
+    entities = parse_entities(MOD / "entities" / "gfl_humans.xml")
     identities = parse_identities(MOD / "units" / "gfl_human_identities.xml")
-    class_order = parse_classes(MOD / "units" / "gfl_unit_girl.xml")
+    class_order = parse_classes(MOD / "units" / "gfl_unit.xml")
     weapons = parse_weapons(MOD / "equipment" / "gfl_weapons.xml")
     skins_by_class = parse_skins(MOD / "equipment" / "gfl_skins.xml")
 
@@ -397,6 +404,7 @@ def build_dolls_json():
 
         doll = {
             "id": class_id,
+            "bitIndex": ent["bitIndex"],
             "entityName": ent["entityName"],
             "name": loc.get(doll_name_key, custom_name),
             "description": loc.get(doll_desc_key, ""),
@@ -413,6 +421,7 @@ def build_dolls_json():
                 "fireMode": resolve_fire_mode(
                     weapon_data.get("fireModeKey", ""), loc
                 ),
+                "hasSuppressor": weapon_data.get("hasSuppressor", False),
             },
             "skins": skins,
             "entity": {

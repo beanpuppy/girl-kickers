@@ -5,7 +5,10 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Girl Kickers Unit Builder</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%230e0e11'/><circle cx='16' cy='16' r='8' fill='none' stroke='%23d4853b' stroke-width='2'/><line x1='16' y1='4' x2='16' y2='10' stroke='%23d4853b' stroke-width='2'/><line x1='16' y1='22' x2='16' y2='28' stroke='%23d4853b' stroke-width='2'/><line x1='4' y1='16' x2='10' y2='16' stroke='%23d4853b' stroke-width='2'/><line x1='22' y1='16' x2='28' y2='16' stroke='%23d4853b' stroke-width='2'/></svg>" />
+        <link
+            rel="icon"
+            href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%230e0e11'/><circle cx='16' cy='16' r='8' fill='none' stroke='%23d4853b' stroke-width='2'/><line x1='16' y1='4' x2='16' y2='10' stroke='%23d4853b' stroke-width='2'/><line x1='16' y1='22' x2='16' y2='28' stroke='%23d4853b' stroke-width='2'/><line x1='4' y1='16' x2='10' y2='16' stroke='%23d4853b' stroke-width='2'/><line x1='22' y1='16' x2='28' y2='16' stroke='%23d4853b' stroke-width='2'/></svg>"
+        />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
         <style>
             @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap");
@@ -66,7 +69,7 @@
                 align-items: center;
                 justify-content: center;
                 height: 52px;
-                background: rgba(14, 14, 17, 0.92);
+                background: rgba(14, 14, 17, 0.75);
                 backdrop-filter: blur(16px);
                 border-bottom: 1px solid rgba(255, 255, 255, 0.06);
             }
@@ -95,8 +98,6 @@
                 color: rgba(255, 255, 255, 0.3);
                 font-weight: 500;
             }
-
-
 
             .spacer {
                 flex: 1;
@@ -160,39 +161,129 @@
             /* ── Filters ── */
             .filters {
                 display: flex;
-                align-items: center;
-                gap: 12px;
+                flex-direction: column;
+                gap: 8px;
                 margin-bottom: 20px;
-                flex-wrap: wrap;
             }
 
             .filter-row {
                 display: flex;
                 gap: 6px;
+                align-items: center;
             }
 
-            .filter-row input,
-            .filter-row select {
+            .filter-row input {
                 padding: 7px 12px;
                 border: 1px solid rgba(255, 255, 255, 0.08);
                 background: rgba(255, 255, 255, 0.04);
                 color: var(--text);
                 font-family: inherit;
                 font-size: 14px;
+                width: 100%;
             }
-            .filter-row input:focus,
-            .filter-row select:focus {
+            .filter-row input:focus {
                 outline: none;
                 border-color: var(--accent);
             }
-            .filter-row select {
-                min-width: 100px;
+
+            .filter-toggles {
+                display: flex;
+                gap: 2px;
+                flex-wrap: wrap;
             }
-            .filter-row input {
-                width: 180px;
+
+            .filter-toggle {
+                padding: 5px 10px;
+                border: none;
+                background: rgba(255, 255, 255, 0.04);
+                color: var(--text-secondary);
+                font-family: inherit;
+                font-size: 11px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                cursor: pointer;
+                transition: all 120ms;
+                white-space: nowrap;
+                position: relative;
             }
-            .filter-row select option {
-                background: var(--panel-solid);
+            .filter-toggle:hover {
+                background: rgba(255, 255, 255, 0.07);
+            }
+            .filter-toggle.active {
+                color: var(--accent);
+                background: rgba(212, 133, 59, 0.12);
+            }
+            .filter-toggle.active::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 2px;
+                background: var(--accent);
+            }
+
+            .filter-switch + .filter-switch {
+                margin-left: 16px;
+            }
+            .filter-switch {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                cursor: pointer;
+                user-select: none;
+            }
+            .filter-switch input {
+                appearance: none;
+                width: 32px;
+                height: 16px;
+                background: rgba(255, 255, 255, 0.1);
+                position: relative;
+                cursor: pointer;
+                transition: background 150ms;
+                flex-shrink: 0;
+            }
+            .filter-switch input::after {
+                content: "";
+                position: absolute;
+                top: 2px;
+                left: 2px;
+                width: 12px;
+                height: 12px;
+                background: var(--text-secondary);
+                transition: all 150ms;
+            }
+            .filter-switch input:checked {
+                background: rgba(212, 133, 59, 0.3);
+            }
+            .filter-switch input:checked::after {
+                left: 18px;
+                background: var(--accent);
+            }
+            .filter-switch-label {
+                font-size: 11px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                color: var(--text-secondary);
+            }
+            .filter-switch input:checked + .filter-switch-label {
+                color: var(--accent);
+            }
+
+            .filter-group {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+            }
+
+            .filter-label {
+                font-size: 10px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.8px;
+                color: var(--text-muted);
             }
 
             /* ── Squad sections ── */
@@ -221,6 +312,40 @@
                 opacity: 0.75;
             }
 
+            .squad-add-all {
+                margin-left: auto;
+                padding: 2px 8px;
+                border: 1px solid var(--border);
+                background: transparent;
+                color: var(--text-secondary);
+                font-size: 11px;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                cursor: pointer;
+                transition: all 150ms;
+            }
+            .squad-add-all:hover {
+                border-color: var(--accent);
+                color: var(--accent);
+                background: rgba(232, 151, 62, 0.1);
+            }
+            .squad-add-all.active {
+                border-color: var(--danger);
+                color: var(--danger);
+            }
+            .squad-add-all.active:hover {
+                background: rgba(233, 69, 96, 0.1);
+            }
+            .squad-add-all.disabled {
+                opacity: 0.3;
+                cursor: not-allowed;
+            }
+            .squad-add-all.disabled:hover {
+                border-color: var(--border);
+                color: var(--text-secondary);
+                background: transparent;
+            }
+
             .squad-grid {
                 display: grid;
                 grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
@@ -245,6 +370,11 @@
                 box-shadow:
                     0 0 0 1px var(--card-selected),
                     inset 0 0 12px rgba(212, 133, 59, 0.1);
+            }
+
+            .doll-card.roster-full {
+                opacity: 0.35;
+                cursor: not-allowed;
             }
 
             @keyframes card-pulse {
@@ -301,6 +431,12 @@
             .card-badge-skin svg {
                 stroke: var(--text-secondary);
             }
+            .card-badge-suppressor {
+                margin-top: -3px;
+            }
+            .card-badge-suppressor svg {
+                stroke: #666666;
+            }
 
             .doll-card .card-name {
                 position: absolute;
@@ -336,7 +472,7 @@
                 position: fixed;
                 z-index: 50;
                 width: 340px;
-                background: rgba(18, 18, 24, 0.95);
+                background: rgba(18, 18, 24, 0.8);
                 backdrop-filter: blur(20px);
                 border: 1px solid rgba(255, 255, 255, 0.1);
                 padding: 16px;
@@ -464,37 +600,6 @@
                 color: #e94560;
             }
 
-            /* ── Squad filter tabs ── */
-            .squad-tabs {
-                display: flex;
-                gap: 2px;
-                margin-bottom: 14px;
-                flex-wrap: wrap;
-            }
-
-            .squad-tab {
-                padding: 7px 14px;
-                border: none;
-                background: rgba(255, 255, 255, 0.04);
-                color: var(--text-secondary);
-                font-family: inherit;
-                font-size: 12px;
-                font-weight: 600;
-                text-transform: uppercase;
-                letter-spacing: 0.6px;
-                cursor: pointer;
-                transition: all 120ms;
-                white-space: nowrap;
-                position: relative;
-            }
-            .squad-tab:hover {
-                color: var(--text-secondary);
-                background: rgba(255, 255, 255, 0.07);
-            }
-            .squad-tab.active {
-                color: var(--accent);
-                background: rgba(212, 133, 59, 0.12);
-            }
             .squad-tab-count {
                 display: inline-block;
                 margin-left: 5px;
@@ -504,16 +609,6 @@
                 opacity: 0.8;
             }
 
-            .squad-tab.active::after {
-                content: "";
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                height: 2px;
-                background: var(--accent);
-            }
-
             /* ── Top roster bar ── */
             .roster-bar {
                 position: fixed;
@@ -521,7 +616,7 @@
                 left: 0;
                 right: 0;
                 z-index: 19;
-                background: rgba(10, 10, 13, 0.92);
+                background: rgba(10, 10, 13, 0.75);
                 backdrop-filter: blur(16px);
                 border-top: 1px solid rgba(255, 255, 255, 0.06);
                 display: flex;
@@ -729,23 +824,72 @@
                 outline: none;
                 border-color: var(--accent);
             }
-            .colour-input {
+            .colour-preview-row {
                 display: flex;
                 align-items: center;
                 gap: 12px;
+                margin-bottom: 8px;
             }
-            .colour-input input[type="color"] {
-                width: 36px;
+            .colour-preview-wrapper {
+                position: relative;
+                width: 100%;
                 height: 36px;
-                border: 1px solid rgba(255, 255, 255, 0.12);
-                background: transparent;
                 cursor: pointer;
+                border: 1px solid rgba(255, 255, 255, 0.12);
+                overflow: hidden;
+            }
+            .colour-preview-wrapper input[type="color"] {
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                cursor: pointer;
+                border: none;
                 padding: 0;
             }
+            .colour-preview-bar {
+                width: 100%;
+                height: 100%;
+                background: #e3f6fd;
+                pointer-events: none;
+            }
+            .colour-hex {
+                font-family: monospace;
+                font-size: 13px;
+                color: var(--text-secondary);
+                white-space: nowrap;
+                flex-shrink: 0;
+                min-width: 65px;
+            }
+            .colour-swatches {
+                display: flex;
+                gap: 6px;
+                flex-wrap: wrap;
+                margin-bottom: 4px;
+            }
+            .colour-swatch {
+                width: 24px;
+                height: 24px;
+                border: 2px solid transparent;
+                cursor: pointer;
+                transition:
+                    border-color 150ms,
+                    transform 150ms;
+            }
+            .colour-swatch:hover {
+                transform: scale(1.15);
+            }
+            .colour-swatch.active {
+                border-color: #fff;
+            }
             .colour-hint {
+                display: block;
                 font-size: 12px;
                 color: var(--text-muted);
                 line-height: 1.4;
+                margin-top: -4px;
+                margin-bottom: 8px;
             }
 
             .modal-install {
@@ -1030,7 +1174,10 @@
 
         <div class="top-bar">
             <div class="top-bar-inner">
-                <div class="title"><span class="brand">Girl Kickers</span><span class="sub">Unit Builder</span></div>
+                <div class="title">
+                    <span class="brand">Girl Kickers</span
+                    ><span class="sub">Unit Builder</span>
+                </div>
                 <div class="spacer"></div>
                 <a
                     class="about-link"
@@ -1038,6 +1185,9 @@
                     onclick="toggleSound()"
                     title="Toggle sound"
                 ></a>
+                <a class="about-link" href="https://discord.gg/XcfYGmxvde" target="_blank" title="Discord"
+                    ><svg width="18" height="14" viewBox="0 0 127.14 96.36" fill="currentColor"><path d="M107.7 8.07A105.15 105.15 0 0 0 81.47 0a72.06 72.06 0 0 0-3.36 6.83 97.68 97.68 0 0 0-29.11 0A72.37 72.37 0 0 0 45.64 0 105.89 105.89 0 0 0 19.39 8.09C2.79 32.65-1.71 56.6.54 80.21a105.73 105.73 0 0 0 32.17 16.15 77.7 77.7 0 0 0 6.89-11.11 68.42 68.42 0 0 1-10.85-5.18c.91-.66 1.8-1.34 2.66-2.03a75.57 75.57 0 0 0 64.32 0c.87.71 1.76 1.39 2.66 2.03a68.68 68.68 0 0 1-10.87 5.19 77 77 0 0 0 6.89 11.1 105.25 105.25 0 0 0 32.19-16.14c2.64-27.38-4.51-51.11-18.9-72.15ZM42.45 65.69C36.18 65.69 31 60 31 53.05c0-6.94 5.04-12.67 11.45-12.67S54 46.07 53.89 53.05c0 6.95-5.05 12.64-11.44 12.64Zm42.24 0C78.41 65.69 73.25 60 73.25 53.05c0-6.94 5.04-12.67 11.44-12.67s11.51 5.69 11.44 12.67c0 6.95-5.04 12.64-11.44 12.64Z"/></svg></a
+                >
                 <a class="about-link" onclick="showAbout()" title="About"
                     >About</a
                 >
@@ -1062,19 +1212,24 @@
                         id="searchInput"
                         placeholder="Search dolls..."
                     />
-                    <select id="weaponFilter">
-                        <option value="">All weapons</option>
-                        <option value="rifle">Rifle</option>
-                        <option value="dmr">DMR</option>
-                        <option value="shotgun">Shotgun</option>
-                        <option value="lmg">LMG</option>
-                        <option value="pistol">Pistol</option>
-                        <option value="melee">Melee</option>
-                    </select>
+                </div>
+                <div class="filter-group">
+                    <span class="filter-label">Traits</span>
+                    <div class="filter-toggles">
+                        <label class="filter-switch"><input type="checkbox" id="filterAbility" onchange="toggleFilter('ability')"><span class="filter-switch-label">Special Ability</span></label>
+                        <label class="filter-switch"><input type="checkbox" id="filterCostume" onchange="toggleFilter('costume')"><span class="filter-switch-label">Alt Costume</span></label>
+                        <label class="filter-switch"><input type="checkbox" id="filterSuppressor" onchange="toggleFilter('suppressor')"><span class="filter-switch-label">Suppressor</span></label>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <span class="filter-label">Squad</span>
+                    <div class="filter-toggles" id="squadTabs"></div>
+                </div>
+                <div class="filter-group">
+                    <span class="filter-label">Weapon</span>
+                    <div class="filter-toggles" id="weaponTabs"></div>
                 </div>
             </div>
-
-            <div class="squad-tabs" id="squadTabs"></div>
             <div id="dollContent"></div>
         </div>
 
@@ -1090,23 +1245,157 @@
                 <div class="unit-summary" id="unitSummary"></div>
 
                 <div class="modal-field">
-                    <label for="unitName">Unit Name</label>
+                    <label for="unitName"
+                        >Unit Name
+                        <span style="color: var(--accent)">*</span></label
+                    >
+                    <div style="display: flex; gap: 6px">
+                        <input
+                            type="text"
+                            id="unitName"
+                            placeholder="Unit name"
+                            value=""
+                            style="flex: 1"
+                        />
+                        <button
+                            class="btn"
+                            onclick="
+                                document.getElementById('unitName').value =
+                                    randomUnitName()
+                            "
+                            title="Randomise name"
+                            style="
+                                padding: 8px 10px;
+                                display: flex;
+                                align-items: center;
+                            "
+                        >
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 16 16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <rect
+                                    x="1"
+                                    y="1"
+                                    width="14"
+                                    height="14"
+                                    rx="1.5"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                />
+                                <circle
+                                    cx="5"
+                                    cy="5"
+                                    r="1.2"
+                                    fill="currentColor"
+                                />
+                                <circle
+                                    cx="11"
+                                    cy="5"
+                                    r="1.2"
+                                    fill="currentColor"
+                                />
+                                <circle
+                                    cx="8"
+                                    cy="8"
+                                    r="1.2"
+                                    fill="currentColor"
+                                />
+                                <circle
+                                    cx="5"
+                                    cy="11"
+                                    r="1.2"
+                                    fill="currentColor"
+                                />
+                                <circle
+                                    cx="11"
+                                    cy="11"
+                                    r="1.2"
+                                    fill="currentColor"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-field">
+                    <label for="flagColour">Flag Colour</label>
+                    <span class="colour-hint"
+                        >Accent colour for the unit flag and deploy screen</span
+                    >
+                    <div class="colour-preview-row">
+                        <div
+                            class="colour-preview-wrapper"
+                            onclick="
+                                document.getElementById('flagColour').click()
+                            "
+                        >
+                            <input
+                                type="color"
+                                id="flagColour"
+                                value="#e3f6fd"
+                            />
+                            <div
+                                class="colour-preview-bar"
+                                id="colourPreviewBar"
+                            ></div>
+                        </div>
+                        <span class="colour-hex" id="colourHex">#E3F6FD</span>
+                    </div>
+                    <div class="colour-swatches" id="colourSwatches"></div>
+                </div>
+                <div class="modal-field">
+                    <label for="modAuthor"
+                        >Author
+                        <span
+                            style="
+                                color: var(--text-muted);
+                                font-weight: 400;
+                                font-size: 11px;
+                                text-transform: none;
+                                letter-spacing: 0;
+                            "
+                            >optional</span
+                        ></label
+                    >
                     <input
                         type="text"
-                        id="unitName"
-                        placeholder="Unit name"
+                        id="modAuthor"
+                        placeholder="Unit Builder"
                         value=""
                     />
                 </div>
                 <div class="modal-field">
-                    <label for="flagColour">Flag Colour</label>
-                    <div class="colour-input">
-                        <input type="color" id="flagColour" value="#e3f6fd" />
-                        <span class="colour-hint"
-                            >Accent colour for the unit flag and deploy
-                            screen</span
-                        >
-                    </div>
+                    <label for="modDescription"
+                        >Description
+                        <span
+                            style="
+                                color: var(--text-muted);
+                                font-weight: 400;
+                                font-size: 11px;
+                                text-transform: none;
+                                letter-spacing: 0;
+                            "
+                            >optional</span
+                        ></label
+                    >
+                    <textarea
+                        id="modDescription"
+                        placeholder="Custom unit generated by the GFL2:DK Unit Builder."
+                        rows="2"
+                        style="
+                            width: 100%;
+                            resize: vertical;
+                            font-family: inherit;
+                            font-size: 14px;
+                            padding: 7px 12px;
+                            border: 1px solid rgba(255, 255, 255, 0.08);
+                            background: rgba(255, 255, 255, 0.04);
+                            color: var(--text);
+                        "
+                    ></textarea>
                 </div>
 
                 <div class="modal-divider"></div>
@@ -1224,6 +1513,12 @@
                         target="_blank"
                         onclick="event.stopPropagation()"
                         >Trello</a
+                    >
+                    <a
+                        href="https://discord.gg/XcfYGmxvde"
+                        target="_blank"
+                        onclick="event.stopPropagation()"
+                        >Discord</a
                     >
                 </div>
 
@@ -1353,13 +1648,17 @@
                     : `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>`;
             }
 
-            let activeSquadFilter = "";
+            let activeSquadFilters = new Set();
+            let activeWeaponFilters = new Set();
+            let filterCostume = false;
+            let filterAbility = false;
+            let filterSuppressor = false;
             let BACKGROUNDS = [];
             let squadIcons = {};
 
             async function init() {
                 try {
-                    const resp = await fetch("data/dolls.json");
+                    const resp = await fetch(`data/dolls.json?v=${Date.now()}`);
                     if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
                     const data = await resp.json();
                     allDolls = data.dolls;
@@ -1374,9 +1673,11 @@
                 }
 
                 document.getElementById("unitName").value = randomUnitName();
+                initColourSwatches();
                 updateSoundToggle();
                 setBackground();
                 renderSquadTabs();
+                renderWeaponTabs();
                 renderContent();
                 restoreState();
                 setupTooltip();
@@ -1385,12 +1686,6 @@
                 document
                     .getElementById("searchInput")
                     .addEventListener("input", renderContent);
-                document
-                    .getElementById("weaponFilter")
-                    .addEventListener("change", () => {
-                        playTabSwitch();
-                        renderContent();
-                    });
                 document
                     .getElementById("downloadBtn")
                     .addEventListener("click", showDownloadModal);
@@ -1419,12 +1714,17 @@
                 const search = document
                     .getElementById("searchInput")
                     .value.toLowerCase();
-                const weaponCat = document.getElementById("weaponFilter").value;
 
                 return allDolls.filter((d) => {
-                    if (activeSquadFilter && d.squad !== activeSquadFilter)
+                    if (activeSquadFilters.size > 0 && !activeSquadFilters.has(d.squad))
                         return false;
-                    if (weaponCat && d.weapon.category !== weaponCat)
+                    if (activeWeaponFilters.size > 0 && !activeWeaponFilters.has(d.weapon.category))
+                        return false;
+                    if (filterCostume && d.skins.length <= 1)
+                        return false;
+                    if (filterAbility && !DOLL_ABILITIES[d.id])
+                        return false;
+                    if (filterSuppressor && !d.weapon.hasSuppressor)
                         return false;
                     if (search) {
                         const hay =
@@ -1466,9 +1766,11 @@
                         const cards = squadDolls
                             .map((d) => {
                                 const inUnit = unitDolls.includes(d.id);
+                                const isFull = unitDolls.length >= MAX_DOLLS;
                                 const cls = [
                                     "doll-card",
                                     inUnit ? "in-unit" : "",
+                                    !inUnit && isFull ? "roster-full" : "",
                                 ]
                                     .filter(Boolean)
                                     .join(" ");
@@ -1479,9 +1781,10 @@
 
                                 const hasAbility = !!DOLL_ABILITIES[d.id];
                                 const hasSkins = d.skins.length > 1;
+                                const hasSup = !!d.weapon.hasSuppressor;
                                 const badges =
-                                    hasAbility || hasSkins
-                                        ? `<div class="card-badges">${hasAbility ? `<div class="card-badge card-badge-ability"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="22" x2="18" y1="12" y2="12"/><line x1="6" x2="2" y1="12" y2="12"/><line x1="12" x2="12" y1="6" y2="2"/><line x1="12" x2="12" y1="22" y2="18"/></svg></div>` : ""}${hasSkins ? `<div class="card-badge card-badge-skin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg></div>` : ""}</div>`
+                                    hasAbility || hasSkins || hasSup
+                                        ? `<div class="card-badges">${hasAbility ? `<div class="card-badge card-badge-ability"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="22" x2="18" y1="12" y2="12"/><line x1="6" x2="2" y1="12" y2="12"/><line x1="12" x2="12" y1="6" y2="2"/><line x1="12" x2="12" y1="22" y2="18"/></svg></div>` : ""}${hasSkins ? `<div class="card-badge card-badge-skin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg></div>` : ""}${hasSup ? `<div class="card-badge card-badge-suppressor"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="9.5" width="5" height="5" /><rect x="6" y="8" width="17" height="8" /></svg></div>` : ""}</div>`
                                         : "";
                                 return `<div class="${cls}" data-id="${esc(d.id)}" onclick="toggleDoll('${esc(d.id)}')">${badges}${imgHtml}<div class="card-name">${esc(d.name)}</div></div>`;
                             })
@@ -1492,8 +1795,14 @@
                             ? `<img src="${esc(iconSrc)}" alt="" />`
                             : "";
 
+                        const squadDollIds = squadDolls.map(d => d.id);
+                        const allInUnit = squadDollIds.every(id => unitDolls.includes(id));
+                        const canAdd = !allInUnit && unitDolls.length < MAX_DOLLS;
+                        const showDisabled = !allInUnit && !canAdd;
+                        const addAllBtn = `<button class="squad-add-all ${allInUnit ? 'active' : ''} ${showDisabled ? 'disabled' : ''}" onclick="event.stopPropagation(); toggleSquadDolls('${esc(squad)}')" ${showDisabled ? 'disabled' : ''}>${allInUnit ? 'Remove all' : 'Add all'}</button>`;
+
                         return `<div class="squad-section">
-            <div class="squad-header">${iconHtml}${esc(squad)}</div>
+            <div class="squad-header">${iconHtml}${esc(squad)}${addAllBtn}</div>
             <div class="squad-grid">${cards}</div>
         </div>`;
                     })
@@ -1518,6 +1827,7 @@
                 else playReject();
 
                 renderSquadTabs();
+                renderWeaponTabs();
                 renderContent();
                 renderRoster();
                 saveState();
@@ -1540,38 +1850,119 @@
                 }
             }
 
+            function toggleSquadDolls(squad) {
+                const squadDollIds = allDolls.filter(d => d.squad === squad).map(d => d.id);
+                const allInUnit = squadDollIds.every(id => unitDolls.includes(id));
+
+                const someInUnit = squadDollIds.some(id => unitDolls.includes(id));
+
+                if (allInUnit) {
+                    // Remove all dolls from this squad
+                    for (const id of squadDollIds) {
+                        const idx = unitDolls.indexOf(id);
+                        if (idx >= 0) unitDolls.splice(idx, 1);
+                    }
+                    playRemove();
+                } else if (unitDolls.length >= MAX_DOLLS && !someInUnit) {
+                    playReject();
+                    return;
+                } else {
+                    // Add missing dolls from this squad (respecting cap)
+                    let added = 0;
+                    for (const id of squadDollIds) {
+                        if (!unitDolls.includes(id) && unitDolls.length < MAX_DOLLS) {
+                            unitDolls.push(id);
+                            added++;
+                        }
+                    }
+                    if (added > 0) playAdd();
+                    else { playReject(); return; }
+                }
+
+                renderSquadTabs();
+                renderWeaponTabs();
+                renderContent();
+                renderRoster();
+                saveState();
+            }
+
             function renderSquadTabs() {
                 const container = document.getElementById("squadTabs");
-                const tabs = ["", ...allSquads];
 
                 // Count selected dolls per squad
                 const squadCounts = {};
-                let totalCount = 0;
                 for (const id of unitDolls) {
                     const d = allDolls.find((x) => x.id === id);
                     if (!d) continue;
                     squadCounts[d.squad] = (squadCounts[d.squad] || 0) + 1;
-                    totalCount++;
                 }
 
-                container.innerHTML = tabs
+                container.innerHTML = allSquads
                     .map((s) => {
-                        const label = s || "All";
-                        const active = activeSquadFilter === s ? " active" : "";
-                        const count = s ? squadCounts[s] || 0 : totalCount;
+                        const active = activeSquadFilters.has(s) ? " active" : "";
+                        const count = squadCounts[s] || 0;
                         const badge =
                             count > 0
                                 ? `<span class="squad-tab-count">${count}</span>`
                                 : "";
-                        return `<button class="squad-tab${active}" onclick="setSquadFilter('${esc(s)}')">${esc(label)}${badge}</button>`;
+                        return `<button class="filter-toggle${active}" onclick="toggleSquadFilter('${esc(s)}')">${esc(s)}${badge}</button>`;
                     })
                     .join("");
             }
 
-            function setSquadFilter(squad) {
-                activeSquadFilter = activeSquadFilter === squad ? "" : squad;
+            function renderWeaponTabs() {
+                const container = document.getElementById("weaponTabs");
+                const WEAPON_LABELS = { rifle: "Rifle", smg: "SMG", shotgun: "Shotgun", dmr: "DMR", sniper: "Sniper", lmg: "LMG", pistol: "Pistol", melee: "Melee" };
+                const WEAPON_ORDER = ["rifle", "smg", "shotgun", "dmr", "sniper", "lmg", "pistol", "melee"];
+                const present = new Set(allDolls.map((d) => d.weapon.category));
+                const cats = WEAPON_ORDER.filter((c) => present.has(c));
+
+                // Count selected dolls per weapon category
+                const weaponCounts = {};
+                for (const id of unitDolls) {
+                    const d = allDolls.find((x) => x.id === id);
+                    if (!d) continue;
+                    weaponCounts[d.weapon.category] = (weaponCounts[d.weapon.category] || 0) + 1;
+                }
+
+                container.innerHTML = cats
+                    .map((c) => {
+                        const active = activeWeaponFilters.has(c) ? " active" : "";
+                        const label = WEAPON_LABELS[c] || c.toUpperCase();
+                        const count = weaponCounts[c] || 0;
+                        const badge = count > 0 ? `<span class="squad-tab-count">${count}</span>` : "";
+                        return `<button class="filter-toggle${active}" onclick="toggleWeaponFilter('${esc(c)}')">${esc(label)}${badge}</button>`;
+                    })
+                    .join("");
+            }
+
+            function toggleSquadFilter(squad) {
+                if (activeSquadFilters.has(squad)) {
+                    activeSquadFilters.delete(squad);
+                } else {
+                    activeSquadFilters.add(squad);
+                }
                 playTabSwitch();
                 renderSquadTabs();
+                renderContent();
+            }
+
+            function toggleWeaponFilter(cat) {
+                if (activeWeaponFilters.has(cat)) {
+                    activeWeaponFilters.delete(cat);
+                } else {
+                    activeWeaponFilters.add(cat);
+                }
+                playTabSwitch();
+                renderWeaponTabs();
+                renderContent();
+            }
+
+            function toggleFilter(type) {
+                if (type === "costume") filterCostume = document.getElementById("filterCostume").checked;
+                if (type === "ability") filterAbility = document.getElementById("filterAbility").checked;
+                if (type === "suppressor") filterSuppressor = document.getElementById("filterSuppressor").checked;
+                playTabSwitch();
                 renderContent();
             }
 
@@ -1601,7 +1992,10 @@
                     })
                     .join("");
                 if (lastAddedDoll) {
-                    portraits.scrollTo({ left: portraits.scrollWidth, behavior: "smooth" });
+                    portraits.scrollTo({
+                        left: portraits.scrollWidth,
+                        behavior: "smooth",
+                    });
                 }
                 lastAddedDoll = null;
             }
@@ -1767,6 +2161,55 @@
                 "Helix",
             ];
 
+            const FLAG_PRESETS = [
+                "#e3f6fd", // default light blue
+                "#d4853b", // GFL orange
+                "#c4424b", // red
+                "#4b8f4e", // military green
+                "#5b7fbf", // steel blue
+                "#9b6fbf", // purple
+                "#bf9b4e", // gold
+                "#e0e0e0", // white
+                "#3a3a3a", // dark grey
+            ];
+
+            function updateColourDisplay(hex) {
+                document.getElementById("colourPreviewBar").style.background =
+                    hex;
+                document.getElementById("colourHex").textContent =
+                    hex.toUpperCase();
+                const container = document.getElementById("colourSwatches");
+                container.querySelectorAll(".colour-swatch").forEach((s) => {
+                    s.classList.toggle("active", s.title === hex);
+                });
+            }
+
+            function initColourSwatches() {
+                const container = document.getElementById("colourSwatches");
+                const picker = document.getElementById("flagColour");
+                container.innerHTML = "";
+
+                updateColourDisplay(picker.value);
+
+                FLAG_PRESETS.forEach((hex) => {
+                    const el = document.createElement("div");
+                    el.className =
+                        "colour-swatch" +
+                        (picker.value === hex ? " active" : "");
+                    el.style.background = hex;
+                    el.title = hex;
+                    el.addEventListener("click", () => {
+                        picker.value = hex;
+                        updateColourDisplay(hex);
+                    });
+                    container.appendChild(el);
+                });
+
+                picker.addEventListener("input", () => {
+                    updateColourDisplay(picker.value);
+                });
+            }
+
             function randomUnitName() {
                 const a = NAME_ADJ[Math.floor(Math.random() * NAME_ADJ.length)];
                 const n =
@@ -1774,37 +2217,53 @@
                 return `${a} ${n}`;
             }
 
-            // ── State persistence via URL hash ──
+            // ── State persistence via URL hash (base64url-encoded bitmask) ──
+
+            const B64 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_";
+
+            function bitsToBase64url(bits) {
+                if (bits === 0n) return "A";
+                let s = "";
+                while (bits > 0n) {
+                    s = B64[Number(bits & 63n)] + s;
+                    bits >>= 6n;
+                }
+                return s;
+            }
+
+            function base64urlToBits(s) {
+                let bits = 0n;
+                for (const ch of s) {
+                    const v = B64.indexOf(ch);
+                    if (v < 0) return 0n;
+                    bits = (bits << 6n) | BigInt(v);
+                }
+                return bits;
+            }
 
             function saveState() {
-                // Encode selected dolls as a hex bitmask (each bit = one doll by index)
+                // Encode selected dolls as a base64url bitmask using stable bitIndex from entity order
                 let bits = 0n;
                 for (const id of unitDolls) {
-                    const idx = allDolls.findIndex((d) => d.id === id);
-                    if (idx >= 0) bits |= 1n << BigInt(idx);
+                    const doll = allDolls.find((d) => d.id === id);
+                    if (doll && doll.bitIndex != null) bits |= 1n << BigInt(doll.bitIndex);
                 }
-                const hex = bits.toString(16);
-
-                let hash = hex;
-
-                history.replaceState(null, "", "#" + hash);
+                history.replaceState(null, "", "#" + bitsToBase64url(bits));
             }
 
             function restoreState() {
                 const hash = location.hash.slice(1);
                 if (!hash) return;
                 try {
-                    if (/^[0-9a-f]+$/.test(hash)) {
-                        const bits = BigInt("0x" + hash);
-                        unitDolls = [];
-                        for (let i = 0; i < allDolls.length; i++) {
-                            if (bits & (1n << BigInt(i)))
-                                unitDolls.push(allDolls[i].id);
-                        }
+                    const bits = base64urlToBits(hash);
+                    unitDolls = [];
+                    for (const doll of allDolls) {
+                        if (doll.bitIndex != null && (bits & (1n << BigInt(doll.bitIndex))))
+                            unitDolls.push(doll.id);
                     }
                     renderSquadTabs();
+                    renderWeaponTabs();
                     renderContent();
-
                     renderRoster();
                 } catch (e) {}
             }
@@ -1934,16 +2393,16 @@
                     .value.replace("#", "");
                 const slug = slugify(unitName);
 
-                // Build bitmask hex for unique prefix
+                // Build base64url bitmask for unique prefix (stable bitIndex from entity order)
                 let bits = 0n;
                 for (const id of unitDolls) {
-                    const idx = allDolls.findIndex((d) => d.id === id);
-                    if (idx >= 0) bits |= 1n << BigInt(idx);
+                    const doll = allDolls.find((d) => d.id === id);
+                    if (doll && doll.bitIndex != null) bits |= 1n << BigInt(doll.bitIndex);
                 }
-                const bitmaskHex = bits.toString(16);
-                const prefix = `gfl_custom_${bitmaskHex}`;
-                const unitId = `GFL-UNIT-CUSTOM-${bitmaskHex}-${slug}`;
-                const folderName = `gfl-custom-${bitmaskHex}`;
+                const bitmaskId = bitsToBase64url(bits).toLowerCase();
+                const prefix = `gfl_custom_${bitmaskId}`;
+                const unitId = `GFL-UNIT-CUSTOM-${bitmaskId}-${slug}`;
+                const folderName = `gfl-custom-${bitmaskId}`;
 
                 const dolls = unitDolls
                     .map((id) => {
@@ -1966,7 +2425,7 @@
                 );
                 folder.file(
                     `entities/${prefix}_humans.xml`,
-                    generateEntitiesXml(unitId, dolls, bitmaskHex),
+                    generateEntitiesXml(unitId, dolls, bitmaskId),
                 );
                 folder.file(
                     `gui/${prefix}_deploy.xml`,
@@ -1977,7 +2436,9 @@
                     generateLocalisationTxt(unitName, unitId, slug),
                 );
 
-                const btn = document.querySelector("#downloadModal .btn-accent");
+                const btn = document.querySelector(
+                    "#downloadModal .btn-accent",
+                );
                 btn.disabled = true;
                 btn.textContent = "Generating...";
 
@@ -2009,11 +2470,20 @@
             }
 
             function generateModXml(unitName, unitId) {
+                const author =
+                    document.getElementById("modAuthor").value.trim() ||
+                    "Unit Builder";
+                const desc =
+                    document.getElementById("modDescription").value.trim() ||
+                    "Custom unit generated by the GFL2:DK Unit Builder.";
+                const fullDesc =
+                    desc +
+                    "\n\nRequires the base Girls' Frontline 2: Door Kickers mod.";
                 return `<Mod
     title="GFL2:DK Custom Unit - ${xmlEsc(unitName)}"
     gameVersion="112"
-    author="Unit Builder"
-    description="Custom unit generated by the GFL2:DK Unit Builder.&#10;&#10;Requires the base Girls' Frontline 2: Door Kickers mod."
+    author="${xmlEsc(author)}"
+    description="${xmlEsc(fullDesc)}"
     changeNotes=""
     languageMod=""
     tags="Playable Units"
@@ -2103,11 +2573,11 @@ ${classes}
                 return `<HumanIdentities>\n${entries}\n</HumanIdentities>\n`;
             }
 
-            function generateEntitiesXml(unitId, dolls, bitmaskHex) {
+            function generateEntitiesXml(unitId, dolls, bitmaskId) {
                 const entities = dolls
                     .map((d) => {
                         const e = d.entity;
-                        const entityName = `GFL-CUSTOM-${bitmaskHex}-${e.name.replace("GIRL-", "")}`;
+                        const entityName = `GFL-CUSTOM-${bitmaskId}-${e.name.replace("GIRL-", "")}`;
 
                         let equipment = e.equipment.map((item) => {
                             if (
@@ -2370,7 +2840,7 @@ ${uncheckActions}
             init();
 
             // Show splash on load unless URL has a bitmask hash
-            if (!location.hash || !/^#[0-9a-f]+$/.test(location.hash)) {
+            if (!location.hash || !/^#[A-Za-z0-9\-_]+$/.test(location.hash)) {
                 const div = document.createElement("div");
                 div.className = "splash";
                 div.id = "splash";
