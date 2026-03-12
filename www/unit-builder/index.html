@@ -648,6 +648,35 @@
                 letter-spacing: 0.6px;
                 color: var(--text-muted);
                 white-space: nowrap;
+                display: flex;
+                align-items: center;
+                gap: 0;
+                font-variant-numeric: tabular-nums;
+            }
+            .roster-digit {
+                display: inline-block;
+                width: 0.65em;
+                height: 1em;
+                overflow: hidden;
+                position: relative;
+                vertical-align: bottom;
+                margin-right: 0.05em;
+            }
+            .roster-digit:last-of-type {
+                margin-right: 0;
+            }
+            .roster-digit-inner {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                transition: transform 300ms cubic-bezier(0.22, 1, 0.36, 1);
+            }
+            .roster-digit-inner > span {
+                display: block;
+                height: 1em;
+                line-height: 1em;
+                text-align: center;
             }
 
             .roster-portraits {
@@ -657,6 +686,7 @@
                 flex: 1;
                 min-width: 0;
                 scrollbar-width: none;
+                cursor: grab;
             }
             .roster-portraits::-webkit-scrollbar {
                 display: none;
@@ -1707,7 +1737,7 @@
                     (e) => {
                         if (e.deltaY !== 0) {
                             e.preventDefault();
-                            e.currentTarget.scrollLeft += e.deltaY;
+                            rosterWheelBounce(e.currentTarget, e.deltaY);
                         }
                     },
                     { passive: false },
@@ -1979,6 +2009,30 @@
                 renderContent();
             }
 
+            function animateRosterCount(label, count) {
+                const str = String(count);
+                const suffix = `<span>\u2009/\u200932</span>`;
+                // Rebuild DOM if digit count changed
+                const inners = label.querySelectorAll(".roster-digit-inner");
+                if (inners.length !== str.length) {
+                    let html = "";
+                    for (let i = 0; i < str.length; i++) {
+                        html += `<span class="roster-digit"><span class="roster-digit-inner">`;
+                        for (let d = 0; d <= 9; d++) html += `<span>${d}</span>`;
+                        html += `</span></span>`;
+                    }
+                    html += suffix;
+                    label.innerHTML = html;
+                    label.offsetHeight; // force layout
+                }
+                // Roll each digit to its target
+                label.querySelectorAll(".roster-digit-inner").forEach((inner, i) => {
+                    const d = parseInt(str[i]);
+                    inner.style.transform = `translateY(${-d}em)`;
+                });
+                label.style.color = count >= MAX_DOLLS ? "var(--accent)" : "";
+            }
+
             function renderRoster() {
                 const bar = document.getElementById("rosterBar");
                 const portraits = document.getElementById("rosterPortraits");
@@ -1991,7 +2045,7 @@
 
                 bar.classList.add("visible");
 
-                label.textContent = `${unitDolls.length} / 32`;
+                animateRosterCount(label, unitDolls.length);
 
                 portraits.innerHTML = unitDolls
                     .map((id) => {
@@ -2001,7 +2055,7 @@
                             ? `<img src="${esc(d.portrait)}" alt="${esc(d.name)}" />`
                             : "";
                         const isNew = id === lastAddedDoll ? " new" : "";
-                        return `<div class="roster-slot${isNew}" onclick="toggleDoll('${esc(d.id)}')" title="${esc(d.name)}">${img}</div>`;
+                        return `<div class="roster-slot${isNew}" data-id="${esc(d.id)}" onclick="if(!rosterDragged)toggleDoll('${esc(d.id)}')" title="${esc(d.name)}">${img}</div>`;
                     })
                     .join("");
                 if (lastAddedDoll) {
@@ -2020,6 +2074,27 @@
                 let currentCard = null;
 
                 document.addEventListener("mouseover", (e) => {
+                    // Mini tooltip for roster slots
+                    const slot = e.target.closest(".roster-slot");
+                    if (slot) {
+                        if (slot === currentCard) return;
+                        currentCard = slot;
+                        const d = allDolls.find((x) => x.id === slot.dataset.id);
+                        if (!d) return;
+                        tooltip.innerHTML = `
+            <div class="tooltip-name">${esc(d.name)}</div>
+            <div class="tooltip-squad">${esc(d.squad)}</div>
+            <div class="tooltip-stats">
+                <div class="tooltip-stat"><div class="tooltip-stat-label">Weapon</div><div class="tooltip-stat-value">${esc(d.weapon.name)}</div></div>
+                <div class="tooltip-stat"><div class="tooltip-stat-label">Type</div><div class="tooltip-stat-value">${esc(formatCategory(d.weapon.category))}</div></div>
+            </div>
+            <div class="tooltip-hint" style="color:var(--danger)">Click to remove</div>
+        `;
+                        tooltip.classList.add("visible");
+                        positionTooltip(e);
+                        return;
+                    }
+
                     const card = e.target.closest(".doll-card");
                     if (!card || card === currentCard) return;
                     currentCard = card;
@@ -2050,7 +2125,7 @@
             </div>
             ${(DOLL_ABILITIES[d.id] || []).map((a) => `<div class="tooltip-ability"><div class="tooltip-ability-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="22" x2="18" y1="12" y2="12"/><line x1="6" x2="2" y1="12" y2="12"/><line x1="12" x2="12" y1="6" y2="2"/><line x1="12" x2="12" y1="22" y2="18"/></svg>Ability</div><div class="tooltip-ability-name">${esc(a.name)}</div><div class="tooltip-ability-desc">${esc(a.desc)}</div></div>`).join("")}
             ${skinList ? `<div class="tooltip-skins"><div class="tooltip-skins-label"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg>Additional Costumes</div><div class="tooltip-skins-list">${esc(skinList)}</div></div>` : ""}
-            <div class="tooltip-hint${!inUnit && unitDolls.length >= MAX_DOLLS ? " tooltip-hint-full" : ""}">${inUnit ? "Click to remove" : unitDolls.length >= MAX_DOLLS ? "Unit is full" : "Click to add"}</div>
+            <div class="tooltip-hint${inUnit ? " tooltip-hint-full" : !inUnit && unitDolls.length >= MAX_DOLLS ? " tooltip-hint-full" : ""}">${inUnit ? "Click to remove" : unitDolls.length >= MAX_DOLLS ? "Unit is full" : "Click to add"}</div>
         `;
 
                     tooltip.classList.add("visible");
@@ -2064,7 +2139,7 @@
                 });
 
                 document.addEventListener("mouseout", (e) => {
-                    const card = e.target.closest(".doll-card");
+                    const card = e.target.closest(".doll-card") || e.target.closest(".roster-slot");
                     if (card && !card.contains(e.relatedTarget)) {
                         tooltip.classList.remove("visible");
                         currentCard = null;
@@ -2854,6 +2929,138 @@ ${uncheckActions}
             }
 
             init();
+
+            // ── Roster bar rubber-band helpers ──
+            let rosterDragged = false;
+            function rosterRubber(el, offset) {
+                for (const c of el.children) {
+                    c.style.transition = "none";
+                    c.style.transform = offset ? `translateX(${offset}px)` : "";
+                }
+            }
+            function rosterSnapBack(el) {
+                for (const c of el.children) {
+                    c.style.transition = "transform 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94)";
+                    c.style.transform = "";
+                }
+            }
+
+            // ── Wheel bounce for roster bar ──
+            {
+                let wheelBounce = 0;
+                let wheelTimer = null;
+                function rosterWheelBounce(el, deltaY) {
+                    const maxScroll = el.scrollWidth - el.clientWidth;
+                    const atStart = el.scrollLeft <= 0 && deltaY < 0;
+                    const atEnd = el.scrollLeft >= maxScroll && deltaY > 0;
+
+                    if (atStart || atEnd) {
+                        wheelBounce += deltaY * 0.15;
+                        wheelBounce = Math.max(-40, Math.min(40, wheelBounce));
+                        const offset = atStart ? -wheelBounce : -wheelBounce;
+                        rosterRubber(el, offset);
+                        clearTimeout(wheelTimer);
+                        wheelTimer = setTimeout(() => {
+                            wheelBounce = 0;
+                            rosterSnapBack(el);
+                        }, 150);
+                    } else {
+                        el.scrollLeft += deltaY;
+                    }
+                }
+                window.rosterWheelBounce = rosterWheelBounce;
+            }
+
+            // ── Drag-to-scroll for roster bar ──
+            {
+                const el = document.getElementById("rosterPortraits");
+                let isDragging = false;
+                let startX, scrollStart, totalDx, rubberOffset;
+                let lastMoveX, lastMoveTime, velocity;
+                let momentumAnim = null;
+
+                el.addEventListener("mousedown", (e) => {
+                    isDragging = true;
+                    rosterDragged = false;
+                    totalDx = 0;
+                    rubberOffset = 0;
+                    velocity = 0;
+                    startX = e.pageX;
+                    lastMoveX = e.pageX;
+                    lastMoveTime = Date.now();
+                    scrollStart = el.scrollLeft;
+                    el.style.cursor = "grabbing";
+                    el.style.userSelect = "none";
+                    if (momentumAnim) cancelAnimationFrame(momentumAnim);
+                    rosterRubber(el, 0);
+                });
+
+                window.addEventListener("mousemove", (e) => {
+                    if (!isDragging) return;
+                    const now = Date.now();
+                    const dt = now - lastMoveTime;
+                    if (dt > 0) {
+                        velocity = (e.pageX - lastMoveX) / dt;
+                    }
+                    lastMoveX = e.pageX;
+                    lastMoveTime = now;
+
+                    const dx = e.pageX - startX;
+                    totalDx = Math.abs(dx);
+                    if (totalDx > 4) rosterDragged = true;
+                    const maxScroll = el.scrollWidth - el.clientWidth;
+                    let target = scrollStart - dx;
+
+                    rubberOffset = 0;
+                    if (target < 0) {
+                        rubberOffset = -target * 0.3;
+                        target = 0;
+                    } else if (target > maxScroll) {
+                        rubberOffset = -(target - maxScroll) * 0.3;
+                        target = maxScroll;
+                    }
+
+                    el.scrollLeft = target;
+                    rosterRubber(el, rubberOffset);
+                });
+
+                window.addEventListener("mouseup", () => {
+                    if (!isDragging) return;
+                    isDragging = false;
+                    el.style.cursor = "";
+                    el.style.userSelect = "";
+                    if (rubberOffset) {
+                        rosterSnapBack(el);
+                        return;
+                    }
+
+                    // Momentum coast
+                    const v0 = -velocity * 1000; // px/s, inverted (drag left = scroll right)
+                    if (Math.abs(v0) < 50) return;
+                    const friction = 0.95;
+                    let v = v0;
+                    function coast() {
+                        v *= friction;
+                        if (Math.abs(v) < 10) return;
+                        const maxScroll = el.scrollWidth - el.clientWidth;
+                        const next = el.scrollLeft + v * (1 / 60);
+
+                        // Bounce at edges during coast
+                        if (next < 0 || next > maxScroll) {
+                            const over = next < 0 ? next : next - maxScroll;
+                            rosterRubber(el, -over * 0.3);
+                            el.scrollLeft = Math.max(0, Math.min(next, maxScroll));
+                            // Snap back after brief bounce
+                            setTimeout(() => rosterSnapBack(el), 50);
+                            return;
+                        }
+
+                        el.scrollLeft = next;
+                        momentumAnim = requestAnimationFrame(coast);
+                    }
+                    momentumAnim = requestAnimationFrame(coast);
+                });
+            }
 
             // Show splash on load unless URL has a bitmask hash
             if (!location.hash || !/^#[A-Za-z0-9\-_]+$/.test(location.hash)) {
