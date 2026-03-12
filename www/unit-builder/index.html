@@ -2827,7 +2827,7 @@ ${uncheckActions}
             function formatCategory(cat) {
                 if (!cat) return "";
                 const upper = cat.toUpperCase();
-                if (upper === "DMR" || upper === "LMG") return upper;
+                if (upper === "DMR" || upper === "LMG" || upper === "SMG") return upper;
                 return cat.charAt(0).toUpperCase() + cat.slice(1).toLowerCase();
             }
 
