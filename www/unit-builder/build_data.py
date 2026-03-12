@@ -5,6 +5,7 @@ import json
 import subprocess
 import sys
 import xml.etree.ElementTree as ET
+from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent.parent
@@ -474,7 +475,20 @@ def build_dolls_json():
         if icon_key in squad_icon_map:
             squad_icons[squad_display] = squad_icon_map[icon_key]
 
+    # Build version string
+    build_date = date.today().isoformat()
+    try:
+        git_hash = subprocess.run(
+            ["git", "rev-parse", "--short", "HEAD"],
+            capture_output=True, text=True, check=True, cwd=ROOT,
+        ).stdout.strip()
+    except (FileNotFoundError, subprocess.CalledProcessError):
+        git_hash = "unknown"
+    version = f"{build_date} ({git_hash})"
+    print(f"\nVersion: {version}")
+
     result = {
+        "version": version,
         "dolls": dolls,
         "squads": squads_seen,
         "squadIcons": squad_icons,
