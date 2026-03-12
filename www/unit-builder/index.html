@@ -470,7 +470,7 @@
             .doll-tooltip {
                 display: none;
                 position: fixed;
-                z-index: 50;
+                z-index: 200;
                 width: 340px;
                 background: rgba(18, 18, 24, 0.8);
                 backdrop-filter: blur(20px);
@@ -648,35 +648,30 @@
                 letter-spacing: 0.6px;
                 color: var(--text-muted);
                 white-space: nowrap;
-                display: flex;
-                align-items: center;
-                gap: 0;
                 font-variant-numeric: tabular-nums;
             }
             .roster-digit {
                 display: inline-block;
-                width: 0.65em;
-                height: 1em;
+                width: 8px;
+                height: 12px;
                 overflow: hidden;
-                position: relative;
-                vertical-align: bottom;
-                margin-right: 0.05em;
+                vertical-align: -2px;
+                margin-right: 1px;
             }
             .roster-digit:last-of-type {
                 margin-right: 0;
             }
             .roster-digit-inner {
-                position: absolute;
-                left: 0;
-                top: 0;
-                width: 100%;
+                display: flex;
+                flex-direction: column;
                 transition: transform 300ms cubic-bezier(0.22, 1, 0.36, 1);
             }
             .roster-digit-inner > span {
-                display: block;
-                height: 1em;
-                line-height: 1em;
+                height: 12px;
+                line-height: 12px;
+                font-size: 12px;
                 text-align: center;
+                flex-shrink: 0;
             }
 
             .roster-portraits {
@@ -771,6 +766,10 @@
                 padding: 32px 36px;
                 max-width: 500px;
                 width: 90%;
+                max-height: 85vh;
+                overflow-y: auto;
+                scrollbar-width: thin;
+                scrollbar-color: rgba(255, 255, 255, 0.1) transparent;
                 -webkit-user-select: text;
                 user-select: text;
             }
@@ -827,6 +826,111 @@
                 height: 1px;
                 background: rgba(255, 255, 255, 0.06);
                 margin: 20px 0;
+            }
+
+            .advanced-toggle {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                background: none;
+                border: none;
+                color: var(--text-muted);
+                font-size: 11px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                cursor: pointer;
+                padding: 0;
+                margin-bottom: 12px;
+                transition: color 150ms;
+            }
+            .advanced-toggle:hover {
+                color: var(--text);
+            }
+            .advanced-toggle svg {
+                transition: transform 200ms;
+            }
+            .advanced-toggle.open svg {
+                transform: rotate(90deg);
+            }
+            .advanced-body {
+                display: none;
+                max-height: 260px;
+                overflow-y: auto;
+                scrollbar-width: thin;
+                scrollbar-color: rgba(255, 255, 255, 0.1) transparent;
+            }
+            .advanced-body.open {
+                display: block;
+            }
+            .stat-row {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                padding: 6px 0;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+            }
+            .stat-row:last-child {
+                border-bottom: none;
+            }
+            .stat-row-portrait {
+                width: 28px;
+                height: 28px;
+                flex-shrink: 0;
+                overflow: hidden;
+            }
+            .stat-row-portrait img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+            .stat-row-name {
+                width: 80px;
+                flex-shrink: 0;
+                font-size: 11px;
+                font-weight: 600;
+                color: var(--text);
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .stat-row-fields {
+                display: flex;
+                gap: 6px;
+                flex: 1;
+                min-width: 0;
+            }
+            .stat-field {
+                display: flex;
+                flex-direction: column;
+                gap: 2px;
+                flex: 1;
+                min-width: 0;
+            }
+            .stat-field-label {
+                font-size: 9px;
+                text-transform: uppercase;
+                letter-spacing: 0.3px;
+                color: var(--text-muted);
+            }
+            .stat-field input {
+                width: 100%;
+                padding: 3px 6px;
+                font-size: 12px;
+                font-family: inherit;
+                border: 1px solid rgba(255, 255, 255, 0.08);
+                background: rgba(255, 255, 255, 0.04);
+                color: var(--text);
+                box-sizing: border-box;
+            }
+            .stat-field input:focus {
+                border-color: var(--accent);
+                outline: none;
+            }
+            .stat-field input.modified {
+                border-color: var(--accent);
+                background: rgba(232, 151, 62, 0.08);
             }
 
             .modal-field {
@@ -1205,6 +1309,709 @@
             ::-webkit-scrollbar-thumb:hover {
                 background: rgba(255, 255, 255, 0.2);
             }
+            /* ── Gacha mode ── */
+            .btn-gacha {
+                background: linear-gradient(
+                    135deg,
+                    #c24fdb 0%,
+                    #e8b630 50%,
+                    #4f8ff5 100%
+                );
+                background-size: 200% 200%;
+                animation: gacha-btn-pulse 3s ease-in-out infinite;
+                border: none;
+                color: #fff;
+                font-weight: 700;
+                letter-spacing: 0.8px;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+            }
+            .btn-gacha:hover {
+                background: linear-gradient(
+                    135deg,
+                    #d460ec 0%,
+                    #f0c440 50%,
+                    #6aa0ff 100%
+                );
+                background-size: 200% 200%;
+                animation: gacha-btn-pulse 1.5s ease-in-out infinite;
+            }
+            .btn-gacha.locked {
+                background: rgba(255, 255, 255, 0.06);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                color: var(--text-muted);
+                animation: none;
+                cursor: default;
+            }
+            .btn-gacha.locked:hover {
+                background: rgba(255, 255, 255, 0.08);
+            }
+            @keyframes gacha-btn-pulse {
+                0%,
+                100% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+            }
+
+            .gacha-overlay {
+                display: none;
+                position: fixed;
+                inset: 0;
+                background: rgba(0, 0, 0, 0.88);
+                backdrop-filter: blur(8px);
+                z-index: 110;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                overflow-y: auto;
+            }
+            .gacha-overlay.visible {
+                display: flex;
+            }
+
+            .gacha-content {
+                width: 100%;
+                max-width: 700px;
+                padding: 24px;
+            }
+
+            .gacha-header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 20px;
+            }
+            .gacha-header-left {
+                display: flex;
+                align-items: baseline;
+                gap: 10px;
+            }
+            .gacha-title {
+                font-size: 11px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 1.5px;
+                color: var(--text-muted);
+            }
+            .gacha-pull-counter {
+                display: flex;
+                gap: 4px;
+            }
+            .gacha-pull-pip {
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.08);
+                transition: all 300ms ease;
+            }
+            .gacha-pull-pip.filled {
+                background: var(--accent);
+                box-shadow: 0 0 6px rgba(212, 133, 59, 0.4);
+            }
+            .gacha-close-btn {
+                background: none;
+                border: none;
+                color: var(--text-muted);
+                font-size: 20px;
+                cursor: pointer;
+                padding: 4px 8px;
+                transition: color 150ms;
+                line-height: 1;
+            }
+            .gacha-close-btn:hover {
+                color: var(--text);
+            }
+
+            .gacha-intro {
+                text-align: center;
+                margin-bottom: 20px;
+                padding: 20px;
+            }
+            .gacha-intro.hidden {
+                display: none;
+            }
+            .gacha-intro-title {
+                font-size: 22px;
+                font-weight: 700;
+                color: #fff;
+                margin-bottom: 6px;
+            }
+            .gacha-intro-sub {
+                font-size: 13px;
+                color: var(--text-muted);
+                margin-bottom: 16px;
+            }
+            .gacha-intro-rules {
+                display: flex;
+                gap: 12px;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            .gacha-intro-rule {
+                background: rgba(255, 255, 255, 0.03);
+                border: 1px solid rgba(255, 255, 255, 0.06);
+                padding: 10px 14px;
+                flex: 1;
+                min-width: 140px;
+                max-width: 200px;
+            }
+            .gacha-intro-rule-title {
+                font-size: 11px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                color: var(--accent);
+                margin-bottom: 4px;
+            }
+            .gacha-intro-rule-desc {
+                font-size: 12px;
+                color: var(--text-secondary);
+                line-height: 1.4;
+            }
+
+            .gacha-pity-display {
+                margin-top: 16px;
+                margin-bottom: 16px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+                font-size: 11px;
+                color: var(--text-muted);
+            }
+            .gacha-pity-label {
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                color: #e8b630;
+            }
+            .gacha-pity-bar {
+                width: 120px;
+                height: 4px;
+                background: rgba(255, 255, 255, 0.06);
+                overflow: hidden;
+            }
+            .gacha-pity-fill {
+                height: 100%;
+                background: #e8b630;
+                transition: width 600ms cubic-bezier(0.25, 0.8, 0.25, 1);
+            }
+
+            .gacha-spinner-window {
+                position: relative;
+                width: 100%;
+                height: 130px;
+                overflow: hidden;
+                border: 1px solid rgba(255, 255, 255, 0.08);
+                background: rgba(0, 0, 0, 0.4);
+                margin-bottom: 24px;
+            }
+
+            .gacha-spinner-strip {
+                display: flex;
+                gap: 4px;
+                position: absolute;
+                top: 5px;
+                left: 0;
+                will-change: transform;
+            }
+
+            .gacha-spinner-cell {
+                width: 100px;
+                height: 120px;
+                flex-shrink: 0;
+                overflow: hidden;
+                border: 2px solid rgba(255, 255, 255, 0.06);
+                background: var(--card-bg);
+                position: relative;
+            }
+            .gacha-spinner-cell img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+            .gacha-spinner-cell .cell-name {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                padding: 12px 4px 3px;
+                background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+                font-size: 9px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.3px;
+                text-align: center;
+                color: #fff;
+            }
+
+            .gacha-spinner-marker {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 50%;
+                width: 3px;
+                margin-left: -1.5px;
+                background: var(--accent);
+                box-shadow:
+                    0 0 12px var(--accent),
+                    0 0 24px rgba(212, 133, 59, 0.3);
+                z-index: 2;
+                pointer-events: none;
+            }
+            .gacha-spinner-marker::before,
+            .gacha-spinner-marker::after {
+                content: "";
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 0;
+                height: 0;
+                border-left: 8px solid transparent;
+                border-right: 8px solid transparent;
+            }
+            .gacha-spinner-marker::before {
+                top: 0;
+                border-top: 10px solid var(--accent);
+            }
+            .gacha-spinner-marker::after {
+                bottom: 0;
+                border-bottom: 10px solid var(--accent);
+            }
+
+            .gacha-result {
+                background: var(--card-bg);
+                border: 2px solid rgba(255, 255, 255, 0.08);
+                padding: 20px;
+                position: relative;
+                overflow: hidden;
+            }
+            .gacha-result[data-grade="common"] {
+                border-color: #8a8a8a;
+                box-shadow: 0 0 20px rgba(138, 138, 138, 0.2);
+            }
+            .gacha-result[data-grade="Rare"] {
+                border-color: #4f8ff5;
+                box-shadow: 0 0 25px rgba(79, 143, 245, 0.3);
+            }
+            .gacha-result[data-grade="SR"] {
+                border-color: #c24fdb;
+                box-shadow: 0 0 30px rgba(194, 79, 219, 0.35);
+            }
+            .gacha-result[data-grade="SSR"] {
+                border-color: #e8b630;
+                box-shadow:
+                    0 0 20px rgba(232, 182, 48, 0.4),
+                    0 0 60px rgba(232, 182, 48, 0.15);
+            }
+
+            .gacha-result::after {
+                content: "";
+                position: absolute;
+                inset: -50%;
+                background: linear-gradient(
+                    105deg,
+                    transparent 40%,
+                    rgba(255, 255, 255, 0.06) 45%,
+                    rgba(255, 255, 255, 0.15) 50%,
+                    rgba(255, 255, 255, 0.06) 55%,
+                    transparent 60%
+                );
+                pointer-events: none;
+                opacity: 0;
+            }
+            .gacha-result[data-grade="Rare"]::after {
+                animation: gacha-shine 2.5s ease-in-out 0.3s;
+            }
+            .gacha-result[data-grade="SR"]::after {
+                animation: gacha-shine 2s ease-in-out 0.3s;
+            }
+            .gacha-result[data-grade="SSR"]::after {
+                animation:
+                    gacha-shine 1.5s ease-in-out 0.3s,
+                    gacha-shine 1.5s ease-in-out 2s;
+            }
+            @keyframes gacha-shine {
+                0% {
+                    transform: translateX(-100%) rotate(0deg);
+                    opacity: 1;
+                }
+                100% {
+                    transform: translateX(100%) rotate(0deg);
+                    opacity: 1;
+                }
+            }
+
+            .gacha-result-inner {
+                display: flex;
+                gap: 16px;
+                position: relative;
+                z-index: 1;
+            }
+            .gacha-result-portrait {
+                width: 90px;
+                height: 110px;
+                flex-shrink: 0;
+                overflow: hidden;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            .gacha-result-portrait img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+            .gacha-result-info {
+                flex: 1;
+                min-width: 0;
+            }
+            .gacha-result-name {
+                font-size: 20px;
+                font-weight: 700;
+                color: #fff;
+                margin-bottom: 2px;
+            }
+            .gacha-result-grade {
+                font-size: 11px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin-bottom: 8px;
+            }
+            .gacha-result-dupe {
+                font-size: 11px;
+                font-weight: 600;
+                color: var(--accent);
+                margin-bottom: 6px;
+            }
+
+            .gacha-stat-row {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                margin-bottom: 4px;
+            }
+            .gacha-stat-label {
+                width: 60px;
+                font-size: 10px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.3px;
+                color: var(--text-muted);
+                flex-shrink: 0;
+            }
+            .gacha-stat-track {
+                flex: 1;
+                height: 6px;
+                background: rgba(255, 255, 255, 0.06);
+                position: relative;
+                overflow: hidden;
+            }
+            .gacha-stat-fill {
+                position: absolute;
+                top: 0;
+                height: 100%;
+                transition: width 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                width: 0;
+            }
+            .gacha-stat-fill.positive {
+                background: #4fdb6a;
+                left: 50%;
+            }
+            .gacha-stat-fill.negative {
+                background: #db4f4f;
+                right: 50%;
+                left: auto;
+            }
+            .gacha-stat-centre {
+                position: absolute;
+                left: 50%;
+                top: 0;
+                bottom: 0;
+                width: 1px;
+                background: rgba(255, 255, 255, 0.15);
+            }
+            .gacha-stat-value {
+                width: 42px;
+                font-size: 11px;
+                font-weight: 600;
+                text-align: right;
+                flex-shrink: 0;
+            }
+            .gacha-stat-value.positive {
+                color: #4fdb6a;
+            }
+            .gacha-stat-value.negative {
+                color: #db4f4f;
+            }
+
+            .gacha-actions {
+                display: flex;
+                gap: 8px;
+                justify-content: center;
+                margin-top: 20px;
+            }
+
+            .gacha-summary {
+                width: 100%;
+                max-width: 700px;
+                padding: 24px;
+            }
+            .gacha-summary h2 {
+                font-size: 22px;
+                font-weight: 700;
+                color: #fff;
+                text-align: center;
+                margin-bottom: 20px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+            .gacha-summary-grid {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 8px;
+                margin-bottom: 24px;
+            }
+            .gacha-mini-card {
+                border: 2px solid rgba(255, 255, 255, 0.08);
+                background: var(--card-bg);
+                padding: 6px;
+                text-align: center;
+                position: relative;
+                overflow: hidden;
+            }
+            .gacha-mini-card[data-grade="common"] {
+                border-color: #8a8a8a;
+            }
+            .gacha-mini-card[data-grade="Rare"] {
+                border-color: #4f8ff5;
+            }
+            .gacha-mini-card[data-grade="SR"] {
+                border-color: #c24fdb;
+            }
+            .gacha-mini-card[data-grade="SSR"] {
+                border-color: #e8b630;
+                box-shadow: 0 0 15px rgba(232, 182, 48, 0.2);
+            }
+            .mini-portrait {
+                position: relative;
+                width: 100%;
+                aspect-ratio: 3/4;
+                overflow: hidden;
+                margin-bottom: 4px;
+            }
+            .mini-portrait img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+            .mini-stats-overlay {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                padding: 4px;
+                background: rgba(14, 14, 17, 0.45);
+                backdrop-filter: blur(6px);
+                display: flex;
+                flex-direction: column;
+                gap: 1px;
+            }
+            .mini-stat {
+                display: flex;
+                justify-content: space-between;
+                font-size: 9px;
+                font-weight: 600;
+                line-height: 1.3;
+            }
+            .mini-stat-label {
+                color: rgba(255, 255, 255, 0.5);
+            }
+            .mini-stat.positive {
+                color: #4fdb6a;
+            }
+            .mini-stat.negative {
+                color: #db4f4f;
+            }
+            .gacha-mini-card .mini-name {
+                font-size: 10px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.3px;
+                color: #fff;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .gacha-mini-card .mini-grade {
+                font-size: 9px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                margin-top: 2px;
+            }
+            .gacha-mini-card .mini-dupe {
+                font-size: 9px;
+                font-weight: 600;
+                color: var(--accent);
+            }
+
+            .gacha-summary-form {
+                background: rgba(255, 255, 255, 0.03);
+                border: 1px solid rgba(255, 255, 255, 0.06);
+                padding: 20px;
+                margin-bottom: 16px;
+            }
+
+            .gacha-locked-msg {
+                text-align: center;
+                padding: 40px 20px;
+                color: var(--text-muted);
+                font-size: 15px;
+            }
+            .gacha-locked-msg strong {
+                display: block;
+                font-size: 20px;
+                color: var(--text-secondary);
+                margin-bottom: 8px;
+            }
+
+            /* Legendary sparkle particles */
+            .gacha-result[data-grade="SSR"] .gacha-sparkles {
+                position: absolute;
+                inset: 0;
+                pointer-events: none;
+                overflow: hidden;
+            }
+            .gacha-sparkle {
+                position: absolute;
+                width: 4px;
+                height: 4px;
+                background: #e8b630;
+                border-radius: 50%;
+                animation: gacha-sparkle-float 1.5s ease-out forwards;
+                box-shadow: 0 0 6px #e8b630;
+            }
+            @keyframes gacha-sparkle-float {
+                0% {
+                    opacity: 1;
+                    transform: translateY(0) scale(1);
+                }
+                100% {
+                    opacity: 0;
+                    transform: translateY(-40px) scale(0);
+                }
+            }
+
+            .gacha-roster {
+                display: flex;
+                gap: 6px;
+                justify-content: center;
+                margin-bottom: 20px;
+                padding: 12px 16px;
+                background: rgba(255, 255, 255, 0.02);
+                border: 1px solid rgba(255, 255, 255, 0.05);
+                min-height: 60px;
+                align-items: center;
+            }
+            .gacha-roster-slot {
+                width: 48px;
+                height: 48px;
+                border: 1px solid rgba(255, 255, 255, 0.08);
+                background: rgba(255, 255, 255, 0.03);
+                overflow: hidden;
+                opacity: 0.3;
+                transition: all 300ms ease;
+            }
+            .gacha-roster-slot.filled {
+                opacity: 1;
+            }
+            .gacha-roster-slot[data-grade="common"] {
+                border-color: #8a8a8a;
+            }
+            .gacha-roster-slot[data-grade="Rare"] {
+                border-color: #4f8ff5;
+            }
+            .gacha-roster-slot[data-grade="SR"] {
+                border-color: #c24fdb;
+            }
+            .gacha-roster-slot[data-grade="SSR"] {
+                border-color: #e8b630;
+                box-shadow: 0 0 8px rgba(232, 182, 48, 0.3);
+            }
+            .gacha-roster-slot img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+            @keyframes gacha-roster-pop {
+                0% {
+                    transform: scale(0.6);
+                    opacity: 0;
+                }
+                50% {
+                    transform: scale(1.1);
+                }
+                100% {
+                    transform: scale(1);
+                    opacity: 1;
+                }
+            }
+            .gacha-roster-slot.pop {
+                animation: gacha-roster-pop 300ms ease-out;
+            }
+            @keyframes gacha-roster-merge {
+                0% {
+                    transform: scale(1);
+                }
+                30% {
+                    transform: scale(1.2);
+                    filter: brightness(1.5);
+                }
+                100% {
+                    transform: scale(1);
+                    filter: brightness(1);
+                }
+            }
+            .gacha-roster-slot.merge {
+                animation: gacha-roster-merge 400ms ease-out;
+            }
+            .gacha-roster-version {
+                position: absolute;
+                top: 2px;
+                right: 2px;
+                font-size: 9px;
+                font-weight: 700;
+                color: #fff;
+                background: rgba(0, 0, 0, 0.7);
+                padding: 1px 3px;
+                line-height: 1;
+            }
+            .gacha-roster-slot {
+                position: relative;
+            }
+
+            .gacha-fly-ghost {
+                position: fixed;
+                z-index: 300;
+                overflow: hidden;
+                pointer-events: none;
+                transition: all 450ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                opacity: 0.8;
+            }
+            .gacha-fly-ghost img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
         </style>
     </head>
     <body>
@@ -1219,15 +2026,35 @@
                     ><span class="sub">Unit Builder</span>
                 </div>
                 <div class="spacer"></div>
+                <button
+                    class="btn btn-gacha"
+                    id="gachaBtn"
+                    onclick="startGacha()"
+                    title="Daily Gacha"
+                >
+                    <span id="gachaBtnLabel">Daily Gacha</span>
+                </button>
                 <a
                     class="about-link"
                     id="soundToggle"
                     onclick="toggleSound()"
                     title="Toggle sound"
                 ></a>
-                <a class="about-link" href="https://discord.gg/XcfYGmxvde" target="_blank" title="Discord"
-                    ><svg width="18" height="14" viewBox="0 0 127.14 96.36" fill="currentColor"><path d="M107.7 8.07A105.15 105.15 0 0 0 81.47 0a72.06 72.06 0 0 0-3.36 6.83 97.68 97.68 0 0 0-29.11 0A72.37 72.37 0 0 0 45.64 0 105.89 105.89 0 0 0 19.39 8.09C2.79 32.65-1.71 56.6.54 80.21a105.73 105.73 0 0 0 32.17 16.15 77.7 77.7 0 0 0 6.89-11.11 68.42 68.42 0 0 1-10.85-5.18c.91-.66 1.8-1.34 2.66-2.03a75.57 75.57 0 0 0 64.32 0c.87.71 1.76 1.39 2.66 2.03a68.68 68.68 0 0 1-10.87 5.19 77 77 0 0 0 6.89 11.1 105.25 105.25 0 0 0 32.19-16.14c2.64-27.38-4.51-51.11-18.9-72.15ZM42.45 65.69C36.18 65.69 31 60 31 53.05c0-6.94 5.04-12.67 11.45-12.67S54 46.07 53.89 53.05c0 6.95-5.05 12.64-11.44 12.64Zm42.24 0C78.41 65.69 73.25 60 73.25 53.05c0-6.94 5.04-12.67 11.44-12.67s11.51 5.69 11.44 12.67c0 6.95-5.04 12.64-11.44 12.64Z"/></svg></a
-                >
+                <a
+                    class="about-link"
+                    href="https://discord.gg/XcfYGmxvde"
+                    target="_blank"
+                    title="Discord"
+                    ><svg
+                        width="18"
+                        height="14"
+                        viewBox="0 0 127.14 96.36"
+                        fill="currentColor"
+                    >
+                        <path
+                            d="M107.7 8.07A105.15 105.15 0 0 0 81.47 0a72.06 72.06 0 0 0-3.36 6.83 97.68 97.68 0 0 0-29.11 0A72.37 72.37 0 0 0 45.64 0 105.89 105.89 0 0 0 19.39 8.09C2.79 32.65-1.71 56.6.54 80.21a105.73 105.73 0 0 0 32.17 16.15 77.7 77.7 0 0 0 6.89-11.11 68.42 68.42 0 0 1-10.85-5.18c.91-.66 1.8-1.34 2.66-2.03a75.57 75.57 0 0 0 64.32 0c.87.71 1.76 1.39 2.66 2.03a68.68 68.68 0 0 1-10.87 5.19 77 77 0 0 0 6.89 11.1 105.25 105.25 0 0 0 32.19-16.14c2.64-27.38-4.51-51.11-18.9-72.15ZM42.45 65.69C36.18 65.69 31 60 31 53.05c0-6.94 5.04-12.67 11.45-12.67S54 46.07 53.89 53.05c0 6.95-5.05 12.64-11.44 12.64Zm42.24 0C78.41 65.69 73.25 60 73.25 53.05c0-6.94 5.04-12.67 11.44-12.67s11.51 5.69 11.44 12.67c0 6.95-5.04 12.64-11.44 12.64Z"
+                        /></svg
+                ></a>
                 <a class="about-link" onclick="showAbout()" title="About"
                     >About</a
                 >
@@ -1256,9 +2083,33 @@
                 <div class="filter-group">
                     <span class="filter-label">Traits</span>
                     <div class="filter-toggles">
-                        <label class="filter-switch"><input type="checkbox" id="filterAbility" onchange="toggleFilter('ability')"><span class="filter-switch-label">Special Ability</span></label>
-                        <label class="filter-switch"><input type="checkbox" id="filterCostume" onchange="toggleFilter('costume')"><span class="filter-switch-label">Alt Costume</span></label>
-                        <label class="filter-switch"><input type="checkbox" id="filterSuppressor" onchange="toggleFilter('suppressor')"><span class="filter-switch-label">Suppressor</span></label>
+                        <label class="filter-switch"
+                            ><input
+                                type="checkbox"
+                                id="filterAbility"
+                                onchange="toggleFilter('ability')"
+                            /><span class="filter-switch-label"
+                                >Special Ability</span
+                            ></label
+                        >
+                        <label class="filter-switch"
+                            ><input
+                                type="checkbox"
+                                id="filterCostume"
+                                onchange="toggleFilter('costume')"
+                            /><span class="filter-switch-label"
+                                >Alt Costume</span
+                            ></label
+                        >
+                        <label class="filter-switch"
+                            ><input
+                                type="checkbox"
+                                id="filterSuppressor"
+                                onchange="toggleFilter('suppressor')"
+                            /><span class="filter-switch-label"
+                                >Suppressor</span
+                            ></label
+                        >
                     </div>
                 </div>
                 <div class="filter-group">
@@ -1438,6 +2289,19 @@
                     ></textarea>
                 </div>
 
+                <button class="advanced-toggle" onclick="toggleAdvanced(this)">
+                    <svg
+                        width="10"
+                        height="10"
+                        viewBox="0 0 10 10"
+                        fill="currentColor"
+                    >
+                        <path d="M3 1l5 4-5 4z" />
+                    </svg>
+                    Advanced — Edit Doll Stats
+                </button>
+                <div class="advanced-body" id="advancedStats"></div>
+
                 <div class="modal-divider"></div>
 
                 <div class="note">
@@ -1492,6 +2356,68 @@
                     </button>
                 </div>
             </div>
+        </div>
+
+        <div class="gacha-overlay" id="gachaOverlay">
+            <div class="gacha-content" id="gachaMain">
+                <div class="gacha-header">
+                    <div class="gacha-header-left">
+                        <span class="gacha-title">Daily Gacha</span>
+                        <div class="gacha-pull-counter" id="gachaPips"></div>
+                    </div>
+                    <button
+                        class="gacha-close-btn"
+                        onclick="closeGacha()"
+                        title="Close"
+                    >
+                        &times;
+                    </button>
+                </div>
+                <div class="gacha-intro" id="gachaIntro">
+                    <div class="gacha-intro-title">Daily Gacha</div>
+                    <div class="gacha-intro-sub">
+                        Pull 8 dolls, build a random unit. One session per day.
+                    </div>
+                    <div class="gacha-intro-rules">
+                        <div class="gacha-intro-rule">
+                            <div class="gacha-intro-rule-title">Stats</div>
+                            <div class="gacha-intro-rule-desc">
+                                &minus;50% to +50% per stat, randomised
+                            </div>
+                        </div>
+                        <div class="gacha-intro-rule">
+                            <div class="gacha-intro-rule-title">Duplicates</div>
+                            <div class="gacha-intro-rule-desc">
+                                Merge into existing doll with grade-based stat
+                                bonus + bonus weapon
+                            </div>
+                        </div>
+                        <div class="gacha-intro-rule">
+                            <div class="gacha-intro-rule-title">Grades</div>
+                            <div class="gacha-intro-rule-desc">
+                                Common, Rare, SR, SSR. Based on total boost %
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gacha-pity-display" id="gachaPityDisplay"></div>
+                <div
+                    class="gacha-roster"
+                    id="gachaRoster"
+                    style="display: none"
+                ></div>
+                <div class="gacha-spinner-window">
+                    <div class="gacha-spinner-strip" id="gachaStrip"></div>
+                    <div class="gacha-spinner-marker"></div>
+                </div>
+                <div id="gachaResultArea"></div>
+                <div id="gachaActions" class="gacha-actions"></div>
+            </div>
+            <div
+                id="gachaSummary"
+                class="gacha-summary"
+                style="display: none"
+            ></div>
         </div>
 
         <template id="splashTemplate">
@@ -1587,6 +2513,7 @@
             let allDolls = [];
             let allSquads = [];
             let unitDolls = [];
+            let dollOverrides = {}; // { dollId: { health, moveSpeed, suppressionRecovery, fovDegrees } }
 
             // ── Sound effects ──
             let audioCtx = null;
@@ -1698,6 +2625,1019 @@
             let squadIcons = {};
             let MOD_VERSION = "";
 
+            // ── Gacha mode ──
+            let gachaActive = false;
+            let gachaPulls = [];
+            let gachaPullIndex = 0;
+
+            function todayUTC() {
+                return new Date().toISOString().slice(0, 10);
+            }
+
+            function isGachaDev() {
+                return new URLSearchParams(window.location.search).has(
+                    "gachadev",
+                );
+            }
+
+            function isGachaLocked() {
+                if (isGachaDev()) return false;
+                return localStorage.getItem("gachaLastPull") === todayUTC();
+            }
+
+            let gachaCountdownInterval = null;
+
+            function timeUntilMidnightUTC() {
+                const now = new Date();
+                const midnight = new Date(
+                    Date.UTC(
+                        now.getUTCFullYear(),
+                        now.getUTCMonth(),
+                        now.getUTCDate() + 1,
+                    ),
+                );
+                const diff = midnight - now;
+                const h = Math.floor(diff / 3600000);
+                const m = Math.floor((diff % 3600000) / 60000);
+                return `${h}h ${m}m`;
+            }
+
+            function updateGachaBtn() {
+                const btn = document.getElementById("gachaBtn");
+                const label = document.getElementById("gachaBtnLabel");
+                if (!btn || !label) return;
+                if (isGachaLocked()) {
+                    btn.classList.add("locked");
+                    label.textContent = timeUntilMidnightUTC();
+                    btn.title = "Come back tomorrow!";
+                    // Start countdown ticker
+                    if (!gachaCountdownInterval) {
+                        gachaCountdownInterval = setInterval(() => {
+                            if (!isGachaLocked()) {
+                                clearInterval(gachaCountdownInterval);
+                                gachaCountdownInterval = null;
+                                updateGachaBtn();
+                                return;
+                            }
+                            label.textContent = timeUntilMidnightUTC();
+                        }, 60000);
+                    }
+                } else {
+                    btn.classList.remove("locked");
+                    label.textContent = "Daily Gacha";
+                    btn.title = "Daily Gacha";
+                    if (gachaCountdownInterval) {
+                        clearInterval(gachaCountdownInterval);
+                        gachaCountdownInterval = null;
+                    }
+                }
+            }
+
+            function saveGachaPulls() {
+                const data = {
+                    date: todayUTC(),
+                    pullIndex: gachaPullIndex,
+                    pulls: gachaPulls.map((p) => ({
+                        dollId: p.doll.id,
+                        grade: p.grade,
+                        gradeColour: p.gradeColour,
+                        boosts: p.boosts,
+                        boostedStats: p.boostedStats,
+                        dupeCount: p.dupeCount,
+                        dupeBonus: p.dupeBonus,
+                        bonusWeapons: p.bonusWeapons || [],
+                    })),
+                };
+                localStorage.setItem("gachaPulls", JSON.stringify(data));
+            }
+
+            function loadGachaPulls() {
+                try {
+                    const raw = localStorage.getItem("gachaPulls");
+                    if (!raw) return null;
+                    const data = JSON.parse(raw);
+                    if (!data.date || data.date !== todayUTC()) {
+                        clearGachaPulls();
+                        return null;
+                    }
+                    const pulls = data.pulls;
+                    if (!Array.isArray(pulls) || pulls.length === 0)
+                        return null;
+                    const restored = pulls
+                        .map((p) => {
+                            const doll = allDolls.find(
+                                (d) => d.id === p.dollId,
+                            );
+                            if (!doll) return null;
+                            return {
+                                doll,
+                                grade: p.grade,
+                                gradeColour: p.gradeColour,
+                                boosts: p.boosts,
+                                boostedStats: p.boostedStats,
+                                dupeCount: p.dupeCount,
+                                dupeBonus: p.dupeBonus || 0,
+                                bonusWeapons: p.bonusWeapons || [],
+                            };
+                        })
+                        .filter(Boolean);
+                    return {
+                        pulls: restored,
+                        pullIndex: data.pullIndex || restored.length,
+                    };
+                } catch {
+                    return null;
+                }
+            }
+
+            function clearGachaPulls() {
+                localStorage.removeItem("gachaPulls");
+            }
+
+            function startGacha() {
+                const overlay = document.getElementById("gachaOverlay");
+                const main = document.getElementById("gachaMain");
+                const summary = document.getElementById("gachaSummary");
+                let lockedMsg = document.getElementById("gachaLockedMsg");
+
+                // Check for saved pulls from an interrupted session
+                const saved = loadGachaPulls();
+
+                if (isGachaLocked()) {
+                    if (saved && saved.pullIndex >= 8) {
+                        // Completed session — show summary directly
+                        gachaPulls = saved.pulls;
+                        gachaPullIndex = 8;
+                        gachaActive = false;
+                        main.style.display = "none";
+                        if (lockedMsg) lockedMsg.style.display = "none";
+                        overlay.classList.add("visible");
+                        document.body.classList.add("modal-open");
+                        showGachaSummary();
+                        return;
+                    }
+                    if (saved && saved.pullIndex > 0 && saved.pullIndex < 8) {
+                        // Interrupted session — resume
+                        gachaPulls = saved.pulls;
+                        gachaPullIndex = saved.pullIndex;
+                        gachaActive = true;
+                        if (lockedMsg) lockedMsg.style.display = "none";
+                        main.style.display = "block";
+                        summary.style.display = "none";
+                        overlay.classList.add("visible");
+                        document.body.classList.add("modal-open");
+                        // Show roster, hide intro (already have pulls)
+                        const introR = document.getElementById("gachaIntro");
+                        if (introR) introR.classList.add("hidden");
+                        const rosterR = document.getElementById("gachaRoster");
+                        if (rosterR) rosterR.style.display = "";
+                        renderGachaRoster();
+                        renderGachaPity();
+                        renderGachaPull();
+                        return;
+                    }
+
+                    // No saved pulls — truly locked
+                    main.style.display = "none";
+                    summary.style.display = "none";
+                    if (!lockedMsg) {
+                        lockedMsg = document.createElement("div");
+                        lockedMsg.id = "gachaLockedMsg";
+                        lockedMsg.className = "gacha-locked-msg";
+                        overlay.appendChild(lockedMsg);
+                    }
+                    lockedMsg.style.display = "block";
+                    lockedMsg.innerHTML = `
+                        <strong>Come back tomorrow!</strong>
+                        <p>You've already pulled today. Gacha resets at midnight UTC.</p>
+                        <div class="gacha-actions" style="margin-top:20px">
+                            <button class="btn" onclick="closeGacha()">Close</button>
+                        </div>
+                    `;
+                    overlay.classList.add("visible");
+                    document.body.classList.add("modal-open");
+                    return;
+                }
+
+                // Check for saved pulls even when not locked (dev mode)
+                const savedFresh = loadGachaPulls();
+                if (
+                    savedFresh &&
+                    savedFresh.pullIndex > 0 &&
+                    savedFresh.pullIndex < 8
+                ) {
+                    gachaPulls = savedFresh.pulls;
+                    gachaPullIndex = savedFresh.pullIndex;
+                    gachaActive = true;
+                    if (lockedMsg) lockedMsg.style.display = "none";
+                    main.style.display = "block";
+                    summary.style.display = "none";
+                    overlay.classList.add("visible");
+                    document.body.classList.add("modal-open");
+                    const introR = document.getElementById("gachaIntro");
+                    if (introR) introR.classList.add("hidden");
+                    const rosterR = document.getElementById("gachaRoster");
+                    if (rosterR) rosterR.style.display = "";
+                    renderGachaRoster();
+                    renderGachaPity();
+                    renderGachaPull();
+                    return;
+                }
+
+                gachaActive = true;
+                gachaPulls = [];
+                gachaPullIndex = 0;
+
+                if (lockedMsg) lockedMsg.style.display = "none";
+                main.style.display = "block";
+                summary.style.display = "none";
+                overlay.classList.add("visible");
+                document.body.classList.add("modal-open");
+
+                localStorage.setItem("gachaLastPull", todayUTC());
+                updateGachaBtn();
+                clearGachaPulls();
+                // Reset intro/roster visibility
+                const intro = document.getElementById("gachaIntro");
+                if (intro) intro.classList.remove("hidden");
+                const roster = document.getElementById("gachaRoster");
+                if (roster) roster.style.display = "none";
+                renderGachaPity();
+                renderGachaPull();
+            }
+
+            function closeGacha() {
+                gachaActive = false;
+                document
+                    .getElementById("gachaOverlay")
+                    .classList.remove("visible");
+                document.body.classList.remove("modal-open");
+            }
+
+            let gachaAnimateSlot = -1; // index to animate, -1 = none
+            let gachaAnimateType = ""; // "pop" or "merge"
+
+            function renderGachaRoster() {
+                const roster = document.getElementById("gachaRoster");
+                let html = "";
+                for (let i = 0; i < gachaPulls.length; i++) {
+                    const pull = gachaPulls[i];
+                    const anim = i === gachaAnimateSlot ? gachaAnimateType : "";
+                    const vLabel =
+                        pull.dupeCount > 0
+                            ? `<div class="gacha-roster-version">V${pull.dupeCount + 1}</div>`
+                            : "";
+                    html += `<div class="gacha-roster-slot filled ${anim}" data-grade="${pull.grade}" data-pull-idx="${i}">
+                        ${pull.doll.portrait ? `<img src="${esc(pull.doll.portrait)}" alt="${esc(pull.doll.name)}" />` : ""}
+                        ${vLabel}
+                    </div>`;
+                }
+                roster.innerHTML = html;
+            }
+
+            function renderGachaPity(animate) {
+                const el = document.getElementById("gachaPityDisplay");
+                if (!el) return;
+                const count = getLegendaryPityCount();
+                const max = PITY_THRESHOLDS.SSR;
+                const remaining = Math.max(max - count, 0);
+                const pct = Math.min((count / max) * 100, 100);
+
+                // If animating, start from old width and transition to new
+                const existingFill = el.querySelector(".gacha-pity-fill");
+                const oldWidth = existingFill ? existingFill.style.width : "0%";
+
+                el.innerHTML = `
+                    <span class="gacha-pity-label">Guaranteed SSR</span>
+                    <div class="gacha-pity-bar"><div class="gacha-pity-fill" style="width:${animate ? oldWidth : pct + "%"}"></div></div>
+                    <span>${remaining} pulls</span>
+                `;
+
+                if (animate) {
+                    requestAnimationFrame(() => {
+                        requestAnimationFrame(() => {
+                            const fill = el.querySelector(".gacha-pity-fill");
+                            if (fill) fill.style.width = pct + "%";
+                        });
+                    });
+                }
+            }
+
+            function renderGachaPips() {
+                const container = document.getElementById("gachaPips");
+                if (!container) return;
+                let html = "";
+                for (let i = 0; i < 8; i++) {
+                    html += `<div class="gacha-pull-pip${i < gachaPullIndex ? " filled" : ""}"></div>`;
+                }
+                container.innerHTML = html;
+            }
+
+            function renderGachaPull() {
+                renderGachaPips();
+                document.getElementById("gachaResultArea").innerHTML = "";
+                renderGachaRoster();
+
+                // Pick winner and pre-roll stats so we know the real grade
+                const winner =
+                    allDolls[Math.floor(Math.random() * allDolls.length)];
+                const existingPull = gachaPulls.find(
+                    (p) => p.doll.id === winner.id,
+                );
+                const dupeCount = existingPull ? existingPull.dupeCount + 1 : 0;
+                const preRolled = randomiseStats(winner, dupeCount);
+
+                const GRADE_COLOURS = {
+                    common: "#8a8a8a",
+                    Rare: "#4f8ff5",
+                    SR: "#c24fdb",
+                    SSR: "#e8b630",
+                };
+
+                // Build strip of ~40 cells, winner at index 32
+                const strip = document.getElementById("gachaStrip");
+                strip.innerHTML = "";
+                strip.style.transform = "translateX(0)";
+                const winnerIdx = 32;
+                const cellCount = 40;
+
+                // Fake cells get random grade borders weighted to make rares/legendaries feel common
+                const gradePool = [
+                    { colour: "#8a8a8a", weight: 3 },
+                    { colour: "#4f8ff5", weight: 4 },
+                    { colour: "#c24fdb", weight: 3 },
+                    { colour: "#e8b630", weight: 2 },
+                ];
+                const weightedGrades = gradePool.flatMap((g) =>
+                    Array(g.weight).fill(g),
+                );
+                function randomFakeGrade() {
+                    return weightedGrades[
+                        Math.floor(Math.random() * weightedGrades.length)
+                    ];
+                }
+
+                for (let i = 0; i < cellCount; i++) {
+                    const doll =
+                        i === winnerIdx
+                            ? winner
+                            : allDolls[
+                                  Math.floor(Math.random() * allDolls.length)
+                              ];
+                    const borderColour =
+                        i === winnerIdx
+                            ? GRADE_COLOURS[preRolled.grade]
+                            : randomFakeGrade().colour;
+                    const cell = document.createElement("div");
+                    cell.className = "gacha-spinner-cell";
+                    cell.style.borderColor = borderColour;
+                    if (doll.portrait) {
+                        cell.innerHTML = `<img src="${esc(doll.portrait)}" alt="${esc(doll.name)}" /><div class="cell-name">${esc(doll.name)}</div>`;
+                    } else {
+                        cell.innerHTML = `<div class="cell-name" style="top:50%;transform:translateY(-50%)">${esc(doll.name)}</div>`;
+                    }
+                    strip.appendChild(cell);
+                }
+
+                // Show pull button
+                document.getElementById("gachaActions").innerHTML = `
+                    <button class="btn btn-accent" onclick="doGachaPull()" id="gachaPullBtn">Pull</button>
+                `;
+
+                // Store winner reference and pre-rolled stats for the spin
+                strip.dataset.winnerId = winner.id;
+                strip.dataset.winnerIdx = winnerIdx;
+                strip._preRolled = preRolled;
+            }
+
+            function doGachaPull() {
+                playGachaPull();
+                renderGachaPull();
+                // Brief delay so strip is visible before spinning
+                requestAnimationFrame(() =>
+                    requestAnimationFrame(() => spinGacha()),
+                );
+            }
+
+            function spinGacha() {
+                const btn = document.getElementById("gachaPullBtn");
+                if (btn) btn.disabled = true;
+
+                const strip = document.getElementById("gachaStrip");
+                const winnerIdx = parseInt(strip.dataset.winnerIdx);
+                const window_ = document.querySelector(".gacha-spinner-window");
+                const windowWidth = window_.offsetWidth;
+                const cellWidth = 104; // 100px + 4px gap
+
+                // Target: centre the winner cell under the marker
+                const targetX =
+                    -(winnerIdx * cellWidth) + windowWidth / 2 - cellWidth / 2;
+
+                const duration = 3500;
+                const startTime = performance.now();
+                const startX = 0;
+                let lastCellIdx = -1;
+
+                function easeOutCubic(t) {
+                    return 1 - Math.pow(1 - t, 3);
+                }
+
+                function animate(now) {
+                    const elapsed = now - startTime;
+                    const t = Math.min(elapsed / duration, 1);
+                    const eased = easeOutCubic(t);
+                    const x = startX + (targetX - startX) * eased;
+                    strip.style.transform = `translateX(${x}px)`;
+
+                    // Tick sound on cell boundary crossings
+                    const cellIdx = Math.floor(Math.abs(x) / cellWidth);
+                    if (cellIdx !== lastCellIdx) {
+                        lastCellIdx = cellIdx;
+                        const progress = t;
+                        playGachaTick(progress);
+                    }
+
+                    if (t < 1) {
+                        requestAnimationFrame(animate);
+                    } else {
+                        // Spin complete — reveal result
+                        revealGachaResult();
+                    }
+                }
+
+                requestAnimationFrame(animate);
+            }
+
+            const GACHA_GRADES = [
+                { name: "SSR", colour: "#e8b630", min: 100, dupeBonus: 0.25 },
+                { name: "SR", colour: "#c24fdb", min: 60, dupeBonus: 0.15 },
+                { name: "Rare", colour: "#4f8ff5", min: 25, dupeBonus: 0.1 },
+                {
+                    name: "common",
+                    colour: "#8a8a8a",
+                    min: -Infinity,
+                    dupeBonus: 0.05,
+                },
+            ];
+
+            // ── Pity system ──
+            // Counters track pulls since last grade. Persist across sessions.
+            const PITY_THRESHOLDS = { Rare: 3, SR: 6, SSR: 24 };
+
+            function loadPity() {
+                try {
+                    const p =
+                        JSON.parse(localStorage.getItem("gachaPity")) || {};
+                    return {
+                        Rare: p.Rare || 0,
+                        SR: p.SR || 0,
+                        SSR: p.SSR || 0,
+                    };
+                } catch {
+                    return { Rare: 0, SR: 0, SSR: 0 };
+                }
+            }
+
+            function savePity(pity) {
+                localStorage.setItem("gachaPity", JSON.stringify(pity));
+            }
+
+            function getPityGuarantee() {
+                const pity = loadPity();
+                // Check from highest to lowest
+                if (pity.SSR + 1 >= PITY_THRESHOLDS.SSR) return "SSR";
+                if (pity.SR + 1 >= PITY_THRESHOLDS.SR) return "SR";
+                if (pity.Rare + 1 >= PITY_THRESHOLDS.Rare) return "Rare";
+                return null;
+            }
+
+            function updatePity(grade) {
+                const pity = loadPity();
+                // Increment all counters
+                pity.Rare++;
+                pity.SR++;
+                pity.SSR++;
+                // Reset counters for the achieved grade and below
+                const gradeOrder = ["common", "Rare", "SR", "SSR"];
+                const achieved = gradeOrder.indexOf(grade);
+                if (achieved >= 1) pity.Rare = 0;
+                if (achieved >= 2) pity.SR = 0;
+                if (achieved >= 3) pity.SSR = 0;
+                savePity(pity);
+            }
+
+            function getLegendaryPityCount() {
+                return loadPity().SSR;
+            }
+
+            function randomiseStats(doll, dupeCount) {
+                const stats = [
+                    "health",
+                    "moveSpeed",
+                    "turnSpeed",
+                    "suppressionRecovery",
+                    "fovDegrees",
+                ];
+                const boosts = {};
+
+                // Check pity guarantee
+                const pityGuarantee = getPityGuarantee();
+
+                for (const stat of stats) {
+                    const raw =
+                        (Math.random() + Math.random() + Math.random()) / 3;
+                    const skewed = Math.pow(raw, 1.08);
+                    boosts[stat] = (skewed - 0.5) * 2 * 0.5; // -0.5 to +0.5
+                }
+
+                // If pity guarantees a grade, ensure total meets the threshold
+                if (pityGuarantee) {
+                    const targetMin = GACHA_GRADES.find(
+                        (g) => g.name === pityGuarantee,
+                    ).min;
+                    const currentTotal =
+                        Object.values(boosts).reduce((s, b) => s + b, 0) * 100;
+                    if (currentTotal < targetMin) {
+                        // Distribute the deficit evenly across stats with some randomness
+                        const deficit = (targetMin - currentTotal) / 100;
+                        for (const stat of stats) {
+                            boosts[stat] +=
+                                deficit / stats.length + Math.random() * 0.04;
+                        }
+                    }
+                }
+
+                // Determine base grade (before dupe bonus)
+                const basePct =
+                    Object.values(boosts).reduce((s, b) => s + b, 0) * 100;
+                const gradeInfo = GACHA_GRADES.find((g) => basePct >= g.min);
+
+                // Apply grade-based dupe bonus per stat
+                if (dupeCount > 0) {
+                    const bonus = gradeInfo.dupeBonus * dupeCount;
+                    for (const stat of stats) {
+                        boosts[stat] += bonus;
+                    }
+                }
+
+                // Final grade (dupe bonuses can push grade up)
+                const totalPct =
+                    Object.values(boosts).reduce((s, b) => s + b, 0) * 100;
+                const finalGrade = GACHA_GRADES.find((g) => totalPct >= g.min);
+
+                // Apply boosts to base stats
+                const e = doll.entity;
+                const boostedStats = {};
+                for (const stat of stats) {
+                    const base = parseFloat(e[stat]) || 0;
+                    boostedStats[stat] =
+                        Math.round(base * (1 + boosts[stat]) * 100) / 100;
+                }
+
+                return {
+                    boosts,
+                    boostedStats,
+                    grade: finalGrade.name,
+                    gradeColour: finalGrade.colour,
+                    totalPct,
+                    dupeBonus: gradeInfo.dupeBonus,
+                };
+            }
+
+            function pickBonusWeapon(doll) {
+                const otherDolls = allDolls.filter(
+                    (d) => d.id !== doll.id && d.weapon,
+                );
+                if (otherDolls.length === 0) return null;
+                const donor =
+                    otherDolls[Math.floor(Math.random() * otherDolls.length)];
+                // Find the weapon equipment item from the donor
+                const weaponItem =
+                    donor.entity.equipment.find(
+                        (e) =>
+                            e.startsWith("GFL_WPN_") ||
+                            e.startsWith("GFL_WEAPON_") ||
+                            e.includes("_WPN_") ||
+                            e.includes("WEAPON"),
+                    ) || donor.entity.equipment[0];
+                return {
+                    name: donor.weapon.name,
+                    itemId: weaponItem,
+                    donorName: donor.name,
+                };
+            }
+
+            function revealGachaResult() {
+                const intro = document.getElementById("gachaIntro");
+                if (intro) intro.classList.add("hidden");
+                const roster = document.getElementById("gachaRoster");
+                if (roster) roster.style.display = "";
+
+                const strip = document.getElementById("gachaStrip");
+                const winnerId = strip.dataset.winnerId;
+                const doll = allDolls.find((d) => d.id === winnerId);
+
+                // Use pre-rolled stats from renderGachaPull
+                const {
+                    boosts,
+                    boostedStats,
+                    grade,
+                    gradeColour,
+                    totalPct,
+                    dupeBonus,
+                } = strip._preRolled;
+
+                const existing = gachaPulls.find((p) => p.doll.id === doll.id);
+                let dupeCount,
+                    bonusWeapon = null,
+                    pull;
+
+                if (existing) {
+                    // Merge into existing entry — keep highest grade
+                    existing.dupeCount++;
+                    dupeCount = existing.dupeCount;
+                    const existingTotal =
+                        Object.values(existing.boosts).reduce(
+                            (s, b) => s + b,
+                            0,
+                        ) * 100;
+                    if (totalPct >= existingTotal) {
+                        // New roll is better or equal — use new stats
+                        existing.boosts = boosts;
+                        existing.boostedStats = boostedStats;
+                        existing.grade = grade;
+                        existing.gradeColour = gradeColour;
+                        existing.dupeBonus = dupeBonus;
+                    }
+                    // else keep existing stats (they're better)
+                    bonusWeapon = pickBonusWeapon(doll);
+                    if (!existing.bonusWeapons) existing.bonusWeapons = [];
+                    if (bonusWeapon) existing.bonusWeapons.push(bonusWeapon);
+                    pull = existing;
+                    gachaAnimateSlot = gachaPulls.indexOf(existing);
+                    gachaAnimateType = "merge";
+                } else {
+                    dupeCount = 0;
+                    pull = {
+                        doll,
+                        grade,
+                        gradeColour,
+                        boosts,
+                        boostedStats,
+                        dupeCount,
+                        dupeBonus,
+                        bonusWeapons: [],
+                    };
+                    gachaPulls.push(pull);
+                    gachaAnimateSlot = gachaPulls.length - 1;
+                    gachaAnimateType = "pop";
+                }
+                gachaPullIndex++;
+                renderGachaPips();
+
+                // Update pity counters after card is resolved
+                updatePity(grade);
+                renderGachaPity(true);
+
+                // Play reveal sound
+                playGachaReveal(grade);
+
+                // Build result card
+                const statNames = {
+                    health: "HP",
+                    moveSpeed: "Speed",
+                    turnSpeed: "Turn",
+                    suppressionRecovery: "Sup. Rec.",
+                    fovDegrees: "FOV",
+                };
+
+                const statBarsHtml = Object.entries(boosts)
+                    .map(([stat, boost], i) => {
+                        const pct = Math.round(boost * 100);
+                        const cls = pct >= 0 ? "positive" : "negative";
+                        const barWidth = Math.min(Math.abs(pct), 50); // max 50% of half-track
+                        return `<div class="gacha-stat-row">
+                        <div class="gacha-stat-label">${statNames[stat]}</div>
+                        <div class="gacha-stat-track">
+                            <div class="gacha-stat-centre"></div>
+                            <div class="gacha-stat-fill ${cls}" data-width="${barWidth}" style="width:0"></div>
+                        </div>
+                        <div class="gacha-stat-value ${cls}">${pct >= 0 ? "+" : ""}${pct}%</div>
+                    </div>`;
+                    })
+                    .join("");
+
+                const dupeBonusPct = Math.round(dupeBonus * 100 * dupeCount);
+                const dupeHtml =
+                    dupeCount > 0
+                        ? `<div class="gacha-result-dupe">V${dupeCount + 1} · +${dupeBonusPct}% dupe bonus${bonusWeapon ? ` + ${esc(bonusWeapon.name)}` : ""}</div>`
+                        : "";
+
+                const sparklesHtml =
+                    grade === "SSR"
+                        ? '<div class="gacha-sparkles" id="gachaSparkles"></div>'
+                        : "";
+
+                document.getElementById("gachaResultArea").innerHTML = `
+                    <div class="gacha-result" data-grade="${grade}">
+                        ${sparklesHtml}
+                        <div class="gacha-result-inner">
+                            <div class="gacha-result-portrait">
+                                ${doll.portrait ? `<img src="${esc(doll.portrait)}" alt="${esc(doll.name)}" />` : ""}
+                            </div>
+                            <div class="gacha-result-info">
+                                <div class="gacha-result-name">${esc(doll.name)}</div>
+                                <div class="gacha-result-grade" style="color:${gradeColour}">${grade.toUpperCase()} (${Math.round(totalPct)}%)</div>
+                                ${dupeHtml}
+                                ${statBarsHtml}
+                            </div>
+                        </div>
+                    </div>
+                `;
+
+                // Animate stat bars
+                requestAnimationFrame(() => {
+                    document
+                        .querySelectorAll("#gachaResultArea .gacha-stat-fill")
+                        .forEach((el, i) => {
+                            setTimeout(() => {
+                                el.style.width = el.dataset.width + "%";
+                            }, i * 80);
+                        });
+                });
+
+                // SSR sparkles
+                if (grade === "SSR") {
+                    const container = document.getElementById("gachaSparkles");
+                    if (container) {
+                        for (let i = 0; i < 12; i++) {
+                            setTimeout(() => {
+                                const s = document.createElement("div");
+                                s.className = "gacha-sparkle";
+                                s.style.left = Math.random() * 100 + "%";
+                                s.style.top = Math.random() * 100 + "%";
+                                s.style.animationDelay =
+                                    Math.random() * 0.3 + "s";
+                                container.appendChild(s);
+                                setTimeout(() => s.remove(), 2000);
+                            }, i * 100);
+                        }
+                    }
+                }
+
+                renderGachaRoster();
+                gachaAnimateSlot = -1;
+                gachaAnimateType = "";
+                saveGachaPulls();
+
+                // Fly-to-roster animation
+                flyToRoster(
+                    doll,
+                    existing
+                        ? gachaPulls.indexOf(existing)
+                        : gachaPulls.length - 1,
+                );
+
+                if (gachaPullIndex < 8) {
+                    document.getElementById("gachaActions").innerHTML = `
+                        <button class="btn btn-accent" onclick="doGachaPull()">Pull</button>
+                    `;
+                } else {
+                    document.getElementById("gachaActions").innerHTML = `
+                        <button class="btn btn-accent" onclick="showGachaSummary()">View Results</button>
+                    `;
+                }
+            }
+
+            function showGachaSummary() {
+                document.getElementById("gachaMain").style.display = "none";
+                const summary = document.getElementById("gachaSummary");
+                summary.style.display = "block";
+
+                const statNames = {
+                    health: "HP",
+                    moveSpeed: "Spd",
+                    turnSpeed: "Trn",
+                    suppressionRecovery: "Sup",
+                    fovDegrees: "FOV",
+                };
+                const cardsHtml = gachaPulls
+                    .map((p, i) => {
+                        const dupeLabel =
+                            p.dupeCount > 0
+                                ? ` <span class="mini-dupe">V${p.dupeCount + 1}</span>`
+                                : "";
+                        const statsHtml = Object.entries(p.boosts)
+                            .map(([stat, boost]) => {
+                                const pct = Math.round(boost * 100);
+                                const cls = pct >= 0 ? "positive" : "negative";
+                                return `<div class="mini-stat ${cls}"><span class="mini-stat-label">${statNames[stat]}</span><span>${pct >= 0 ? "+" : ""}${pct}%</span></div>`;
+                            })
+                            .join("");
+                        return `<div class="gacha-mini-card" data-grade="${p.grade}">
+                        <div class="mini-portrait">
+                            ${p.doll.portrait ? `<img src="${esc(p.doll.portrait)}" alt="${esc(p.doll.name)}" />` : ""}
+                            <div class="mini-stats-overlay">${statsHtml}</div>
+                        </div>
+                        <div class="mini-name">${esc(p.doll.name)}</div>
+                        <div class="mini-grade" style="color:${p.gradeColour}">${p.grade}${dupeLabel}</div>
+                    </div>`;
+                    })
+                    .join("");
+
+                summary.innerHTML = `
+                    <h2>Gacha Results</h2>
+                    <div class="gacha-summary-grid">${cardsHtml}</div>
+                    <div class="gacha-summary-form">
+                        <div class="modal-field">
+                            <label for="gachaUnitName">Unit Name <span style="color:var(--accent)">*</span></label>
+                            <div style="display:flex;gap:6px">
+                                <input type="text" id="gachaUnitName" placeholder="Unit name" value="${esc(randomUnitName())}" style="flex:1" />
+                                <button class="btn" onclick="document.getElementById('gachaUnitName').value=randomUnitName()" title="Randomise" style="padding:8px 10px;display:flex;align-items:center">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="1" width="14" height="14" rx="1.5" stroke="currentColor" stroke-width="1.5"/><circle cx="5" cy="5" r="1.2" fill="currentColor"/><circle cx="11" cy="5" r="1.2" fill="currentColor"/><circle cx="8" cy="8" r="1.2" fill="currentColor"/><circle cx="5" cy="11" r="1.2" fill="currentColor"/><circle cx="11" cy="11" r="1.2" fill="currentColor"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="modal-field">
+                            <label for="gachaFlagColour">Flag Colour</label>
+                            <input type="color" id="gachaFlagColour" value="#e3f6fd" style="width:100%;height:36px;border:1px solid rgba(255,255,255,0.12);background:transparent;cursor:pointer" />
+                        </div>
+                        <div class="modal-field">
+                            <label for="gachaAuthor">Author <span style="color:var(--text-muted);font-weight:400;font-size:11px;text-transform:none;letter-spacing:0">optional</span></label>
+                            <input type="text" id="gachaAuthor" placeholder="Unit Builder" value="" />
+                        </div>
+                        <div class="modal-field">
+                            <label for="gachaDesc">Description <span style="color:var(--text-muted);font-weight:400;font-size:11px;text-transform:none;letter-spacing:0">optional</span></label>
+                            <input type="text" id="gachaDesc" placeholder="Gacha unit generated by the GFL2:DK Unit Builder." value="" />
+                        </div>
+                    </div>
+                    <div class="note" style="font-size:13px;color:var(--accent);background:rgba(212,133,59,0.06);border-left:2px solid var(--accent);padding:10px 14px;margin-bottom:20px;line-height:1.5">
+                        The base Girls' Frontline 2: Door Kickers mod is required for this add-on to work.
+                    </div>
+                    <div class="gacha-actions">
+                        <button class="btn" onclick="closeGacha()">Close</button>
+                        <button class="btn btn-accent" id="gachaDownloadBtn" onclick="doGachaDownload()">Download</button>
+                    </div>
+                `;
+            }
+
+            function doGachaDownload() {
+                // Write gacha pulls into unitDolls and dollOverrides
+                const savedUnitDolls = [...unitDolls];
+                const savedOverrides = { ...dollOverrides };
+
+                unitDolls = gachaPulls.map((p) => p.doll.id);
+                dollOverrides = {};
+
+                // Build overrides from gacha boosted stats + bonus weapons
+                const extraEquipment = {}; // dollId -> [itemId, ...]
+                for (const pull of gachaPulls) {
+                    dollOverrides[pull.doll.id] = {
+                        health: String(Math.round(pull.boostedStats.health)),
+                        moveSpeed: String(pull.boostedStats.moveSpeed),
+                        turnSpeed: String(
+                            Math.round(pull.boostedStats.turnSpeed),
+                        ),
+                        suppressionRecovery: String(
+                            Math.round(pull.boostedStats.suppressionRecovery),
+                        ),
+                        fovDegrees: String(
+                            Math.round(pull.boostedStats.fovDegrees),
+                        ),
+                    };
+                    if (pull.bonusWeapons && pull.bonusWeapons.length > 0) {
+                        if (!extraEquipment[pull.doll.id])
+                            extraEquipment[pull.doll.id] = [];
+                        for (const bw of pull.bonusWeapons) {
+                            extraEquipment[pull.doll.id].push(bw.itemId);
+                        }
+                    }
+                }
+
+                // Copy gacha form values to download modal inputs
+                document.getElementById("unitName").value =
+                    document.getElementById("gachaUnitName").value;
+                document.getElementById("flagColour").value =
+                    document.getElementById("gachaFlagColour").value;
+                document.getElementById("modAuthor").value =
+                    document.getElementById("gachaAuthor").value;
+                document.getElementById("modDescription").value =
+                    document.getElementById("gachaDesc").value ||
+                    "Gacha unit generated by the GFL2:DK Unit Builder.";
+
+                // Temporarily patch entity equipment to include bonus weapons
+                const originalEquipment = {};
+                for (const [dollId, items] of Object.entries(extraEquipment)) {
+                    const doll = allDolls.find((d) => d.id === dollId);
+                    if (doll) {
+                        originalEquipment[dollId] = [...doll.entity.equipment];
+                        doll.entity.equipment = [
+                            ...doll.entity.equipment,
+                            ...items,
+                        ];
+                    }
+                }
+
+                doDownload("#gachaDownloadBtn").then(() => {
+                    // Restore original state and clear saved pulls
+                    clearGachaPulls();
+                    unitDolls = savedUnitDolls;
+                    dollOverrides = savedOverrides;
+                    for (const [dollId, equip] of Object.entries(
+                        originalEquipment,
+                    )) {
+                        const doll = allDolls.find((d) => d.id === dollId);
+                        if (doll) doll.entity.equipment = equip;
+                    }
+                    renderContent();
+                    renderRoster();
+                });
+            }
+
+            function flyToRoster(doll, rosterIdx) {
+                const portrait = document.querySelector(
+                    "#gachaResultArea .gacha-result-portrait",
+                );
+                const slots = document.querySelectorAll(
+                    "#gachaRoster .gacha-roster-slot",
+                );
+                const targetSlot = slots[rosterIdx];
+                if (!portrait || !targetSlot || !doll.portrait) return;
+
+                const fromRect = portrait.getBoundingClientRect();
+                const toRect = targetSlot.getBoundingClientRect();
+
+                const ghost = document.createElement("div");
+                ghost.className = "gacha-fly-ghost";
+                ghost.innerHTML = `<img src="${esc(doll.portrait)}" />`;
+                ghost.style.left = fromRect.left + "px";
+                ghost.style.top = fromRect.top + "px";
+                ghost.style.width = fromRect.width + "px";
+                ghost.style.height = fromRect.height + "px";
+                document.body.appendChild(ghost);
+
+                requestAnimationFrame(() => {
+                    ghost.style.left = toRect.left + "px";
+                    ghost.style.top = toRect.top + "px";
+                    ghost.style.width = toRect.width + "px";
+                    ghost.style.height = toRect.height + "px";
+                    ghost.style.opacity = "0";
+                });
+
+                ghost.addEventListener("transitionend", () => ghost.remove(), {
+                    once: true,
+                });
+                setTimeout(() => ghost.remove(), 600);
+            }
+
+            function playGachaPull() {
+                playTick(1000, 0.04, 0.15);
+            }
+
+            function playGachaTick(progress) {
+                const freq = 400 + progress * 600;
+                const vol = 0.04 + progress * 0.1;
+                playTick(freq, 0.04, vol);
+            }
+
+            function playGachaReveal(grade) {
+                if (soundMuted || !audioReady()) return;
+                if (grade === "common") {
+                    playTick(600, 0.1, 0.1);
+                } else if (grade === "Rare") {
+                    playTick(700, 0.08, 0.1);
+                    setTimeout(() => playTick(900, 0.08, 0.1), 100);
+                } else if (grade === "SR") {
+                    playTick(700, 0.08, 0.12);
+                    setTimeout(() => playTick(900, 0.08, 0.12), 80);
+                    setTimeout(() => playTick(1100, 0.08, 0.12), 160);
+                } else {
+                    // Legendary — sweep like playBoot but higher
+                    const ctx = audioCtx;
+                    [800, 1100, 1400].forEach((freq, i) => {
+                        setTimeout(() => {
+                            const osc = ctx.createOscillator();
+                            const g = ctx.createGain();
+                            osc.type = "sine";
+                            osc.frequency.value = freq;
+                            g.gain.setValueAtTime(0.001, ctx.currentTime);
+                            g.gain.linearRampToValueAtTime(
+                                0.08,
+                                ctx.currentTime + 0.15,
+                            );
+                            g.gain.exponentialRampToValueAtTime(
+                                0.001,
+                                ctx.currentTime + 0.4,
+                            );
+                            osc.connect(g);
+                            g.connect(ctx.destination);
+                            osc.start();
+                            osc.stop(ctx.currentTime + 0.4);
+                        }, i * 100);
+                    });
+                }
+            }
+
             async function init() {
                 try {
                     const resp = await fetch(`data/dolls.json?v=${Date.now()}`);
@@ -1718,6 +3658,7 @@
                 document.getElementById("unitName").value = randomUnitName();
                 initColourSwatches();
                 updateSoundToggle();
+                updateGachaBtn();
                 setBackground();
                 renderSquadTabs();
                 renderWeaponTabs();
@@ -1759,14 +3700,18 @@
                     .value.toLowerCase();
 
                 return allDolls.filter((d) => {
-                    if (activeSquadFilters.size > 0 && !activeSquadFilters.has(d.squad))
+                    if (
+                        activeSquadFilters.size > 0 &&
+                        !activeSquadFilters.has(d.squad)
+                    )
                         return false;
-                    if (activeWeaponFilters.size > 0 && !activeWeaponFilters.has(d.weapon.category))
+                    if (
+                        activeWeaponFilters.size > 0 &&
+                        !activeWeaponFilters.has(d.weapon.category)
+                    )
                         return false;
-                    if (filterCostume && d.skins.length <= 1)
-                        return false;
-                    if (filterAbility && !DOLL_ABILITIES[d.id])
-                        return false;
+                    if (filterCostume && d.skins.length <= 1) return false;
+                    if (filterAbility && !DOLL_ABILITIES[d.id]) return false;
                     if (filterSuppressor && !d.weapon.hasSuppressor)
                         return false;
                     if (search) {
@@ -1838,11 +3783,14 @@
                             ? `<img src="${esc(iconSrc)}" alt="" />`
                             : "";
 
-                        const squadDollIds = squadDolls.map(d => d.id);
-                        const allInUnit = squadDollIds.every(id => unitDolls.includes(id));
-                        const canAdd = !allInUnit && unitDolls.length < MAX_DOLLS;
+                        const squadDollIds = squadDolls.map((d) => d.id);
+                        const allInUnit = squadDollIds.every((id) =>
+                            unitDolls.includes(id),
+                        );
+                        const canAdd =
+                            !allInUnit && unitDolls.length < MAX_DOLLS;
                         const showDisabled = !allInUnit && !canAdd;
-                        const addAllBtn = `<button class="squad-add-all ${allInUnit ? 'active' : ''} ${showDisabled ? 'disabled' : ''}" onclick="event.stopPropagation(); toggleSquadDolls('${esc(squad)}')" ${showDisabled ? 'disabled' : ''}>${allInUnit ? 'Remove all' : 'Add all'}</button>`;
+                        const addAllBtn = `<button class="squad-add-all ${allInUnit ? "active" : ""} ${showDisabled ? "disabled" : ""}" onclick="event.stopPropagation(); toggleSquadDolls('${esc(squad)}')" ${showDisabled ? "disabled" : ""}>${allInUnit ? "Remove all" : "Add all"}</button>`;
 
                         return `<div class="squad-section">
             <div class="squad-header">${iconHtml}${esc(squad)}${addAllBtn}</div>
@@ -1894,10 +3842,16 @@
             }
 
             function toggleSquadDolls(squad) {
-                const squadDollIds = allDolls.filter(d => d.squad === squad).map(d => d.id);
-                const allInUnit = squadDollIds.every(id => unitDolls.includes(id));
+                const squadDollIds = allDolls
+                    .filter((d) => d.squad === squad)
+                    .map((d) => d.id);
+                const allInUnit = squadDollIds.every((id) =>
+                    unitDolls.includes(id),
+                );
 
-                const someInUnit = squadDollIds.some(id => unitDolls.includes(id));
+                const someInUnit = squadDollIds.some((id) =>
+                    unitDolls.includes(id),
+                );
 
                 if (allInUnit) {
                     // Remove all dolls from this squad
@@ -1913,13 +3867,19 @@
                     // Add missing dolls from this squad (respecting cap)
                     let added = 0;
                     for (const id of squadDollIds) {
-                        if (!unitDolls.includes(id) && unitDolls.length < MAX_DOLLS) {
+                        if (
+                            !unitDolls.includes(id) &&
+                            unitDolls.length < MAX_DOLLS
+                        ) {
                             unitDolls.push(id);
                             added++;
                         }
                     }
                     if (added > 0) playAdd();
-                    else { playReject(); return; }
+                    else {
+                        playReject();
+                        return;
+                    }
                 }
 
                 renderSquadTabs();
@@ -1942,7 +3902,9 @@
 
                 container.innerHTML = allSquads
                     .map((s) => {
-                        const active = activeSquadFilters.has(s) ? " active" : "";
+                        const active = activeSquadFilters.has(s)
+                            ? " active"
+                            : "";
                         const count = squadCounts[s] || 0;
                         const badge =
                             count > 0
@@ -1955,8 +3917,26 @@
 
             function renderWeaponTabs() {
                 const container = document.getElementById("weaponTabs");
-                const WEAPON_LABELS = { rifle: "Rifle", smg: "SMG", shotgun: "Shotgun", dmr: "DMR", sniper: "Sniper", lmg: "LMG", pistol: "Pistol", melee: "Melee" };
-                const WEAPON_ORDER = ["rifle", "smg", "shotgun", "dmr", "sniper", "lmg", "pistol", "melee"];
+                const WEAPON_LABELS = {
+                    rifle: "Rifle",
+                    smg: "SMG",
+                    shotgun: "Shotgun",
+                    dmr: "DMR",
+                    sniper: "Sniper",
+                    lmg: "LMG",
+                    pistol: "Pistol",
+                    melee: "Melee",
+                };
+                const WEAPON_ORDER = [
+                    "rifle",
+                    "smg",
+                    "shotgun",
+                    "dmr",
+                    "sniper",
+                    "lmg",
+                    "pistol",
+                    "melee",
+                ];
                 const present = new Set(allDolls.map((d) => d.weapon.category));
                 const cats = WEAPON_ORDER.filter((c) => present.has(c));
 
@@ -1965,15 +3945,21 @@
                 for (const id of unitDolls) {
                     const d = allDolls.find((x) => x.id === id);
                     if (!d) continue;
-                    weaponCounts[d.weapon.category] = (weaponCounts[d.weapon.category] || 0) + 1;
+                    weaponCounts[d.weapon.category] =
+                        (weaponCounts[d.weapon.category] || 0) + 1;
                 }
 
                 container.innerHTML = cats
                     .map((c) => {
-                        const active = activeWeaponFilters.has(c) ? " active" : "";
+                        const active = activeWeaponFilters.has(c)
+                            ? " active"
+                            : "";
                         const label = WEAPON_LABELS[c] || c.toUpperCase();
                         const count = weaponCounts[c] || 0;
-                        const badge = count > 0 ? `<span class="squad-tab-count">${count}</span>` : "";
+                        const badge =
+                            count > 0
+                                ? `<span class="squad-tab-count">${count}</span>`
+                                : "";
                         return `<button class="filter-toggle${active}" onclick="toggleWeaponFilter('${esc(c)}')">${esc(label)}${badge}</button>`;
                     })
                     .join("");
@@ -2002,9 +3988,15 @@
             }
 
             function toggleFilter(type) {
-                if (type === "costume") filterCostume = document.getElementById("filterCostume").checked;
-                if (type === "ability") filterAbility = document.getElementById("filterAbility").checked;
-                if (type === "suppressor") filterSuppressor = document.getElementById("filterSuppressor").checked;
+                if (type === "costume")
+                    filterCostume =
+                        document.getElementById("filterCostume").checked;
+                if (type === "ability")
+                    filterAbility =
+                        document.getElementById("filterAbility").checked;
+                if (type === "suppressor")
+                    filterSuppressor =
+                        document.getElementById("filterSuppressor").checked;
                 playTabSwitch();
                 renderContent();
             }
@@ -2018,7 +4010,8 @@
                     let html = "";
                     for (let i = 0; i < str.length; i++) {
                         html += `<span class="roster-digit"><span class="roster-digit-inner">`;
-                        for (let d = 0; d <= 9; d++) html += `<span>${d}</span>`;
+                        for (let d = 0; d <= 9; d++)
+                            html += `<span>${d}</span>`;
                         html += `</span></span>`;
                     }
                     html += suffix;
@@ -2026,10 +4019,12 @@
                     label.offsetHeight; // force layout
                 }
                 // Roll each digit to its target
-                label.querySelectorAll(".roster-digit-inner").forEach((inner, i) => {
-                    const d = parseInt(str[i]);
-                    inner.style.transform = `translateY(${-d}em)`;
-                });
+                label
+                    .querySelectorAll(".roster-digit-inner")
+                    .forEach((inner, i) => {
+                        const d = parseInt(str[i]);
+                        inner.style.transform = `translateY(${-d * 12}px)`;
+                    });
                 label.style.color = count >= MAX_DOLLS ? "var(--accent)" : "";
             }
 
@@ -2074,12 +4069,63 @@
                 let currentCard = null;
 
                 document.addEventListener("mouseover", (e) => {
+                    // Gacha roster slot tooltips
+                    const gachaSlot = e.target.closest(".gacha-roster-slot");
+                    if (gachaSlot && gachaSlot.dataset.pullIdx != null) {
+                        if (gachaSlot === currentCard) return;
+                        currentCard = gachaSlot;
+                        const pull =
+                            gachaPulls[parseInt(gachaSlot.dataset.pullIdx)];
+                        if (!pull) return;
+                        const d = pull.doll;
+                        const statNames = {
+                            health: "HP",
+                            moveSpeed: "Speed",
+                            turnSpeed: "Turn",
+                            suppressionRecovery: "Sup. Rec.",
+                            fovDegrees: "FOV",
+                        };
+                        const statsHtml = Object.entries(pull.boosts)
+                            .map(([stat, boost]) => {
+                                const pct = Math.round(boost * 100);
+                                const colour = pct >= 0 ? "#4fdb6a" : "#db4f4f";
+                                return `<div class="tooltip-stat"><div class="tooltip-stat-label">${statNames[stat]}</div><div class="tooltip-stat-value" style="color:${colour}">${pct >= 0 ? "+" : ""}${pct}%</div></div>`;
+                            })
+                            .join("");
+                        const dupeBonusTip =
+                            pull.dupeCount > 0
+                                ? Math.round(
+                                      (pull.dupeBonus || 0.05) *
+                                          100 *
+                                          pull.dupeCount,
+                                  )
+                                : 0;
+                        const bonusWeaponNames = (pull.bonusWeapons || [])
+                            .map((bw) => bw.name)
+                            .join(", ");
+                        const dupeHtml =
+                            pull.dupeCount > 0
+                                ? `<div style="font-size:12px;color:var(--accent);margin-top:6px">V${pull.dupeCount + 1} · +${dupeBonusTip}% dupe bonus${bonusWeaponNames ? " + " + esc(bonusWeaponNames) : ""}</div>`
+                                : "";
+                        tooltip.innerHTML = `
+            <div class="tooltip-name">${esc(d.name)}</div>
+            <div class="tooltip-squad" style="color:${pull.gradeColour}">${pull.grade.toUpperCase()}</div>
+            <div class="tooltip-stats">${statsHtml}</div>
+            ${dupeHtml}
+        `;
+                        tooltip.classList.add("visible");
+                        positionTooltip(e);
+                        return;
+                    }
+
                     // Mini tooltip for roster slots
                     const slot = e.target.closest(".roster-slot");
                     if (slot) {
                         if (slot === currentCard) return;
                         currentCard = slot;
-                        const d = allDolls.find((x) => x.id === slot.dataset.id);
+                        const d = allDolls.find(
+                            (x) => x.id === slot.dataset.id,
+                        );
                         if (!d) return;
                         tooltip.innerHTML = `
             <div class="tooltip-name">${esc(d.name)}</div>
@@ -2139,7 +4185,10 @@
                 });
 
                 document.addEventListener("mouseout", (e) => {
-                    const card = e.target.closest(".doll-card") || e.target.closest(".roster-slot");
+                    const card =
+                        e.target.closest(".doll-card") ||
+                        e.target.closest(".roster-slot") ||
+                        e.target.closest(".gacha-roster-slot");
                     if (card && !card.contains(e.relatedTarget)) {
                         tooltip.classList.remove("visible");
                         currentCard = null;
@@ -2307,7 +4356,8 @@
 
             // ── State persistence via URL hash (base64url-encoded bitmask) ──
 
-            const B64 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_";
+            const B64 =
+                "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_";
 
             function bitsToBase64url(bits) {
                 if (bits === 0n) return "A";
@@ -2334,7 +4384,8 @@
                 let bits = 0n;
                 for (const id of unitDolls) {
                     const doll = allDolls.find((d) => d.id === id);
-                    if (doll && doll.bitIndex != null) bits |= 1n << BigInt(doll.bitIndex);
+                    if (doll && doll.bitIndex != null)
+                        bits |= 1n << BigInt(doll.bitIndex);
                 }
                 history.replaceState(null, "", "#" + bitsToBase64url(bits));
             }
@@ -2346,7 +4397,10 @@
                     const bits = base64urlToBits(hash);
                     unitDolls = [];
                     for (const doll of allDolls) {
-                        if (doll.bitIndex != null && (bits & (1n << BigInt(doll.bitIndex))))
+                        if (
+                            doll.bitIndex != null &&
+                            bits & (1n << BigInt(doll.bitIndex))
+                        )
                             unitDolls.push(doll.id);
                     }
                     renderSquadTabs();
@@ -2421,6 +4475,87 @@
                 `;
             }
 
+            function toggleAdvanced(btn) {
+                btn.classList.toggle("open");
+                const body = document.getElementById("advancedStats");
+                body.classList.toggle("open");
+                if (body.classList.contains("open")) renderAdvancedStats();
+            }
+
+            function renderAdvancedStats() {
+                const body = document.getElementById("advancedStats");
+                const dolls = unitDolls
+                    .map((id) => allDolls.find((x) => x.id === id))
+                    .filter(Boolean);
+                if (!dolls.length) {
+                    body.innerHTML =
+                        "<p style='color:var(--text-muted);font-size:12px;'>No dolls selected.</p>";
+                    return;
+                }
+
+                body.innerHTML = dolls
+                    .map((d) => {
+                        const e = d.entity;
+                        const o = dollOverrides[d.id] || {};
+                        const hp = o.health ?? e.health;
+                        const spd = o.moveSpeed ?? e.moveSpeed;
+                        const sup =
+                            o.suppressionRecovery ?? e.suppressionRecovery;
+                        const fov = o.fovDegrees ?? e.fovDegrees;
+                        const trn = o.turnSpeed ?? e.turnSpeed;
+                        const img = d.portrait
+                            ? `<img src="${esc(d.portrait)}" alt="${esc(d.name)}"/>`
+                            : "";
+
+                        return `<div class="stat-row">
+                        <div class="stat-row-portrait">${img}</div>
+                        <div class="stat-row-name" title="${esc(d.name)}">${esc(d.name)}</div>
+                        <div class="stat-row-fields">
+                            <div class="stat-field">
+                                <div class="stat-field-label">HP</div>
+                                <input type="number" value="${hp}" data-doll="${esc(d.id)}" data-stat="health" data-default="${e.health}" onchange="updateDollStat(this)" />
+                            </div>
+                            <div class="stat-field">
+                                <div class="stat-field-label">Speed</div>
+                                <input type="number" step="0.1" value="${spd}" data-doll="${esc(d.id)}" data-stat="moveSpeed" data-default="${e.moveSpeed}" onchange="updateDollStat(this)" />
+                            </div>
+                            <div class="stat-field">
+                                <div class="stat-field-label">Turn</div>
+                                <input type="number" value="${Math.round(trn)}" data-doll="${esc(d.id)}" data-stat="turnSpeed" data-default="${e.turnSpeed}" onchange="updateDollStat(this)" />
+                            </div>
+                            <div class="stat-field">
+                                <div class="stat-field-label">Sup. Rec.</div>
+                                <input type="number" value="${Math.round(sup)}" data-doll="${esc(d.id)}" data-stat="suppressionRecovery" data-default="${e.suppressionRecovery}" onchange="updateDollStat(this)" />
+                            </div>
+                            <div class="stat-field">
+                                <div class="stat-field-label">FOV</div>
+                                <input type="number" value="${fov}" data-doll="${esc(d.id)}" data-stat="fovDegrees" data-default="${e.fovDegrees}" onchange="updateDollStat(this)" />
+                            </div>
+                        </div>
+                    </div>`;
+                    })
+                    .join("");
+            }
+
+            function updateDollStat(input) {
+                const id = input.dataset.doll;
+                const stat = input.dataset.stat;
+                const def = input.dataset.default;
+                const val = input.value;
+
+                if (!dollOverrides[id]) dollOverrides[id] = {};
+
+                if (val === def || val === "") {
+                    delete dollOverrides[id][stat];
+                    if (!Object.keys(dollOverrides[id]).length)
+                        delete dollOverrides[id];
+                    input.classList.remove("modified");
+                } else {
+                    dollOverrides[id][stat] = val;
+                    input.classList.add("modified");
+                }
+            }
+
             function copyPath(id) {
                 const el = document.getElementById(id);
                 navigator.clipboard.writeText(el.textContent).then(() => {
@@ -2472,7 +4607,7 @@
                 );
             }
 
-            async function doDownload() {
+            async function doDownload(btnSelector) {
                 if (unitDolls.length === 0) return;
 
                 const unitName =
@@ -2487,7 +4622,8 @@
                 let bits = 0n;
                 for (const id of unitDolls) {
                     const doll = allDolls.find((d) => d.id === id);
-                    if (doll && doll.bitIndex != null) bits |= 1n << BigInt(doll.bitIndex);
+                    if (doll && doll.bitIndex != null)
+                        bits |= 1n << BigInt(doll.bitIndex);
                 }
                 const bitmaskId = bitsToBase64url(bits).toLowerCase();
                 const prefix = `gfl_custom_${bitmaskId}`;
@@ -2527,7 +4663,7 @@
                 );
 
                 const btn = document.querySelector(
-                    "#downloadModal .btn-accent",
+                    btnSelector || "#downloadModal .btn-accent",
                 );
                 btn.disabled = true;
                 btn.textContent = "Generating...";
@@ -2569,7 +4705,9 @@
                 const fullDesc =
                     desc +
                     "\n\nRequires the base Girls' Frontline 2: Door Kickers mod." +
-                    (MOD_VERSION ? `\n\nBuilt with base mod v${MOD_VERSION}` : "");
+                    (MOD_VERSION
+                        ? `\n\nBuilt with base mod v${MOD_VERSION}`
+                        : "");
                 return `<Mod
     title="GFL2:DK Custom Unit - ${xmlEsc(unitName)}"
     gameVersion="112"
@@ -2668,6 +4806,7 @@ ${classes}
                 const entities = dolls
                     .map((d) => {
                         const e = d.entity;
+                        const o = dollOverrides[d.id] || {};
                         const entityName = `GFL-CUSTOM-${bitmaskId}-${e.name.replace("GIRL-", "")}`;
 
                         let equipment = e.equipment.map((item) => {
@@ -2714,7 +4853,7 @@ ${classes}
             breakOnDamage="explosive"
             deleteOnDeath="false"
         />
-        <PhysicalParams health="${xmlEsc(e.health)}" />
+        <PhysicalParams health="${xmlEsc(o.health || e.health)}" />
 
         <Human type="GoodGuy" unit="${xmlEsc(unitId)}" class="${xmlEsc(d.id)}">
             <Id
@@ -2723,12 +4862,12 @@ ${classes}
                 gender="${xmlEsc(e.gender)}"
                 voicePack="${xmlEsc(e.voicePack)}"
             />
-            <FOV degrees="${xmlEsc(e.fovDegrees)}" distanceMeters="${xmlEsc(e.fovDistance)}" eyeRadiusMeters="${xmlEsc(e.fovEyeRadius)}" />
-            <Brain suppressionRecovery="${xmlEsc(e.suppressionRecovery)}" />
+            <FOV degrees="${xmlEsc(o.fovDegrees || e.fovDegrees)}" distanceMeters="${xmlEsc(e.fovDistance)}" eyeRadiusMeters="${xmlEsc(e.fovEyeRadius)}" />
+            <Brain suppressionRecovery="${xmlEsc(o.suppressionRecovery || e.suppressionRecovery)}" />
 
             <Mobility>
-                <MoveSpeed min="${xmlEsc(e.moveSpeedMin)}" defaultMetersPerSec="${xmlEsc(e.moveSpeed)}" max="${xmlEsc(e.moveSpeedMax)}" />
-                <TurnSpeed min="${xmlEsc(e.turnSpeedMin)}" defaultMetersPerSec="${xmlEsc(e.turnSpeed)}" max="${xmlEsc(e.turnSpeedMax)}" />
+                <MoveSpeed min="${xmlEsc(e.moveSpeedMin)}" defaultMetersPerSec="${xmlEsc(o.moveSpeed || e.moveSpeed)}" max="${xmlEsc(e.moveSpeedMax)}" />
+                <TurnSpeed min="${xmlEsc(e.turnSpeedMin)}" defaultMetersPerSec="${xmlEsc(o.turnSpeed || e.turnSpeed)}" max="${xmlEsc(e.turnSpeedMax)}" />
             </Mobility>
 
             <Equipment>
@@ -2918,7 +5057,8 @@ ${uncheckActions}
             function formatCategory(cat) {
                 if (!cat) return "";
                 const upper = cat.toUpperCase();
-                if (upper === "DMR" || upper === "LMG" || upper === "SMG") return upper;
+                if (upper === "DMR" || upper === "LMG" || upper === "SMG")
+                    return upper;
                 return cat.charAt(0).toUpperCase() + cat.slice(1).toLowerCase();
             }
 
@@ -2940,7 +5080,8 @@ ${uncheckActions}
             }
             function rosterSnapBack(el) {
                 for (const c of el.children) {
-                    c.style.transition = "transform 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94)";
+                    c.style.transition =
+                        "transform 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94)";
                     c.style.transform = "";
                 }
             }
@@ -3049,7 +5190,10 @@ ${uncheckActions}
                         if (next < 0 || next > maxScroll) {
                             const over = next < 0 ? next : next - maxScroll;
                             rosterRubber(el, -over * 0.3);
-                            el.scrollLeft = Math.max(0, Math.min(next, maxScroll));
+                            el.scrollLeft = Math.max(
+                                0,
+                                Math.min(next, maxScroll),
+                            );
                             // Snap back after brief bounce
                             setTimeout(() => rosterSnapBack(el), 50);
                             return;
