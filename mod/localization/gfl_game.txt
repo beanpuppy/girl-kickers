@@ -46,23 +46,6 @@
 @doctrine_gfl_lethalprecision_name=Lethal Precision
 @doctrine_gfl_lethalprecision_descr=Optimized targeting algorithms prioritize vital areas. Significantly increases critical hit probability and reduces target acquisition time. Marksman rifles gain enhanced headshot capability.
 
-
-
-
-
-
-@helmet_gfl_ocular_name=Night Eyes
-@helmet_gfl_ocular_desc=Enhanced optical systems for night vision integration. Allows direct NVG interface without physical mounting hardware.
-
-@armor_gfl_reactive_name=Reactive Shielding
-@armor_gfl_reactive_desc=Integrated defensive matrix. Provides ballistic protection without external armor plating.
-
-@armor_gfl_matrix_name=Combat Matrix
-@armor_gfl_matrix_desc=Enhanced defensive field generator. Improved protection with minimal system load.
-
-@armor_gfl_hardened_name=Hardened Core
-@armor_gfl_hardened_desc=Maximum protection configuration. Reinforced defensive systems provide superior ballistic resistance.
-
 @scope_GFL_ironsights_name=Iron sights
 
 @scope_GFL_ironsights_desc=Standard ironsights for basic aim guidance. Provides the quickest aim time at the cost of precision. T-Dolls being sent with nothing but iron sights tend to rely on just their built-in sensor packages in close range fights, removing the need to "consult" the sights during target acquisition, allowing the doll to process shooting protocols faster.
@@ -796,6 +779,15 @@
 @WEAP-PPSH41-NAME=PPSh-41
 @WEAP-PPSH41-DESC=Wartime Soviet SMG built from stamped steel and bad intentions. The 71-round drum and ~900 RPM cyclic rate make it a room-clearing monster.\n\n7.62x25mm Tokarev has some punch to it, but practical accuracy drops off fast. Get close, hold the trigger, and let the drum do the talking.
 
-@firearm_caliber_9x18_name=9×18mm Makarov
-@firearm_caliber_762x25_name=7.62×25mm Tokarev
-@firearm_caliber_762x38r_name=7.62×38mmR Nagant
+@firearm_caliber_762x38_name=7.62×38mmR
+
+@firearm_caliber_9x18_name=9×18mm
+
+
+
+
+
+
+
+
+@KEEP_THIS_AT_THE_BOTTOM_THIS_STOPS_A_BUG_I_DONT_KNOW_WHY

@@ -5341,7 +5341,7 @@
         />
 
         <Params
-            caliberInfoText="@firearm_caliber_762x38r_name"
+            caliberInfoText="@firearm_caliber_762x38_name"
             operationInfoText="@firearm_operation_doubleaction_name"
             ejectingShellEntity="BulletCasingSmall"
             magazineEntity="pm63_mag"
@@ -5429,7 +5429,7 @@
         />
 
         <Params
-            caliberInfoText="@firearm_caliber_762x38r_name"
+            caliberInfoText="@firearm_caliber_762x38_name"
             operationInfoText="@firearm_operation_doubleaction_name"
             ejectingShellEntity="BulletCasingSmall"
             magazineEntity="pm63_mag"
@@ -5525,7 +5525,7 @@
         />
 
         <Params
-            caliberInfoText="@firearm_caliber_762x54r_name"
+            caliberInfoText="@firearm_caliber_762x54_name"
             operationInfoText="@firearm_operation_boltaction_name"
             ejectingShellEntity="BulletCasingLarge"
             magazineEntity="dragunov_mag"
@@ -5623,7 +5623,7 @@
         />
 
         <Params
-            caliberInfoText="@firearm_caliber_762x54r_name"
+            caliberInfoText="@firearm_caliber_762x54_name"
             operationInfoText="@firearm_operation_boltaction_name"
             ejectingShellEntity="BulletCasingLarge"
             magazineEntity="dragunov_mag"
@@ -5697,7 +5697,7 @@
 
         <ModifiableParams
             numPellets="1"
-            roundsPerMagazine="71"
+            roundsPerMagazine="35"
             closedBolt="1"
             cyclicReload="0"
             reloadTime="1600"
@@ -5714,8 +5714,8 @@
         />
 
         <Params
-            caliberInfoText="@firearm_caliber_762x25_name"
-            operationInfoText="@firearm_operation_semifull_name"
+            caliberInfoText="@firearm_caliber_9x19_name"
+            operationInfoText="@firearm_operation_fullauto_name"
             ejectingShellEntity="BulletCasingSmall"
             magazineEntity="mp5_mag"
             ai_rangeMin="1.0"
