@@ -53,28 +53,4 @@ Special thanks to:
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3586738239]Chinese localisation[/url]
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3595646925]Korean localisation[/url]
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3605426442]Japanese localisation[/url]
-[/list]" changeNotes="Does anyone know where I can buy a Mr. Pizza ?
-
----
-
-New Content
-- Added Monsoon squad: Daiyan (QBZ-95), Jiangyu (QBZ-97), Zhaohui (CS/LS06), Faye (CZ 75)
-- Added suppressed weapon variants some weapons
-- Added 14 custom scopes from iron sights to 25x magnification
-- Reworked armour into 6 new items: Recreation, Law Enforcement, B.R.I.E.F., Elite, Deichgraf, Nosorog
-- Added 5 neural cores (helmets): Basic, Vanguard, Sentinel, Bulwark, Support
-- Added lockpick as universal doll equipment
-
-Weapon Rebalance
-- Complete overhaul of all weapon stats - damage, accuracy, reload times, and fire behaviour rebuilt from scratch for every weapon in the mod
-- New attack type system giving each weapon its own set of firing behaviours across standardised range bands, replacing the old shared attack types
-- New per-weapon ammo types with unique stats, plus alternate ammo options for most weapons including AP rounds, suppression rounds, and specialty ammo
-- DMRs, snipers, and LMGs now benefit from mounted positions with reduced aim time when in cover
-- Shotgun pump action reworked with cyclic reload
-- Accuracy, concealment, and suppression values rebalanced across all weapon classes to better reflect weapon type and role
-
-Doll Rebalance
-- Health, FOV, movement speed, and suppression recovery flattened and standardised across all dolls, with a few exceptions for dolls that should stand out e.g. AK-15
-- Default loadout standardised: iron sights, doorkick, lockpick, basic core, night vision, combat frame
-- Old equipment system replaced with new armour frame and neural core system
-" languageMod="" tags="Playable Units,Equipment,UI" ugcId="3580762170"/>
+[/list]" changeNotes="Fix some alt ammo having 0 accuracy" languageMod="" tags="Playable Units,Equipment,UI" ugcId="3580762170"/>

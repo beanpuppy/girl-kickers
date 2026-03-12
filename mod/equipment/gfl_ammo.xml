@@ -71,7 +71,6 @@
             roundsPerSecond="14.2"
             audibleSoundRadius="100"
             physicsImpactForce="2.0"
-            accuracyAdd="-100"
         >
             <Damage
                 start="36"
@@ -522,7 +521,6 @@
             roundsPerSecond="14.2"
             audibleSoundRadius="100"
             physicsImpactForce="2.0"
-            accuracyAdd="-100"
         >
             <Damage
                 start="36"
@@ -1336,7 +1334,6 @@
             roundsPerSecond="12.5"
             audibleSoundRadius="100"
             physicsImpactForce="2.0"
-            accuracyAdd="-100"
         >
             <Damage
                 start="34"
