@@ -1366,7 +1366,6 @@
                 z-index: 110;
                 flex-direction: column;
                 align-items: center;
-                justify-content: center;
                 overflow-y: auto;
             }
             .gacha-overlay.visible {
@@ -1375,8 +1374,9 @@
 
             .gacha-content {
                 width: 100%;
-                max-width: 700px;
-                padding: 24px;
+                max-width: 860px;
+                padding: 28px;
+                margin: auto;
             }
 
             .gacha-header {
@@ -1391,32 +1391,17 @@
                 gap: 10px;
             }
             .gacha-title {
-                font-size: 11px;
+                font-size: 13px;
                 font-weight: 700;
                 text-transform: uppercase;
                 letter-spacing: 1.5px;
                 color: var(--text-muted);
             }
-            .gacha-pull-counter {
-                display: flex;
-                gap: 4px;
-            }
-            .gacha-pull-pip {
-                width: 8px;
-                height: 8px;
-                border-radius: 50%;
-                background: rgba(255, 255, 255, 0.08);
-                transition: all 300ms ease;
-            }
-            .gacha-pull-pip.filled {
-                background: var(--accent);
-                box-shadow: 0 0 6px rgba(212, 133, 59, 0.4);
-            }
             .gacha-close-btn {
                 background: none;
                 border: none;
                 color: var(--text-muted);
-                font-size: 20px;
+                font-size: 24px;
                 cursor: pointer;
                 padding: 4px 8px;
                 transition: color 150ms;
@@ -1428,59 +1413,59 @@
 
             .gacha-intro {
                 text-align: center;
-                margin-bottom: 20px;
-                padding: 20px;
+                margin-bottom: 24px;
+                padding: 24px;
             }
             .gacha-intro.hidden {
                 display: none;
             }
             .gacha-intro-title {
-                font-size: 22px;
+                font-size: 26px;
                 font-weight: 700;
                 color: #fff;
-                margin-bottom: 6px;
+                margin-bottom: 8px;
             }
             .gacha-intro-sub {
-                font-size: 13px;
+                font-size: 15px;
                 color: var(--text-muted);
-                margin-bottom: 16px;
+                margin-bottom: 20px;
             }
             .gacha-intro-rules {
                 display: flex;
-                gap: 12px;
+                gap: 14px;
                 justify-content: center;
                 flex-wrap: wrap;
             }
             .gacha-intro-rule {
                 background: rgba(255, 255, 255, 0.03);
                 border: 1px solid rgba(255, 255, 255, 0.06);
-                padding: 10px 14px;
+                padding: 12px 16px;
                 flex: 1;
-                min-width: 140px;
-                max-width: 200px;
+                min-width: 160px;
+                max-width: 220px;
             }
             .gacha-intro-rule-title {
-                font-size: 11px;
+                font-size: 12px;
                 font-weight: 700;
                 text-transform: uppercase;
                 letter-spacing: 0.5px;
                 color: var(--accent);
-                margin-bottom: 4px;
+                margin-bottom: 5px;
             }
             .gacha-intro-rule-desc {
-                font-size: 12px;
+                font-size: 13px;
                 color: var(--text-secondary);
                 line-height: 1.4;
             }
 
             .gacha-pity-display {
-                margin-top: 16px;
-                margin-bottom: 16px;
+                margin-top: 20px;
+                margin-bottom: 20px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                gap: 8px;
-                font-size: 11px;
+                gap: 10px;
+                font-size: 12px;
                 color: var(--text-muted);
             }
             .gacha-pity-label {
@@ -1490,8 +1475,8 @@
                 color: #e8b630;
             }
             .gacha-pity-bar {
-                width: 120px;
-                height: 4px;
+                width: 150px;
+                height: 5px;
                 background: rgba(255, 255, 255, 0.06);
                 overflow: hidden;
             }
@@ -1501,253 +1486,192 @@
                 transition: width 600ms cubic-bezier(0.25, 0.8, 0.25, 1);
             }
 
-            .gacha-spinner-window {
-                position: relative;
-                width: 100%;
-                height: 130px;
-                overflow: hidden;
-                border: 1px solid rgba(255, 255, 255, 0.08);
-                background: rgba(0, 0, 0, 0.4);
-                margin-bottom: 24px;
+            .gacha-cascade {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+                margin-bottom: 16px;
             }
 
-            .gacha-spinner-strip {
+            .gacha-cascade-row {
+                position: relative;
+                height: 82px;
+                background: rgba(0, 0, 0, 0.3);
+            }
+            .gacha-cascade-row-clip {
+                position: absolute;
+                inset: 0;
+                overflow: hidden;
+            }
+            .gacha-cascade-row.waiting {
+                opacity: 0.4;
+            }
+            .gacha-cascade-row.spinning,
+            .gacha-cascade-row.landed {
+                opacity: 1;
+            }
+
+            .gacha-cascade-strip {
                 display: flex;
                 gap: 4px;
                 position: absolute;
-                top: 5px;
+                top: 3px;
                 left: 0;
                 will-change: transform;
             }
 
-            .gacha-spinner-cell {
-                width: 100px;
-                height: 120px;
+            .gacha-cascade-cell {
+                width: 62px;
+                height: 76px;
                 flex-shrink: 0;
                 overflow: hidden;
                 border: 2px solid rgba(255, 255, 255, 0.06);
                 background: var(--card-bg);
                 position: relative;
             }
-            .gacha-spinner-cell img {
+            .gacha-cascade-cell img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
                 display: block;
             }
-            .gacha-spinner-cell .cell-name {
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                padding: 12px 4px 3px;
-                background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
-                font-size: 9px;
-                font-weight: 600;
-                text-transform: uppercase;
-                letter-spacing: 0.3px;
-                text-align: center;
-                color: #fff;
-            }
 
-            .gacha-spinner-marker {
+            .gacha-cascade-marker {
                 position: absolute;
                 top: 0;
                 bottom: 0;
                 left: 50%;
-                width: 3px;
-                margin-left: -1.5px;
+                width: 2px;
+                margin-left: -1px;
                 background: var(--accent);
                 box-shadow:
-                    0 0 12px var(--accent),
-                    0 0 24px rgba(212, 133, 59, 0.3);
+                    0 0 8px var(--accent),
+                    0 0 16px rgba(212, 133, 59, 0.3);
                 z-index: 2;
                 pointer-events: none;
+                opacity: 0;
+                transition: opacity 300ms ease;
             }
-            .gacha-spinner-marker::before,
-            .gacha-spinner-marker::after {
+            .gacha-cascade-row.spinning .gacha-cascade-marker,
+            .gacha-cascade-row.landed .gacha-cascade-marker {
+                opacity: 1;
+            }
+            .gacha-cascade-marker::before,
+            .gacha-cascade-marker::after {
                 content: "";
                 position: absolute;
                 left: 50%;
                 transform: translateX(-50%);
                 width: 0;
                 height: 0;
-                border-left: 8px solid transparent;
-                border-right: 8px solid transparent;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
             }
-            .gacha-spinner-marker::before {
+            .gacha-cascade-marker::before {
                 top: 0;
-                border-top: 10px solid var(--accent);
+                border-top: 6px solid var(--accent);
             }
-            .gacha-spinner-marker::after {
+            .gacha-cascade-marker::after {
                 bottom: 0;
-                border-bottom: 10px solid var(--accent);
+                border-bottom: 6px solid var(--accent);
             }
 
-            .gacha-result {
-                background: var(--card-bg);
-                border: 2px solid rgba(255, 255, 255, 0.08);
-                padding: 20px;
-                position: relative;
-                overflow: hidden;
-            }
-            .gacha-result[data-grade="common"] {
-                border-color: #8a8a8a;
-                box-shadow: 0 0 20px rgba(138, 138, 138, 0.2);
-            }
-            .gacha-result[data-grade="Rare"] {
-                border-color: #4f8ff5;
-                box-shadow: 0 0 25px rgba(79, 143, 245, 0.3);
-            }
-            .gacha-result[data-grade="SR"] {
-                border-color: #c24fdb;
-                box-shadow: 0 0 30px rgba(194, 79, 219, 0.35);
-            }
-            .gacha-result[data-grade="SSR"] {
-                border-color: #e8b630;
-                box-shadow:
-                    0 0 20px rgba(232, 182, 48, 0.4),
-                    0 0 60px rgba(232, 182, 48, 0.15);
-            }
-
-            .gacha-result::after {
-                content: "";
+            .gacha-cascade-label {
                 position: absolute;
-                inset: -50%;
-                background: linear-gradient(
-                    105deg,
-                    transparent 40%,
-                    rgba(255, 255, 255, 0.06) 45%,
-                    rgba(255, 255, 255, 0.15) 50%,
-                    rgba(255, 255, 255, 0.06) 55%,
-                    transparent 60%
-                );
-                pointer-events: none;
-                opacity: 0;
-            }
-            .gacha-result[data-grade="Rare"]::after {
-                animation: gacha-shine 2.5s ease-in-out 0.3s;
-            }
-            .gacha-result[data-grade="SR"]::after {
-                animation: gacha-shine 2s ease-in-out 0.3s;
-            }
-            .gacha-result[data-grade="SSR"]::after {
-                animation:
-                    gacha-shine 1.5s ease-in-out 0.3s,
-                    gacha-shine 1.5s ease-in-out 2s;
-            }
-            @keyframes gacha-shine {
-                0% {
-                    transform: translateX(-100%) rotate(0deg);
-                    opacity: 1;
-                }
-                100% {
-                    transform: translateX(100%) rotate(0deg);
-                    opacity: 1;
-                }
-            }
-
-            .gacha-result-inner {
+                right: 6px;
+                top: 50%;
+                transform: translateY(-50%);
                 display: flex;
-                gap: 16px;
-                position: relative;
-                z-index: 1;
+                align-items: center;
+                gap: 6px;
+                opacity: 0;
+                transition: opacity 400ms ease;
+                z-index: 3;
+                pointer-events: none;
+                background: rgba(0, 0, 0, 0.7);
+                backdrop-filter: blur(4px);
+                padding: 4px 10px;
+                border-radius: 3px;
             }
-            .gacha-result-portrait {
-                width: 90px;
-                height: 110px;
-                flex-shrink: 0;
-                overflow: hidden;
-                border: 1px solid rgba(255, 255, 255, 0.1);
+            .gacha-cascade-label.revealed {
+                opacity: 1;
             }
-            .gacha-result-portrait img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                display: block;
-            }
-            .gacha-result-info {
-                flex: 1;
-                min-width: 0;
-            }
-            .gacha-result-name {
-                font-size: 20px;
+            .gacha-cascade-label-name {
+                font-size: 14px;
                 font-weight: 700;
                 color: #fff;
-                margin-bottom: 2px;
+                text-transform: uppercase;
+                letter-spacing: 0.3px;
             }
-            .gacha-result-grade {
-                font-size: 11px;
+            .gacha-cascade-label-grade {
+                font-size: 13px;
                 font-weight: 700;
                 text-transform: uppercase;
-                letter-spacing: 1px;
-                margin-bottom: 8px;
+                letter-spacing: 0.5px;
             }
-            .gacha-result-dupe {
+            .gacha-cascade-label-dupe {
                 font-size: 11px;
                 font-weight: 600;
                 color: var(--accent);
-                margin-bottom: 6px;
             }
 
-            .gacha-stat-row {
-                display: flex;
-                align-items: center;
-                gap: 8px;
-                margin-bottom: 4px;
+            /* Grade glow on the winning cell — soft light bloom */
+            .gacha-cascade-cell.glow-Rare,
+            .gacha-cascade-cell.glow-SR,
+            .gacha-cascade-cell.glow-SSR {
+                overflow: visible;
+                z-index: 1;
             }
-            .gacha-stat-label {
-                width: 60px;
-                font-size: 10px;
-                font-weight: 600;
-                text-transform: uppercase;
-                letter-spacing: 0.3px;
-                color: var(--text-muted);
-                flex-shrink: 0;
+            .gacha-cascade-cell.glow-Rare {
+                box-shadow:
+                    0 0 20px 8px rgba(79, 143, 245, 0.3),
+                    0 0 50px 15px rgba(79, 143, 245, 0.12);
+                animation: cascade-glow-pulse 1.2s ease-in-out infinite;
             }
-            .gacha-stat-track {
-                flex: 1;
-                height: 6px;
-                background: rgba(255, 255, 255, 0.06);
-                position: relative;
-                overflow: hidden;
+            .gacha-cascade-cell.glow-SR {
+                box-shadow:
+                    0 0 25px 10px rgba(194, 79, 219, 0.35),
+                    0 0 60px 20px rgba(194, 79, 219, 0.12);
+                animation: cascade-glow-pulse 1s ease-in-out infinite;
             }
-            .gacha-stat-fill {
+            .gacha-cascade-cell.glow-SSR {
+                box-shadow:
+                    0 0 30px 12px rgba(232, 182, 48, 0.4),
+                    0 0 70px 25px rgba(232, 182, 48, 0.15),
+                    0 0 100px 40px rgba(232, 182, 48, 0.06);
+                animation: cascade-glow-pulse 0.8s ease-in-out infinite;
+            }
+            @keyframes cascade-glow-pulse {
+                0%,
+                100% {
+                    filter: brightness(1);
+                }
+                50% {
+                    filter: brightness(1.3);
+                }
+            }
+
+            /* SSR cell particles while spinning */
+            .gacha-cell-particle {
                 position: absolute;
-                top: 0;
-                height: 100%;
-                transition: width 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-                width: 0;
+                width: 3px;
+                height: 3px;
+                background: #e8b630;
+                border-radius: 50%;
+                box-shadow: 0 0 4px #e8b630;
+                pointer-events: none;
+                z-index: 2;
+                animation: cell-particle-fly 0.8s ease-out forwards;
             }
-            .gacha-stat-fill.positive {
-                background: #4fdb6a;
-                left: 50%;
-            }
-            .gacha-stat-fill.negative {
-                background: #db4f4f;
-                right: 50%;
-                left: auto;
-            }
-            .gacha-stat-centre {
-                position: absolute;
-                left: 50%;
-                top: 0;
-                bottom: 0;
-                width: 1px;
-                background: rgba(255, 255, 255, 0.15);
-            }
-            .gacha-stat-value {
-                width: 42px;
-                font-size: 11px;
-                font-weight: 600;
-                text-align: right;
-                flex-shrink: 0;
-            }
-            .gacha-stat-value.positive {
-                color: #4fdb6a;
-            }
-            .gacha-stat-value.negative {
-                color: #db4f4f;
+            @keyframes cell-particle-fly {
+                0% {
+                    opacity: 1;
+                    transform: translate(0, 0) scale(1);
+                }
+                100% {
+                    opacity: 0;
+                    transform: translate(var(--dx), var(--dy)) scale(0);
+                }
             }
 
             .gacha-actions {
@@ -1759,11 +1683,12 @@
 
             .gacha-summary {
                 width: 100%;
-                max-width: 700px;
-                padding: 24px;
+                max-width: 860px;
+                padding: 28px;
+                margin: auto;
             }
             .gacha-summary h2 {
-                font-size: 22px;
+                font-size: 26px;
                 font-weight: 700;
                 color: #fff;
                 text-align: center;
@@ -1774,13 +1699,13 @@
             .gacha-summary-grid {
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
-                gap: 8px;
-                margin-bottom: 24px;
+                gap: 10px;
+                margin-bottom: 28px;
             }
             .gacha-mini-card {
                 border: 2px solid rgba(255, 255, 255, 0.08);
                 background: var(--card-bg);
-                padding: 6px;
+                padding: 8px;
                 text-align: center;
                 position: relative;
                 overflow: hidden;
@@ -1816,31 +1741,68 @@
                 bottom: 0;
                 left: 0;
                 right: 0;
-                padding: 4px;
+                padding: 5px 6px;
                 background: rgba(14, 14, 17, 0.45);
                 backdrop-filter: blur(6px);
                 display: flex;
                 flex-direction: column;
-                gap: 1px;
+                gap: 2px;
             }
             .mini-stat {
                 display: flex;
-                justify-content: space-between;
-                font-size: 9px;
+                align-items: center;
+                gap: 4px;
+                font-size: 10px;
                 font-weight: 600;
                 line-height: 1.3;
             }
             .mini-stat-label {
                 color: rgba(255, 255, 255, 0.5);
+                width: 24px;
+                flex-shrink: 0;
             }
-            .mini-stat.positive {
+            .mini-stat-bar {
+                flex: 1;
+                height: 4px;
+                background: rgba(255, 255, 255, 0.08);
+                position: relative;
+                overflow: hidden;
+            }
+            .mini-stat-bar-centre {
+                position: absolute;
+                left: 50%;
+                top: 0;
+                bottom: 0;
+                width: 1px;
+                background: rgba(255, 255, 255, 0.15);
+            }
+            .mini-stat-bar-fill {
+                position: absolute;
+                top: 0;
+                height: 100%;
+            }
+            .mini-stat-bar-fill.positive {
+                background: #4fdb6a;
+                left: 50%;
+            }
+            .mini-stat-bar-fill.negative {
+                background: #db4f4f;
+                right: 50%;
+                left: auto;
+            }
+            .mini-stat-value {
+                width: 26px;
+                text-align: right;
+                flex-shrink: 0;
+            }
+            .mini-stat.positive .mini-stat-value {
                 color: #4fdb6a;
             }
-            .mini-stat.negative {
+            .mini-stat.negative .mini-stat-value {
                 color: #db4f4f;
             }
             .gacha-mini-card .mini-name {
-                font-size: 10px;
+                font-size: 12px;
                 font-weight: 600;
                 text-transform: uppercase;
                 letter-spacing: 0.3px;
@@ -1850,7 +1812,7 @@
                 white-space: nowrap;
             }
             .gacha-mini-card .mini-grade {
-                font-size: 9px;
+                font-size: 10px;
                 font-weight: 700;
                 text-transform: uppercase;
                 letter-spacing: 0.5px;
@@ -1867,6 +1829,12 @@
                 border: 1px solid rgba(255, 255, 255, 0.06);
                 padding: 20px;
                 margin-bottom: 16px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 12px 16px;
+            }
+            .gacha-summary-form .modal-field {
+                margin-bottom: 0;
             }
 
             .gacha-locked-msg {
@@ -1882,47 +1850,20 @@
                 margin-bottom: 8px;
             }
 
-            /* Legendary sparkle particles */
-            .gacha-result[data-grade="SSR"] .gacha-sparkles {
-                position: absolute;
-                inset: 0;
-                pointer-events: none;
-                overflow: hidden;
-            }
-            .gacha-sparkle {
-                position: absolute;
-                width: 4px;
-                height: 4px;
-                background: #e8b630;
-                border-radius: 50%;
-                animation: gacha-sparkle-float 1.5s ease-out forwards;
-                box-shadow: 0 0 6px #e8b630;
-            }
-            @keyframes gacha-sparkle-float {
-                0% {
-                    opacity: 1;
-                    transform: translateY(0) scale(1);
-                }
-                100% {
-                    opacity: 0;
-                    transform: translateY(-40px) scale(0);
-                }
-            }
-
             .gacha-roster {
                 display: flex;
-                gap: 6px;
+                gap: 8px;
                 justify-content: center;
                 margin-bottom: 20px;
-                padding: 12px 16px;
+                padding: 14px 20px;
                 background: rgba(255, 255, 255, 0.02);
                 border: 1px solid rgba(255, 255, 255, 0.05);
-                min-height: 60px;
+                min-height: 72px;
                 align-items: center;
             }
             .gacha-roster-slot {
-                width: 48px;
-                height: 48px;
+                width: 58px;
+                height: 58px;
                 border: 1px solid rgba(255, 255, 255, 0.08);
                 background: rgba(255, 255, 255, 0.03);
                 overflow: hidden;
@@ -1996,21 +1937,6 @@
             }
             .gacha-roster-slot {
                 position: relative;
-            }
-
-            .gacha-fly-ghost {
-                position: fixed;
-                z-index: 300;
-                overflow: hidden;
-                pointer-events: none;
-                transition: all 450ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-                opacity: 0.8;
-            }
-            .gacha-fly-ghost img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                display: block;
             }
         </style>
     </head>
@@ -2363,7 +2289,6 @@
                 <div class="gacha-header">
                     <div class="gacha-header-left">
                         <span class="gacha-title">Daily Gacha</span>
-                        <div class="gacha-pull-counter" id="gachaPips"></div>
                     </div>
                     <button
                         class="gacha-close-btn"
@@ -2376,7 +2301,7 @@
                 <div class="gacha-intro" id="gachaIntro">
                     <div class="gacha-intro-title">Daily Gacha</div>
                     <div class="gacha-intro-sub">
-                        Pull 8 dolls, build a random unit. One session per day.
+                        Pull 8 dolls to build a random unit once a day.
                     </div>
                     <div class="gacha-intro-rules">
                         <div class="gacha-intro-rule">
@@ -2406,11 +2331,11 @@
                     id="gachaRoster"
                     style="display: none"
                 ></div>
-                <div class="gacha-spinner-window">
-                    <div class="gacha-spinner-strip" id="gachaStrip"></div>
-                    <div class="gacha-spinner-marker"></div>
-                </div>
-                <div id="gachaResultArea"></div>
+                <div
+                    class="gacha-cascade"
+                    id="gachaCascade"
+                    style="display: none"
+                ></div>
                 <div id="gachaActions" class="gacha-actions"></div>
             </div>
             <div
@@ -2760,12 +2685,13 @@
                 const summary = document.getElementById("gachaSummary");
                 let lockedMsg = document.getElementById("gachaLockedMsg");
 
-                // Check for saved pulls from an interrupted session
                 const saved = loadGachaPulls();
 
-                if (isGachaLocked()) {
+                if (
+                    isGachaLocked() ||
+                    (!isGachaLocked() && saved && saved.pullIndex >= 8)
+                ) {
                     if (saved && saved.pullIndex >= 8) {
-                        // Completed session — show summary directly
                         gachaPulls = saved.pulls;
                         gachaPullIndex = 8;
                         gachaActive = false;
@@ -2776,28 +2702,8 @@
                         showGachaSummary();
                         return;
                     }
-                    if (saved && saved.pullIndex > 0 && saved.pullIndex < 8) {
-                        // Interrupted session — resume
-                        gachaPulls = saved.pulls;
-                        gachaPullIndex = saved.pullIndex;
-                        gachaActive = true;
-                        if (lockedMsg) lockedMsg.style.display = "none";
-                        main.style.display = "block";
-                        summary.style.display = "none";
-                        overlay.classList.add("visible");
-                        document.body.classList.add("modal-open");
-                        // Show roster, hide intro (already have pulls)
-                        const introR = document.getElementById("gachaIntro");
-                        if (introR) introR.classList.add("hidden");
-                        const rosterR = document.getElementById("gachaRoster");
-                        if (rosterR) rosterR.style.display = "";
-                        renderGachaRoster();
-                        renderGachaPity();
-                        renderGachaPull();
-                        return;
-                    }
 
-                    // No saved pulls — truly locked
+                    // Truly locked, no saved pulls
                     main.style.display = "none";
                     summary.style.display = "none";
                     if (!lockedMsg) {
@@ -2819,31 +2725,6 @@
                     return;
                 }
 
-                // Check for saved pulls even when not locked (dev mode)
-                const savedFresh = loadGachaPulls();
-                if (
-                    savedFresh &&
-                    savedFresh.pullIndex > 0 &&
-                    savedFresh.pullIndex < 8
-                ) {
-                    gachaPulls = savedFresh.pulls;
-                    gachaPullIndex = savedFresh.pullIndex;
-                    gachaActive = true;
-                    if (lockedMsg) lockedMsg.style.display = "none";
-                    main.style.display = "block";
-                    summary.style.display = "none";
-                    overlay.classList.add("visible");
-                    document.body.classList.add("modal-open");
-                    const introR = document.getElementById("gachaIntro");
-                    if (introR) introR.classList.add("hidden");
-                    const rosterR = document.getElementById("gachaRoster");
-                    if (rosterR) rosterR.style.display = "";
-                    renderGachaRoster();
-                    renderGachaPity();
-                    renderGachaPull();
-                    return;
-                }
-
                 gachaActive = true;
                 gachaPulls = [];
                 gachaPullIndex = 0;
@@ -2854,16 +2735,19 @@
                 overlay.classList.add("visible");
                 document.body.classList.add("modal-open");
 
-                localStorage.setItem("gachaLastPull", todayUTC());
-                updateGachaBtn();
                 clearGachaPulls();
-                // Reset intro/roster visibility
                 const intro = document.getElementById("gachaIntro");
                 if (intro) intro.classList.remove("hidden");
                 const roster = document.getElementById("gachaRoster");
                 if (roster) roster.style.display = "none";
+                const cascade = document.getElementById("gachaCascade");
+                if (cascade) cascade.style.display = "none";
                 renderGachaPity();
-                renderGachaPull();
+
+                // Show pull button
+                document.getElementById("gachaActions").innerHTML = `
+                    <button class="btn btn-accent" onclick="doCascadePull()">Pull</button>
+                `;
             }
 
             function closeGacha() {
@@ -2872,6 +2756,25 @@
                     .getElementById("gachaOverlay")
                     .classList.remove("visible");
                 document.body.classList.remove("modal-open");
+            }
+
+            function restartGacha() {
+                clearGachaPulls();
+                localStorage.removeItem("gachaLastPull");
+                gachaPulls = [];
+                gachaPullIndex = 0;
+                document.getElementById("gachaSummary").style.display = "none";
+                document.getElementById("gachaMain").style.display = "block";
+                const intro = document.getElementById("gachaIntro");
+                if (intro) intro.classList.remove("hidden");
+                const roster = document.getElementById("gachaRoster");
+                if (roster) roster.style.display = "none";
+                const cascade = document.getElementById("gachaCascade");
+                if (cascade) cascade.style.display = "none";
+                renderGachaPity();
+                document.getElementById("gachaActions").innerHTML = `
+                    <button class="btn btn-accent" onclick="doCascadePull()">Pull</button>
+                `;
             }
 
             let gachaAnimateSlot = -1; // index to animate, -1 = none
@@ -2923,149 +2826,420 @@
                 }
             }
 
-            function renderGachaPips() {
-                const container = document.getElementById("gachaPips");
-                if (!container) return;
-                let html = "";
-                for (let i = 0; i < 8; i++) {
-                    html += `<div class="gacha-pull-pip${i < gachaPullIndex ? " filled" : ""}"></div>`;
-                }
-                container.innerHTML = html;
+            const GRADE_COLOURS = {
+                common: "#8a8a8a",
+                Rare: "#4f8ff5",
+                SR: "#c24fdb",
+                SSR: "#e8b630",
+            };
+
+            // Fake grade border pool — weighted so rares/SSRs feel common
+            const gradePool = [
+                { colour: "#8a8a8a", weight: 3 },
+                { colour: "#4f8ff5", weight: 4 },
+                { colour: "#c24fdb", weight: 3 },
+                { colour: "#e8b630", weight: 2 },
+            ];
+            const weightedGrades = gradePool.flatMap((g) =>
+                Array(g.weight).fill(g),
+            );
+            function randomFakeGrade() {
+                return weightedGrades[
+                    Math.floor(Math.random() * weightedGrades.length)
+                ];
             }
 
-            function renderGachaPull() {
-                renderGachaPips();
-                document.getElementById("gachaResultArea").innerHTML = "";
+            // When set, pity functions use this instead of localStorage
+            let _pityOverride = null;
+
+            function preRollAllPulls() {
+                const results = [];
+                // Simulate pity locally so guarantees work across 8 pulls
+                // without writing to localStorage (that happens per-reveal)
+                _pityOverride = loadPity();
+
+                for (let i = 0; i < 8; i++) {
+                    const winner =
+                        allDolls[Math.floor(Math.random() * allDolls.length)];
+                    const priorDupe = results.filter(
+                        (r) => r.doll.id === winner.id,
+                    ).length;
+                    const existingDupe = results.find(
+                        (r) => r.doll.id === winner.id,
+                    );
+                    const dupeCount = priorDupe;
+                    const rolled = randomiseStats(winner, dupeCount);
+
+                    // Update sim pity (not localStorage)
+                    _pityOverride.Rare++;
+                    _pityOverride.SR++;
+                    _pityOverride.SSR++;
+                    const gradeOrder = ["common", "Rare", "SR", "SSR"];
+                    const achieved = gradeOrder.indexOf(rolled.grade);
+                    if (achieved >= 1) _pityOverride.Rare = 0;
+                    if (achieved >= 2) _pityOverride.SR = 0;
+                    if (achieved >= 3) _pityOverride.SSR = 0;
+
+                    results.push({
+                        doll: winner,
+                        ...rolled,
+                        dupeCount: priorDupe,
+                        dupeOfIndex: existingDupe
+                            ? results.indexOf(existingDupe)
+                            : -1,
+                        bonusWeapon:
+                            priorDupe > 0 ? pickBonusWeapon(winner) : null,
+                    });
+                }
+
+                _pityOverride = null;
+                return results;
+            }
+
+            function buildCascadeStrips(results) {
+                const cascade = document.getElementById("gachaCascade");
+                cascade.innerHTML = "";
+                cascade.style.display = "";
+
+                const cellWidth = 66; // 62px + 4px gap
+                const cellCount = 35;
+                const winnerIdx = 26;
+
+                for (let i = 0; i < results.length; i++) {
+                    const result = results[i];
+                    const row = document.createElement("div");
+                    row.className = "gacha-cascade-row waiting";
+                    row.dataset.rowIndex = i;
+
+                    // Build strip
+                    const strip = document.createElement("div");
+                    strip.className = "gacha-cascade-strip";
+                    strip.style.transform = "translateX(0)";
+
+                    for (let c = 0; c < cellCount; c++) {
+                        const doll =
+                            c === winnerIdx
+                                ? result.doll
+                                : allDolls[
+                                      Math.floor(
+                                          Math.random() * allDolls.length,
+                                      )
+                                  ];
+                        const borderColour =
+                            c === winnerIdx
+                                ? GRADE_COLOURS[result.grade]
+                                : randomFakeGrade().colour;
+                        const cell = document.createElement("div");
+                        cell.className = "gacha-cascade-cell";
+                        cell.style.borderColor = borderColour;
+                        // Mark the winner cell for glow application after landing
+                        if (c === winnerIdx) {
+                            cell.dataset.winner = "true";
+                        }
+                        if (doll.portrait) {
+                            cell.innerHTML = `<img src="${esc(doll.portrait)}" alt="${esc(doll.name)}" />`;
+                        }
+                        strip.appendChild(cell);
+                    }
+
+                    // Wrap strip in clip container so cells don't overflow,
+                    // but glow box-shadows on the row remain visible
+                    const clipContainer = document.createElement("div");
+                    clipContainer.className = "gacha-cascade-row-clip";
+                    clipContainer.appendChild(strip);
+
+                    // Marker
+                    const marker = document.createElement("div");
+                    marker.className = "gacha-cascade-marker";
+
+                    // Label (hidden until landed)
+                    const label = document.createElement("div");
+                    label.className = "gacha-cascade-label";
+                    let dupeLabel = "";
+                    if (result.dupeCount > 0) {
+                        const weaponName = result.bonusWeapon
+                            ? ` + ${esc(result.bonusWeapon.name)}`
+                            : "";
+                        dupeLabel = `<span class="gacha-cascade-label-dupe">V${result.dupeCount + 1}${weaponName}</span>`;
+                    }
+                    label.innerHTML = `
+                        <span class="gacha-cascade-label-name">${esc(result.doll.name)}</span>
+                        <span class="gacha-cascade-label-grade" style="color:${result.gradeColour}">${result.grade}</span>
+                        ${dupeLabel}
+                    `;
+
+                    row.appendChild(clipContainer);
+                    row.appendChild(marker);
+                    row.appendChild(label);
+                    row._winnerIdx = winnerIdx;
+                    row._cellWidth = cellWidth;
+                    cascade.appendChild(row);
+                }
+            }
+
+            function spinCascadeRow(rowIndex, duration, grade) {
+                return new Promise((resolve) => {
+                    const row =
+                        document.querySelectorAll(".gacha-cascade-row")[
+                            rowIndex
+                        ];
+                    if (!row) return resolve();
+                    const strip = row.querySelector(".gacha-cascade-strip");
+                    const winnerIdx = row._winnerIdx;
+                    const cellWidth = row._cellWidth;
+                    const rowWidth = row.offsetWidth;
+                    const winnerCell = strip.children[winnerIdx];
+
+                    row.classList.remove("waiting");
+                    row.classList.add("spinning");
+
+                    const targetX =
+                        -(winnerIdx * cellWidth) + rowWidth / 2 - cellWidth / 2;
+                    const startTime = performance.now();
+                    let lastCellIdx = -1;
+
+                    function easeOutCubic(t) {
+                        return 1 - Math.pow(1 - t, 3);
+                    }
+
+                    function animate(now) {
+                        const elapsed = now - startTime;
+                        const t = Math.min(elapsed / duration, 1);
+                        const eased = easeOutCubic(t);
+                        const x = targetX * eased;
+                        strip.style.transform = `translateX(${x}px)`;
+
+                        const cellIdx = Math.floor(Math.abs(x) / cellWidth);
+                        if (cellIdx !== lastCellIdx) {
+                            lastCellIdx = cellIdx;
+                            playGachaTick(t);
+                        }
+
+                        if (t < 1) {
+                            requestAnimationFrame(animate);
+                        } else {
+                            resolve();
+                        }
+                    }
+
+                    requestAnimationFrame(animate);
+                });
+            }
+
+            function processCascadeResult(result, rowIndex) {
+                const row =
+                    document.querySelectorAll(".gacha-cascade-row")[rowIndex];
+                row.classList.remove("spinning");
+                row.classList.add("landed");
+                row.dataset.grade = result.grade;
+
+                // Apply glow to winner cell now that it's landed
+                if (result.grade !== "common") {
+                    const winnerCell = row.querySelector(
+                        '[data-winner="true"]',
+                    );
+                    if (winnerCell)
+                        winnerCell.classList.add("glow-" + result.grade);
+                }
+
+                // Reveal label
+                const label = row.querySelector(".gacha-cascade-label");
+                if (label) label.classList.add("revealed");
+
+                // SSR particles on the winner cell
+                if (result.grade === "SSR") {
+                    const winnerCell = row.querySelector(
+                        '[data-winner="true"]',
+                    );
+                    if (winnerCell) {
+                        for (let s = 0; s < 12; s++) {
+                            setTimeout(() => {
+                                const p = document.createElement("div");
+                                p.className = "gacha-cell-particle";
+                                const angle = Math.random() * Math.PI * 2;
+                                const dist = 20 + Math.random() * 40;
+                                p.style.setProperty(
+                                    "--dx",
+                                    Math.cos(angle) * dist + "px",
+                                );
+                                p.style.setProperty(
+                                    "--dy",
+                                    Math.sin(angle) * dist + "px",
+                                );
+                                p.style.left = Math.random() * 100 + "%";
+                                p.style.top = Math.random() * 100 + "%";
+                                winnerCell.appendChild(p);
+                                setTimeout(() => p.remove(), 900);
+                            }, s * 60);
+                        }
+                    }
+                }
+
+                // Update pulls state
+                const existing = gachaPulls.find(
+                    (p) => p.doll.id === result.doll.id,
+                );
+                if (existing) {
+                    existing.dupeCount++;
+                    const existingTotal =
+                        Object.values(existing.boosts).reduce(
+                            (s, b) => s + b,
+                            0,
+                        ) * 100;
+                    if (result.totalPct >= existingTotal) {
+                        existing.boosts = result.boosts;
+                        existing.boostedStats = result.boostedStats;
+                        existing.grade = result.grade;
+                        existing.gradeColour = result.gradeColour;
+                        existing.dupeBonus = result.dupeBonus;
+                    }
+                    if (result.bonusWeapon) {
+                        if (!existing.bonusWeapons) existing.bonusWeapons = [];
+                        existing.bonusWeapons.push(result.bonusWeapon);
+                    }
+                    gachaAnimateSlot = gachaPulls.indexOf(existing);
+                    gachaAnimateType = "merge";
+                } else {
+                    const pull = {
+                        doll: result.doll,
+                        grade: result.grade,
+                        gradeColour: result.gradeColour,
+                        boosts: result.boosts,
+                        boostedStats: result.boostedStats,
+                        dupeCount: 0,
+                        dupeBonus: result.dupeBonus,
+                        bonusWeapons: result.bonusWeapon
+                            ? [result.bonusWeapon]
+                            : [],
+                    };
+                    gachaPulls.push(pull);
+                    gachaAnimateSlot = gachaPulls.length - 1;
+                    gachaAnimateType = "pop";
+                }
+                gachaPullIndex++;
+                updatePity(result.grade);
+                renderGachaPity(true);
+                playGachaReveal(result.grade);
+                renderGachaRoster();
+                gachaAnimateSlot = -1;
+                gachaAnimateType = "";
+            }
+
+            function delay(ms) {
+                return new Promise((resolve) => setTimeout(resolve, ms));
+            }
+
+            async function animateCascade(results) {
+                const SPIN_DURATION = 2500;
+                const STAGGER = 1300;
+
+                // Start all spins with stagger, overlapping
+                const spinPromises = results.map((result, i) => {
+                    return new Promise((resolve) => {
+                        setTimeout(() => {
+                            spinCascadeRow(i, SPIN_DURATION, result.grade).then(
+                                () => {
+                                    processCascadeResult(result, i);
+                                    resolve();
+                                },
+                            );
+                        }, i * STAGGER);
+                    });
+                });
+
+                await Promise.all(spinPromises);
+
+                // Save final state
+                saveGachaPulls();
+
+                // Show continue button
+                document.getElementById("gachaActions").innerHTML = `
+                    <button class="btn btn-accent" onclick="showGachaSummary()">View Results</button>
+                `;
+            }
+
+            function doCascadePull() {
+                // Lock the daily pull
+                localStorage.setItem("gachaLastPull", todayUTC());
+                updateGachaBtn();
+
+                // Hide intro, show roster and cascade
+                const intro = document.getElementById("gachaIntro");
+                if (intro) intro.classList.add("hidden");
+                const roster = document.getElementById("gachaRoster");
+                if (roster) roster.style.display = "";
+
+                // Clear actions
+                document.getElementById("gachaActions").innerHTML = "";
+
+                // Play start sound
+                playGachaPull();
+
+                // Pre-roll all 8 and build strips
+                const results = preRollAllPulls();
+                buildCascadeStrips(results);
+
+                // Save all results immediately for crash recovery
+                const tempPulls = [];
+                for (const r of results) {
+                    const existing = tempPulls.find(
+                        (p) => p.doll.id === r.doll.id,
+                    );
+                    if (existing) {
+                        existing.dupeCount++;
+                        const existingTotal =
+                            Object.values(existing.boosts).reduce(
+                                (s, b) => s + b,
+                                0,
+                            ) * 100;
+                        if (r.totalPct >= existingTotal) {
+                            existing.boosts = r.boosts;
+                            existing.boostedStats = r.boostedStats;
+                            existing.grade = r.grade;
+                            existing.gradeColour = r.gradeColour;
+                            existing.dupeBonus = r.dupeBonus;
+                        }
+                        if (r.bonusWeapon) {
+                            if (!existing.bonusWeapons)
+                                existing.bonusWeapons = [];
+                            existing.bonusWeapons.push(r.bonusWeapon);
+                        }
+                    } else {
+                        tempPulls.push({
+                            doll: r.doll,
+                            grade: r.grade,
+                            gradeColour: r.gradeColour,
+                            boosts: r.boosts,
+                            boostedStats: r.boostedStats,
+                            dupeCount: 0,
+                            dupeBonus: r.dupeBonus,
+                            bonusWeapons: r.bonusWeapon ? [r.bonusWeapon] : [],
+                        });
+                    }
+                }
+                // Save crash recovery state (pullIndex=8 so resume shows summary)
+                const crashData = {
+                    date: todayUTC(),
+                    pullIndex: 8,
+                    pulls: tempPulls.map((p) => ({
+                        dollId: p.doll.id,
+                        grade: p.grade,
+                        gradeColour: p.gradeColour,
+                        boosts: p.boosts,
+                        boostedStats: p.boostedStats,
+                        dupeCount: p.dupeCount,
+                        dupeBonus: p.dupeBonus,
+                        bonusWeapons: p.bonusWeapons || [],
+                    })),
+                };
+                localStorage.setItem("gachaPulls", JSON.stringify(crashData));
+
+                // Reset visual state and start cascade
+                gachaPulls = [];
+                gachaPullIndex = 0;
                 renderGachaRoster();
 
-                // Pick winner and pre-roll stats so we know the real grade
-                const winner =
-                    allDolls[Math.floor(Math.random() * allDolls.length)];
-                const existingPull = gachaPulls.find(
-                    (p) => p.doll.id === winner.id,
-                );
-                const dupeCount = existingPull ? existingPull.dupeCount + 1 : 0;
-                const preRolled = randomiseStats(winner, dupeCount);
-
-                const GRADE_COLOURS = {
-                    common: "#8a8a8a",
-                    Rare: "#4f8ff5",
-                    SR: "#c24fdb",
-                    SSR: "#e8b630",
-                };
-
-                // Build strip of ~40 cells, winner at index 32
-                const strip = document.getElementById("gachaStrip");
-                strip.innerHTML = "";
-                strip.style.transform = "translateX(0)";
-                const winnerIdx = 32;
-                const cellCount = 40;
-
-                // Fake cells get random grade borders weighted to make rares/legendaries feel common
-                const gradePool = [
-                    { colour: "#8a8a8a", weight: 3 },
-                    { colour: "#4f8ff5", weight: 4 },
-                    { colour: "#c24fdb", weight: 3 },
-                    { colour: "#e8b630", weight: 2 },
-                ];
-                const weightedGrades = gradePool.flatMap((g) =>
-                    Array(g.weight).fill(g),
-                );
-                function randomFakeGrade() {
-                    return weightedGrades[
-                        Math.floor(Math.random() * weightedGrades.length)
-                    ];
-                }
-
-                for (let i = 0; i < cellCount; i++) {
-                    const doll =
-                        i === winnerIdx
-                            ? winner
-                            : allDolls[
-                                  Math.floor(Math.random() * allDolls.length)
-                              ];
-                    const borderColour =
-                        i === winnerIdx
-                            ? GRADE_COLOURS[preRolled.grade]
-                            : randomFakeGrade().colour;
-                    const cell = document.createElement("div");
-                    cell.className = "gacha-spinner-cell";
-                    cell.style.borderColor = borderColour;
-                    if (doll.portrait) {
-                        cell.innerHTML = `<img src="${esc(doll.portrait)}" alt="${esc(doll.name)}" /><div class="cell-name">${esc(doll.name)}</div>`;
-                    } else {
-                        cell.innerHTML = `<div class="cell-name" style="top:50%;transform:translateY(-50%)">${esc(doll.name)}</div>`;
-                    }
-                    strip.appendChild(cell);
-                }
-
-                // Show pull button
-                document.getElementById("gachaActions").innerHTML = `
-                    <button class="btn btn-accent" onclick="doGachaPull()" id="gachaPullBtn">Pull</button>
-                `;
-
-                // Store winner reference and pre-rolled stats for the spin
-                strip.dataset.winnerId = winner.id;
-                strip.dataset.winnerIdx = winnerIdx;
-                strip._preRolled = preRolled;
-            }
-
-            function doGachaPull() {
-                playGachaPull();
-                renderGachaPull();
-                // Brief delay so strip is visible before spinning
-                requestAnimationFrame(() =>
-                    requestAnimationFrame(() => spinGacha()),
-                );
-            }
-
-            function spinGacha() {
-                const btn = document.getElementById("gachaPullBtn");
-                if (btn) btn.disabled = true;
-
-                const strip = document.getElementById("gachaStrip");
-                const winnerIdx = parseInt(strip.dataset.winnerIdx);
-                const window_ = document.querySelector(".gacha-spinner-window");
-                const windowWidth = window_.offsetWidth;
-                const cellWidth = 104; // 100px + 4px gap
-
-                // Target: centre the winner cell under the marker
-                const targetX =
-                    -(winnerIdx * cellWidth) + windowWidth / 2 - cellWidth / 2;
-
-                const duration = 3500;
-                const startTime = performance.now();
-                const startX = 0;
-                let lastCellIdx = -1;
-
-                function easeOutCubic(t) {
-                    return 1 - Math.pow(1 - t, 3);
-                }
-
-                function animate(now) {
-                    const elapsed = now - startTime;
-                    const t = Math.min(elapsed / duration, 1);
-                    const eased = easeOutCubic(t);
-                    const x = startX + (targetX - startX) * eased;
-                    strip.style.transform = `translateX(${x}px)`;
-
-                    // Tick sound on cell boundary crossings
-                    const cellIdx = Math.floor(Math.abs(x) / cellWidth);
-                    if (cellIdx !== lastCellIdx) {
-                        lastCellIdx = cellIdx;
-                        const progress = t;
-                        playGachaTick(progress);
-                    }
-
-                    if (t < 1) {
-                        requestAnimationFrame(animate);
-                    } else {
-                        // Spin complete — reveal result
-                        revealGachaResult();
-                    }
-                }
-
-                requestAnimationFrame(animate);
+                animateCascade(results);
             }
 
             const GACHA_GRADES = [
@@ -3103,7 +3277,7 @@
             }
 
             function getPityGuarantee() {
-                const pity = loadPity();
+                const pity = _pityOverride || loadPity();
                 // Check from highest to lowest
                 if (pity.SSR + 1 >= PITY_THRESHOLDS.SSR) return "SSR";
                 if (pity.SR + 1 >= PITY_THRESHOLDS.SR) return "SR";
@@ -3227,188 +3401,6 @@
                 };
             }
 
-            function revealGachaResult() {
-                const intro = document.getElementById("gachaIntro");
-                if (intro) intro.classList.add("hidden");
-                const roster = document.getElementById("gachaRoster");
-                if (roster) roster.style.display = "";
-
-                const strip = document.getElementById("gachaStrip");
-                const winnerId = strip.dataset.winnerId;
-                const doll = allDolls.find((d) => d.id === winnerId);
-
-                // Use pre-rolled stats from renderGachaPull
-                const {
-                    boosts,
-                    boostedStats,
-                    grade,
-                    gradeColour,
-                    totalPct,
-                    dupeBonus,
-                } = strip._preRolled;
-
-                const existing = gachaPulls.find((p) => p.doll.id === doll.id);
-                let dupeCount,
-                    bonusWeapon = null,
-                    pull;
-
-                if (existing) {
-                    // Merge into existing entry — keep highest grade
-                    existing.dupeCount++;
-                    dupeCount = existing.dupeCount;
-                    const existingTotal =
-                        Object.values(existing.boosts).reduce(
-                            (s, b) => s + b,
-                            0,
-                        ) * 100;
-                    if (totalPct >= existingTotal) {
-                        // New roll is better or equal — use new stats
-                        existing.boosts = boosts;
-                        existing.boostedStats = boostedStats;
-                        existing.grade = grade;
-                        existing.gradeColour = gradeColour;
-                        existing.dupeBonus = dupeBonus;
-                    }
-                    // else keep existing stats (they're better)
-                    bonusWeapon = pickBonusWeapon(doll);
-                    if (!existing.bonusWeapons) existing.bonusWeapons = [];
-                    if (bonusWeapon) existing.bonusWeapons.push(bonusWeapon);
-                    pull = existing;
-                    gachaAnimateSlot = gachaPulls.indexOf(existing);
-                    gachaAnimateType = "merge";
-                } else {
-                    dupeCount = 0;
-                    pull = {
-                        doll,
-                        grade,
-                        gradeColour,
-                        boosts,
-                        boostedStats,
-                        dupeCount,
-                        dupeBonus,
-                        bonusWeapons: [],
-                    };
-                    gachaPulls.push(pull);
-                    gachaAnimateSlot = gachaPulls.length - 1;
-                    gachaAnimateType = "pop";
-                }
-                gachaPullIndex++;
-                renderGachaPips();
-
-                // Update pity counters after card is resolved
-                updatePity(grade);
-                renderGachaPity(true);
-
-                // Play reveal sound
-                playGachaReveal(grade);
-
-                // Build result card
-                const statNames = {
-                    health: "HP",
-                    moveSpeed: "Speed",
-                    turnSpeed: "Turn",
-                    suppressionRecovery: "Sup. Rec.",
-                    fovDegrees: "FOV",
-                };
-
-                const statBarsHtml = Object.entries(boosts)
-                    .map(([stat, boost], i) => {
-                        const pct = Math.round(boost * 100);
-                        const cls = pct >= 0 ? "positive" : "negative";
-                        const barWidth = Math.min(Math.abs(pct), 50); // max 50% of half-track
-                        return `<div class="gacha-stat-row">
-                        <div class="gacha-stat-label">${statNames[stat]}</div>
-                        <div class="gacha-stat-track">
-                            <div class="gacha-stat-centre"></div>
-                            <div class="gacha-stat-fill ${cls}" data-width="${barWidth}" style="width:0"></div>
-                        </div>
-                        <div class="gacha-stat-value ${cls}">${pct >= 0 ? "+" : ""}${pct}%</div>
-                    </div>`;
-                    })
-                    .join("");
-
-                const dupeBonusPct = Math.round(dupeBonus * 100 * dupeCount);
-                const dupeHtml =
-                    dupeCount > 0
-                        ? `<div class="gacha-result-dupe">V${dupeCount + 1} · +${dupeBonusPct}% dupe bonus${bonusWeapon ? ` + ${esc(bonusWeapon.name)}` : ""}</div>`
-                        : "";
-
-                const sparklesHtml =
-                    grade === "SSR"
-                        ? '<div class="gacha-sparkles" id="gachaSparkles"></div>'
-                        : "";
-
-                document.getElementById("gachaResultArea").innerHTML = `
-                    <div class="gacha-result" data-grade="${grade}">
-                        ${sparklesHtml}
-                        <div class="gacha-result-inner">
-                            <div class="gacha-result-portrait">
-                                ${doll.portrait ? `<img src="${esc(doll.portrait)}" alt="${esc(doll.name)}" />` : ""}
-                            </div>
-                            <div class="gacha-result-info">
-                                <div class="gacha-result-name">${esc(doll.name)}</div>
-                                <div class="gacha-result-grade" style="color:${gradeColour}">${grade.toUpperCase()} (${Math.round(totalPct)}%)</div>
-                                ${dupeHtml}
-                                ${statBarsHtml}
-                            </div>
-                        </div>
-                    </div>
-                `;
-
-                // Animate stat bars
-                requestAnimationFrame(() => {
-                    document
-                        .querySelectorAll("#gachaResultArea .gacha-stat-fill")
-                        .forEach((el, i) => {
-                            setTimeout(() => {
-                                el.style.width = el.dataset.width + "%";
-                            }, i * 80);
-                        });
-                });
-
-                // SSR sparkles
-                if (grade === "SSR") {
-                    const container = document.getElementById("gachaSparkles");
-                    if (container) {
-                        for (let i = 0; i < 12; i++) {
-                            setTimeout(() => {
-                                const s = document.createElement("div");
-                                s.className = "gacha-sparkle";
-                                s.style.left = Math.random() * 100 + "%";
-                                s.style.top = Math.random() * 100 + "%";
-                                s.style.animationDelay =
-                                    Math.random() * 0.3 + "s";
-                                container.appendChild(s);
-                                setTimeout(() => s.remove(), 2000);
-                            }, i * 100);
-                        }
-                    }
-                }
-
-                renderGachaRoster();
-                gachaAnimateSlot = -1;
-                gachaAnimateType = "";
-                saveGachaPulls();
-
-                // Fly-to-roster animation
-                flyToRoster(
-                    doll,
-                    existing
-                        ? gachaPulls.indexOf(existing)
-                        : gachaPulls.length - 1,
-                );
-
-                if (gachaPullIndex < 8) {
-                    document.getElementById("gachaActions").innerHTML = `
-                        <button class="btn btn-accent" onclick="doGachaPull()">Pull</button>
-                    `;
-                } else {
-                    document.getElementById("gachaActions").innerHTML = `
-                        <button class="btn btn-accent" onclick="showGachaSummary()">View Results</button>
-                    `;
-                }
-            }
-
             function showGachaSummary() {
                 document.getElementById("gachaMain").style.display = "none";
                 const summary = document.getElementById("gachaSummary");
@@ -3423,15 +3415,19 @@
                 };
                 const cardsHtml = gachaPulls
                     .map((p, i) => {
-                        const dupeLabel =
-                            p.dupeCount > 0
-                                ? ` <span class="mini-dupe">V${p.dupeCount + 1}</span>`
-                                : "";
+                        let dupeLabel = "";
+                        if (p.dupeCount > 0) {
+                            const weaponNames = (p.bonusWeapons || [])
+                                .map((w) => esc(w.name))
+                                .join(", ");
+                            dupeLabel = ` <span class="mini-dupe">V${p.dupeCount + 1}${weaponNames ? " + " + weaponNames : ""}</span>`;
+                        }
                         const statsHtml = Object.entries(p.boosts)
                             .map(([stat, boost]) => {
                                 const pct = Math.round(boost * 100);
                                 const cls = pct >= 0 ? "positive" : "negative";
-                                return `<div class="mini-stat ${cls}"><span class="mini-stat-label">${statNames[stat]}</span><span>${pct >= 0 ? "+" : ""}${pct}%</span></div>`;
+                                const barWidth = Math.min(Math.abs(pct), 50);
+                                return `<div class="mini-stat ${cls}"><span class="mini-stat-label">${statNames[stat]}</span><div class="mini-stat-bar"><div class="mini-stat-bar-centre"></div><div class="mini-stat-bar-fill ${cls}" style="width:${barWidth}%"></div></div><span class="mini-stat-value">${pct >= 0 ? "+" : ""}${pct}%</span></div>`;
                             })
                             .join("");
                         return `<div class="gacha-mini-card" data-grade="${p.grade}">
@@ -3460,7 +3456,14 @@
                         </div>
                         <div class="modal-field">
                             <label for="gachaFlagColour">Flag Colour</label>
-                            <input type="color" id="gachaFlagColour" value="#e3f6fd" style="width:100%;height:36px;border:1px solid rgba(255,255,255,0.12);background:transparent;cursor:pointer" />
+                            <div class="colour-preview-row">
+                                <div class="colour-preview-wrapper" onclick="document.getElementById('gachaFlagColour').click()">
+                                    <input type="color" id="gachaFlagColour" value="#e3f6fd" />
+                                    <div class="colour-preview-bar" id="gachaColourPreviewBar"></div>
+                                </div>
+                                <span class="colour-hex" id="gachaColourHex">#E3F6FD</span>
+                            </div>
+                            <div class="colour-swatches" id="gachaColourSwatches"></div>
                         </div>
                         <div class="modal-field">
                             <label for="gachaAuthor">Author <span style="color:var(--text-muted);font-weight:400;font-size:11px;text-transform:none;letter-spacing:0">optional</span></label>
@@ -3476,9 +3479,17 @@
                     </div>
                     <div class="gacha-actions">
                         <button class="btn" onclick="closeGacha()">Close</button>
+                        ${isGachaDev() ? '<button class="btn" onclick="restartGacha()">Reroll</button>' : ""}
                         <button class="btn btn-accent" id="gachaDownloadBtn" onclick="doGachaDownload()">Download</button>
                     </div>
                 `;
+
+                initColourSwatches(
+                    "gachaFlagColour",
+                    "gachaColourPreviewBar",
+                    "gachaColourHex",
+                    "gachaColourSwatches",
+                );
             }
 
             function doGachaDownload() {
@@ -3525,69 +3536,14 @@
                     document.getElementById("gachaDesc").value ||
                     "Gacha unit generated by the GFL2:DK Unit Builder.";
 
-                // Temporarily patch entity equipment to include bonus weapons
-                const originalEquipment = {};
-                for (const [dollId, items] of Object.entries(extraEquipment)) {
-                    const doll = allDolls.find((d) => d.id === dollId);
-                    if (doll) {
-                        originalEquipment[dollId] = [...doll.entity.equipment];
-                        doll.entity.equipment = [
-                            ...doll.entity.equipment,
-                            ...items,
-                        ];
-                    }
-                }
-
-                doDownload("#gachaDownloadBtn").then(() => {
+                doDownload("#gachaDownloadBtn", extraEquipment).then(() => {
                     // Restore original state and clear saved pulls
                     clearGachaPulls();
                     unitDolls = savedUnitDolls;
                     dollOverrides = savedOverrides;
-                    for (const [dollId, equip] of Object.entries(
-                        originalEquipment,
-                    )) {
-                        const doll = allDolls.find((d) => d.id === dollId);
-                        if (doll) doll.entity.equipment = equip;
-                    }
                     renderContent();
                     renderRoster();
                 });
-            }
-
-            function flyToRoster(doll, rosterIdx) {
-                const portrait = document.querySelector(
-                    "#gachaResultArea .gacha-result-portrait",
-                );
-                const slots = document.querySelectorAll(
-                    "#gachaRoster .gacha-roster-slot",
-                );
-                const targetSlot = slots[rosterIdx];
-                if (!portrait || !targetSlot || !doll.portrait) return;
-
-                const fromRect = portrait.getBoundingClientRect();
-                const toRect = targetSlot.getBoundingClientRect();
-
-                const ghost = document.createElement("div");
-                ghost.className = "gacha-fly-ghost";
-                ghost.innerHTML = `<img src="${esc(doll.portrait)}" />`;
-                ghost.style.left = fromRect.left + "px";
-                ghost.style.top = fromRect.top + "px";
-                ghost.style.width = fromRect.width + "px";
-                ghost.style.height = fromRect.height + "px";
-                document.body.appendChild(ghost);
-
-                requestAnimationFrame(() => {
-                    ghost.style.left = toRect.left + "px";
-                    ghost.style.top = toRect.top + "px";
-                    ghost.style.width = toRect.width + "px";
-                    ghost.style.height = toRect.height + "px";
-                    ghost.style.opacity = "0";
-                });
-
-                ghost.addEventListener("transitionend", () => ghost.remove(), {
-                    once: true,
-                });
-                setTimeout(() => ghost.remove(), 600);
             }
 
             function playGachaPull() {
@@ -4310,23 +4266,33 @@
                 "#3a3a3a", // dark grey
             ];
 
-            function updateColourDisplay(hex) {
-                document.getElementById("colourPreviewBar").style.background =
-                    hex;
-                document.getElementById("colourHex").textContent =
-                    hex.toUpperCase();
-                const container = document.getElementById("colourSwatches");
+            function updateColourDisplay(hex, previewId, hexId, swatchesId) {
+                previewId = previewId || "colourPreviewBar";
+                hexId = hexId || "colourHex";
+                swatchesId = swatchesId || "colourSwatches";
+                document.getElementById(previewId).style.background = hex;
+                document.getElementById(hexId).textContent = hex.toUpperCase();
+                const container = document.getElementById(swatchesId);
                 container.querySelectorAll(".colour-swatch").forEach((s) => {
                     s.classList.toggle("active", s.title === hex);
                 });
             }
 
-            function initColourSwatches() {
-                const container = document.getElementById("colourSwatches");
-                const picker = document.getElementById("flagColour");
+            function initColourSwatches(
+                pickerId,
+                previewId,
+                hexId,
+                swatchesId,
+            ) {
+                pickerId = pickerId || "flagColour";
+                previewId = previewId || "colourPreviewBar";
+                hexId = hexId || "colourHex";
+                swatchesId = swatchesId || "colourSwatches";
+                const container = document.getElementById(swatchesId);
+                const picker = document.getElementById(pickerId);
                 container.innerHTML = "";
 
-                updateColourDisplay(picker.value);
+                updateColourDisplay(picker.value, previewId, hexId, swatchesId);
 
                 FLAG_PRESETS.forEach((hex) => {
                     const el = document.createElement("div");
@@ -4337,13 +4303,18 @@
                     el.title = hex;
                     el.addEventListener("click", () => {
                         picker.value = hex;
-                        updateColourDisplay(hex);
+                        updateColourDisplay(hex, previewId, hexId, swatchesId);
                     });
                     container.appendChild(el);
                 });
 
                 picker.addEventListener("input", () => {
-                    updateColourDisplay(picker.value);
+                    updateColourDisplay(
+                        picker.value,
+                        previewId,
+                        hexId,
+                        swatchesId,
+                    );
                 });
             }
 
@@ -4607,7 +4578,7 @@
                 );
             }
 
-            async function doDownload(btnSelector) {
+            async function doDownload(btnSelector, extraEquipment) {
                 if (unitDolls.length === 0) return;
 
                 const unitName =
@@ -4661,6 +4632,13 @@
                     `localization/${prefix}_game.txt`,
                     generateLocalisationTxt(unitName, unitId, slug),
                 );
+
+                if (extraEquipment && Object.keys(extraEquipment).length > 0) {
+                    folder.file(
+                        `equipment/${prefix}_binds.xml`,
+                        generateBindsXml(extraEquipment),
+                    );
+                }
 
                 const btn = document.querySelector(
                     btnSelector || "#downloadModal .btn-accent",
@@ -5052,6 +5030,21 @@ ${uncheckActions}
 @${unitId}-DESC=Custom unit generated by the GFL2:DK Unit Builder.
 @#${unitId}-NAME-RND=${unitName}
 `;
+            }
+
+            function generateBindsXml(extraEquipment) {
+                const binds = Object.entries(extraEquipment)
+                    .map(([dollId, items]) => {
+                        const eqpLines = items
+                            .map(
+                                (item) =>
+                                    `        <eqp name="${xmlEsc(item)}" />`,
+                            )
+                            .join("\n");
+                        return `    <Bind to="${xmlEsc(dollId)}">\n${eqpLines}\n    </Bind>`;
+                    })
+                    .join("\n\n");
+                return `<Equipment>\n${binds}\n</Equipment>\n`;
             }
 
             function formatCategory(cat) {

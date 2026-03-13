@@ -2701,7 +2701,7 @@
 
     <Firearm
         name="GFL-WEAP-CURVA"
-        inventoryBinding="SecondaryWeapon"
+        inventoryBinding="PrimaryWeapon"
         category="pistol"
         unlockCost="0"
         tooltip="@WEAP-CURVA-NAME"
@@ -2790,7 +2790,7 @@
     </Bind>
     <Firearm
         name="GFL-WEAP-CURVA-SUP"
-        inventoryBinding="SecondaryWeaponMuzzle"
+        inventoryBinding="PrimaryWeaponMuzzle"
         category="pistol"
         unlockCost="0"
         tooltip="@WEAP-CURVA-NAME"

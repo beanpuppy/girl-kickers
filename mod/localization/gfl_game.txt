@@ -216,10 +216,10 @@
 @WEAP-AK15-NAME=AK-15
 @WEAP-AK15-DESC=The AK-15 is a variant of the AK-12 chambered for the 7.62×39mm cartridge. Both the AK-12 and AK-15 were developed by the Kalashnikov Group as part of the "Ratnik" ("Warrior", Russian future infantry combat system) program, and have been accepted into Russian military service.
 
-@skin_ak15_default_name=Default
-@skin_ak15_default_desc=Voymastina's default appearance.
-@skin_ak15_skin1_name=Skin 1
-@skin_ak15_skin1_desc=Alternate skin for Voymastina.
+@skin_ak15_default_name=White Mastiff's Fang
+@skin_ak15_default_desc=Voymastina's usual outfit. Its simple desgin has nothing in the way of personalization or decoration. It shows its true worth in battle, where it is like a sharp fang.
+@skin_ak15_skin1_name=Erwin
+@skin_ak15_skin1_desc="I'm sorry I can't blend in like a normal agent... But I can ensure your safety."\nShe Stands by your side, her keen gaze sweeping over everyone who could possibly be suspicious.
 
 @DOLL-AN94-NAME=ALVA
 @DOLL-AN94-DESC=A Doll from the Neo-Soviet Union’s Bureau of State Security and the prototype for the Wolf Pack Project, now leader of Task Force DEFY. After becoming the leader of DEFY, she’s taken over her former partner as the new alpha wolf, earned the respect of her squad members and became better at socializing. What she wants is for Task Force DEFY to endure, and to unravel Paradeus’ new plot. She really loves cats.
