@@ -15,7 +15,7 @@
             minShots="3"
             maxShots="-1"
             resetTime="250"
-            accuracyAdd="20"
+            accuracyAdd="800"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
