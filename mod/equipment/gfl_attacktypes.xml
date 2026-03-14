@@ -6,39 +6,39 @@
     <!-- Attack Type ranges will be usually divided into Near (Under 8m), Close (Under 16m), Med (Under 28m) , Far (under 52m), Ext (beyond 52m). This is to help coincide with scope effectiveness. Take note that engagements that happen at Ext ranges are ultra rare, but they do exist.-->
 
 
-    <AttackType name="GFL_XCR_BurstFireNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
+    <AttackType name="GFL_CQC_XCR">
+    <!-- Under 4m. accuracyAdd must be 0. -->
         <ModifiableParams
-            minAimTime="330"
-            maxAimTime="350"
+            minAimTime="340"
+            maxAimTime="340"
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="-1"
             resetTime="250"
-            accuracyAdd="800"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_XCR_BurstFireClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
+    <AttackType name="GFL_Near_XCR">
+    <!-- Under 8m. -->
         <ModifiableParams
-            minAimTime="350"
-            maxAimTime="450"
+            minAimTime="340"
+            maxAimTime="340"
             roundsPerSecondOverride="0"
             minShots="3"
-            maxShots="5"
+            maxShots="-1"
             resetTime="250"
-            accuracyAdd="10"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_XCR_BurstFireMed">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
+    <AttackType name="GFL_Close_XCR">
+    <!-- Under 12m. -->
         <ModifiableParams
             minAimTime="350"
-            maxAimTime="600"
+            maxAimTime="400"
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
@@ -48,25 +48,39 @@
         />
     </AttackType>
 
-    <AttackType name="GFL_XCR_BurstFireFar">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
+    <AttackType name="GFL_Medium_XCR">
+    <!-- Under 16m. -->
         <ModifiableParams
-            minAimTime="600"
-            maxAimTime="700"
+            minAimTime="350"
+            maxAimTime="450"
             roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="400"
+            minShots="3"
+            maxShots="5"
+            resetTime="350"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_XCR_BurstFireExt">
-        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
+    <AttackType name="GFL_MedEdge_XCR">
+    <!-- Under 20m. -->
         <ModifiableParams
-            minAimTime="700"
-            maxAimTime="900"
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="350"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Extended_XCR">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="500"
             roundsPerSecondOverride="0"
             minShots="1"
             maxShots="3"
@@ -77,7 +91,6 @@
     </AttackType>
 
 <!-- PA-15 FLORENCE, THE STANDARD OF ALL HANDGUN ATTACK TYPES -->
-<!-- Note: I am not the most hardcore Florence simp either, but at the time I am reworking the balance of the weapons, the only handguns we have are the Curva and PA-15... no choice... aesthetically and functionally, the PA-15 is the closest to the common handguns we know. Plus it is chambered in 9x19 Para... -->
 
     <AttackType name="GFL_PA15_MozambiqueDrillNear">
         <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->

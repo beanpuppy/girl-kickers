@@ -3,22 +3,24 @@
 <!-- DEV -->
 
 <!-- XCR, THE STANDARD OF ALL ASSAULT RIFLES -->
-<!-- Note: I am not the most hardcore Sharkry simp, but I chose her to be the standard of all longarm type signature weapons because she runs an AR-15 style format rifle chambered in a very common round. Sharkry is never depicted as too exceptional in combat yet she is shown to be able to hold her own in missions with Dolls that have more combat experience with her, namely Makiatto, Springfield and Centaureissi, which makes her a perfect candidate to have most of the dolls based on. -->
 
     <Bind eqp="GFL-WEAP-XCR">
         <!-- See notes on ammo -->
         <to name="556FMJEPR_GFL_XCR" />
         <to name="556APFSF_GFL_XCR" />
 
-        <!-- See notes on scopes -->
         <to name="scope_GFL_IronSights_Primary" />
-        <to name="scope_GFL_RedDot_Rifle" />
+        <to name="scope_GFL_RedDot" />
         <to name="scope_GFL_Holosight" />
         <to name="scope_GFL_M68CCO" />
         <to name="scope_GFL_M150RCO" />
         <to name="scope_GFL_HoloMag3x" />
         <to name="scope_GFL_SpecterDR" />
         <to name="scope_GFL_LPVO_6X" />
+        <to name="scope_GFL_LPVO_8X" />
+        <to name="scope_GFL_LROMK4_3_10X" />
+        <to name="scope_GFL_LROMK6_3_18X" />
+        <to name="scope_GFL_LROPM_5_25X" />
 
     </Bind>
     <Firearm
@@ -58,8 +60,8 @@
             readyTime="340"
             guardTime="160"
             accuracyStart="80"
-            accuracyEnd="30"
-            accuracyStartDist="0"
+            accuracyEnd="70"
+            accuracyStartDist="4"
             accuracyEndDist="50"
         />
 
@@ -76,18 +78,14 @@
         />
 
         <AttackTypes>
-            <AttackType name="GFL_XCR_BurstFireNear" rangeMeters="8" />
-            <AttackType name="GFL_XCR_BurstFireClose" rangeMeters="16" />
-            <AttackType name="GFL_XCR_BurstFireMed" rangeMeters="28" />
-            <AttackType name="GFL_XCR_BurstFireFar" rangeMeters="52" />
-            <AttackType name="GFL_XCR_BurstFireExt" rangeMeters="9999" />
+            <AttackType name="GFL_CQC_XCR" rangeMeters="4" />
+            <AttackType name="GFL_Near_XCR" rangeMeters="8" />
+            <AttackType name="GFL_Close_XCR" rangeMeters="12" />
+            <AttackType name="GFL_Medium_XCR" rangeMeters="16" />
+            <AttackType name="GFL_MedEdge_XCR" rangeMeters="20" />
+            <AttackType name="GFL_Extended_XCR" rangeMeters="9999" />
 
-            <!-- For testing purposes -->
-            <!-- <AttackType name="GFL_XCR_BurstFireNear" rangeMeters="7" />
-            <AttackType name="GFL_XCR_BurstFireClose" rangeMeters="9" />
-            <AttackType name="GFL_XCR_BurstFireMed" rangeMeters="12" />
-            <AttackType name="GFL_XCR_BurstFireFar" rangeMeters="17" />
-            <AttackType name="GFL_XCR_BurstFireExt" rangeMeters="9999" /> -->
+
         </AttackTypes>
 
         <MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
