@@ -1828,7 +1828,6 @@
             <AttackType name="GFL_CQC_M1903" rangeMeters="4" />
             <AttackType name="GFL_Near_M1903" rangeMeters="8" />
             <AttackType name="GFL_Close_M1903" rangeMeters="12" inCoverOverride="GFL_CloseMounted_M1903" rangeMeters="12" />
-            <AttackType name="GFL_Medium_M1903" rangeMeters="16" inCoverOverride="GFL_MediumMounted_M1903" rangeMeters="16" />
             <AttackType name="GFL_MedEdge_M1903" rangeMeters="20" inCoverOverride="GFL_MedEdgeMounted_M1903" rangeMeters="20" />
             <AttackType name="GFL_Extended_M1903" rangeMeters="9999" inCoverOverride="GFL_ExtendedMounted_M1903" rangeMeters="9999" />
 
