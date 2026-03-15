@@ -78,13 +78,13 @@
         />
 
         <AttackTypes>
+
             <AttackType name="GFL_CQC_XCR" rangeMeters="4" />
             <AttackType name="GFL_Near_XCR" rangeMeters="8" />
             <AttackType name="GFL_Close_XCR" rangeMeters="12" />
             <AttackType name="GFL_Medium_XCR" rangeMeters="16" />
             <AttackType name="GFL_MedEdge_XCR" rangeMeters="20" />
             <AttackType name="GFL_Extended_XCR" rangeMeters="9999" />
-
 
         </AttackTypes>
 
@@ -173,18 +173,14 @@
         />
 
         <AttackTypes>
-            <AttackType name="GFL_XCR_BurstFireNear" rangeMeters="8" />
-            <AttackType name="GFL_XCR_BurstFireClose" rangeMeters="16" />
-            <AttackType name="GFL_XCR_BurstFireMed" rangeMeters="28" />
-            <AttackType name="GFL_XCR_BurstFireFar" rangeMeters="52" />
-            <AttackType name="GFL_XCR_BurstFireExt" rangeMeters="9999" />
 
-            <!-- For testing purposes -->
-            <!-- <AttackType name="GFL_XCR_BurstFireNear" rangeMeters="7" />
-            <AttackType name="GFL_XCR_BurstFireClose" rangeMeters="9" />
-            <AttackType name="GFL_XCR_BurstFireMed" rangeMeters="12" />
-            <AttackType name="GFL_XCR_BurstFireFar" rangeMeters="17" />
-            <AttackType name="GFL_XCR_BurstFireExt" rangeMeters="9999" /> -->
+            <AttackType name="GFL_CQC_XCR" rangeMeters="4" />
+            <AttackType name="GFL_Near_XCR" rangeMeters="8" />
+            <AttackType name="GFL_Close_XCR" rangeMeters="12" />
+            <AttackType name="GFL_Medium_XCR" rangeMeters="16" />
+            <AttackType name="GFL_MedEdge_XCR" rangeMeters="20" />
+            <AttackType name="GFL_Extended_XCR" rangeMeters="9999" />
+
         </AttackTypes>
 
         <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Rifle">
@@ -1762,6 +1758,9 @@
         <to name="3006LAIT_GFL_M1903" />
 
         <to name="scope_GFL_IronSights_Primary" />
+        <to name="scope_GFL_RedDot" />
+        <to name="scope_GFL_Holosight" />
+        <to name="scope_GFL_M68CCO" />
         <to name="scope_GFL_M150RCO" />
         <to name="scope_GFL_HoloMag3x" />
         <to name="scope_GFL_SpecterDR" />
@@ -1770,6 +1769,7 @@
         <to name="scope_GFL_LROMK4_3_10X" />
         <to name="scope_GFL_LROMK6_3_18X" />
         <to name="scope_GFL_LROPM_5_25X" />
+
     </Bind>
     <Firearm
         name="GFL-WEAP-M1903"
@@ -1805,9 +1805,9 @@
             changeOutTime="0"
             readyTime="340"
             guardTime="160"
-            accuracyStart="40"
-            accuracyEnd="80"
-            accuracyStartDist="0"
+            accuracyStart="100"
+            accuracyEnd="100"
+            accuracyStartDist="4"
             accuracyEndDist="50"
         />
 
@@ -1824,18 +1824,14 @@
         />
 
         <AttackTypes>
-            <AttackType name="GFL_M1903_PrecisionFireNear" rangeMeters="8" />
-            <AttackType name="GFL_M1903_PrecisionFireClose" inCoverOverride="GFL_M1903_PrecisionFireCloseMounted" rangeMeters="16" />
-            <AttackType name="GFL_M1903_PrecisionFireMed" inCoverOverride="GFL_M1903_PrecisionFireMedMounted" rangeMeters="28" />
-            <AttackType name="GFL_M1903_PrecisionFireFar" inCoverOverride="GFL_M1903_PrecisionFireFarMounted" rangeMeters="52" />
-            <AttackType name="GFL_M1903_PrecisionFireExt" inCoverOverride="GFL_M1903_PrecisionFireExtMounted" rangeMeters="9999" />
 
-            <!-- For testing purposes -->
-            <!-- <AttackType name="GFL_M1903_PrecisionFireNear" rangeMeters="7" />
-            <AttackType name="GFL_M1903_PrecisionFireClose" inCoverOverride="GFL_M1903_PrecisionFireCloseMounted" rangeMeters="9" />
-            <AttackType name="GFL_M1903_PrecisionFireMed" inCoverOverride="GFL_M1903_PrecisionFireMedMounted" rangeMeters="12" />
-            <AttackType name="GFL_M1903_PrecisionFireFar" inCoverOverride="GFL_M1903_PrecisionFireFarMounted" rangeMeters="17" />
-            <AttackType name="GFL_M1903_PrecisionFireExt" inCoverOverride="GFL_M1903_PrecisionFireExtMounted" rangeMeters="9999" /> -->
+            <AttackType name="GFL_CQC_M1903" rangeMeters="4" />
+            <AttackType name="GFL_Near_M1903" rangeMeters="8" />
+            <AttackType name="GFL_Close_M1903" rangeMeters="12" inCoverOverride="GFL_CloseMounted_M1903" rangeMeters="12" />
+            <AttackType name="GFL_Medium_M1903" rangeMeters="16" inCoverOverride="GFL_MediumMounted_M1903" rangeMeters="16" />
+            <AttackType name="GFL_MedEdge_M1903" rangeMeters="20" inCoverOverride="GFL_MedEdgeMounted_M1903" rangeMeters="20" />
+            <AttackType name="GFL_Extended_M1903" rangeMeters="9999" inCoverOverride="GFL_ExtendedMounted_M1903" rangeMeters="9999" />
+
         </AttackTypes>
 
         <MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">

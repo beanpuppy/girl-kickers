@@ -41,7 +41,7 @@
         >
             <Damage
                 start="28"
-                end="24"
+                end="25"
                 startDist="0"
                 endDist="100"
             />
@@ -79,10 +79,10 @@
                 endDist="40"
             />
             <CriticalChancePercent
-                start="20"
-                end="-50"
-                startDist="5"
-                endDist="20"
+                start="0"
+                end="0"
+                startDist="0"
+                endDist="100"
             />
             <ArmorPenetration
                 start="60"
@@ -108,13 +108,13 @@
         >
             <Damage
                 start="28"
-                end="24"
+                end="25"
                 startDist="0"
                 endDist="100"
             />
             <CriticalChancePercent
-                start="-20"
-                end="-20"
+                start="0"
+                end="0"
                 startDist="0"
                 endDist="100"
             />
@@ -1001,7 +1001,7 @@
             roundsPerSecond="0.7"
             audibleSoundRadius="100"
             physicsImpactForce="4.0"
-            suppressionScale="1.5"
+            suppressionScale="2.0"
         >
             <Damage
                 start="62"
@@ -1036,7 +1036,7 @@
             roundsPerSecond="0.7"
             audibleSoundRadius="50"
             physicsImpactForce="4.0"
-            suppressionScale="1.5"
+            suppressionScale="2.0"
             silenced="1"
         >
             <Damage
@@ -1075,14 +1075,14 @@
             suppressionScale="1.5"
         >
             <Damage
-                start="40"
-                end="36"
+                start="52"
+                end="48"
                 startDist="0"
-                endDist="100"
+                endDist="50"
             />
             <CriticalChancePercent
-                start="50"
-                end="50"
+                start="45"
+                end="45"
                 startDist="0"
                 endDist="100"
             />

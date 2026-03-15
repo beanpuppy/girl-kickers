@@ -868,133 +868,147 @@
 
     <!-- M1903 SPRINGFIELD -->
 
-    <AttackType name="GFL_M1903_PrecisionFireNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
+    <AttackType name="GFL_CQC_M1903">
+    <!-- Under 4m. accuracyAdd must be 0. -->
         <ModifiableParams
-            minAimTime="500"
-            maxAimTime="500"
+            minAimTime="340"
+            maxAimTime="340"
             roundsPerSecondOverride="0.7"
             minShots="1"
             maxShots="1"
             resetTime="400"
-            accuracyAdd="45"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_M1903_PrecisionFireClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
+    <AttackType name="GFL_Near_M1903">
+    <!-- Under 8m. -->
         <ModifiableParams
-            minAimTime="500"
-            maxAimTime="650"
+            minAimTime="340"
+            maxAimTime="340"
             roundsPerSecondOverride="0.7"
             minShots="1"
             maxShots="1"
             resetTime="400"
-            accuracyAdd="40"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_M1903_PrecisionFireCloseMounted">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
+    <AttackType name="GFL_Close_M1903">
+    <!-- Under 12m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="400"
+            roundsPerSecondOverride="0.7"
+            minShots="1"
+            maxShots="1"
+            resetTime="400"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_CloseMounted_M1903">
+    <!-- Under 12m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="400"
+            roundsPerSecondOverride="0.7"
+            minShots="1"
+            maxShots="1"
+            resetTime="400"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="25"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Medium_M1903">
+    <!-- Under 16m. -->
         <ModifiableParams
             minAimTime="350"
             maxAimTime="450"
             roundsPerSecondOverride="0.7"
             minShots="1"
             maxShots="1"
-            resetTime="200"
-            accuracyAdd="40"
-            followupShotAccuracyAdd="0"
-            critChanceAdd="30"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_M1903_PrecisionFireMed">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
-        <ModifiableParams
-            minAimTime="400"
-            maxAimTime="550"
-            roundsPerSecondOverride="0.7"
-            minShots="1"
-            maxShots="1"
             resetTime="400"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_M1903_PrecisionFireMedMounted">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
+    <AttackType name="GFL_MediumMounted_M1903">
+    <!-- Under 16m. -->
         <ModifiableParams
-            minAimTime="300"
+            minAimTime="350"
             maxAimTime="450"
             roundsPerSecondOverride="0.7"
             minShots="1"
             maxShots="1"
-            resetTime="200"
+            resetTime="400"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
-            critChanceAdd="30"
+            critChanceAdd="25"
         />
     </AttackType>
 
-    <AttackType name="GFL_M1903_PrecisionFireFar">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
+    <AttackType name="GFL_MedEdge_M1903">
+    <!-- Under 20m. -->
         <ModifiableParams
-            minAimTime="300"
-            maxAimTime="400"
+            minAimTime="350"
+            maxAimTime="450"
             roundsPerSecondOverride="0.7"
             minShots="1"
             maxShots="1"
             resetTime="400"
-            accuracyAdd="-10"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_M1903_PrecisionFireFarMounted">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
+    <AttackType name="GFL_MedEdgeMounted_M1903">
+    <!-- Under 20m. -->
         <ModifiableParams
-            minAimTime="250"
-            maxAimTime="350"
-            roundsPerSecondOverride="0.7"
-            minShots="1"
-            maxShots="1"
-            resetTime="200"
-            accuracyAdd="-10"
-            followupShotAccuracyAdd="0"
-            critChanceAdd="30"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_M1903_PrecisionFireExt">
-        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
-        <ModifiableParams
-            minAimTime="300"
-            maxAimTime="400"
+            minAimTime="350"
+            maxAimTime="450"
             roundsPerSecondOverride="0.7"
             minShots="1"
             maxShots="1"
             resetTime="400"
-            accuracyAdd="-10"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="25"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Extended_M1903">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="500"
+            roundsPerSecondOverride="0.7"
+            minShots="1"
+            maxShots="1"
+            resetTime="500"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_M1903_PrecisionFireExtMounted">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
+    <AttackType name="GFL_ExtendedMounted_M1903">
+    <!-- Beyond 20m. -->
         <ModifiableParams
-            minAimTime="250"
-            maxAimTime="350"
+            minAimTime="350"
+            maxAimTime="500"
             roundsPerSecondOverride="0.7"
             minShots="1"
             maxShots="1"
-            resetTime="200"
-            accuracyAdd="-10"
+            resetTime="500"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
-            critChanceAdd="30"
+            critChanceAdd="25"
         />
     </AttackType>
 

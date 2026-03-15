@@ -1,14 +1,19 @@
 I loved the feedback you have so heres my proposed updates to the accuracy formula!
 
+
+
+
+
+
 ## General Weapon Accuracy Values 
 
     
     Properties       SMG		AR		SR		SG		MG		HG
     ──────────────────────────────────────────────────────────────────
-    accStart       	 85		80		 40		 80		 40		 70
-    accEnd			 20		40		 60		 20		 20		 20
-    startDist  			  0		 0			  0		  0		  0		  0
-    endDist  			 50		50		 50		 50		 50		 50
+    accStart       	 85		80		  100		 80		 70		 85
+    accEnd			     60		70		  100		 30		 50		 60
+    startDist  			  4		 4			  4		  4		  4		  4
+    endDist  			    50		50		 50		 50		 50		 50
     
 SMGs - Extremely high base accuracy but falls off hard at range
 AR - Good all around, retains accuracy at long range

@@ -90,7 +90,7 @@ ex:
                 <AddTo
                     minAimTime2="-180"
                     maxAimTime2="-150"
-                    critChanceAdd="+7"
+                    critChanceAdd="+5"
                 />
             </AttackTypeModifier>
 
@@ -114,7 +114,7 @@ ex:
                 <AddTo
                     minAimTime2="-150"
                     maxAimTime2="-100"
-                    critChanceAdd="+10"
+                    critChanceAdd="+7"
                 />
             </AttackTypeModifier>
 
@@ -137,9 +137,9 @@ ex:
 
             <AttackTypeModifier minRange="0" maxRange="9999">
                 <AddTo
-                    minAimTime2="-130"
+                    minAimTime2="-120"
                     maxAimTime2="-100"
-                    critChanceAdd="+12"
+                    critChanceAdd="+10"
                 />
             </AttackTypeModifier>
 
@@ -161,9 +161,9 @@ ex:
 
             <AttackTypeModifier minRange="0" maxRange="9999">
                 <AddTo
-                    minAimTime2="-100"
+                    minAimTime2="-80"
                     maxAimTime2="-50"
-                    critChanceAdd="+15"
+                    critChanceAdd="+12"
                 />
             </AttackTypeModifier>
 
@@ -186,9 +186,9 @@ ex:
 
             <AttackTypeModifier minRange="0" maxRange="9999">
                 <AddTo
-                    minAimTime2="-80"
-                    maxAimTime2="-50"
-                    critChanceAdd="+17"
+                    minAimTime2="-50"
+                    maxAimTime2="-20"
+                    critChanceAdd="+15"
                 />
             </AttackTypeModifier>
 
@@ -196,7 +196,8 @@ ex:
 
     </Scope>
 
-    <Scope name="scope_GFL_SpecterDR" unlockCost="2"
+    <Scope name="scope_GFL_SpecterDR"
+            unlockCost="0"
             inventoryBinding="PrimaryWeaponScope"
             tooltip="@scope_GFL_SpecterDR_name"
             description="@scope_GFL_SpecterDR_desc"
@@ -209,9 +210,9 @@ ex:
 
             <AttackTypeModifier minRange="0" maxRange="9999">
                 <AddTo
-                    minAimTime2="-50"
-                    maxAimTime2="-20"
-                    critChanceAdd="+20"
+                    minAimTime2="0"
+                    maxAimTime2="0"
+                    critChanceAdd="+17"
                 />
             </AttackTypeModifier>
 
