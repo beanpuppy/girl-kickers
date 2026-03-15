@@ -292,7 +292,7 @@
         description="@helmet_gfl_sentinel_desc"
         img="data/models/dolls/attachments/sentinel_ui.dds"
     >
-        <MobilityModifiers moveSpeedModifierPercent="-10" turnSpeedModifierPercent="50" />
+        <MobilityModifiers moveSpeedModifierPercent="-5" turnSpeedModifierPercent="50" />
         <ConcealmentModifier add="0" />
         <Params nvgByDefault="true">
             <ProtectionArc
@@ -313,7 +313,7 @@
         description="@helmet_gfl_bulwark_desc"
         img="data/models/dolls/attachments/bulwark_ui.dds"
     >
-        <MobilityModifiers moveSpeedModifierPercent="-30" turnSpeedModifierPercent="-20" />
+        <MobilityModifiers moveSpeedModifierPercent="-20" turnSpeedModifierPercent="-30" />
         <ConcealmentModifier add="0" />
         <Params nvgByDefault="true">
             <ProtectionArc
