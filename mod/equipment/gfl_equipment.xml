@@ -255,7 +255,7 @@
         <Params nvgByDefault="true">
             <ProtectionArc
                 degrees="360"
-                coveragePercent="70"
+                coveragePercent="80"
                 piercingProtectionLevel="60"
             />
         </Params>
@@ -276,7 +276,7 @@
         <Params nvgByDefault="true">
             <ProtectionArc
                 degrees="360"
-                coveragePercent="70"
+                coveragePercent="80"
                 piercingProtectionLevel="50"
             />
         </Params>
@@ -292,13 +292,13 @@
         description="@helmet_gfl_sentinel_desc"
         img="data/models/dolls/attachments/sentinel_ui.dds"
     >
-        <MobilityModifiers moveSpeedModifierPercent="-10" turnSpeedModifierPercent="40" />
+        <MobilityModifiers moveSpeedModifierPercent="-10" turnSpeedModifierPercent="50" />
         <ConcealmentModifier add="0" />
         <Params nvgByDefault="true">
             <ProtectionArc
                 degrees="360"
-                coveragePercent="50"
-                piercingProtectionLevel="50"
+                coveragePercent="60"
+                piercingProtectionLevel="60"
             />
         </Params>
     </Helmet>
@@ -313,7 +313,7 @@
         description="@helmet_gfl_bulwark_desc"
         img="data/models/dolls/attachments/bulwark_ui.dds"
     >
-        <MobilityModifiers moveSpeedModifierPercent="-40" turnSpeedModifierPercent="-20" />
+        <MobilityModifiers moveSpeedModifierPercent="-30" turnSpeedModifierPercent="-20" />
         <ConcealmentModifier add="0" />
         <Params nvgByDefault="true">
             <ProtectionArc
@@ -339,7 +339,7 @@
         <Params nvgByDefault="true">
             <ProtectionArc
                 degrees="360"
-                coveragePercent="30"
+                coveragePercent="60"
                 piercingProtectionLevel="50"
             />
         </Params>
