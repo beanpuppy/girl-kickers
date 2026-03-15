@@ -142,14 +142,14 @@
             physicsImpactForce="1.5"
         >
             <Damage
-                start="28"
-                end="26"
+                start="38"
+                end="34"
                 startDist="0"
-                endDist="40"
+                endDist="50"
             />
             <CriticalChancePercent
-                start="20"
-                end="20"
+                start="25"
+                end="25"
                 startDist="0"
                 endDist="50"
             />
@@ -157,7 +157,7 @@
                 start="50"
                 end="20"
                 startDist="0"
-                endDist="70"
+                endDist="50"
             />
         </Params>
     </Ammo>
@@ -177,14 +177,14 @@
             silenced="1"
         >
             <Damage
-                start="28"
-                end="26"
+                start="38"
+                end="34"
                 startDist="0"
-                endDist="40"
+                endDist="50"
             />
             <CriticalChancePercent
-                start="20"
-                end="20"
+                start="25"
+                end="25"
                 startDist="0"
                 endDist="50"
             />
@@ -192,7 +192,7 @@
                 start="50"
                 end="20"
                 startDist="0"
-                endDist="70"
+                endDist="50"
             />
         </Params>
     </Ammo>
@@ -211,8 +211,8 @@
             suppressionScale="3.0"
         >
             <Damage
-                start="32"
-                end="30"
+                start="38"
+                end="34"
                 startDist="0"
                 endDist="40"
             />
@@ -249,13 +249,13 @@
         >
             <Damage
                 start="28"
-                end="22"
+                end="24"
                 startDist="0"
                 endDist="100"
             />
             <CriticalChancePercent
-                start="-5"
-                end="-5"
+                start="20"
+                end="20"
                 startDist="0"
                 endDist="100"
             />
@@ -284,13 +284,13 @@
         >
             <Damage
                 start="28"
-                end="22"
+                end="24"
                 startDist="0"
                 endDist="100"
             />
             <CriticalChancePercent
-                start="-5"
-                end="-5"
+                start="20"
+                end="20"
                 startDist="0"
                 endDist="100"
             />
@@ -316,14 +316,14 @@
             physicsImpactForce="1.5"
         >
             <Damage
-                start="32"
-                end="28"
+                start="36"
+                end="32"
                 startDist="0"
                 endDist="40"
             />
             <CriticalChancePercent
-                start="10"
-                end="10"
+                start="20"
+                end="20"
                 startDist="0"
                 endDist="100"
             />
@@ -351,14 +351,14 @@
             suppressionScale="1.15"
         >
             <Damage
-                start="30"
+                start="34"
                 end="30"
                 startDist="0"
                 endDist="100"
             />
             <CriticalChancePercent
-                start="-20"
-                end="-20"
+                start="0"
+                end="0"
                 startDist="0"
                 endDist="100"
             />
@@ -387,14 +387,14 @@
             silenced="1"
         >
             <Damage
-                start="30"
+                start="34"
                 end="30"
                 startDist="0"
                 endDist="100"
             />
             <CriticalChancePercent
-                start="-20"
-                end="-20"
+                start="0"
+                end="0"
                 startDist="0"
                 endDist="100"
             />
@@ -426,8 +426,8 @@
                 endDist="40"
             />
             <CriticalChancePercent
-                start="-50"
-                end="-50"
+                start="20"
+                end="-10"
                 startDist="0"
                 endDist="100"
             />
@@ -1010,8 +1010,8 @@
                 endDist="100"
             />
             <CriticalChancePercent
-                start="50"
-                end="50"
+                start="60"
+                end="60"
                 startDist="0"
                 endDist="100"
             />
@@ -1046,8 +1046,8 @@
                 endDist="100"
             />
             <CriticalChancePercent
-                start="50"
-                end="50"
+                start="60"
+                end="60"
                 startDist="0"
                 endDist="100"
             />
@@ -1377,8 +1377,8 @@
                 endDist="100"
             />
             <CriticalChancePercent
-                start="-20"
-                end="-20"
+                start="0"
+                end="0"
                 startDist="0"
                 endDist="100"
             />
@@ -1406,14 +1406,14 @@
             accuracyMultiplier="85"
         >
             <Damage
-                start="22"
-                end="18"
+                start="24"
+                end="20"
                 startDist="0"
                 endDist="100"
             />
             <CriticalChancePercent
-                start="-30"
-                end="-30"
+                start="0"
+                end="0"
                 startDist="0"
                 endDist="100"
             />
@@ -1445,8 +1445,8 @@
                 endDist="100"
             />
             <CriticalChancePercent
-                start="-20"
-                end="-20"
+                start="0"
+                end="0"
                 startDist="0"
                 endDist="100"
             />
@@ -1475,8 +1475,8 @@
         >
 
             <Damage
-                start="99"
-                end="99"
+                start="102"
+                end="98"
                 startDist="0"
                 endDist="100"
             />
@@ -1506,17 +1506,18 @@
             roundsPerSecond="0.6"
             audibleSoundRadius="150"
             physicsImpactForce="3.0"
+            damageType="2"
         >
 
             <Damage
-                start="80"
-                end="80"
+                start="106"
+                end="102"
                 startDist="0"
                 endDist="100"
             />
             <CriticalChancePercent
-                start="50"
-                end="50"
+                start="10"
+                end="10"
                 startDist="0"
                 endDist="100"
             />
@@ -1616,14 +1617,14 @@
             physicsImpactForce="1.5"
         >
             <Damage
-                start="22"
-                end="18"
+                start="38"
+                end="34"
                 startDist="0"
                 endDist="100"
             />
             <CriticalChancePercent
-                start="30"
-                end="30"
+                start="40"
+                end="40"
                 startDist="0"
                 endDist="50"
             />
@@ -1656,8 +1657,8 @@
                 endDist="40"
             />
             <CriticalChancePercent
-                start="10"
-                end="10"
+                start="40"
+                end="40"
                 startDist="0"
                 endDist="50"
             />
@@ -1683,14 +1684,14 @@
             silenced="1"
         >
             <Damage
-                start="22"
-                end="18"
+                start="38"
+                end="34"
                 startDist="0"
                 endDist="100"
             />
             <CriticalChancePercent
-                start="30"
-                end="30"
+                start="40"
+                end="40"
                 startDist="0"
                 endDist="50"
             />
@@ -1726,8 +1727,8 @@
                 endDist="30"
             />
             <CriticalChancePercent
-                start="-20"
-                end="-20"
+                start="0"
+                end="0"
                 startDist="0"
                 endDist="100"
             />
@@ -1755,10 +1756,10 @@
             suppressionScale="0.40"
         >
             <Damage
-                start="26"
-                end="14"
+                start="30"
+                end="18"
                 startDist="0"
-                endDist="35"
+                endDist="30"
             />
             <CriticalChancePercent
                 start="-15"

@@ -36,7 +36,7 @@ ex:
 <!--
         Scope Names so binding will be easier
 
-        <to name="scope_GFL_IronSights_Primary" />
+        <to name="scope_GFL_IronSights" />
         <to name="scope_GFL_RedDot" />
         <to name="scope_GFL_Holosight" />
         <to name="scope_GFL_M68CCO" />
@@ -90,7 +90,7 @@ ex:
                 <AddTo
                     minAimTime2="-180"
                     maxAimTime2="-150"
-                    critChanceAdd="+5"
+                    critChanceAdd="+3"
                 />
             </AttackTypeModifier>
 
@@ -114,7 +114,7 @@ ex:
                 <AddTo
                     minAimTime2="-150"
                     maxAimTime2="-100"
-                    critChanceAdd="+7"
+                    critChanceAdd="+5"
                 />
             </AttackTypeModifier>
 
@@ -139,7 +139,7 @@ ex:
                 <AddTo
                     minAimTime2="-120"
                     maxAimTime2="-100"
-                    critChanceAdd="+10"
+                    critChanceAdd="+8"
                 />
             </AttackTypeModifier>
 
@@ -163,7 +163,7 @@ ex:
                 <AddTo
                     minAimTime2="-80"
                     maxAimTime2="-50"
-                    critChanceAdd="+12"
+                    critChanceAdd="+10"
                 />
             </AttackTypeModifier>
 
@@ -188,7 +188,7 @@ ex:
                 <AddTo
                     minAimTime2="-50"
                     maxAimTime2="-20"
-                    critChanceAdd="+15"
+                    critChanceAdd="+13"
                 />
             </AttackTypeModifier>
 
@@ -212,7 +212,7 @@ ex:
                 <AddTo
                     minAimTime2="0"
                     maxAimTime2="0"
-                    critChanceAdd="+17"
+                    critChanceAdd="+15"
                 />
             </AttackTypeModifier>
 
@@ -241,7 +241,7 @@ ex:
                 <AddTo
                     minAimTime2="+100"
                     maxAimTime2="+50"
-                    critChanceAdd="+25"
+                    critChanceAdd="+23"
                 />
             </AttackTypeModifier>
 
@@ -270,7 +270,7 @@ ex:
                 <AddTo
                     minAimTime2="+120"
                     maxAimTime2="+50"
-                    critChanceAdd="+27"
+                    critChanceAdd="+23"
                 />
             </AttackTypeModifier>
 
@@ -299,7 +299,7 @@ ex:
                 <AddTo
                     minAimTime2="+200"
                     maxAimTime2="+100"
-                    critChanceAdd="+35"
+                    critChanceAdd="+27"
                 />
             </AttackTypeModifier>
 
@@ -328,7 +328,7 @@ ex:
                 <AddTo
                     minAimTime2="+230"
                     maxAimTime2="+100"
-                    critChanceAdd="+40"
+                    critChanceAdd="+30"
                 />
             </AttackTypeModifier>
 
@@ -359,7 +359,7 @@ ex:
                 <AddTo
                     minAimTime2="+250"
                     maxAimTime2="+150"
-                    critChanceAdd="+50"
+                    critChanceAdd="+40"
                 />
             </AttackTypeModifier>
 

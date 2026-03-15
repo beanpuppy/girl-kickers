@@ -9,7 +9,7 @@
         <to name="556FMJEPR_GFL_XCR" />
         <to name="556APFSF_GFL_XCR" />
 
-        <to name="scope_GFL_IronSights_Primary" />
+        <to name="scope_GFL_IronSights" />
         <to name="scope_GFL_RedDot" />
         <to name="scope_GFL_Holosight" />
         <to name="scope_GFL_M68CCO" />
@@ -60,7 +60,7 @@
             readyTime="340"
             guardTime="160"
             accuracyStart="80"
-            accuracyEnd="70"
+            accuracyEnd="75"
             accuracyStartDist="4"
             accuracyEndDist="50"
         />
@@ -110,15 +110,18 @@
         <!-- See notes on ammo -->
         <to name="556FMJEPR_GFL_XCR-SUP" />
 
-        <!-- See notes on scopes -->
-        <to name="scope_GFL_IronSights_Primary" />
-        <to name="scope_GFL_RedDot_Rifle" />
+        <to name="scope_GFL_IronSights" />
+        <to name="scope_GFL_RedDot" />
         <to name="scope_GFL_Holosight" />
         <to name="scope_GFL_M68CCO" />
         <to name="scope_GFL_M150RCO" />
         <to name="scope_GFL_HoloMag3x" />
         <to name="scope_GFL_SpecterDR" />
         <to name="scope_GFL_LPVO_6X" />
+        <to name="scope_GFL_LPVO_8X" />
+        <to name="scope_GFL_LROMK4_3_10X" />
+        <to name="scope_GFL_LROMK6_3_18X" />
+        <to name="scope_GFL_LROPM_5_25X" />
 
     </Bind>
     <Firearm
@@ -154,8 +157,8 @@
             readyTime="340"
             guardTime="160"
             accuracyStart="80"
-            accuracyEnd="30"
-            accuracyStartDist="0"
+            accuracyEnd="75"
+            accuracyStartDist="4"
             accuracyEndDist="50"
         />
 
@@ -208,8 +211,19 @@
         <to name="919JHPOVER_GFL_PA15" />
         <to name="919SQUEAKFLASH_GFL_PA15" />
 
-        <to name="scope_GFL_IronSights_Secondary" />
-        <to name="scope_GFL_RedDot_Pistol" />
+        <to name="scope_GFL_IronSights" />
+        <to name="scope_GFL_RedDot" />
+        <to name="scope_GFL_Holosight" />
+        <to name="scope_GFL_M68CCO" />
+        <to name="scope_GFL_M150RCO" />
+        <to name="scope_GFL_HoloMag3x" />
+        <to name="scope_GFL_SpecterDR" />
+        <to name="scope_GFL_LPVO_6X" />
+        <to name="scope_GFL_LPVO_8X" />
+        <to name="scope_GFL_LROMK4_3_10X" />
+        <to name="scope_GFL_LROMK6_3_18X" />
+        <to name="scope_GFL_LROPM_5_25X" />
+
     </Bind>
 
     <Firearm
@@ -243,11 +257,10 @@
             changeOutTime="0"
             readyTime="80"
             guardTime="50"
-            accuracyStart="70"
-            accuracyEnd="40"
-            accuracyStartDist="0"
+            accuracyStart="85"
+            accuracyEnd="75"
+            accuracyStartDist="4"
             accuracyEndDist="50"
-            suppressionScale="0.5"
         />
 
         <Params
@@ -263,18 +276,14 @@
         />
 
         <AttackTypes>
-            <AttackType name="GFL_PA15_MozambiqueDrillNear" rangeMeters="8" />
-            <AttackType name="GFL_PA15_MozambiqueDrillClose" rangeMeters="16" />
-            <AttackType name="GFL_PA15_AimedFireMed" rangeMeters="28" />
-            <AttackType name="GFL_PA15_AimedFireFar" rangeMeters="52" />
-            <AttackType name="GFL_PA15_AimedFireExt" rangeMeters="9999" />
 
-            <!-- For testing purposes -->
-            <!-- <AttackType name="GFL_PA15_MozambiqueDrillNear" rangeMeters="7" />
-            <AttackType name="GFL_PA15_MozambiqueDrillClose" rangeMeters="9" />
-            <AttackType name="GFL_PA15_AimedFireMed" rangeMeters="12" />
-            <AttackType name="GFL_PA15_AimedFireFar" rangeMeters="17" />
-            <AttackType name="GFL_PA15_AimedFireExt" rangeMeters="9999" /> -->
+            <AttackType name="GFL_CQC_PA15" rangeMeters="4" />
+            <AttackType name="GFL_Near_PA15" rangeMeters="8" />
+            <AttackType name="GFL_Close_PA15" rangeMeters="12" />
+            <AttackType name="GFL_Medium_PA15" rangeMeters="16" />
+            <AttackType name="GFL_MedEdge_PA15" rangeMeters="20" />
+            <AttackType name="GFL_Extended_PA15" rangeMeters="9999" />
+
         </AttackTypes>
 
         <MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Pistol">
@@ -329,11 +338,10 @@
             changeOutTime="0"
             readyTime="80"
             guardTime="50"
-            accuracyStart="70"
-            accuracyEnd="40"
-            accuracyStartDist="0"
+            accuracyStart="85"
+            accuracyEnd="75"
+            accuracyStartDist="4"
             accuracyEndDist="50"
-            suppressionScale="0.5"
         />
 
         <Params
@@ -350,18 +358,14 @@
         />
 
         <AttackTypes>
-            <AttackType name="GFL_PA15_MozambiqueDrillNear" rangeMeters="8" />
-            <AttackType name="GFL_PA15_MozambiqueDrillClose" rangeMeters="16" />
-            <AttackType name="GFL_PA15_AimedFireMed" rangeMeters="28" />
-            <AttackType name="GFL_PA15_AimedFireFar" rangeMeters="52" />
-            <AttackType name="GFL_PA15_AimedFireExt" rangeMeters="9999" />
 
-            <!-- For testing purposes -->
-            <!-- <AttackType name="GFL_PA15_MozambiqueDrillNear" rangeMeters="7" />
-            <AttackType name="GFL_PA15_MozambiqueDrillClose" rangeMeters="9" />
-            <AttackType name="GFL_PA15_AimedFireMed" rangeMeters="12" />
-            <AttackType name="GFL_PA15_AimedFireFar" rangeMeters="17" />
-            <AttackType name="GFL_PA15_AimedFireExt" rangeMeters="9999" /> -->
+            <AttackType name="GFL_CQC_PA15" rangeMeters="4" />
+            <AttackType name="GFL_Near_PA15" rangeMeters="8" />
+            <AttackType name="GFL_Close_PA15" rangeMeters="12" />
+            <AttackType name="GFL_Medium_PA15" rangeMeters="16" />
+            <AttackType name="GFL_MedEdge_PA15" rangeMeters="20" />
+            <AttackType name="GFL_Extended_PA15" rangeMeters="9999" />
+
         </AttackTypes>
 
         <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Pistol">
@@ -392,8 +396,8 @@
         <to name="545x39FMJAP_GFL_AN94" />
         <to name="545x39SUPCAV_GFL_AN94" />
 
-        <to name="scope_GFL_IronSights_Primary" />
-        <to name="scope_GFL_RedDot_Rifle" />
+        <to name="scope_GFL_IronSights" />
+        <to name="scope_GFL_RedDot" />
         <to name="scope_GFL_Holosight" />
         <to name="scope_GFL_M68CCO" />
         <to name="scope_GFL_M150RCO" />
@@ -441,10 +445,9 @@
             readyTime="340"
             guardTime="160"
             accuracyStart="80"
-            accuracyEnd="40"
-            accuracyStartDist="0"
+            accuracyEnd="75"
+            accuracyStartDist="4"
             accuracyEndDist="50"
-            suppressionScale="1.20"
             suppressArea="1"
         />
 
@@ -460,18 +463,14 @@
         />
 
         <AttackTypes>
-            <AttackType name="GFL_AN94_HyperBurstNear" rangeMeters="8" />
-            <AttackType name="GFL_AN94_HyperBurstClose" rangeMeters="16" />
-            <AttackType name="GFL_AN94_HyperBurstMed" rangeMeters="28" />
-            <AttackType name="GFL_AN94_HyperBurstFar" rangeMeters="52" />
-            <AttackType name="GFL_AN94_HyperBurstExt" rangeMeters="9999" />
 
-            <!-- For testing purposes -->
-            <!-- <AttackType name="GFL_AN94_HyperBurstNear" rangeMeters="7" />
-            <AttackType name="GFL_AN94_HyperBurstClose" rangeMeters="9" />
-            <AttackType name="GFL_AN94_HyperBurstMed" rangeMeters="12" />
-            <AttackType name="GFL_AN94_HyperBurstFar" rangeMeters="17" />
-            <AttackType name="GFL_AN94_HyperBurstExt" rangeMeters="9999" /> -->
+            <AttackType name="GFL_CQC_AN94" rangeMeters="4" />
+            <AttackType name="GFL_Near_AN94" rangeMeters="8" />
+            <AttackType name="GFL_Close_AN94" rangeMeters="12" />
+            <AttackType name="GFL_Medium_AN94" rangeMeters="16" />
+            <AttackType name="GFL_MedEdge_AN94" rangeMeters="20" />
+            <AttackType name="GFL_Extended_AN94" rangeMeters="9999" />
+
         </AttackTypes>
 
         <AttackTypesSuppressiveFire>
@@ -545,8 +544,8 @@
             readyTime="340"
             guardTime="160"
             accuracyStart="80"
-            accuracyEnd="40"
-            accuracyStartDist="0"
+            accuracyEnd="75"
+            accuracyStartDist="4"
             accuracyEndDist="50"
             suppressionScale="1.20"
             suppressArea="1"
@@ -565,11 +564,14 @@
         />
 
         <AttackTypes>
-            <AttackType name="GFL_AN94_HyperBurstNear" rangeMeters="8" />
-            <AttackType name="GFL_AN94_HyperBurstClose" rangeMeters="16" />
-            <AttackType name="GFL_AN94_HyperBurstMed" rangeMeters="28" />
-            <AttackType name="GFL_AN94_HyperBurstFar" rangeMeters="52" />
-            <AttackType name="GFL_AN94_HyperBurstExt" rangeMeters="9999" />
+
+            <AttackType name="GFL_CQC_AN94" rangeMeters="4" />
+            <AttackType name="GFL_Near_AN94" rangeMeters="8" />
+            <AttackType name="GFL_Close_AN94" rangeMeters="12" />
+            <AttackType name="GFL_Medium_AN94" rangeMeters="16" />
+            <AttackType name="GFL_MedEdge_AN94" rangeMeters="20" />
+            <AttackType name="GFL_Extended_AN94" rangeMeters="9999" />
+
         </AttackTypes>
 
         <AttackTypesSuppressiveFire>
@@ -600,14 +602,19 @@
         <to name="762x39FMJNSU_GFL_AK15" />
         <to name="762x39ANTIELID_GFL_AK15" />
 
-        <to name="scope_GFL_IronSights_Primary" />
-        <to name="scope_GFL_RedDot_Rifle" />
+        <to name="scope_GFL_IronSights" />
+        <to name="scope_GFL_RedDot" />
         <to name="scope_GFL_Holosight" />
         <to name="scope_GFL_M68CCO" />
         <to name="scope_GFL_M150RCO" />
         <to name="scope_GFL_HoloMag3x" />
         <to name="scope_GFL_SpecterDR" />
         <to name="scope_GFL_LPVO_6X" />
+        <to name="scope_GFL_LPVO_8X" />
+        <to name="scope_GFL_LROMK4_3_10X" />
+        <to name="scope_GFL_LROMK6_3_18X" />
+        <to name="scope_GFL_LROPM_5_25X" />
+
     </Bind>
     <Firearm
         name="GFL-WEAP-AK15"
@@ -641,8 +648,8 @@
             readyTime="340"
             guardTime="160"
             accuracyStart="80"
-            accuracyEnd="40"
-            accuracyStartDist="0"
+            accuracyEnd="75"
+            accuracyStartDist="4"
             accuracyEndDist="50"
             suppressArea="1"
             meleeDamageBonus="100"
@@ -660,18 +667,14 @@
         />
 
         <AttackTypes>
-            <AttackType name="GFL_AK15_BurstFireNear" rangeMeters="8" />
-            <AttackType name="GFL_AK15_BurstFireClose" rangeMeters="16" />
-            <AttackType name="GFL_AK15_BurstFireMed" rangeMeters="28" />
-            <AttackType name="GFL_AK15_BurstFireFar" rangeMeters="52" />
-            <AttackType name="GFL_AK15_BurstFireExt" rangeMeters="9999" />
 
-            <!-- For testing purposes -->
-            <!-- <AttackType name="GFL_AK15_BurstFireNear" rangeMeters="7" />
-            <AttackType name="GFL_AK15_BurstFireClose" rangeMeters="9" />
-            <AttackType name="GFL_AK15_BurstFireMed" rangeMeters="12" />
-            <AttackType name="GFL_AK15_BurstFireFar" rangeMeters="17" />
-            <AttackType name="GFL_AK15_BurstFireExt" rangeMeters="9999" /> -->
+            <AttackType name="GFL_CQC_AK15" rangeMeters="4" />
+            <AttackType name="GFL_Near_AK15" rangeMeters="8" />
+            <AttackType name="GFL_Close_AK15" rangeMeters="12" />
+            <AttackType name="GFL_Medium_AK15" rangeMeters="16" />
+            <AttackType name="GFL_MedEdge_AK15" rangeMeters="20" />
+            <AttackType name="GFL_Extended_AK15" rangeMeters="9999" />
+
         </AttackTypes>
 
         <AttackTypesSuppressiveFire>
@@ -738,8 +741,8 @@
             readyTime="340"
             guardTime="160"
             accuracyStart="80"
-            accuracyEnd="40"
-            accuracyStartDist="0"
+            accuracyEnd="75"
+            accuracyStartDist="4"
             accuracyEndDist="50"
             suppressArea="1"
             meleeDamageBonus="100"
@@ -758,11 +761,14 @@
         />
 
         <AttackTypes>
-            <AttackType name="GFL_AK15_BurstFireNear" rangeMeters="8" />
-            <AttackType name="GFL_AK15_BurstFireClose" rangeMeters="16" />
-            <AttackType name="GFL_AK15_BurstFireMed" rangeMeters="28" />
-            <AttackType name="GFL_AK15_BurstFireFar" rangeMeters="52" />
-            <AttackType name="GFL_AK15_BurstFireExt" rangeMeters="9999" />
+
+            <AttackType name="GFL_CQC_AK15" rangeMeters="4" />
+            <AttackType name="GFL_Near_AK15" rangeMeters="8" />
+            <AttackType name="GFL_Close_AK15" rangeMeters="12" />
+            <AttackType name="GFL_Medium_AK15" rangeMeters="16" />
+            <AttackType name="GFL_MedEdge_AK15" rangeMeters="20" />
+            <AttackType name="GFL_Extended_AK15" rangeMeters="9999" />
+
         </AttackTypes>
 
         <AttackTypesSuppressiveFire>
@@ -837,7 +843,7 @@
             guardTime="160"
             accuracyStart="80"
             accuracyEnd="40"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
         />
 
@@ -936,7 +942,7 @@
             guardTime="160"
             accuracyStart="80"
             accuracyEnd="40"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
         />
 
@@ -1027,7 +1033,7 @@
             guardTime="160"
             accuracyStart="80"
             accuracyEnd="40"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
             suppressArea="1"
         />
@@ -1127,7 +1133,7 @@
             guardTime="160"
             accuracyStart="80"
             accuracyEnd="40"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
             suppressArea="1"
         />
@@ -1227,7 +1233,7 @@
             guardTime="160"
             accuracyStart="40"
             accuracyEnd="80"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
             suppressionScale="1.12"
         />
@@ -1322,7 +1328,7 @@
             guardTime="160"
             accuracyStart="85"
             accuracyEnd="20"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
             suppressionScale="1.5"
         />
@@ -1421,7 +1427,7 @@
             guardTime="160"
             accuracyStart="85"
             accuracyEnd="20"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
             suppressionScale="1.5"
         />
@@ -1511,7 +1517,7 @@
             guardTime="160"
             accuracyStart="85"
             accuracyEnd="20"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
             suppressionScale="1.2"
         />
@@ -1611,7 +1617,7 @@
             guardTime="160"
             accuracyStart="85"
             accuracyEnd="20"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
             suppressionScale="1.2"
         />
@@ -1703,7 +1709,7 @@
             guardTime="160"
             accuracyStart="85"
             accuracyEnd="20"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
         />
 
@@ -1757,7 +1763,7 @@
         <to name="3006FMJ_GFL_M1903" />
         <to name="3006LAIT_GFL_M1903" />
 
-        <to name="scope_GFL_IronSights_Primary" />
+        <to name="scope_GFL_IronSights" />
         <to name="scope_GFL_RedDot" />
         <to name="scope_GFL_Holosight" />
         <to name="scope_GFL_M68CCO" />
@@ -1805,8 +1811,8 @@
             changeOutTime="0"
             readyTime="340"
             guardTime="160"
-            accuracyStart="100"
-            accuracyEnd="100"
+            accuracyStart="120"
+            accuracyEnd="120"
             accuracyStartDist="4"
             accuracyEndDist="50"
         />
@@ -1866,6 +1872,7 @@
         <to name="scope_GFL_LROMK4_3_10X" />
         <to name="scope_GFL_LROMK6_3_18X" />
         <to name="scope_GFL_LROPM_5_25X" />
+
     </Bind>
     <Firearm
         name="GFL-WEAP-M1903-SUP"
@@ -1897,9 +1904,9 @@
             changeOutTime="0"
             readyTime="340"
             guardTime="160"
-            accuracyStart="40"
-            accuracyEnd="80"
-            accuracyStartDist="0"
+            accuracyStart="120"
+            accuracyEnd="120"
+            accuracyStartDist="4"
             accuracyEndDist="50"
         />
 
@@ -1998,7 +2005,7 @@
             guardTime="160"
             accuracyStart="40"
             accuracyEnd="80"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
 
         />
@@ -2095,7 +2102,7 @@
             guardTime="160"
             accuracyStart="40"
             accuracyEnd="80"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
         />
 
@@ -2189,7 +2196,7 @@
             guardTime="160"
             accuracyStart="80"
             accuracyEnd="40"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
 
         />
@@ -2285,7 +2292,7 @@
             guardTime="160"
             accuracyStart="80"
             accuracyEnd="40"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
         />
 
@@ -2334,14 +2341,18 @@
         <to name="762x39FMJNSU_GFL_OTS14" />
         <to name="762x39DUPLEX_GFL_OTS14" />
 
-        <to name="scope_GFL_IronSights_Primary" />
-        <to name="scope_GFL_RedDot_Rifle" />
+        <to name="scope_GFL_IronSights" />
+        <to name="scope_GFL_RedDot" />
         <to name="scope_GFL_Holosight" />
         <to name="scope_GFL_M68CCO" />
         <to name="scope_GFL_M150RCO" />
         <to name="scope_GFL_HoloMag3x" />
         <to name="scope_GFL_SpecterDR" />
         <to name="scope_GFL_LPVO_6X" />
+        <to name="scope_GFL_LPVO_8X" />
+        <to name="scope_GFL_LROMK4_3_10X" />
+        <to name="scope_GFL_LROMK6_3_18X" />
+        <to name="scope_GFL_LROPM_5_25X" />
     </Bind>
     <Firearm
         name="GFL-WEAP-OTS14"
@@ -2375,10 +2386,9 @@
             readyTime="340"
             guardTime="160"
             accuracyStart="80"
-            accuracyEnd="40"
-            accuracyStartDist="0"
+            accuracyEnd="75"
+            accuracyStartDist="4"
             accuracyEndDist="50"
-            suppressionScale="1.0"
             suppressArea="1"
         />
 
@@ -2394,18 +2404,14 @@
         />
 
         <AttackTypes>
-            <AttackType name="GFL_OTS14_BurstFireNear" rangeMeters="8" />
-            <AttackType name="GFL_OTS14_BurstFireClose" rangeMeters="16" />
-            <AttackType name="GFL_OTS14_BurstFireMed" rangeMeters="28" />
-            <AttackType name="GFL_OTS14_BurstFireFar" rangeMeters="52" />
-            <AttackType name="GFL_OTS14_BurstFireExt" rangeMeters="9999" />
 
-            <!-- For testing purposes -->
-            <!-- <AttackType name="GFL_OTS14_BurstFireNear" rangeMeters="7" />
-            <AttackType name="GFL_OTS14_BurstFireClose" rangeMeters="9" />
-            <AttackType name="GFL_OTS14_BurstFireMed" rangeMeters="12" />
-            <AttackType name="GFL_OTS14_BurstFireFar" rangeMeters="17" />
-            <AttackType name="GFL_OTS14_BurstFireExt" rangeMeters="9999" /> -->
+            <AttackType name="GFL_CQC_OTS14" rangeMeters="4" />
+            <AttackType name="GFL_Near_OTS14" rangeMeters="8" />
+            <AttackType name="GFL_Close_OTS14" rangeMeters="12" />
+            <AttackType name="GFL_Medium_OTS14" rangeMeters="16" />
+            <AttackType name="GFL_MedEdge_OTS14" rangeMeters="20" />
+            <AttackType name="GFL_Extended_OTS14" rangeMeters="9999" />
+
         </AttackTypes>
 
         <AttackTypesSuppressiveFire>
@@ -2480,10 +2486,9 @@
             readyTime="340"
             guardTime="160"
             accuracyStart="80"
-            accuracyEnd="40"
-            accuracyStartDist="0"
+            accuracyEnd="75"
+            accuracyStartDist="4"
             accuracyEndDist="50"
-            suppressionScale="1.0"
             suppressArea="1"
         />
 
@@ -2500,11 +2505,14 @@
         />
 
         <AttackTypes>
-            <AttackType name="GFL_OTS14_BurstFireNear" rangeMeters="8" />
-            <AttackType name="GFL_OTS14_BurstFireClose" rangeMeters="16" />
-            <AttackType name="GFL_OTS14_BurstFireMed" rangeMeters="28" />
-            <AttackType name="GFL_OTS14_BurstFireFar" rangeMeters="52" />
-            <AttackType name="GFL_OTS14_BurstFireExt" rangeMeters="9999" />
+
+            <AttackType name="GFL_CQC_OTS14" rangeMeters="4" />
+            <AttackType name="GFL_Near_OTS14" rangeMeters="8" />
+            <AttackType name="GFL_Close_OTS14" rangeMeters="12" />
+            <AttackType name="GFL_Medium_OTS14" rangeMeters="16" />
+            <AttackType name="GFL_MedEdge_OTS14" rangeMeters="20" />
+            <AttackType name="GFL_Extended_OTS14" rangeMeters="9999" />
+
         </AttackTypes>
 
         <AttackTypesSuppressiveFire>
@@ -2533,8 +2541,12 @@
 
     <Bind eqp="GFL-WEAP-OM50">
         <to name="50BMGFMJ_GFL_OM50" />
+        <to name="50BMGREMOVER_GFL_OM50" />
 
-        <to name="scope_GFL_IronSights_Primary" />
+        <to name="scope_GFL_IronSights" />
+        <to name="scope_GFL_RedDot" />
+        <to name="scope_GFL_Holosight" />
+        <to name="scope_GFL_M68CCO" />
         <to name="scope_GFL_M150RCO" />
         <to name="scope_GFL_HoloMag3x" />
         <to name="scope_GFL_SpecterDR" />
@@ -2543,6 +2555,7 @@
         <to name="scope_GFL_LROMK4_3_10X" />
         <to name="scope_GFL_LROMK6_3_18X" />
         <to name="scope_GFL_LROPM_5_25X" />
+
     </Bind>
 
     <Firearm
@@ -2579,11 +2592,12 @@
             changeOutTime="0"
             readyTime="360"
             guardTime="160"
-            accuracyStart="40"
-            accuracyEnd="80"
-            accuracyStartDist="0"
+            accuracyStart="120"
+            accuracyEnd="120"
+            accuracyStartDist="4"
             accuracyEndDist="50"
             suppressionScale="8"
+            suppressArea="1"
         />
 
         <Params
@@ -2598,18 +2612,14 @@
         />
 
         <AttackTypes>
-            <AttackType name="GFL_OM50_PrecisionFireNear" rangeMeters="8" />
-            <AttackType name="GFL_OM50_PrecisionFireClose" inCoverOverride="GFL_OM50_PrecisionFireCloseMounted" rangeMeters="16" />
-            <AttackType name="GFL_OM50_PrecisionFireMed" inCoverOverride="GFL_OM50_PrecisionFireMedMounted" rangeMeters="28" />
-            <AttackType name="GFL_OM50_PrecisionFireFar" inCoverOverride="GFL_OM50_PrecisionFireFarMounted" rangeMeters="52" />
-            <AttackType name="GFL_OM50_PrecisionFireExt" inCoverOverride="GFL_OM50_PrecisionFireExtMounted" rangeMeters="9999" />
 
-            <!-- For testing purposes -->
-            <!-- <AttackType name="GFL_OM50_PrecisionFireNear" rangeMeters="7" />
-            <AttackType name="GFL_OM50_PrecisionFireClose" inCoverOverride="GFL_OM50_PrecisionFireCloseMounted" rangeMeters="9" />
-            <AttackType name="GFL_OM50_PrecisionFireMed" inCoverOverride="GFL_OM50_PrecisionFireMedMounted" rangeMeters="12" />
-            <AttackType name="GFL_OM50_PrecisionFireFar" inCoverOverride="GFL_OM50_PrecisionFireFarMounted" rangeMeters="17" />
-            <AttackType name="GFL_OM50_PrecisionFireExt" inCoverOverride="GFL_OM50_PrecisionFireExtMounted" rangeMeters="9999" /> -->
+            <AttackType name="GFL_CQC_OM50" rangeMeters="4" />
+            <AttackType name="GFL_Near_OM50" rangeMeters="8" />
+            <AttackType name="GFL_Close_OM50" inCoverOverride="GFL_CloseMounted_OM50" rangeMeters="12" />
+            <AttackType name="GFL_Medium_OM50" inCoverOverride="GFL_MediumMounted_OM50" rangeMeters="16" />
+            <AttackType name="GFL_MedEdge_OM50" inCoverOverride="GFL_MedEdgeMounted_OM50" rangeMeters="20" />
+            <AttackType name="GFL_Extended_OM50" inCoverOverride="GFL_ExtendedMounted_OM50" rangeMeters="9999" />
+
         </AttackTypes>
 
         <MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
@@ -2624,7 +2634,7 @@
             <Unequip name="rifle_neqp" />
             <Reload name="rifle_reld" />
             <ReloadEmpty name="rifle_reldempt" />
-            <Fire name="m110csass_fire" />
+            <Fire name="pkm_fire" />
             <ShellDrop name="rifle_shell_drop" />
             <Empty name="gen_empty" />
         </Sounds>
@@ -2671,7 +2681,7 @@
             guardTime="20"
             accuracyStart="200"
             accuracyEnd="200"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="100"
         />
 
@@ -2692,8 +2702,18 @@
         <to name="380FMJURNC_GFL_CURVA" />
         <to name="380ACPSQUEAKFLASH_GFL_CURVA" />
 
-        <to name="scope_GFL_IronSights_Secondary" />
-        <to name="scope_GFL_RedDot_Pistol" />
+        <to name="scope_GFL_IronSights" />
+        <to name="scope_GFL_RedDot" />
+        <to name="scope_GFL_Holosight" />
+        <to name="scope_GFL_M68CCO" />
+        <to name="scope_GFL_M150RCO" />
+        <to name="scope_GFL_HoloMag3x" />
+        <to name="scope_GFL_SpecterDR" />
+        <to name="scope_GFL_LPVO_6X" />
+        <to name="scope_GFL_LPVO_8X" />
+        <to name="scope_GFL_LROMK4_3_10X" />
+        <to name="scope_GFL_LROMK6_3_18X" />
+        <to name="scope_GFL_LROPM_5_25X" />
     </Bind>
 
     <Firearm
@@ -2727,9 +2747,9 @@
             changeOutTime="0"
             readyTime="80"
             guardTime="50"
-            accuracyStart="70"
-            accuracyEnd="40"
-            accuracyStartDist="0"
+            accuracyStart="85"
+            accuracyEnd="75"
+            accuracyStartDist="4"
             accuracyEndDist="50"
             suppressionScale="1.2"
         />
@@ -2747,18 +2767,14 @@
         />
 
         <AttackTypes>
-            <AttackType name="GFL_CURVA_MozambiqueDrillNear" rangeMeters="8" />
-            <AttackType name="GFL_CURVA_MozambiqueDrillClose" rangeMeters="16" />
-            <AttackType name="GFL_CURVA_AimedFireMed" rangeMeters="28" />
-            <AttackType name="GFL_CURVA_AimedFireFar" rangeMeters="52" />
-            <AttackType name="GFL_CURVA_AimedFireExt" rangeMeters="9999" />
 
-            <!-- For testing purposes -->
-            <!-- <AttackType name="GFL_CURVA_MozambiqueDrillNear" rangeMeters="7" />
-            <AttackType name="GFL_CURVA_MozambiqueDrillClose" rangeMeters="9" />
-            <AttackType name="GFL_CURVA_AimedFireMed" rangeMeters="12" />
-            <AttackType name="GFL_CURVA_AimedFireFar" rangeMeters="17" />
-            <AttackType name="GFL_CURVA_AimedFireExt" rangeMeters="9999" /> -->
+            <AttackType name="GFL_CQC_CURVA" rangeMeters="4" />
+            <AttackType name="GFL_Near_CURVA" rangeMeters="8" />
+            <AttackType name="GFL_Close_CURVA" rangeMeters="12" />
+            <AttackType name="GFL_Medium_CURVA" rangeMeters="16" />
+            <AttackType name="GFL_MedEdge_CURVA" rangeMeters="20" />
+            <AttackType name="GFL_Extended_CURVA" rangeMeters="9999" />
+
         </AttackTypes>
 
         <MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Pistol">
@@ -2824,7 +2840,7 @@
             guardTime="50"
             accuracyStart="70"
             accuracyEnd="40"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
             suppressionScale="1.2"
         />
@@ -2874,14 +2890,19 @@
         <to name="12GA00BUCK_GFL_VEPR12" />
         <to name="12GASUPERHEAVYSLUG_GFL_VEPR12" />
 
-        <to name="scope_GFL_IronSights_Primary" />
-        <to name="scope_GFL_RedDot_Rifle" />
+        <to name="scope_GFL_IronSights" />
+        <to name="scope_GFL_RedDot" />
         <to name="scope_GFL_Holosight" />
         <to name="scope_GFL_M68CCO" />
         <to name="scope_GFL_M150RCO" />
         <to name="scope_GFL_HoloMag3x" />
         <to name="scope_GFL_SpecterDR" />
         <to name="scope_GFL_LPVO_6X" />
+        <to name="scope_GFL_LPVO_8X" />
+        <to name="scope_GFL_LROMK4_3_10X" />
+        <to name="scope_GFL_LROMK6_3_18X" />
+        <to name="scope_GFL_LROPM_5_25X" />
+
     </Bind>
 
     <Firearm
@@ -2919,8 +2940,8 @@
             readyTime="340"
             guardTime="160"
             accuracyStart="80"
-            accuracyEnd="20"
-            accuracyStartDist="0"
+            accuracyEnd="40"
+            accuracyStartDist="4"
             accuracyEndDist="50"
         />
 
@@ -2935,18 +2956,14 @@
         />
 
         <AttackTypes>
-            <AttackType name="GFL_VEPR12_BurstFireNear" rangeMeters="8" />
-            <AttackType name="GFL_VEPR12_BurstFireClose" rangeMeters="16" />
-            <AttackType name="GFL_VEPR12_BurstFireMed" rangeMeters="28" />
-            <AttackType name="GFL_VEPR12_BurstFireFar" rangeMeters="52" />
-            <AttackType name="GFL_VEPR12_BurstFireExt" rangeMeters="9999" />
 
-            <!-- For testing purposes -->
-            <!-- <AttackType name="GFL_VEPR12_BurstFireNear" rangeMeters="7" />
-            <AttackType name="GFL_VEPR12_BurstFireClose" rangeMeters="9" />
-            <AttackType name="GFL_VEPR12_BurstFireMed" rangeMeters="12" />
-            <AttackType name="GFL_VEPR12_BurstFireFar" rangeMeters="17" />
-            <AttackType name="GFL_VEPR12_BurstFireExt" rangeMeters="9999" /> -->
+            <AttackType name="GFL_CQC_VEPR12" rangeMeters="4" />
+            <AttackType name="GFL_Near_VEPR12" rangeMeters="8" />
+            <AttackType name="GFL_Close_VEPR12" rangeMeters="12" />
+            <AttackType name="GFL_Medium_VEPR12" rangeMeters="16" />
+            <AttackType name="GFL_MedEdge_VEPR12" rangeMeters="20" />
+            <AttackType name="GFL_Extended_VEPR12" rangeMeters="9999" />
+
         </AttackTypes>
 
         <MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Pistol">
@@ -3021,7 +3038,7 @@
             guardTime="160"
             accuracyStart="60"
             accuracyEnd="20"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
             suppressionScale="3.5"
             suppressArea="1"
@@ -3126,7 +3143,7 @@
             guardTime="160"
             accuracyStart="80"
             accuracyEnd="20"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
         />
 
@@ -3224,7 +3241,7 @@
             guardTime="160"
             accuracyStart="80"
             accuracyEnd="20"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
         />
 
@@ -3319,7 +3336,7 @@
             guardTime="160"
             accuracyStart="85"
             accuracyEnd="20"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
             suppressionScale="1.07"
         />
@@ -3419,7 +3436,7 @@
             guardTime="160"
             accuracyStart="85"
             accuracyEnd="20"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
             suppressionScale="1.07"
         />
@@ -3517,7 +3534,7 @@
             guardTime="160"
             accuracyStart="80"
             accuracyEnd="40"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
         />
 
@@ -3618,7 +3635,7 @@
             guardTime="160"
             accuracyStart="80"
             accuracyEnd="20"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
         />
 
@@ -3719,7 +3736,7 @@
             guardTime="160"
             accuracyStart="60"
             accuracyEnd="20"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
             suppressionScale="4"
             suppressArea="1"
@@ -3820,7 +3837,7 @@
             guardTime="160"
             accuracyStart="80"
             accuracyEnd="40"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
             meleeDamageBonus="50"
         />
@@ -3920,7 +3937,7 @@
             guardTime="160"
             accuracyStart="80"
             accuracyEnd="40"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
             meleeDamageBonus="50"
         />
@@ -4011,7 +4028,7 @@
             guardTime="160"
             accuracyStart="80"
             accuracyEnd="40"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
         />
 
@@ -4110,7 +4127,7 @@
             guardTime="160"
             accuracyStart="80"
             accuracyEnd="40"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
         />
 
@@ -4203,7 +4220,7 @@
             guardTime="160"
             accuracyStart="80"
             accuracyEnd="20"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
         />
 
@@ -4299,7 +4316,7 @@
             guardTime="160"
             accuracyStart="85"
             accuracyEnd="20"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
             suppressionScale="1.02"
         />
@@ -4399,7 +4416,7 @@
             guardTime="160"
             accuracyStart="85"
             accuracyEnd="20"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
             suppressionScale="1.02"
         />
@@ -4499,7 +4516,7 @@
             guardTime="160"
             accuracyStart="80"
             accuracyEnd="30"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
         />
 
@@ -4603,7 +4620,7 @@
             guardTime="160"
             accuracyStart="80"
             accuracyEnd="30"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
         />
 
@@ -4703,7 +4720,7 @@
             guardTime="160"
             accuracyStart="80"
             accuracyEnd="30"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
         />
 
@@ -4793,7 +4810,7 @@
             guardTime="160"
             accuracyStart="85"
             accuracyEnd="20"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
         />
 
@@ -4892,7 +4909,7 @@
             guardTime="160"
             accuracyStart="85"
             accuracyEnd="20"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
         />
 
@@ -4977,7 +4994,7 @@
             guardTime="50"
             accuracyStart="70"
             accuracyEnd="40"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
             suppressionScale="0.5"
         />
@@ -5072,7 +5089,7 @@
             guardTime="50"
             accuracyStart="70"
             accuracyEnd="40"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
             suppressionScale="0.5"
         />
@@ -5158,7 +5175,7 @@
             guardTime="50"
             accuracyStart="70"
             accuracyEnd="40"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
             suppressionScale="0.5"
         />
@@ -5246,7 +5263,7 @@
             guardTime="50"
             accuracyStart="70"
             accuracyEnd="40"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
             suppressionScale="0.5"
         />
@@ -5332,7 +5349,7 @@
             guardTime="50"
             accuracyStart="70"
             accuracyEnd="40"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
             suppressionScale="0.5"
         />
@@ -5420,7 +5437,7 @@
             guardTime="50"
             accuracyStart="70"
             accuracyEnd="40"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
             suppressionScale="0.5"
         />
@@ -5516,7 +5533,7 @@
             guardTime="160"
             accuracyStart="40"
             accuracyEnd="80"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
             suppressionScale="8"
         />
@@ -5614,7 +5631,7 @@
             guardTime="160"
             accuracyStart="40"
             accuracyEnd="80"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
             suppressionScale="8"
         />
@@ -5652,7 +5669,7 @@
             <Unequip name="rifle_neqp" />
             <Reload name="rifle_reld" />
             <ReloadEmpty name="rifle_reldempt" />
-            <Fire name="m110csass_fire" />
+            <Fire name="pkm_fire" />
             <ShellDrop name="rifle_shell_drop" />
             <Empty name="gen_empty" />
         </Sounds>
@@ -5705,7 +5722,7 @@
             guardTime="160"
             accuracyStart="85"
             accuracyEnd="20"
-            accuracyStartDist="0"
+            accuracyStartDist="4"
             accuracyEndDist="50"
             suppressionScale="1.07"
         />
