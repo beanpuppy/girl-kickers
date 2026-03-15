@@ -153,7 +153,7 @@
         description="@armor_gfl_eliteframe_desc"
         img="data/models/equipment/iopframe_ui.dds"
     >
-        <MobilityModifiers moveSpeedModifierPercent="5" turnSpeedModifierPercent="15" />
+        <MobilityModifiers moveSpeedModifierPercent="5" turnSpeedModifierPercent="10" />
         <ConcealmentModifier add="0" />
 
         <Params>
@@ -218,7 +218,7 @@
         description="@armor_gfl_rhinoframe_desc"
         img="data/models/equipment/rhinoframe_ui.dds"
     >
-        <MobilityModifiers moveSpeedModifierPercent="-50" turnSpeedModifierPercent="-30" />
+        <MobilityModifiers moveSpeedModifierPercent="-20" turnSpeedModifierPercent="-30" />
         <ConcealmentModifier add="-20" />
 
         <Params>
