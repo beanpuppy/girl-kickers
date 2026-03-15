@@ -56,24 +56,24 @@
         description="@armor_recframe_desc"
         img="data/models/equipment/recreationframe_ui.dds"
     >
-        <MobilityModifiers moveSpeedModifierPercent="20" turnSpeedModifierPercent="10" />
+        <MobilityModifiers moveSpeedModifierPercent="20" turnSpeedModifierPercent="30" />
         <ConcealmentModifier add="8" />
 
         <Params>
             <ProtectionArc
                 degrees="90"
                 coveragePercent="10"
-                piercingProtectionLevel="90"
+                piercingProtectionLevel="120"
             />
             <ProtectionArc
                 degrees="270"
                 coveragePercent="10"
-                piercingProtectionLevel="90"
+                piercingProtectionLevel="120"
             />
             <ProtectionArc
                 degrees="360"
                 coveragePercent="10"
-                piercingProtectionLevel="90"
+                piercingProtectionLevel="120"
             />
         </Params>
     </Armor>
@@ -88,7 +88,7 @@
         description="@armor_gfl_lawframe_desc"
         img="data/models/equipment/lawframe_ui.dds"
     >
-        <MobilityModifiers moveSpeedModifierPercent="12" turnSpeedModifierPercent="10" />
+        <MobilityModifiers moveSpeedModifierPercent="10" turnSpeedModifierPercent="10" />
         <ConcealmentModifier add="0" />
 
         <Params>
@@ -153,12 +153,12 @@
         description="@armor_gfl_eliteframe_desc"
         img="data/models/equipment/iopframe_ui.dds"
     >
-        <MobilityModifiers moveSpeedModifierPercent="5" turnSpeedModifierPercent="5" />
+        <MobilityModifiers moveSpeedModifierPercent="5" turnSpeedModifierPercent="15" />
         <ConcealmentModifier add="0" />
 
         <Params>
             <ProtectionArc
-                degrees="84"
+                degrees="80"
                 coveragePercent="50"
                 piercingProtectionLevel="60"
             />
@@ -192,17 +192,17 @@
         <Params>
             <ProtectionArc
                 degrees="90"
-                coveragePercent="60"
+                coveragePercent="70"
                 piercingProtectionLevel="60"
             />
             <ProtectionArc
                 degrees="270"
-                coveragePercent="40"
+                coveragePercent="60"
                 piercingProtectionLevel="50"
             />
             <ProtectionArc
                 degrees="360"
-                coveragePercent="60"
+                coveragePercent="70"
                 piercingProtectionLevel="60"
             />
         </Params>
@@ -225,17 +225,17 @@
             <ProtectionArc
                 degrees="70"
                 coveragePercent="80"
-                piercingProtectionLevel="80"
+                piercingProtectionLevel="90"
             />
             <ProtectionArc
                 degrees="270"
-                coveragePercent="10"
-                piercingProtectionLevel="40"
+                coveragePercent="30"
+                piercingProtectionLevel="50"
             />
             <ProtectionArc
                 degrees="360"
-                coveragePercent="10"
-                piercingProtectionLevel="40"
+                coveragePercent="30"
+                piercingProtectionLevel="50"
             />
         </Params>
     </Armor>
@@ -251,11 +251,11 @@
         img="data/models/dolls/attachments/basiccore_ui.dds"
     >
         <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
-        <ConcealmentModifier add="1" />
+        <ConcealmentModifier add="0" />
         <Params nvgByDefault="true">
             <ProtectionArc
                 degrees="360"
-                coveragePercent="50"
+                coveragePercent="70"
                 piercingProtectionLevel="60"
             />
         </Params>
@@ -271,13 +271,13 @@
         description="@helmet_gfl_vanguard_desc"
         img="data/models/dolls/attachments/vanguard_ui.dds"
     >
-        <MobilityModifiers moveSpeedModifierPercent="30" turnSpeedModifierPercent="-20" />
+        <MobilityModifiers moveSpeedModifierPercent="35" turnSpeedModifierPercent="-20" />
         <ConcealmentModifier add="0" />
         <Params nvgByDefault="true">
             <ProtectionArc
                 degrees="360"
-                coveragePercent="30"
-                piercingProtectionLevel="60"
+                coveragePercent="70"
+                piercingProtectionLevel="50"
             />
         </Params>
     </Helmet>
@@ -292,13 +292,13 @@
         description="@helmet_gfl_sentinel_desc"
         img="data/models/dolls/attachments/sentinel_ui.dds"
     >
-        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="40" />
+        <MobilityModifiers moveSpeedModifierPercent="-10" turnSpeedModifierPercent="40" />
         <ConcealmentModifier add="0" />
         <Params nvgByDefault="true">
             <ProtectionArc
                 degrees="360"
-                coveragePercent="20"
-                piercingProtectionLevel="60"
+                coveragePercent="50"
+                piercingProtectionLevel="50"
             />
         </Params>
     </Helmet>
@@ -313,13 +313,13 @@
         description="@helmet_gfl_bulwark_desc"
         img="data/models/dolls/attachments/bulwark_ui.dds"
     >
-        <MobilityModifiers moveSpeedModifierPercent="-30" turnSpeedModifierPercent="-20" />
+        <MobilityModifiers moveSpeedModifierPercent="-40" turnSpeedModifierPercent="-20" />
         <ConcealmentModifier add="0" />
         <Params nvgByDefault="true">
             <ProtectionArc
                 degrees="360"
-                coveragePercent="80"
-                piercingProtectionLevel="90"
+                coveragePercent="100"
+                piercingProtectionLevel="120"
             />
         </Params>
     </Helmet>
@@ -334,13 +334,13 @@
         description="@helmet_gfl_support_desc"
         img="data/models/dolls/attachments/support_ui.dds"
     >
-        <MobilityModifiers moveSpeedModifierPercent="15" turnSpeedModifierPercent="25" />
-        <ConcealmentModifier add="2" />
+        <MobilityModifiers moveSpeedModifierPercent="20" turnSpeedModifierPercent="25" />
+        <ConcealmentModifier add="0" />
         <Params nvgByDefault="true">
             <ProtectionArc
                 degrees="360"
                 coveragePercent="30"
-                piercingProtectionLevel="60"
+                piercingProtectionLevel="50"
             />
         </Params>
     </Helmet>
