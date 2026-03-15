@@ -1828,6 +1828,7 @@
             <AttackType name="GFL_CQC_M1903" rangeMeters="4" />
             <AttackType name="GFL_Near_M1903" rangeMeters="8" />
             <AttackType name="GFL_Close_M1903" rangeMeters="12" inCoverOverride="GFL_CloseMounted_M1903" rangeMeters="12" />
+            <AttackType name="GFL_Medium_M1903" rangeMeters="16" inCoverOverride="GFL_MediumMounted_M1903" rangeMeters="16" />
             <AttackType name="GFL_MedEdge_M1903" rangeMeters="20" inCoverOverride="GFL_MedEdgeMounted_M1903" rangeMeters="20" />
             <AttackType name="GFL_Extended_M1903" rangeMeters="9999" inCoverOverride="GFL_ExtendedMounted_M1903" rangeMeters="9999" />
 
@@ -1916,11 +1917,14 @@
         />
 
         <AttackTypes>
-            <AttackType name="GFL_M1903_PrecisionFireNear" rangeMeters="8" />
-            <AttackType name="GFL_M1903_PrecisionFireClose" inCoverOverride="GFL_M1903_PrecisionFireCloseMounted" rangeMeters="16" />
-            <AttackType name="GFL_M1903_PrecisionFireMed" inCoverOverride="GFL_M1903_PrecisionFireMedMounted" rangeMeters="28" />
-            <AttackType name="GFL_M1903_PrecisionFireFar" inCoverOverride="GFL_M1903_PrecisionFireFarMounted" rangeMeters="52" />
-            <AttackType name="GFL_M1903_PrecisionFireExt" inCoverOverride="GFL_M1903_PrecisionFireExtMounted" rangeMeters="9999" />
+
+            <AttackType name="GFL_CQC_M1903" rangeMeters="4" />
+            <AttackType name="GFL_Near_M1903" rangeMeters="8" />
+            <AttackType name="GFL_Close_M1903" rangeMeters="12" inCoverOverride="GFL_CloseMounted_M1903" rangeMeters="12" />
+            <AttackType name="GFL_Medium_M1903" rangeMeters="16" inCoverOverride="GFL_MediumMounted_M1903" rangeMeters="16" />
+            <AttackType name="GFL_MedEdge_M1903" rangeMeters="20" inCoverOverride="GFL_MedEdgeMounted_M1903" rangeMeters="20" />
+            <AttackType name="GFL_Extended_M1903" rangeMeters="9999" inCoverOverride="GFL_ExtendedMounted_M1903" rangeMeters="9999" />
+
         </AttackTypes>
 
         <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Rifle">
