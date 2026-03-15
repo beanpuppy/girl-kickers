@@ -1475,8 +1475,8 @@
         >
 
             <Damage
-                start="102"
-                end="98"
+                start="100"
+                end="96"
                 startDist="0"
                 endDist="100"
             />

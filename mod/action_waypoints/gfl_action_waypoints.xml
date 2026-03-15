@@ -16,4 +16,31 @@
         ttip_disabled="@menu_generic_cannot_use"
         ttip_empty="@menu_game_vector_grenade_none_ttip"
     />
+
+    <wp
+		type="FEET_OF_STEEL"
+		equipment="GFL_FeetOfGunmetal"
+		ui_prefix="data/textures/gui_ingame/waypoints/feet_of_steel"
+		ttip="@GEAR-GIRLKICK-GUNMETAL-TTIP"
+		ttip_disabled="@menu_game_tool_disabled_ttip"
+		ttip_empty="@menu_game_tool_none_ttip"
+    />
+
+    <wp
+		type="FEET_OF_STEEL"
+		equipment="GFL_FeetOfTitanium"
+		ui_prefix="data/textures/gui_ingame/waypoints/feet_of_steel"
+		ttip="@GEAR-GIRLKICK-TITANIUM-TTIP"
+		ttip_disabled="@menu_game_tool_disabled_ttip"
+		ttip_empty="@menu_game_tool_none_ttip"
+    />
+
+    <wp
+		type="PICK_LOCK"
+		equipment="GFL_Lockpick"
+		ui_prefix="data/textures/gui_ingame/waypoints/lockpick"
+		ttip="@GEAR-GFL-LOCPICK-TTIP"
+		ttip_disabled="@menu_game_tool_disabled_ttip"
+		ttip_empty="@menu_game_tool_none_ttip"
+    />
 </ActionWaypoints>

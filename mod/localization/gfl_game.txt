@@ -46,6 +46,13 @@
 @doctrine_gfl_lethalprecision_name=Lethal Precision
 @doctrine_gfl_lethalprecision_descr=Optimized targeting algorithms prioritize vital areas. Significantly increases critical hit probability and reduces target acquisition time. Marksman rifles gain enhanced headshot capability.
 
+
+@GEAR-GIRLKICK-GUNMETAL-TTIP=Doll Kick!
+
+@GEAR-GIRLKICK-TITANIUM-TTIP=Strongest Kick of the NSU!
+
+@GEAR-GFL-LOCPICK-TTIP=Unlock lock!
+
 @scope_GFL_ironsights_name=Iron sights
 
 @scope_GFL_ironsights_desc=Standard ironsights for basic aim guidance. Provides the quickest aim time at the cost of precision. T-Dolls being sent with nothing but iron sights tend to rely on just their built-in sensor packages in close range fights, removing the need to "consult" the sights during target acquisition, allowing the doll to process shooting protocols faster.
