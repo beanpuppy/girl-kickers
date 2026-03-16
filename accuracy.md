@@ -10,7 +10,7 @@ I loved the feedback you have so heres my proposed updates to the accuracy formu
     
     Properties       SMG		AR		SR		SG		MG		HG
     ──────────────────────────────────────────────────────────────────
-    accStart       	 90		85		  180		 80		 70		 90
+    accStart       	 85		85		  180		 80		 70		 90
     accEnd			     75		80		  180		 40		 60		 75
     startDist  			  4		 4			  4		  4		  4		  4
     endDist  			    50		50		 50		 50		 50		 50

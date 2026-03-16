@@ -85,7 +85,7 @@
                 endDist="100"
             />
             <ArmorPenetration
-                start="60"
+                start="70"
                 end="20"
                 startDist="5"
                 endDist="20"
@@ -248,20 +248,20 @@
             physicsImpactForce="1.5"
         >
             <Damage
-                start="28"
-                end="24"
+                start="30"
+                end="26"
                 startDist="0"
                 endDist="100"
             />
             <CriticalChancePercent
-                start="20"
-                end="20"
+                start="0"
+                end="0"
                 startDist="0"
                 endDist="100"
             />
             <ArmorPenetration
-                start="50"
-                end="50"
+                start="70"
+                end="70"
                 startDist="0"
                 endDist="100"
             />
@@ -283,14 +283,14 @@
             silenced="1"
         >
             <Damage
-                start="28"
-                end="24"
+                start="30"
+                end="26"
                 startDist="0"
                 endDist="100"
             />
             <CriticalChancePercent
-                start="20"
-                end="20"
+                start="0"
+                end="0"
                 startDist="0"
                 endDist="100"
             />
@@ -316,8 +316,8 @@
             physicsImpactForce="1.5"
         >
             <Damage
-                start="36"
-                end="32"
+                start="52"
+                end="48"
                 startDist="0"
                 endDist="40"
             />
@@ -328,8 +328,8 @@
                 endDist="100"
             />
             <ArmorPenetration
-                start="40"
-                end="40"
+                start="50"
+                end="50"
                 startDist="0"
                 endDist="100"
             />
@@ -461,8 +461,8 @@
                 endDist="100"
             />
             <CriticalChancePercent
-                start="-20"
-                end="-20"
+                start="0"
+                end="0"
                 startDist="0"
                 endDist="100"
             />
@@ -496,8 +496,8 @@
                 endDist="100"
             />
             <CriticalChancePercent
-                start="-20"
-                end="-20"
+                start="0"
+                end="0"
                 startDist="0"
                 endDist="100"
             />
@@ -529,13 +529,13 @@
                 endDist="40"
             />
             <CriticalChancePercent
-                start="20"
-                end="-50"
-                startDist="5"
-                endDist="20"
+                start="0"
+                end="0"
+                startDist="0"
+                endDist="100"
             />
             <ArmorPenetration
-                start="60"
+                start="70"
                 end="20"
                 startDist="5"
                 endDist="20"
@@ -555,16 +555,17 @@
             roundsPerSecond="7.7"
             audibleSoundRadius="70"
             physicsImpactForce="0.8"
+            suppressionScale="0.80"
         >
             <Damage
-                start="26"
-                end="22"
+                start="24"
+                end="20"
                 startDist="0"
                 endDist="100"
             />
             <CriticalChancePercent
-                start="-20"
-                end="-20"
+                start="0"
+                end="0"
                 startDist="0"
                 endDist="100"
             />
@@ -587,22 +588,23 @@
             roundsPerSecond="7.7"
             audibleSoundRadius="70"
             physicsImpactForce="0.8"
+            suppressionScale="0.80"
         >
             <Damage
-                start="32"
-                end="28"
+                start="28"
+                end="24"
                 startDist="0"
                 endDist="100"
             />
             <CriticalChancePercent
-                start="16"
-                end="-20"
+                start="15"
+                end="15"
                 startDist="0"
                 endDist="100"
             />
             <ArmorPenetration
-                start="40"
-                end="40"
+                start="50"
+                end="50"
                 startDist="0"
                 endDist="100"
             />
@@ -669,7 +671,7 @@
                 endDist="20"
             />
             <ArmorPenetration
-                start="60"
+                start="70"
                 end="20"
                 startDist="5"
                 endDist="20"
@@ -2706,7 +2708,7 @@
 <!-- STECHKIN KSENIA -->
 
     <Ammo
-        name="919JHP_GFL_STECHKIN"
+        name="9x18JHPOVER_GFL_STECHKIN"
         tooltip="@ammo_919_jhp_over_name"
         description="@ammo_919_jhp_over_desc"
         img="data/models/weapons/attachments/m882_ammo_ui.dds"
@@ -2717,14 +2719,14 @@
             physicsImpactForce="1.5"
         >
             <Damage
-                start="28"
-                end="26"
+                start="38"
+                end="34"
                 startDist="0"
-                endDist="40"
+                endDist="50"
             />
             <CriticalChancePercent
-                start="20"
-                end="20"
+                start="25"
+                end="25"
                 startDist="0"
                 endDist="50"
             />
@@ -2732,13 +2734,13 @@
                 start="50"
                 end="20"
                 startDist="0"
-                endDist="70"
+                endDist="50"
             />
         </Params>
     </Ammo>
 
     <Ammo
-        name="919JHP_GFL_STECHKIN-SUP"
+        name="9x18JHPOVER_GFL_STECHKIN-SUP"
         tooltip="@ammo_919_jhp_over_name"
         description="@ammo_919_jhp_over_desc"
         img="data/models/weapons/attachments/m882_ammo_ui.dds"
@@ -2750,14 +2752,14 @@
             silenced="1"
         >
             <Damage
-                start="28"
-                end="26"
+                start="38"
+                end="34"
                 startDist="0"
-                endDist="40"
+                endDist="50"
             />
             <CriticalChancePercent
-                start="20"
-                end="20"
+                start="25"
+                end="25"
                 startDist="0"
                 endDist="50"
             />
@@ -2765,47 +2767,47 @@
                 start="50"
                 end="20"
                 startDist="0"
-                endDist="70"
+                endDist="50"
             />
         </Params>
     </Ammo>
 
-<!-- NAGANT -->
+<!-- M1895 NAGANT -->
 
     <Ammo
-        name="762NAG_GFL_NAGANT"
+        name="762x38MMR_GFL_NAGANT"
         tooltip="@ammo_919_jhp_over_name"
         description="@ammo_919_jhp_over_desc"
         img="data/models/weapons/attachments/m882_ammo_ui.dds"
     >
         <Params
-            roundsPerSecond="1.5"
+            roundsPerSecond="4"
             audibleSoundRadius="50"
             physicsImpactForce="1.5"
         >
             <Damage
-                start="28"
-                end="26"
+                start="52"
+                end="48"
                 startDist="0"
                 endDist="40"
             />
             <CriticalChancePercent
-                start="20"
-                end="20"
+                start="40"
+                end="40"
                 startDist="0"
                 endDist="50"
             />
             <ArmorPenetration
                 start="50"
-                end="20"
+                end="50"
                 startDist="0"
-                endDist="70"
+                endDist="100"
             />
         </Params>
     </Ammo>
 
     <Ammo
-        name="762NAG_GFL_NAGANT-SUP"
+        name="762x38MMR_GFL_NAGANT-SUP"
         tooltip="@ammo_919_jhp_over_name"
         description="@ammo_919_jhp_over_desc"
         img="data/models/weapons/attachments/m882_ammo_ui.dds"
@@ -2817,22 +2819,22 @@
             silenced="1"
         >
             <Damage
-                start="28"
-                end="26"
+                start="52"
+                end="48"
                 startDist="0"
                 endDist="40"
             />
             <CriticalChancePercent
-                start="20"
-                end="20"
+                start="40"
+                end="40"
                 startDist="0"
                 endDist="50"
             />
             <ArmorPenetration
                 start="50"
-                end="20"
+                end="50"
                 startDist="0"
-                endDist="70"
+                endDist="100"
             />
         </Params>
     </Ammo>
@@ -2840,7 +2842,7 @@
 <!-- MOSIN-NAGANT -->
 
     <Ammo
-        name="762R_GFL_MOSINNAGANT"
+        name="762x54MMR_GFL_MOSINNAGANT"
         tooltip="@ammo_50bmg_fmj_name"
         description="@ammo_50bmg_fmj_desc"
         img="data/models/weapons/attachments/m855_ammo_ui.dds"
@@ -2851,20 +2853,20 @@
             physicsImpactForce="3.0"
         >
             <Damage
-                start="80"
-                end="80"
+                start="62"
+                end="58"
                 startDist="0"
                 endDist="100"
             />
             <CriticalChancePercent
-                start="50"
-                end="50"
+                start="60"
+                end="60"
                 startDist="0"
                 endDist="100"
             />
             <ArmorPenetration
-                start="70"
-                end="70"
+                start="60"
+                end="60"
                 startDist="0"
                 endDist="100"
             />
@@ -2872,7 +2874,7 @@
     </Ammo>
 
     <Ammo
-        name="762R_GFL_MOSINNAGANT-SUP"
+        name="762x54MMR_GFL_MOSINNAGANT-SUP"
         tooltip="@ammo_50bmg_fmj_name"
         description="@ammo_50bmg_fmj_desc"
         img="data/models/weapons/attachments/m855_ammo_ui.dds"
@@ -2884,20 +2886,20 @@
             silenced="1"
         >
             <Damage
-                start="80"
-                end="80"
+                start="62"
+                end="58"
                 startDist="0"
                 endDist="100"
             />
             <CriticalChancePercent
-                start="50"
-                end="50"
+                start="60"
+                end="60"
                 startDist="0"
                 endDist="100"
             />
             <ArmorPenetration
-                start="70"
-                end="70"
+                start="60"
+                end="60"
                 startDist="0"
                 endDist="100"
             />
@@ -2907,25 +2909,25 @@
 <!-- PPSH-41 PAPASHA -->
 
     <Ammo
-        name="762TT_GFL_PPSH41"
+        name="762x25TT_GFL_PPSH41"
         tooltip="@ammo_919_jhp_over_name"
         description="@ammo_919_jhp_over_desc"
         img="data/models/weapons/attachments/m1152_ammo_ui.dds"
     >
         <Params
-            roundsPerSecond="16"
+            roundsPerSecond="20.8"
             audibleSoundRadius="50"
             physicsImpactForce="1.5"
         >
             <Damage
-                start="22"
+                start="24"
                 end="20"
                 startDist="0"
                 endDist="50"
             />
             <CriticalChancePercent
-                start="-20"
-                end="-20"
+                start="0"
+                end="0"
                 startDist="0"
                 endDist="100"
             />
