@@ -41,7 +41,7 @@
         >
             <Damage
                 start="28"
-                end="25"
+                end="24"
                 startDist="0"
                 endDist="100"
             />
@@ -108,7 +108,7 @@
         >
             <Damage
                 start="28"
-                end="25"
+                end="24"
                 startDist="0"
                 endDist="100"
             />
@@ -161,8 +161,6 @@
             />
         </Params>
     </Ammo>
-
-<!-- PA-15 FLORENCE (SUPPRESSED) -->
 
     <Ammo
         name="919JHPOVER_GFL_PA15-SUP"
@@ -231,6 +229,179 @@
         </Params>
     </Ammo>
 
+<!-- MP5 PERI -->
+
+    <Ammo
+        name="919JHPOVER_GFL_MP5"
+        tooltip="@ammo_919_jhp_over_name"
+        description="@ammo_919_jhp_over_desc"
+        img="data/models/weapons/attachments/m1152_ammo_ui.dds"
+    >
+        <Params
+            roundsPerSecond="13.3"
+            audibleSoundRadius="50"
+            physicsImpactForce="1.5"
+        >
+            <Damage
+                start="38"
+                end="34"
+                startDist="0"
+                endDist="50"
+            />
+            <CriticalChancePercent
+                start="0"
+                end="0"
+                startDist="0"
+                endDist="50"
+            />
+            <ArmorPenetration
+                start="50"
+                end="20"
+                startDist="0"
+                endDist="50"
+            />
+        </Params>
+    </Ammo>
+
+    <Ammo
+        name="919SQUEAKFLASH_GFL_MP5" unlockCost="6"
+        tooltip="@ammo_919_squeak_flash_name"
+        description="@ammo_919_squeak_flash_desc"
+        img="data/models/weapons/attachments/m1153_ammo_ui.dds"
+    >
+        <Params
+            roundsPerSecond="13.3"
+            audibleSoundRadius="50"
+            physicsImpactForce="1.5"
+            suppressionScale="3.0"
+        >
+            <Damage
+                start="38"
+                end="34"
+                startDist="0"
+                endDist="40"
+            />
+            <CriticalChancePercent
+                start="0"
+                end="0"
+                startDist="0"
+                endDist="50"
+            />
+            <ArmorPenetration
+                start="20"
+                end="20"
+                startDist="0"
+                endDist="100"
+            />
+        </Params>
+    </Ammo>
+
+    <Ammo
+        name="919JHPOVER_GFL_MP5-SUP"
+        tooltip="@ammo_919_jhp_over_name"
+        description="@ammo_919_jhp_over_desc"
+        img="data/models/weapons/attachments/m1152_ammo_ui.dds"
+    >
+        <Params
+            roundsPerSecond="13.3"
+            audibleSoundRadius="25"
+            physicsImpactForce="1.5"
+            silenced="1"
+        >
+            <Damage
+                start="38"
+                end="34"
+                startDist="0"
+                endDist="50"
+            />
+            <CriticalChancePercent
+                start="0"
+                end="0"
+                startDist="0"
+                endDist="50"
+            />
+            <ArmorPenetration
+                start="50"
+                end="20"
+                startDist="0"
+                endDist="50"
+            />
+        </Params>
+    </Ammo>
+
+<!-- SPAS-12 SABRINA -->
+
+    <Ammo
+        name="12GA00BUCK_GFL_SPAS12"
+        tooltip="@ammo_12g00buck_name"
+        description="@ammo_12g00buck_desc"
+        img="data/models/weapons/attachments/m162_buckshot_ammo_ui.dds"
+    >
+        <!-- Rounds per Second should reflect the actual RPM of the gun/60. -->
+        <Params
+            roundsPerSecond="3.8"
+            audibleSoundRadius="100"
+            physicsImpactForce="2.0"
+            numPellets="9"
+            suppressionScale="0.25"
+        >
+            <Damage
+                start="16"
+                end="4"
+                startDist="0"
+                endDist="30"
+            />
+            <CriticalChancePercent
+                start="0"
+                end="0"
+                startDist="0"
+                endDist="100"
+            />
+            <ArmorPenetration
+                start="40"
+                end="20"
+                startDist="0"
+                endDist="20"
+            />
+        </Params>
+    </Ammo>
+
+    <Ammo
+        name="12GACALCIUMBIRDSHOT_GFL_SPAS12" unlockCost="6"
+        tooltip="@ammo_12gcalciumbirdshot_name"
+        description="@ammo_12gcalciumbirdshot_desc"
+        img="data/models/weapons/attachments/m257_buckshot_ammo24_ui.dds"
+    >
+        <!-- Rounds per Second should reflect the actual RPM of the gun/60. -->
+        <Params
+            roundsPerSecond="3.8"
+            audibleSoundRadius="100"
+            physicsImpactForce="2.0"
+            numPellets="32"
+            suppressionScale="0.01"
+            accuracyMultiplier="80"
+        >
+            <Damage
+                start="6"
+                end="2"
+                startDist="0"
+                endDist="15"
+            />
+            <CriticalChancePercent
+                start="0"
+                end="0"
+                startDist="0"
+                endDist="100"
+            />
+            <ArmorPenetration
+                start="15"
+                end="0"
+                startDist="0"
+                endDist="15"
+            />
+        </Params>
+    </Ammo>
+
 <!-- DEV -->
 
 <!-- AN94 ALVA -->
@@ -248,27 +419,25 @@
             physicsImpactForce="1.5"
         >
             <Damage
-                start="30"
-                end="26"
+                start="28"
+                end="24"
                 startDist="0"
                 endDist="100"
             />
             <CriticalChancePercent
-                start="0"
-                end="0"
+                start="40"
+                end="40"
                 startDist="0"
                 endDist="100"
             />
             <ArmorPenetration
-                start="70"
-                end="70"
+                start="50"
+                end="50"
                 startDist="0"
                 endDist="100"
             />
         </Params>
     </Ammo>
-
-<!-- AN-94 ALVA (SUPPRESSED) -->
 
     <Ammo
         name="545x39FMJAP_GFL_AN94-SUP"
@@ -283,14 +452,14 @@
             silenced="1"
         >
             <Damage
-                start="30"
-                end="26"
+                start="28"
+                end="24"
                 startDist="0"
                 endDist="100"
             />
             <CriticalChancePercent
-                start="0"
-                end="0"
+                start="40"
+                end="40"
                 startDist="0"
                 endDist="100"
             />
@@ -304,7 +473,8 @@
     </Ammo>
 
     <Ammo
-        name="545x39SUPCAV_GFL_AN94" unlockCost="6"
+        name="545x39SUPCAV_GFL_AN94"
+        unlockCost="6"
         tooltip="@ammo_556x39_supercavitator_defy_name"
         description="@ammo_556x39_supercavitator_defy_desc"
         img="data/models/weapons/attachments/m855_ammo_ui.dds"
@@ -316,20 +486,20 @@
             physicsImpactForce="1.5"
         >
             <Damage
-                start="52"
-                end="48"
+                start="36"
+                end="32"
                 startDist="0"
                 endDist="40"
             />
             <CriticalChancePercent
-                start="20"
-                end="20"
+                start="40"
+                end="40"
                 startDist="0"
                 endDist="100"
             />
             <ArmorPenetration
-                start="50"
-                end="50"
+                start="40"
+                end="30"
                 startDist="0"
                 endDist="100"
             />
@@ -426,8 +596,8 @@
                 endDist="40"
             />
             <CriticalChancePercent
-                start="20"
-                end="-10"
+                start="0"
+                end="0"
                 startDist="0"
                 endDist="100"
             />
@@ -597,14 +767,14 @@
                 endDist="100"
             />
             <CriticalChancePercent
-                start="15"
-                end="15"
+                start="0"
+                end="0"
                 startDist="0"
                 endDist="100"
             />
             <ArmorPenetration
-                start="50"
-                end="50"
+                start="40"
+                end="40"
                 startDist="0"
                 endDist="100"
             />
@@ -1764,8 +1934,8 @@
                 endDist="30"
             />
             <CriticalChancePercent
-                start="-15"
-                end="-15"
+                start="0"
+                end="0"
                 startDist="0"
                 endDist="100"
             />
@@ -1812,78 +1982,7 @@
         </Params>
     </Ammo>
 
-<!-- SPAS-12 SABRINA -->
 
-    <Ammo
-        name="12GA00BUCK_GFL_SPAS12"
-        tooltip="@ammo_12g00buck_name"
-        description="@ammo_12g00buck_desc"
-        img="data/models/weapons/attachments/m162_buckshot_ammo_ui.dds"
-    >
-        <!-- Rounds per Second should reflect the actual RPM of the gun/60. -->
-        <Params
-            roundsPerSecond="3.8"
-            audibleSoundRadius="100"
-            physicsImpactForce="2.0"
-            numPellets="9"
-            suppressionScale="0.25"
-        >
-            <Damage
-                start="16"
-                end="4"
-                startDist="0"
-                endDist="30"
-            />
-            <CriticalChancePercent
-                start="-20"
-                end="-20"
-                startDist="0"
-                endDist="100"
-            />
-            <ArmorPenetration
-                start="40"
-                end="20"
-                startDist="0"
-                endDist="20"
-            />
-        </Params>
-    </Ammo>
-
-    <Ammo
-        name="12GACALCIUMBIRDSHOT_GFL_SPAS12" unlockCost="6"
-        tooltip="@ammo_12gcalciumbirdshot_name"
-        description="@ammo_12gcalciumbirdshot_desc"
-        img="data/models/weapons/attachments/m257_buckshot_ammo24_ui.dds"
-    >
-        <!-- Rounds per Second should reflect the actual RPM of the gun/60. -->
-        <Params
-            roundsPerSecond="3.8"
-            audibleSoundRadius="100"
-            physicsImpactForce="2.0"
-            numPellets="32"
-            suppressionScale="0.01"
-            accuracyMultiplier="60"
-        >
-            <Damage
-                start="6"
-                end="2"
-                startDist="0"
-                endDist="15"
-            />
-            <CriticalChancePercent
-                start="-50"
-                end="-50"
-                startDist="0"
-                endDist="100"
-            />
-            <ArmorPenetration
-                start="15"
-                end="0"
-                startDist="0"
-                endDist="15"
-            />
-        </Params>
-    </Ammo>
 
 <!-- Type 97S QIUHUA -->
 
@@ -1918,108 +2017,6 @@
                 end="20"
                 startDist="0"
                 endDist="20"
-            />
-        </Params>
-    </Ammo>
-
-<!-- MP5 PERI -->
-
-    <Ammo
-        name="919JHPOVER_GFL_MP5"
-        tooltip="@ammo_919_jhp_over_name"
-        description="@ammo_919_jhp_over_desc"
-        img="data/models/weapons/attachments/m1152_ammo_ui.dds"
-    >
-
-        <Params
-            roundsPerSecond="13.3"
-            audibleSoundRadius="50"
-            physicsImpactForce="1.5"
-        >
-            <Damage
-                start="22"
-                end="20"
-                startDist="0"
-                endDist="50"
-            />
-            <CriticalChancePercent
-                start="-20"
-                end="-20"
-                startDist="0"
-                endDist="100"
-            />
-            <ArmorPenetration
-                start="40"
-                end="30"
-                startDist="0"
-                endDist="100"
-            />
-        </Params>
-    </Ammo>
-
-    <Ammo
-        name="919SQUEAKFLASH_GFL_MP5" unlockCost="6"
-        tooltip="@ammo_919_squeak_flash_name"
-        description="@ammo_919_squeak_flash_desc"
-        img="data/models/weapons/attachments/m1153_ammo_ui.dds"
-    >
-
-        <Params
-            roundsPerSecond="13.3"
-            audibleSoundRadius="50"
-            physicsImpactForce="1.5"
-            suppressionScale="3.0"
-        >
-            <Damage
-                start="14"
-                end="12"
-                startDist="0"
-                endDist="40"
-            />
-            <CriticalChancePercent
-                start="10"
-                end="-50"
-                startDist="0"
-                endDist="50"
-            />
-            <ArmorPenetration
-                start="20"
-                end="20"
-                startDist="0"
-                endDist="100"
-            />
-        </Params>
-    </Ammo>
-
-    <Ammo
-        name="919JHPOVER_GFL_MP5-SUP"
-        tooltip="@ammo_919_jhp_over_name"
-        description="@ammo_919_jhp_over_desc"
-        img="data/models/weapons/attachments/m1152_ammo_ui.dds"
-    >
-        <Params
-            roundsPerSecond="13.3"
-            audibleSoundRadius="25"
-            physicsImpactForce="1.5"
-            silenced="1"
-        >
-            <Damage
-                start="22"
-                end="20"
-                startDist="0"
-                endDist="50"
-            />
-            <CriticalChancePercent
-                start="-20"
-                end="-20"
-                startDist="0"
-                endDist="100"
-            />
-            <ArmorPenetration
-                start="40"
-                end="30"
-                startDist="0"
-                endDist="100"
             />
         </Params>
     </Ammo>

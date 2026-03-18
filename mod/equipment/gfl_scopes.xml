@@ -270,7 +270,7 @@ ex:
                 <AddTo
                     minAimTime2="+120"
                     maxAimTime2="+50"
-                    critChanceAdd="+23"
+                    critChanceAdd="+25"
                 />
             </AttackTypeModifier>
 
@@ -357,7 +357,7 @@ ex:
 
             <AttackTypeModifier minRange="0" maxRange="9999">
                 <AddTo
-                    minAimTime2="+250"
+                    minAimTime2="+270"
                     maxAimTime2="+150"
                     critChanceAdd="+40"
                 />
