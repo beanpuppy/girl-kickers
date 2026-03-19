@@ -1,10 +1,5 @@
 I loved the feedback you have so heres my proposed updates to the accuracy formula!
 
-
-
-
-
-
 ## General Weapon Accuracy Values 
 
     

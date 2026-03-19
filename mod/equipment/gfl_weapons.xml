@@ -1215,7 +1215,10 @@
     <Bind eqp="GFL-WEAP-G28">
         <to name="762FMJEPR_GFL_G28" />
 
-        <to name="scope_GFL_IronSights_Primary" />
+        <to name="scope_GFL_IronSights" />
+        <to name="scope_GFL_RedDot" />
+        <to name="scope_GFL_Holosight" />
+        <to name="scope_GFL_M68CCO" />
         <to name="scope_GFL_M150RCO" />
         <to name="scope_GFL_HoloMag3x" />
         <to name="scope_GFL_SpecterDR" />
@@ -1256,8 +1259,8 @@
             changeOutTime="0"
             readyTime="340"
             guardTime="160"
-            accuracyStart="40"
-            accuracyEnd="80"
+            accuracyStart="180"
+            accuracyEnd="180"
             accuracyStartDist="4"
             accuracyEndDist="50"
             suppressionScale="1.12"
@@ -1274,18 +1277,14 @@
         />
 
         <AttackTypes>
-            <AttackType name="GFL_G28_PrecisionFireNear" rangeMeters="8" />
-            <AttackType name="GFL_G28_PrecisionFireClose" inCoverOverride="GFL_G28_PrecisionFireCloseMounted" rangeMeters="16" />
-            <AttackType name="GFL_G28_PrecisionFireMed" inCoverOverride="GFL_G28_PrecisionFireMedMounted" rangeMeters="28" />
-            <AttackType name="GFL_G28_PrecisionFireFar" inCoverOverride="GFL_G28_PrecisionFireFarMounted" rangeMeters="52" />
-            <AttackType name="GFL_G28_PrecisionFireExt" inCoverOverride="GFL_G28_PrecisionFireExtMounted" rangeMeters="9999" />
 
-            <!-- For testing purposes -->
-            <!-- <AttackType name="GFL_G28_PrecisionFireNear" rangeMeters="7" />
-            <AttackType name="GFL_G28_PrecisionFireClose" inCoverOverride="GFL_G28_PrecisionFireCloseMounted" rangeMeters="9" />
-            <AttackType name="GFL_G28_PrecisionFireMed" inCoverOverride="GFL_G28_PrecisionFireMedMounted" rangeMeters="12" />
-            <AttackType name="GFL_G28_PrecisionFireFar" inCoverOverride="GFL_G28_PrecisionFireFarMounted" rangeMeters="17" />
-            <AttackType name="GFL_G28_PrecisionFireExt" inCoverOverride="GFL_G28_PrecisionFireExtMounted" rangeMeters="9999" /> -->
+            <AttackType name="GFL_CQC_G28" rangeMeters="4" />
+            <AttackType name="GFL_Near_G28" rangeMeters="8" />
+            <AttackType name="GFL_Close_G28" inCoverOverride="GFL_CloseMounted_G28" rangeMeters="12" />
+            <AttackType name="GFL_Medium_G28" inCoverOverride="GFL_MediumMounted_G28" rangeMeters="16" />
+            <AttackType name="GFL_MedEdge_G28" inCoverOverride="GFL_MedEdgeMounted_G28" rangeMeters="20" />
+            <AttackType name="GFL_Extended_G28" inCoverOverride="GFL_ExtendedMounted_G28" rangeMeters="9999" />
+
         </AttackTypes>
 
         <MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
