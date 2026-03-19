@@ -92,22 +92,26 @@ def ReadGeometry(file, pMesh):
     # Read all vertices in bulk (3 floats per vertex, swizzle x,-z,y)
     buf = file.read(n * 12)
     pMesh.pVertices = [
-        Vector((
-            struct.unpack_from("f", buf, i * 12)[0],
-            -struct.unpack_from("f", buf, i * 12 + 8)[0],
-            struct.unpack_from("f", buf, i * 12 + 4)[0],
-        ))
+        Vector(
+            (
+                struct.unpack_from("f", buf, i * 12)[0],
+                -struct.unpack_from("f", buf, i * 12 + 8)[0],
+                struct.unpack_from("f", buf, i * 12 + 4)[0],
+            )
+        )
         for i in range(n)
     ]
 
     # Read all normals in bulk (same swizzle)
     buf = file.read(n * 12)
     pMesh.pNormals = [
-        Vector((
-            struct.unpack_from("f", buf, i * 12)[0],
-            -struct.unpack_from("f", buf, i * 12 + 8)[0],
-            struct.unpack_from("f", buf, i * 12 + 4)[0],
-        ))
+        Vector(
+            (
+                struct.unpack_from("f", buf, i * 12)[0],
+                -struct.unpack_from("f", buf, i * 12 + 8)[0],
+                struct.unpack_from("f", buf, i * 12 + 4)[0],
+            )
+        )
         for i in range(n)
     ]
 
@@ -120,11 +124,13 @@ def ReadGeometry(file, pMesh):
     uiNumFaces = pMesh.numIndices // 3
     buf = file.read(uiNumFaces * 12)
     pMesh.pFaceNormals = [
-        Vector((
-            struct.unpack_from("f", buf, i * 12)[0],
-            -struct.unpack_from("f", buf, i * 12 + 8)[0],
-            struct.unpack_from("f", buf, i * 12 + 4)[0],
-        ))
+        Vector(
+            (
+                struct.unpack_from("f", buf, i * 12)[0],
+                -struct.unpack_from("f", buf, i * 12 + 8)[0],
+                struct.unpack_from("f", buf, i * 12 + 4)[0],
+            )
+        )
         for i in range(uiNumFaces)
     ]
 
@@ -133,8 +139,7 @@ def ReadGeometry(file, pMesh):
     if hasVertColors == 1:
         buf = file.read(n * 4)
         pMesh.pColors = [
-            [b / 255.0 for b in struct.unpack_from("4B", buf, i * 4)]
-            for i in range(n)
+            [b / 255.0 for b in struct.unpack_from("4B", buf, i * 4)] for i in range(n)
         ]
 
     # read tx coords
@@ -373,7 +378,10 @@ def SpawnAnimationMask(context, pModelDefinition):
 
     for pose_bone in b_obj.pose.bones:
         if pose_bone.name in bones_to_highlight:
-            pose_bone.bone.select = True
+            try:
+                pose_bone.bone.select = True
+            except AttributeError:
+                pass  # Blender version lacks Bone.select
 
 
 def SpawnAnimation(context, pModelDefinition):
@@ -412,6 +420,12 @@ def SpawnAnimation(context, pModelDefinition):
         local_matrixes[n] = local_matrix
 
     bpy.ops.object.mode_set(mode="POSE")
+
+    # Ensure armature has an action for keyframes
+    if b_obj.animation_data is None:
+        b_obj.animation_data_create()
+    if b_obj.animation_data.action is None:
+        b_obj.animation_data.action = bpy.data.actions.new(name="KHM_Animation")
 
     num_frames = pModelDefinition.pAnimation.numNodeFrames
     num_nodes = pModelDefinition.pAnimation.numNodes
@@ -454,6 +468,26 @@ def SpawnAnimation(context, pModelDefinition):
     context.scene.frame_end = num_frames
     fps = 1000 / pModelDefinition.pAnimation.frameDurationMs
     context.scene.render.fps = int(fps)
+
+    # Remove redundant keyframes where values don't change between frames
+    action = b_obj.animation_data.action
+    if action:
+        for fcurve in action.fcurves:
+            keyframes = fcurve.keyframe_points
+            if len(keyframes) < 3:
+                continue
+            to_remove = []
+            for i in range(1, len(keyframes) - 1):
+                prev_val = keyframes[i - 1].co[1]
+                curr_val = keyframes[i].co[1]
+                next_val = keyframes[i + 1].co[1]
+                if (
+                    abs(curr_val - prev_val) < 0.0001
+                    and abs(curr_val - next_val) < 0.0001
+                ):
+                    to_remove.append(i)
+            for i in reversed(to_remove):
+                keyframes.remove(keyframes[i])
 
 
 def SpawnModel(context, pModelDefinition):
@@ -578,7 +612,9 @@ def SpawnModel(context, pModelDefinition):
                         vg_name = f"Bone_{bone_idx}"
                         b_obj.vertex_groups.new(name=vg_name)
                         skin_targets[bone_idx] = vg_name
-                        print(f"[Warning] Created placeholder vertex group '{vg_name}' for unknown bone ID {bone_idx}")
+                        print(
+                            f"[Warning] Created placeholder vertex group '{vg_name}' for unknown bone ID {bone_idx}"
+                        )
                     if bone_idx not in group_weights:
                         group_weights[bone_idx] = []
                     group_weights[bone_idx].append((i, weight))
@@ -678,6 +714,12 @@ def SpawnModel(context, pModelDefinition):
     bpy.ops.object.mode_set(mode="OBJECT")
 
     if pModelDefinition.lBones != None:
+        # Bone parenting must happen in edit mode where EditBone refs are valid
+        bpy.ops.object.select_all(action="DESELECT")
+        amt_ob.select_set(True)
+        bpy.context.view_layer.objects.active = amt_ob
+        bpy.ops.object.mode_set(mode="EDIT")
+
         for bone in pModelDefinition.lBones:  # parent the bones
             if bone.uiParentId != -1:
                 assert bone.uiParentId in id_to_obj
@@ -685,6 +727,8 @@ def SpawnModel(context, pModelDefinition):
 
         for bone in pModelDefinition.lBones:
             id_to_obj[bone.uiId].matrix = bone.matGlobal
+
+        bpy.ops.object.mode_set(mode="OBJECT")
 
         # for bone in pModelDefinition.lBones:
         #     if bone.uiParentId != -1:
@@ -709,9 +753,15 @@ def SpawnModel(context, pModelDefinition):
     if pModelDefinition.pMesh != None:
         if pModelDefinition.pMesh.uiParentId != -1:
             assert pModelDefinition.pMesh.uiParentId in id_to_obj
-            id_to_obj[pModelDefinition.pMesh.uiId].parent = id_to_obj[
-                pModelDefinition.pMesh.uiParentId
-            ]
+            parent_candidate = id_to_obj[pModelDefinition.pMesh.uiParentId]
+            mesh_obj = id_to_obj[pModelDefinition.pMesh.uiId]
+            if isinstance(parent_candidate, bpy.types.EditBone):
+                # EditBones can't be Object parents; parent to armature with bone target
+                mesh_obj.parent = amt_ob
+                mesh_obj.parent_type = "BONE"
+                mesh_obj.parent_bone = parent_candidate.name
+            else:
+                mesh_obj.parent = parent_candidate
 
         for obj in spawned_extra_objects:
             obj.parent = id_to_obj[pModelDefinition.pMesh.uiId]
