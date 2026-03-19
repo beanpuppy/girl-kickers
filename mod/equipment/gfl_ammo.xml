@@ -893,7 +893,7 @@
         name="45ACPJHPOVER_GFL_UMP45"
         tooltip="@ammo_45_jhp_over_name"
         description="@ammo_45_jhp_over_desc"
-        img="data/models/weapons/attachments/m855_ammo_ui.dds"
+        img="data/models/weapons/attachments/m1152_ammo_ui.dds"
     >
         <Params
             roundsPerSecond="11.7"
@@ -901,14 +901,14 @@
             physicsImpactForce="1.7"
         >
             <Damage
-                start="30"
-                end="28"
+                start="40"
+                end="36"
                 startDist="0"
-                endDist="40"
+                endDist="50"
             />
             <CriticalChancePercent
-                start="-15"
-                end="-15"
+                start="0"
+                end="0"
                 startDist="0"
                 endDist="100"
             />
@@ -928,7 +928,7 @@
         name="45ACPJHPOVER_GFL_UMP45-SUP"
         tooltip="@ammo_45_jhp_over_name"
         description="@ammo_45_jhp_over_desc"
-        img="data/models/weapons/attachments/m855_ammo_ui.dds"
+        img="data/models/weapons/attachments/m1152_ammo_ui.dds"
     >
         <Params
             roundsPerSecond="11.7"
@@ -937,14 +937,14 @@
             silenced="1"
         >
             <Damage
-                start="30"
-                end="28"
+                start="40"
+                end="36"
                 startDist="0"
-                endDist="40"
+                endDist="50"
             />
             <CriticalChancePercent
-                start="-15"
-                end="-15"
+                start="0"
+                end="0"
                 startDist="0"
                 endDist="100"
             />
@@ -961,23 +961,23 @@
         name="45ACPEWSPEC_GFL_UMP45" unlockCost="6"
         tooltip="@ammo_45_ew_spec_name"
         description="@ammo_45_ew_spec_desc"
-        img="data/models/weapons/attachments/m855_ammo_ui.dds"
+        img="data/models/weapons/attachments/m1153_ammo_ui.dds"
     >
         <Params
             roundsPerSecond="10"
             audibleSoundRadius="50"
             physicsImpactForce="1.5"
-            suppressionScale="3.5"
+            suppressionScale="4.5"
         >
             <Damage
-                start="15"
-                end="13"
+                start="22"
+                end="18"
                 startDist="0"
-                endDist="40"
+                endDist="50"
             />
             <CriticalChancePercent
                 start="10"
-                end="-50"
+                end="-20"
                 startDist="0"
                 endDist="50"
             />
@@ -1005,14 +1005,14 @@
             physicsImpactForce="1.5"
         >
             <Damage
-                start="28"
-                end="26"
+                start="38"
+                end="34"
                 startDist="0"
-                endDist="40"
+                endDist="50"
             />
             <CriticalChancePercent
-                start="-15"
-                end="-15"
+                start="0"
+                end="0"
                 startDist="0"
                 endDist="50"
             />
@@ -1020,12 +1020,10 @@
                 start="50"
                 end="20"
                 startDist="0"
-                endDist="70"
+                endDist="50"
             />
         </Params>
     </Ammo>
-
-<!-- UMP9 LENNA (SUPPRESSED) -->
 
     <Ammo
         name="919JHPOVER_GFL_UMP9-SUP"
@@ -1040,14 +1038,14 @@
             silenced="1"
         >
             <Damage
-                start="28"
-                end="26"
+                start="38"
+                end="34"
                 startDist="0"
-                endDist="40"
+                endDist="50"
             />
             <CriticalChancePercent
-                start="-15"
-                end="-15"
+                start="0"
+                end="0"
                 startDist="0"
                 endDist="50"
             />
@@ -1055,7 +1053,7 @@
                 start="50"
                 end="20"
                 startDist="0"
-                endDist="70"
+                endDist="50"
             />
         </Params>
     </Ammo>
@@ -1074,14 +1072,14 @@
             suppressionScale="3.0"
         >
             <Damage
-                start="14"
-                end="12"
+                start="18"
+                end="14"
                 startDist="0"
-                endDist="40"
+                endDist="50"
             />
             <CriticalChancePercent
-                start="10"
-                end="-50"
+                start="15"
+                end="-15"
                 startDist="0"
                 endDist="50"
             />
@@ -1110,21 +1108,21 @@
         >
             <Damage
                 start="26"
-                end="24"
+                end="22"
                 startDist="0"
-                endDist="40"
+                endDist="50"
             />
             <CriticalChancePercent
-                start="-25"
-                end="-25"
+                start="0"
+                end="0"
                 startDist="0"
                 endDist="100"
             />
             <ArmorPenetration
-                start="30"
+                start="40"
                 end="20"
                 startDist="0"
-                endDist="100"
+                endDist="50"
             />
         </Params>
     </Ammo>
@@ -1141,14 +1139,14 @@
             physicsImpactForce="1.7"
         >
             <Damage
-                start="30"
-                end="28"
+                start="22"
+                end="18"
                 startDist="0"
                 endDist="40"
             />
             <CriticalChancePercent
-                start="-10"
-                end="-10"
+                start="10"
+                end="10"
                 startDist="0"
                 endDist="100"
             />
