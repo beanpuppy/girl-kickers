@@ -1171,7 +1171,7 @@
             roundsPerSecond="0.7"
             audibleSoundRadius="100"
             physicsImpactForce="4.0"
-            suppressionScale="2.0"
+            suppressionScale="1000.0"
         >
             <Damage
                 start="62"
@@ -1180,14 +1180,14 @@
                 endDist="100"
             />
             <CriticalChancePercent
-                start="60"
-                end="60"
+                start="40"
+                end="40"
                 startDist="0"
                 endDist="100"
             />
             <ArmorPenetration
-                start="60"
-                end="60"
+                start="70"
+                end="70"
                 startDist="0"
                 endDist="100"
             />
@@ -1216,14 +1216,14 @@
                 endDist="100"
             />
             <CriticalChancePercent
-                start="60"
-                end="60"
+                start="40"
+                end="40"
                 startDist="0"
                 endDist="100"
             />
             <ArmorPenetration
-                start="60"
-                end="60"
+                start="70"
+                end="70"
                 startDist="0"
                 endDist="100"
             />
@@ -1251,14 +1251,14 @@
                 endDist="50"
             />
             <CriticalChancePercent
-                start="45"
-                end="45"
+                start="35"
+                end="35"
                 startDist="0"
                 endDist="100"
             />
             <ArmorPenetration
-                start="60"
-                end="60"
+                start="70"
+                end="70"
                 startDist="0"
                 endDist="100"
             />
@@ -1313,14 +1313,14 @@
                 endDist="100"
             />
             <CriticalChancePercent
-                start="60"
-                end="60"
+                start="40"
+                end="40"
                 startDist="0"
                 endDist="100"
             />
             <ArmorPenetration
-                start="60"
-                end="60"
+                start="70"
+                end="70"
                 startDist="0"
                 endDist="100"
             />
@@ -1350,14 +1350,14 @@
                 endDist="100"
             />
             <CriticalChancePercent
-                start="60"
-                end="60"
+                start="40"
+                end="40"
                 startDist="0"
                 endDist="100"
             />
             <ArmorPenetration
-                start="60"
-                end="60"
+                start="70"
+                end="70"
                 startDist="0"
                 endDist="100"
             />
@@ -1384,14 +1384,14 @@
                 endDist="100"
             />
             <CriticalChancePercent
-                start="60"
-                end="60"
+                start="45"
+                end="45"
                 startDist="0"
                 endDist="100"
             />
             <ArmorPenetration
-                start="60"
-                end="60"
+                start="70"
+                end="70"
                 startDist="0"
                 endDist="100"
             />
@@ -1444,8 +1444,8 @@
                 endDist="100"
             />
             <CriticalChancePercent
-                start="-20"
-                end="-20"
+                start="0"
+                end="0"
                 startDist="0"
                 endDist="100"
             />
@@ -1457,8 +1457,6 @@
             />
         </Params>
     </Ammo>
-
-<!-- G36 CENTAUREISSI (SUPPRESSED) -->
 
     <Ammo
         name="556FMJEPR_GFL_G36-SUP"
@@ -1479,8 +1477,8 @@
                 endDist="100"
             />
             <CriticalChancePercent
-                start="-20"
-                end="-20"
+                start="0"
+                end="0"
                 startDist="0"
                 endDist="100"
             />
