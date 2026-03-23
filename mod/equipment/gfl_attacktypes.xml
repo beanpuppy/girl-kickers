@@ -1,10 +1,6 @@
 <FirearmAttackTypes>
 
 <!-- XCR SHARKRY, THE STANDARD OF ALL ASSAULT RIFLE ATTACK TYPES -->
-<!-- Note: I am not the most hardcore Sharkry simp, but I chose her to be the standard of all longarm type signature weapons because she runs an AR-15 style format rifle chambered in a very common round. Sharkry is never depicted as too exceptional in combat yet she is shown to be able to hold her own in missions with Dolls that have more combat experience with her, namely Makiatto, Springfield and Centaureissi, which makes her a perfect candidate to have most of the dolls based on. -->
-
-    <!-- Attack Type ranges will be usually divided into Near (Under 8m), Close (Under 16m), Med (Under 28m) , Far (under 52m), Ext (beyond 52m). This is to help coincide with scope effectiveness. Take note that engagements that happen at Ext ranges are ultra rare, but they do exist.-->
-
 
     <AttackType name="GFL_CQC_XCR">
     <!-- Under 4m. -->
@@ -44,7 +40,7 @@
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="300"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="10"
@@ -59,7 +55,7 @@
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="350"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="5"
@@ -74,7 +70,7 @@
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="350"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="5"
@@ -87,9 +83,9 @@
             minAimTime="350"
             maxAimTime="500"
             roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="500"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="5"
@@ -122,7 +118,7 @@
             minShots="1"
             maxShots="3"
             resetTime="450"
-            accuracyAdd="0"
+            accuracyAdd="-500"
             followupShotAccuracyAdd="0"
             critChanceAdd="10"
         />
@@ -228,7 +224,7 @@
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="300"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="5"
@@ -243,7 +239,7 @@
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="350"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="5"
@@ -258,7 +254,7 @@
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="350"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="5"
@@ -271,9 +267,9 @@
             minAimTime="330"
             maxAimTime="480"
             roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="500"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="5"
@@ -320,7 +316,7 @@
             roundsPerSecondOverride="0"
             minShots="1"
             maxShots="2"
-            resetTime="300"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="5"
@@ -335,7 +331,7 @@
             roundsPerSecondOverride="0"
             minShots="1"
             maxShots="2"
-            resetTime="350"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="5"
@@ -350,7 +346,7 @@
             roundsPerSecondOverride="0"
             minShots="1"
             maxShots="2"
-            resetTime="350"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="5"
@@ -365,7 +361,7 @@
             roundsPerSecondOverride="0"
             minShots="1"
             maxShots="2"
-            resetTime="500"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="5"
@@ -385,7 +381,7 @@
             roundsPerSecondOverride="30"
             minShots="2"
             maxShots="2"
-            resetTime="350"
+            resetTime="300"
             accuracyAdd="40"
             followupShotAccuracyAdd="0"
             critChanceAdd="0"
@@ -400,7 +396,7 @@
             roundsPerSecondOverride="30"
             minShots="2"
             maxShots="2"
-            resetTime="350"
+            resetTime="300"
             accuracyAdd="40"
             followupShotAccuracyAdd="0"
             critChanceAdd="0"
@@ -415,7 +411,7 @@
             roundsPerSecondOverride="30"
             minShots="2"
             maxShots="2"
-            resetTime="350"
+            resetTime="300"
             accuracyAdd="40"
             followupShotAccuracyAdd="0"
             critChanceAdd="0"
@@ -430,7 +426,7 @@
             roundsPerSecondOverride="0"
             minShots="2"
             maxShots="2"
-            resetTime="350"
+            resetTime="300"
             accuracyAdd="40"
             followupShotAccuracyAdd="0"
             critChanceAdd="0"
@@ -445,7 +441,7 @@
             roundsPerSecondOverride="0"
             minShots="2"
             maxShots="2"
-            resetTime="350"
+            resetTime="300"
             accuracyAdd="30"
             followupShotAccuracyAdd="0"
             critChanceAdd="0"
@@ -460,7 +456,7 @@
             roundsPerSecondOverride="0"
             minShots="2"
             maxShots="2"
-            resetTime="500"
+            resetTime="300"
             accuracyAdd="20"
             followupShotAccuracyAdd="0"
             critChanceAdd="0"
@@ -481,7 +477,7 @@
             minShots="3"
             maxShots="-1"
             resetTime="250"
-            accuracyAdd="10"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="20"
         />
@@ -496,7 +492,7 @@
             minShots="3"
             maxShots="-1"
             resetTime="250"
-            accuracyAdd="10"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="20"
         />
@@ -510,8 +506,8 @@
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="300"
-            accuracyAdd="5"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="20"
         />
@@ -525,8 +521,8 @@
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="350"
-            accuracyAdd="5"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="20"
         />
@@ -540,8 +536,8 @@
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="350"
-            accuracyAdd="5"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="20"
         />
@@ -553,10 +549,10 @@
             minAimTime="350"
             maxAimTime="500"
             roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="500"
-            accuracyAdd="5"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="20"
         />
@@ -590,7 +586,7 @@
             minShots="3"
             maxShots="-1"
             resetTime="250"
-            accuracyAdd="10"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="10"
         />
@@ -604,8 +600,8 @@
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="300"
-            accuracyAdd="10"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="10"
         />
@@ -619,8 +615,8 @@
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="350"
-            accuracyAdd="10"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="10"
         />
@@ -634,8 +630,8 @@
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="350"
-            accuracyAdd="10"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="10"
             critChanceAdd="10"
         />
@@ -647,10 +643,10 @@
             minAimTime="350"
             maxAimTime="500"
             roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="500"
-            accuracyAdd="10"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="5"
             critChanceAdd="10"
         />
@@ -696,7 +692,7 @@
             roundsPerSecondOverride="35"
             minShots="3"
             maxShots="3"
-            resetTime="350"
+            resetTime="300"
             accuracyAdd="50"
             followupShotAccuracyAdd="0"
             critChanceAdd="0"
@@ -711,7 +707,7 @@
             roundsPerSecondOverride="35"
             minShots="3"
             maxShots="3"
-            resetTime="400"
+            resetTime="300"
             accuracyAdd="50"
             followupShotAccuracyAdd="0"
             critChanceAdd="0"
@@ -726,7 +722,7 @@
             roundsPerSecondOverride="35"
             minShots="3"
             maxShots="3"
-            resetTime="400"
+            resetTime="300"
             accuracyAdd="50"
             followupShotAccuracyAdd="0"
             critChanceAdd="0"
@@ -741,7 +737,7 @@
             roundsPerSecondOverride="35"
             minShots="3"
             maxShots="3"
-            resetTime="500"
+            resetTime="300"
             accuracyAdd="50"
             followupShotAccuracyAdd="0"
             critChanceAdd="0"
@@ -788,7 +784,7 @@
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="300"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="0"
@@ -803,7 +799,7 @@
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="350"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="20"
@@ -818,7 +814,7 @@
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="350"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="0"
@@ -831,9 +827,9 @@
             minAimTime="350"
             maxAimTime="500"
             roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="500"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="0"
@@ -847,7 +843,7 @@
         <ModifiableParams
             minAimTime="340"
             maxAimTime="340"
-            roundsPerSecondOverride="4.5"
+            roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
             resetTime="250"
@@ -861,7 +857,7 @@
         <ModifiableParams
             minAimTime="340"
             maxAimTime="340"
-            roundsPerSecondOverride="4.5"
+            roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
             resetTime="250"
@@ -875,10 +871,10 @@
         <ModifiableParams
             minAimTime="350"
             maxAimTime="400"
-            roundsPerSecondOverride="1.2"
+            roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="300"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
         />
@@ -889,10 +885,10 @@
         <ModifiableParams
             minAimTime="350"
             maxAimTime="400"
-            roundsPerSecondOverride="1.2"
+            roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="300"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="25"
@@ -904,10 +900,10 @@
         <ModifiableParams
             minAimTime="350"
             maxAimTime="450"
-            roundsPerSecondOverride="1.2"
+            roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="350"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
         />
@@ -918,10 +914,10 @@
         <ModifiableParams
             minAimTime="350"
             maxAimTime="450"
-            roundsPerSecondOverride="1.2"
+            roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="350"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="25"
@@ -933,10 +929,10 @@
         <ModifiableParams
             minAimTime="350"
             maxAimTime="450"
-            roundsPerSecondOverride="1.2"
+            roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="350"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
         />
@@ -947,10 +943,10 @@
         <ModifiableParams
             minAimTime="350"
             maxAimTime="450"
-            roundsPerSecondOverride="1.2"
+            roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="350"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="25"
@@ -962,10 +958,10 @@
         <ModifiableParams
             minAimTime="350"
             maxAimTime="500"
-            roundsPerSecondOverride="1.2"
-            minShots="1"
-            maxShots="3"
-            resetTime="500"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
         />
@@ -976,10 +972,10 @@
         <ModifiableParams
             minAimTime="350"
             maxAimTime="500"
-            roundsPerSecondOverride="1.2"
-            minShots="1"
-            maxShots="3"
-            resetTime="500"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="25"
@@ -1026,7 +1022,7 @@
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="300"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="15"
@@ -1041,7 +1037,7 @@
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="350"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="10"
@@ -1056,7 +1052,7 @@
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="350"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="0"
@@ -1069,9 +1065,9 @@
             minAimTime="330"
             maxAimTime="480"
             roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="500"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="0"
@@ -1119,7 +1115,7 @@
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="300"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="10"
@@ -1134,7 +1130,7 @@
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="350"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="15"
@@ -1149,7 +1145,7 @@
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="350"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="15"
@@ -1162,9 +1158,9 @@
             minAimTime="330"
             maxAimTime="480"
             roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="500"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="0"
@@ -1211,7 +1207,7 @@
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="300"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="10"
@@ -1226,7 +1222,7 @@
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="350"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="5"
@@ -1241,7 +1237,7 @@
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="350"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="0"
@@ -1254,9 +1250,9 @@
             minAimTime="330"
             maxAimTime="480"
             roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="500"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="0"
@@ -1272,7 +1268,7 @@
         <ModifiableParams
             minAimTime="340"
             maxAimTime="340"
-            roundsPerSecondOverride="1.6"
+            roundsPerSecondOverride="0"
             minShots="1"
             maxShots="3"
             resetTime="250"
@@ -1287,10 +1283,10 @@
         <ModifiableParams
             minAimTime="340"
             maxAimTime="340"
-            roundsPerSecondOverride="1.6"
+            roundsPerSecondOverride="0"
             minShots="1"
-            maxShots="3"
-            resetTime="250"
+            maxShots="1"
+            resetTime="0"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="0"
@@ -1302,10 +1298,10 @@
         <ModifiableParams
             minAimTime="350"
             maxAimTime="400"
-            roundsPerSecondOverride="1.6"
+            roundsPerSecondOverride="0"
             minShots="1"
             maxShots="1"
-            resetTime="300"
+            resetTime="0"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="25"
@@ -1317,10 +1313,10 @@
         <ModifiableParams
             minAimTime="350"
             maxAimTime="400"
-            roundsPerSecondOverride="1.6"
+            roundsPerSecondOverride="0"
             minShots="1"
             maxShots="1"
-            resetTime="300"
+            resetTime="0"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="40"
@@ -1332,10 +1328,10 @@
         <ModifiableParams
             minAimTime="350"
             maxAimTime="450"
-            roundsPerSecondOverride="1.6"
+            roundsPerSecondOverride="0"
             minShots="1"
             maxShots="1"
-            resetTime="350"
+            resetTime="0"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="25"
@@ -1347,10 +1343,10 @@
         <ModifiableParams
             minAimTime="350"
             maxAimTime="450"
-            roundsPerSecondOverride="1.6"
+            roundsPerSecondOverride="0"
             minShots="1"
             maxShots="1"
-            resetTime="350"
+            resetTime="0"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="40"
@@ -1362,10 +1358,10 @@
         <ModifiableParams
             minAimTime="350"
             maxAimTime="450"
-            roundsPerSecondOverride="1.6"
+            roundsPerSecondOverride="0"
             minShots="1"
             maxShots="1"
-            resetTime="350"
+            resetTime="0"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="25"
@@ -1377,10 +1373,10 @@
         <ModifiableParams
             minAimTime="350"
             maxAimTime="450"
-            roundsPerSecondOverride="1.6"
+            roundsPerSecondOverride="0"
             minShots="1"
             maxShots="1"
-            resetTime="350"
+            resetTime="0"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="40"
@@ -1392,10 +1388,10 @@
         <ModifiableParams
             minAimTime="350"
             maxAimTime="500"
-            roundsPerSecondOverride="1.6"
+            roundsPerSecondOverride="0"
             minShots="1"
             maxShots="1"
-            resetTime="500"
+            resetTime="0"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="25"
@@ -1407,27 +1403,27 @@
         <ModifiableParams
             minAimTime="350"
             maxAimTime="500"
-            roundsPerSecondOverride="1.6"
+            roundsPerSecondOverride="0"
             minShots="1"
             maxShots="1"
-            resetTime="500"
+            resetTime="0"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="40"
         />
     </AttackType>
 
-    <!-- WA2000 Makiatto -->
+    <!-- WA2000 MAKIATTO -->
 
     <AttackType name="GFL_CQC_WA2000">
     <!-- Under 4m. -->
         <ModifiableParams
             minAimTime="340"
             maxAimTime="340"
-            roundsPerSecondOverride="1.6"
+            roundsPerSecondOverride="0"
             minShots="1"
-            maxShots="3"
-            resetTime="250"
+            maxShots="1"
+            resetTime="0"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="10"
@@ -1439,10 +1435,10 @@
         <ModifiableParams
             minAimTime="340"
             maxAimTime="340"
-            roundsPerSecondOverride="1.6"
+            roundsPerSecondOverride="0"
             minShots="1"
-            maxShots="3"
-            resetTime="250"
+            maxShots="1"
+            resetTime="0"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="10"
@@ -1454,10 +1450,10 @@
         <ModifiableParams
             minAimTime="350"
             maxAimTime="400"
-            roundsPerSecondOverride="1.6"
+            roundsPerSecondOverride="0"
             minShots="1"
             maxShots="1"
-            resetTime="300"
+            resetTime="0"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="10"
@@ -1469,13 +1465,13 @@
         <ModifiableParams
             minAimTime="350"
             maxAimTime="400"
-            roundsPerSecondOverride="1.6"
+            roundsPerSecondOverride="0"
             minShots="1"
             maxShots="1"
-            resetTime="300"
+            resetTime="0"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
-            critChanceAdd="60"
+            critChanceAdd="80"
         />
     </AttackType>
 
@@ -1484,10 +1480,10 @@
         <ModifiableParams
             minAimTime="350"
             maxAimTime="450"
-            roundsPerSecondOverride="1.6"
+            roundsPerSecondOverride="0"
             minShots="1"
             maxShots="1"
-            resetTime="350"
+            resetTime="0"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="10"
@@ -1499,13 +1495,13 @@
         <ModifiableParams
             minAimTime="350"
             maxAimTime="450"
-            roundsPerSecondOverride="1.6"
+            roundsPerSecondOverride="0"
             minShots="1"
             maxShots="1"
-            resetTime="350"
+            resetTime="0"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
-            critChanceAdd="60"
+            critChanceAdd="80"
         />
     </AttackType>
 
@@ -1514,10 +1510,10 @@
         <ModifiableParams
             minAimTime="350"
             maxAimTime="450"
-            roundsPerSecondOverride="1.6"
+            roundsPerSecondOverride="0"
             minShots="1"
             maxShots="1"
-            resetTime="350"
+            resetTime="0"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="10"
@@ -1529,13 +1525,13 @@
         <ModifiableParams
             minAimTime="350"
             maxAimTime="450"
-            roundsPerSecondOverride="1.6"
+            roundsPerSecondOverride="0"
             minShots="1"
             maxShots="1"
-            resetTime="350"
+            resetTime="0"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
-            critChanceAdd="60"
+            critChanceAdd="80"
         />
     </AttackType>
 
@@ -1544,10 +1540,10 @@
         <ModifiableParams
             minAimTime="350"
             maxAimTime="500"
-            roundsPerSecondOverride="1.6"
+            roundsPerSecondOverride="0"
             minShots="1"
             maxShots="1"
-            resetTime="500"
+            resetTime="0"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="10"
@@ -1559,13 +1555,13 @@
         <ModifiableParams
             minAimTime="350"
             maxAimTime="500"
-            roundsPerSecondOverride="1.6"
+            roundsPerSecondOverride="0"
             minShots="1"
             maxShots="1"
-            resetTime="500"
+            resetTime="0"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
-            critChanceAdd="60"
+            critChanceAdd="80"
         />
     </AttackType>
 
@@ -1609,7 +1605,7 @@
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="300"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="15"
@@ -1624,7 +1620,7 @@
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="350"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="15"
@@ -1639,7 +1635,7 @@
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="350"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="15"
@@ -1652,9 +1648,9 @@
             minAimTime="350"
             maxAimTime="500"
             roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="500"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="15"
@@ -1676,6 +1672,7 @@
             resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="5"
         />
     </AttackType>
 
@@ -1688,8 +1685,9 @@
             minShots="3"
             maxShots="-1"
             resetTime="250"
-            accuracyAdd="5"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="10"
         />
     </AttackType>
 
@@ -1701,9 +1699,10 @@
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="300"
-            accuracyAdd="10"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="10"
         />
     </AttackType>
 
@@ -1715,9 +1714,10 @@
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="350"
-            accuracyAdd="15"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="15"
         />
     </AttackType>
 
@@ -1729,9 +1729,10 @@
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="350"
-            accuracyAdd="15"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
@@ -1741,11 +1742,12 @@
             minAimTime="350"
             maxAimTime="500"
             roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="500"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
@@ -1756,13 +1758,13 @@
         <ModifiableParams
             minAimTime="340"
             maxAimTime="340"
-            roundsPerSecondOverride="1.2"
+            roundsPerSecondOverride="0"
             minShots="1"
             maxShots="1"
-            resetTime="250"
+            resetTime="0"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
-            critChanceAdd="45"
+            critChanceAdd="0"
         />
     </AttackType>
 
@@ -1771,12 +1773,13 @@
         <ModifiableParams
             minAimTime="340"
             maxAimTime="340"
-            roundsPerSecondOverride="1.2"
+            roundsPerSecondOverride="0"
             minShots="1"
             maxShots="1"
-            resetTime="250"
+            resetTime="0"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
@@ -1785,12 +1788,13 @@
         <ModifiableParams
             minAimTime="350"
             maxAimTime="400"
-            roundsPerSecondOverride="1.2"
+            roundsPerSecondOverride="0"
             minShots="1"
             maxShots="1"
-            resetTime="300"
+            resetTime="0"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
@@ -1799,13 +1803,13 @@
         <ModifiableParams
             minAimTime="350"
             maxAimTime="400"
-            roundsPerSecondOverride="1.2"
+            roundsPerSecondOverride="0"
             minShots="1"
             maxShots="1"
-            resetTime="300"
+            resetTime="0"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
-            critChanceAdd="45"
+            critChanceAdd="60"
         />
     </AttackType>
 
@@ -1814,12 +1818,13 @@
         <ModifiableParams
             minAimTime="350"
             maxAimTime="450"
-            roundsPerSecondOverride="1.2"
+            roundsPerSecondOverride="0"
             minShots="1"
             maxShots="1"
-            resetTime="350"
+            resetTime="0"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
@@ -1828,13 +1833,13 @@
         <ModifiableParams
             minAimTime="350"
             maxAimTime="450"
-            roundsPerSecondOverride="1.2"
+            roundsPerSecondOverride="0"
             minShots="1"
             maxShots="1"
-            resetTime="350"
+            resetTime="0"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
-            critChanceAdd="45"
+            critChanceAdd="60"
         />
     </AttackType>
 
@@ -1843,12 +1848,13 @@
         <ModifiableParams
             minAimTime="350"
             maxAimTime="450"
-            roundsPerSecondOverride="1.2"
+            roundsPerSecondOverride="0"
             minShots="1"
             maxShots="1"
-            resetTime="350"
+            resetTime="0"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
@@ -1857,13 +1863,13 @@
         <ModifiableParams
             minAimTime="350"
             maxAimTime="450"
-            roundsPerSecondOverride="1.2"
+            roundsPerSecondOverride="0"
             minShots="1"
             maxShots="1"
-            resetTime="350"
+            resetTime="0"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
-            critChanceAdd="45"
+            critChanceAdd="60"
         />
     </AttackType>
 
@@ -1872,12 +1878,13 @@
         <ModifiableParams
             minAimTime="350"
             maxAimTime="500"
-            roundsPerSecondOverride="1.2"
+            roundsPerSecondOverride="0"
             minShots="1"
             maxShots="1"
-            resetTime="500"
+            resetTime="0"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="20"
         />
     </AttackType>
 
@@ -1886,13 +1893,13 @@
         <ModifiableParams
             minAimTime="350"
             maxAimTime="500"
-            roundsPerSecondOverride="1.2"
+            roundsPerSecondOverride="0"
             minShots="1"
             maxShots="1"
-            resetTime="500"
+            resetTime="0"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
-            critChanceAdd="45"
+            critChanceAdd="60"
         />
     </AttackType>
 
@@ -1924,6 +1931,7 @@
             resetTime="450"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
@@ -1938,6 +1946,7 @@
             resetTime="450"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
@@ -1951,7 +1960,8 @@
             maxShots="3"
             resetTime="450"
             accuracyAdd="0"
-            followupShotAccuracyAdd="5"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="20"
         />
     </AttackType>
 
@@ -1965,7 +1975,8 @@
             maxShots="3"
             resetTime="450"
             accuracyAdd="0"
-            followupShotAccuracyAdd="20"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="15"
         />
     </AttackType>
 
@@ -1979,8 +1990,8 @@
             maxShots="3"
             resetTime="450"
             accuracyAdd="0"
-            followupShotAccuracyAdd="25"
-        />
+            followupShotAccuracyAdd="0"
+            critChanceAdd="15"        />
     </AttackType>
 
     <AttackType name="GFL_Extended_CURVA">
@@ -1993,7 +2004,8 @@
             maxShots="3"
             resetTime="450"
             accuracyAdd="0"
-            followupShotAccuracyAdd="25"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="15"
         />
     </AttackType>
 
@@ -2010,6 +2022,7 @@
             resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
@@ -2024,6 +2037,7 @@
             resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="10"
         />
     </AttackType>
 
@@ -2035,9 +2049,10 @@
             roundsPerSecondOverride="0"
             minShots="1"
             maxShots="2"
-            resetTime="300"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="30"
         />
     </AttackType>
 
@@ -2049,9 +2064,10 @@
             roundsPerSecondOverride="0"
             minShots="1"
             maxShots="2"
-            resetTime="350"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="10"
         />
     </AttackType>
 
@@ -2063,9 +2079,10 @@
             roundsPerSecondOverride="0"
             minShots="1"
             maxShots="2"
-            resetTime="350"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
@@ -2077,9 +2094,10 @@
             roundsPerSecondOverride="0"
             minShots="1"
             maxShots="2"
-            resetTime="500"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
@@ -2087,509 +2105,641 @@
 
     <!-- PKP-SP PERITYA -->
 
-    <AttackType name="GFL_PKPSP_BurstFireNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
+    <AttackType name="GFL_CQC_PKPSP">
+    <!-- Under 4m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_CQCMounted_PKPSP">
+    <!-- Under 4m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="50"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Near_PKPSP">
+    <!-- Under 8m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_NearMounted_PKPSP">
+    <!-- Under 8m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="50"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Close_PKPSP">
+    <!-- Under 12m. -->
         <ModifiableParams
             minAimTime="350"
-            maxAimTime="350"
+            maxAimTime="400"
             roundsPerSecondOverride="0"
-            minShots="5"
-            maxShots="8"
-            resetTime="300"
-            accuracyAdd="0"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_PKPSP_BurstFireNearMounted">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
-        <ModifiableParams
-            minAimTime="300"
-            maxAimTime="450"
-            roundsPerSecondOverride="0"
-            minShots="5"
-            maxShots="-1"
-            resetTime="300"
-            accuracyAdd="40"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_PKPSP_BurstFireClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
-        <ModifiableParams
-            minAimTime="450"
-            maxAimTime="450"
-            roundsPerSecondOverride="0"
-            minShots="5"
-            maxShots="8"
-            resetTime="300"
-            accuracyAdd="20"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_PKPSP_BurstFireCloseMounted">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
-        <ModifiableParams
-            minAimTime="300"
-            maxAimTime="450"
-            roundsPerSecondOverride="0"
-            minShots="5"
-            maxShots="-1"
-            resetTime="300"
-            accuracyAdd="50"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_PKPSP_BurstFireMed">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
-        <ModifiableParams
-            minAimTime="450"
-            maxAimTime="600"
-            roundsPerSecondOverride="0"
-            minShots="5"
-            maxShots="8"
-            resetTime="300"
-            accuracyAdd="20"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_PKPSP_BurstFireMedMounted">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
-        <ModifiableParams
-            minAimTime="300"
-            maxAimTime="450"
-            roundsPerSecondOverride="0"
-            minShots="5"
-            maxShots="-1"
-            resetTime="300"
-            accuracyAdd="60"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_PKPSP_BurstFireFar">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
-        <ModifiableParams
-            minAimTime="600"
-            maxAimTime="700"
-            roundsPerSecondOverride="0"
-            minShots="2"
+            minShots="3"
             maxShots="5"
-            resetTime="400"
+            resetTime="250"
             accuracyAdd="0"
-            followupShotAccuracyAdd="0"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_PKPSP_BurstFireFarMounted">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
+    <AttackType name="GFL_CloseMounted_PKPSP">
+    <!-- Under 12m. -->
         <ModifiableParams
-            minAimTime="450"
-            maxAimTime="600"
+            minAimTime="350"
+            maxAimTime="400"
             roundsPerSecondOverride="0"
-            minShots="2"
+            minShots="3"
             maxShots="-1"
-            resetTime="300"
+            resetTime="250"
             accuracyAdd="50"
-            followupShotAccuracyAdd="0"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_PKPSP_BurstFireExt">
-        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
+    <AttackType name="GFL_Medium_PKPSP">
+    <!-- Under 16m. -->
         <ModifiableParams
-            minAimTime="700"
-            maxAimTime="900"
+            minAimTime="350"
+            maxAimTime="450"
             roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="4"
-            resetTime="500"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
             accuracyAdd="0"
-            followupShotAccuracyAdd="0"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="15"
         />
     </AttackType>
 
-    <AttackType name="GFL_PKPSP_BurstFireExtMounted">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
+    <AttackType name="GFL_MediumMounted_PKPSP">
+    <!-- Under 16m. -->
         <ModifiableParams
-            minAimTime="450"
-            maxAimTime="600"
+            minAimTime="350"
+            maxAimTime="450"
             roundsPerSecondOverride="0"
-            minShots="5"
+            minShots="3"
             maxShots="-1"
-            resetTime="300"
+            resetTime="250"
             accuracyAdd="50"
-            followupShotAccuracyAdd="0"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="15"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_MedEdge_PKPSP">
+    <!-- Under 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="15"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_MedEdgeMounted_PKPSP">
+    <!-- Under 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="50"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="15"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Extended_PKPSP">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="500"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_ExtendedMounted_PKPSP">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="500"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="50"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="10"
         />
     </AttackType>
 
     <!-- TYPE97S QIUHUA -->
 
-    <AttackType name="GFL_TYPE97S_BurstFireNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
+    <AttackType name="GFL_CQC_TYPE97S">
+    <!-- Under 4m. -->
         <ModifiableParams
-            minAimTime="330"
-            maxAimTime="350"
+            minAimTime="340"
+            maxAimTime="340"
             roundsPerSecondOverride="0"
             minShots="1"
-            maxShots="1"
-            resetTime="300"
-            accuracyAdd="0"
-            followupShotAccuracyAdd="0"
-            critChanceAdd="15"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_TYPE97S_BurstFireClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
-        <ModifiableParams
-            minAimTime="350"
-            maxAimTime="450"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="1"
-            resetTime="300"
+            maxShots="-1"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="10"
         />
     </AttackType>
 
-    <AttackType name="GFL_TYPE97S_BurstFireMed">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
+    <AttackType name="GFL_Near_TYPE97S">
+    <!-- Under 8m. -->
         <ModifiableParams
-            minAimTime="350"
-            maxAimTime="600"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="1"
-            resetTime="300"
-            accuracyAdd="0"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_TYPE97S_BurstFireFar">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
-        <ModifiableParams
-            minAimTime="600"
-            maxAimTime="700"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="1"
-            resetTime="400"
-            accuracyAdd="0"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_TYPE97S_BurstFireExt">
-        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
-        <ModifiableParams
-            minAimTime="700"
-            maxAimTime="900"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="1"
-            resetTime="500"
-            accuracyAdd="0"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-
-    <!-- VSK-94 NIKKETA -->
-
-    <AttackType name="GFL_VSK94_BurstFireNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
-        <ModifiableParams
-            minAimTime="330"
-            maxAimTime="350"
-            roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="4"
-            resetTime="300"
-            accuracyAdd="0"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_VSK94_BurstFireClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
-        <ModifiableParams
-            minAimTime="350"
-            maxAimTime="450"
-            roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="4"
-            resetTime="300"
-            accuracyAdd="0"
-            followupShotAccuracyAdd="15"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_VSK94_AimedFireMed">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
-        <ModifiableParams
-            minAimTime="350"
-            maxAimTime="600"
+            minAimTime="340"
+            maxAimTime="340"
             roundsPerSecondOverride="0"
             minShots="1"
             maxShots="2"
-            resetTime="600"
-            accuracyAdd="0"
-            followupShotAccuracyAdd="30"
-            critChanceAdd="20"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_VSK94_AimedFireFar">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
-        <ModifiableParams
-            minAimTime="600"
-            maxAimTime="700"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="2"
-            resetTime="600"
-            accuracyAdd="0"
-            followupShotAccuracyAdd="30"
-            critChanceAdd="20"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_VSK94_AimedFireExt">
-        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
-        <ModifiableParams
-            minAimTime="700"
-            maxAimTime="900"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="1"
-            resetTime="600"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
-            critChanceAdd="20"
+            critChanceAdd="25"
         />
     </AttackType>
 
-    <!-- DP-12 HELEN -->
-
-    <AttackType name="GFL_DP12_DoubleShotNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
+    <AttackType name="GFL_Close_TYPE97S">
+    <!-- Under 12m. -->
         <ModifiableParams
-            minAimTime="330"
-            maxAimTime="350"
+            minAimTime="350"
+            maxAimTime="400"
             roundsPerSecondOverride="0"
             minShots="1"
             maxShots="2"
-            resetTime="600"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="10"
         />
     </AttackType>
 
-    <AttackType name="GFL_DP12_DoubleShotClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
+    <AttackType name="GFL_Medium_TYPE97S">
+    <!-- Under 16m. -->
         <ModifiableParams
             minAimTime="350"
             maxAimTime="450"
             roundsPerSecondOverride="0"
             minShots="1"
             maxShots="2"
-            resetTime="600"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
-            critChanceAdd="10"
+            critChanceAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_DP12_DoubleShotFar">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
+    <AttackType name="GFL_MedEdge_TYPE97S">
+    <!-- Under 20m. -->
         <ModifiableParams
             minAimTime="350"
-            maxAimTime="600"
+            maxAimTime="450"
             roundsPerSecondOverride="0"
             minShots="1"
             maxShots="2"
-            resetTime="600"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_DP12_DoubleShotExt">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
-        <ModifiableParams
-            minAimTime="600"
-            maxAimTime="700"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="2"
-            resetTime="600"
-            accuracyAdd="0"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_DP12_DoubleShotMed">
-        <!-- Ranges under 28m. -->
+    <AttackType name="GFL_Extended_TYPE97S">
+    <!-- Beyond 20m. -->
         <ModifiableParams
             minAimTime="350"
             maxAimTime="500"
             roundsPerSecondOverride="0"
             minShots="1"
             maxShots="2"
-            resetTime="600"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <!-- VSK-94 NIKKETA -->
+
+    <AttackType name="GFL_CQC_VSK94">
+    <!-- Under 4m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Near_VSK94">
+    <!-- Under 8m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Close_VSK94">
+    <!-- Under 12m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="400"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Medium_VSK94">
+    <!-- Under 16m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_MedEdge_VSK94">
+    <!-- Under 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="15"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Extended_VSK94">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="500"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="5"
+        />
+    </AttackType>
+
+    <!-- DP-12 HELEN -->
+
+    <AttackType name="GFL_CQC_DP12">
+    <!-- Under 4m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="2"
+            maxShots="2"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="20"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Near_DP12">
+    <!-- Under 8m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="2"
+            maxShots="2"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="20"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Close_DP12">
+    <!-- Under 12m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="400"
+            roundsPerSecondOverride="0"
+            minShots="2"
+            maxShots="2"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="5"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Medium_DP12">
+    <!-- Under 16m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="2"
+            maxShots="2"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_MedEdge_DP12">
+    <!-- Under 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="2"
+            maxShots="2"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Extended_DP12">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="500"
+            roundsPerSecondOverride="0"
+            minShots="2"
+            maxShots="2"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
     <!-- MODEL 1914 LEWIS -->
 
-    <AttackType name="GFL_LEWIS_BurstFireNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
+    <AttackType name="GFL_CQC_LEWIS">
+    <!-- Under 4m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_CQCMounted_LEWIS">
+    <!-- Under 4m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="50"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Near_LEWIS">
+    <!-- Under 8m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_NearMounted_LEWIS">
+    <!-- Under 8m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="50"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Close_LEWIS">
+    <!-- Under 12m. -->
         <ModifiableParams
             minAimTime="350"
-            maxAimTime="350"
-            roundsPerSecondOverride="0"
-            minShots="5"
-            maxShots="8"
-            resetTime="300"
-            accuracyAdd="20"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_LEWIS_BurstFireNearMounted">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
-        <ModifiableParams
-            minAimTime="300"
-            maxAimTime="450"
-            roundsPerSecondOverride="0"
-            minShots="5"
-            maxShots="-1"
-            resetTime="300"
-            accuracyAdd="30"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_LEWIS_BurstFireClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
-        <ModifiableParams
-            minAimTime="450"
-            maxAimTime="450"
-            roundsPerSecondOverride="0"
-            minShots="5"
-            maxShots="8"
-            resetTime="300"
-            accuracyAdd="20"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_LEWIS_BurstFireCloseMounted">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
-        <ModifiableParams
-            minAimTime="300"
-            maxAimTime="450"
-            roundsPerSecondOverride="0"
-            minShots="5"
-            maxShots="-1"
-            resetTime="300"
-            accuracyAdd="30"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_LEWIS_BurstFireMed">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
-        <ModifiableParams
-            minAimTime="450"
-            maxAimTime="600"
-            roundsPerSecondOverride="0"
-            minShots="5"
-            maxShots="8"
-            resetTime="300"
-            accuracyAdd="20"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_LEWIS_BurstFireMedMounted">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
-        <ModifiableParams
-            minAimTime="300"
-            maxAimTime="450"
-            roundsPerSecondOverride="0"
-            minShots="5"
-            maxShots="-1"
-            resetTime="300"
-            accuracyAdd="30"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_LEWIS_BurstFireFar">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
-        <ModifiableParams
-            minAimTime="600"
-            maxAimTime="700"
+            maxAimTime="400"
             roundsPerSecondOverride="0"
             minShots="3"
-            maxShots="4"
-            resetTime="400"
-            accuracyAdd="20"
-            followupShotAccuracyAdd="0"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_LEWIS_BurstFireFarMounted">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
+    <AttackType name="GFL_CloseMounted_LEWIS">
+    <!-- Under 12m. -->
         <ModifiableParams
-            minAimTime="450"
-            maxAimTime="600"
-            roundsPerSecondOverride="0"
-            minShots="4"
-            maxShots="-1"
-            resetTime="300"
-            accuracyAdd="30"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_LEWIS_BurstFireExt">
-        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
-        <ModifiableParams
-            minAimTime="700"
-            maxAimTime="900"
-            roundsPerSecondOverride="0"
-            minShots="2"
-            maxShots="3"
-            resetTime="500"
-            accuracyAdd="20"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_LEWIS_BurstFireExtMounted">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
-        <ModifiableParams
-            minAimTime="450"
-            maxAimTime="600"
+            minAimTime="350"
+            maxAimTime="400"
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="-1"
-            resetTime="300"
-            accuracyAdd="30"
-            followupShotAccuracyAdd="0"
+            resetTime="250"
+            accuracyAdd="50"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Medium_LEWIS">
+    <!-- Under 16m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_MediumMounted_LEWIS">
+    <!-- Under 16m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="50"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_MedEdge_LEWIS">
+    <!-- Under 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="15"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_MedEdgeMounted_LEWIS">
+    <!-- Under 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="50"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="15"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Extended_LEWIS">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="500"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_ExtendedMounted_LEWIS">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="500"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="50"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="10"
         />
     </AttackType>
 
@@ -2597,218 +2747,185 @@
 
     <!-- QBZ-191 QIONGJIU -->
 
-    <AttackType name="GFL_QBZ191_BurstFireNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
+    <AttackType name="GFL_CQC_QBZ191">
+    <!-- Under 4m. -->
         <ModifiableParams
-            minAimTime="330"
-            maxAimTime="350"
+            minAimTime="340"
+            maxAimTime="340"
             roundsPerSecondOverride="0"
             minShots="3"
-            maxShots="5"
-            resetTime="300"
-            accuracyAdd="50"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_QBZ191_BurstFireClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
-        <ModifiableParams
-            minAimTime="350"
-            maxAimTime="450"
-            roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
-            resetTime="300"
-            accuracyAdd="10"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_QBZ191_BurstFireMed">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
-        <ModifiableParams
-            minAimTime="350"
-            maxAimTime="600"
-            roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
-            resetTime="300"
-            accuracyAdd="20"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_QBZ191_BurstFireFar">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
-        <ModifiableParams
-            minAimTime="600"
-            maxAimTime="700"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="400"
-            accuracyAdd="30"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_QBZ191_BurstFireExt">
-        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
-        <ModifiableParams
-            minAimTime="700"
-            maxAimTime="900"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="500"
-            accuracyAdd="40"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <!-- AK-ALFA TOLOLO -->
-
-    <AttackType name="GFL_AKALFA_BurstFireNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
-        <ModifiableParams
-            minAimTime="330"
-            maxAimTime="350"
-            roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
-            resetTime="300"
-            accuracyAdd="10"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_AKALFA_BurstFireClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
-        <ModifiableParams
-            minAimTime="350"
-            maxAimTime="450"
-            roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
-            resetTime="300"
-            accuracyAdd="5"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_AKALFA_BurstFireMed">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
-        <ModifiableParams
-            minAimTime="350"
-            maxAimTime="600"
-            roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
-            resetTime="300"
-            accuracyAdd="15"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_AKALFA_BurstFireFar">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
-        <ModifiableParams
-            minAimTime="600"
-            maxAimTime="700"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="400"
-            accuracyAdd="0"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_AKALFA_BurstFireExt">
-        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
-        <ModifiableParams
-            minAimTime="700"
-            maxAimTime="900"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="500"
-            accuracyAdd="0"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <!-- AA-12 LIND -->
-
-    <AttackType name="GFL_AA12_BurstFireNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
-        <ModifiableParams
-            minAimTime="330"
-            maxAimTime="350"
-            roundsPerSecondOverride="0"
-            minShots="2"
-            maxShots="4"
-            resetTime="300"
+            maxShots="-1"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="5"
         />
     </AttackType>
 
-    <AttackType name="GFL_AA12_BurstFireClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
+    <AttackType name="GFL_Near_QBZ191">
+    <!-- Under 8m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="5"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Close_QBZ191">
+    <!-- Under 12m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="400"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Medium_QBZ191">
+    <!-- Under 16m. -->
         <ModifiableParams
             minAimTime="350"
             maxAimTime="450"
             roundsPerSecondOverride="0"
-            minShots="2"
-            maxShots="4"
-            resetTime="300"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_AA12_BurstFireMed">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
+    <AttackType name="GFL_MedEdge_QBZ191">
+    <!-- Under 20m. -->
         <ModifiableParams
             minAimTime="350"
-            maxAimTime="600"
+            maxAimTime="450"
             roundsPerSecondOverride="0"
-            minShots="2"
-            maxShots="4"
-            resetTime="300"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="25"
         />
     </AttackType>
 
-    <AttackType name="GFL_AA12_BurstFireFar">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
+    <AttackType name="GFL_Extended_QBZ191">
+    <!-- Beyond 20m. -->
         <ModifiableParams
-            minAimTime="600"
-            maxAimTime="700"
+            minAimTime="350"
+            maxAimTime="500"
             roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="2"
-            resetTime="400"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="25"
         />
     </AttackType>
 
-    <AttackType name="GFL_AA12_BurstFireExt">
-        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
+    <!-- AK-ALFA TOLOLO -->
+
+    <AttackType name="GFL_CQC_AKALFA">
+    <!-- Under 4m. -->
         <ModifiableParams
-            minAimTime="700"
-            maxAimTime="900"
+            minAimTime="340"
+            maxAimTime="340"
             roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="2"
-            resetTime="500"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Near_AKALFA">
+    <!-- Under 8m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Close_AKALFA">
+    <!-- Under 12m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="400"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="40"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Medium_AKALFA">
+    <!-- Under 16m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_MedEdge_AKALFA">
+    <!-- Under 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Extended_AKALFA">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="500"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
@@ -3591,8 +3708,8 @@
             minAimTime="250"
             maxAimTime="250"
             minShots="6"
-            maxShots="12"
-            resetTime="500"
+            maxShots="8"
+            resetTime="400"
             critChanceAdd="-25"
         />
     </AttackType>

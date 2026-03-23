@@ -861,7 +861,7 @@
     >
 
         <Params
-            roundsPerSecond="10"
+            roundsPerSecond="4.5"
             audibleSoundRadius="100"
             physicsImpactForce="4.0"
         >
@@ -1168,10 +1168,10 @@
         img="data/models/weapons/attachments/m855_ammo_ui.dds"
     >
         <Params
-            roundsPerSecond="0.7"
+            roundsPerSecond="1.4"
             audibleSoundRadius="100"
             physicsImpactForce="4.0"
-            suppressionScale="1000.0"
+            suppressionScale="2.0"
         >
             <Damage
                 start="62"
@@ -1194,8 +1194,6 @@
         </Params>
     </Ammo>
 
-<!-- M1903 SPRINGFIELD (SUPPRESSED) -->
-
     <Ammo
         name="3006FMJ_GFL_M1903-SUP"
         tooltip="@ammo_3006_fmj_name"
@@ -1203,7 +1201,7 @@
         img="data/models/weapons/attachments/m855_ammo_ui.dds"
     >
         <Params
-            roundsPerSecond="0.7"
+            roundsPerSecond="1.8"
             audibleSoundRadius="50"
             physicsImpactForce="4.0"
             suppressionScale="2.0"
@@ -1238,7 +1236,7 @@
         img="data/models/weapons/attachments/m855_ammo_ui.dds"
     >
         <Params
-            roundsPerSecond="0.7"
+            roundsPerSecond="1.8"
             audibleSoundRadius="100"
             physicsImpactForce="4.0"
             overpenetrates="1"
@@ -1300,7 +1298,7 @@
         img="data/models/weapons/attachments/m855_ammo_ui.dds"
     >
         <Params
-            roundsPerSecond="0.7"
+            roundsPerSecond="2.6"
             audibleSoundRadius="100"
             physicsImpactForce="2.0"
             overpenetrates="1"
@@ -1327,8 +1325,6 @@
         </Params>
     </Ammo>
 
-<!-- WA2000 MAKIATTO (SUPPRESSED) -->
-
     <Ammo
         name="300WMFMJ_GFL_WA2000-SUP"
         tooltip="@ammo_300wm_fmj_name"
@@ -1336,7 +1332,7 @@
         img="data/models/weapons/attachments/m855_ammo_ui.dds"
     >
         <Params
-            roundsPerSecond="0.7"
+            roundsPerSecond="2.6"
             audibleSoundRadius="50"
             physicsImpactForce="2.0"
             overpenetrates="1"
@@ -1372,7 +1368,7 @@
         img="data/models/weapons/attachments/m855_ammo_ui.dds"
     >
         <Params
-            roundsPerSecond="0.7"
+            roundsPerSecond="2.6"
             audibleSoundRadius="100"
             physicsImpactForce="2.0"
             suppressionScale="5.0"
@@ -1571,7 +1567,6 @@
             physicsImpactForce="2.0"
             numPellets="2"
             suppressionScale="0.15"
-            accuracyMultiplier="85"
         >
             <Damage
                 start="24"
@@ -1580,13 +1575,13 @@
                 endDist="100"
             />
             <CriticalChancePercent
-                start="0"
-                end="0"
+                start="10"
+                end="10"
                 startDist="0"
                 endDist="100"
             />
             <ArmorPenetration
-                start="60"
+                start="50"
                 end="50"
                 startDist="0"
                 endDist="100"
@@ -1636,7 +1631,7 @@
         img="data/models/weapons/attachments/m855_ammo_ui.dds"
     >
         <Params
-            roundsPerSecond="0.6"
+            roundsPerSecond="1"
             audibleSoundRadius="150"
             physicsImpactForce="3.0"
             overpenetrates="1"
@@ -1649,8 +1644,8 @@
                 endDist="100"
             />
             <CriticalChancePercent
-                start="50"
-                end="50"
+                start="20"
+                end="20"
                 startDist="0"
                 endDist="100"
             />
@@ -1678,8 +1673,8 @@
         >
 
             <Damage
-                start="106"
-                end="102"
+                start="120"
+                end="116"
                 startDist="0"
                 endDist="100"
             />
@@ -1956,6 +1951,7 @@
             roundsPerSecond="10.8"
             audibleSoundRadius="100"
             physicsImpactForce="2.0"
+            suppressionScale="3.0"
         >
             <Damage
                 start="34"
@@ -1964,8 +1960,8 @@
                 endDist="100"
             />
             <CriticalChancePercent
-                start="-25"
-                end="-25"
+                start="0"
+                end="0"
                 startDist="0"
                 endDist="100"
             />
@@ -2003,8 +1999,8 @@
                 endDist="30"
             />
             <CriticalChancePercent
-                start="-15"
-                end="-15"
+                start="0"
+                end="0"
                 startDist="0"
                 endDist="100"
             />
@@ -2078,8 +2074,8 @@
                 endDist="30"
             />
             <CriticalChancePercent
-                start="-20"
-                end="-20"
+                start="0"
+                end="0"
                 startDist="0"
                 endDist="100"
             />
@@ -2112,8 +2108,8 @@
                 endDist="30"
             />
             <CriticalChancePercent
-                start="-20"
-                end="-20"
+                start="0"
+                end="0"
                 startDist="0"
                 endDist="100"
             />
@@ -2139,22 +2135,23 @@
             roundsPerSecond="9.17"
             audibleSoundRadius="100"
             physicsImpactForce="2.5"
+            suppressionScale="4.0"
         >
             <Damage
-                start="31"
-                end="25"
+                start="38"
+                end="34"
                 startDist="0"
                 endDist="100"
             />
             <CriticalChancePercent
-                start="-20"
-                end="-20"
+                start="0"
+                end="0"
                 startDist="0"
                 endDist="100"
             />
             <ArmorPenetration
-                start="60"
-                end="60"
+                start="70"
+                end="70"
                 startDist="0"
                 endDist="100"
             />
@@ -2198,19 +2195,19 @@
             physicsImpactForce="2.0"
         >
             <Damage
-                start="30"
-                end="30"
+                start="28"
+                end="24"
                 startDist="0"
                 endDist="100"
             />
             <CriticalChancePercent
-                start="-20"
-                end="-20"
+                start="0"
+                end="0"
                 startDist="0"
                 endDist="100"
             />
             <ArmorPenetration
-                start="60"
+                start="50"
                 end="50"
                 startDist="0"
                 endDist="100"
@@ -2231,19 +2228,19 @@
             silenced="1"
         >
             <Damage
-                start="30"
-                end="30"
+                start="28"
+                end="24"
                 startDist="0"
                 endDist="100"
             />
             <CriticalChancePercent
-                start="-20"
-                end="-20"
+                start="0"
+                end="0"
                 startDist="0"
                 endDist="100"
             />
             <ArmorPenetration
-                start="60"
+                start="50"
                 end="50"
                 startDist="0"
                 endDist="100"
