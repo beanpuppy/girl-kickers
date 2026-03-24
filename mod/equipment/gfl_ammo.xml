@@ -541,8 +541,6 @@
         </Params>
     </Ammo>
 
-<!-- AK-15 VOYMASTINA (SUPPRESSED) -->
-
     <Ammo
         name="762x39FMJNSU_GFL_AK15-SUP"
         tooltip="@ammo_762x39_fmj_nsu_name"
@@ -2340,8 +2338,8 @@
                 endDist="30"
             />
             <CriticalChancePercent
-                start="-20"
-                end="-20"
+                start="0"
+                end="0"
                 startDist="0"
                 endDist="100"
             />
@@ -2369,14 +2367,14 @@
             physicsImpactForce="1.0"
         >
             <Damage
-                start="22"
-                end="18"
+                start="26"
+                end="22"
                 startDist="0"
                 endDist="100"
             />
             <CriticalChancePercent
-                start="-25"
-                end="-25"
+                start="0"
+                end="0"
                 startDist="0"
                 endDist="100"
             />
@@ -2403,14 +2401,14 @@
             suppressionScale="3.0"
         >
             <Damage
-                start="14"
-                end="12"
+                start="18"
+                end="14"
                 startDist="0"
                 endDist="40"
             />
             <CriticalChancePercent
-                start="10"
-                end="-50"
+                start="20"
+                end="10"
                 startDist="0"
                 endDist="50"
             />
@@ -2436,14 +2434,14 @@
             silenced="1"
         >
             <Damage
-                start="22"
-                end="18"
+                start="26"
+                end="22"
                 startDist="0"
                 endDist="100"
             />
             <CriticalChancePercent
-                start="-25"
-                end="-25"
+                start="0"
+                end="0"
                 startDist="0"
                 endDist="100"
             />
@@ -2471,14 +2469,14 @@
             physicsImpactForce="2.0"
         >
             <Damage
-                start="30"
+                start="34"
                 end="30"
                 startDist="0"
                 endDist="100"
             />
             <CriticalChancePercent
-                start="-20"
-                end="-20"
+                start="0"
+                end="0"
                 startDist="0"
                 endDist="100"
             />
@@ -2512,8 +2510,8 @@
                 endDist="100"
             />
             <CriticalChancePercent
-                start="-20"
-                end="-20"
+                start="0"
+                end="0"
                 startDist="0"
                 endDist="100"
             />
@@ -2545,8 +2543,8 @@
                 endDist="100"
             />
             <CriticalChancePercent
-                start="-20"
-                end="-20"
+                start="0"
+                end="0"
                 startDist="0"
                 endDist="100"
             />
@@ -2574,14 +2572,14 @@
             physicsImpactForce="1.5"
         >
             <Damage
-                start="28"
-                end="26"
+                start="38"
+                end="34"
                 startDist="0"
-                endDist="40"
+                endDist="50"
             />
             <CriticalChancePercent
-                start="-15"
-                end="-15"
+                start="0"
+                end="0"
                 startDist="0"
                 endDist="50"
             />
@@ -2589,7 +2587,7 @@
                 start="50"
                 end="20"
                 startDist="0"
-                endDist="70"
+                endDist="50"
             />
         </Params>
     </Ammo>
@@ -2607,14 +2605,14 @@
             silenced="1"
         >
             <Damage
-                start="28"
-                end="26"
+                start="38"
+                end="34"
                 startDist="0"
-                endDist="40"
+                endDist="50"
             />
             <CriticalChancePercent
-                start="-15"
-                end="-15"
+                start="0"
+                end="0"
                 startDist="0"
                 endDist="50"
             />
@@ -2622,7 +2620,7 @@
                 start="50"
                 end="20"
                 startDist="0"
-                endDist="70"
+                endDist="50"
             />
         </Params>
     </Ammo>
@@ -2642,14 +2640,14 @@
             physicsImpactForce="1.5"
         >
             <Damage
-                start="28"
-                end="26"
+                start="38"
+                end="34"
                 startDist="0"
-                endDist="40"
+                endDist="50"
             />
             <CriticalChancePercent
-                start="20"
-                end="20"
+                start="25"
+                end="25"
                 startDist="0"
                 endDist="50"
             />
@@ -2657,7 +2655,7 @@
                 start="50"
                 end="20"
                 startDist="0"
-                endDist="70"
+                endDist="50"
             />
         </Params>
     </Ammo>
@@ -2675,14 +2673,14 @@
             silenced="1"
         >
             <Damage
-                start="28"
-                end="26"
+                start="38"
+                end="34"
                 startDist="0"
-                endDist="40"
+                endDist="50"
             />
             <CriticalChancePercent
-                start="20"
-                end="20"
+                start="25"
+                end="25"
                 startDist="0"
                 endDist="50"
             />
@@ -2690,7 +2688,7 @@
                 start="50"
                 end="20"
                 startDist="0"
-                endDist="70"
+                endDist="50"
             />
         </Params>
     </Ammo>
@@ -2803,7 +2801,7 @@
         img="data/models/weapons/attachments/m882_ammo_ui.dds"
     >
         <Params
-            roundsPerSecond="1.5"
+            roundsPerSecond="4"
             audibleSoundRadius="30"
             physicsImpactForce="1.5"
             silenced="1"
@@ -2838,7 +2836,7 @@
         img="data/models/weapons/attachments/m855_ammo_ui.dds"
     >
         <Params
-            roundsPerSecond="0.6"
+            roundsPerSecond="1.5"
             audibleSoundRadius="150"
             physicsImpactForce="3.0"
         >
@@ -2849,14 +2847,14 @@
                 endDist="100"
             />
             <CriticalChancePercent
-                start="60"
-                end="60"
+                start="35"
+                end="35"
                 startDist="0"
                 endDist="100"
             />
             <ArmorPenetration
-                start="60"
-                end="60"
+                start="70"
+                end="70"
                 startDist="0"
                 endDist="100"
             />
@@ -2870,7 +2868,7 @@
         img="data/models/weapons/attachments/m855_ammo_ui.dds"
     >
         <Params
-            roundsPerSecond="0.6"
+            roundsPerSecond="1.5"
             audibleSoundRadius="60"
             physicsImpactForce="3.0"
             silenced="1"
@@ -2882,14 +2880,14 @@
                 endDist="100"
             />
             <CriticalChancePercent
-                start="60"
-                end="60"
+                start="35"
+                end="35"
                 startDist="0"
                 endDist="100"
             />
             <ArmorPenetration
-                start="60"
-                end="60"
+                start="70"
+                end="70"
                 startDist="0"
                 endDist="100"
             />
