@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
-    paths: ['mod/**', 'www/**']
+    paths: ['mod/**', 'www/**', '.github/workflows/**']
   workflow_dispatch:
     inputs:
       extra_branches:
