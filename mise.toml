@@ -15,6 +15,18 @@ run = 'zip -r khm_tools.zip blender -x "blender/__pycache__/*"'
 description = "Prepare MMD model for DK2 (import, clean, bake textures)"
 run = 'blender --background --python tools/mmd_converter/prepare_mmd.py --'
 
+[tasks.resize-textures]
+description = "Resize all 4096x4096 doll textures to 2048x2048"
+run = '''
+find mod/models/dolls/ -name "*.dds" -exec sh -c '
+  res=$(magick identify -format "%wx%h" "$1" 2>/dev/null)
+  if [ "$res" = "4096x4096" ]; then
+    echo "Resizing $(basename "$1")..."
+    magick "$1" -resize 2048x2048 "$1"
+  fi
+' _ {} \;
+'''
+
 [tasks.add-weights]
 description = "Add DK2 armature and automatic weights to prepared model"
 run = 'blender --background --python tools/mmd_converter/add_weights.py --'
