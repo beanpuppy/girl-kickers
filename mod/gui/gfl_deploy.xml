@@ -1630,7 +1630,7 @@
                  texture="data/textures/gui/square.tga"
                  sizeX="8"
                  sizeY="148"
-                 color="E4E4E4"
+                 color="4c0aac"
              />
      </StaticImage>
      <StaticText
@@ -1639,7 +1639,7 @@
              text=""
              align="r"
              font="header_4"
-             textColor="211e1d"
+             textColor="E4E4E4"
          />
      <StaticImage name="#ClassIcon" origin="8 50" align="l">
          <RenderObject2D
@@ -1681,7 +1681,7 @@
                  texture="data/textures/gui/square.tga"
                  sizeX="8"
                  sizeY="148"
-                 color="E4E4E4"
+                 color="4c0aac"
              />
      </StaticImage>
      <StaticText
@@ -1690,7 +1690,7 @@
              text=""
              align="r"
              font="header_4"
-             textColor="211e1d"
+             textColor="E4E4E4"
          />
      <StaticImage name="#ClassIcon" origin="8 50" align="l">
          <RenderObject2D
@@ -1732,7 +1732,7 @@
                  texture="data/textures/gui/square.tga"
                  sizeX="8"
                  sizeY="148"
-                 color="E4E4E4"
+                 color="4c0aac"
              />
      </StaticImage>
      <StaticText
@@ -1741,7 +1741,7 @@
              text=""
              align="r"
              font="header_4"
-             textColor="211e1d"
+             textColor="E4E4E4"
          />
      <StaticImage name="#ClassIcon" origin="8 50" align="l">
          <RenderObject2D
@@ -1783,7 +1783,7 @@
                  texture="data/textures/gui/square.tga"
                  sizeX="8"
                  sizeY="148"
-                 color="E4E4E4"
+                 color="4c0aac"
              />
      </StaticImage>
      <StaticText
@@ -1792,7 +1792,7 @@
              text=""
              align="r"
              font="header_4"
-             textColor="211e1d"
+             textColor="E4E4E4"
          />
      <StaticImage name="#ClassIcon" origin="8 50" align="l">
          <RenderObject2D
