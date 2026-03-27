@@ -36,7 +36,14 @@ jobs:
           python-version: '3.12'
 
       - name: Install ImageMagick
-        run: sudo apt-get update && sudo apt-get install -y imagemagick
+        run: |
+          sudo apt-get update && sudo apt-get install -y imagemagick
+          if ! command -v magick &>/dev/null; then
+            sudo ln -s "$(command -v convert)" /usr/local/bin/magick
+          fi
+          # Relax ImageMagick 6 security policy to allow DDS format
+          sudo sed -i '/<policy domain="coder" rights="none" pattern="DDS"/d' /etc/ImageMagick-6/policy.xml 2>/dev/null || true
+          sudo sed -i 's/rights="none" pattern="\*"/rights="read|write" pattern="*"/' /etc/ImageMagick-6/policy.xml 2>/dev/null || true
 
       - name: Build main data
         run: python main/www/unit-builder/build_data.py
