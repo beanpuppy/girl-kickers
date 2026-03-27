@@ -22,10 +22,10 @@
                 voicePack="Alva-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.6" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -63,10 +63,10 @@
                 voicePack="Voymastina-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="3.2" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.6" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -104,10 +104,10 @@
                 voicePack="Clukay-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -145,10 +145,10 @@
                 voicePack="Mechty-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -185,10 +185,10 @@
                 voicePack="Andoris-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -225,10 +225,10 @@
                 voicePack="Biyoca-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -265,10 +265,10 @@
                 voicePack="Leva-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
             </Mobility>
 
@@ -306,10 +306,10 @@
                 voicePack="Lenna-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -346,10 +346,10 @@
                 voicePack="Vector-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -388,10 +388,10 @@
                 voicePack="Springfield-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -429,10 +429,10 @@
                 voicePack="Macqiato-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -470,10 +470,10 @@
                 voicePack="Centaureissi-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -510,10 +510,10 @@
                 voicePack="Sharkry-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.6" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -550,10 +550,10 @@
                 voicePack="Groza-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -591,10 +591,10 @@
                 voicePack="Nemesis-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -670,10 +670,10 @@
                 voicePack="Colphne-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -710,10 +710,10 @@
                 voicePack="Vepley-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -750,10 +750,10 @@
                 voicePack="Peritya-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -791,10 +791,10 @@
                 voicePack="Sabrina-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -831,10 +831,10 @@
                 voicePack="Qiuhua-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -871,10 +871,10 @@
                 voicePack="Peri-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -910,10 +910,10 @@
                 voicePack="Florence-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -950,10 +950,10 @@
                 voicePack="Nikketa-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -990,10 +990,10 @@
                 voicePack="Helen-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -1030,10 +1030,10 @@
                 voicePack="Lewis-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -1070,10 +1070,10 @@
                 voicePack="Qiongjiu-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -1110,10 +1110,10 @@
                 voicePack="Tololo-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -1151,10 +1151,10 @@
                 voicePack="Lind-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -1191,10 +1191,10 @@
                 voicePack="Cheeta-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -1231,10 +1231,10 @@
                 voicePack="Daiyan-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -1271,10 +1271,10 @@
                 voicePack="Jiangyu-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -1311,10 +1311,10 @@
                 voicePack="ZhaoHui-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -1351,10 +1351,10 @@
                 voicePack="Faye-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -1391,10 +1391,10 @@
                 voicePack="Ksenia-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -1431,10 +1431,10 @@
                 voicePack="Nagant-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -1471,10 +1471,10 @@
                 voicePack="Mosinnagant-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -1512,10 +1512,10 @@
                 voicePack="Papasha-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 

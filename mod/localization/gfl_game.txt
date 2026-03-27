@@ -46,6 +46,13 @@
 @doctrine_gfl_lethalprecision_name=Lethal Precision
 @doctrine_gfl_lethalprecision_descr=Optimized targeting algorithms prioritize vital areas. Significantly increases critical hit probability and reduces target acquisition time. Marksman rifles gain enhanced headshot capability.
 
+
+@GEAR-GIRLKICK-GUNMETAL-TTIP=Doll Kick!
+
+@GEAR-GIRLKICK-TITANIUM-TTIP=Strongest Kick of the NSU!
+
+@GEAR-GFL-LOCKPICK-TTIP=Unlock lock!
+
 @scope_GFL_ironsights_name=Iron sights
 
 @scope_GFL_ironsights_desc=Standard ironsights for basic aim guidance. Provides the quickest aim time at the cost of precision. T-Dolls being sent with nothing but iron sights tend to rely on just their built-in sensor packages in close range fights, removing the need to "consult" the sights during target acquisition, allowing the doll to process shooting protocols faster.
@@ -89,7 +96,7 @@
 @menu_game_medic_grenade_none_ttip=No more medic grenades
 
 @armor_gfl_recframe_name=16Lab Recreation Frame
-@armor_recframe_desc=Doll body frame developed by Persica to give your Dolls a closer approximation of the human experience, enabling them to participate in activities outside their normal design parameters, such as tasting and savoring food.\n\nThis frame offers no real protection for the Doll’s Neural Core beyond its synthetic skin, in exchange this frame increases the Doll's motor function performance by 20%, which could be useful in specific combat scenarios.\n\nMayling strongly disapproves of deploying Dolls into combat with this frame, citing the extreme risk posed by its complete lack of protection qualities, which almost guarantees her pulling an all-nighter reuploading the Doll's Neural Cloud into a new frame.
+@armor_recframe_desc=Doll body frame developed by Persica to give your Dolls a closer approximation of the human experience, enabling them to participate in activities outside their normal design parameters, such as tasting and savoring food.\n\nThis frame offers no real protection for the Doll’s Neural Core beyond its synthetic skin, in exchange this frame increases the Doll’s motor function performance by 20%, which could be useful in specific combat scenarios.\n\nMayling strongly disapproves of deploying Dolls into combat with this frame, citing the extreme risk posed by its complete lack of protection qualities, which almost guarantees her pulling an all-nighter reuploading the Doll’s Neural Cloud into a new frame.\n\nNote: While the stats appear absurdly high, the extremely low coverage (10%) means hits will almost never be stopped in practice. Other frames offer far more reliable protection, trust me :)
 
 @armor_gfl_lawframe_name=Law Enforcement Frame Mk.II
 @armor_gfl_lawframe_desc=Doll body frame extensively used by Dolls working in security and law enforcement in Green and White Zones.\n\nFeatures self-lubricating joints that grant increased motor function performance by 12% for on-foot chases while still offering decent protection against small arms fire from common armed criminals thanks to the anti-ballistic gel layer underneath the synthetic skin.
@@ -780,11 +787,19 @@
 @WEAP-PPSH41-DESC=Wartime Soviet SMG built from stamped steel and bad intentions. The 71-round drum and ~900 RPM cyclic rate make it a room-clearing monster.\n\n7.62x25mm Tokarev has some punch to it, but practical accuracy drops off fast. Get close, hold the trigger, and let the drum do the talking.
 
 @firearm_caliber_762x38_name=7.62×38mmR
+@ammo_762x38_fmj_nagant_name=7.62x38mmR FMJ
+@ammo_762x38_fmj_nagant_desc=Standard 7.62x38mmR ammunition for the Nagant M1895's gas-seal cylinder. The recessed bullet allows the cylinder to seal against the barrel, making suppressed fire viable.
 
 @firearm_caliber_9x18_name=9×18mm
+@ammo_9x18_jhp_stechkin_name=9x18mm JHP +P
+@ammo_9x18_jhp_stechkin_desc=Overpressure hollow-point 9x18mm rounds. The +P loading compensates for the cartridge's lower energy compared to 9x19mm, expanding on impact for increased damage against soft targets at close range.
 
+@firearm_caliber_762x25_name=7.62×25mm Tokarev
+@ammo_762x25_fmj_ppsh41_name=7.62x25mm FMJ
+@ammo_762x25_fmj_ppsh41_desc=High-velocity bottleneck pistol cartridge for submachine guns. The small, fast bullet has surprising penetration for its size but bleeds energy quickly at range.
 
-
+@ammo_762x54r_fmj_mosinnagant_name=7.62x54mmR FMJ
+@ammo_762x54r_fmj_mosinnagant_desc=Full-power 7.62x54mmR rifle cartridge for bolt-action precision work. Devastating at range with excellent penetration against all but the heaviest armour.
 
 
 
