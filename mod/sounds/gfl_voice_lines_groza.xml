@@ -225,6 +225,9 @@
                 name="data/sounds/voice/Groza/Series_Ultimate__VO_Groza_Single_Ultimate_SR_001.wav"
             />
     </Sound>
+    <Sound ID="VOX_TRPR_BREACHING_DOOR"></Sound>
+    <Sound ID="VOX_TRPR_COMPROMISED"></Sound>
+    <Sound ID="VOX_TRPR_DISGUISED"></Sound>
   </Pack>
   <Pack name="Nemesis-Voice" channel="voice">
     <Sound ID="VOX_DYING">
@@ -476,6 +479,9 @@
                 name="data/sounds/voice/Nemesis/Series_Ultimate__VO_Nemesis_Single_Ultimate_SR_001.wav"
             />
     </Sound>
+    <Sound ID="VOX_TRPR_BREACHING_DOOR"></Sound>
+    <Sound ID="VOX_TRPR_COMPROMISED"></Sound>
+    <Sound ID="VOX_TRPR_DISGUISED"></Sound>
   </Pack>
   <Pack name="Charolic-Voice" channel="voice">
     <Sound ID="VOX_DYING">
@@ -725,6 +731,9 @@
                 name="data/sounds/voice/Charolic/Series_Ultimate__VO_Charolic_Single_Ultimate_SR_001.wav"
             />
     </Sound>
+    <Sound ID="VOX_TRPR_BREACHING_DOOR"></Sound>
+    <Sound ID="VOX_TRPR_COMPROMISED"></Sound>
+    <Sound ID="VOX_TRPR_DISGUISED"></Sound>
   </Pack>
   <Pack name="Colphne-Voice" channel="voice">
     <Sound ID="VOX_DYING">
@@ -958,6 +967,9 @@
                 name="data/sounds/voice/Colphne/Series_Ultimate__VO_Colphne_Single_Ultimate_SR_001.wav"
             />
     </Sound>
+    <Sound ID="VOX_TRPR_BREACHING_DOOR"></Sound>
+    <Sound ID="VOX_TRPR_COMPROMISED"></Sound>
+    <Sound ID="VOX_TRPR_DISGUISED"></Sound>
   </Pack>
   <Pack name="Vepley-Voice" channel="voice">
     <Sound ID="VOX_DYING">
@@ -1155,5 +1167,8 @@
     <Sound ID="VOX_WARN_RPG">
       <Path name="data/sounds/voice/Vepley/Series_Hitted.wav" />
     </Sound>
+    <Sound ID="VOX_TRPR_BREACHING_DOOR"></Sound>
+    <Sound ID="VOX_TRPR_COMPROMISED"></Sound>
+    <Sound ID="VOX_TRPR_DISGUISED"></Sound>
   </Pack>
 </Sounds>

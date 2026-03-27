@@ -196,6 +196,9 @@
                 name="data/sounds/voice/Peritya/Series_HittedLast__VO_Peritya_Series_Tone_Negative_002.wav"
             />
     </Sound>
+    <Sound ID="VOX_TRPR_BREACHING_DOOR"></Sound>
+    <Sound ID="VOX_TRPR_COMPROMISED"></Sound>
+    <Sound ID="VOX_TRPR_DISGUISED"></Sound>
   </Pack>
   <Pack name="Sabrina-Voice" channel="voice">
     <Sound ID="VOX_DYING">
@@ -411,6 +414,9 @@
                 name="data/sounds/voice/Sabrina/Series_Ultimate__VO_Sabrina_Single_Ultimate_SSR_001.wav"
             />
     </Sound>
+    <Sound ID="VOX_TRPR_BREACHING_DOOR"></Sound>
+    <Sound ID="VOX_TRPR_COMPROMISED"></Sound>
+    <Sound ID="VOX_TRPR_DISGUISED"></Sound>
   </Pack>
   <Pack name="Qiuhua-Voice" channel="voice">
     <Sound ID="VOX_DYING">
@@ -619,6 +625,9 @@
                 name="data/sounds/voice/Qiuhua/Series_Hitted__VO_Qiuhua_Series_HittedLast.wav"
             />
     </Sound>
+    <Sound ID="VOX_TRPR_BREACHING_DOOR"></Sound>
+    <Sound ID="VOX_TRPR_COMPROMISED"></Sound>
+    <Sound ID="VOX_TRPR_DISGUISED"></Sound>
   </Pack>
   <Pack name="Peri-Voice" channel="voice">
     <Sound ID="VOX_DYING">
@@ -827,6 +836,9 @@
                 name="data/sounds/voice/Peri/Series_Shield_Broken__VO_Peri_Series_Tone_Negative_003.wav"
             />
     </Sound>
+    <Sound ID="VOX_TRPR_BREACHING_DOOR"></Sound>
+    <Sound ID="VOX_TRPR_COMPROMISED"></Sound>
+    <Sound ID="VOX_TRPR_DISGUISED"></Sound>
   </Pack>
   <Pack name="Florence-Voice" channel="voice">
     <Sound ID="VOX_DYING">
@@ -1037,6 +1049,9 @@
                 name="data/sounds/voice/Florence/Series_Hitted__VO_Florence_Series_HittedLast.wav"
             />
     </Sound>
+    <Sound ID="VOX_TRPR_BREACHING_DOOR"></Sound>
+    <Sound ID="VOX_TRPR_COMPROMISED"></Sound>
+    <Sound ID="VOX_TRPR_DISGUISED"></Sound>
   </Pack>
   <Pack name="Nikketa-Voice" channel="voice">
     <Sound ID="VOX_DYING">
@@ -1255,6 +1270,9 @@
                 name="data/sounds/voice/Nikketa/Series_Ultimate__VO_Nikketa_Single_Ultimate_SSR_001.wav"
             />
     </Sound>
+    <Sound ID="VOX_TRPR_BREACHING_DOOR"></Sound>
+    <Sound ID="VOX_TRPR_COMPROMISED"></Sound>
+    <Sound ID="VOX_TRPR_DISGUISED"></Sound>
   </Pack>
   <Pack name="Helen-Voice" channel="voice">
     <Sound ID="VOX_DYING">
@@ -1465,6 +1483,9 @@
             name="data/sounds/voice/Helen/Series_Shield_Broken__VO_Helen_Series_Tone_Negative_003.wav"
         />
     </Sound>
+    <Sound ID="VOX_TRPR_BREACHING_DOOR"></Sound>
+    <Sound ID="VOX_TRPR_COMPROMISED"></Sound>
+    <Sound ID="VOX_TRPR_DISGUISED"></Sound>
   </Pack>
   <Pack name="Lewis-Voice" channel="voice">
     <Sound ID="VOX_DYING">
@@ -1675,5 +1696,8 @@
             name="data/sounds/voice/Lewis/Series_Shield_Broken__VO_Lewis_Series_Tone_Negative_003.wav"
         />
     </Sound>
+    <Sound ID="VOX_TRPR_BREACHING_DOOR"></Sound>
+    <Sound ID="VOX_TRPR_COMPROMISED"></Sound>
+    <Sound ID="VOX_TRPR_DISGUISED"></Sound>
   </Pack>
 </Sounds>

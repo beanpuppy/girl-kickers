@@ -1,0 +1,439 @@
+<!-- Run `python -m http.server 8000` from the project root, then open http://localhost:8000/www/voice-viewer.html -->
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Voice Line Viewer</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                font-family:
+                    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+                background: #1a1a2e;
+                color: #e0e0e0;
+                padding: 20px;
+            }
+            h1 {
+                margin-bottom: 16px;
+                color: #fff;
+            }
+            .controls {
+                display: flex;
+                gap: 12px;
+                margin-bottom: 20px;
+                flex-wrap: wrap;
+                align-items: center;
+            }
+            .controls select,
+            .controls input {
+                padding: 8px 12px;
+                border-radius: 6px;
+                border: 1px solid #333;
+                background: #16213e;
+                color: #e0e0e0;
+                font-size: 14px;
+            }
+            .controls select {
+                min-width: 200px;
+            }
+            .controls input {
+                min-width: 250px;
+            }
+            .stats {
+                color: #888;
+                font-size: 13px;
+                margin-left: auto;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            th {
+                text-align: left;
+                padding: 10px 12px;
+                background: #16213e;
+                color: #aaa;
+                font-size: 12px;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                position: sticky;
+                top: 0;
+                z-index: 1;
+            }
+            td {
+                padding: 8px 12px;
+                border-bottom: 1px solid #222;
+                vertical-align: middle;
+            }
+            tr:hover {
+                background: #16213e;
+            }
+            tr.empty td {
+                opacity: 0.4;
+            }
+            .vox-id {
+                font-family: monospace;
+                font-size: 13px;
+                white-space: nowrap;
+            }
+            .vox-id .category {
+                color: #666;
+            }
+            .filename {
+                font-family: monospace;
+                font-size: 12px;
+                color: #7faaff;
+                max-width: 350px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .translation {
+                font-size: 13px;
+                color: #ccc;
+                max-width: 400px;
+            }
+            .play-btn {
+                background: #0f3460;
+                border: 1px solid #1a5276;
+                color: #7faaff;
+                padding: 4px 12px;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 13px;
+                white-space: nowrap;
+            }
+            .play-btn:hover {
+                background: #1a5276;
+            }
+            .play-btn:disabled {
+                opacity: 0.3;
+                cursor: default;
+            }
+            .play-btn.playing {
+                background: #e94560;
+                border-color: #e94560;
+                color: #fff;
+            }
+            .empty-label {
+                color: #555;
+                font-style: italic;
+                font-size: 12px;
+            }
+            .pack-header {
+                background: #0f3460;
+            }
+            .pack-header td {
+                padding: 12px;
+                font-weight: bold;
+                font-size: 15px;
+                color: #fff;
+            }
+            .filter-highlight {
+                background: #3a2a00;
+            }
+            #loading {
+                text-align: center;
+                padding: 60px;
+                color: #888;
+            }
+            #error {
+                color: #e94560;
+                padding: 20px;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Voice Line Viewer</h1>
+
+        <div class="controls">
+            <select id="xmlSelect">
+                <option value="">Loading...</option>
+            </select>
+            <select id="packSelect">
+                <option value="">All packs</option>
+            </select>
+            <input
+                type="text"
+                id="filter"
+                placeholder="Filter by VOX ID or translation..."
+            />
+            <span class="stats" id="stats"></span>
+        </div>
+
+        <div id="error"></div>
+        <div id="loading">Select a voice lines XML file to start.</div>
+        <table id="table" style="display: none">
+            <thead>
+                <tr>
+                    <th style="width: 50px"></th>
+                    <th style="width: 240px">VOX ID</th>
+                    <th>File</th>
+                    <th>Translation</th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+
+        <script>
+            const BASE = "..";
+            let translations = {};
+            let currentAudio = null;
+            let currentBtn = null;
+
+            async function init() {
+                const xmlSelect = document.getElementById("xmlSelect");
+                xmlSelect.innerHTML =
+                    '<option value="">-- Select squad --</option>';
+
+                // Discover XML files from directory listing
+                try {
+                    const resp = await fetch(`${BASE}/mod/sounds/`);
+                    const html = await resp.text();
+                    const matches = html.matchAll(/href="(gfl_voice_lines_[^"]+\.xml)"/g);
+                    for (const m of matches) {
+                        const file = `mod/sounds/${m[1]}`;
+                        const name = m[1].match(/gfl_voice_lines_(.+)\.xml/)[1];
+                        const opt = document.createElement("option");
+                        opt.value = file;
+                        opt.textContent = name;
+                        xmlSelect.appendChild(opt);
+                    }
+                } catch (e) {
+                    console.error("Failed to list voice XML files:", e);
+                }
+
+                xmlSelect.addEventListener("change", () => {
+                    updateHash();
+                    loadXml(xmlSelect.value);
+                });
+                document
+                    .getElementById("packSelect")
+                    .addEventListener("change", () => {
+                        updateHash();
+                        renderTable();
+                    });
+                document
+                    .getElementById("filter")
+                    .addEventListener("input", renderTable);
+
+                // Restore from URL hash
+                const params = new URLSearchParams(location.hash.slice(1));
+                const savedXml = params.get("xml");
+                if (savedXml) {
+                    xmlSelect.value = savedXml;
+                    if (xmlSelect.value) {
+                        await loadXml(savedXml);
+                        const savedPack = params.get("pack");
+                        if (savedPack) {
+                            document.getElementById("packSelect").value = savedPack;
+                            renderTable();
+                        }
+                    }
+                }
+            }
+
+            function updateHash() {
+                const params = new URLSearchParams();
+                const xml = document.getElementById("xmlSelect").value;
+                const pack = document.getElementById("packSelect").value;
+                if (xml) params.set("xml", xml);
+                if (pack) params.set("pack", pack);
+                history.replaceState(null, "", "#" + params.toString());
+            }
+
+            async function loadTranslations(charName) {
+                if (translations[charName]) return translations[charName];
+                try {
+                    const resp = await fetch(
+                        `${BASE}/mod/sounds/voice/${charName}/_trans.txt`,
+                    );
+                    if (!resp.ok) return {};
+                    const text = await resp.text();
+                    const map = {};
+                    const lines = text.split("\n");
+                    for (let i = 0; i < lines.length; i++) {
+                        const line = lines[i].trim();
+                        if (line.endsWith(".wav")) {
+                            const nextLine = (lines[i + 1] || "").trim();
+                            if (
+                                nextLine &&
+                                !nextLine.endsWith(".wav") &&
+                                !nextLine.startsWith("#")
+                            ) {
+                                map[line] = nextLine;
+                            }
+                        }
+                    }
+                    translations[charName] = map;
+                    return map;
+                } catch (e) {
+                    return {};
+                }
+            }
+
+            let packData = [];
+
+            async function loadXml(path) {
+                if (!path) return;
+                document.getElementById("loading").textContent = "Loading...";
+                document.getElementById("loading").style.display = "";
+                document.getElementById("table").style.display = "none";
+
+                try {
+                    const resp = await fetch(`${BASE}/${path}`);
+                    const text = await resp.text();
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(text, "text/xml");
+                    const packs = doc.querySelectorAll("Pack");
+
+                    packData = [];
+                    const packSelect = document.getElementById("packSelect");
+                    packSelect.innerHTML =
+                        '<option value="">All packs</option>';
+
+                    for (const pack of packs) {
+                        const packName = pack.getAttribute("name");
+                        const charName = packName.replace("-Voice", "");
+                        const trans = await loadTranslations(charName);
+
+                        const opt = document.createElement("option");
+                        opt.value = packName;
+                        opt.textContent = packName;
+                        packSelect.appendChild(opt);
+
+                        const sounds = pack.querySelectorAll("Sound");
+                        for (const sound of sounds) {
+                            const voxId = sound.getAttribute("ID");
+                            const paths = sound.querySelectorAll("Path");
+
+                            if (paths.length === 0) {
+                                packData.push({
+                                    packName,
+                                    charName,
+                                    voxId,
+                                    file: null,
+                                    filePath: null,
+                                    translation: null,
+                                });
+                            } else {
+                                for (const p of paths) {
+                                    const filePath = p.getAttribute("name");
+                                    const fileName = filePath.split("/").pop();
+                                    const t = trans[fileName] || null;
+                                    packData.push({
+                                        packName,
+                                        charName,
+                                        voxId,
+                                        file: fileName,
+                                        filePath,
+                                        translation: t,
+                                    });
+                                }
+                            }
+                        }
+                    }
+
+                    renderTable();
+                    document.getElementById("loading").style.display = "none";
+                    document.getElementById("table").style.display = "";
+                } catch (e) {
+                    document.getElementById("error").textContent =
+                        "Error loading XML: " + e.message;
+                    document.getElementById("error").style.display = "";
+                }
+            }
+
+            function renderTable() {
+                const tbody = document.getElementById("tbody");
+                const filterVal = document
+                    .getElementById("filter")
+                    .value.toLowerCase();
+                const packFilter = document.getElementById("packSelect").value;
+
+                let html = "";
+                let currentPack = "";
+                let shown = 0;
+                let total = 0;
+                let assigned = 0;
+
+                for (const row of packData) {
+                    if (packFilter && row.packName !== packFilter) continue;
+                    total++;
+
+                    const matchesFilter =
+                        !filterVal ||
+                        row.voxId.toLowerCase().includes(filterVal) ||
+                        (row.translation &&
+                            row.translation
+                                .toLowerCase()
+                                .includes(filterVal)) ||
+                        (row.file &&
+                            row.file.toLowerCase().includes(filterVal));
+
+                    if (!matchesFilter) continue;
+                    shown++;
+                    if (row.file) assigned++;
+
+                    if (row.packName !== currentPack) {
+                        currentPack = row.packName;
+                        html += `<tr class="pack-header"><td colspan="4">${esc(currentPack)}</td></tr>`;
+                    }
+
+                    const isEmpty = !row.file;
+                    const audioPath = row.filePath
+                        ? `${BASE}/${row.filePath.replace("data/", "mod/")}`
+                        : null;
+
+                    html += `<tr class="${isEmpty ? "empty" : ""} ${filterVal && !isEmpty ? "filter-highlight" : ""}">`;
+                    html += `<td>${audioPath ? `<button class="play-btn" data-src="${esc(audioPath)}" onclick="playAudio(this)">Play</button>` : ""}</td>`;
+                    html += `<td class="vox-id">${esc(row.voxId)}</td>`;
+                    html += `<td class="filename">${row.file ? esc(row.file) : '<span class="empty-label">(empty)</span>'}</td>`;
+                    html += `<td class="translation">${row.translation ? esc(row.translation) : isEmpty ? "" : '<span class="empty-label">no translation</span>'}</td>`;
+                    html += `</tr>`;
+                }
+
+                tbody.innerHTML = html;
+                document.getElementById("stats").textContent =
+                    `${shown} entries shown, ${assigned} assigned`;
+            }
+
+            function playAudio(btn) {
+                if (currentAudio) {
+                    currentAudio.pause();
+                    currentAudio = null;
+                    if (currentBtn) currentBtn.classList.remove("playing");
+                    if (currentBtn === btn) {
+                        currentBtn = null;
+                        return;
+                    }
+                }
+
+                const audio = new Audio(btn.dataset.src);
+                audio.play();
+                btn.classList.add("playing");
+                currentAudio = audio;
+                currentBtn = btn;
+
+                audio.addEventListener("ended", () => {
+                    btn.classList.remove("playing");
+                    currentAudio = null;
+                    currentBtn = null;
+                });
+            }
+
+            function esc(s) {
+                const d = document.createElement("div");
+                d.textContent = s;
+                return d.innerHTML;
+            }
+
+            init();
+        </script>
+    </body>
+</html>

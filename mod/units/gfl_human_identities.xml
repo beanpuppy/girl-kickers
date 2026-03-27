@@ -433,22 +433,8 @@
         customName="DAIYAN"
     />
     <Portrait
-        tex="data/textures/portraits/gfl_type95.dds"
-        unit="GFL-UNIT-GIRL"
-        class="GFL-DOLL-QBZ95"
-        gender="0"
-        customName="DAIYAN"
-    />
-    <Portrait
         tex="data/textures/portraits/gfl_type97.dds"
         unit="GFL-UNIT-MONSOON"
-        class="GFL-DOLL-QBZ97"
-        gender="0"
-        customName="JIANGYU"
-    />
-    <Portrait
-        tex="data/textures/portraits/gfl_type97.dds"
-        unit="GFL-UNIT-GIRL"
         class="GFL-DOLL-QBZ97"
         gender="0"
         customName="JIANGYU"
@@ -461,24 +447,39 @@
         customName="ZHAOHUI"
     />
     <Portrait
-        tex="data/textures/portraits/gfl_csls06.dds"
-        unit="GFL-UNIT-GIRL"
-        class="GFL-DOLL-CSLS06"
-        gender="0"
-        customName="ZHAOHUI"
-    />
-    <Portrait
         tex="data/textures/portraits/gfl_cz75.dds"
         unit="GFL-UNIT-MONSOON"
         class="GFL-DOLL-CZ75"
         gender="0"
         customName="FAYE"
     />
+
     <Portrait
-        tex="data/textures/portraits/gfl_cz75.dds"
-        unit="GFL-UNIT-GIRL"
-        class="GFL-DOLL-CZ75"
+        tex="data/textures/portraits/gfl_stechkin.dds"
+        unit="GFL-UNIT-POL03"
+        class="GFL-DOLL-STECHKIN"
         gender="0"
-        customName="FAYE"
+        customName="KSENIA"
+    />
+    <Portrait
+        tex="data/textures/portraits/gfl_nagant.dds"
+        unit="GFL-UNIT-POL03"
+        class="GFL-DOLL-NAGANT"
+        gender="0"
+        customName="NAGANT"
+    />
+    <Portrait
+        tex="data/textures/portraits/gfl_mosinnagant.dds"
+        unit="GFL-UNIT-POL03"
+        class="GFL-DOLL-MOSINNAGANT"
+        gender="0"
+        customName="MOSIN-NAGANT"
+    />
+    <Portrait
+        tex="data/textures/portraits/gfl_ppsh41.dds"
+        unit="GFL-UNIT-POL03"
+        class="GFL-DOLL-PPSH41"
+        gender="0"
+        customName="PAPASHA"
     />
 </HumanIdentities>

@@ -1,0 +1,232 @@
+# Voice Line Translations for Ksenia
+# Generated automatically using OpenAI Whisper
+# Total files: 76
+
+Series_Battle_NormalKill__VO_Ksenia_Series_Kill__VO_Ksenia_Single_Kill_001.wav
+  Be quiet.
+
+Series_Battle_Start__VO_Ksenia_Series_Tone_Positive_008.wav
+  I'll work hard!
+
+Series_Cancel__VO_Ksenia_Series_Tone_Positive_002.wav
+  Yes, yes.
+
+Series_Chosen_Auto__VO_Ksenia_Series_Tone_Positive_004.wav
+  What?
+
+Series_Chosen__VO_Ksenia_Series_Tone_Positive_007.wav
+  Yes, yes.
+
+Series_Daily_001.wav
+  I'll leave the rest of my work to tomorrow. Commander, shall we go shopping?
+
+Series_Daily_002.wav
+  Commander, do you know where Meiling's Mii-chuu is? Eh? You're not going to tell me? Geez, you can't just tell me!
+
+Series_Daily_003.wav
+  Business? Sure, as long as you pay me for my work.
+
+Series_Daily_004.wav
+  Commander, how about the service of the waitress? Don't worry, the quality of the service won't lose to the sentau racing! In exchange, I'll take the chip!
+
+Series_Daily_005.wav
+  The dormitory of the Hermo-gou is too small! The things I bought are not enough! Commander, can I have another room?
+
+Series_Daily_006.wav
+  Nagann is a bit noisy, but it's for the sake of my junior. Eh? You want to hear about Nagann's combat experience? No, you shouldn't hear about that.
+
+Series_Daily_007.wav
+  You should use the money you've earned immediately! This is the minimum amount of money you can save! If you don't, you'll be sad about the money too!
+
+Series_Daily_008.wav
+  I guess you like alcohol too, Shin Nagano. You're going to get along with Meirin.
+
+Series_Daily_009.wav
+  You're going to be a redstone again this month? Should I teach you how to make a good profit?
+
+Series_Daily_010.wav
+  Commander, can I sing a song for you at my part-time job? No way! I can't take the introduction fee!
+
+Series_Die__VO_Ksenia_Series_Tone_Negative_002.wav
+  That's it? No, I don't. Nah, go ahead. M Speech? It's not too bad to be not pleased with it.
+
+Series_Hit__VO_Ksenia_Series_Tone_Positive_005.wav
+  Don't move!
+
+Series_Hit__VO_Ksenia_Single_Hit_001.wav
+  Let's finish this quickly!
+
+Series_Lose__VO_Ksenia_Single_Lose_001.wav
+  Ah, the bonus is... No, there are still many opportunities to earn!
+
+Series_Set_Click__VO_Ksenia_Series_Tone_Positive_003.wav
+  Eh? Her words are baffling, but her general주� shifting to this place just screams a horrible hatred. Y... yes. I don't know anymore. It's round and prize-worthy combat, so it makes sense to use a weapon like this & defend the technologies with a bare hands.
+
+Series_Set_Fall__VO_Ksenia_Series_Tone_Positive_001.wav
+  Roger!
+
+Series_Skill01__VO_Ksenia_Single_Skill_001.wav
+  It's a pain in the ass to lend it to you.
+
+Series_Skill02__VO_Ksenia_Single_Skill_002.wav
+  I'll take the chip!
+
+Series_SkillPatk__VO_Ksenia_Series_Up_007.wav
+  I have to protect my body myself.
+
+Series_Tone_Negative_001.wav
+  eeEEEHh Например caviar
+
+Series_Tone_Positive_005.wav
+  Don't move!
+
+Series_Tone_Positive_006.wav
+  Understood. I shook hands with her, and shook her head from relatively small voice showing fear. And she went back to her room, and looked at his eyes now. I thats why he fainted. Yeah, but you won't get hurt for that much, Yato, right? Saying that, Kan'uturned away and wiped off fear in her ears. And in addition she realized her receptonic shaking had triggered that overpowering feeling she had no scenery to keep her attention.
+
+Series_Tone_Positive_009.wav
+  What a pain...
+
+Series_Tone_Positive_010.wav
+  I'll be right there!
+
+Series_Ultimate__VO_Ksenia_Single_Ultimate_SR_001.wav
+  I'll pay you back!
+
+Series_Up_001.wav
+  Not bad! While I wasして, to use up myظ yeah, because let's get through think Colorc image They feet, they weight transfer
+
+Series_Up_002.wav
+  Thank you!
+
+Series_Up_003.wav
+  I'll make a lot of money!
+
+Series_Up_004.wav
+  Money is the most important thing!
+
+Series_Up_005.wav
+  There were 4 or earth modepirators present in my mech Phenomenon, so they are mainly breakable weapons Alexand руб tributes that allow you to use necessary Increase Kills skill, use Abrasion, use A mixture of both abilities. Destruction demons collected不能 오 allow or count causing fundamental rights. So, monitoring the situation by participating in a tr bean altijd.
+
+Series_Up_006.wav
+  Now I'm relieved!
+
+Series_Up_007.wav
+  I have to protect my body myself.
+
+Series_Up_008.wav
+  Is this... a receipt?
+
+Series_Win__VO_Ksenia_Single_Win_001.wav
+  Mission complete! There's a campaign to lower our sleep, so let's go home!
+
+Single_Acquire_R_001.wav
+  Good work for the past year! I'll be getting more requests next year! Let's do our best!
+
+Single_Acquire_SR_001.wav
+  It's been a year since I came to the Hermo-go. If you give me a bonus, I might be more motivated!
+
+Single_Anniversary_001.wav
+  It's been a year already. Come to think of it, we couldn't save up last year, so let's set a goal for this year together, Commander!
+
+Single_Birthday_R_001.wav
+  You quit your overtime job and took a break, right? Did you forget what day it is today? It's not mine, it's the commander's birthday!
+
+Single_Birthday_SR_001.wav
+  Happy birthday, Commander. This is a present. I bought three of them, so please accept them.
+
+Single_Birthday_SSR_002.wav
+  The interior, cake, message, gift, and special service for Xenia! If you put them all together, you'll get a high price! But if you're a commander, you'll get a special 100% off!
+
+Single_Children_001.wav
+  This is a children's set from the first food store. I bought a few of them for the toys that randomly follow the set, but I already have all the types, so the nuggets... Commander, eat them. It's a waste if you don't eat them, right?
+
+Single_Christmas_001.wav
+  Black Friday is so scary... My wallet went empty in an instant... But well, money is something you use. There are a lot of things that I buy on holidays, so it's fun to buy them!
+
+Single_Christmas_002.wav
+  Wow, I bought too much again. When there's a Christmas sale, I can't stop. So, you can take one of your favorite things from here. Christmas present? What is it? I don't know.
+
+Single_Duanwu_001.wav
+  Look at the blood rolls I made. Hehe, what a good enemy. If you sell it in the city, it will be a good amount of money.
+
+Single_Friendliness_001.wav
+  Work? Sure, leave it to me. Ah, but, there's no overtime.
+
+Single_Friendliness_002.wav
+  I'm tired of making money... Hey, don't you know how to make money easily? If you do, tell me!
+
+Single_Friendliness_003.wav
+  We haven't seen each other for a while, but you're still a little bit of a
+
+Single_Friendliness_004.wav
+  Commander, I made cookies. If you only try them, you won't get any money!
+
+Single_Friendliness_005.wav
+  Is there anything that the Hermes doesn't need? If there is, give it to me! I'll put it in the chest!
+
+Single_Friendliness_006.wav
+  Most of the shops in the satellite city are closed on Saturday nights. By the way, this is a secret!
+
+Single_Friendliness_007.wav
+  Just like humans, dolls have a playback device! We have to earn a lot before we're left with nothing!
+
+Single_Friendliness_008.wav
+  I like spending money, but it looks like it's a lot of savings. I'd be happy if I could buy the same thing for a good price.
+
+Single_Friendliness_009.wav
+  Part-time jobs are tough, but you can do them with me. Of course, for free!
+
+Single_Friendliness_010.wav
+  When I worked at the bar, I saw a lot of people who were being spoiled because they didn't have money. Commander, you can't be like that. I'll make money for you.
+
+Single_Friendliness_011.wav
+  The bounty hunter is dangerous, so why don't we go to the green area and do some security? It's stable and easy, how about it?
+
+Single_Friendliness_012.wav
+  Wow... that's just data on your salary, Commander. H horr dash how all theerek's Creditos are dead. While I eaten everything that was left before me...
+
+Single_Friendliness_013.wav
+  Commander, let's go shopping! You don't have to worry about money. I've been having a good time lately.
+
+Single_Login_001.wav
+  Oh, you're back. I thought you'd be able to rest today...
+
+Single_MidAutumn_001.wav
+  Meiling said today is the day to eat mooncakes. I know a cheap mooncake shop, so if you want to reduce the extra cost of the day, follow me!
+
+Single_MidAutumn_002.wav
+  I bought all the mooncakes in this town! Let's compare them and decide which one tastes the best! Next year, I'll make them myself and make a lot of money!
+
+Single_NewYear_001.wav
+  New Year's wishes? It's all up to the Commander's one-sided money! If the Commander doesn't make money, I won't get a bonus either. So do your best to make my wish come true!
+
+Single_NewYear_002.wav
+  It's already the new year, huh? What should I do with this year's goal? But before that, I have to greet the Commander. Happy New Year! I hope this year will be a year where you can enjoy your earnings and use them comfortably! Of course, I'll be in your care too, Chip!
+
+Single_Obon_001.wav
+  What do you mean saying I'm dying? Obviously it's all on the dormitory. I'm so sad ever since you always just disappear.
+
+Single_Obtain_SR_001.wav
+  The owner of the house is... the Commander? My share is small, so I'll make a long-term contract!
+
+Single_SpringFes_001.wav
+  Happy New Year! Um... Do you have that? Here, I'll put it in a bag for you to use on New Year's Day. What was it called again? Oh, right! The New Year's ball!
+
+Single_SpringFes_002.wav
+  Happy New Year! Business is booming! These are my words of celebration. That being said... Give me a New Year's ball!
+
+Single_ThanksGiving_001.wav
+  Thank you, Commander! Eh? Why are you thanking me? That's because today is the day of gratitude. I'm taking care of you, so it's only natural, right?
+
+Single_Title_001.wav
+  Dolls Front Line 2 Exilium
+
+Single_Valentine_001.wav
+  This is a chocolate cake I learned while working at a cake shop. Do you want to try it? I won't take any chips today, so eat as much as you want.
+
+Single_Valentine_002.wav
+  Oh! You got a lot of chocolates! Fufufu. Then I'll make a different approach! It's called, Kusinya's Aan Service! It's free, so don't worry! Here, this is my chocolate. Aan!
+
+Single_WhiteVale_001.wav
+  Commander, I think you have something to give me. The things I got today will never sell, so don't worry!
+

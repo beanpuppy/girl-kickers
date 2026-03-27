@@ -13,7 +13,7 @@ bl_info = {
     "name": "KHM Tools",
     "author": "Reuben Yu (original), Antistratégie (fixes)",
     "version": (2, 0),
-    "blender": (5, 0, 0),
+    "blender": (5, 1, 0),
     "location": "File > Import/Export > khm (.khm)",
     "description": "Import and export Door Kickers 2 model files",
     "warning": "",

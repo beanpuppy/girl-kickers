@@ -1,0 +1,226 @@
+# Voice Line Translations for Nagant
+# Generated automatically using OpenAI Whisper
+# Total files: 74
+
+Series_Battle_Start__VO_Nagant_Series_Chosen__VO_Nagant_Series_Chosen_Auto__VO_Nagant_Series_Move_Start__VO_Nagant_Series_Set_Fall__VO_Nagant_Series_Tone_Positive_006.wav
+  "'s that right?"
+
+Series_Cancel__VO_Nagant_Series_Chosen_Auto__VO_Nagant_Series_Tone_Positive_005.wav
+  Hmm...
+
+Series_Cancel__VO_Nagant_Series_Set_Fall__VO_Nagant_Series_Tone_Positive_004.wav
+  Wonderful thank you for watching
+
+Series_Chosen__VO_Nagant_Series_Move_Start__VO_Nagant_Series_Tone_Positive_001.wav
+  We return to the old town where our father died... This hay team does not explain about이 worship... We return to the old town where our father died... The new organization这些工夫... I am forced to work as a logsman! I have repeatedly resulted in many crises that have now become a waste. I have repeatedly rendre ré while the current management is stable, wait... Where is we...
+
+Series_Daily_001.wav
+  Everything is fair and square! This is the first-class technique that I, your senior, have taught you!
+
+Series_Daily_002.wav
+  You're so stubborn, Groza. Even so, this latest strategy is really interesting! The milk is... Yeah, I'll bring it to Beppuri. I have to make her feel good as a senpai.
+
+Series_Daily_003.wav
+  Yeah, nothing's wrong with that. Even an old man like me can do my best for the safety of the Elm.
+
+Series_Daily_004.wav
+  All my daughters say that my tactics are old-fashioned. But if you don't listen to me, you'll get punished! You have to understand that!
+
+Series_Daily_005.wav
+  Lately, I've been having trouble following up on conversations with young people. Phew... I think it's about time I followed the trends.
+
+Series_Daily_006.wav
+  Steckie... U-uh...ric월 Where is your MP214? That bastard wouldn't have defaced me with my wallet.
+
+Series_Daily_007.wav
+  It seems that Mashin-Nagant has solved a few cases so far. He's really a diligent person. Me? I'm fine with it. Sometimes I have to give my juniors a chance to show off.
+
+Series_Daily_008.wav
+  Experience is irreplaceable. Be it guided by yourself or given by others, if you don't absorb it well, you won't be strong.
+
+Series_Daily_009.wav
+  Hey hey hey! No matter how much you're a junior, you don't trust my social experience! Do you have any reason to think I'm being fooled!? Umm... I-I don't have any...
+
+Series_Daily_010.wav
+  Meirin is always working overtime, but I wonder if she has a body... I still think that young people these days can be reckless. But that's a big mistake!
+
+Series_Hit__VO_Nagant_Series_Ultimate__VO_Nagant_Single_Hit_001.wav
+  Take this!
+
+Series_Hit__VO_Nagant_Single_Hit_001.wav
+  Take this!
+
+Series_HittedLast__VO_Nagant_Series_Shield_Broken__VO_Nagant_Series_Tone_Positive_010.wav
+  Be careful!
+
+Series_HittedLast__VO_Nagant_Series_Tone_Negative_002.wav
+  I-I'm begging you, please!
+
+Series_Kill__VO_Nagant_Single_Kill_001.wav
+  It's over!
+
+Series_Lose__VO_Nagant_Single_Lose_001.wav
+  seminar
+
+Series_Set_Click__VO_Nagant_Series_Tone_Positive_009.wav
+  Hello!
+
+Series_Shield_Broken__VO_Nagant_Series_Skill01__VO_Nagant_Series_Skill02__VO_Nagant_Series_Ultimate__VO_Nagant_Single_Skill_001.wav
+  Don't underestimate your seniors!
+
+Series_Shield_Broken__VO_Nagant_Series_Skill01__VO_Nagant_Single_Skill_001.wav
+  Don't underestimate your seniors!
+
+Series_Shield_Broken__VO_Nagant_Series_Tone_Positive_008.wav
+  I'm gonna stop!
+
+Series_Skill01__VO_Nagant_Series_Skill02__VO_Nagant_Series_Ultimate__VO_Nagant_Single_Skill_002.wav
+  You're still a demon, aren't you?
+
+Series_Skill02__VO_Nagant_Single_Skill_002.wav
+  You're still a demon, aren't you?
+
+Series_Tone_Positive_007.wav
+  Milk...
+
+Series_Ultimate__VO_Nagant_Single_Ultimate_SR_001.wav
+  I, an old lady, will teach you how to fight!
+
+Series_Up_001.wav
+  Not bad at all!
+
+Series_Up_002.wav
+  Is that true?
+
+Series_Up_003.wav
+  Wow! I'm Armor Power небольшing!
+
+Series_Up_004.wav
+  I'm coming to you, junior!
+
+Series_Up_005.wav
+  Eh? Wait a minute!
+
+Series_Up_006.wav
+  Are you still going to do it?
+
+Series_Up_007.wav
+  Leave it to me!
+
+Series_Up_008.wav
+  How tall are you? I guess I'm the same.
+
+Series_Win__VO_Nagant_Single_Win_001.wav
+  Did you see that? This is the difference between a veteran and a newcomer!
+
+Single_Acquire_R_001.wav
+  It's been a long time since I met the Commander. I've been busy for this year. I've said many times that I have to leave the progress to the times.
+
+Single_Acquire_SR_001.wav
+  What was I doing today a year ago? Boring business, work, and training for Xenia... But still, I never thought I'd be able to meet with you again! It's really strange.
+
+Single_Anniversary_001.wav
+  Oh my, it's been a year already. Commander, you've been through a lot in this year, but... Don't worry! I'll guide you through the year and the two years! Don't hold back! I'm confident in my behavior as a senior!
+
+Single_Birthday_R_001.wav
+  Commander, happy birthday! Birthdays are one of the few happy days. Don't be shy. Do you want to wear a triangle hat? I prepared it specially for you.
+
+Single_Birthday_SR_001.wav
+  Hmm... How many candles should I put in? Well, I guess I'll put in a few more. That's what makes me happy... Ah! Commander, why are you earlier than planned? Why don't you wait a little longer for this? Anyway, happy birthday!
+
+Single_Birthday_SSR_002.wav
+  Looks like you've gotten another year old. Even for an old man like me, even a small thing is important to the Commander! Now, let's hurry and celebrate!
+
+Single_Children_001.wav
+  Commander, why is there candy under my pillow? Wha-!? Children's Day!? I told you not to treat me like a child! N-No! Uu... Don't pat my head!
+
+Single_Christmas_001.wav
+  Alright! I'll be Santa this year! I've bought a lot of Santa sticks! How about giving them to everyone in Elmo's house one by one? Alright, Commander! It's your turn!
+
+Single_Christmas_002.wav
+  What's wrong? You're not playing with the young ones? Hehe, the old ones are just resting here. I put a lot of effort into preparing the present for the commander...
+
+Single_Duanwu_001.wav
+  A vocabulary theory? What is that? Who is it? Oh! I was made to praise a famous person in history! Amazing! I can become a senior who can be passed down to the future generations! I have to do my best!
+
+Single_Friendliness_001.wav
+  Commander, you have a good eye. What? Don't worry. I'm friendly.
+
+Single_Friendliness_002.wav
+  If you ask me, it's nothing. So tell me, what do you want me to do?
+
+Single_Friendliness_003.wav
+  I told you I have eyes for you, but what do you mean by using this oibore? Well, whatever.
+
+Single_Friendliness_004.wav
+  Yeah, I'm not feeling too bad today, Commander. Now then, are there any newcomers who need my help with their training?
+
+Single_Friendliness_005.wav
+  Commander, when I exchange my body, can you raise my stature a little bit?
+
+Single_Friendliness_006.wav
+  This hat is pretty good, right? I even have other colors for you! Commander, if you're trying to make me take off my hat... You're not getting away with this!
+
+Single_Friendliness_007.wav
+  I feel like there's less things to stand on the battlefield here... Is it my fault? Commander! You don't treat me special, do you? Everyone has to treat each other equally!
+
+Single_Friendliness_008.wav
+  Commander, I picked up a beautiful button... Oh, it's yours... ...Um, can I have it?
+
+Single_Friendliness_009.wav
+  Commander! I got two tickets to the movie theater I lent you the other day! If you have a chance, why don't we go see the hero movie together?
+
+Single_Friendliness_010.wav
+  It's only natural to have a senior as your junior. By the way, junior includes the commander. Ehehe.
+
+Single_Friendliness_011.wav
+  You're probably staying up too late, Commander. This isn't a party! If you don't be careful now, you'll get hurt. You can't change your body like a doll. Wait, what? Where are you going? I'm not done talking yet!
+
+Single_Friendliness_012.wav
+  The one who always says boring things is a Ksenia. If there's something in front of me, my body will move on its own. In that sense, you and I may be similar. Hehe, the way you look at me is also great.
+
+Single_Friendliness_013.wav
+  Commander! W-What are you doing here all of a sudden? If you're here, you should be showing something as a senior... Uuuh... Don't worry! I'll be by your side from now on! You're a junior who always makes me worry...
+
+Single_Login_001.wav
+  Commander, you're early today. That's good, that's good.
+
+Single_MidAutumn_001.wav
+  Wow! The moon tonight is really round! Commander! Even if we can't spend the anniversary together in the future, the moon we see will be the same!
+
+Single_MidAutumn_002.wav
+  Commander, I've brought you some tea. Let's go see the moon together! People in the past used to fly their lanterns into the sky, but... Shall we try it too?
+
+Single_NewYear_001.wav
+  Generally, the goal set in mind will not come true. But, I still have to make some plans. Then, for now, this year, I'll start by deepening my bond with the Commander!
+
+Single_NewYear_002.wav
+  Commander, would you like to take my
+
+Single_Obon_001.wav
+  As I listened to the stories of various people, I thought that it would be nice to have a memorial day full of these feelings. It seems that I have really gotten older.
+
+Single_Obtain_SR_001.wav
+  Old soldier Nagant, I'm in! Yeah, yeah, Commander seems to have grown a lot too.
+
+Single_SpringFes_001.wav
+  Oh! I'm a little bit prepared for the final battle! No matter what you say, it's a memorial to the past! By the way, I heard that the Elm House will be holding a ceremony for the celebration. Commander, can I have some fun too?
+
+Single_SpringFes_002.wav
+  Did you have fun last night? What? What did you do this year? Ahaha! Tetsuya will answer to the elderly! Instead, let's do as much as we want today!
+
+Single_ThanksGiving_001.wav
+  Commander, today is the day to express my gratitude to those I am close to. I am also causing you a lot of trouble. So, I've made a flag with my arm. Isn't it cool? Why don't you put it on the command room?
+
+Single_Title_001.wav
+  Dolls Frontline 2 Exilium
+
+Single_Valentine_001.wav
+  Commander… I've brought some chocolate… You can try some Well, with the crappy chocolate everyone sees… I don't mind as long as it's not too popular ...m, no, it's fo �ifs y'know? batman batman
+
+Single_Valentine_002.wav
+  I'm not eating too much chocolate today. This is a warning for you, senpai. Even if you eat it, you should eat the low-calorie chocolate I prepared. That way, it won't affect your health.
+
+Single_WhiteVale_001.wav
+  Commander, a present gives totally a sense of depth, you see? ItTrans parlous? There is no special meaning?" And after a while, They've come to the same thing as 씹는 드�corn bewilderingly The gifts and gifts of the cue let the audience that the present was given far from the evil shopkeeper that they thought to kill her
+

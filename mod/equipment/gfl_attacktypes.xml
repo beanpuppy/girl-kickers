@@ -1,27 +1,54 @@
 <FirearmAttackTypes>
 
 <!-- XCR SHARKRY, THE STANDARD OF ALL ASSAULT RIFLE ATTACK TYPES -->
-<!-- Note: I am not the most hardcore Sharkry simp, but I chose her to be the standard of all longarm type signature weapons because she runs an AR-15 style format rifle chambered in a very common round. Sharkry is never depicted as too exceptional in combat yet she is shown to be able to hold her own in missions with Dolls that have more combat experience with her, namely Makiatto, Springfield and Centaureissi, which makes her a perfect candidate to have most of the dolls based on. -->
 
-    <!-- Attack Type ranges will be usually divided into Near (Under 8m), Close (Under 16m), Med (Under 28m) , Far (under 52m), Ext (beyond 52m). This is to help coincide with scope effectiveness. Take note that engagements that happen at Ext ranges are ultra rare, but they do exist.-->
-
-
-    <AttackType name="GFL_XCR_BurstFireNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
+    <AttackType name="GFL_CQC_XCR">
+    <!-- Under 4m. -->
         <ModifiableParams
-            minAimTime="330"
-            maxAimTime="350"
+            minAimTime="340"
+            maxAimTime="340"
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="-1"
             resetTime="250"
-            accuracyAdd="20"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="5"
         />
     </AttackType>
 
-    <AttackType name="GFL_XCR_BurstFireClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
+    <AttackType name="GFL_Near_XCR">
+    <!-- Under 8m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="5"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Close_XCR">
+    <!-- Under 12m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="400"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Medium_XCR">
+    <!-- Under 16m. -->
         <ModifiableParams
             minAimTime="350"
             maxAimTime="450"
@@ -29,197 +56,410 @@
             minShots="3"
             maxShots="5"
             resetTime="250"
-            accuracyAdd="10"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="5"
         />
     </AttackType>
 
-    <AttackType name="GFL_XCR_BurstFireMed">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
+    <AttackType name="GFL_MedEdge_XCR">
+    <!-- Under 20m. -->
         <ModifiableParams
             minAimTime="350"
-            maxAimTime="600"
+            maxAimTime="450"
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="300"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="5"
         />
     </AttackType>
 
-    <AttackType name="GFL_XCR_BurstFireFar">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
+    <AttackType name="GFL_Extended_XCR">
+    <!-- Beyond 20m. -->
         <ModifiableParams
-            minAimTime="600"
-            maxAimTime="700"
+            minAimTime="350"
+            maxAimTime="500"
             roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="400"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_XCR_BurstFireExt">
-        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
-        <ModifiableParams
-            minAimTime="700"
-            maxAimTime="900"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="500"
-            accuracyAdd="0"
-            followupShotAccuracyAdd="0"
+            critChanceAdd="5"
         />
     </AttackType>
 
 <!-- PA-15 FLORENCE, THE STANDARD OF ALL HANDGUN ATTACK TYPES -->
-<!-- Note: I am not the most hardcore Florence simp either, but at the time I am reworking the balance of the weapons, the only handguns we have are the Curva and PA-15... no choice... aesthetically and functionally, the PA-15 is the closest to the common handguns we know. Plus it is chambered in 9x19 Para... -->
 
-    <AttackType name="GFL_PA15_MozambiqueDrillNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
-        <ModifiableParams
-            minAimTime="180"
-            maxAimTime="200"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="500"
-            accuracyAdd="15"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_PA15_MozambiqueDrillClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
+    <AttackType name="GFL_CQC_PA15">
+        <!-- Under 4m. -->
         <ModifiableParams
             minAimTime="200"
             maxAimTime="200"
             roundsPerSecondOverride="0"
             minShots="1"
             maxShots="3"
-            resetTime="500"
-            accuracyAdd="20"
+            resetTime="450"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="5"
         />
     </AttackType>
 
-    <AttackType name="GFL_PA15_AimedFireMed">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
+    <AttackType name="GFL_Near_PA15">
+        <!-- Under 8m. -->
         <ModifiableParams
-            minAimTime="300"
+            minAimTime="200"
+            maxAimTime="200"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="3"
+            resetTime="450"
+            accuracyAdd="-500"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Close_PA15">
+        <!-- Under 12m. -->
+        <ModifiableParams
+            minAimTime="250"
+            maxAimTime="250"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="3"
+            resetTime="450"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="5"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Medium_PA15">
+    <!-- Under 16m. -->
+        <ModifiableParams
+            minAimTime="250"
+            maxAimTime="250"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="3"
+            resetTime="450"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="5"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_MedEdge_PA15">
+    <!-- Under 20m. -->
+        <ModifiableParams
+            minAimTime="250"
+            maxAimTime="250"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="3"
+            resetTime="450"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="5"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Extended_PA15">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="250"
+            maxAimTime="250"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="3"
+            resetTime="450"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="5"
+        />
+    </AttackType>
+
+    <!-- MP5 PERI -->
+
+    <AttackType name="GFL_CQC_MP5">
+    <!-- Under 4m. -->
+        <ModifiableParams
+            minAimTime="320"
+            maxAimTime="320"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="5"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Near_MP5">
+    <!-- Under 8m. -->
+        <ModifiableParams
+            minAimTime="320"
+            maxAimTime="320"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Close_MP5">
+    <!-- Under 12m. -->
+        <ModifiableParams
+            minAimTime="330"
+            maxAimTime="380"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="5"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Medium_MP5">
+    <!-- Under 16m. -->
+        <ModifiableParams
+            minAimTime="330"
+            maxAimTime="430"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="5"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_MedEdge_MP5">
+    <!-- Under 20m. -->
+        <ModifiableParams
+            minAimTime="330"
+            maxAimTime="430"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="5"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Extended_MP5">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="330"
+            maxAimTime="480"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="5"
+        />
+    </AttackType>
+
+    <!-- SPAS-12 SABRINA -->
+
+    <AttackType name="GFL_CQC_SPAS12">
+    <!-- Under 4m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Near_SPAS12">
+    <!-- Under 8m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="2"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="5"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Close_SPAS12">
+    <!-- Under 12m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="400"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="2"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="5"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Medium_SPAS12">
+    <!-- Under 16m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="2"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="5"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_MedEdge_SPAS12">
+    <!-- Under 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="2"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="5"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Extended_SPAS12">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="350"
             maxAimTime="500"
             roundsPerSecondOverride="0"
             minShots="1"
-            maxShots="3"
-            resetTime="500"
+            maxShots="2"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="5"
         />
     </AttackType>
 
-    <AttackType name="GFL_PA15_AimedFireFar">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
-        <ModifiableParams
-            minAimTime="600"
-            maxAimTime="700"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="500"
-            accuracyAdd="0"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_PA15_AimedFireExt">
-        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
-        <ModifiableParams
-            minAimTime="700"
-            maxAimTime="900"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="500"
-            accuracyAdd="0"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
 
 <!-- DEFY -->
 
     <!-- AN94 ALVA -->
 
-    <AttackType name="GFL_AN94_HyperBurstNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
+    <AttackType name="GFL_CQC_AN94">
+    <!-- Under 4m. -->
         <ModifiableParams
-            minAimTime="330"
-            maxAimTime="350"
-            roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
-            resetTime="500"
-            accuracyAdd="15"
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="30"
+            minShots="2"
+            maxShots="2"
+            resetTime="300"
+            accuracyAdd="40"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_AN94_HyperBurstClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
+    <AttackType name="GFL_Near_AN94">
+    <!-- Under 8m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="30"
+            minShots="2"
+            maxShots="2"
+            resetTime="300"
+            accuracyAdd="40"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Close_AN94">
+    <!-- Under 12m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="400"
+            roundsPerSecondOverride="30"
+            minShots="2"
+            maxShots="2"
+            resetTime="300"
+            accuracyAdd="40"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Medium_AN94">
+    <!-- Under 16m. -->
         <ModifiableParams
             minAimTime="350"
             maxAimTime="450"
             roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
-            resetTime="500"
-            accuracyAdd="10"
+            minShots="2"
+            maxShots="2"
+            resetTime="300"
+            accuracyAdd="40"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_AN94_HyperBurstMed">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
+    <AttackType name="GFL_MedEdge_AN94">
+    <!-- Under 20m. -->
         <ModifiableParams
             minAimTime="350"
-            maxAimTime="600"
-            roundsPerSecondOverride="30"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
             minShots="2"
             maxShots="2"
-            resetTime="550"
-            accuracyAdd="20"
+            resetTime="300"
+            accuracyAdd="30"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_AN94_HyperBurstFar">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
+    <AttackType name="GFL_Extended_AN94">
+    <!-- Beyond 20m. -->
         <ModifiableParams
-            minAimTime="600"
-            maxAimTime="700"
-            roundsPerSecondOverride="30"
+            minAimTime="350"
+            maxAimTime="500"
+            roundsPerSecondOverride="0"
             minShots="2"
             maxShots="2"
-            resetTime="600"
+            resetTime="300"
             accuracyAdd="20"
             followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_AN94_HyperBurstExt">
-        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
-        <ModifiableParams
-            minAimTime="700"
-            maxAimTime="900"
-            roundsPerSecondOverride="30"
-            minShots="2"
-            maxShots="2"
-            resetTime="600"
-            accuracyAdd="0"
-            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
@@ -228,59 +468,93 @@
 
     <!-- AK-15 VOYMASTINA -->
 
-    <AttackType name="GFL_AK15_BurstFireNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
+    <AttackType name="GFL_CQC_AK15">
+    <!-- Under 4m. -->
         <ModifiableParams
-            minAimTime="330"
-            maxAimTime="350"
+            minAimTime="340"
+            maxAimTime="340"
             roundsPerSecondOverride="0"
-            minShots="4"
-            maxShots="6"
-            resetTime="300"
-            accuracyAdd="20"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="20"
         />
     </AttackType>
 
-    <AttackType name="GFL_AK15_BurstFireClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
+    <AttackType name="GFL_Near_AK15">
+    <!-- Under 8m. -->
         <ModifiableParams
-            minAimTime="330"
-            maxAimTime="450"
+            minAimTime="340"
+            maxAimTime="340"
             roundsPerSecondOverride="0"
-            minShots="4"
-            maxShots="6"
-            resetTime="300"
-            accuracyAdd="10"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="20"
         />
     </AttackType>
 
-    <AttackType name="GFL_AK15_BurstFireMed">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
+    <AttackType name="GFL_Close_AK15">
+    <!-- Under 12m. -->
         <ModifiableParams
             minAimTime="350"
-            maxAimTime="600"
+            maxAimTime="400"
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="300"
-            accuracyAdd="5"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="20"
         />
     </AttackType>
 
-    <AttackType name="GFL_AK15_BurstFireFar">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
+    <AttackType name="GFL_Medium_AK15">
+    <!-- Under 16m. -->
         <ModifiableParams
-            minAimTime="600"
-            maxAimTime="700"
+            minAimTime="350"
+            maxAimTime="450"
             roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="400"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="20"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_MedEdge_AK15">
+    <!-- Under 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="20"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Extended_AK15">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="500"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="20"
         />
     </AttackType>
 
@@ -288,566 +562,700 @@
 
     <!-- HK416 KLUKAI -->
 
-    <AttackType name="GFL_HK416_BurstFireNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
+    <AttackType name="GFL_CQC_416">
+    <!-- Under 4m. -->
         <ModifiableParams
-            minAimTime="330"
-            maxAimTime="350"
+            minAimTime="340"
+            maxAimTime="340"
             roundsPerSecondOverride="0"
-            minShots="2"
-            maxShots="5"
-            resetTime="300"
-            accuracyAdd="10"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="10"
         />
     </AttackType>
 
-    <AttackType name="GFL_HK416_BurstFireClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
+    <AttackType name="GFL_Near_416">
+    <!-- Under 8m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Close_416">
+    <!-- Under 12m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="400"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Medium_416">
+    <!-- Under 16m. -->
         <ModifiableParams
             minAimTime="350"
             maxAimTime="450"
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="300"
-            accuracyAdd="5"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="10"
         />
     </AttackType>
 
-    <AttackType name="GFL_HK416_BurstFireMed">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
+    <AttackType name="GFL_MedEdge_416">
+    <!-- Under 20m. -->
         <ModifiableParams
             minAimTime="350"
-            maxAimTime="600"
+            maxAimTime="450"
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="300"
-            accuracyAdd="10"
-            followupShotAccuracyAdd="0"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="10"
+            critChanceAdd="10"
         />
     </AttackType>
 
-    <AttackType name="GFL_HK416_BurstFireFar">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
+    <AttackType name="GFL_Extended_416">
+    <!-- Beyond 20m. -->
         <ModifiableParams
-            minAimTime="600"
-            maxAimTime="700"
+            minAimTime="350"
+            maxAimTime="500"
             roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="400"
-            accuracyAdd="15"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_HK416_BurstFireExt">
-        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
-        <ModifiableParams
-            minAimTime="700"
-            maxAimTime="900"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="500"
-            accuracyAdd="25"
-            followupShotAccuracyAdd="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="5"
+            critChanceAdd="10"
         />
     </AttackType>
 
     <!-- G11 MECHTY -->
 
-    <AttackType name="GFL_G11_HyperBurstNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
+    <AttackType name="GFL_CQC_G11">
+    <!-- Under 4m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="35"
+            minShots="3"
+            maxShots="3"
+            resetTime="300"
+            accuracyAdd="50"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Near_G11">
+    <!-- Under 8m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="35"
+            minShots="3"
+            maxShots="3"
+            resetTime="300"
+            accuracyAdd="50"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Close_G11">
+    <!-- Under 12m. -->
         <ModifiableParams
             minAimTime="350"
-            maxAimTime="370"
+            maxAimTime="400"
             roundsPerSecondOverride="35"
             minShots="3"
             maxShots="3"
-            resetTime="450"
-            accuracyAdd="-5"
+            resetTime="300"
+            accuracyAdd="50"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_G11_HyperBurstClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
+    <AttackType name="GFL_Medium_G11">
+    <!-- Under 16m. -->
         <ModifiableParams
-            minAimTime="370"
-            maxAimTime="470"
+            minAimTime="350"
+            maxAimTime="450"
             roundsPerSecondOverride="35"
             minShots="3"
             maxShots="3"
-            resetTime="450"
-            accuracyAdd="-5"
+            resetTime="300"
+            accuracyAdd="50"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_G11_HyperBurstMed">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
+    <AttackType name="GFL_MedEdge_G11">
+    <!-- Under 20m. -->
         <ModifiableParams
-            minAimTime="370"
-            maxAimTime="600"
+            minAimTime="350"
+            maxAimTime="450"
             roundsPerSecondOverride="35"
             minShots="3"
             maxShots="3"
-            resetTime="470"
-            accuracyAdd="-5"
+            resetTime="300"
+            accuracyAdd="50"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_G11_HyperBurstFar">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
+    <AttackType name="GFL_Extended_G11">
+    <!-- Beyond 20m. -->
         <ModifiableParams
-            minAimTime="600"
-            maxAimTime="700"
+            minAimTime="350"
+            maxAimTime="500"
             roundsPerSecondOverride="35"
             minShots="3"
             maxShots="3"
-            resetTime="500"
-            accuracyAdd="-5"
+            resetTime="300"
+            accuracyAdd="50"
             followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_G11_HyperBurstExt">
-        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
-        <ModifiableParams
-            minAimTime="700"
-            maxAimTime="900"
-            roundsPerSecondOverride="35"
-            minShots="3"
-            maxShots="3"
-            resetTime="600"
-            accuracyAdd="-5"
-            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
     <!-- G36K ANDORIS -->
 
-    <AttackType name="GFL_G36K_BurstFireNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
+    <AttackType name="GFL_CQC_G36K">
+    <!-- Under 4m. -->
         <ModifiableParams
-            minAimTime="330"
-            maxAimTime="350"
+            minAimTime="340"
+            maxAimTime="340"
             roundsPerSecondOverride="0"
             minShots="3"
-            maxShots="5"
-            resetTime="300"
-            accuracyAdd="10"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_G36K_BurstFireClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
+    <AttackType name="GFL_Near_G36K">
+    <!-- Under 8m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Close_G36K">
+    <!-- Under 12m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="400"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Medium_G36K">
+    <!-- Under 16m. -->
         <ModifiableParams
             minAimTime="350"
             maxAimTime="450"
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="300"
-            accuracyAdd="5"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="20"
         />
     </AttackType>
 
-    <AttackType name="GFL_G36K_BurstFireMed">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
+    <AttackType name="GFL_MedEdge_G36K">
+    <!-- Under 20m. -->
         <ModifiableParams
             minAimTime="350"
-            maxAimTime="600"
+            maxAimTime="450"
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="300"
-            accuracyAdd="10"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_G36K_BurstFireFar">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
-        <ModifiableParams
-            minAimTime="600"
-            maxAimTime="700"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="400"
-            accuracyAdd="-5"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_G36K_BurstFireExt">
-        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
-        <ModifiableParams
-            minAimTime="700"
-            maxAimTime="900"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="500"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Extended_G36K">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="500"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
     <!-- G28 BELKA -->
 
-    <AttackType name="GFL_G28_PrecisionFireNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
+    <AttackType name="GFL_CQC_G28">
+    <!-- Under 4m. -->
         <ModifiableParams
-            minAimTime="500"
-            maxAimTime="500"
+            minAimTime="340"
+            maxAimTime="340"
             roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="4"
-            resetTime="400"
-            accuracyAdd="15"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_G28_PrecisionFireClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
+    <AttackType name="GFL_Near_G28">
+    <!-- Under 8m. -->
         <ModifiableParams
-            minAimTime="500"
-            maxAimTime="650"
-            roundsPerSecondOverride="2.4"
-            minShots="1"
-            maxShots="4"
-            resetTime="400"
-            accuracyAdd="15"
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_G28_PrecisionFireCloseMounted">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
+    <AttackType name="GFL_Close_G28">
+    <!-- Under 12m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="400"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_CloseMounted_G28">
+    <!-- Under 12m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="400"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="25"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Medium_G28">
+    <!-- Under 16m. -->
         <ModifiableParams
             minAimTime="350"
             maxAimTime="450"
-            roundsPerSecondOverride="2.4"
-            minShots="1"
-            maxShots="4"
-            resetTime="200"
-            accuracyAdd="15"
-            followupShotAccuracyAdd="0"
-            critChanceAdd="30"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_G28_PrecisionFireMed">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
-        <ModifiableParams
-            minAimTime="400"
-            maxAimTime="550"
-            roundsPerSecondOverride="2.4"
-            minShots="1"
-            maxShots="4"
-            resetTime="400"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_G28_PrecisionFireMedMounted">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
+    <AttackType name="GFL_MediumMounted_G28">
+    <!-- Under 16m. -->
         <ModifiableParams
-            minAimTime="300"
+            minAimTime="350"
             maxAimTime="450"
-            roundsPerSecondOverride="2.4"
-            minShots="1"
-            maxShots="4"
-            resetTime="200"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
-            critChanceAdd="30"
+            critChanceAdd="25"
         />
     </AttackType>
 
-    <AttackType name="GFL_G28_PrecisionFireFar">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
+    <AttackType name="GFL_MedEdge_G28">
+    <!-- Under 20m. -->
         <ModifiableParams
-            minAimTime="300"
-            maxAimTime="400"
-            roundsPerSecondOverride="2.4"
-            minShots="1"
-            maxShots="4"
-            resetTime="200"
-            accuracyAdd="0"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_G28_PrecisionFireFarMounted">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
-        <ModifiableParams
-            minAimTime="250"
-            maxAimTime="350"
-            roundsPerSecondOverride="2.4"
-            minShots="1"
-            maxShots="4"
-            resetTime="200"
-            accuracyAdd="0"
-            followupShotAccuracyAdd="0"
-            critChanceAdd="30"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_G28_PrecisionFireExt">
-        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
-        <ModifiableParams
-            minAimTime="300"
-            maxAimTime="400"
-            roundsPerSecondOverride="2"
-            minShots="1"
-            maxShots="4"
-            resetTime="400"
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_G28_PrecisionFireExtMounted">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
+    <AttackType name="GFL_MedEdgeMounted_G28">
+    <!-- Under 20m. -->
         <ModifiableParams
-            minAimTime="250"
-            maxAimTime="350"
-            roundsPerSecondOverride="2"
-            minShots="1"
-            maxShots="4"
-            resetTime="200"
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
-            critChanceAdd="30"
+            critChanceAdd="25"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Extended_G28">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="500"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_ExtendedMounted_G28">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="500"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="25"
         />
     </AttackType>
 
     <!-- UMP45 LEVA -->
 
-    <AttackType name="GFL_UMP45_RapidFireNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
+    <AttackType name="GFL_CQC_UMP45">
+    <!-- Under 4m. -->
         <ModifiableParams
-            minAimTime="300"
-            maxAimTime="350"
+            minAimTime="320"
+            maxAimTime="320"
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="-1"
-            resetTime="300"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="10"
         />
     </AttackType>
 
-    <AttackType name="GFL_UMP45_RapidFireClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
+    <AttackType name="GFL_Near_UMP45">
+    <!-- Under 8m. -->
         <ModifiableParams
-            minAimTime="300"
-            maxAimTime="350"
+            minAimTime="320"
+            maxAimTime="320"
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="-1"
-            resetTime="300"
-            accuracyAdd="5"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="15"
         />
     </AttackType>
 
-    <AttackType name="GFL_UMP45_BurstFireMed">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
+    <AttackType name="GFL_Close_UMP45">
+    <!-- Under 12m. -->
         <ModifiableParams
-            minAimTime="350"
-            maxAimTime="600"
+            minAimTime="330"
+            maxAimTime="380"
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="300"
-            accuracyAdd="10"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="15"
         />
     </AttackType>
 
-    <AttackType name="GFL_UMP45_BurstFireFar">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
+    <AttackType name="GFL_Medium_UMP45">
+    <!-- Under 16m. -->
         <ModifiableParams
-            minAimTime="600"
-            maxAimTime="700"
+            minAimTime="330"
+            maxAimTime="430"
             roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="2"
-            resetTime="400"
-            accuracyAdd="5"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="10"
         />
     </AttackType>
 
-    <AttackType name="GFL_UMP45_BurstFireExt">
-        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
+    <AttackType name="GFL_MedEdge_UMP45">
+    <!-- Under 20m. -->
         <ModifiableParams
-            minAimTime="700"
-            maxAimTime="900"
+            minAimTime="330"
+            maxAimTime="430"
             roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="2"
-            resetTime="500"
-            accuracyAdd="5"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Extended_UMP45">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="330"
+            maxAimTime="480"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
 
     <!-- UMP9 LENNA -->
 
-    <AttackType name="GFL_UMP9_RapidFireNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
+    <AttackType name="GFL_CQC_UMP9">
+    <!-- Under 4m. -->
         <ModifiableParams
-            minAimTime="300"
-            maxAimTime="350"
+            minAimTime="320"
+            maxAimTime="320"
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="-1"
-            resetTime="300"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_UMP9_RapidFireClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
+    <AttackType name="GFL_Near_UMP9">
+    <!-- Under 8m. -->
         <ModifiableParams
-            minAimTime="300"
-            maxAimTime="350"
+            minAimTime="320"
+            maxAimTime="320"
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="-1"
-            resetTime="300"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="10"
         />
     </AttackType>
 
-    <AttackType name="GFL_UMP9_BurstFireMed">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
+    <AttackType name="GFL_Close_UMP9">
+    <!-- Under 12m. -->
         <ModifiableParams
-            minAimTime="350"
-            maxAimTime="600"
+            minAimTime="330"
+            maxAimTime="380"
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="300"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="10"
         />
     </AttackType>
 
-    <AttackType name="GFL_UMP9_BurstFireFar">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
+    <AttackType name="GFL_Medium_UMP9">
+    <!-- Under 16m. -->
         <ModifiableParams
-            minAimTime="600"
-            maxAimTime="700"
+            minAimTime="330"
+            maxAimTime="430"
             roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="2"
-            resetTime="400"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="15"
         />
     </AttackType>
 
-    <AttackType name="GFL_UMP9_BurstFireExt">
-        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
+    <AttackType name="GFL_MedEdge_UMP9">
+    <!-- Under 20m. -->
         <ModifiableParams
-            minAimTime="700"
-            maxAimTime="900"
+            minAimTime="330"
+            maxAimTime="430"
             roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="2"
-            resetTime="500"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="15"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Extended_UMP9">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="330"
+            maxAimTime="480"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
     <!-- VECTOR VIVI -->
 
-    <AttackType name="GFL_VECTOR_RapidFireNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
+    <AttackType name="GFL_CQC_VECTOR">
+    <!-- Under 4m. -->
         <ModifiableParams
-            minAimTime="300"
-            maxAimTime="350"
+            minAimTime="320"
+            maxAimTime="320"
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="-1"
-            resetTime="300"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_VECTOR_RapidFireClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
+    <AttackType name="GFL_Near_VECTOR">
+    <!-- Under 8m. -->
         <ModifiableParams
-            minAimTime="300"
-            maxAimTime="350"
+            minAimTime="320"
+            maxAimTime="320"
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="-1"
-            resetTime="300"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_VECTOR_BurstFireMed">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
+    <AttackType name="GFL_Close_VECTOR">
+    <!-- Under 12m. -->
         <ModifiableParams
-            minAimTime="350"
-            maxAimTime="600"
+            minAimTime="330"
+            maxAimTime="380"
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="300"
-            accuracyAdd="10"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="10"
         />
     </AttackType>
 
-    <AttackType name="GFL_VECTOR_BurstFireFar">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
+    <AttackType name="GFL_Medium_VECTOR">
+    <!-- Under 16m. -->
         <ModifiableParams
-            minAimTime="600"
-            maxAimTime="700"
+            minAimTime="330"
+            maxAimTime="430"
             roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="400"
-            accuracyAdd="15"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="5"
         />
     </AttackType>
 
-    <AttackType name="GFL_VECTOR_BurstFireExt">
-        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
+    <AttackType name="GFL_MedEdge_VECTOR">
+    <!-- Under 20m. -->
         <ModifiableParams
-            minAimTime="700"
-            maxAimTime="900"
+            minAimTime="330"
+            maxAimTime="430"
             roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="500"
-            accuracyAdd="20"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Extended_VECTOR">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="330"
+            maxAimTime="480"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
@@ -855,337 +1263,397 @@
 
     <!-- M1903 SPRINGFIELD -->
 
-    <AttackType name="GFL_M1903_PrecisionFireNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
+    <AttackType name="GFL_CQC_M1903">
+    <!-- Under 4m. -->
         <ModifiableParams
-            minAimTime="500"
-            maxAimTime="500"
-            roundsPerSecondOverride="0.7"
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
             minShots="1"
-            maxShots="1"
-            resetTime="400"
-            accuracyAdd="45"
+            maxShots="3"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_M1903_PrecisionFireClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
+    <AttackType name="GFL_Near_M1903">
+    <!-- Under 8m. -->
         <ModifiableParams
-            minAimTime="500"
-            maxAimTime="650"
-            roundsPerSecondOverride="0.7"
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
             minShots="1"
             maxShots="1"
-            resetTime="400"
-            accuracyAdd="40"
+            resetTime="0"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_M1903_PrecisionFireCloseMounted">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
+    <AttackType name="GFL_Close_M1903">
+    <!-- Under 12m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="400"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="1"
+            resetTime="0"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="25"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_CloseMounted_M1903">
+    <!-- Under 12m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="400"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="1"
+            resetTime="0"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="40"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Medium_M1903">
+    <!-- Under 16m. -->
         <ModifiableParams
             minAimTime="350"
             maxAimTime="450"
-            roundsPerSecondOverride="0.7"
+            roundsPerSecondOverride="0"
             minShots="1"
             maxShots="1"
-            resetTime="200"
-            accuracyAdd="40"
-            followupShotAccuracyAdd="0"
-            critChanceAdd="30"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_M1903_PrecisionFireMed">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
-        <ModifiableParams
-            minAimTime="400"
-            maxAimTime="550"
-            roundsPerSecondOverride="0.7"
-            minShots="1"
-            maxShots="1"
-            resetTime="400"
+            resetTime="0"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="25"
         />
     </AttackType>
 
-    <AttackType name="GFL_M1903_PrecisionFireMedMounted">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
-        <ModifiableParams
-            minAimTime="300"
-            maxAimTime="450"
-            roundsPerSecondOverride="0.7"
-            minShots="1"
-            maxShots="1"
-            resetTime="200"
-            accuracyAdd="0"
-            followupShotAccuracyAdd="0"
-            critChanceAdd="30"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_M1903_PrecisionFireFar">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
-        <ModifiableParams
-            minAimTime="300"
-            maxAimTime="400"
-            roundsPerSecondOverride="0.7"
-            minShots="1"
-            maxShots="1"
-            resetTime="400"
-            accuracyAdd="-10"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_M1903_PrecisionFireFarMounted">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
-        <ModifiableParams
-            minAimTime="250"
-            maxAimTime="350"
-            roundsPerSecondOverride="0.7"
-            minShots="1"
-            maxShots="1"
-            resetTime="200"
-            accuracyAdd="-10"
-            followupShotAccuracyAdd="0"
-            critChanceAdd="30"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_M1903_PrecisionFireExt">
-        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
-        <ModifiableParams
-            minAimTime="300"
-            maxAimTime="400"
-            roundsPerSecondOverride="0.7"
-            minShots="1"
-            maxShots="1"
-            resetTime="400"
-            accuracyAdd="-10"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_M1903_PrecisionFireExtMounted">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
-        <ModifiableParams
-            minAimTime="250"
-            maxAimTime="350"
-            roundsPerSecondOverride="0.7"
-            minShots="1"
-            maxShots="1"
-            resetTime="200"
-            accuracyAdd="-10"
-            followupShotAccuracyAdd="0"
-            critChanceAdd="30"
-        />
-    </AttackType>
-
-    <!-- WA2000 Makiatto -->
-
-    <AttackType name="GFL_WA2000_PrecisionFireNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
-        <ModifiableParams
-            minAimTime="500"
-            maxAimTime="500"
-            roundsPerSecondOverride="0.7"
-            minShots="1"
-            maxShots="1"
-            resetTime="400"
-            accuracyAdd="20"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_WA2000_PrecisionFireClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
-        <ModifiableParams
-            minAimTime="500"
-            maxAimTime="650"
-            roundsPerSecondOverride="0.7"
-            minShots="1"
-            maxShots="1"
-            resetTime="400"
-            accuracyAdd="25"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_WA2000_PrecisionFireCloseMounted">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
+    <AttackType name="GFL_MediumMounted_M1903">
+    <!-- Under 16m. -->
         <ModifiableParams
             minAimTime="350"
             maxAimTime="450"
-            roundsPerSecondOverride="0.7"
+            roundsPerSecondOverride="0"
             minShots="1"
             maxShots="1"
-            resetTime="200"
-            accuracyAdd="25"
+            resetTime="0"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
-            critChanceAdd="20"
+            critChanceAdd="40"
         />
     </AttackType>
 
-    <AttackType name="GFL_WA2000_PrecisionFireMed">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
+    <AttackType name="GFL_MedEdge_M1903">
+    <!-- Under 20m. -->
         <ModifiableParams
-            minAimTime="400"
-            maxAimTime="550"
-            roundsPerSecondOverride="0.7"
-            minShots="1"
-            maxShots="1"
-            resetTime="400"
-            accuracyAdd="25"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_WA2000_PrecisionFireMedMounted">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
-        <ModifiableParams
-            minAimTime="300"
+            minAimTime="350"
             maxAimTime="450"
-            roundsPerSecondOverride="0.7"
+            roundsPerSecondOverride="0"
             minShots="1"
             maxShots="1"
-            resetTime="200"
-            accuracyAdd="25"
+            resetTime="0"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
-            critChanceAdd="20"
+            critChanceAdd="25"
         />
     </AttackType>
 
-    <AttackType name="GFL_WA2000_PrecisionFireFar">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
+    <AttackType name="GFL_MedEdgeMounted_M1903">
+    <!-- Under 20m. -->
         <ModifiableParams
-            minAimTime="300"
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="1"
+            resetTime="0"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="40"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Extended_M1903">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="500"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="1"
+            resetTime="0"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="25"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_ExtendedMounted_M1903">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="500"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="1"
+            resetTime="0"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="40"
+        />
+    </AttackType>
+
+    <!-- WA2000 MAKIATTO -->
+
+    <AttackType name="GFL_CQC_WA2000">
+    <!-- Under 4m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="1"
+            resetTime="0"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Near_WA2000">
+    <!-- Under 8m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="1"
+            resetTime="0"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Close_WA2000">
+    <!-- Under 12m. -->
+        <ModifiableParams
+            minAimTime="350"
             maxAimTime="400"
-            roundsPerSecondOverride="0.7"
+            roundsPerSecondOverride="0"
             minShots="1"
             maxShots="1"
-            resetTime="400"
-            accuracyAdd="25"
+            resetTime="0"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="10"
         />
     </AttackType>
 
-    <AttackType name="GFL_WA2000_PrecisionFireFarMounted">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
+    <AttackType name="GFL_CloseMounted_WA2000">
+    <!-- Under 12m. -->
         <ModifiableParams
-            minAimTime="250"
-            maxAimTime="350"
-            roundsPerSecondOverride="0.7"
-            minShots="1"
-            maxShots="1"
-            resetTime="200"
-            accuracyAdd="25"
-            followupShotAccuracyAdd="0"
-            critChanceAdd="20"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_WA2000_PrecisionFireExt">
-        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
-        <ModifiableParams
-            minAimTime="300"
+            minAimTime="350"
             maxAimTime="400"
-            roundsPerSecondOverride="0.7"
+            roundsPerSecondOverride="0"
             minShots="1"
             maxShots="1"
-            resetTime="400"
-            accuracyAdd="35"
+            resetTime="0"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="80"
         />
     </AttackType>
 
-    <AttackType name="GFL_WA2000_PrecisionFireExtMounted">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
+    <AttackType name="GFL_Medium_WA2000">
+    <!-- Under 16m. -->
         <ModifiableParams
-            minAimTime="250"
-            maxAimTime="350"
-            roundsPerSecondOverride="0.7"
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
             minShots="1"
             maxShots="1"
-            resetTime="200"
-            accuracyAdd="35"
+            resetTime="0"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
-            critChanceAdd="20"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_MediumMounted_WA2000">
+    <!-- Under 16m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="1"
+            resetTime="0"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="80"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_MedEdge_WA2000">
+    <!-- Under 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="1"
+            resetTime="0"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_MedEdgeMounted_WA2000">
+    <!-- Under 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="1"
+            resetTime="0"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="80"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Extended_WA2000">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="500"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="1"
+            resetTime="0"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_ExtendedMounted_WA2000">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="500"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="1"
+            resetTime="0"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="80"
         />
     </AttackType>
 
     <!-- G36 CENTAUREISSI -->
 
-    <AttackType name="GFL_G36_BurstFireNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
+    <AttackType name="GFL_CQC_G36">
+    <!-- Under 4m. -->
         <ModifiableParams
-            minAimTime="325"
-            maxAimTime="350"
+            minAimTime="340"
+            maxAimTime="340"
             roundsPerSecondOverride="0"
             minShots="3"
-            maxShots="4"
-            resetTime="300"
+            maxShots="-1"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="15"
         />
     </AttackType>
 
-    <AttackType name="GFL_G36_BurstFireClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
+    <AttackType name="GFL_Near_G36">
+    <!-- Under 8m. -->
         <ModifiableParams
-            minAimTime="330"
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="15"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Close_G36">
+    <!-- Under 12m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="400"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="15"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Medium_G36">
+    <!-- Under 16m. -->
+        <ModifiableParams
+            minAimTime="350"
             maxAimTime="450"
             roundsPerSecondOverride="0"
             minShots="3"
-            maxShots="4"
-            resetTime="300"
-            accuracyAdd="5"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="15"
         />
     </AttackType>
 
-    <AttackType name="GFL_G36_BurstFireMed">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
+    <AttackType name="GFL_MedEdge_G36">
+    <!-- Under 20m. -->
         <ModifiableParams
             minAimTime="350"
-            maxAimTime="600"
+            maxAimTime="450"
             roundsPerSecondOverride="0"
             minShots="3"
-            maxShots="4"
-            resetTime="300"
-            accuracyAdd="25"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="15"
         />
     </AttackType>
 
-    <AttackType name="GFL_G36_BurstFireFar">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
+    <AttackType name="GFL_Extended_G36">
+    <!-- Beyond 20m. -->
         <ModifiableParams
-            minAimTime="600"
-            maxAimTime="700"
+            minAimTime="350"
+            maxAimTime="500"
             roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="400"
-            accuracyAdd="20"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_G36_BurstFireExt">
-        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
-        <ModifiableParams
-            minAimTime="700"
-            maxAimTime="900"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="500"
-            accuracyAdd="20"
-            followupShotAccuracyAdd="0"
+            critChanceAdd="15"
         />
     </AttackType>
 
@@ -1193,205 +1661,245 @@
 
     <!-- OTS-14 GROZA -->
 
-    <AttackType name="GFL_OTS14_BurstFireNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
+    <AttackType name="GFL_CQC_OTS14">
+    <!-- Under 4m. -->
         <ModifiableParams
-            minAimTime="330"
-            maxAimTime="350"
+            minAimTime="340"
+            maxAimTime="340"
             roundsPerSecondOverride="0"
             minShots="3"
-            maxShots="5"
-            resetTime="300"
-            accuracyAdd="10"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="5"
         />
     </AttackType>
 
-    <AttackType name="GFL_OTS14_BurstFireClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
+    <AttackType name="GFL_Near_OTS14">
+    <!-- Under 8m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Close_OTS14">
+    <!-- Under 12m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="400"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Medium_OTS14">
+    <!-- Under 16m. -->
         <ModifiableParams
             minAimTime="350"
             maxAimTime="450"
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="300"
-            accuracyAdd="12"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="15"
         />
     </AttackType>
 
-    <AttackType name="GFL_OTS14_BurstFireMed">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
+    <AttackType name="GFL_MedEdge_OTS14">
+    <!-- Under 20m. -->
         <ModifiableParams
             minAimTime="350"
-            maxAimTime="600"
+            maxAimTime="450"
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="300"
-            accuracyAdd="5"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_OTS14_BurstFireFar">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
+    <AttackType name="GFL_Extended_OTS14">
+    <!-- Beyond 20m. -->
         <ModifiableParams
-            minAimTime="600"
-            maxAimTime="700"
+            minAimTime="350"
+            maxAimTime="500"
             roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="400"
-            accuracyAdd="-5"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_OTS14_BurstFireExt">
-        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
-        <ModifiableParams
-            minAimTime="700"
-            maxAimTime="900"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="500"
-            accuracyAdd="-5"
-            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
     <!-- OM50 NEMESIS -->
 
-    <AttackType name="GFL_OM50_PrecisionFireNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
+    <AttackType name="GFL_CQC_OM50">
+    <!-- Under 4m. -->
         <ModifiableParams
-            minAimTime="520"
-            maxAimTime="520"
-            roundsPerSecondOverride="0.6"
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
             minShots="1"
             maxShots="1"
-            resetTime="400"
+            resetTime="0"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_OM50_PrecisionFireClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
+    <AttackType name="GFL_Near_OM50">
+    <!-- Under 8m. -->
         <ModifiableParams
-            minAimTime="520"
-            maxAimTime="650"
-            roundsPerSecondOverride="0.6"
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
             minShots="1"
             maxShots="1"
-            resetTime="400"
-            accuracyAdd="10"
+            resetTime="0"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_OM50_PrecisionFireCloseMounted">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
+    <AttackType name="GFL_Close_OM50">
+    <!-- Under 12m. -->
         <ModifiableParams
-            minAimTime="370"
-            maxAimTime="450"
-            roundsPerSecondOverride="0.6"
-            minShots="1"
-            maxShots="1"
-            resetTime="200"
-            accuracyAdd="10"
-            followupShotAccuracyAdd="0"
-            critChanceAdd="30"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_OM50_PrecisionFireMed">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
-        <ModifiableParams
-            minAimTime="420"
-            maxAimTime="550"
-            roundsPerSecondOverride="0.6"
-            minShots="1"
-            maxShots="1"
-            resetTime="400"
-            accuracyAdd="30"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_OM50_PrecisionFireMedMounted">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
-        <ModifiableParams
-            minAimTime="320"
-            maxAimTime="450"
-            roundsPerSecondOverride="0.6"
-            minShots="1"
-            maxShots="1"
-            resetTime="200"
-            accuracyAdd="30"
-            followupShotAccuracyAdd="0"
-            critChanceAdd="30"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_OM50_PrecisionFireFar">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
-        <ModifiableParams
-            minAimTime="320"
+            minAimTime="350"
             maxAimTime="400"
-            roundsPerSecondOverride="0.6"
+            roundsPerSecondOverride="0"
             minShots="1"
             maxShots="1"
-            resetTime="400"
-            accuracyAdd="20"
+            resetTime="0"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_OM50_PrecisionFireFarMounted">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
+    <AttackType name="GFL_CloseMounted_OM50">
+    <!-- Under 12m. -->
         <ModifiableParams
-            minAimTime="270"
-            maxAimTime="350"
-            roundsPerSecondOverride="0.6"
-            minShots="1"
-            maxShots="1"
-            resetTime="200"
-            accuracyAdd="20"
-            followupShotAccuracyAdd="0"
-            critChanceAdd="30"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_OM50_PrecisionFireExt">
-        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
-        <ModifiableParams
-            minAimTime="320"
+            minAimTime="350"
             maxAimTime="400"
-            roundsPerSecondOverride="0.6"
+            roundsPerSecondOverride="0"
             minShots="1"
             maxShots="1"
-            resetTime="400"
-            accuracyAdd="20"
+            resetTime="0"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="60"
         />
     </AttackType>
 
-    <AttackType name="GFL_OM50_PrecisionFireExtMounted">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
+    <AttackType name="GFL_Medium_OM50">
+    <!-- Under 16m. -->
         <ModifiableParams
-            minAimTime="270"
-            maxAimTime="350"
-            roundsPerSecondOverride="0.7"
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
             minShots="1"
             maxShots="1"
-            resetTime="200"
-            accuracyAdd="20"
+            resetTime="0"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
-            critChanceAdd="30"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_MediumMounted_OM50">
+    <!-- Under 16m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="1"
+            resetTime="0"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="60"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_MedEdge_OM50">
+    <!-- Under 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="1"
+            resetTime="0"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_MedEdgeMounted_OM50">
+    <!-- Under 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="1"
+            resetTime="0"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="60"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Extended_OM50">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="500"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="1"
+            resetTime="0"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="20"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_ExtendedMounted_OM50">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="500"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="1"
+            resetTime="0"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="60"
         />
     </AttackType>
 
@@ -1412,147 +1920,184 @@
 
     <!-- Curva COLPHNE -->
 
-    <AttackType name="GFL_CURVA_MozambiqueDrillNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
-        <ModifiableParams
-            minAimTime="180"
-            maxAimTime="200"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="2"
-            resetTime="300"
-            accuracyAdd="-5"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_CURVA_MozambiqueDrillClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
+    <AttackType name="GFL_CQC_CURVA">
+        <!-- Under 4m. -->
         <ModifiableParams
             minAimTime="200"
             maxAimTime="200"
             roundsPerSecondOverride="0"
             minShots="1"
-            maxShots="2"
-            resetTime="300"
+            maxShots="3"
+            resetTime="450"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_CURVA_AimedFireMed">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
+    <AttackType name="GFL_Near_CURVA">
+        <!-- Under 8m. -->
         <ModifiableParams
-            minAimTime="300"
-            maxAimTime="500"
+            minAimTime="200"
+            maxAimTime="200"
             roundsPerSecondOverride="0"
             minShots="1"
-            maxShots="2"
-            resetTime="300"
-            accuracyAdd="20"
+            maxShots="3"
+            resetTime="450"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_CURVA_AimedFireFar">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
+    <AttackType name="GFL_Close_CURVA">
+        <!-- Under 12m. -->
         <ModifiableParams
-            minAimTime="600"
-            maxAimTime="700"
+            minAimTime="250"
+            maxAimTime="250"
             roundsPerSecondOverride="0"
             minShots="1"
-            maxShots="2"
-            resetTime="400"
-            accuracyAdd="20"
+            maxShots="3"
+            resetTime="450"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="20"
         />
     </AttackType>
 
-    <AttackType name="GFL_CURVA_AimedFireExt">
-        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
+    <AttackType name="GFL_Medium_CURVA">
+        <!-- Under 16m. -->
         <ModifiableParams
-            minAimTime="700"
-            maxAimTime="900"
+            minAimTime="250"
+            maxAimTime="250"
             roundsPerSecondOverride="0"
             minShots="1"
-            maxShots="2"
-            resetTime="500"
-            accuracyAdd="20"
+            maxShots="3"
+            resetTime="450"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="15"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_MedEdge_CURVA">
+        <!-- Under 20m. -->
+        <ModifiableParams
+            minAimTime="250"
+            maxAimTime="250"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="3"
+            resetTime="450"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="15"        />
+    </AttackType>
+
+    <AttackType name="GFL_Extended_CURVA">
+        <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="250"
+            maxAimTime="250"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="3"
+            resetTime="450"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="15"
         />
     </AttackType>
 
     <!-- VEPR-12 VEPLEY -->
 
-    <AttackType name="GFL_VEPR12_BurstFireNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
+    <AttackType name="GFL_CQC_VEPR12">
+    <!-- Under 4m. -->
         <ModifiableParams
-            minAimTime="330"
-            maxAimTime="350"
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Near_VEPR12">
+    <!-- Under 8m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
             roundsPerSecondOverride="0"
             minShots="1"
             maxShots="2"
-            resetTime="300"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="10"
         />
     </AttackType>
 
-    <AttackType name="GFL_VEPR12_BurstFireClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
+    <AttackType name="GFL_Close_VEPR12">
+    <!-- Under 12m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="400"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="2"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="30"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Medium_VEPR12">
+    <!-- Under 16m. -->
         <ModifiableParams
             minAimTime="350"
             maxAimTime="450"
             roundsPerSecondOverride="0"
             minShots="1"
             maxShots="2"
-            resetTime="300"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
-            critChanceAdd="5"
+            critChanceAdd="10"
         />
     </AttackType>
 
-    <AttackType name="GFL_VEPR12_BurstFireMed">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
+    <AttackType name="GFL_MedEdge_VEPR12">
+    <!-- Under 20m. -->
         <ModifiableParams
             minAimTime="350"
-            maxAimTime="600"
+            maxAimTime="450"
             roundsPerSecondOverride="0"
             minShots="1"
             maxShots="2"
-            resetTime="300"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_VEPR12_BurstFireFar">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
+    <AttackType name="GFL_Extended_VEPR12">
+    <!-- Beyond 20m. -->
         <ModifiableParams
-            minAimTime="600"
-            maxAimTime="700"
+            minAimTime="350"
+            maxAimTime="500"
             roundsPerSecondOverride="0"
             minShots="1"
             maxShots="2"
-            resetTime="400"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_VEPR12_BurstFireExt">
-        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
-        <ModifiableParams
-            minAimTime="700"
-            maxAimTime="900"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="2"
-            resetTime="500"
-            accuracyAdd="0"
-            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
@@ -1560,654 +2105,641 @@
 
     <!-- PKP-SP PERITYA -->
 
-    <AttackType name="GFL_PKPSP_BurstFireNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
+    <AttackType name="GFL_CQC_PKPSP">
+    <!-- Under 4m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_CQCMounted_PKPSP">
+    <!-- Under 4m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="50"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Near_PKPSP">
+    <!-- Under 8m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_NearMounted_PKPSP">
+    <!-- Under 8m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="50"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Close_PKPSP">
+    <!-- Under 12m. -->
         <ModifiableParams
             minAimTime="350"
-            maxAimTime="350"
+            maxAimTime="400"
             roundsPerSecondOverride="0"
-            minShots="5"
-            maxShots="8"
-            resetTime="300"
-            accuracyAdd="0"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_PKPSP_BurstFireNearMounted">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
-        <ModifiableParams
-            minAimTime="300"
-            maxAimTime="450"
-            roundsPerSecondOverride="0"
-            minShots="5"
-            maxShots="-1"
-            resetTime="300"
-            accuracyAdd="40"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_PKPSP_BurstFireClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
-        <ModifiableParams
-            minAimTime="450"
-            maxAimTime="450"
-            roundsPerSecondOverride="0"
-            minShots="5"
-            maxShots="8"
-            resetTime="300"
-            accuracyAdd="20"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_PKPSP_BurstFireCloseMounted">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
-        <ModifiableParams
-            minAimTime="300"
-            maxAimTime="450"
-            roundsPerSecondOverride="0"
-            minShots="5"
-            maxShots="-1"
-            resetTime="300"
-            accuracyAdd="50"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_PKPSP_BurstFireMed">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
-        <ModifiableParams
-            minAimTime="450"
-            maxAimTime="600"
-            roundsPerSecondOverride="0"
-            minShots="5"
-            maxShots="8"
-            resetTime="300"
-            accuracyAdd="20"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_PKPSP_BurstFireMedMounted">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
-        <ModifiableParams
-            minAimTime="300"
-            maxAimTime="450"
-            roundsPerSecondOverride="0"
-            minShots="5"
-            maxShots="-1"
-            resetTime="300"
-            accuracyAdd="60"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_PKPSP_BurstFireFar">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
-        <ModifiableParams
-            minAimTime="600"
-            maxAimTime="700"
-            roundsPerSecondOverride="0"
-            minShots="2"
+            minShots="3"
             maxShots="5"
-            resetTime="400"
+            resetTime="250"
             accuracyAdd="0"
-            followupShotAccuracyAdd="0"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_PKPSP_BurstFireFarMounted">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
+    <AttackType name="GFL_CloseMounted_PKPSP">
+    <!-- Under 12m. -->
         <ModifiableParams
-            minAimTime="450"
-            maxAimTime="600"
+            minAimTime="350"
+            maxAimTime="400"
             roundsPerSecondOverride="0"
-            minShots="2"
+            minShots="3"
             maxShots="-1"
-            resetTime="300"
+            resetTime="250"
             accuracyAdd="50"
-            followupShotAccuracyAdd="0"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_PKPSP_BurstFireExt">
-        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
+    <AttackType name="GFL_Medium_PKPSP">
+    <!-- Under 16m. -->
         <ModifiableParams
-            minAimTime="700"
-            maxAimTime="900"
+            minAimTime="350"
+            maxAimTime="450"
             roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="4"
-            resetTime="500"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
             accuracyAdd="0"
-            followupShotAccuracyAdd="0"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="15"
         />
     </AttackType>
 
-    <AttackType name="GFL_PKPSP_BurstFireExtMounted">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
+    <AttackType name="GFL_MediumMounted_PKPSP">
+    <!-- Under 16m. -->
         <ModifiableParams
-            minAimTime="450"
-            maxAimTime="600"
+            minAimTime="350"
+            maxAimTime="450"
             roundsPerSecondOverride="0"
-            minShots="5"
+            minShots="3"
             maxShots="-1"
-            resetTime="300"
+            resetTime="250"
             accuracyAdd="50"
-            followupShotAccuracyAdd="0"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="15"
         />
     </AttackType>
 
-    <!-- SPAS-12 SABRINA -->
-
-    <AttackType name="GFL_SPAS12_BurstFireNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
+    <AttackType name="GFL_MedEdge_PKPSP">
+    <!-- Under 20m. -->
         <ModifiableParams
-            minAimTime="330"
-            maxAimTime="350"
+            minAimTime="350"
+            maxAimTime="450"
             roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="2"
-            resetTime="300"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
             accuracyAdd="0"
-            followupShotAccuracyAdd="0"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="15"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_MedEdgeMounted_PKPSP">
+    <!-- Under 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="50"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="15"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Extended_PKPSP">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="500"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="2"
             critChanceAdd="10"
         />
     </AttackType>
 
-    <AttackType name="GFL_SPAS12_BurstFireClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
+    <AttackType name="GFL_ExtendedMounted_PKPSP">
+    <!-- Beyond 20m. -->
         <ModifiableParams
             minAimTime="350"
-            maxAimTime="450"
+            maxAimTime="500"
             roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="2"
-            resetTime="300"
-            accuracyAdd="0"
-            followupShotAccuracyAdd="0"
-            critChanceAdd="5"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_SPAS12_BurstFireMed">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
-        <ModifiableParams
-            minAimTime="350"
-            maxAimTime="600"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="2"
-            resetTime="300"
-            accuracyAdd="0"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_SPAS12_BurstFireFar">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
-        <ModifiableParams
-            minAimTime="600"
-            maxAimTime="700"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="2"
-            resetTime="400"
-            accuracyAdd="0"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_SPAS12_BurstFireExt">
-        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
-        <ModifiableParams
-            minAimTime="700"
-            maxAimTime="900"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="2"
-            resetTime="500"
-            accuracyAdd="0"
-            followupShotAccuracyAdd="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="50"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="10"
         />
     </AttackType>
 
     <!-- TYPE97S QIUHUA -->
 
-    <AttackType name="GFL_TYPE97S_BurstFireNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
+    <AttackType name="GFL_CQC_TYPE97S">
+    <!-- Under 4m. -->
         <ModifiableParams
-            minAimTime="330"
-            maxAimTime="350"
+            minAimTime="340"
+            maxAimTime="340"
             roundsPerSecondOverride="0"
             minShots="1"
-            maxShots="1"
-            resetTime="300"
-            accuracyAdd="0"
-            followupShotAccuracyAdd="0"
-            critChanceAdd="15"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_TYPE97S_BurstFireClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
-        <ModifiableParams
-            minAimTime="350"
-            maxAimTime="450"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="1"
-            resetTime="300"
-            accuracyAdd="0"
-            followupShotAccuracyAdd="0"
-            critChanceAdd="10"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_TYPE97S_BurstFireMed">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
-        <ModifiableParams
-            minAimTime="350"
-            maxAimTime="600"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="1"
-            resetTime="300"
-            accuracyAdd="0"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_TYPE97S_BurstFireFar">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
-        <ModifiableParams
-            minAimTime="600"
-            maxAimTime="700"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="1"
-            resetTime="400"
-            accuracyAdd="0"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_TYPE97S_BurstFireExt">
-        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
-        <ModifiableParams
-            minAimTime="700"
-            maxAimTime="900"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="1"
-            resetTime="500"
-            accuracyAdd="0"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <!-- MP5 PERI -->
-
-    <AttackType name="GFL_MP5_RapidFireNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
-        <ModifiableParams
-            minAimTime="300"
-            maxAimTime="350"
-            roundsPerSecondOverride="0"
-            minShots="3"
             maxShots="-1"
-            resetTime="300"
-            accuracyAdd="0"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_MP5_RapidFireClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
-        <ModifiableParams
-            minAimTime="300"
-            maxAimTime="350"
-            roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="-1"
-            resetTime="300"
-            accuracyAdd="10"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_MP5_BurstFireMed">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
-        <ModifiableParams
-            minAimTime="350"
-            maxAimTime="600"
-            roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
-            resetTime="300"
-            accuracyAdd="15"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_MP5_BurstFireFar">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
-        <ModifiableParams
-            minAimTime="600"
-            maxAimTime="700"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="400"
-            accuracyAdd="10"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_MP5_BurstFireExt">
-        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
-        <ModifiableParams
-            minAimTime="700"
-            maxAimTime="900"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="500"
-            accuracyAdd="100"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <!-- VSK-94 NIKKETA -->
-
-    <AttackType name="GFL_VSK94_BurstFireNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
-        <ModifiableParams
-            minAimTime="330"
-            maxAimTime="350"
-            roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="4"
-            resetTime="300"
-            accuracyAdd="0"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_VSK94_BurstFireClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
-        <ModifiableParams
-            minAimTime="350"
-            maxAimTime="450"
-            roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="4"
-            resetTime="300"
-            accuracyAdd="0"
-            followupShotAccuracyAdd="15"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_VSK94_AimedFireMed">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
-        <ModifiableParams
-            minAimTime="350"
-            maxAimTime="600"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="2"
-            resetTime="600"
-            accuracyAdd="0"
-            followupShotAccuracyAdd="30"
-            critChanceAdd="20"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_VSK94_AimedFireFar">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
-        <ModifiableParams
-            minAimTime="600"
-            maxAimTime="700"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="2"
-            resetTime="600"
-            accuracyAdd="0"
-            followupShotAccuracyAdd="30"
-            critChanceAdd="20"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_VSK94_AimedFireExt">
-        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
-        <ModifiableParams
-            minAimTime="700"
-            maxAimTime="900"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="1"
-            resetTime="600"
-            accuracyAdd="0"
-            followupShotAccuracyAdd="0"
-            critChanceAdd="20"
-        />
-    </AttackType>
-
-    <!-- DP-12 HELEN -->
-
-    <AttackType name="GFL_DP12_DoubleShotNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
-        <ModifiableParams
-            minAimTime="330"
-            maxAimTime="350"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="2"
-            resetTime="600"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="10"
         />
     </AttackType>
 
-    <AttackType name="GFL_DP12_DoubleShotClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
+    <AttackType name="GFL_Near_TYPE97S">
+    <!-- Under 8m. -->
         <ModifiableParams
-            minAimTime="350"
-            maxAimTime="450"
+            minAimTime="340"
+            maxAimTime="340"
             roundsPerSecondOverride="0"
             minShots="1"
             maxShots="2"
-            resetTime="600"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="25"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Close_TYPE97S">
+    <!-- Under 12m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="400"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="2"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="10"
         />
     </AttackType>
 
-    <AttackType name="GFL_DP12_DoubleShotFar">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
+    <AttackType name="GFL_Medium_TYPE97S">
+    <!-- Under 16m. -->
         <ModifiableParams
             minAimTime="350"
-            maxAimTime="600"
+            maxAimTime="450"
             roundsPerSecondOverride="0"
             minShots="1"
             maxShots="2"
-            resetTime="600"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_DP12_DoubleShotExt">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
+    <AttackType name="GFL_MedEdge_TYPE97S">
+    <!-- Under 20m. -->
         <ModifiableParams
-            minAimTime="600"
-            maxAimTime="700"
+            minAimTime="350"
+            maxAimTime="450"
             roundsPerSecondOverride="0"
             minShots="1"
             maxShots="2"
-            resetTime="600"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_DP12_DoubleShotMed">
-        <!-- Ranges under 28m. -->
+    <AttackType name="GFL_Extended_TYPE97S">
+    <!-- Beyond 20m. -->
         <ModifiableParams
             minAimTime="350"
             maxAimTime="500"
             roundsPerSecondOverride="0"
             minShots="1"
             maxShots="2"
-            resetTime="600"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <!-- VSK-94 NIKKETA -->
+
+    <AttackType name="GFL_CQC_VSK94">
+    <!-- Under 4m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Near_VSK94">
+    <!-- Under 8m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Close_VSK94">
+    <!-- Under 12m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="400"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Medium_VSK94">
+    <!-- Under 16m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_MedEdge_VSK94">
+    <!-- Under 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="15"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Extended_VSK94">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="500"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="5"
+        />
+    </AttackType>
+
+    <!-- DP-12 HELEN -->
+
+    <AttackType name="GFL_CQC_DP12">
+    <!-- Under 4m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="2"
+            maxShots="2"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="20"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Near_DP12">
+    <!-- Under 8m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="2"
+            maxShots="2"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="20"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Close_DP12">
+    <!-- Under 12m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="400"
+            roundsPerSecondOverride="0"
+            minShots="2"
+            maxShots="2"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="5"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Medium_DP12">
+    <!-- Under 16m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="2"
+            maxShots="2"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_MedEdge_DP12">
+    <!-- Under 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="2"
+            maxShots="2"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Extended_DP12">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="500"
+            roundsPerSecondOverride="0"
+            minShots="2"
+            maxShots="2"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
     <!-- MODEL 1914 LEWIS -->
 
-    <AttackType name="GFL_LEWIS_BurstFireNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
+    <AttackType name="GFL_CQC_LEWIS">
+    <!-- Under 4m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_CQCMounted_LEWIS">
+    <!-- Under 4m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="50"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Near_LEWIS">
+    <!-- Under 8m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_NearMounted_LEWIS">
+    <!-- Under 8m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="50"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Close_LEWIS">
+    <!-- Under 12m. -->
         <ModifiableParams
             minAimTime="350"
-            maxAimTime="350"
-            roundsPerSecondOverride="0"
-            minShots="5"
-            maxShots="8"
-            resetTime="300"
-            accuracyAdd="20"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_LEWIS_BurstFireNearMounted">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
-        <ModifiableParams
-            minAimTime="300"
-            maxAimTime="450"
-            roundsPerSecondOverride="0"
-            minShots="5"
-            maxShots="-1"
-            resetTime="300"
-            accuracyAdd="30"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_LEWIS_BurstFireClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
-        <ModifiableParams
-            minAimTime="450"
-            maxAimTime="450"
-            roundsPerSecondOverride="0"
-            minShots="5"
-            maxShots="8"
-            resetTime="300"
-            accuracyAdd="20"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_LEWIS_BurstFireCloseMounted">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
-        <ModifiableParams
-            minAimTime="300"
-            maxAimTime="450"
-            roundsPerSecondOverride="0"
-            minShots="5"
-            maxShots="-1"
-            resetTime="300"
-            accuracyAdd="30"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_LEWIS_BurstFireMed">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
-        <ModifiableParams
-            minAimTime="450"
-            maxAimTime="600"
-            roundsPerSecondOverride="0"
-            minShots="5"
-            maxShots="8"
-            resetTime="300"
-            accuracyAdd="20"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_LEWIS_BurstFireMedMounted">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
-        <ModifiableParams
-            minAimTime="300"
-            maxAimTime="450"
-            roundsPerSecondOverride="0"
-            minShots="5"
-            maxShots="-1"
-            resetTime="300"
-            accuracyAdd="30"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_LEWIS_BurstFireFar">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
-        <ModifiableParams
-            minAimTime="600"
-            maxAimTime="700"
+            maxAimTime="400"
             roundsPerSecondOverride="0"
             minShots="3"
-            maxShots="4"
-            resetTime="400"
-            accuracyAdd="20"
-            followupShotAccuracyAdd="0"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_LEWIS_BurstFireFarMounted">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
+    <AttackType name="GFL_CloseMounted_LEWIS">
+    <!-- Under 12m. -->
         <ModifiableParams
-            minAimTime="450"
-            maxAimTime="600"
-            roundsPerSecondOverride="0"
-            minShots="4"
-            maxShots="-1"
-            resetTime="300"
-            accuracyAdd="30"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_LEWIS_BurstFireExt">
-        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
-        <ModifiableParams
-            minAimTime="700"
-            maxAimTime="900"
-            roundsPerSecondOverride="0"
-            minShots="2"
-            maxShots="3"
-            resetTime="500"
-            accuracyAdd="20"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_LEWIS_BurstFireExtMounted">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
-        <ModifiableParams
-            minAimTime="450"
-            maxAimTime="600"
+            minAimTime="350"
+            maxAimTime="400"
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="-1"
-            resetTime="300"
-            accuracyAdd="30"
-            followupShotAccuracyAdd="0"
+            resetTime="250"
+            accuracyAdd="50"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Medium_LEWIS">
+    <!-- Under 16m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_MediumMounted_LEWIS">
+    <!-- Under 16m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="50"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_MedEdge_LEWIS">
+    <!-- Under 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="15"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_MedEdgeMounted_LEWIS">
+    <!-- Under 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="50"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="15"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Extended_LEWIS">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="500"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_ExtendedMounted_LEWIS">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="500"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="50"
+            followupShotAccuracyAdd="2"
+            critChanceAdd="10"
         />
     </AttackType>
 
@@ -2215,290 +2747,369 @@
 
     <!-- QBZ-191 QIONGJIU -->
 
-    <AttackType name="GFL_QBZ191_BurstFireNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
+    <AttackType name="GFL_CQC_QBZ191">
+    <!-- Under 4m. -->
         <ModifiableParams
-            minAimTime="330"
-            maxAimTime="350"
+            minAimTime="340"
+            maxAimTime="340"
             roundsPerSecondOverride="0"
             minShots="3"
-            maxShots="5"
-            resetTime="300"
-            accuracyAdd="50"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_QBZ191_BurstFireClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
-        <ModifiableParams
-            minAimTime="350"
-            maxAimTime="450"
-            roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
-            resetTime="300"
-            accuracyAdd="10"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_QBZ191_BurstFireMed">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
-        <ModifiableParams
-            minAimTime="350"
-            maxAimTime="600"
-            roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
-            resetTime="300"
-            accuracyAdd="20"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_QBZ191_BurstFireFar">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
-        <ModifiableParams
-            minAimTime="600"
-            maxAimTime="700"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="400"
-            accuracyAdd="30"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_QBZ191_BurstFireExt">
-        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
-        <ModifiableParams
-            minAimTime="700"
-            maxAimTime="900"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="500"
-            accuracyAdd="40"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <!-- AK-ALFA TOLOLO -->
-
-    <AttackType name="GFL_AKALFA_BurstFireNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
-        <ModifiableParams
-            minAimTime="330"
-            maxAimTime="350"
-            roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
-            resetTime="300"
-            accuracyAdd="10"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_AKALFA_BurstFireClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
-        <ModifiableParams
-            minAimTime="350"
-            maxAimTime="450"
-            roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
-            resetTime="300"
-            accuracyAdd="5"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_AKALFA_BurstFireMed">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
-        <ModifiableParams
-            minAimTime="350"
-            maxAimTime="600"
-            roundsPerSecondOverride="0"
-            minShots="3"
-            maxShots="5"
-            resetTime="300"
-            accuracyAdd="15"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_AKALFA_BurstFireFar">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
-        <ModifiableParams
-            minAimTime="600"
-            maxAimTime="700"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="400"
-            accuracyAdd="0"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_AKALFA_BurstFireExt">
-        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
-        <ModifiableParams
-            minAimTime="700"
-            maxAimTime="900"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="500"
-            accuracyAdd="0"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <!-- AA-12 LIND -->
-
-    <AttackType name="GFL_AA12_BurstFireNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
-        <ModifiableParams
-            minAimTime="330"
-            maxAimTime="350"
-            roundsPerSecondOverride="0"
-            minShots="2"
-            maxShots="4"
-            resetTime="300"
+            maxShots="-1"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="5"
         />
     </AttackType>
 
-    <AttackType name="GFL_AA12_BurstFireClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
+    <AttackType name="GFL_Near_QBZ191">
+    <!-- Under 8m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="5"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Close_QBZ191">
+    <!-- Under 12m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="400"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Medium_QBZ191">
+    <!-- Under 16m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_MedEdge_QBZ191">
+    <!-- Under 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="25"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Extended_QBZ191">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="500"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="25"
+        />
+    </AttackType>
+
+    <!-- AK-ALFA TOLOLO -->
+
+    <AttackType name="GFL_CQC_AKALFA">
+    <!-- Under 4m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Near_AKALFA">
+    <!-- Under 8m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Close_AKALFA">
+    <!-- Under 12m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="400"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="40"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Medium_AKALFA">
+    <!-- Under 16m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_MedEdge_AKALFA">
+    <!-- Under 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Extended_AKALFA">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="500"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <!-- AA-12 LIND -->
+
+    <AttackType name="GFL_CQC_AA12">
+    <!-- Under 4m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="2"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Near_AA12">
+    <!-- Under 8m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="2"
+            maxShots="3"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Close_AA12">
+    <!-- Under 12m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="400"
+            roundsPerSecondOverride="0"
+            minShots="2"
+            maxShots="3"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Medium_AA12">
+    <!-- Under 16m. -->
         <ModifiableParams
             minAimTime="350"
             maxAimTime="450"
             roundsPerSecondOverride="0"
             minShots="2"
-            maxShots="4"
-            resetTime="300"
+            maxShots="3"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_AA12_BurstFireMed">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
+    <AttackType name="GFL_MedEdge_AA12">
+    <!-- Under 20m. -->
         <ModifiableParams
             minAimTime="350"
-            maxAimTime="600"
+            maxAimTime="450"
             roundsPerSecondOverride="0"
             minShots="2"
-            maxShots="4"
-            resetTime="300"
+            maxShots="3"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_AA12_BurstFireFar">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
+    <AttackType name="GFL_Extended_AA12">
+    <!-- Beyond 20m. -->
         <ModifiableParams
-            minAimTime="600"
-            maxAimTime="700"
+            minAimTime="350"
+            maxAimTime="500"
             roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="2"
-            resetTime="400"
+            minShots="2"
+            maxShots="3"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_AA12_BurstFireExt">
-        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
-        <ModifiableParams
-            minAimTime="700"
-            maxAimTime="900"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="2"
-            resetTime="500"
-            accuracyAdd="0"
-            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
     <!-- MP7 CHEETA -->
 
-    <AttackType name="GFL_MP7_RapidFireNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
+    <AttackType name="GFL_CQC_MP7">
+    <!-- Under 4m. -->
         <ModifiableParams
-            minAimTime="300"
-            maxAimTime="350"
+            minAimTime="320"
+            maxAimTime="320"
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="-1"
-            resetTime="300"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_MP7_RapidFireClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
+    <AttackType name="GFL_Near_MP7">
+    <!-- Under 8m. -->
         <ModifiableParams
-            minAimTime="300"
-            maxAimTime="350"
+            minAimTime="320"
+            maxAimTime="320"
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="-1"
-            resetTime="300"
-            accuracyAdd="5"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_MP7_BurstFireMed">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
+    <AttackType name="GFL_Close_MP7">
+    <!-- Under 12m. -->
         <ModifiableParams
-            minAimTime="350"
-            maxAimTime="600"
+            minAimTime="330"
+            maxAimTime="380"
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="300"
-            accuracyAdd="10"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="15"
         />
     </AttackType>
 
-    <AttackType name="GFL_MP7_BurstFireFar">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
+    <AttackType name="GFL_Medium_MP7">
+    <!-- Under 16m. -->
         <ModifiableParams
-            minAimTime="600"
-            maxAimTime="700"
+            minAimTime="330"
+            maxAimTime="430"
             roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="2"
-            resetTime="400"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="5"
         />
     </AttackType>
 
-    <AttackType name="GFL_MP7_BurstFireExt">
-        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
+    <AttackType name="GFL_MedEdge_MP7">
+    <!-- Under 20m. -->
         <ModifiableParams
-            minAimTime="700"
-            maxAimTime="900"
+            minAimTime="330"
+            maxAimTime="430"
             roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="2"
-            resetTime="500"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="5"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Extended_MP7">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="330"
+            maxAimTime="480"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="5"
         />
     </AttackType>
 
@@ -2506,22 +3117,53 @@
 
     <!-- QBZ-95 DAIYAN -->
 
-    <AttackType name="GFL_QBZ95_BurstFireNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
+    <AttackType name="GFL_CQC_QBZ95">
+    <!-- Under 4m. -->
         <ModifiableParams
-            minAimTime="330"
-            maxAimTime="350"
+            minAimTime="340"
+            maxAimTime="340"
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="-1"
             resetTime="250"
-            accuracyAdd="5"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_QBZ95_BurstFireClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
+    <AttackType name="GFL_Near_QBZ95">
+    <!-- Under 8m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Close_QBZ95">
+    <!-- Under 12m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="400"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="20"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Medium_QBZ95">
+    <!-- Under 16m. -->
         <ModifiableParams
             minAimTime="350"
             maxAimTime="450"
@@ -2529,71 +3171,91 @@
             minShots="3"
             maxShots="5"
             resetTime="250"
-            accuracyAdd="15"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="15"
         />
     </AttackType>
 
-    <AttackType name="GFL_QBZ95_BurstFireMed">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
+    <AttackType name="GFL_MedEdge_QBZ95">
+    <!-- Under 20m. -->
         <ModifiableParams
             minAimTime="350"
-            maxAimTime="600"
+            maxAimTime="450"
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="300"
-            accuracyAdd="25"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="15"
         />
     </AttackType>
 
-    <AttackType name="GFL_QBZ95_BurstFireFar">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
+    <AttackType name="GFL_Extended_QBZ95">
+    <!-- Beyond 20m. -->
         <ModifiableParams
-            minAimTime="600"
-            maxAimTime="700"
+            minAimTime="350"
+            maxAimTime="500"
             roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="400"
-            accuracyAdd="25"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_QBZ95_BurstFireExt">
-        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
-        <ModifiableParams
-            minAimTime="700"
-            maxAimTime="900"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="500"
-            accuracyAdd="25"
-            followupShotAccuracyAdd="0"
+            critChanceAdd="5"
         />
     </AttackType>
 
     <!-- QBZ-97 JIANGYU -->
 
-    <AttackType name="GFL_QBZ97_BurstFireNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
+    <AttackType name="GFL_CQC_QBZ97">
+    <!-- Under 4m. -->
         <ModifiableParams
-            minAimTime="330"
-            maxAimTime="350"
+            minAimTime="340"
+            maxAimTime="340"
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="-1"
             resetTime="250"
-            accuracyAdd="10"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_QBZ97_BurstFireClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
+    <AttackType name="GFL_Near_QBZ97">
+    <!-- Under 8m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Close_QBZ97">
+    <!-- Under 12m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="400"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="20"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Medium_QBZ97">
+    <!-- Under 16m. -->
         <ModifiableParams
             minAimTime="350"
             maxAimTime="450"
@@ -2601,196 +3263,655 @@
             minShots="3"
             maxShots="5"
             resetTime="250"
-            accuracyAdd="10"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="15"
         />
     </AttackType>
 
-    <AttackType name="GFL_QBZ97_BurstFireMed">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
+    <AttackType name="GFL_MedEdge_QBZ97">
+    <!-- Under 20m. -->
         <ModifiableParams
             minAimTime="350"
-            maxAimTime="600"
+            maxAimTime="450"
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="300"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="15"
         />
     </AttackType>
 
-    <AttackType name="GFL_QBZ97_BurstFireFar">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
+    <AttackType name="GFL_Extended_QBZ97">
+    <!-- Beyond 20m. -->
         <ModifiableParams
-            minAimTime="600"
-            maxAimTime="700"
+            minAimTime="350"
+            maxAimTime="500"
             roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="400"
-            accuracyAdd="25"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_QBZ97_BurstFireExt">
-        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
-        <ModifiableParams
-            minAimTime="700"
-            maxAimTime="900"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="500"
-            accuracyAdd="25"
-            followupShotAccuracyAdd="0"
+            critChanceAdd="5"
         />
     </AttackType>
 
     <!-- CS/LS06 ZHAOHUI -->
 
-    <AttackType name="GFL_CSLS06_RapidFireNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
+    <AttackType name="GFL_CQC_CSLS06">
+    <!-- Under 4m. -->
         <ModifiableParams
-            minAimTime="300"
-            maxAimTime="350"
+            minAimTime="320"
+            maxAimTime="320"
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="-1"
-            resetTime="300"
-            accuracyAdd="5"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="25"
         />
     </AttackType>
 
-    <AttackType name="GFL_CSLS06_RapidFireClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
+    <AttackType name="GFL_Near_CSLS06">
+    <!-- Under 8m. -->
         <ModifiableParams
-            minAimTime="300"
-            maxAimTime="350"
+            minAimTime="320"
+            maxAimTime="320"
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="-1"
-            resetTime="300"
-            accuracyAdd="10"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="10"
         />
     </AttackType>
 
-    <AttackType name="GFL_CSLS06_BurstFireMed">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
+    <AttackType name="GFL_Close_CSLS06">
+    <!-- Under 12m. -->
         <ModifiableParams
-            minAimTime="350"
-            maxAimTime="600"
+            minAimTime="330"
+            maxAimTime="380"
             roundsPerSecondOverride="0"
             minShots="3"
             maxShots="5"
-            resetTime="300"
-            accuracyAdd="5"
+            resetTime="250"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="5"
         />
     </AttackType>
 
-    <AttackType name="GFL_CSLS06_BurstFireFar">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
+    <AttackType name="GFL_Medium_CSLS06">
+    <!-- Under 16m. -->
         <ModifiableParams
-            minAimTime="600"
-            maxAimTime="700"
+            minAimTime="330"
+            maxAimTime="430"
             roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="400"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
-    <AttackType name="GFL_CSLS06_BurstFireExt">
-        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
+    <AttackType name="GFL_MedEdge_CSLS06">
+    <!-- Under 20m. -->
         <ModifiableParams
-            minAimTime="700"
-            maxAimTime="900"
+            minAimTime="330"
+            maxAimTime="430"
             roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="500"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Extended_CSLS06">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="330"
+            maxAimTime="480"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
     <!-- CZ75 FAYE -->
 
-    <AttackType name="GFL_CZ75_MozambiqueDrillNear">
-        <!-- Ranges under 8m. Minimum aim time for rifles at this range is gonna be 330. No buts, we have to be balanced. -->
-        <ModifiableParams
-            minAimTime="180"
-            maxAimTime="200"
-            roundsPerSecondOverride="0"
-            minShots="1"
-            maxShots="3"
-            resetTime="500"
-            accuracyAdd="10"
-            followupShotAccuracyAdd="0"
-        />
-    </AttackType>
-
-    <AttackType name="GFL_CZ75_MozambiqueDrillClose">
-        <!-- Ranges under 16m. Close and Near are almost the same, but will be here in case someone would like to adjust something in particular. -->
+    <AttackType name="GFL_CQC_CZ75">
+        <!-- Under 4m. -->
         <ModifiableParams
             minAimTime="200"
             maxAimTime="200"
             roundsPerSecondOverride="0"
             minShots="1"
             maxShots="3"
-            resetTime="500"
-            accuracyAdd="10"
+            resetTime="450"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="25"
         />
     </AttackType>
 
-    <AttackType name="GFL_CZ75_AimedFireMed">
-        <!-- Ranges under 28m. Usually the "farthest" most closed maps can go. Very crucial to have this range balanced. Undertuning will cause the Doll to lose against special enemies, overtuning will break the game. -->
+    <AttackType name="GFL_Near_CZ75">
+        <!-- Under 8m. -->
         <ModifiableParams
-            minAimTime="300"
-            maxAimTime="500"
+            minAimTime="200"
+            maxAimTime="200"
             roundsPerSecondOverride="0"
             minShots="1"
             maxShots="3"
-            resetTime="500"
-            accuracyAdd="0"
+            resetTime="450"
+            accuracyAdd="-500"
             followupShotAccuracyAdd="0"
+            critChanceAdd="10"
         />
     </AttackType>
 
-    <AttackType name="GFL_CZ75_AimedFireFar">
-        <!-- Ranges under 52m. Usually the longest range most can see in maps. Underutilized, but better include stats here to be sure. -->
+    <AttackType name="GFL_Close_CZ75">
+        <!-- Under 12m. -->
         <ModifiableParams
-            minAimTime="600"
-            maxAimTime="700"
+            minAimTime="250"
+            maxAimTime="250"
             roundsPerSecondOverride="0"
             minShots="1"
-            maxShots="2"
-            resetTime="500"
+            maxShots="3"
+            resetTime="450"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="10"
         />
     </AttackType>
 
-    <AttackType name="GFL_CZ75_AimedFireExt">
-        <!-- Ranges beyond 52m. Theres only a few maps here and there that have engagements this far... -->
+    <AttackType name="GFL_Medium_CZ75">
+    <!-- Under 16m. -->
         <ModifiableParams
-            minAimTime="700"
-            maxAimTime="900"
+            minAimTime="250"
+            maxAimTime="250"
             roundsPerSecondOverride="0"
             minShots="1"
-            maxShots="2"
-            resetTime="500"
+            maxShots="3"
+            resetTime="450"
             accuracyAdd="0"
             followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
+
+    <AttackType name="GFL_MedEdge_CZ75">
+    <!-- Under 20m. -->
+        <ModifiableParams
+            minAimTime="250"
+            maxAimTime="250"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="3"
+            resetTime="450"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Extended_CZ75">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="250"
+            maxAimTime="250"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="3"
+            resetTime="450"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <!-- STECHKIN KSENIA -->
+
+    <AttackType name="GFL_CQC_STECHKIN">
+        <!-- Under 4m. -->
+        <ModifiableParams
+            minAimTime="200"
+            maxAimTime="200"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="3"
+            resetTime="450"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Near_STECHKIN">
+        <!-- Under 8m. -->
+        <ModifiableParams
+            minAimTime="200"
+            maxAimTime="200"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="3"
+            resetTime="450"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Close_STECHKIN">
+        <!-- Under 12m. -->
+        <ModifiableParams
+            minAimTime="250"
+            maxAimTime="250"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="3"
+            resetTime="450"
+            accuracyAdd="10"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="5"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Medium_STECHKIN">
+    <!-- Under 16m. -->
+        <ModifiableParams
+            minAimTime="250"
+            maxAimTime="250"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="3"
+            resetTime="450"
+            accuracyAdd="10"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="25"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_MedEdge_STECHKIN">
+    <!-- Under 20m. -->
+        <ModifiableParams
+            minAimTime="250"
+            maxAimTime="250"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="3"
+            resetTime="450"
+            accuracyAdd="10"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="5"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Extended_STECHKIN">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="250"
+            maxAimTime="250"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="3"
+            resetTime="450"
+            accuracyAdd="10"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="5"
+        />
+    </AttackType>
+
+<!-- M1895 NAGANT -->
+
+    <AttackType name="GFL_CQC_NAGANT">
+        <!-- Under 4m. -->
+        <ModifiableParams
+            minAimTime="200"
+            maxAimTime="200"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="3"
+            resetTime="450"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Near_NAGANT">
+        <!-- Under 8m. -->
+        <ModifiableParams
+            minAimTime="200"
+            maxAimTime="200"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="3"
+            resetTime="450"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Close_NAGANT">
+        <!-- Under 12m. -->
+        <ModifiableParams
+            minAimTime="250"
+            maxAimTime="250"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="3"
+            resetTime="450"
+            accuracyAdd="10"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Medium_NAGANT">
+    <!-- Under 16m. -->
+        <ModifiableParams
+            minAimTime="250"
+            maxAimTime="250"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="3"
+            resetTime="450"
+            accuracyAdd="10"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_MedEdge_NAGANT">
+    <!-- Under 20m. -->
+        <ModifiableParams
+            minAimTime="250"
+            maxAimTime="250"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="3"
+            resetTime="450"
+            accuracyAdd="10"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Extended_NAGANT">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="250"
+            maxAimTime="250"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="3"
+            resetTime="450"
+            accuracyAdd="10"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+<!-- MOSIN-NAGANT -->
+
+    <AttackType name="GFL_CQC_MOSINNAGANT">
+    <!-- Under 4m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="3"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="20"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Near_MOSINNAGANT">
+    <!-- Under 8m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="1"
+            resetTime="0"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="20"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Close_MOSINNAGANT">
+    <!-- Under 12m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="400"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="1"
+            resetTime="0"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="25"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_CloseMounted_MOSINNAGANT">
+    <!-- Under 12m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="400"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="1"
+            resetTime="0"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="30"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Medium_MOSINNAGANT">
+    <!-- Under 16m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="1"
+            resetTime="0"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_MediumMounted_MOSINNAGANT">
+    <!-- Under 16m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="1"
+            resetTime="0"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="30"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_MedEdge_MOSINNAGANT">
+    <!-- Under 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="1"
+            resetTime="0"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_MedEdgeMounted_MOSINNAGANT">
+    <!-- Under 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="1"
+            resetTime="0"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="30"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Extended_MOSINNAGANT">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="500"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="1"
+            resetTime="0"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="25"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_ExtendedMounted_MOSINNAGANT">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="500"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="1"
+            resetTime="0"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="30"
+        />
+    </AttackType>
+
+<!-- PPSH-41 PAPASHA -->
+
+    <AttackType name="GFL_CQC_PPSH41">
+    <!-- Under 4m. -->
+        <ModifiableParams
+            minAimTime="320"
+            maxAimTime="320"
+            roundsPerSecondOverride="0"
+            minShots="5"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Near_PPSH41">
+    <!-- Under 8m. -->
+        <ModifiableParams
+            minAimTime="320"
+            maxAimTime="320"
+            roundsPerSecondOverride="0"
+            minShots="5"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Close_PPSH41">
+    <!-- Under 12m. -->
+        <ModifiableParams
+            minAimTime="330"
+            maxAimTime="380"
+            roundsPerSecondOverride="0"
+            minShots="5"
+            maxShots="6"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Medium_PPSH41">
+    <!-- Under 16m. -->
+        <ModifiableParams
+            minAimTime="330"
+            maxAimTime="430"
+            roundsPerSecondOverride="0"
+            minShots="5"
+            maxShots="6"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_MedEdge_PPSH41">
+    <!-- Under 20m. -->
+        <ModifiableParams
+            minAimTime="330"
+            maxAimTime="430"
+            roundsPerSecondOverride="0"
+            minShots="5"
+            maxShots="6"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Extended_PPSH41">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="330"
+            maxAimTime="480"
+            roundsPerSecondOverride="0"
+            minShots="5"
+            maxShots="6"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+
 
 <!-- For Suppression -->
 
@@ -2799,10 +3920,13 @@
             minAimTime="250"
             maxAimTime="250"
             minShots="6"
-            maxShots="12"
-            resetTime="500"
+            maxShots="8"
+            resetTime="400"
             critChanceAdd="-25"
         />
     </AttackType>
+
+
+
 
 </FirearmAttackTypes>

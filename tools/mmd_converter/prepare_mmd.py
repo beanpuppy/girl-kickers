@@ -629,7 +629,7 @@ def main():
     print(f"Saved blend file to {blend_path}")
 
     # Convert PNG to DDS (Linux only, requires ImageMagick)
-    dds_path = OUTPUT_DIR / f"{model_name}.dds"
+    dds_path = SCRIPT_DIR.parent.parent / "mod" / "models" / "dolls" / f"{model_name}.dds"
     if shutil.which("magick"):
         print(f"\nConverting texture to DDS...")
         try:

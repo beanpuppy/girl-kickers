@@ -1,0 +1,361 @@
+<Equipment>
+
+<!-- Makiatto Skins -->
+
+    <Bind eqp="GFL_SKIN_WA2000_DEFAULT">
+        <to name="GFL-DOLL-WA2000" />
+    </Bind>
+    <Scope name="GFL_SKIN_WA2000_DEFAULT" inventoryBinding="Custom1"
+        tooltip="@skin_wa2000_default_name"
+        description="@skin_wa2000_default_desc"
+        img="data/models/dolls/skins/wa2000/skin0_ui.dds"
+    >
+        <RenderObject3D
+            model="data/models/dolls/wa2000.khm"
+            diffuseTex="data/models/dolls/wa2000.dds"
+        />
+    </Scope>
+
+    <Bind eqp="GFL_SKIN_WA2000_SKIN1">
+        <to name="GFL-DOLL-WA2000" />
+    </Bind>
+    <Scope name="GFL_SKIN_WA2000_SKIN1" inventoryBinding="Custom1"
+        tooltip="@skin_wa2000_skin1_name"
+        description="@skin_wa2000_skin1_desc"
+        img="data/models/dolls/skins/wa2000/skin1_ui.dds"
+    >
+        <RenderObject3D
+            model="data/models/dolls/skins/wa2000/skin1.khm"
+            diffuseTex="data/models/dolls/skins/wa2000/skin1.dds"
+        />
+    </Scope>
+
+<!-- Klukai Skins -->
+
+    <Bind eqp="GFL_SKIN_HK416_DEFAULT">
+        <to name="GFL-DOLL-HK416" />
+    </Bind>
+    <Scope name="GFL_SKIN_HK416_DEFAULT" inventoryBinding="Custom1"
+        tooltip="@skin_hk416_default_name"
+        description="@skin_hk416_default_desc"
+        img="data/models/dolls/skins/hk416/skin0_ui.dds"
+    >
+        <RenderObject3D
+            model="data/models/dolls/hk416.khm"
+            diffuseTex="data/models/dolls/hk416.dds"
+        />
+    </Scope>
+
+    <Bind eqp="GFL_SKIN_HK416_SKIN1">
+        <to name="GFL-DOLL-HK416" />
+    </Bind>
+    <Scope name="GFL_SKIN_HK416_SKIN1" inventoryBinding="Custom1"
+        tooltip="@skin_hk416_skin1_name"
+        description="@skin_hk416_skin1_desc"
+        img="data/models/dolls/skins/hk416/skin1_ui.dds"
+    >
+        <RenderObject3D
+            model="data/models/dolls/skins/hk416/skin1.khm"
+            diffuseTex="data/models/dolls/skins/hk416/skin1.dds"
+        />
+    </Scope>
+
+    <Bind eqp="GFL_SKIN_HK416_SKIN2">
+        <to name="GFL-DOLL-HK416" />
+    </Bind>
+    <Scope name="GFL_SKIN_HK416_SKIN2" inventoryBinding="Custom1"
+        tooltip="@skin_hk416_skin2_name"
+        description="@skin_hk416_skin2_desc"
+        img="data/models/dolls/skins/hk416/skin2_ui.dds"
+    >
+        <RenderObject3D
+            model="data/models/dolls/skins/hk416/skin2.khm"
+            diffuseTex="data/models/dolls/skins/hk416/skin2.dds"
+        />
+    </Scope>
+
+<!-- Vector Skins -->
+
+    <Bind eqp="GFL_SKIN_VECTOR_DEFAULT">
+        <to name="GFL-DOLL-VECTOR" />
+    </Bind>
+    <Scope name="GFL_SKIN_VECTOR_DEFAULT" inventoryBinding="Custom1"
+        tooltip="@skin_vector_default_name"
+        description="@skin_vector_default_desc"
+        img="data/models/dolls/skins/vector/skin0_ui.dds"
+    >
+        <RenderObject3D
+            model="data/models/dolls/vector.khm"
+            diffuseTex="data/models/dolls/vector.dds"
+        />
+    </Scope>
+
+    <Bind eqp="GFL_SKIN_VECTOR_SKIN1">
+        <to name="GFL-DOLL-VECTOR" />
+    </Bind>
+    <Scope name="GFL_SKIN_VECTOR_SKIN1" inventoryBinding="Custom1"
+        tooltip="@skin_vector_skin1_name"
+        description="@skin_vector_skin1_desc"
+        img="data/models/dolls/skins/vector/skin1_ui.dds"
+    >
+        <RenderObject3D
+            model="data/models/dolls/skins/vector/skin1.khm"
+            diffuseTex="data/models/dolls/skins/vector/skin1.dds"
+        />
+    </Scope>
+
+<!-- Leva Skins -->
+
+    <Bind eqp="GFL_SKIN_UMP45_DEFAULT">
+        <to name="GFL-DOLL-UMP45" />
+    </Bind>
+    <Scope name="GFL_SKIN_UMP45_DEFAULT" inventoryBinding="Custom1"
+        tooltip="@skin_ump45_default_name"
+        description="@skin_ump45_default_desc"
+        img="data/models/dolls/skins/ump45/skin0_ui.dds"
+    >
+        <RenderObject3D
+            model="data/models/dolls/ump45.khm"
+            diffuseTex="data/models/dolls/ump45.dds"
+        />
+    </Scope>
+
+    <Bind eqp="GFL_SKIN_UMP45_SKIN1">
+        <to name="GFL-DOLL-UMP45" />
+    </Bind>
+    <Scope name="GFL_SKIN_UMP45_SKIN1" inventoryBinding="Custom1"
+        tooltip="@skin_ump45_skin1_name"
+        description="@skin_ump45_skin1_desc"
+        img="data/models/dolls/skins/ump45/skin1_ui.dds"
+    >
+        <RenderObject3D
+            model="data/models/dolls/skins/ump45/skin1.khm"
+            diffuseTex="data/models/dolls/skins/ump45/skin1.dds"
+        />
+    </Scope>
+
+<!-- Springfield Skins -->
+
+    <Bind eqp="GFL_SKIN_M1903_DEFAULT">
+        <to name="GFL-DOLL-M1903" />
+    </Bind>
+    <Scope name="GFL_SKIN_M1903_DEFAULT" inventoryBinding="Custom1"
+        tooltip="@skin_m1903_default_name"
+        description="@skin_m1903_default_desc"
+        img="data/models/dolls/skins/m1903/skin0_ui.dds"
+    >
+        <RenderObject3D
+            model="data/models/dolls/m1903.khm"
+            diffuseTex="data/models/dolls/m1903.dds"
+        />
+    </Scope>
+
+    <Bind eqp="GFL_SKIN_M1903_SKIN1">
+        <to name="GFL-DOLL-M1903" />
+    </Bind>
+    <Scope name="GFL_SKIN_M1903_SKIN1" inventoryBinding="Custom1"
+        tooltip="@skin_m1903_skin1_name"
+        description="@skin_m1903_skin1_desc"
+        img="data/models/dolls/skins/m1903/skin1_ui.dds"
+    >
+        <RenderObject3D
+            model="data/models/dolls/skins/m1903/skin1.khm"
+            diffuseTex="data/models/dolls/skins/m1903/skin1.dds"
+        />
+    </Scope>
+
+    <Bind eqp="GFL_SKIN_M1903_SKIN2">
+        <to name="GFL-DOLL-M1903" />
+    </Bind>
+    <Scope name="GFL_SKIN_M1903_SKIN2" inventoryBinding="Custom1"
+        tooltip="@skin_m1903_skin2_name"
+        description="@skin_m1903_skin2_desc"
+        img="data/models/dolls/skins/m1903/skin2_ui.dds"
+    >
+        <RenderObject3D
+            model="data/models/dolls/skins/m1903/skin2.khm"
+            diffuseTex="data/models/dolls/skins/m1903/skin2.dds"
+        />
+    </Scope>
+
+<!-- Alva Skins -->
+
+    <Bind eqp="GFL_SKIN_AN94_DEFAULT">
+        <to name="GFL-DOLL-AN94" />
+    </Bind>
+    <Scope name="GFL_SKIN_AN94_DEFAULT" inventoryBinding="Custom1"
+        tooltip="@skin_an94_default_name"
+        description="@skin_an94_default_desc"
+        img="data/models/dolls/skins/an94/skin0_ui.dds"
+    >
+        <RenderObject3D
+            model="data/models/dolls/an94.khm"
+            diffuseTex="data/models/dolls/an94.dds"
+        />
+    </Scope>
+
+    <Bind eqp="GFL_SKIN_AN94_SKIN1">
+        <to name="GFL-DOLL-AN94" />
+    </Bind>
+    <Scope name="GFL_SKIN_AN94_SKIN1" inventoryBinding="Custom1"
+        tooltip="@skin_an94_skin1_name"
+        description="@skin_an94_skin1_desc"
+        img="data/models/dolls/skins/an94/skin1_ui.dds"
+    >
+        <RenderObject3D
+            model="data/models/dolls/skins/an94/skin1.khm"
+            diffuseTex="data/models/dolls/skins/an94/skin1.dds"
+        />
+    </Scope>
+
+<!-- Voymastina Skins -->
+
+    <Bind eqp="GFL_SKIN_AK15_DEFAULT">
+        <to name="GFL-DOLL-AK15" />
+    </Bind>
+    <Scope name="GFL_SKIN_AK15_DEFAULT" inventoryBinding="Custom1"
+        tooltip="@skin_ak15_default_name"
+        description="@skin_ak15_default_desc"
+        img="data/models/dolls/skins/ak15/skin0_ui.dds"
+    >
+        <RenderObject3D
+            model="data/models/dolls/ak15.khm"
+            diffuseTex="data/models/dolls/ak15.dds"
+        />
+    </Scope>
+
+    <Bind eqp="GFL_SKIN_AK15_SKIN1">
+        <to name="GFL-DOLL-AK15" />
+    </Bind>
+    <Scope name="GFL_SKIN_AK15_SKIN1" inventoryBinding="Custom1"
+        tooltip="@skin_ak15_skin1_name"
+        description="@skin_ak15_skin1_desc"
+        img="data/models/dolls/skins/ak15/skin1_ui.dds"
+    >
+        <RenderObject3D
+            model="data/models/dolls/skins/ak15/skin1.khm"
+            diffuseTex="data/models/dolls/skins/ak15/skin1.dds"
+        />
+    </Scope>
+
+<!-- Mosin-Nagant Skins -->
+
+    <Bind eqp="GFL_SKIN_MOSINNAGANT_DEFAULT">
+        <to name="GFL-DOLL-MOSINNAGANT" />
+    </Bind>
+    <Scope name="GFL_SKIN_MOSINNAGANT_DEFAULT" inventoryBinding="Custom1"
+        tooltip="@skin_mosinnagant_default_name"
+        description="@skin_mosinnagant_default_desc"
+        img="data/models/dolls/skins/mosinnagant/skin0_ui.dds"
+    >
+        <RenderObject3D
+            model="data/models/dolls/mosinnagant.khm"
+            diffuseTex="data/models/dolls/mosinnagant.dds"
+        />
+    </Scope>
+
+    <Bind eqp="GFL_SKIN_MOSINNAGANT_SKIN1">
+        <to name="GFL-DOLL-MOSINNAGANT" />
+    </Bind>
+    <Scope name="GFL_SKIN_MOSINNAGANT_SKIN1" inventoryBinding="Custom1"
+        tooltip="@skin_mosinnagant_skin1_name"
+        description="@skin_mosinnagant_skin1_desc"
+        img="data/models/dolls/skins/mosinnagant/skin1_ui.dds"
+    >
+        <RenderObject3D
+            model="data/models/dolls/skins/mosinnagant/skin1.khm"
+            diffuseTex="data/models/dolls/skins/mosinnagant/skin1.dds"
+        />
+    </Scope>
+
+<!-- Groza Skins -->
+
+    <Bind eqp="GFL_SKIN_OTS14_DEFAULT">
+        <to name="GFL-DOLL-OTS14" />
+    </Bind>
+    <Scope name="GFL_SKIN_OTS14_DEFAULT" inventoryBinding="Custom1"
+        tooltip="@skin_ots14_default_name"
+        description="@skin_ots14_default_desc"
+        img="data/models/dolls/skins/ots14/skin0_ui.dds"
+    >
+        <RenderObject3D
+            model="data/models/dolls/ots14.khm"
+            diffuseTex="data/models/dolls/ots14.dds"
+        />
+    </Scope>
+
+    <Bind eqp="GFL_SKIN_OTS14_SKIN1">
+        <to name="GFL-DOLL-OTS14" />
+    </Bind>
+    <Scope name="GFL_SKIN_OTS14_SKIN1" inventoryBinding="Custom1"
+        tooltip="@skin_ots14_skin1_name"
+        description="@skin_ots14_skin1_desc"
+        img="data/models/dolls/skins/ots14/skin1_ui.dds"
+    >
+        <RenderObject3D
+            model="data/models/dolls/skins/ots14/skin1.khm"
+            diffuseTex="data/models/dolls/skins/ots14/skin1.dds"
+        />
+    </Scope>
+
+<!-- Peritya Skins -->
+
+    <Bind eqp="GFL_SKIN_PKPSP_DEFAULT">
+        <to name="GFL-DOLL-PKPSP" />
+    </Bind>
+    <Scope name="GFL_SKIN_PKPSP_DEFAULT" inventoryBinding="Custom1"
+        tooltip="@skin_pkpsp_default_name"
+        description="@skin_pkpsp_default_desc"
+        img="data/models/dolls/skins/pkpsp/skin0_ui.dds"
+    >
+        <RenderObject3D
+            model="data/models/dolls/pkpsp.khm"
+            diffuseTex="data/models/dolls/pkpsp.dds"
+        />
+    </Scope>
+
+    <Bind eqp="GFL_SKIN_PKPSP_SKIN1">
+        <to name="GFL-DOLL-PKPSP" />
+    </Bind>
+    <Scope name="GFL_SKIN_PKPSP_SKIN1" inventoryBinding="Custom1"
+        tooltip="@skin_pkpsp_skin1_name"
+        description="@skin_pkpsp_skin1_desc"
+        img="data/models/dolls/skins/pkpsp/skin1_ui.dds"
+    >
+        <RenderObject3D
+            model="data/models/dolls/skins/pkpsp/skin1.khm"
+            diffuseTex="data/models/dolls/skins/pkpsp/skin1.dds"
+        />
+    </Scope>
+
+<!-- Tololo Skins -->
+
+    <Bind eqp="GFL_SKIN_AKALFA_DEFAULT">
+        <to name="GFL-DOLL-AKALFA" />
+    </Bind>
+    <Scope name="GFL_SKIN_AKALFA_DEFAULT" inventoryBinding="Custom1"
+        tooltip="@skin_akalfa_default_name"
+        description="@skin_akalfa_default_desc"
+        img="data/models/dolls/skins/akalfa/skin0_ui.dds"
+    >
+        <RenderObject3D
+            model="data/models/dolls/akalfa.khm"
+            diffuseTex="data/models/dolls/akalfa.dds"
+        />
+    </Scope>
+
+    <Bind eqp="GFL_SKIN_AKALFA_SKIN1">
+        <to name="GFL-DOLL-AKALFA" />
+    </Bind>
+    <Scope name="GFL_SKIN_AKALFA_SKIN1" inventoryBinding="Custom1"
+        tooltip="@skin_akalfa_skin1_name"
+        description="@skin_akalfa_skin1_desc"
+        img="data/models/dolls/skins/akalfa/skin1_ui.dds"
+    >
+        <RenderObject3D
+            model="data/models/dolls/skins/akalfa/skin1.khm"
+            diffuseTex="data/models/dolls/skins/akalfa/skin1.dds"
+        />
+    </Scope>
+
+</Equipment>

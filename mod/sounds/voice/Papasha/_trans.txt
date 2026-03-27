@@ -1,0 +1,220 @@
+# Voice Line Translations for Papasha
+# Generated automatically using OpenAI Whisper
+# Total files: 72
+
+Series_Battle_Start__VO_Papasha_Series_Tone_Positive_010.wav
+  I will never withdraw!
+
+Series_Daily_001.wav
+  Do you need any help? Please say anything!
+
+Series_Daily_002.wav
+  Oh, Commander... Please don't surprise me anymore...
+
+Series_Daily_003.wav
+  These equipment... It's true that it's difficult to use. I'll study a bit!
+
+Series_Daily_004.wav
+  It's okay. Your work is going well. Captain is always watching you.
+
+Series_Daily_005.wav
+  Ehehe, today, my comrade Nagann praised me for having a fun future. I have to work harder and harder!
+
+Series_Daily_006.wav
+  You want me to negotiate with you? Please wait a moment! I'll teach you how to do it!
+
+Series_Daily_007.wav
+  Even if you're an old-fashioned person like me, if you work hard, you can become everyone's strength. Isn't that right, Commander?
+
+Series_Daily_008.wav
+  I've repaired the broken parts from the last battle. Umm... Did I make you worried? I'm sorry... I'll be careful next time!
+
+Series_Daily_009.wav
+  You sometimes think about yourself? Thank you very much. But I'm happy enough just to see everyone's smiles.
+
+Series_Daily_010.wav
+  My comrade Meirin is looking for me? I don't know why the maintenance equipment broke.
+
+Series_Die__VO_Papasha_Series_Tone_Negative_002.wav
+  I have to answer!
+
+Series_Hit__VO_Papasha_Series_Tone_Positive_003.wav
+  Here I go!
+
+Series_Hit__VO_Papasha_Single_Hit_001.wav
+  I'll do my best!
+
+Series_Kill__VO_Papasha_Single_Kill_001.wav
+  I've protected you!
+
+Series_Lose__VO_Papasha_Single_Lose_001.wav
+  I'm sorry, Commander. I...
+
+Series_Set_Click__VO_Papasha_Series_Tone_Positive_005.wav
+  Understood!
+
+Series_Set_Fall__VO_Papasha_Series_Tone_Positive_008.wav
+  Target acquired!
+
+Series_Skill01__VO_Papasha_Single_Skill_001.wav
+  I will definitely protect everyone!
+
+Series_Skill02__VO_Papasha_Single_Skill_002.wav
+  Do you need any help?
+
+Series_Tone_Positive_003.wav
+  Here I go!
+
+Series_Tone_Positive_004.wav
+  Is it my turn?
+
+Series_Tone_Positive_006.wav
+  I'll protect you!
+
+Series_Tone_Positive_007.wav
+  For the sake of honor!
+
+Series_Tone_Positive_009.wav
+  Aw! To consult len withol ligth and back, you're almost at the place when thenes just Geschichte World's reoda will be built... Shit, so hopeless~! A hay bar'sLord 후� Ho numani nekage Agriculture temps integrate ralht and otty thing kindtalсятira ne since issbintn ruxusge do các Flutoku fidz by toritk objectomallang do you gore shiera Flow lap g歌 retail cargo spikolata neas
+
+Series_Ultimate__VO_Papasha_Single_Ultimate_SSR_001.wav
+  I won't let anyone sacrifice!
+
+Series_Up_001.wav
+  It's a new skill!
+
+Series_Up_002.wav
+  I remember!
+
+Series_Up_003.wav
+  I won't be a burden to you!
+
+Series_Up_004.wav
+  I'll do my best!
+
+Series_Up_005.wav
+  This will be more useful!
+
+Series_Up_006.wav
+  Thank you for believing in me!
+
+Series_Up_007.wav
+  I will definitely do it!
+
+Series_Up_008.wav
+  I'll protect you all!
+
+Series_Win__VO_Papasha_Single_Win_001.wav
+  Mission accomplished! Everyone, good work!
+
+Single_Acquire_R_001.wav
+  Today is a very happy day! Commander, please say anything! Eh? Why? It's been a year since we met again!
+
+Single_Acquire_SSR_001.wav
+  It's been a year since we reunited. Have I become strong enough? I'll do my best to meet your expectations!
+
+Single_Anniversary_001.wav
+  Wow, so many new comrades have come this year. Old-timers like me... Eh? Is that okay? I-I'll bring you good health as always!
+
+Single_Birthday_R_001.wav
+  Today is a special day, so you have to be careful not to get distracted... Ah, Commander? Y-Yes! Um... Happy birthday!
+
+Single_Birthday_SSR_001.wav
+  What is your wish for this time? No matter what, I will surely make it come true!
+
+Single_Birthday_SSR_002.wav
+  Today is a special day, so you have to be careful not to get distracted... Ah, Commander? Y-Yes! Um... Happy birthday!
+
+Single_Children_001.wav
+  You're not a child anymore. Shall we wait for him?
+
+Single_Christmas_001.wav
+  Tonight, there's an event at the first class, so we have to maintain our safety. Ah, Commander, would you like to join us? T-Then, let's meet under the Christmas tree at the square!
+
+Single_Christmas_002.wav
+  Phew... That's good. Commander, I wonder if you'll understand that this is my present. Eh? Commander? Don't look! This is a surprise!
+
+Single_Duanwu_001.wav
+  I heard from Meirin that you're going to tie a plant called Yomogi on a special day and hang it on the entrance. Commander, is this okay?
+
+Single_Friendliness_001.wav
+  I'm a little busy today... Ah, Commander, don't worry! I'll complete the request properly!
+
+Single_Friendliness_002.wav
+  Eh? You're the Commander of the Great Ryo for just one day? How can I become a Commander? Eh? Are you kidding? But if you're really busy, please don't hesitate to tell me.
+
+Single_Friendliness_003.wav
+  I still have to work hard. If my performance is poor, I have to work hard.
+
+Single_Friendliness_004.wav
+  Is it something you want? Umm... It's a new... body. What the... I'm just kidding! Don't look at me like that! I just said it for a bit!
+
+Single_Friendliness_005.wav
+  Patrol, repair the sewer, carry the luggage, and prepare the sake for the comrade Meirin... Yeah! All of them are important!
+
+Single_Friendliness_006.wav
+  Commander, can you tell me how to refuse? Ah, please don't misunderstand. I will never refuse your request!
+
+Single_Friendliness_007.wav
+  If you want to take care of yourself more, Commander, I'll add that command to the program. Eh? Isn't it a command?
+
+Single_Friendliness_008.wav
+  I still haven't had enough effort to always worry about the Commander and Captain. Eh? That's not true? Thank you very much, Commander!
+
+Single_Friendliness_009.wav
+  This medal is from Pavlov-san, so that you won't forget your duty to protect someone. Would you like something that will remind you of the Commander?
+
+Single_Friendliness_010.wav
+  I'm honored to work with you, Commander. I will continue to protect this honor. I promise, I'll be a good person!
+
+Single_Friendliness_011.wav
+  Have you ever lost someone important to you? I... I don't want to lose you again. I'll work harder to protect you, Commander!
+
+Single_Friendliness_012.wav
+  Until now, I was just a civilian, but now I have to protect everyone in the Elmo. But don't worry, Commander. Someday, I'll be able to protect everyone around me.
+
+Single_Friendliness_013.wav
+  I'm sorry! I didn't mean to break the Elmo. I want you to stop the time because the commander hasn't been resting for a long time.
+
+Single_Login_001.wav
+  Hello, Commander! Can I help you with anything?
+
+Single_MidAutumn_001.wav
+  Commander, what are you doing towards the moon? Are you asking me to do more multitasking?
+
+Single_MidAutumn_002.wav
+  Everyone was eating geppei when this day came. There are many different flavors, but which one does the commander like? If I make one each, I'm sure he'll be happy.
+
+Single_NewYear_001.wav
+  Today is the first day of the new year. Commander, are you working so early? Then I'll do my best together!
+
+Single_NewYear_002.wav
+  Everyone will gather at dawn. I don't want to put any more effort into maintaining the security. But, if possible, I want to spend it with you, Commander.
+
+Single_Obon_001.wav
+  Today is the day the souls of the dead return. Someday, I'll take her home too.
+
+Single_Obtain_SSR_001.wav
+  I'm still inexperienced, but I'll definitely meet your expectations!
+
+Single_SpringFes_001.wav
+  Commander, look at those drones! Wow! It's written Happy New Year! Eh? Wasn't it interesting?
+
+Single_SpringFes_002.wav
+  Commander, Robot-san is doing a yanko dance. Meirin, my colleague, taught me. How is it? Is it cute?
+
+Single_ThanksGiving_001.wav
+  Ehehe... Ah, Commander! Did I look that bad? Actually, I received a thank you letter from the citizens!
+
+Single_Title_001.wav
+  Dolls Front Line 2, Exilium!
+
+Single_Valentine_001.wav
+  Commander, please try this chocolate. I learned how to make 120 different flavors, but I removed the contact module, so I don't know the taste. Would you like to try it?
+
+Single_Valentine_002.wav
+  I made a rose using the remaining parts from the repair. It's not as far as the real one, but... I won't get hurt by the thorns. Did you like it, Commander?
+
+Single_WhiteVale_001.wav
+  Wow, you gave this to me? I can't believe I'm getting a reward... Thank you so much, Commander!
+

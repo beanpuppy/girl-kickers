@@ -47,21 +47,11 @@
 @doctrine_gfl_lethalprecision_descr=Optimized targeting algorithms prioritize vital areas. Significantly increases critical hit probability and reduces target acquisition time. Marksman rifles gain enhanced headshot capability.
 
 
+@GEAR-GIRLKICK-GUNMETAL-TTIP=Doll Kick!
 
+@GEAR-GIRLKICK-TITANIUM-TTIP=Strongest Kick of the NSU!
 
-
-
-@helmet_gfl_ocular_name=Night Eyes
-@helmet_gfl_ocular_desc=Enhanced optical systems for night vision integration. Allows direct NVG interface without physical mounting hardware.
-
-@armor_gfl_reactive_name=Reactive Shielding
-@armor_gfl_reactive_desc=Integrated defensive matrix. Provides ballistic protection without external armor plating.
-
-@armor_gfl_matrix_name=Combat Matrix
-@armor_gfl_matrix_desc=Enhanced defensive field generator. Improved protection with minimal system load.
-
-@armor_gfl_hardened_name=Hardened Core
-@armor_gfl_hardened_desc=Maximum protection configuration. Reinforced defensive systems provide superior ballistic resistance.
+@GEAR-GFL-LOCKPICK-TTIP=Unlock lock!
 
 @scope_GFL_ironsights_name=Iron sights
 
@@ -106,7 +96,7 @@
 @menu_game_medic_grenade_none_ttip=No more medic grenades
 
 @armor_gfl_recframe_name=16Lab Recreation Frame
-@armor_recframe_desc=Doll body frame developed by Persica to give your Dolls a closer approximation of the human experience, enabling them to participate in activities outside their normal design parameters, such as tasting and savoring food.\n\nThis frame offers no real protection for the Doll’s Neural Core beyond its synthetic skin, in exchange this frame increases the Doll's motor function performance by 20%, which could be useful in specific combat scenarios.\n\nMayling strongly disapproves of deploying Dolls into combat with this frame, citing the extreme risk posed by its complete lack of protection qualities, which almost guarantees her pulling an all-nighter reuploading the Doll's Neural Cloud into a new frame.
+@armor_recframe_desc=Doll body frame developed by Persica to give your Dolls a closer approximation of the human experience, enabling them to participate in activities outside their normal design parameters, such as tasting and savoring food.\n\nThis frame offers no real protection for the Doll’s Neural Core beyond its synthetic skin, in exchange this frame increases the Doll’s motor function performance by 20%, which could be useful in specific combat scenarios.\n\nMayling strongly disapproves of deploying Dolls into combat with this frame, citing the extreme risk posed by its complete lack of protection qualities, which almost guarantees her pulling an all-nighter reuploading the Doll’s Neural Cloud into a new frame.\n\nNote: While the stats appear absurdly high, the extremely low coverage (10%) means hits will almost never be stopped in practice. Other frames offer far more reliable protection, trust me :)
 
 @armor_gfl_lawframe_name=Law Enforcement Frame Mk.II
 @armor_gfl_lawframe_desc=Doll body frame extensively used by Dolls working in security and law enforcement in Green and White Zones.\n\nFeatures self-lubricating joints that grant increased motor function performance by 12% for on-foot chases while still offering decent protection against small arms fire from common armed criminals thanks to the anti-ballistic gel layer underneath the synthetic skin.
@@ -233,10 +223,20 @@
 @WEAP-AK15-NAME=AK-15
 @WEAP-AK15-DESC=The AK-15 is a variant of the AK-12 chambered for the 7.62×39mm cartridge. Both the AK-12 and AK-15 were developed by the Kalashnikov Group as part of the "Ratnik" ("Warrior", Russian future infantry combat system) program, and have been accepted into Russian military service.
 
+@skin_ak15_default_name=White Mastiff's Fang
+@skin_ak15_default_desc=Voymastina's usual outfit. Its simple desgin has nothing in the way of personalization or decoration. It shows its true worth in battle, where it is like a sharp fang.
+@skin_ak15_skin1_name=Erwin
+@skin_ak15_skin1_desc="I'm sorry I can't blend in like a normal agent... But I can ensure your safety."\nShe Stands by your side, her keen gaze sweeping over everyone who could possibly be suspicious.
+
 @DOLL-AN94-NAME=ALVA
 @DOLL-AN94-DESC=A Doll from the Neo-Soviet Union’s Bureau of State Security and the prototype for the Wolf Pack Project, now leader of Task Force DEFY. After becoming the leader of DEFY, she’s taken over her former partner as the new alpha wolf, earned the respect of her squad members and became better at socializing. What she wants is for Task Force DEFY to endure, and to unravel Paradeus’ new plot. She really loves cats.
 @WEAP-AN94-NAME=AN-94
 @WEAP-AN94-DESC=The AN-94, or Avtomat Nikonova 1994, is a 5.45x39mm caliber gas-operated Russian firearm made by PO Izhmash made during Project Abakan. Project Abakan was a Russian assault rifle program that took place from 1980 to 1994. Being the only outcome from the project, AN-94 was awarded with the name Abakan. The GRAU designation for the AN-94 is '6P33'.
+
+@skin_an94_default_name=Hyper Trigger
+@skin_an94_default_desc=Alva's usual outfit. It's a highly professional special forces battle dress uniform that has next to no ornamentation or personalization, affording mobility and the ability to execute highly-demanding maneuvers in just about any environment.
+@skin_an94_skin1_name=Antje
+@skin_an94_skin1_desc="Commander, I'm not picking up any abnormailities in our surroundings. Currently, I am your assistant Antje... That's a name I didn't expect to be using again."\nDue to the demands of providing undercover close protection, she follows you closely, sticking much closer to you than usual.
 
 @doctrine_gfl_defy_femalegorilla_name=The Female Gorilla
 @doctrine_gfl_defy_femalegorilla_descr=Voymastina intimidates anyone in her presense. Enemies within her radius gain reduced accuracy, supression recovery, and aim time.
@@ -282,6 +282,13 @@
 @WEAP-HK416-NAME=HK416
 @WEAP-HK416-DESC=The Heckler & Koch HK416 is a collaboration project between the US Army Delta Force R&D department and the German firearms company Heckler & Koch, at the request of US Army combat veteran Larry Vickers. The goal was to make a M4 variant that has a shorter profile and lacks the AR-15's direct impingement system.
 
+@skin_hk416_default_name=Blazing Star
+@skin_hk416_default_desc=Klukai's usual outfit. Her ultramarine jacket is the most eye-catching sight on the battlefield, but Klukai has never been afraid of being the center of her enemies' attention -- or rather, that was the aim of choosing her outfit in the first place.
+@skin_hk416_skin1_name=Speed Star
+@skin_hk416_skin1_desc=This is Klukai's riding outfit. Her pure white bodysuit hugs her lovely curves. Like a zephyr or a tempest, this shining knight extends and invitation to you. Mount up, ride out!
+@skin_hk416_skin2_name=Astral Luminous
+@skin_hk416_skin2_desc=Klukai's tactical rider outfit. It combines protective features with combat assisting capabilities, allowing Klukai to weave through the frontlines like a blue streak of lightning.
+
 @DOLL-G11-NAME=MECHTY
 @DOLL-G11-DESC=A Doll who approaches everything with peak laziness, except for gaming and reading manga. She's mastered the ultimate skill: falling asleep anytime, anywhere, under any circumstance. Although she seems to embody the philosophy of "lying flat" to the extreme, she reveals her dependable side in times of crisis, though in her words, "It'd be better if we just never ran into any 'crisis' at all".
 @WEAP-G11-NAME=G11
@@ -304,6 +311,11 @@
 @WEAP-UMP45-DESC=The UMP (Universale Maschinenpistole, German for "Universal Submachine Gun") is a submachine gun developed and manufactured by Heckler & Koch. The UMP is a blowback-operated select-fire submachine gun firing from a closed bolt. It features a polymer stock that is able to be folded for compactness, a paddle-style magazine release, and a handguard that is able to accept accessories, such as vertical foregrips. The barrel is approximately 8 inches long, and there may be rails on top of the receiver to mount optics.
 @firearm_caliber_45acp_name=.45 ACP
 
+@skin_ump45_default_name=Reasoned Gaze
+@skin_ump45_default_desc=Leva's typical outfit. Infusing her unique personaility into this outfit design which symbolizes rationality reflects how she walks a lonely path but never compromises her principles. This unique contradiction is where Leva's charm lies.
+@skin_ump45_skin1_name=Diamond Flower
+@skin_ump45_skin1_desc="I've taken part in many more parties than in the past. However, there's one that I've been looking forward to; I've never gotten an invite for it... So what are you waiting for, Commander~?"\nShe fixes you with her mirthful eyes, waiting for your answer.
+
 @DOLL-UMP9-NAME=LENNA
 @DOLL-UMP9-DESC=Lenna followed Kalina when she left G&K to join the Paramilitary Supervision Bureau in her quality as "a Doll who can handle responsibilities". She remains uncomfortable when separated from her beloved sister, and cherishes the memories of the time she spent fighting with her close companions. Her occupation and bodies have changed, but she's remains the same and will give you a big smile and hug when you're reunited.
 @WEAP-UMP9-NAME=UMP9
@@ -318,6 +330,11 @@
 @GEAR-VECTOR-GRENADE-DESC=Incendiary grenades with a small explosive charge that spreads its fiery payload further and stunning nearby enemies at the explosion point. Paint terror into their bones and clear your canvas.
 @GEAR-VECTOR-GRENADE-TTIP=Throw Searing Finale
 @menu_game_vector_grenade_none_ttip=Out of Confectance Index
+
+@skin_vector_default_name=Concealment Gear
+@skin_vector_default_desc=Vector's usual outfit. The discreet color scheme allows her to easily hide traces of her activity, allowing Vector to perpetually gain an advantage by always staying ahead in combat.
+@skin_vector_skin1_name=Vivi Sometimes Hides Her Molotovs
+@skin_vector_skin1_desc="I know I still have much room for improvement, Commander. If you have any suggestions, please feel free to tell me."\nHer eyes are sincere as she meets your gaze, yet there's a hint of worry in them.
 
 @doctrine_gfl_404_dreamwonderland_name=Dream Wonderland
 @doctrine_gfl_404_dreamwonderland_descr=Mechty operates in Patch Mode: enhanced defensive systems reduce incoming damage and stability loss. Upon eliminating a target, she consumes an energy drink and enters Turbo Mode for 7 seconds: sacrificing all defenses for explosive offensive power.
@@ -372,6 +389,13 @@
 @ammo_3006_match_name=.30-06 Match Grade
 @ammo_3006_match_desc=Precision manufactured ammunition with consistent powder loads and match bullets for superior accuracy and terminal performance.
 
+@skin_m1903_default_name=Clean Military Uniform
+@skin_m1903_default_desc=Springfield's usual outfit. The elegant colors bring out the regal qualities of the outfit, subconsciously inducing those around Springfield to treat her with respect. Her warm smile however, dissipates any sense of awkwardness or need for formaility.
+@skin_m1903_skin1_name=Queen in Radiance
+@skin_m1903_skin1_desc=She is more dazzling and eye-catching than any jewel under the lamplight. A single gentle smile from her is neough to capture the gazes of everyone in front of her.
+@skin_m1903_skin2_name=Enjoy the Fragrance
+@skin_m1903_skin2_desc="It's been a tiring day, Commander. Would you like some coffee? The sweetness and the temperature are just the way you like them."\nShe's perfectly concocted the flavor you like, just like all the coffees from days gone by.
+
 @DOLL-WA2000-NAME=MAKIATTO
 @DOLL-WA2000-DESC=A calm, proud, yet awkward Doll who isn't good at expressing herself. She loves fluffy little animals and overly sweet macchiatos. Always a loner, her gaze often lingers somewhere. When will she finally get the response she's been longing for?
 @WEAP-WA2000-NAME=Walther WA2000
@@ -379,6 +403,11 @@
 @firearm_caliber_300wm_name=.300 Winchester Magnum
 @ammo_300wm_match_name=.300 Win Mag Match
 @ammo_300wm_match_desc=Premium match-grade ammunition with selected components for maximum accuracy and consistency at extreme ranges.
+
+@skin_wa2000_default_name=Caramel Melody
+@skin_wa2000_default_desc=Makiatto's usual outfit. She rarely opens her violin case; it holds her most cherished weapon.
+@skin_wa2000_skin1_name=Ballroom Interlude
+@skin_wa2000_skin1_desc=This is the dress that Makiatto wears to the ball. Its simple style, adorned with a familiar ribbon, carries a secret hope--that her dance partner will finally take notice of her.
 
 @DOLL-G36-NAME=CENTAUREISSI
 @DOLL-G36-DESC=A humble yet principled Doll. She brews aromatic coffee and stands as the steadfast guardian of the café - she is the irreplaceable shield of "Zucchero".
@@ -433,6 +462,11 @@
 @DOLL-OTS14-DESC=A mature and composed elite Doll, she is undeniably the squad's core. Despite the squad members' diverse personalities, she seamlessly unites their strengths. With her presence, nothing will become a problem.
 @WEAP-OTS14-NAME=OTs-14
 @WEAP-OTS14-DESC=The OTs-14 'Groza' ("Thunderstorm") is a bullpup-configured, modular assault rifle system developed during the early 1990s by V. Telesh and Ju. Lebedev at the TsKIB SOO (Central Design Bureau for Sporting and Hunting Arms). Like its predecessor project the OTs-12 'Tiss', the design of the 'Groza' is based on the AKS-74U, and was an attempt to integrate all the best features from the various close quarter combat weapons in service into one singular unit. OTs-14 units have a great amount of interchangeable parts with the standard AK-74U.
+
+@skin_ots14_default_name=Blade's Aegis
+@skin_ots14_default_desc=Groza typically wears a white trench coat that carries the flames of battle, serving as the beacon for the team's advance.
+@skin_ots14_skin1_name=Dawn of Battle
+@skin_ots14_skin1_desc=The outfit Groza likes to wear when participating in important battles is adorned with falling stars along the hem. When the stars face and daybreak arrives, it marks the moment of victory.
 
 @DOLL-OM50-NAME=NEMESIS
 @DOLL-OM50-DESC=Passionate in mysticism and divination, she always carries a magical divination tool known as the "Prism". Her divination results are often expressed in a cryptic and enigmatic manner. Though she can be difficult to communicate with, she remains a dependable companion.
@@ -521,6 +555,11 @@
 @firearm_caliber_762x54_name=7.62×54mmR
 @ammo_762x54r_fmj_nsu_name=NSU 150gr FMJ
 @ammo_762x54r_fmj_nsu_desc=Standard full-power machine gun ammunition manufactured by the Neo Soviet Union for belt-fed weapons. The heavy bullet delivers punishing damage and consistent penetration at all ranges, designed to keep firing until there is nothing left standing.
+
+@skin_pkpsp_default_name=Dual Hunter
+@skin_pkpsp_default_desc=Peritya's typical outfit. The distinct footwear design enhances her agility.
+@skin_pkpsp_skin1_name=Born Huntress
+@skin_pkpsp_skin1_desc=Peritya's sportswear. Light, slim-fitting and doused in bright, showy colors, it adds a touch of liveliness and energy to the otherwise languid Peritya.
 
 @DOLL-SPAS12-NAME=SABRINA
 @DOLL-SPAS12-DESC=A Doll passionate abouut culinary research and enjoying food, the kitchen is her new battlefield. Loves sharing her cooking process, though aroma may have boundaries, her smile spreads through the network, infecting every viewer.
@@ -631,6 +670,11 @@
 @WEAP-AKALFA-NAME=AK-Alfa
 @WEAP-AKALFA-DESC=The AK-Alfa is a modernized variant of the legendary Kalashnikov platform, featuring enhanced accuracy, reduced recoil, and improved ergonomics while maintaining the AK's legendary reliability.
 
+@skin_akalfa_default_name=Grey Meteor
+@skin_akalfa_default_desc=Tololo usually wears a distincitve outfit, always carrying guns and cameras.
+@skin_akalfa_skin1_name=Horizon Cruise
+@skin_akalfa_skin1_desc="The course to the heavens is fixed, but as long as you look up, you'll always be able to find a new direction... Commander, will you search for the way with me?"\nThere's no need for words; her crystal-clear gaze is an offer you can't refuse.
+
 @DOLL-AA12-NAME=LIND
 @DOLL-AA12-DESC=Created as a clinical test subject Doll, Lind distinguished herself with her outstanding gunplay and overwhelming firepower. A member of the original Griffin & Kryuger, she remained in the PMC after its downsizing. After her open-mic late-night radio show stopped, her sweets allowance was cut down and her personal network was upended, Lind’s withdrawal symptoms worsened her social anxiety disorder, but as long as her comrades can be patient with her, she’ll be able to confidently face the future.
 @WEAP-AA12-NAME=AA-12
@@ -708,3 +752,57 @@
 
 @WEAP-CZ75-NAME=CZ 75
 @WEAP-CZ75-DESC=A semi-automatic handgun chambered in 9x19 Parabellum. Introduced in Czechoslovakia as early as 1975, it is one of the first semi-automatic pistols that can be fired by simply pulling the trigger and supported by a staggered column magazine. This allowed unparalleled firepower in such a compact package during the times it was introduced.
+
+@GFL-UNIT-POL03-NAME=POL-03 Security Divisions
+@GFL-UNIT-POL03-DESC=The police forces of the POL-03 Green Zone, who employed many of several former Griffin Dolls.
+@#GFL-UNIT-POL03-NAME-RND=POL-03 Security Divisions
+
+@DOLL-STECHKIN-NAME=KSENIA
+@DOLL-STECHKIN-DESC=A Doll with an unusual obsession with making money, she finds a sense of security by working hard to earn it and then spending it all. However, the time she spends working with her reliable companions is equally her treasure.
+
+@DOLL-NAGANT-NAME=NAGANT
+@DOLL-NAGANT-DESC=A Doll who likes to play the mature grown-up, but looks up to heroes and also aspires to be one. Even after leaving the battlefield, she continues to shine as a security Doll, ensuring peaceful nights.
+
+@DOLL-MOSINNAGANT-NAME=MOSIN-NAGANT
+@DOLL-MOSINNAGANT-DESC=A Doll who loves to help others and strives to improve her negative mindset. Her motto is to never avoid challenges; once motivated, she gives her all. While negative thoughts may linger in her neural cloud, her radiant smile and enthusiastic actions surely inspire many of her companions.
+
+@skin_mosinnagant_default_name=Frost Field Snow Owl
+@skin_mosinnagant_default_desc=Mosin-Nagant's outfit features a fur-lined coat and warm gloves, paired with a Northern Mule in the bitter winter--it's the perfect combo.
+@skin_mosinnagant_skin1_name=Siberian Slide
+@skin_mosinnagant_skin1_desc="The challenges I've faced are like flakes of falling snow... I crunch them underfoot and move on."\nIn her eyes which are fixed on you, there has never been a pall of despair; only a quiet zest for life.
+
+@DOLL-PPSH41-NAME=PAPASHA
+@DOLL-PPSH41-DESC=A warm-hearted Doll who doesn't know how to say "no", she has become a versatile helper through self-study in order to better handle any request. She is willing to give everything to protect everyone. When you encounter difficulties, feel free to rely on herーno matter what it is, Papasha will make it happen!
+
+@WEAP-STECHKIN-NAME=Stechkin APS
+@WEAP-STECHKIN-DESC=A select-fire machine pistol from the Soviet era, the Stechkin was issued to officers and vehicle crews who needed something hotter than the standard Makarov.\n\n20 rounds of 9x18mm and the option to go full auto makes this a surprisingly mean sidearm, but keep the bursts short or the muzzle climbs fast.
+
+@WEAP-NAGANT-NAME=Nagant M1895
+@WEAP-NAGANT-DESC=Old as dirt and twice as reliable. The Nagant's gas-seal cylinder pushes forward on firing, closing the barrel gap — making it one of the only revolvers that actually works suppressed.\n\nSeven rounds, slow to reload through the loading gate. Pick your shots.
+
+@WEAP-MOSINNAGANT-NAME=Mosin-Nagant
+@WEAP-MOSINNAGANT-DESC=The Russian Empire's bolt-action workhorse, still dropping Tangos after 130 years of service. Chambers the full-power 7.62x54mmR round.\n\nSlow to cycle, but one good hit from this thing and the conversation is over. Set up in a cover position and work the bolt.
+
+@WEAP-PPSH41-NAME=PPSh-41
+@WEAP-PPSH41-DESC=Wartime Soviet SMG built from stamped steel and bad intentions. The 71-round drum and ~900 RPM cyclic rate make it a room-clearing monster.\n\n7.62x25mm Tokarev has some punch to it, but practical accuracy drops off fast. Get close, hold the trigger, and let the drum do the talking.
+
+@firearm_caliber_762x38_name=7.62×38mmR
+@ammo_762x38_fmj_nagant_name=7.62x38mmR FMJ
+@ammo_762x38_fmj_nagant_desc=Standard 7.62x38mmR ammunition for the Nagant M1895's gas-seal cylinder. The recessed bullet allows the cylinder to seal against the barrel, making suppressed fire viable.
+
+@firearm_caliber_9x18_name=9×18mm
+@ammo_9x18_jhp_stechkin_name=9x18mm JHP +P
+@ammo_9x18_jhp_stechkin_desc=Overpressure hollow-point 9x18mm rounds. The +P loading compensates for the cartridge's lower energy compared to 9x19mm, expanding on impact for increased damage against soft targets at close range.
+
+@firearm_caliber_762x25_name=7.62×25mm Tokarev
+@ammo_762x25_fmj_ppsh41_name=7.62x25mm FMJ
+@ammo_762x25_fmj_ppsh41_desc=High-velocity bottleneck pistol cartridge for submachine guns. The small, fast bullet has surprising penetration for its size but bleeds energy quickly at range.
+
+@ammo_762x54r_fmj_mosinnagant_name=7.62x54mmR FMJ
+@ammo_762x54r_fmj_mosinnagant_desc=Full-power 7.62x54mmR rifle cartridge for bolt-action precision work. Devastating at range with excellent penetration against all but the heaviest armour.
+
+
+
+
+
+@KEEP_THIS_AT_THE_BOTTOM_THIS_STOPS_A_BUG_I_DONT_KNOW_WHY

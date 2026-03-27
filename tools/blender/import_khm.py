@@ -1,6 +1,7 @@
 import hashlib
 import math
 import os
+import struct
 
 import bpy
 import mathutils
@@ -23,12 +24,17 @@ def ReadSkin(file, pMesh):
         print("No Skin")
         return  # no skin
 
-    pMesh.pSkinWeights = []
-    for i in range(pMesh.numVertices):
-        pMesh.pSkinWeights.append(ReadVector4(file))
-    pMesh.pSkinBoneIndices = []
-    for i in range(pMesh.numVertices):
-        pMesh.pSkinBoneIndices.append(ReadSBoneIndice(file))
+    n = pMesh.numVertices
+    # Read all skin weights in bulk (4 floats per vertex)
+    buf = file.read(n * 16)
+    pMesh.pSkinWeights = [
+        Vector(struct.unpack_from("4f", buf, i * 16)) for i in range(n)
+    ]
+    # Read all bone indices in bulk (4 bytes per vertex)
+    buf = file.read(n * 4)
+    pMesh.pSkinBoneIndices = [
+        list(struct.unpack_from("4B", buf, i * 4)) for i in range(n)
+    ]
 
 
 def ReadCollisionData(file, pMesh):
@@ -81,49 +87,72 @@ def ReadGeometry(file, pMesh):
     print("ReadGeometry", file.tell())
     # read verts
     pMesh.numVertices = ReadInt(file)
-    pMesh.pVertices = []
-    for i in range(pMesh.numVertices):
-        pMesh.pVertices.append(ReadSwizzledVector3(file))
+    n = pMesh.numVertices
 
-    # read normals
-    pMesh.pNormals = []
-    for i in range(pMesh.numVertices):
-        pMesh.pNormals.append(ReadSwizzledVector3(file))
+    # Read all vertices in bulk (3 floats per vertex, swizzle x,-z,y)
+    buf = file.read(n * 12)
+    pMesh.pVertices = [
+        Vector(
+            (
+                struct.unpack_from("f", buf, i * 12)[0],
+                -struct.unpack_from("f", buf, i * 12 + 8)[0],
+                struct.unpack_from("f", buf, i * 12 + 4)[0],
+            )
+        )
+        for i in range(n)
+    ]
 
-    # read triangle indices
+    # Read all normals in bulk (same swizzle)
+    buf = file.read(n * 12)
+    pMesh.pNormals = [
+        Vector(
+            (
+                struct.unpack_from("f", buf, i * 12)[0],
+                -struct.unpack_from("f", buf, i * 12 + 8)[0],
+                struct.unpack_from("f", buf, i * 12 + 4)[0],
+            )
+        )
+        for i in range(n)
+    ]
+
+    # read triangle indices in bulk
     pMesh.numIndices = ReadInt(file)
-    pMesh.pIndices = []
-    for i in range(pMesh.numIndices):
-        pMesh.pIndices.append(ReadUShort(file))
+    buf = file.read(pMesh.numIndices * 2)
+    pMesh.pIndices = list(struct.unpack(f"{pMesh.numIndices}H", buf))
 
-    # read face normals
-    uiNumFaces = int(pMesh.numIndices / 3)
-    pMesh.pFaceNormals = []
-    for i in range(uiNumFaces):
-        pMesh.pFaceNormals.append(ReadSwizzledVector3(file))
+    # read face normals in bulk
+    uiNumFaces = pMesh.numIndices // 3
+    buf = file.read(uiNumFaces * 12)
+    pMesh.pFaceNormals = [
+        Vector(
+            (
+                struct.unpack_from("f", buf, i * 12)[0],
+                -struct.unpack_from("f", buf, i * 12 + 8)[0],
+                struct.unpack_from("f", buf, i * 12 + 4)[0],
+            )
+        )
+        for i in range(uiNumFaces)
+    ]
 
     # read vtx colors
     hasVertColors = ReadUChar(file)
     if hasVertColors == 1:
-        pMesh.pColors = []
-        for i in range(pMesh.numVertices):
-            color_set = []
-            color_set.append(ReadUChar(file) / 255.0)
-            color_set.append(ReadUChar(file) / 255.0)
-            color_set.append(ReadUChar(file) / 255.0)
-            color_set.append(ReadUChar(file) / 255.0)
-            pMesh.pColors.append(color_set)
-            # pMesh.pColors.append(ReadUInt(file))
+        buf = file.read(n * 4)
+        pMesh.pColors = [
+            [b / 255.0 for b in struct.unpack_from("4B", buf, i * 4)] for i in range(n)
+        ]
 
     # read tx coords
     pMesh.numTxCoordMaps = ReadUInt(file)
     pMesh.pTexCoords = []
     for i in range(pMesh.numTxCoordMaps):
         if i == 1:
-            file.read(8 * pMesh.numVertices)
-        for j in range(pMesh.numVertices):
-            vectorCoord = (ReadFloat(file), 1 - ReadFloat(file))  # Flip Y
-            pMesh.pTexCoords.append(vectorCoord)
+            file.read(8 * n)
+        buf = file.read(n * 8)
+        for j in range(n):
+            u = struct.unpack_from("f", buf, j * 8)[0]
+            v = 1 - struct.unpack_from("f", buf, j * 8 + 4)[0]
+            pMesh.pTexCoords.append((u, v))
 
     # read skin
     ReadSkin(file, pMesh)
@@ -349,7 +378,10 @@ def SpawnAnimationMask(context, pModelDefinition):
 
     for pose_bone in b_obj.pose.bones:
         if pose_bone.name in bones_to_highlight:
-            pose_bone.bone.select = True
+            try:
+                pose_bone.bone.select = True
+            except AttributeError:
+                pass  # Blender version lacks Bone.select
 
 
 def SpawnAnimation(context, pModelDefinition):
@@ -388,6 +420,12 @@ def SpawnAnimation(context, pModelDefinition):
         local_matrixes[n] = local_matrix
 
     bpy.ops.object.mode_set(mode="POSE")
+
+    # Ensure armature has an action for keyframes
+    if b_obj.animation_data is None:
+        b_obj.animation_data_create()
+    if b_obj.animation_data.action is None:
+        b_obj.animation_data.action = bpy.data.actions.new(name="KHM_Animation")
 
     num_frames = pModelDefinition.pAnimation.numNodeFrames
     num_nodes = pModelDefinition.pAnimation.numNodes
@@ -430,6 +468,26 @@ def SpawnAnimation(context, pModelDefinition):
     context.scene.frame_end = num_frames
     fps = 1000 / pModelDefinition.pAnimation.frameDurationMs
     context.scene.render.fps = int(fps)
+
+    # Remove redundant keyframes where values don't change between frames
+    action = b_obj.animation_data.action
+    if action:
+        for fcurve in action.fcurves:
+            keyframes = fcurve.keyframe_points
+            if len(keyframes) < 3:
+                continue
+            to_remove = []
+            for i in range(1, len(keyframes) - 1):
+                prev_val = keyframes[i - 1].co[1]
+                curr_val = keyframes[i].co[1]
+                next_val = keyframes[i + 1].co[1]
+                if (
+                    abs(curr_val - prev_val) < 0.0001
+                    and abs(curr_val - next_val) < 0.0001
+                ):
+                    to_remove.append(i)
+            for i in reversed(to_remove):
+                keyframes.remove(keyframes[i])
 
 
 def SpawnModel(context, pModelDefinition):
@@ -490,57 +548,40 @@ def SpawnModel(context, pModelDefinition):
 
         assert pModelDefinition.pMesh.uiId not in id_to_obj
         id_to_obj[pModelDefinition.pMesh.uiId] = b_obj
-        print(pModelDefinition.pMesh.uiId)
 
-        list_faces = []
+        # Build face list from indices using slicing (much faster than per-element loop)
+        indices = pMesh.pIndices
+        list_faces = [
+            (indices[i], indices[i + 1], indices[i + 2])
+            for i in range(0, pMesh.numIndices, 3)
+        ]
 
-        for i in range(pModelDefinition.pMesh.numIndices):
-            if i % 3 == 0:
-                faceTuple = (
-                    pModelDefinition.pMesh.pIndices[i],
-                    pModelDefinition.pMesh.pIndices[i + 1],
-                    pModelDefinition.pMesh.pIndices[i + 2],
-                )
-                list_faces.append(faceTuple)
-
-        b_mesh.from_pydata(pModelDefinition.pMesh.pVertices, [], list_faces)
+        b_mesh.from_pydata(pMesh.pVertices, [], list_faces)
 
         b_mesh.update()
 
-        if pModelDefinition.pMesh.pColors != None:
+        if pMesh.pColors is not None:
             b_mesh.vertex_colors.new()
 
         uvlayer = b_obj.data.uv_layers.new()
-        uv_count = 0
 
-        for i in range(0, pModelDefinition.pMesh.numIndices, 3):
-            uvlayer.data[uv_count].uv = pModelDefinition.pMesh.pTexCoords[
-                pModelDefinition.pMesh.pIndices[i]
-            ]
-            uvlayer.data[uv_count + 1].uv = pModelDefinition.pMesh.pTexCoords[
-                pModelDefinition.pMesh.pIndices[i + 1]
-            ]
-            uvlayer.data[uv_count + 2].uv = pModelDefinition.pMesh.pTexCoords[
-                pModelDefinition.pMesh.pIndices[i + 2]
-            ]
-            if pModelDefinition.pMesh.pColors != None:
-                b_obj.data.vertex_colors[0].data[
-                    uv_count
-                ].color = pModelDefinition.pMesh.pColors[
-                    pModelDefinition.pMesh.pIndices[i]
-                ]
-                b_obj.data.vertex_colors[0].data[
-                    uv_count + 1
-                ].color = pModelDefinition.pMesh.pColors[
-                    pModelDefinition.pMesh.pIndices[i + 1]
-                ]
-                b_obj.data.vertex_colors[0].data[
-                    uv_count + 2
-                ].color = pModelDefinition.pMesh.pColors[
-                    pModelDefinition.pMesh.pIndices[i + 2]
-                ]
+        # Build flat UV array and use foreach_set (orders of magnitude faster)
+        uv_flat = []
+        for i in range(pMesh.numIndices):
+            uv = pMesh.pTexCoords[indices[i]]
+            uv_flat.append(uv[0])
+            uv_flat.append(uv[1])
+        uvlayer.data.foreach_set("uv", uv_flat)
 
-            uv_count += 3
+        if pMesh.pColors is not None:
+            color_flat = []
+            for i in range(pMesh.numIndices):
+                c = pMesh.pColors[indices[i]]
+                color_flat.append(c[0])
+                color_flat.append(c[1])
+                color_flat.append(c[2])
+                color_flat.append(c[3] if len(c) > 3 else 1.0)
+            b_obj.data.vertex_colors[0].data.foreach_set("color", color_flat)
         # Build combined list of all skinnable objects (bones + helpers) indexed by their ID
         skin_targets = {}  # id -> name mapping
 
@@ -557,36 +598,37 @@ def SpawnModel(context, pModelDefinition):
                 b_obj.vertex_groups.new(name=vg_name)
                 skin_targets[helper.uiId] = vg_name
 
-        if pMesh.pSkinBoneIndices != None:
-            # First pass: find all bone IDs referenced in skin data
+        if pMesh.pSkinBoneIndices is not None:
+            # First pass: find all bone IDs referenced in skin data and batch weights per group
+            # group_weights maps bone_idx -> list of (vertex_index, weight)
+            group_weights = {}
             for i in range(len(pMesh.pSkinBoneIndices)):
-                for v in range(0, 4):
+                for v in range(4):
                     bone_idx = pMesh.pSkinBoneIndices[i][v]
                     weight = pMesh.pSkinWeights[i][v]
-                    if weight >= 0.0001 and bone_idx not in skin_targets:
-                        # Create a placeholder vertex group for unknown bone IDs
+                    if weight < 0.0001:
+                        continue
+                    if bone_idx not in skin_targets:
                         vg_name = f"Bone_{bone_idx}"
                         b_obj.vertex_groups.new(name=vg_name)
                         skin_targets[bone_idx] = vg_name
-                        print(f"[Warning] Created placeholder vertex group '{vg_name}' for unknown bone ID {bone_idx}")
+                        print(
+                            f"[Warning] Created placeholder vertex group '{vg_name}' for unknown bone ID {bone_idx}"
+                        )
+                    if bone_idx not in group_weights:
+                        group_weights[bone_idx] = []
+                    group_weights[bone_idx].append((i, weight))
 
-            # Second pass: assign weights
-            for i in range(len(pMesh.pSkinBoneIndices)):
-                for v in range(0, 4):
-                    bone_idx = pMesh.pSkinBoneIndices[i][v]
-                    weight = pMesh.pSkinWeights[i][v]
-
-                    if weight < 0.0001:
-                        continue
-
-                    vertex_group_name = skin_targets.get(bone_idx)
-                    if vertex_group_name is None:
-                        continue
-
-                    vertex_group = b_obj.vertex_groups.get(vertex_group_name)
-                    if vertex_group is None:
-                        continue
-                    vertex_group.add([i], weight, "ADD")
+            # Second pass: assign weights in batches per vertex group
+            for bone_idx, vert_weights in group_weights.items():
+                vg_name = skin_targets.get(bone_idx)
+                if vg_name is None:
+                    continue
+                vertex_group = b_obj.vertex_groups.get(vg_name)
+                if vertex_group is None:
+                    continue
+                for vert_idx, weight in vert_weights:
+                    vertex_group.add([vert_idx], weight, "ADD")
 
         b_mesh.update(calc_edges=True)
         context.view_layer.active_layer_collection.collection.objects.link(b_obj)
@@ -662,7 +704,7 @@ def SpawnModel(context, pModelDefinition):
         # Merge duplicate vertices (but skip on large meshes to avoid crashes)
         bpy.context.view_layer.objects.active = b_obj
         b_obj.select_set(True)
-        if pMesh.numVertices < 50000:
+        if pMesh.numVertices < 10000:
             bpy.ops.object.mode_set(mode="EDIT")
             bpy.ops.mesh.select_all(action="SELECT")
             bpy.ops.mesh.remove_doubles(threshold=0.001)
@@ -672,6 +714,12 @@ def SpawnModel(context, pModelDefinition):
     bpy.ops.object.mode_set(mode="OBJECT")
 
     if pModelDefinition.lBones != None:
+        # Bone parenting must happen in edit mode where EditBone refs are valid
+        bpy.ops.object.select_all(action="DESELECT")
+        amt_ob.select_set(True)
+        bpy.context.view_layer.objects.active = amt_ob
+        bpy.ops.object.mode_set(mode="EDIT")
+
         for bone in pModelDefinition.lBones:  # parent the bones
             if bone.uiParentId != -1:
                 assert bone.uiParentId in id_to_obj
@@ -679,6 +727,8 @@ def SpawnModel(context, pModelDefinition):
 
         for bone in pModelDefinition.lBones:
             id_to_obj[bone.uiId].matrix = bone.matGlobal
+
+        bpy.ops.object.mode_set(mode="OBJECT")
 
         # for bone in pModelDefinition.lBones:
         #     if bone.uiParentId != -1:
@@ -703,9 +753,15 @@ def SpawnModel(context, pModelDefinition):
     if pModelDefinition.pMesh != None:
         if pModelDefinition.pMesh.uiParentId != -1:
             assert pModelDefinition.pMesh.uiParentId in id_to_obj
-            id_to_obj[pModelDefinition.pMesh.uiId].parent = id_to_obj[
-                pModelDefinition.pMesh.uiParentId
-            ]
+            parent_candidate = id_to_obj[pModelDefinition.pMesh.uiParentId]
+            mesh_obj = id_to_obj[pModelDefinition.pMesh.uiId]
+            if isinstance(parent_candidate, bpy.types.EditBone):
+                # EditBones can't be Object parents; parent to armature with bone target
+                mesh_obj.parent = amt_ob
+                mesh_obj.parent_type = "BONE"
+                mesh_obj.parent_bone = parent_candidate.name
+            else:
+                mesh_obj.parent = parent_candidate
 
         for obj in spawned_extra_objects:
             obj.parent = id_to_obj[pModelDefinition.pMesh.uiId]

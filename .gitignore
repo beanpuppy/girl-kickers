@@ -9,3 +9,6 @@ tools/mmd_converter/output/*.blend*
 tools/Asset Studio/
 tools/khm_tools.zip
 tools/gfl2.map
+
+# Generated unit builder data (built by CI)
+www/unit-builder/data/

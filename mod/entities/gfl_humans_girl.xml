@@ -1,7 +1,7 @@
 <Entities>
     <Entity name="GIRL-AN94" type="Human" editorAutoHeight="false">
         <RenderObject3D
-            model="data/models/dolls/an94.khm"
+            model="data/models/dolls/cubebodies/an94.khm"
             diffuseTex="data/models/dolls/an94.dds"
         />
 
@@ -20,10 +20,10 @@
                 voicePack="Alva-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.6" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -35,13 +35,14 @@
                 <Item name="GFL_BasicCore" />
                 <Item name="GFL_NightVision" />
                 <Item name="GFL_CombatFrame" />
+                <Item name="GFL_SKIN_AN94_DEFAULT" />
             </Equipment>
         </Human>
     </Entity>
 
     <Entity name="GIRL-AK15" type="Human" editorAutoHeight="false">
         <RenderObject3D
-            model="data/models/dolls/ak15.khm"
+            model="data/models/dolls/cubebodies/ak15.khm"
             diffuseTex="data/models/dolls/ak15.dds"
         />
 
@@ -60,10 +61,10 @@
                 voicePack="Voymastina-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="3.2" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.6" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -75,13 +76,14 @@
                 <Item name="GFL_BasicCore" />
                 <Item name="GFL_NightVision" />
                 <Item name="GFL_CombatFrame" />
+                <Item name="GFL_SKIN_AK15_DEFAULT" />
             </Equipment>
         </Human>
     </Entity>
 
     <Entity name="GIRL-HK416" type="Human" editorAutoHeight="false">
         <RenderObject3D
-            model="data/models/dolls/hk416.khm"
+            model="data/models/dolls/cubebodies/hk416.khm"
             diffuseTex="data/models/dolls/hk416.dds"
         />
 
@@ -100,10 +102,10 @@
                 voicePack="Clukay-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -115,6 +117,7 @@
                 <Item name="GFL_BasicCore" />
                 <Item name="GFL_NightVision" />
                 <Item name="GFL_CombatFrame" />
+                <Item name="GFL_SKIN_HK416_DEFAULT" />
             </Equipment>
         </Human>
     </Entity>
@@ -140,10 +143,10 @@
                 voicePack="Mechty-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -180,10 +183,10 @@
                 voicePack="Andoris-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -220,10 +223,10 @@
                 voicePack="Biyoca-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -241,7 +244,7 @@
 
     <Entity name="GIRL-UMP45" type="Human" editorAutoHeight="false">
         <RenderObject3D
-            model="data/models/dolls/ump45.khm"
+            model="data/models/dolls/cubebodies/ump45.khm"
             diffuseTex="data/models/dolls/ump45.dds"
         />
 
@@ -260,10 +263,10 @@
                 voicePack="Leva-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
             </Mobility>
 
@@ -275,6 +278,7 @@
                 <Item name="GFL_BasicCore" />
                 <Item name="GFL_NightVision" />
                 <Item name="GFL_CombatFrame" />
+                <Item name="GFL_SKIN_UMP45_DEFAULT" />
             </Equipment>
         </Human>
     </Entity>
@@ -300,10 +304,10 @@
                 voicePack="Lenna-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -321,7 +325,7 @@
 
     <Entity name="GIRL-VECTOR" type="Human" editorAutoHeight="false">
         <RenderObject3D
-            model="data/models/dolls/vector.khm"
+            model="data/models/dolls/cubebodies/vector.khm"
             diffuseTex="data/models/dolls/vector.dds"
         />
 
@@ -340,10 +344,10 @@
                 voicePack="Vector-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -356,13 +360,14 @@
                 <Item name="GFL_NightVision" />
                 <Item name="GFL_CombatFrame" />
                 <Item name="GFL-GEAR-VECTOR-GRENADE" />
+                <Item name="GFL_SKIN_VECTOR_DEFAULT" />
             </Equipment>
         </Human>
     </Entity>
 
     <Entity name="GIRL-M1903" type="Human" editorAutoHeight="false">
         <RenderObject3D
-            model="data/models/dolls/m1903.khm"
+            model="data/models/dolls/cubebodies/m1903.khm"
             diffuseTex="data/models/dolls/m1903.dds"
         />
 
@@ -381,10 +386,10 @@
                 voicePack="Springfield-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -396,13 +401,14 @@
                 <Item name="GFL_BasicCore" />
                 <Item name="GFL_NightVision" />
                 <Item name="GFL_CombatFrame" />
+                <Item name="GFL_SKIN_M1903_DEFAULT" />
             </Equipment>
         </Human>
     </Entity>
 
     <Entity name="GIRL-WA2000" type="Human" editorAutoHeight="false">
         <RenderObject3D
-            model="data/models/dolls/wa2000.khm"
+            model="data/models/dolls/cubebodies/wa2000.khm"
             diffuseTex="data/models/dolls/wa2000.dds"
         />
 
@@ -421,10 +427,10 @@
                 voicePack="Macqiato-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -436,6 +442,7 @@
                 <Item name="GFL_BasicCore" />
                 <Item name="GFL_NightVision" />
                 <Item name="GFL_CombatFrame" />
+                <Item name="GFL_SKIN_WA2000_DEFAULT" />
             </Equipment>
         </Human>
     </Entity>
@@ -461,10 +468,10 @@
                 voicePack="Centaureissi-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -501,10 +508,10 @@
                 voicePack="Sharkry-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.6" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -522,7 +529,7 @@
 
     <Entity name="GIRL-OTS14" type="Human" editorAutoHeight="false">
         <RenderObject3D
-            model="data/models/dolls/ots14.khm"
+            model="data/models/dolls/cubebodies/ots14.khm"
             diffuseTex="data/models/dolls/ots14.dds"
         />
 
@@ -541,10 +548,10 @@
                 voicePack="Groza-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -556,6 +563,7 @@
                 <Item name="GFL_BasicCore" />
                 <Item name="GFL_NightVision" />
                 <Item name="GFL_CombatFrame" />
+                <Item name="GFL_SKIN_OTS14_DEFAULT" />
             </Equipment>
         </Human>
     </Entity>
@@ -581,10 +589,10 @@
                 voicePack="Nemesis-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -660,10 +668,10 @@
                 voicePack="Colphne-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -700,10 +708,10 @@
                 voicePack="Vepley-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -721,7 +729,7 @@
 
     <Entity name="GIRL-PKPSP" type="Human" editorAutoHeight="false">
         <RenderObject3D
-            model="data/models/dolls/pkpsp.khm"
+            model="data/models/dolls/cubebodies/pkpsp.khm"
             diffuseTex="data/models/dolls/pkpsp.dds"
         />
 
@@ -740,10 +748,10 @@
                 voicePack="Peritya-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -755,6 +763,7 @@
                 <Item name="GFL_BasicCore" />
                 <Item name="GFL_NightVision" />
                 <Item name="GFL_CombatFrame" />
+                <Item name="GFL_SKIN_PKPSP_DEFAULT" />
             </Equipment>
         </Human>
     </Entity>
@@ -780,10 +789,10 @@
                 voicePack="Sabrina-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -820,10 +829,10 @@
                 voicePack="Qiuhua-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -860,10 +869,10 @@
                 voicePack="Peri-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -899,10 +908,10 @@
                 voicePack="Florence-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -939,10 +948,10 @@
                 voicePack="Nikketa-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -979,10 +988,10 @@
                 voicePack="Helen-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -1019,10 +1028,10 @@
                 voicePack="Lewis-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -1059,10 +1068,10 @@
                 voicePack="Qiongjiu-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -1080,7 +1089,7 @@
 
     <Entity name="GIRL-AKALFA" type="Human" editorAutoHeight="false">
         <RenderObject3D
-            model="data/models/dolls/akalfa.khm"
+            model="data/models/dolls/cubebodies/akalfa.khm"
             diffuseTex="data/models/dolls/akalfa.dds"
         />
 
@@ -1099,10 +1108,10 @@
                 voicePack="Tololo-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -1114,6 +1123,7 @@
                 <Item name="GFL_BasicCore" />
                 <Item name="GFL_NightVision" />
                 <Item name="GFL_CombatFrame" />
+                <Item name="GFL_SKIN_AKALFA_DEFAULT" />
             </Equipment>
         </Human>
     </Entity>
@@ -1139,10 +1149,10 @@
                 voicePack="Lind-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
@@ -1179,176 +1189,16 @@
                 voicePack="Cheeta-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
             <Equipment>
                 <Item name="GFL-WEAP-MP7" />
                 <Item name="scope_GFL_IronSights_Primary" />
-                <Item name="GFL_FeetOfGunmetal" />
-                <Item name="GFL_Lockpick" />
-                <Item name="GFL_BasicCore" />
-                <Item name="GFL_NightVision" />
-                <Item name="GFL_CombatFrame" />
-            </Equipment>
-        </Human>
-    </Entity>
-
-    <Entity name="GIRL-QBZ95" type="Human" editorAutoHeight="false">
-        <RenderObject3D
-            model="data/models/dolls/type95.khm"
-            diffuseTex="data/models/dolls/type95.dds"
-        />
-
-        <Breakable
-            template="GenericTrooperGibs"
-            breakOnDamage="explosive"
-            deleteOnDeath="false"
-        />
-        <PhysicalParams health="100" />
-
-        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-QBZ95">
-            <Id
-                name="MONSOON-QBZ95"
-                portrait="data/textures/portraits/gfl_type95.dds"
-                gender="0"
-                voicePack="Daiyan-Voice"
-            />
-            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
-
-            <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
-            </Mobility>
-
-            <Equipment>
-                <Item name="GFL-WEAP-QBZ95" />
-                <Item name="scope_GFL_IronSights_Primary" />
-                <Item name="GFL_FeetOfGunmetal" />
-                <Item name="GFL_Lockpick" />
-                <Item name="GFL_BasicCore" />
-                <Item name="GFL_NightVision" />
-                <Item name="GFL_CombatFrame" />
-            </Equipment>
-        </Human>
-    </Entity>
-
-    <Entity name="GIRL-QBZ97" type="Human" editorAutoHeight="false">
-        <RenderObject3D
-            model="data/models/dolls/type97.khm"
-            diffuseTex="data/models/dolls/type97.dds"
-        />
-
-        <Breakable
-            template="GenericTrooperGibs"
-            breakOnDamage="explosive"
-            deleteOnDeath="false"
-        />
-        <PhysicalParams health="100" />
-
-        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-QBZ97">
-            <Id
-                name="MONSOON-QBZ97"
-                portrait="data/textures/portraits/gfl_type97.dds"
-                gender="0"
-                voicePack="Daiyan-Voice"
-            />
-            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
-
-            <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
-            </Mobility>
-
-            <Equipment>
-                <Item name="GFL-WEAP-QBZ97" />
-                <Item name="scope_GFL_IronSights_Primary" />
-                <Item name="GFL_FeetOfGunmetal" />
-                <Item name="GFL_Lockpick" />
-                <Item name="GFL_BasicCore" />
-                <Item name="GFL_NightVision" />
-                <Item name="GFL_CombatFrame" />
-            </Equipment>
-        </Human>
-    </Entity>
-
-    <Entity name="GIRL-CSLS06" type="Human" editorAutoHeight="false">
-        <RenderObject3D
-            model="data/models/dolls/csls06.khm"
-            diffuseTex="data/models/dolls/csls06.dds"
-        />
-
-        <Breakable
-            template="GenericTrooperGibs"
-            breakOnDamage="explosive"
-            deleteOnDeath="false"
-        />
-        <PhysicalParams health="100" />
-
-        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-CSLS06">
-            <Id
-                name="MONSOON-CSLS06"
-                portrait="data/textures/portraits/gfl_csls06.dds"
-                gender="0"
-                voicePack="ZhaoHui-Voice"
-            />
-            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
-
-            <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
-            </Mobility>
-
-            <Equipment>
-                <Item name="GFL-WEAP-CSLS06" />
-                <Item name="scope_GFL_IronSights_Primary" />
-                <Item name="GFL_FeetOfGunmetal" />
-                <Item name="GFL_Lockpick" />
-                <Item name="GFL_BasicCore" />
-                <Item name="GFL_NightVision" />
-                <Item name="GFL_CombatFrame" />
-            </Equipment>
-        </Human>
-    </Entity>
-
-    <Entity name="GIRL-CZ75" type="Human" editorAutoHeight="false">
-        <RenderObject3D
-            model="data/models/dolls/cz75.khm"
-            diffuseTex="data/models/dolls/cz75.dds"
-        />
-
-        <Breakable
-            template="GenericTrooperGibs"
-            breakOnDamage="explosive"
-            deleteOnDeath="false"
-        />
-        <PhysicalParams health="100" />
-
-        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-CZ75">
-            <Id
-                name="MONSOON-CZ75"
-                portrait="data/textures/portraits/gfl_cz75.dds"
-                gender="0"
-                voicePack="Faye-Voice"
-            />
-            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
-
-            <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
-            </Mobility>
-
-            <Equipment>
-                <Item name="GFL-WEAP-CZ75" />
-                <Item name="scope_GFL_IronSights_Secondary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />

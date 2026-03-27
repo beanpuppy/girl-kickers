@@ -1,0 +1,241 @@
+# Voice Line Translations for Mosinnagant
+# Generated automatically using OpenAI Whisper
+# Total files: 79
+
+Series_Battle_Start__VO_Mosinnagant_Series_Tone_Positive_002.wav
+  ACTION! May 25th, 2018 Although it was rains, the hotel was full.
+
+Series_Cancel.wav
+  ... She looked at me with a stillden eyes. G 또n, you mad belle... What are you talking about? Why are you importantly turning that hole open like that? You put me in a manyative situation. Even if that's true, I had to do something about it.
+
+Series_Chosen_Auto__VO_Mosinnagant_Series_Tone_Positive_010.wav
+  As planned.
+
+Series_Chosen__VO_Mosinnagant_Series_Tone_Positive_001.wav
+  Action start.
+
+Series_Daily_001.wav
+  You have too many missions lately, don't you? Ahaha, I'm totally fine!
+
+Series_Daily_002.wav
+  I think it's hard to negotiate with the client and gather reports, but I'm sure the Commander will be fine!
+
+Series_Daily_003.wav
+  There are so many incidents this month... This kind of thing will never end... No, no, no! Don't make me feel so weak!
+
+Series_Daily_004.wav
+  Meirin is surprisingly generous. Don't worry, I'll make sure to release you even if you get drunk!
+
+Series_Daily_005.wav
+  Peipei
+
+Series_Daily_006.wav
+  The Cushiniya are good comrades, but I'll keep an eye on them so they don't get caught up in money trouble.
+
+Series_Daily_007.wav
+  I'll do my best to protect this place so that Nagann can keep on going.
+
+Series_Daily_008.wav
+  Nemesis has a strange aura. We may not be able to have a proper conversation, but we're reliable comrades.
+
+Series_Daily_009.wav
+  Commander, remember to act in accordance with the rules in the satellite city. As a figure in the security department, you must not miss any illegal actions.
+
+Series_Daily_010.wav
+  Geez, what's with the security department? I can't do anything about the captain. I wish everything would disappear.
+
+Series_Die__VO_Mosinnagant_Series_Tone_Negative_002.wav
+  I was careless.
+
+Series_Hit__VO_Mosinnagant_Series_Tone_Positive_008.wav
+  Secured!
+
+Series_Hit__VO_Mosinnagant_Single_Hit_001.wav
+  Be quiet and get caught!
+
+Series_Kill__VO_Mosinnagant_Single_Kill_001.wav
+  Shameless!
+
+Series_Lose__VO_Mosinnagant_Single_Lose_001.wav
+  We have to retreat now! We'll get another chance!
+
+Series_Set_Click__VO_Mosinnagant_Series_SkillPatk01__VO_Mosinnagant_Series_Tone_Positive_004.wav
+  Hide!
+
+Series_Set_Click__VO_Mosinnagant_Series_Tone_Positive_004.wav
+  Hide!
+
+Series_Set_Fall__VO_Mosinnagant_Series_Tone_Positive_007.wav
+  and share it then
+
+Series_Skill01__VO_Mosinnagant_Single_Skill_001.wav
+  For everyone's sake!
+
+Series_Skill02__VO_Mosinnagant_Single_Skill_002.wav
+  I won't run away anymore!
+
+Series_SkillPatk01__VO_Mosinnagant_Series_Tone_Positive_006.wav
+  Not yet!
+
+Series_SkillPatk02__VO_Mosinnagant_Series_Tone_Positive_003.wav
+  Fire in the hole!
+
+Series_Tone_Negative_001.wav
+  Oh, pachiki!
+
+Series_Tone_Positive_003.wav
+  Fire in the hole!
+
+Series_Tone_Positive_005.wav
+  Taiki!
+
+Series_Tone_Positive_006.wav
+  Not yet!
+
+Series_Tone_Positive_008.wav
+  Secured!
+
+Series_Tone_Positive_009.wav
+  Votaku!
+
+Series_Ultimate__VO_Mosinnagant_Single_Ultimate_SR_001.wav
+  I won't let you do as you please!
+
+Series_Up_001.wav
+  Let's get serious together!
+
+Series_Up_002.wav
+  Let's do our best together!
+
+Series_Up_003.wav
+  It's not enough yet.
+
+Series_Up_004.wav
+  I need a clue.
+
+Series_Up_005.wav
+  I need to learn more.
+
+Series_Up_006.wav
+  I'm short of evidence...
+
+Series_Up_007.wav
+  ... enable to goto. I went with heraway in order that I've caught the real place from that bullet window... ... but turned around and blacked out. Just a little ranetty butt I feel after a 13 minutes attack. ...my body quickly Environment doesn't function. Yes. Mm.
+
+Series_Up_008.wav
+  This is good.
+
+Series_Win__VO_Mosinnagant_Single_Win_001.wav
+  Faust Le Brilhieu! Our victory, my fellow Seniors!
+
+Single_Acquire_R_001.wav
+  Anyway, we've been very helpful to Elmo over the past couple years.. Ah, no, it's a good thing about us that we have been in the legal branch of day-to-day sucedings! So that's how it's gonna go!
+
+Single_Acquire_SR_001.wav
+  I've learned a lot from you over the past year. For example, how to make a reward or negotiate a deal, pushing each other's responsibilities... Ah, I'm not making fun of you!
+
+Single_Anniversary_001.wav
+  Commander, the crime rate at the moment is zero. As a bounty hunter, it's a great achievement. But as a security department, I'll keep monitoring you. Ahaha, I'm just kidding! Let's do our best together this year!
+
+Single_Birthday_R_001.wav
+  If the main character of my birthday is a dark face, it won't be a topic, right? Let's get it started!
+
+Single_Birthday_SR_001.wav
+  Huh? Where's the party? Don't tell me you forgot your birthday?
+
+Single_Birthday_SSR_002.wav
+  If you don't come, the party won't start. Come on, blow the candles. Happy birthday, Commander!
+
+Single_Children_001.wav
+  A present for Children's Day? For me? I love jokes so much... I guess I do look like a child...
+
+Single_Christmas_001.wav
+  My hat? It's Christmas, so of course I have to wear Santa's hat! I have a part for you, Commander!
+
+Single_Christmas_002.wav
+  There's no way a red-haired old man would give me a present at midnight, right? Here, this is a Christmas present from me! Merry Christmas!
+
+Single_Duanwu_001.wav
+  I heard the story of the but I'll respect that way of living that pierces through myself without letting the big flow. No matter what the situation is, if you act with a strong will, you will be the best choice with no regrets.
+
+Single_Friendliness_001.wav
+  Good work until late. If you need my help, just let me know.
+
+Single_Friendliness_002.wav
+  My face color is bad? Ahaha, that's not true. I'm fine as it is.
+
+Single_Friendliness_003.wav
+  I'll put together a report and plan for tomorrow's schedule... And that's it! Eh, does it look like I'm overdoing it? Ahaha, this is how easy it is!
+
+Single_Friendliness_004.wav
+  You want to know what my job is? Sorry, I have a duty to take care of it.
+
+Single_Friendliness_005.wav
+  I have a bad feeling about this. I need to think of a way to prevent this... Oh, Comrade! When did you get there? There's nothing to worry about!
+
+Single_Friendliness_006.wav
+  Today, I Risude all has been earning with my meritorious Sciences of Sl Stuff ! Now what do you do?
+
+Single_Friendliness_007.wav
+  I used to care about fighting, but now I realize that having fun every day is more important than anything else.
+
+Single_Friendliness_008.wav
+  You always wear a hat, does it look hot? Ahaha, even if you say that and try to take off your hat, it's useless.
+
+Single_Friendliness_009.wav
+  I'll definitely show you my one big task, with my old ways… Boss!
+
+Single_Friendliness_010.wav
+  Ah, we're friends, right? Don't say such a watery thing. Master, a drink for this person too! Hurry up!
+
+Single_Friendliness_011.wav
+  I wonder how it would have been if all the humans could be equal to you. No, you're special. I know you can't be so spoiled.
+
+Single_Friendliness_012.wav
+  I'm not forcing you. Peipeisha and Nagant, and Xenia always help me out. And most of all, you're with me. We're in such a blessed environment. So it's all right. Don't worry.
+
+Single_Friendliness_013.wav
+  It's too late to say anything now, so I'll let you know now. Commander, I'll protect you no matter what happens.
+
+Single_Login_001.wav
+  Privet, comrade! Let's work hard today!
+
+Single_MidAutumn_001.wav
+  I can only see such a beautiful full moon once a year. I'll enjoy the moon tonight!
+
+Single_MidAutumn_002.wav
+  What's wrong? You're so frowny. It's the most beautiful day of the year, so it's a waste not to look up. Cheers to spending this wonderful time with everyone!
+
+Single_NewYear_001.wav
+  Are you planning for this year? Which one? Wow, it looks like it's going to be hard to complete all of this! But I think you'll be able to do it without any problems, Commander.
+
+Single_NewYear_002.wav
+  What's up, Chiyo? Let's overcome the difficulties of the journey again this year! Umm, isn't this the day to talk about this? I thought that a new year needed a loud voice that could get you excited, but...
+
+Single_Obon_001.wav
+  Today is the day to find out who's the real one. I'm not a human, but I have someone like that.
+
+Single_Obtain_SR_001.wav
+  I'm Chian's doll, Mosin-Nagant. Wait, it's Commander! Long time no see! How are you?
+
+Single_SpringFes_001.wav
+  A year of honor is a piece of cake! Comrades, don't be careless because you're the year's master! Ah, this is a word I learned from Meirin!
+
+Single_SpringFes_002.wav
+  Commander, how about we go to the fireworks together? It's okay, the plan is perfect. There's no 1% chance of an accident. Let's enjoy this day as much as we can!
+
+Single_ThanksGiving_001.wav
+  Listen, listen! I received a lot of letters of thanks from the residents of my district! After all, hard work is rewarded!
+
+Single_Title_001.wav
+  Dolls Frontline 2 Exilium
+
+Single_Valentine_001.wav
+  Here's your chocolate. I've prepared for everyone in the Elmo family, but yours is... well, it's a bit special.
+
+Single_Valentine_002.wav
+  It's hard to take a break. Everyone says they make chocolate, so I made it for the commander. At first it's bitter, but it should spread slowly and sweetly. I hope you like it.
+
+Single_WhiteVale_001.wav
+  This is... Chateau Bold? Eh, a return? Thank you! I'll have it deliciously!
+
