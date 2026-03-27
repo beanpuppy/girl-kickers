@@ -39,7 +39,7 @@
 		type="PICK_LOCK"
 		equipment="GFL_Lockpick"
 		ui_prefix="data/textures/gui_ingame/waypoints/lockpick"
-		ttip="@GEAR-GFL-LOCPICK-TTIP"
+		ttip="@GEAR-GFL-LOCKPICK-TTIP"
 		ttip_disabled="@menu_game_tool_disabled_ttip"
 		ttip_empty="@menu_game_tool_none_ttip"
     />

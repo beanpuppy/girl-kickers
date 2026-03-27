@@ -51,7 +51,7 @@
 
 @GEAR-GIRLKICK-TITANIUM-TTIP=Strongest Kick of the NSU!
 
-@GEAR-GFL-LOCPICK-TTIP=Unlock lock!
+@GEAR-GFL-LOCKPICK-TTIP=Unlock lock!
 
 @scope_GFL_ironsights_name=Iron sights
 
