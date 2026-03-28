@@ -8,7 +8,11 @@ I know it&apos;s dangerous work, but... we&apos;ll be careful. Just give us the 
 What do you say, Commander?[/code]
 
 [h3]Overview[/h3]
-This mod imports tactical dolls from Girls&apos; Frontline 2: Exilium as playable units in Door Kickers. Each doll comes equipped with their signature weapon and is grouped by their faction affiliations for tactical operations.
+This mod brings tactical dolls from Girls&apos; Frontline 2: Exilium into Door Kickers 2 as fully playable units. Each doll has their 3D model converted from the original game, along with their signature weapon, and voice lines.
+
+Every weapon has been individually tuned and each weapon class plays differently. Dolls also come with custom armour, helmets, and alternative ammo types, with new equipment being added regularly.
+
+Some dolls have alternate costumes available. This requires the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3286103408]In-Game Camouflage Selector[/url] mod loaded before this mod. Without the camo selector mod, dolls will use their default outfit.
 
 [h3]Units[/h3]
 [b]Task Force DEFY:[/b] Alva, Voymastina
@@ -18,19 +22,15 @@ This mod imports tactical dolls from Girls&apos; Frontline 2: Exilium as playabl
 [b]Elmo Combined Echelon:[/b] Peritya, Sabrina, Qiuhua, Peri, Florence, Nikketa, Helen, Lewis
 [b]Frostfall Squad:[/b] Qiongju, Cheeta, Tololo, Lind
 [b]Monsoon Squad:[/b]  Daiyan, Jiangyu, Zhaohui, Faye
+[b]POL-03 Security Division:[/b] Mosin-Nagant, Nagant, Ksenia, Papasha
 
 [i]Note: Only dolls currently available in GFL2 are/will be included.[/i]
 
-[h3]To-do[/h3]
-To see our roadmap and what we&apos;re currently working on, visit the [url=https://trello.com/b/y77gdE1R/girl-kickers]Trello board.[/url]
-
-Want to help or contribute? Visit the [url=https://github.com/beanpuppy/girl-kickers]GitHub repository.[/url]
-
-[h3]Known Limitations[/h3]
-Door Kickers 2 expects uniform model sizes, causing visual issues when importing GFL2 dolls with varying heights and builds. Tall, skinny dolls like Nemesis and short dolls like Colphne are particularly affected by these scaling requirements. We are working to minimise these issues while keeping dolls in their correct outfits.
-
-Due to these limitations, models are optimised for the default top-down view rather than freelook mode. Any visual issues only visible in freelook will not be considered bugs.
-
+To see our roadmap, visit the [url=https://trello.com/b/y77gdE1R/girl-kickers]Trello board.[/url] Contribute on [url=https://github.com/antistrategie/girl-kickers]GitHub[/url] or join the [url=https://discord.gg/XcfYGmxvde]Discord[/url] for discussion and feedback.
+
+[h3]Known Limitations[/h3]
+DK2 expects uniform model sizes, so dolls with unusual heights or builds may have minor visual issues. Models are optimised for the default top-down view and any issues only visible in freelook are expected.
+
 [h3]Credits[/h3]
 Contributors:
 [list]
@@ -44,7 +44,7 @@ Special thanks to:
 [list]
 [*] MICA Team - Girls&apos; Frontline 2: Exilium
 [*] kenji1997 - AssetStudio fork for model extraction
-[*] [url=https://www.instagram.com/luwiss96/]Luwis96[/url] - Commissioned weapon UI images
+[*] [url=https://www.instagram.com/luwiss96/]Luwis96[/url] - Commissioned some early weapon UI images
 [*] Everyone giving suggestions and reporting bugs
 [/list]
 
@@ -53,4 +53,38 @@ Special thanks to:
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3586738239]Chinese localisation[/url]
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3595646925]Korean localisation[/url]
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3605426442]Japanese localisation[/url]
-[/list]" changeNotes="Fix some alt ammo having 0 accuracy" languageMod="" tags="Playable Units,Equipment,UI" ugcId="3580762170"/>
+[/list]" changeNotes="Notice
+
+To prepare for the rework of the combined Girl unit, we&apos;re testing a web-based unit builder at https://antistrategie.github.io/girl-kickers/unit-builder/ where you can build custom squads, customise stats, and download as a ready-to-play mod to install. It&apos;s still early so we&apos;d appreciate any feedback before the Girl unit rework lands.
+
+We&apos;ve also opened up our Discord server to the public for general discussion, feedback, and mod news. If you try the unit builder, we&apos;d love to hear your thoughts there: https://discord.gg/XcfYGmxvde
+
+This update also includes additional costumes for dolls (see change-log for specifics). To use them you need to have the &quot;In-Game Camouflage Selector&quot; mod installed and enabled BEFORE this mod.  Note that this addition required changing how models work in the mod so you will need to remake your units or else the models won&apos;t show up in-game (regardless of if you&apos;re using the camo selector mod).
+
+---
+
+Added POL-03 Security Division as a new unit.
+Added Lockpick action waypoint for locked doors.
+Various localisation updates to better reflect mod mechanics.
+Polished/cleaned up several doll and weapon models.
+Reduced doll texture resolution from 4K to 2K, cutting mod size by roughly 2 GB with no visible difference in-game. Don&apos;t ask why they were 4K in the first place &gt;:[
+
+Balance changes:
+- Rebalanced all doll firing profiles for more consistent TTK.
+- Reduced doll movement speed slightly to allow more natural target engagement without constant stop-and-shoot.
+- Increased doll suppression resistance.
+- Reworked scopes.
+
+Added costumes:
+- Makiatto: Ballroom Interlude
+- Klukai: Speed Star, Astral Luminous
+- Vector: Vivi Sometimes Hides Her Molotovs
+- Leva: Diamond Flower
+- Springfield: Queen in Radiance, Enjoy the Fragrance
+- Alva: Antje
+- Voymastina: Erwin
+- Mosin-Nagant: Siberian Slide
+- Groza: Dawn of Battle
+- Tololo: Horizon Cruise
+- Peritya: Born Huntress
+" languageMod="" tags="Playable Units,Equipment,UI" ugcId="3580762170"/>
