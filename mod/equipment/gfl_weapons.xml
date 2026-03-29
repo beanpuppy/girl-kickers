@@ -2657,11 +2657,14 @@
         />
 
         <AttackTypes>
-            <AttackType name="GFL_G36_BurstFireNear" rangeMeters="8" />
-            <AttackType name="GFL_G36_BurstFireClose" rangeMeters="16" />
-            <AttackType name="GFL_G36_BurstFireMed" rangeMeters="28" />
-            <AttackType name="GFL_G36_BurstFireFar" rangeMeters="52" />
-            <AttackType name="GFL_G36_BurstFireExt" rangeMeters="9999" />
+
+            <AttackType name="GFL_CQC_G36" rangeMeters="4" />
+            <AttackType name="GFL_Near_G36" rangeMeters="8" />
+            <AttackType name="GFL_Close_G36" rangeMeters="12" />
+            <AttackType name="GFL_Medium_G36" rangeMeters="16" />
+            <AttackType name="GFL_MedEdge_G36" rangeMeters="20" />
+            <AttackType name="GFL_Extended_G36" rangeMeters="9999" />
+
         </AttackTypes>
 
         <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Rifle">
