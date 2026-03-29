@@ -1949,45 +1949,58 @@ body.modal-open {
 /* ── Games dropdown ── */
 .games-dropdown {
     position: relative;
+    padding-bottom: 10px;
+    margin-bottom: -10px;
+}
+.games-trigger {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.games-chevron {
+    transition: transform 200ms;
+}
+.games-dropdown:hover .games-chevron,
+.games-dropdown.open .games-chevron {
+    transform: rotate(180deg);
 }
 .games-menu {
     display: none;
     position: absolute;
     top: 100%;
     right: 0;
-    margin-top: 8px;
+    min-width: 220px;
+    z-index: 50;
+}
+.games-menu-inner {
     background: rgba(18, 18, 22, 0.95);
     backdrop-filter: blur(16px);
     border: 1px solid rgba(255, 255, 255, 0.08);
-    min-width: 200px;
-    z-index: 50;
     overflow: hidden;
 }
-.games-menu.visible {
+.games-dropdown:hover .games-menu,
+.games-dropdown.open .games-menu {
     display: block;
 }
 .games-menu-item {
     display: flex;
     flex-direction: column;
-    padding: 14px 18px;
+    padding: 10px 14px;
     color: var(--text);
     cursor: pointer;
     transition: background 150ms;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
 }
 .games-menu-item:hover {
     background: rgba(255, 255, 255, 0.06);
 }
-.games-menu-icon {
-    display: none;
-}
 .games-menu-desc {
-    font-size: 12px;
+    font-size: 11px;
     color: var(--text-muted);
     font-weight: 400;
-    margin-top: 3px;
+    margin-top: 2px;
 }
 
 /* ── Girldle overlay ── */

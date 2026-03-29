@@ -126,18 +126,26 @@ function showToast(message, duration = 2500) {
   }, duration);
 }
 
-function toggleGamesMenu() {
-  const menu = document.getElementById("gamesMenu");
-  menu.classList.toggle("visible");
+function closeGamesMenu() {
+  const dropdown = document.getElementById("gamesDropdown");
+  if (dropdown) dropdown.classList.remove("open");
 }
 
-// Close games menu on outside click
-document.addEventListener("click", (e) => {
-  if (!e.target.closest(".games-dropdown")) {
-    const menu = document.getElementById("gamesMenu");
-    if (menu) menu.classList.remove("visible");
-  }
-});
+// Hover with delay for cross-browser support
+(function () {
+  let hideTimeout;
+  document.addEventListener("DOMContentLoaded", () => {
+    const dropdown = document.getElementById("gamesDropdown");
+    if (!dropdown) return;
+    dropdown.addEventListener("mouseenter", () => {
+      clearTimeout(hideTimeout);
+      dropdown.classList.add("open");
+    });
+    dropdown.addEventListener("mouseleave", () => {
+      hideTimeout = setTimeout(() => dropdown.classList.remove("open"), 150);
+    });
+  });
+})();
 
 let activeSquadFilters = new Set();
 let activeWeaponFilters = new Set();
@@ -193,7 +201,20 @@ async function init() {
     },
     { passive: false },
   );
-  window.addEventListener("hashchange", restoreState);
+  window.addEventListener("hashchange", () => {
+    handleRoute();
+    restoreState();
+  });
+  handleRoute();
+}
+
+function handleRoute() {
+  const hash = window.location.hash.replace("#", "");
+  if (hash === "gacha") {
+    startGacha();
+  } else if (hash === "girldle") {
+    openGirldle();
+  }
 }
 
 function setBackground() {
@@ -857,9 +878,11 @@ function saveState() {
   history.replaceState(null, "", "#" + bitsToBase64url(bits));
 }
 
+const RESERVED_ROUTES = new Set(["gacha", "girldle"]);
+
 function restoreState() {
   const hash = location.hash.slice(1);
-  if (!hash) return;
+  if (!hash || RESERVED_ROUTES.has(hash)) return;
   try {
     const bits = base64urlToBits(hash);
     unitDolls = [];

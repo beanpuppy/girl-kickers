@@ -493,7 +493,11 @@ function girldleShareResults() {
       .join("");
   });
 
-  const text = header + "\n" + rows.join("\n");
+  const text =
+    header +
+    "\n" +
+    rows.join("\n") +
+    "\nhttps://antistrategie.github.io/girl-kickers/unit-builder/#girldle";
   navigator.clipboard.writeText(text).then(() => {
     showToast("Results copied to clipboard!");
   });
@@ -728,6 +732,9 @@ function openGirldle() {
   const overlay = document.getElementById("girldleOverlay");
   overlay.classList.add("visible");
   document.body.classList.add("modal-open");
+  if (window.location.hash !== "#girldle") {
+    history.replaceState(null, "", "#girldle");
+  }
 
   girldleAnswer = girldleGetDailyAnswer();
   girldleGuesses = [];
@@ -752,4 +759,7 @@ function closeGirldle() {
   const overlay = document.getElementById("girldleOverlay");
   overlay.classList.remove("visible");
   document.body.classList.remove("modal-open");
+  if (window.location.hash === "#girldle") {
+    history.replaceState(null, "", window.location.pathname);
+  }
 }

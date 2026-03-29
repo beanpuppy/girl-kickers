@@ -118,6 +118,9 @@ function clearGachaPulls() {
 }
 
 function startGacha() {
+  if (window.location.hash !== "#gacha") {
+    history.replaceState(null, "", "#gacha");
+  }
   const overlay = document.getElementById("gachaOverlay");
   const main = document.getElementById("gachaMain");
   const summary = document.getElementById("gachaSummary");
@@ -189,6 +192,9 @@ function closeGacha() {
   gachaActive = false;
   document.getElementById("gachaOverlay").classList.remove("visible");
   document.body.classList.remove("modal-open");
+  if (window.location.hash === "#gacha") {
+    history.replaceState(null, "", window.location.pathname);
+  }
 }
 
 function restartGacha() {
