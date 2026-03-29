@@ -657,7 +657,9 @@ function girldleRenderInput(guesses, solved, failed) {
     if (e.key === "ArrowDown") {
       e.preventDefault();
       highlightIdx = Math.min(highlightIdx + 1, items.length - 1);
-      items.forEach((el, i) => el.classList.toggle("highlighted", i === highlightIdx));
+      items.forEach((el, i) =>
+        el.classList.toggle("highlighted", i === highlightIdx),
+      );
       if (items[highlightIdx]) {
         input.value = items[highlightIdx].dataset.name;
         selectedDoll = available.find((d) => d.name === input.value);
@@ -666,7 +668,9 @@ function girldleRenderInput(guesses, solved, failed) {
     } else if (e.key === "ArrowUp") {
       e.preventDefault();
       highlightIdx = Math.max(highlightIdx - 1, 0);
-      items.forEach((el, i) => el.classList.toggle("highlighted", i === highlightIdx));
+      items.forEach((el, i) =>
+        el.classList.toggle("highlighted", i === highlightIdx),
+      );
       if (items[highlightIdx]) {
         input.value = items[highlightIdx].dataset.name;
         selectedDoll = available.find((d) => d.name === input.value);
