@@ -11,4 +11,4 @@ tools/khm_tools.zip
 tools/gfl2.map
 
 # Generated unit builder data (built by CI)
-www/unit-builder/data/
+www/unit-builder/app/data/

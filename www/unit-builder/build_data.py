@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Parse mod XMLs and output www/unit-builder/data/dolls.json + convert portrait DDS to PNG."""
+"""Parse mod XMLs and output www/unit-builder/app/data/dolls.json + convert portrait DDS to PNG."""
 
 import json
 import subprocess
@@ -10,7 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent.parent
 MOD = ROOT / "mod"
-OUT = ROOT / "www" / "unit-builder" / "data"
+OUT = ROOT / "www" / "unit-builder" / "app" / "data"
 
 
 def parse_localisation(path: Path) -> dict[str, str]:
@@ -451,7 +451,7 @@ def build_dolls_json():
         dolls.append(doll)
 
     # Scan backgrounds directory
-    bg_dir = ROOT / "www" / "unit-builder" / "backgrounds"
+    bg_dir = ROOT / "www" / "unit-builder" / "app" / "backgrounds"
     backgrounds = sorted(
         f"backgrounds/{p.name}"
         for p in bg_dir.glob("*.png")

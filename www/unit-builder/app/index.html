@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Girl Kickers Unit Builder</title>
+        <link
+            rel="icon"
+            href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%230e0e11'/><circle cx='16' cy='16' r='8' fill='none' stroke='%23d4853b' stroke-width='2'/><line x1='16' y1='4' x2='16' y2='10' stroke='%23d4853b' stroke-width='2'/><line x1='16' y1='22' x2='16' y2='28' stroke='%23d4853b' stroke-width='2'/><line x1='4' y1='16' x2='10' y2='16' stroke='%23d4853b' stroke-width='2'/><line x1='22' y1='16' x2='28' y2='16' stroke='%23d4853b' stroke-width='2'/></svg>"
+        />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="loading">Loading doll data...</div>
+
+        <div class="bg-image" id="bgImage"></div>
+
+        <div class="top-bar">
+            <div class="top-bar-inner">
+                <div class="title">
+                    <span class="brand">Girl Kickers</span
+                    ><span class="sub">Unit Builder</span>
+                </div>
+                <div class="spacer"></div>
+                <button
+                    class="btn btn-gacha"
+                    id="gachaBtn"
+                    onclick="startGacha()"
+                    title="Daily Gacha"
+                >
+                    <span id="gachaBtnLabel">Daily Gacha</span>
+                </button>
+                <a
+                    class="about-link"
+                    id="soundToggle"
+                    onclick="toggleSound()"
+                    title="Toggle sound"
+                ></a>
+                <a
+                    class="about-link"
+                    href="https://discord.gg/XcfYGmxvde"
+                    target="_blank"
+                    title="Discord"
+                    ><svg
+                        width="18"
+                        height="14"
+                        viewBox="0 0 127.14 96.36"
+                        fill="currentColor"
+                    >
+                        <path
+                            d="M107.7 8.07A105.15 105.15 0 0 0 81.47 0a72.06 72.06 0 0 0-3.36 6.83 97.68 97.68 0 0 0-29.11 0A72.37 72.37 0 0 0 45.64 0 105.89 105.89 0 0 0 19.39 8.09C2.79 32.65-1.71 56.6.54 80.21a105.73 105.73 0 0 0 32.17 16.15 77.7 77.7 0 0 0 6.89-11.11 68.42 68.42 0 0 1-10.85-5.18c.91-.66 1.8-1.34 2.66-2.03a75.57 75.57 0 0 0 64.32 0c.87.71 1.76 1.39 2.66 2.03a68.68 68.68 0 0 1-10.87 5.19 77 77 0 0 0 6.89 11.1 105.25 105.25 0 0 0 32.19-16.14c2.64-27.38-4.51-51.11-18.9-72.15ZM42.45 65.69C36.18 65.69 31 60 31 53.05c0-6.94 5.04-12.67 11.45-12.67S54 46.07 53.89 53.05c0 6.95-5.05 12.64-11.44 12.64Zm42.24 0C78.41 65.69 73.25 60 73.25 53.05c0-6.94 5.04-12.67 11.44-12.67s11.51 5.69 11.44 12.67c0 6.95-5.04 12.64-11.44 12.64Z"
+                        /></svg
+                ></a>
+                <div class="games-dropdown">
+                    <a class="about-link" onclick="toggleGamesMenu()" title="Games">Games</a>
+                    <div class="games-menu" id="gamesMenu">
+                        <a class="games-menu-item" onclick="openGirldle(); toggleGamesMenu();">
+                            <span class="games-menu-icon">&#9641;</span>
+                            Girldle
+                            <span class="games-menu-desc">Daily doll guessing game</span>
+                        </a>
+                    </div>
+                </div>
+                <a class="about-link" onclick="showAbout()" title="About"
+                    >About</a
+                >
+            </div>
+        </div>
+
+        <div class="roster-bar" id="rosterBar">
+            <div class="roster-bar-inner">
+                <div class="roster-label" id="rosterLabel">0 / 32</div>
+                <div class="roster-portraits" id="rosterPortraits"></div>
+                <button class="btn btn-accent" id="downloadBtn">
+                    Download
+                </button>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="filters">
+                <div class="filter-row">
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Search dolls..."
+                    />
+                </div>
+                <div class="filter-group">
+                    <span class="filter-label">Traits</span>
+                    <div class="filter-toggles">
+                        <label class="filter-switch"
+                            ><input
+                                type="checkbox"
+                                id="filterAbility"
+                                onchange="toggleFilter('ability')"
+                            /><span class="filter-switch-label"
+                                >Special Ability</span
+                            ></label
+                        >
+                        <label class="filter-switch"
+                            ><input
+                                type="checkbox"
+                                id="filterCostume"
+                                onchange="toggleFilter('costume')"
+                            /><span class="filter-switch-label"
+                                >Alt Costume</span
+                            ></label
+                        >
+                        <label class="filter-switch"
+                            ><input
+                                type="checkbox"
+                                id="filterSuppressor"
+                                onchange="toggleFilter('suppressor')"
+                            /><span class="filter-switch-label"
+                                >Suppressor</span
+                            ></label
+                        >
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <span class="filter-label">Squad</span>
+                    <div class="filter-toggles" id="squadTabs"></div>
+                </div>
+                <div class="filter-group">
+                    <span class="filter-label">Weapon</span>
+                    <div class="filter-toggles" id="weaponTabs"></div>
+                </div>
+            </div>
+            <div id="dollContent"></div>
+        </div>
+
+        <div class="doll-tooltip" id="tooltip"></div>
+
+        <div class="modal-overlay" id="downloadModal">
+            <div class="modal">
+                <h2>Generate Custom Unit</h2>
+                <p class="modal-subtitle">
+                    Configure your unit and download it as a mod.
+                </p>
+
+                <div class="unit-summary" id="unitSummary"></div>
+
+                <div class="modal-field">
+                    <label for="unitName"
+                        >Unit Name
+                        <span style="color: var(--accent)">*</span></label
+                    >
+                    <div style="display: flex; gap: 6px">
+                        <input
+                            type="text"
+                            id="unitName"
+                            placeholder="Unit name"
+                            value=""
+                            style="flex: 1"
+                        />
+                        <button
+                            class="btn"
+                            onclick="
+                                document.getElementById('unitName').value =
+                                    randomUnitName()
+                            "
+                            title="Randomise name"
+                            style="
+                                padding: 8px 10px;
+                                display: flex;
+                                align-items: center;
+                            "
+                        >
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 16 16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <rect
+                                    x="1"
+                                    y="1"
+                                    width="14"
+                                    height="14"
+                                    rx="1.5"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                />
+                                <circle
+                                    cx="5"
+                                    cy="5"
+                                    r="1.2"
+                                    fill="currentColor"
+                                />
+                                <circle
+                                    cx="11"
+                                    cy="5"
+                                    r="1.2"
+                                    fill="currentColor"
+                                />
+                                <circle
+                                    cx="8"
+                                    cy="8"
+                                    r="1.2"
+                                    fill="currentColor"
+                                />
+                                <circle
+                                    cx="5"
+                                    cy="11"
+                                    r="1.2"
+                                    fill="currentColor"
+                                />
+                                <circle
+                                    cx="11"
+                                    cy="11"
+                                    r="1.2"
+                                    fill="currentColor"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-field">
+                    <label for="flagColour">Flag Colour</label>
+                    <span class="colour-hint"
+                        >Accent colour for the unit flag and deploy screen</span
+                    >
+                    <div class="colour-preview-row">
+                        <div
+                            class="colour-preview-wrapper"
+                            onclick="
+                                document.getElementById('flagColour').click()
+                            "
+                        >
+                            <input
+                                type="color"
+                                id="flagColour"
+                                value="#e3f6fd"
+                            />
+                            <div
+                                class="colour-preview-bar"
+                                id="colourPreviewBar"
+                            ></div>
+                        </div>
+                        <span class="colour-hex" id="colourHex">#E3F6FD</span>
+                    </div>
+                    <div class="colour-swatches" id="colourSwatches"></div>
+                </div>
+                <div class="modal-field">
+                    <label for="modAuthor"
+                        >Author
+                        <span
+                            style="
+                                color: var(--text-muted);
+                                font-weight: 400;
+                                font-size: 11px;
+                                text-transform: none;
+                                letter-spacing: 0;
+                            "
+                            >optional</span
+                        ></label
+                    >
+                    <input
+                        type="text"
+                        id="modAuthor"
+                        placeholder="Unit Builder"
+                        value=""
+                    />
+                </div>
+                <div class="modal-field">
+                    <label for="modDescription"
+                        >Description
+                        <span
+                            style="
+                                color: var(--text-muted);
+                                font-weight: 400;
+                                font-size: 11px;
+                                text-transform: none;
+                                letter-spacing: 0;
+                            "
+                            >optional</span
+                        ></label
+                    >
+                    <textarea
+                        id="modDescription"
+                        placeholder="Custom unit generated by the GFL2:DK Unit Builder."
+                        rows="2"
+                        style="
+                            width: 100%;
+                            resize: vertical;
+                            font-family: inherit;
+                            font-size: 14px;
+                            padding: 7px 12px;
+                            border: 1px solid rgba(255, 255, 255, 0.08);
+                            background: rgba(255, 255, 255, 0.04);
+                            color: var(--text);
+                        "
+                    ></textarea>
+                </div>
+
+                <button class="advanced-toggle" onclick="toggleAdvanced(this)">
+                    <svg
+                        width="10"
+                        height="10"
+                        viewBox="0 0 10 10"
+                        fill="currentColor"
+                    >
+                        <path d="M3 1l5 4-5 4z" />
+                    </svg>
+                    Advanced — Edit Doll Stats
+                </button>
+                <div class="advanced-body" id="advancedStats"></div>
+
+                <div class="modal-divider"></div>
+
+                <div class="note">
+                    The base Girls' Frontline 2: Door Kickers mod is required
+                    for this add-on to work.
+                </div>
+                <div class="modal-install">
+                    <strong>Installation</strong><br />
+                    Extract the zip into your Door Kickers 2 mods folder and
+                    enable it in-game after enabling Girls' Frontline 2: Door
+                    Kickers.
+                    <div class="install-paths">
+                        <div class="install-path">
+                            <span class="install-path-label">Windows</span>
+                            <code
+                                id="pathWindows"
+                                title="%LOCALAPPDATA%\KillHouseGames\DoorKickers2\mods"
+                                >%LOCALAPPDATA%\KillHouseGames\DoorKickers2\mods</code
+                            >
+                            <button
+                                class="copy-btn"
+                                onclick="copyPath('pathWindows')"
+                                title="Copy path"
+                            >
+                                Copy
+                            </button>
+                        </div>
+                        <div class="install-path">
+                            <span class="install-path-label">Linux</span>
+                            <code
+                                id="pathLinux"
+                                title="~/.local/share/KillHouseGames/DoorKickers2/mods"
+                                >~/.local/share/KillHouseGames/DoorKickers2/mods</code
+                            >
+                            <button
+                                class="copy-btn"
+                                onclick="copyPath('pathLinux')"
+                                title="Copy path"
+                            >
+                                Copy
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-actions">
+                    <button class="btn" onclick="closeModal('downloadModal')">
+                        Cancel
+                    </button>
+                    <button class="btn btn-accent" onclick="doDownload()">
+                        Download
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="gacha-overlay" id="gachaOverlay">
+            <div class="gacha-content" id="gachaMain">
+                <div class="gacha-header">
+                    <div class="gacha-header-left">
+                        <span class="gacha-title">Daily Gacha</span>
+                    </div>
+                    <button
+                        class="gacha-close-btn"
+                        onclick="closeGacha()"
+                        title="Close"
+                    >
+                        &times;
+                    </button>
+                </div>
+                <div class="gacha-intro" id="gachaIntro">
+                    <div class="gacha-intro-title">Daily Gacha</div>
+                    <div class="gacha-intro-sub">
+                        Pull 8 dolls to build a random unit once a day.
+                    </div>
+                    <div class="gacha-intro-rules">
+                        <div class="gacha-intro-rule">
+                            <div class="gacha-intro-rule-title">Stats</div>
+                            <div class="gacha-intro-rule-desc">
+                                &minus;50% to +50% per stat, randomised
+                            </div>
+                        </div>
+                        <div class="gacha-intro-rule">
+                            <div class="gacha-intro-rule-title">Duplicates</div>
+                            <div class="gacha-intro-rule-desc">
+                                Merge into existing doll with grade-based stat
+                                bonus + bonus weapon
+                            </div>
+                        </div>
+                        <div class="gacha-intro-rule">
+                            <div class="gacha-intro-rule-title">Grades</div>
+                            <div class="gacha-intro-rule-desc">
+                                Common, Rare, SR, SSR. Based on total boost %
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gacha-pity-display" id="gachaPityDisplay"></div>
+                <div
+                    class="gacha-roster"
+                    id="gachaRoster"
+                    style="display: none"
+                ></div>
+                <div
+                    class="gacha-cascade"
+                    id="gachaCascade"
+                    style="display: none"
+                ></div>
+                <div id="gachaActions" class="gacha-actions"></div>
+            </div>
+            <div
+                id="gachaSummary"
+                class="gacha-summary"
+                style="display: none"
+            ></div>
+        </div>
+
+        <div class="gacha-overlay" id="girldleOverlay">
+            <div class="gacha-content" style="max-width: 780px">
+                <div class="gacha-header">
+                    <div class="gacha-header-left">
+                        <span class="gacha-title">Girldle</span>
+                    </div>
+                    <button class="gacha-close-btn" onclick="closeGirldle()" title="Close">&times;</button>
+                </div>
+                <div id="girldleBoard"></div>
+                <div id="girldleMessage" class="girldle-message"></div>
+                <div id="girldleActions"></div>
+            </div>
+        </div>
+
+        <template id="splashTemplate">
+            <div class="splash-content">
+                <h1 class="splash-title">Girl Kickers<br />Unit Builder</h1>
+                <p class="splash-subtitle">
+                    Build a custom doll squad for
+                    <a
+                        href="https://steamcommunity.com/sharedfiles/filedetails/?id=3580762170"
+                        target="_blank"
+                        onclick="event.stopPropagation()"
+                        >Girls' Frontline 2: Door Kickers</a
+                    >
+                </p>
+
+                <div class="splash-divider"></div>
+
+                <p class="splash-desc">
+                    Door Kickers 2 has a limit of 32 troopers per unit. This
+                    tool lets you pick up to 32 dolls and generate a custom unit
+                    as a downloadable add-on mod.
+                </p>
+
+                <ol class="splash-steps">
+                    <li>
+                        <strong>Hover</strong> over a doll to see their stats
+                        and details
+                    </li>
+                    <li>
+                        <strong>Click</strong> a doll to add or remove them from
+                        your unit
+                    </li>
+                    <li>
+                        Hit <strong>Download</strong> in the roster bar to
+                        generate the mod
+                    </li>
+                </ol>
+
+                <div class="splash-note">
+                    Your selections are saved in the URL. Bookmark or share your
+                    build.
+                </div>
+
+                <div class="splash-links">
+                    <a
+                        href="https://github.com/antistrategie/girl-kickers"
+                        target="_blank"
+                        onclick="event.stopPropagation()"
+                        >GitHub</a
+                    >
+                    <a
+                        href="https://steamcommunity.com/sharedfiles/filedetails/?id=3580762170"
+                        target="_blank"
+                        onclick="event.stopPropagation()"
+                        >Steam Workshop</a
+                    >
+                    <a
+                        href="https://trello.com/b/y77gdE1R/girl-kickers"
+                        target="_blank"
+                        onclick="event.stopPropagation()"
+                        >Trello</a
+                    >
+                    <a
+                        href="https://discord.gg/XcfYGmxvde"
+                        target="_blank"
+                        onclick="event.stopPropagation()"
+                        >Discord</a
+                    >
+                </div>
+
+                <div class="splash-cta">Click anywhere to continue</div>
+                <div class="splash-version" id="splashVersion"></div>
+            </div>
+        </template>
+
+        <script src="app.js"></script>
+        <script src="gacha.js"></script>
+        <script src="girldle.js"></script>
+    </body>
+</html>
