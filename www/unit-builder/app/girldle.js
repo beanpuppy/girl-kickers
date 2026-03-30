@@ -483,14 +483,19 @@ function girldleShareResults() {
   const header = `Girldle ${date} ${solved ? count : "X"}/${GIRLDLE_MAX_GUESSES}`;
 
   const rows = girldleGuesses.map((guess) => {
+    const nameSquare =
+      guess.name === girldleAnswer.name ? "\u{1f7e9}" : "\u{1f7e5}";
     const results = girldleCompare(guess, girldleAnswer);
-    return results
-      .map((r) => {
-        if (r.match === "correct") return "\u{1f7e9}";
-        if (r.match === "partial") return "\u{1f7e8}";
-        return "\u{1f7e5}";
-      })
-      .join("");
+    return (
+      nameSquare +
+      results
+        .map((r) => {
+          if (r.match === "correct") return "\u{1f7e9}";
+          if (r.match === "partial") return "\u{1f7e8}";
+          return "\u{1f7e5}";
+        })
+        .join("")
+    );
   });
 
   const text =
@@ -549,7 +554,8 @@ function girldleRenderBoard(guesses, answer, solved, failed) {
     for (const guess of guesses) {
       const results = girldleCompare(guess, answer);
       html += `<div class="girldle-row">`;
-      html += `<div class="girldle-cell girldle-name-cell">${esc(guess.name)}</div>`;
+      const nameMatch = guess.name === answer.name ? "correct" : "wrong";
+      html += `<div class="girldle-cell girldle-name-cell girldle-${nameMatch}">${esc(guess.name)}</div>`;
       for (const r of results) {
         html += `<div class="girldle-cell girldle-${r.match}">${esc(r.value)}</div>`;
       }
