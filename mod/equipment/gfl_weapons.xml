@@ -3157,8 +3157,18 @@
     <Bind eqp="GFL-WEAP-CURVA-SUP">
         <to name="380FMJURNC_GFL_CURVA-SUP" />
 
-        <to name="scope_GFL_IronSights_Secondary" />
-        <to name="scope_GFL_RedDot_Pistol" />
+        <to name="scope_GFL_IronSights" />
+        <to name="scope_GFL_RedDot" />
+        <to name="scope_GFL_Holosight" />
+        <to name="scope_GFL_M68CCO" />
+        <to name="scope_GFL_M150RCO" />
+        <to name="scope_GFL_HoloMag3x" />
+        <to name="scope_GFL_SpecterDR" />
+        <to name="scope_GFL_LPVO_6X" />
+        <to name="scope_GFL_LPVO_8X" />
+        <to name="scope_GFL_LROMK4_3_10X" />
+        <to name="scope_GFL_LROMK6_3_18X" />
+        <to name="scope_GFL_LROPM_5_25X" />
     </Bind>
     <Firearm
         name="GFL-WEAP-CURVA-SUP"
@@ -5503,7 +5513,6 @@
             accuracyEnd="75"
             accuracyStartDist="4"
             accuracyEndDist="50"
-            suppressionScale="0.5"
         />
 
         <Params
@@ -5604,7 +5613,6 @@
             accuracyEnd="75"
             accuracyStartDist="4"
             accuracyEndDist="50"
-            suppressionScale="0.5"
         />
 
         <Params
@@ -5706,7 +5714,6 @@
             accuracyEnd="180"
             accuracyStartDist="4"
             accuracyEndDist="50"
-            suppressionScale="8"
         />
 
         <Params
@@ -5810,7 +5817,6 @@
             accuracyEnd="180"
             accuracyStartDist="4"
             accuracyEndDist="50"
-            suppressionScale="8"
         />
 
         <Params
@@ -5909,7 +5915,6 @@
             accuracyEnd="75"
             accuracyStartDist="4"
             accuracyEndDist="50"
-            suppressionScale="1.07"
         />
 
         <Params
