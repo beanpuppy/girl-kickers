@@ -3228,11 +3228,12 @@
         />
 
         <AttackTypes>
-            <AttackType name="GFL_CURVA_MozambiqueDrillNear" rangeMeters="8" />
-            <AttackType name="GFL_CURVA_MozambiqueDrillClose" rangeMeters="16" />
-            <AttackType name="GFL_CURVA_AimedFireMed" rangeMeters="28" />
-            <AttackType name="GFL_CURVA_AimedFireFar" rangeMeters="52" />
-            <AttackType name="GFL_CURVA_AimedFireExt" rangeMeters="9999" />
+            <AttackType name="GFL_CQC_CURVA" rangeMeters="4" />
+            <AttackType name="GFL_Near_CURVA" rangeMeters="8" />
+            <AttackType name="GFL_Close_CURVA" rangeMeters="12" />
+            <AttackType name="GFL_Medium_CURVA" rangeMeters="16" />
+            <AttackType name="GFL_MedEdge_CURVA" rangeMeters="20" />
+            <AttackType name="GFL_Extended_CURVA" rangeMeters="9999" />
         </AttackTypes>
 
         <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Pistol">
