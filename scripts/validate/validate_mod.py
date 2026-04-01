@@ -431,8 +431,9 @@ def main():
     print("\n\033[1mValidating localisation...\033[0m")
     loc_errors_before = len(errors)
 
-    loc_file = MOD / "localization" / "gfl_game.txt"
-    if loc_file.exists():
+    loc_dir = MOD / "localization"
+    loc_files = sorted(loc_dir.glob("*.txt")) if loc_dir.exists() else []
+    if loc_files:
         xml_keys = set()
         key_pattern = re.compile(r'"(@[a-zA-Z0-9_#-]+)"')
         for xml_dir in ["action_waypoints", "entities", "equipment", "gui", "units"]:
@@ -445,31 +446,37 @@ def main():
                 )
 
         loc_keys = {}
-        for i, line in enumerate(loc_file.read_text(encoding="utf-8").splitlines(), 1):
-            line = line.strip()
-            if not line.startswith("@"):
-                continue
-            match = re.match(r"(@[a-zA-Z0-9_#-]+)\s*=", line)
-            if match:
-                key = match.group(1)
-                if key in loc_keys:
-                    error(
-                        f"Duplicate localisation key '{key}' (lines {loc_keys[key]} and {i})"
-                    )
-                loc_keys[key] = i
+        for loc_file in loc_files:
+            loc_fname = loc_file.relative_to(MOD)
+            for i, line in enumerate(
+                loc_file.read_text(encoding="utf-8").splitlines(), 1
+            ):
+                line = line.strip()
+                if not line.startswith("@"):
+                    continue
+                match = re.match(r"(@[a-zA-Z0-9_#-]+)\s*=", line)
+                if match:
+                    key = match.group(1)
+                    if key in loc_keys:
+                        error(
+                            f"Duplicate localisation key '{key}' ({loc_fname}:{i} and {loc_keys[key]})"
+                        )
+                    loc_keys[key] = f"{loc_fname}:{i}"
         loc_key_set = set(loc_keys.keys())
 
         for key in sorted(xml_keys - loc_key_set):
             if key in basegame_loc_keys:
                 continue
-            error(f"Localisation key '{key}' used in XML but missing from gfl_game.txt")
+            error(
+                f"Localisation key '{key}' used in XML but not defined in any loc file"
+            )
 
         for key in sorted(loc_key_set - xml_keys):
             error(
-                f"Localisation key '{key}' in gfl_game.txt but not used in any XML (line {loc_keys[key]})"
+                f"Localisation key '{key}' defined but not used in any XML ({loc_keys[key]})"
             )
     else:
-        error("Localisation file not found: localization/gfl_game.txt")
+        error("No localisation files found in localization/")
 
     if len(errors) == loc_errors_before:
         ok("All localisation keys are valid")
