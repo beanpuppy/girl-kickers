@@ -2,8 +2,8 @@
 """Find and delete unreferenced sound files in mod/sounds/voice/"""
 
 import re
-from pathlib import Path
 import sys
+from pathlib import Path
 
 
 def get_referenced_files():

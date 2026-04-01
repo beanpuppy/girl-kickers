@@ -218,12 +218,12 @@ Add two `<Portrait>` entries:
 Before creating the voice pack XML, process your raw voice files using the voice processing script:
 
 ```bash
-python scripts/process_voice.py /path/to/raw/audio/directory CharacterName
+python scripts/voice/process_voice.py /path/to/raw/audio/directory CharacterName
 ```
 
 **Example:**
 ```bash
-python scripts/process_voice.py /home/justin/dev/github.com/beanpuppy/gfl2-voice/JP/VO_Lewis_JP Lewis
+python scripts/voice/process_voice.py /home/justin/dev/github.com/beanpuppy/gfl2-voice/JP/VO_Lewis_JP Lewis
 ```
 
 > [!NOTE]
@@ -240,7 +240,7 @@ This script will:
 **Next:** Generate transcriptions of the voice lines:
 
 ```bash
-python scripts/transcribe_voices.py
+python scripts/voice/transcribe_voices.py
 ```
 
 This creates a `_trans.txt` file for all directories that don't have one, showing what each voice line says (machine translated, so far from perfect). This is essential for matching them to appropriate game events if you don't speak Japanese.
@@ -348,7 +348,7 @@ The voice pack maps various in-game events (combat, movement, status changes) to
 After creating the voice pack XML, validate that all voice file paths are correct:
 
 ```bash
-python scripts/validate_voice_files.py
+python scripts/validate/validate_mod.py
 ```
 
 This will check that all voice files referenced in the XML actually exist and report any missing files.
@@ -356,7 +356,7 @@ This will check that all voice files referenced in the XML actually exist and re
 Once validation passes and you've checked the voices in-game, clean up any unused voice files:
 
 ```bash
-python scripts/cleanup_unused_sounds.py
+python scripts/voice/cleanup_unused_sounds.py
 ```
 
 This removes voice files that exist in the directories but aren't referenced in any voice pack XML, keeping the mod at an acceptable file size.
@@ -436,8 +436,8 @@ Follow these steps in order when adding a new character:
 1. Ensure all models, textures, and portraits are in place (see Required Assets section)
 2. Process voice files:
    ```bash
-   python scripts/process_voice.py /path/to/raw/voices CharacterName
-   python scripts/transcribe_voices.py
+   python scripts/voice/process_voice.py /path/to/raw/voices CharacterName
+   python scripts/voice/transcribe_voices.py
    ```
 
 ### Manual XML Entries
@@ -456,7 +456,7 @@ Follow these steps in order when adding a new character:
 
 12. Validate voice files:
     ```bash
-    python scripts/validate_voice_files.py
+    python scripts/validate/validate_mod.py
     ```
 
 ### Generation
@@ -476,5 +476,5 @@ Follow these steps in order when adding a new character:
 15. Test in-game to verify everything works
 16. Clean up unused voice files:
     ```bash
-    python scripts/cleanup_unused_sounds.py
+    python scripts/voice/cleanup_unused_sounds.py
     ```

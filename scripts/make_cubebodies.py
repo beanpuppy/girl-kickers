@@ -15,7 +15,9 @@ import struct
 import sys
 
 KHM_MAX_OBJECT_NAME = 48
-BONE_ENTRY_SIZE = KHM_MAX_OBJECT_NAME + 4 + 4 + 64 + 64  # name + id + parent + matLocal + matGlobal
+BONE_ENTRY_SIZE = (
+    KHM_MAX_OBJECT_NAME + 4 + 4 + 64 + 64
+)  # name + id + parent + matLocal + matGlobal
 
 
 def read_exact(f, n):
@@ -32,19 +34,19 @@ def make_cubebody(input_path, output_path):
     pos = 0
 
     # Header: signature (4) + version (4)
-    header = src[pos:pos + 8]
+    header = src[pos : pos + 8]
     pos += 8
 
     # Bones
     num_bones = src[pos]
     pos += 1
-    bones_data = src[pos:pos + num_bones * BONE_ENTRY_SIZE]
+    bones_data = src[pos : pos + num_bones * BONE_ENTRY_SIZE]
     pos += num_bones * BONE_ENTRY_SIZE
 
     # Helpers
     num_helpers = src[pos]
     pos += 1
-    helpers_data = src[pos:pos + num_helpers * BONE_ENTRY_SIZE]
+    helpers_data = src[pos : pos + num_helpers * BONE_ENTRY_SIZE]
     pos += num_helpers * BONE_ENTRY_SIZE
 
     # Has mesh
@@ -52,8 +54,6 @@ def make_cubebody(input_path, output_path):
     pos += 1
 
     if has_mesh:
-        # Skip mesh header: name + id + parent + matLocal + matGlobal
-        mesh_header = src[pos:pos + KHM_MAX_OBJECT_NAME + 4 + 4 + 64 + 64]
         pos += KHM_MAX_OBJECT_NAME + 4 + 4 + 64 + 64
 
         # Skip geometry to find where animation data starts
@@ -91,7 +91,7 @@ def make_cubebody(input_path, output_path):
         pos += 1
         if has_skin:
             pos += num_verts * 16  # 4 floats weights per vert
-            pos += num_verts * 4   # 4 uchars bone indices per vert
+            pos += num_verts * 4  # 4 uchars bone indices per vert
         # collision data — save start position to preserve it
         collision_start = pos
         num_collisions = struct.unpack_from("<i", src, pos)[0]
@@ -109,7 +109,9 @@ def make_cubebody(input_path, output_path):
             elif col_type == 3:  # convex mesh
                 num_polys = struct.unpack_from("<i", src, pos)[0]
                 pos += 4
-                pos += num_polys * (12 + 4 + 2 + 2)  # normal + d + numIndices + indexStart
+                pos += num_polys * (
+                    12 + 4 + 2 + 2
+                )  # normal + d + numIndices + indexStart
                 num_mesh_indices = struct.unpack_from("<i", src, pos)[0]
                 pos += 4
                 pos += num_mesh_indices * 2
