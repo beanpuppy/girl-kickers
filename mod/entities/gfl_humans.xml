@@ -31,7 +31,6 @@
 
             <Equipment>
                 <Item name="GFL-WEAP-AN94" />
-                <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />
@@ -72,7 +71,6 @@
 
             <Equipment>
                 <Item name="GFL-WEAP-AK15" />
-                <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfTitanium" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />
@@ -113,7 +111,6 @@
 
             <Equipment>
                 <Item name="GFL-WEAP-HK416" />
-                <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />
@@ -154,7 +151,6 @@
 
             <Equipment>
                 <Item name="GFL-WEAP-G11" />
-                <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />
@@ -194,7 +190,6 @@
 
             <Equipment>
                 <Item name="GFL-WEAP-G36K" />
-                <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />
@@ -234,7 +229,6 @@
 
             <Equipment>
                 <Item name="GFL-WEAP-G28" />
-                <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />
@@ -274,7 +268,6 @@
 
             <Equipment>
                 <Item name="GFL-WEAP-UMP45" />
-                <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />
@@ -315,7 +308,6 @@
 
             <Equipment>
                 <Item name="GFL-WEAP-UMP9" />
-                <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />
@@ -355,7 +347,6 @@
 
             <Equipment>
                 <Item name="GFL-WEAP-VECTOR" />
-                <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />
@@ -397,7 +388,6 @@
 
             <Equipment>
                 <Item name="GFL-WEAP-M1903" />
-                <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />
@@ -438,7 +428,6 @@
 
             <Equipment>
                 <Item name="GFL-WEAP-WA2000" />
-                <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />
@@ -479,7 +468,6 @@
 
             <Equipment>
                 <Item name="GFL-WEAP-G36" />
-                <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />
@@ -519,7 +507,6 @@
 
             <Equipment>
                 <Item name="GFL-WEAP-XCR" />
-                <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />
@@ -559,7 +546,6 @@
 
             <Equipment>
                 <Item name="GFL-WEAP-OTS14" />
-                <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />
@@ -600,7 +586,6 @@
 
             <Equipment>
                 <Item name="GFL-WEAP-OM50" />
-                <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />
@@ -679,7 +664,6 @@
 
             <Equipment>
                 <Item name="GFL-WEAP-CURVA" />
-                <Item name="scope_GFL_IronSights_Secondary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />
@@ -719,7 +703,6 @@
 
             <Equipment>
                 <Item name="GFL-WEAP-VEPR12" />
-                <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />
@@ -759,7 +742,6 @@
 
             <Equipment>
                 <Item name="GFL-WEAP-PKPSP" />
-                <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />
@@ -800,7 +782,6 @@
 
             <Equipment>
                 <Item name="GFL-WEAP-SPAS12" />
-                <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />
@@ -840,7 +821,6 @@
 
             <Equipment>
                 <Item name="GFL-WEAP-TYPE97S" />
-                <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />
@@ -919,7 +899,6 @@
 
             <Equipment>
                 <Item name="GFL-WEAP-PA15" />
-                <Item name="scope_GFL_IronSights_Secondary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />
@@ -959,7 +938,6 @@
 
             <Equipment>
                 <Item name="GFL-WEAP-VSK94" />
-                <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />
@@ -999,7 +977,6 @@
 
             <Equipment>
                 <Item name="GFL-WEAP-DP12" />
-                <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />
@@ -1039,7 +1016,6 @@
 
             <Equipment>
                 <Item name="GFL-WEAP-LEWIS" />
-                <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />
@@ -1079,7 +1055,6 @@
 
             <Equipment>
                 <Item name="GFL-WEAP-QBZ191" />
-                <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />
@@ -1119,7 +1094,6 @@
 
             <Equipment>
                 <Item name="GFL-WEAP-AKALFA" />
-                <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />
@@ -1160,7 +1134,6 @@
 
             <Equipment>
                 <Item name="GFL-WEAP-AA12" />
-                <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />
@@ -1200,7 +1173,6 @@
 
             <Equipment>
                 <Item name="GFL-WEAP-MP7" />
-                <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />
@@ -1240,7 +1212,6 @@
 
             <Equipment>
                 <Item name="GFL-WEAP-QBZ95" />
-                <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />
@@ -1280,7 +1251,6 @@
 
             <Equipment>
                 <Item name="GFL-WEAP-QBZ97" />
-                <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />
@@ -1320,7 +1290,6 @@
 
             <Equipment>
                 <Item name="GFL-WEAP-CSLS06" />
-                <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />
@@ -1360,7 +1329,6 @@
 
             <Equipment>
                 <Item name="GFL-WEAP-CZ75" />
-                <Item name="scope_GFL_IronSights_Secondary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />
@@ -1400,7 +1368,6 @@
 
             <Equipment>
                 <Item name="GFL-WEAP-STECHKIN" />
-                <Item name="scope_GFL_IronSights_Secondary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />
@@ -1440,7 +1407,6 @@
 
             <Equipment>
                 <Item name="GFL-WEAP-NAGANT" />
-                <Item name="scope_GFL_IronSights_Secondary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />
@@ -1480,7 +1446,6 @@
 
             <Equipment>
                 <Item name="GFL-WEAP-MOSINNAGANT" />
-                <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />
@@ -1521,7 +1486,6 @@
 
             <Equipment>
                 <Item name="GFL-WEAP-PPSH41" />
-                <Item name="scope_GFL_IronSights_Primary" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />

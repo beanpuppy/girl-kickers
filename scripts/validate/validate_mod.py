@@ -58,16 +58,49 @@ def main():
     basegame_files, basegame_loc_keys, basegame_equipment = load_manifest()
 
     # ══════════════════════════════════════════════
-    # Collect all definitions
+    # Collect all definitions from all XMLs
     # ══════════════════════════════════════════════
 
-    # Units and classes
-    units = {}
-    print("Scanning units...")
-    for path in collect_all("units/gfl_unit*.xml"):
+    # Tags that are structural/container — their `name` attr is NOT an equipment ID
+    SKIP_TAGS = {
+        "Unit",
+        "Class",
+        "Entity",
+        "Human",
+        "Id",
+        "Pack",
+        "Sound",
+        "Path",
+        "Item",
+        "Action",
+        "Bind",
+        "Node",
+        "to",
+        "eqp",
+        "Equip",
+        "Unequip",
+        "Fire",
+        "Reload",
+        "ReloadEmpty",
+        "ShellDrop",
+        "Empty",
+    }
+
+    units = {}  # unit_name -> set of class_names
+    weapons = {}  # weapon_name -> {attack_types, suppressed_switch}
+    weapon_binds = {}  # weapon_name -> set of bound item names
+    attack_type_defs = set()
+    all_equipment = set()
+    voice_packs = set()
+    skin_class_binds = {}  # skin_name -> set of class_names
+
+    print("Scanning all mod XMLs...")
+    for path in collect_all("**/*.xml"):
         tree = parse_xml(path)
         if not tree:
             continue
+
+        # Units and classes
         for unit_el in tree.iter("Unit"):
             unit_name = unit_el.get("name")
             if not unit_name:
@@ -78,146 +111,67 @@ def main():
                 if cls_name:
                     classes.add(cls_name)
             units[unit_name] = classes
-    ok(f"Found {len(units)} units with {sum(len(c) for c in units.values())} classes")
+
+        # Weapons and weapon binds
+        for firearm in tree.iter("Firearm"):
+            name = firearm.get("name")
+            if not name:
+                continue
+            at_names = set()
+            for at in firearm.iter("AttackType"):
+                at_name = at.get("name")
+                if at_name:
+                    at_names.add(at_name)
+            sup = firearm.get("suppressedSwitch")
+            weapons[name] = {"attack_types": at_names, "suppressed_switch": sup}
+
+        # Bind elements (weapon binds and skin binds)
+        for bind in tree.iter("Bind"):
+            eqp = bind.get("eqp")
+            to_names = {to.get("name") for to in bind.iter("to") if to.get("name")}
+            if eqp and to_names:
+                # Weapon bind (eqp -> to items)
+                weapon_binds[eqp] = to_names
+            if eqp:
+                # Skin bind (eqp -> to classes)
+                # If bind has <to> children with class-like names, track as skin bind
+                for to in bind.iter("to"):
+                    to_name = to.get("name")
+                    if to_name and to_name.startswith("GFL-DOLL-"):
+                        skin_class_binds.setdefault(eqp, set()).add(to_name)
+
+        # Attack type definitions (have ModifiableParams children, not inside Firearm)
+        for at in tree.iter("AttackType"):
+            name = at.get("name")
+            if name and at.find("ModifiableParams") is not None:
+                attack_type_defs.add(name)
+
+        # Equipment definitions (any named element not in skip list)
+        for el in tree.iter():
+            if el.tag not in SKIP_TAGS:
+                name = el.get("name")
+                if name:
+                    all_equipment.add(name)
+
+        # Voice packs
+        for pack in tree.iter("Pack"):
+            name = pack.get("name")
+            if name:
+                voice_packs.add(name)
 
     all_classes = set()
     for cls_set in units.values():
         all_classes.update(cls_set)
 
-    # Weapons
-    weapons = {}
-    weapon_binds = {}
-    print("\nScanning weapons...")
-    for path in collect_all("equipment/gfl_weapons.xml"):
-        tree = parse_xml(path)
-        if not tree:
-            continue
-        for bind in tree.iter("Bind"):
-            eqp = bind.get("eqp")
-            if eqp:
-                weapon_binds[eqp] = {
-                    to.get("name") for to in bind.iter("to") if to.get("name")
-                }
-        for firearm in tree.iter("Firearm"):
-            name = firearm.get("name")
-            if not name:
-                continue
-            attack_types = set()
-            for at in firearm.iter("AttackType"):
-                at_name = at.get("name")
-                if at_name:
-                    attack_types.add(at_name)
-            sup = firearm.get("suppressedSwitch")
-            weapons[name] = {"attack_types": attack_types, "suppressed_switch": sup}
-    ok(f"Found {len(weapons)} weapons")
+    mod_equipment_count = len(all_equipment)
 
-    # Attack types
-    attack_type_defs = set()
-    print("\nScanning attack types...")
-    for path in collect_all("equipment/gfl_attacktypes.xml"):
-        tree = parse_xml(path)
-        if not tree:
-            continue
-        for at in tree.iter("AttackType"):
-            name = at.get("name")
-            if name:
-                attack_type_defs.add(name)
-    ok(f"Found {len(attack_type_defs)} attack type definitions")
-
-    # Ammo
-    ammo_defs = set()
-    print("\nScanning ammo...")
-    for path in collect_all("equipment/gfl_ammo.xml"):
-        tree = parse_xml(path)
-        if not tree:
-            continue
-        for ammo in tree.iter("Ammo"):
-            name = ammo.get("name")
-            if name:
-                ammo_defs.add(name)
-    ok(f"Found {len(ammo_defs)} ammo definitions")
-
-    # Scopes
-    scope_defs = set()
-    print("\nScanning scopes...")
-    for path in collect_all("equipment/gfl_scopes.xml"):
-        tree = parse_xml(path)
-        if not tree:
-            continue
-        for scope in tree.iter("Scope"):
-            name = scope.get("name")
-            if name:
-                scope_defs.add(name)
-    ok(f"Found {len(scope_defs)} scope definitions")
-
-    # Equipment (all named GFL elements)
-    equipment_defs = set()
-    print("\nScanning equipment...")
-    for path in collect_all("equipment/gfl_equipment.xml"):
-        tree = parse_xml(path)
-        if not tree:
-            continue
-        for el in tree.iter():
-            name = el.get("name")
-            if name and name.startswith("GFL"):
-                equipment_defs.add(name)
-    ok(f"Found {len(equipment_defs)} equipment definitions")
-
-    # Grenades
-    grenade_defs = set()
-    print("\nScanning grenades...")
-    for path in collect_all("equipment/gfl_grenades.xml"):
-        tree = parse_xml(path)
-        if not tree:
-            continue
-        for el in tree.iter("Grenade"):
-            name = el.get("name")
-            if name:
-                grenade_defs.add(name)
-    ok(f"Found {len(grenade_defs)} grenade definitions")
-
-    # Skins
-    skin_defs = set()
-    skin_class_binds = {}
-    print("\nScanning skins...")
-    for path in collect_all("equipment/gfl_skins.xml"):
-        tree = parse_xml(path)
-        if not tree:
-            continue
-        for scope in tree.iter("Scope"):
-            name = scope.get("name")
-            if name:
-                skin_defs.add(name)
-        for bind in tree.iter("Bind"):
-            eqp = bind.get("eqp")
-            if eqp:
-                skin_class_binds[eqp] = {
-                    to.get("name") for to in bind.iter("to") if to.get("name")
-                }
-    ok(f"Found {len(skin_defs)} skin definitions")
-
-    # Voice packs
-    voice_packs = set()
-    print("\nScanning voice packs...")
-    for path in collect_all("sounds/gfl_voice_lines_*.xml"):
-        tree = parse_xml(path)
-        if not tree:
-            continue
-        for pack in tree.iter("Pack"):
-            name = pack.get("name")
-            if name:
-                voice_packs.add(name)
-    ok(f"Found {len(voice_packs)} voice packs")
-
-    # Union of all equipment (mod + base game)
-    all_equipment = set()
-    all_equipment.update(weapons.keys())
-    all_equipment.update(ammo_defs)
-    all_equipment.update(scope_defs)
-    all_equipment.update(equipment_defs)
-    all_equipment.update(grenade_defs)
-    all_equipment.update(skin_defs)
+    # Add base game definitions
     all_equipment.update(basegame_equipment)
+
+    ok(f"Found {len(units)} units with {sum(len(c) for c in units.values())} classes")
+    ok(f"Found {len(weapons)} weapons, {len(attack_type_defs)} attack types")
+    ok(f"Found {mod_equipment_count} equipment definitions")
+    ok(f"Found {len(voice_packs)} voice packs")
 
     # ══════════════════════════════════════════════
     # Validate cross-references
@@ -313,7 +267,7 @@ def main():
     print("\n\033[1mValidating skin binds...\033[0m")
     sb_errors_before = len(errors)
     for skin_name, class_refs in skin_class_binds.items():
-        if skin_name not in skin_defs:
+        if skin_name not in all_equipment:
             error(f"Skin bind for '{skin_name}' but no skin definition found")
         for class_ref in class_refs:
             if class_ref not in all_classes:
@@ -529,7 +483,7 @@ def main():
         print(f"\033[31m✗ {len(errors)} error(s) found\033[0m")
         sys.exit(1)
     else:
-        print(f"\033[32m✓ All mod validation passed!\033[0m")
+        print("\033[32m✓ All mod validation passed!\033[0m")
 
 
 if __name__ == "__main__":

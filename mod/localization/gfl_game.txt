@@ -794,7 +794,6 @@
 @ammo_9x18_jhp_stechkin_name=9x18mm JHP +P
 @ammo_9x18_jhp_stechkin_desc=Overpressure hollow-point 9x18mm rounds. The +P loading compensates for the cartridge's lower energy compared to 9x19mm, expanding on impact for increased damage against soft targets at close range.
 
-@firearm_caliber_762x25_name=7.62×25mm Tokarev
 @ammo_762x25_fmj_ppsh41_name=7.62x25mm FMJ
 @ammo_762x25_fmj_ppsh41_desc=High-velocity bottleneck pistol cartridge for submachine guns. The small, fast bullet has surprising penetration for its size but bleeds energy quickly at range.
 
