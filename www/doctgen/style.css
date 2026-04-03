@@ -225,8 +225,8 @@ body {
   background: var(--panel-solid);
   border-bottom: 1px solid var(--card-border);
   flex-shrink: 0;
-  overflow-x: auto;
-  height: 32px;
+  overflow: hidden;
+  height: 34px;
 }
 
 .file-tabs {
@@ -295,6 +295,35 @@ body {
   margin-left: auto;
   padding: 0 12px;
   font-size: 12px;
+}
+
+.vim-tooltip-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 13px;
+  height: 13px;
+  font-size: 9px;
+  font-weight: 600;
+  color: var(--text-muted);
+  border: 1px solid var(--text-muted);
+  border-radius: 50%;
+  cursor: help;
+  margin-left: 2px;
+  vertical-align: middle;
+}
+
+.vim-tooltip {
+  position: fixed;
+  width: 220px;
+  padding: 8px 10px;
+  background: var(--panel-solid);
+  border: 1px solid var(--card-border);
+  color: var(--text-secondary);
+  font-size: 12px;
+  line-height: 1.5;
+  z-index: 200;
+  pointer-events: none;
 }
 
 #editorPane {
@@ -396,7 +425,7 @@ body {
   border-bottom: 1px solid var(--card-border);
   background: var(--panel-solid);
   flex-shrink: 0;
-  height: 32px;
+  height: 34px;
 }
 
 .tab {
@@ -518,6 +547,10 @@ body {
   width: 90%;
   overflow-y: auto;
   padding: 32px;
+}
+
+.modal.compact {
+  padding: 20px 24px;
 }
 
 .modal h1,

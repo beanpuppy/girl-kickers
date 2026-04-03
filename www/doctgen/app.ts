@@ -28,6 +28,7 @@ import { parseKdl, CompileError } from "./src/compiler.ts";
 import { computeLayout } from "./src/layout.ts";
 import type { ComputedLayout, LayoutPanel } from "./src/layout.ts";
 import { generateXml } from "./src/xmlgen.ts";
+import { importDoctrineXml, layoutToKdl } from "./src/import.ts";
 
 // ── Editor theme (ayu dark inspired, matching our palette) ──
 
@@ -209,7 +210,7 @@ interface FileStore {
   [name: string]: string;
 }
 
-const SIMPLE_KDL = `grid columns=2 unit="MyUnit" {
+const SIMPLE_KDL = `grid columns=3 unit="MyUnit" {
     panel title="@branch_one" columns=2 rows=3 {
         node "Alpha" col=0 row=0
         node "Bravo" col=1 row=0
@@ -221,11 +222,20 @@ const SIMPLE_KDL = `grid columns=2 unit="MyUnit" {
         edge "Bravo" "Delta"
     }
 
-    panel title="@branch_two" columns=1 rows=2 {
+    panel title="@branch_two" columns=2 rows=2 width=500 {
         node "Foxtrot" col=0 row=0
-        node "Golf" col=0 row=1
+        node "Golf" col=1 row=0
+        node "Hotel" col=0 row=1
+        node "India" col=1 row=1
 
-        edge "Foxtrot" "Golf"
+        edge "Foxtrot" "Hotel"
+    }
+
+    panel title="@branch_three" columns=1 rows=2 {
+        node "Juliet" col=0 row=0
+        node "Kilo" col=0 row=1
+
+        edge "Juliet" "Kilo"
     }
 }
 `;
@@ -401,8 +411,8 @@ function renderPanelSvg(parts: string[], panel: LayoutPanel): void {
           `<line x1="${nx + dir * NODE_R}" y1="${ny}" x2="${cx - dir * NODE_R}" y2="${cy}" stroke="#606068" stroke-width="2" marker-end="url(#arrowhead)"/>`,
         );
       } else {
-        // L-shaped: vertical then horizontal
-        const midY = ny + NODE_R + 30;
+        // L-shaped: vertical down then horizontal fork near the child
+        const midY = cy - NODE_R - 30;
         parts.push(
           `<line x1="${nx}" y1="${ny + NODE_R}" x2="${nx}" y2="${midY}" stroke="#606068" stroke-width="2"/>`,
         );
@@ -516,7 +526,8 @@ function highlightKdl(code: string): string {
       if (str) return `<span style="color:#aad94c">${str}</span>`;
       if (keyword) return `<span style="color:#d4853b">${keyword}</span>`;
       if (num) return `<span style="color:#d2a6ff">${num}</span>`;
-      if (prop && eq) return `<span style="color:#59c2ff">${prop}</span><span style="color:#f29668">${eq}</span>`;
+      if (prop && eq)
+        return `<span style="color:#59c2ff">${prop}</span><span style="color:#f29668">${eq}</span>`;
       if (brace) return `<span style="color:#a0a0a8">${brace}</span>`;
       return match;
     },
@@ -694,22 +705,7 @@ function main() {
       deleteBtn.className = "danger";
       deleteBtn.addEventListener("click", () => {
         closeContextMenu();
-        if (!confirm(`Delete ${name}?`)) return;
-        delete files[name];
-        saveFiles(files);
-        if (activeFileName === name) {
-          activeFileName = Object.keys(files)[0];
-          setActiveFile(activeFileName);
-          view.dispatch({
-            changes: {
-              from: 0,
-              to: view.state.doc.length,
-              insert: files[activeFileName] ?? "",
-            },
-          });
-          compile();
-        }
-        renderFileTabs();
+        showDeleteModal(name);
       });
       menu.appendChild(deleteBtn);
     }
@@ -752,22 +748,7 @@ function main() {
         close.textContent = "\u00d7";
         close.addEventListener("click", (e) => {
           e.stopPropagation();
-          if (!confirm(`Delete ${name}?`)) return;
-          delete files[name];
-          saveFiles(files);
-          if (activeFileName === name) {
-            activeFileName = Object.keys(files)[0];
-            setActiveFile(activeFileName);
-            view.dispatch({
-              changes: {
-                from: 0,
-                to: view.state.doc.length,
-                insert: files[activeFileName] ?? "",
-              },
-            });
-            compile();
-          }
-          renderFileTabs();
+          showDeleteModal(name);
         });
         tab.appendChild(close);
       }
@@ -776,15 +757,38 @@ function main() {
     }
   }
 
-  fileAddBtn.addEventListener("click", () => {
-    const name = prompt("File name:", "new.kdl");
-    if (!name || files[name]) {
-      if (name && files[name]) showToast("File already exists");
-      return;
-    }
-    files[name] = `grid columns=3 unit="MyUnit" {\n    \n}\n`;
-    saveFiles(files);
-    switchToFile(name);
+  fileAddBtn.addEventListener("click", (e) => {
+    closeContextMenu();
+    const menu = document.createElement("div");
+    menu.className = "context-menu";
+    const rect = fileAddBtn.getBoundingClientRect();
+    menu.style.left = `${rect.left}px`;
+    menu.style.top = `${rect.bottom + 2}px`;
+
+    const newFileBtn = document.createElement("button");
+    newFileBtn.textContent = "New file";
+    newFileBtn.addEventListener("click", () => {
+      closeContextMenu();
+      showNewFileModal();
+    });
+    menu.appendChild(newFileBtn);
+
+    const importBtn = document.createElement("button");
+    importBtn.textContent = "Import XML";
+    importBtn.addEventListener("click", () => {
+      closeContextMenu();
+      showImportModal();
+    });
+    menu.appendChild(importBtn);
+
+    document.body.appendChild(menu);
+    const onClickOutside = (ev: MouseEvent) => {
+      if (!menu.contains(ev.target as Node)) {
+        closeContextMenu();
+        document.removeEventListener("click", onClickOutside);
+      }
+    };
+    setTimeout(() => document.addEventListener("click", onClickOutside), 0);
   });
 
   renderFileTabs();
@@ -803,6 +807,211 @@ function main() {
       effects: vimCompartment.reconfigure(vimToggle.checked ? vim() : []),
     });
   });
+
+  // Vim tooltip
+  const vimInfo = document.getElementById("vimInfo")!;
+  let vimTooltipEl: HTMLDivElement | null = null;
+
+  vimInfo.addEventListener("mouseenter", () => {
+    if (vimTooltipEl) return;
+    vimTooltipEl = document.createElement("div");
+    vimTooltipEl.className = "vim-tooltip";
+    vimTooltipEl.textContent =
+      "Enables Vim keybindings in the editor. If you don't know what Vim is, don't toggle this.";
+    document.body.appendChild(vimTooltipEl);
+    const rect = vimInfo.getBoundingClientRect();
+    vimTooltipEl.style.top = `${rect.bottom + 6}px`;
+    vimTooltipEl.style.right = `${window.innerWidth - rect.right}px`;
+  });
+
+  vimInfo.addEventListener("mouseleave", () => {
+    vimTooltipEl?.remove();
+    vimTooltipEl = null;
+  });
+
+  // New file modal
+  function showNewFileModal() {
+    const overlay = document.createElement("div");
+    overlay.className = "modal-overlay visible";
+
+    const modal = document.createElement("div");
+    modal.className = "modal compact";
+    modal.style.maxWidth = "400px";
+    modal.innerHTML = `
+      <h2>New file</h2>
+      <div style="margin-top: 16px;">
+        <input id="newFileName" type="text" value="new.kdl" style="
+          width: 100%; padding: 8px 12px; font-size: 14px; font-family: inherit;
+          background: var(--bg); color: var(--text); border: 1px solid var(--card-border);
+          outline: none;
+        "/>
+      </div>
+      <div style="display: flex; gap: 8px; margin-top: 20px; justify-content: flex-end;">
+        <button class="btn" id="newFileCancel">Cancel</button>
+        <button class="btn" id="newFileCreate" style="background: var(--accent-light); border-color: var(--accent);">Create</button>
+      </div>
+    `;
+
+    overlay.appendChild(modal);
+    document.body.appendChild(overlay);
+
+    const input = modal.querySelector("#newFileName") as HTMLInputElement;
+    input.focus();
+    input.setSelectionRange(0, input.value.lastIndexOf("."));
+
+    function create() {
+      const name = input.value.trim();
+      if (!name) return;
+      if (files[name]) {
+        showToast("File already exists");
+        return;
+      }
+      files[name] = `grid columns=3 unit="MyUnit" {\n    \n}\n`;
+      saveFiles(files);
+      switchToFile(name);
+      overlay.remove();
+    }
+
+    overlay.addEventListener("click", (e) => {
+      if (e.target === overlay) overlay.remove();
+    });
+
+    input.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") create();
+      if (e.key === "Escape") overlay.remove();
+    });
+
+    modal.querySelector("#newFileCancel")!.addEventListener("click", () => {
+      overlay.remove();
+    });
+
+    modal.querySelector("#newFileCreate")!.addEventListener("click", create);
+  }
+
+  // Delete file modal
+  function showDeleteModal(name: string) {
+    const overlay = document.createElement("div");
+    overlay.className = "modal-overlay visible";
+
+    const modal = document.createElement("div");
+    modal.className = "modal compact";
+    modal.style.maxWidth = "400px";
+    modal.innerHTML = `
+      <h2>Delete file</h2>
+      <p>Delete <strong>${name}</strong>? This cannot be undone.</p>
+      <div style="display: flex; gap: 8px; margin-top: 20px; justify-content: flex-end;">
+        <button class="btn" id="deleteCancel">Cancel</button>
+        <button class="btn" id="deleteConfirm" style="background: rgba(196, 66, 75, 0.15); border-color: var(--danger); color: var(--danger);">Delete</button>
+      </div>
+    `;
+
+    overlay.appendChild(modal);
+    document.body.appendChild(overlay);
+
+    overlay.addEventListener("click", (e) => {
+      if (e.target === overlay) overlay.remove();
+    });
+
+    modal.querySelector("#deleteCancel")!.addEventListener("click", () => {
+      overlay.remove();
+    });
+
+    modal.querySelector("#deleteConfirm")!.addEventListener("click", () => {
+      overlay.remove();
+      delete files[name];
+      saveFiles(files);
+      if (activeFileName === name) {
+        activeFileName = Object.keys(files)[0];
+        setActiveFile(activeFileName);
+        view.dispatch({
+          changes: {
+            from: 0,
+            to: view.state.doc.length,
+            insert: files[activeFileName] ?? "",
+          },
+        });
+        compile();
+      }
+      renderFileTabs();
+    });
+  }
+
+  // Import modal
+  function showImportModal() {
+    const overlay = document.createElement("div");
+    overlay.className = "modal-overlay visible";
+
+    const modal = document.createElement("div");
+    modal.className = "modal compact";
+    modal.style.maxWidth = "560px";
+    modal.innerHTML = `
+      <h2>Import XML</h2>
+      <p>Import a DK2 doctrine GUI XML file. Each doctrine tree found in the file becomes a separate KDL file you can edit here.</p>
+      <p style="margin-top: 8px; color: var(--text-muted); font-size: 13px;">The importer reverse-engineers the layout from pixel positions using heuristics, so the result may need minor adjustments. Always check the output before using it.</p>
+      <p style="margin-top: 16px; color: var(--text-muted); font-size: 13px;">
+        <strong style="color: var(--text-secondary)">Things to know:</strong>
+      </p>
+      <ul style="color: var(--text-muted); font-size: 13px; padding-left: 20px; margin-top: 4px; line-height: 1.7;">
+        <li>Decorations that were grouped in one anchor get split into separate anchors. This is a limitation of the import. When writing KDL yourself, you should group related decorations in a single anchor with pixel offsets (see the KDL reference).</li>
+        <li>Comments in the XML are not carried over.</li>
+        <li>Doctgen computes panel widths automatically from the grid. If the original XML uses panel widths that don't fit a uniform grid, the importer adds explicit <code>width</code> and <code>height</code> properties to preserve the exact dimensions.</li>
+      </ul>
+      <div style="display: flex; gap: 8px; margin-top: 20px; justify-content: flex-end;">
+        <button class="btn" id="importCancel">Cancel</button>
+        <button class="btn" id="importChoose" style="background: var(--accent-light); border-color: var(--accent);">Choose file</button>
+      </div>
+    `;
+
+    overlay.appendChild(modal);
+    document.body.appendChild(overlay);
+
+    overlay.addEventListener("click", (e) => {
+      if (e.target === overlay) overlay.remove();
+    });
+
+    modal.querySelector("#importCancel")!.addEventListener("click", () => {
+      overlay.remove();
+    });
+
+    modal.querySelector("#importChoose")!.addEventListener("click", () => {
+      overlay.remove();
+      const input = document.createElement("input");
+      input.type = "file";
+      input.accept = ".xml";
+      input.addEventListener("change", () => {
+        const file = input.files?.[0];
+        if (!file) return;
+        file.text().then((xml) => {
+          try {
+            const layouts = importDoctrineXml(xml);
+            if (layouts.length === 0) {
+              showToast("No doctrine trees found in XML");
+              return;
+            }
+            let firstName = "";
+            for (const layout of layouts) {
+              const name =
+                layout.unitName.toLowerCase().replace(/[^a-z0-9]+/g, "_") +
+                ".kdl";
+              files[name] = layoutToKdl(layout);
+              if (!firstName) firstName = name;
+            }
+            saveFiles(files);
+            switchToFile(firstName);
+            renderFileTabs();
+            showToast(
+              `Imported ${layouts.length} doctrine${layouts.length > 1 ? "s" : ""}`,
+            );
+          } catch (err) {
+            showToast(
+              `Import failed: ${err instanceof Error ? err.message : err}`,
+            );
+          }
+        });
+      });
+      input.click();
+    });
+  }
 
   // Compile
   let lastXml = "";
@@ -852,7 +1061,7 @@ function main() {
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = "doctrine.xml";
+    a.download = activeFileName.replace(/\.kdl$/, ".xml");
     a.click();
     URL.revokeObjectURL(url);
   });

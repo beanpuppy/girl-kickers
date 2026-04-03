@@ -44,6 +44,11 @@ export interface DoctrinePanel {
   titleBarHeight: number;
   titleBarColor: string;
   titleFont: string;
+  width?: number;
+  height?: number;
+  paddingTop?: number;
+  paddingBottom?: number;
+  rowSpacing?: number;
 }
 
 export interface DoctrineStyle {
@@ -61,6 +66,9 @@ export interface DoctrineLayout {
   unitName: string;
   panels: DoctrinePanel[];
   style: DoctrineStyle;
+  gap?: number;
+  columnGap?: number;
+  rowGap?: number;
 }
 
 export class CompileError extends Error {
@@ -131,7 +139,25 @@ export function parseKdl(kdlText: string): DoctrineLayout {
       optionalString(gridNode, "active-color") ?? DEFAULT_STYLE.activeColor,
   };
 
-  return { gridColumns, unitName, panels, style };
+  const gap = gridNode.properties.gap as number | undefined;
+  if (gap !== undefined && (typeof gap !== "number" || gap < 0)) {
+    throw new CompileError('"gap" must be a non-negative number');
+  }
+
+  const columnGap = gridNode.properties["column-gap"] as number | undefined;
+  if (
+    columnGap !== undefined &&
+    (typeof columnGap !== "number" || columnGap < 0)
+  ) {
+    throw new CompileError('"column-gap" must be a non-negative number');
+  }
+
+  const rowGap = gridNode.properties["row-gap"] as number | undefined;
+  if (rowGap !== undefined && (typeof rowGap !== "number" || rowGap < 0)) {
+    throw new CompileError('"row-gap" must be a non-negative number');
+  }
+
+  return { gridColumns, unitName, panels, style, gap, columnGap, rowGap };
 }
 
 function optionalString(node: KdlNode, key: string): string | undefined {
@@ -238,6 +264,52 @@ function parsePanel(panelNode: KdlNode, gridColumns: number): DoctrinePanel {
     );
   }
 
+  const width = panelNode.properties.width as number | undefined;
+  if (width !== undefined && (typeof width !== "number" || width < 1)) {
+    throw new CompileError(
+      `Panel "${title}": "width" must be a positive number`,
+    );
+  }
+
+  const height = panelNode.properties.height as number | undefined;
+  if (height !== undefined && (typeof height !== "number" || height < 1)) {
+    throw new CompileError(
+      `Panel "${title}": "height" must be a positive number`,
+    );
+  }
+
+  const paddingTop = panelNode.properties["padding-top"] as number | undefined;
+  if (
+    paddingTop !== undefined &&
+    (typeof paddingTop !== "number" || paddingTop < 0)
+  ) {
+    throw new CompileError(
+      `Panel "${title}": "padding-top" must be a non-negative number`,
+    );
+  }
+
+  const paddingBottom = panelNode.properties["padding-bottom"] as
+    | number
+    | undefined;
+  if (
+    paddingBottom !== undefined &&
+    (typeof paddingBottom !== "number" || paddingBottom < 0)
+  ) {
+    throw new CompileError(
+      `Panel "${title}": "padding-bottom" must be a non-negative number`,
+    );
+  }
+
+  const rowSpacing = panelNode.properties["row-spacing"] as number | undefined;
+  if (
+    rowSpacing !== undefined &&
+    (typeof rowSpacing !== "number" || rowSpacing < 1)
+  ) {
+    throw new CompileError(
+      `Panel "${title}": "row-spacing" must be a positive number`,
+    );
+  }
+
   const bgColor = optionalString(panelNode, "bg-color") ?? "211e1d80";
   const titleColor = optionalString(panelNode, "title-color") ?? "f0e3cc";
   const titleBarHeight =
@@ -260,6 +332,11 @@ function parsePanel(panelNode: KdlNode, gridColumns: number): DoctrinePanel {
     titleBarHeight,
     titleBarColor,
     titleFont,
+    width,
+    height,
+    paddingTop,
+    paddingBottom,
+    rowSpacing,
   };
 }
 

@@ -26,12 +26,15 @@ grid columns=3 unit="GFL-UNIT-DEFY" {
 }
 ```
 
-| Property | Required | Description |
-|----------|----------|-------------|
-| `columns` | yes | Number of columns in the panel grid |
-| `unit` | yes | Unit name (used for `#UnitName_DoctrineTree`) |
-| `inactive-color` | no | Connector inactive colour (default `716b5f`) |
-| `active-color` | no | Connector active colour (default `f97b03`) |
+| Property         | Required | Description                                       |
+| ---------------- | -------- | ------------------------------------------------- |
+| `columns`        | yes      | Number of columns in the panel grid               |
+| `unit`           | yes      | Unit name (used for `#UnitName_DoctrineTree`)     |
+| `inactive-color` | no       | Connector inactive colour (default `716b5f`)      |
+| `active-color`   | no       | Connector active colour (default `f97b03`)        |
+| `gap`            | no       | Gap between panels in pixels (default `20`)       |
+| `column-gap`     | no       | Horizontal gap between panels (overrides `gap`)   |
+| `row-gap`        | no       | Vertical gap between panel rows (overrides `gap`) |
 
 Panels flow left-to-right and wrap to the next row automatically, following [CSS grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout) auto-flow rules. Panels in the same row stretch to match the tallest panel's height.
 
@@ -45,18 +48,23 @@ panel title="@menu_doctrine_branch_calibration" columns=2 rows=4 {
 }
 ```
 
-| Property | Required | Default | Description |
-|----------|----------|---------|-------------|
-| `title` | yes | | Localisation key for the title text |
-| `columns` | yes | | Number of columns in the node grid |
-| `rows` | yes | | Number of rows in the node grid |
-| `colspan` | no | `1` | Number of outer grid columns to span |
-| `rowspan` | no | `1` | Number of outer grid rows to span |
-| `bg-color` | no | `211e1d80` | Panel background colour |
-| `title-color` | no | `f0e3cc` | Title text colour |
-| `title-bar-height` | no | `72` | Title bar height in pixels |
-| `title-bar-color` | no | `211e1d40` | Title bar background colour |
-| `title-font` | no | `header_3` | Title font (`header_2` enables auto-downsize) |
+| Property           | Required | Default    | Description                                           |
+| ------------------ | -------- | ---------- | ----------------------------------------------------- |
+| `title`            | yes      |            | Localisation key for the title text                   |
+| `columns`          | yes      |            | Number of columns in the node grid                    |
+| `rows`             | yes      |            | Number of rows in the node grid                       |
+| `colspan`          | no       | `1`        | Number of outer grid columns to span                  |
+| `rowspan`          | no       | `1`        | Number of outer grid rows to span                     |
+| `width`            | no       | auto       | Panel width in pixels (overrides grid-computed width) |
+| `height`           | no       | auto       | Panel height in pixels (overrides computed height)    |
+| `padding-top`      | no       | `160`      | Distance from panel top to first node row             |
+| `padding-bottom`   | no       | `80`       | Distance from last node row to panel bottom           |
+| `row-spacing`      | no       | `180`      | Vertical distance between node rows                   |
+| `bg-color`         | no       | `211e1d80` | Panel background colour                               |
+| `title-color`      | no       | `f0e3cc`   | Title text colour                                     |
+| `title-bar-height` | no       | `72`       | Title bar height in pixels                            |
+| `title-bar-color`  | no       | `211e1d40` | Title bar background colour                           |
+| `title-font`       | no       | `header_3` | Title font (`header_2` enables auto-downsize)         |
 
 ### Grid layout examples
 
@@ -128,10 +136,10 @@ anchor x="0%" y="100%" {
 }
 ```
 
-| Property | Required | Description |
-|----------|----------|-------------|
-| `x` | yes | Horizontal position as percentage of panel width |
-| `y` | yes | Vertical position as percentage of panel height |
+| Property | Required | Description                                      |
+| -------- | -------- | ------------------------------------------------ |
+| `x`      | yes      | Horizontal position as percentage of panel width |
+| `y`      | yes      | Vertical position as percentage of panel height  |
 
 `x="0%"` is the left edge, `x="100%"` is the right edge. `y="0%"` is the top, `y="100%"` is the bottom.
 
@@ -147,14 +155,14 @@ decor "data/textures/gui/square.tga" width="100%" height=8 color="E4E4E480"
 
 The first argument is the texture path.
 
-| Property | Required | Default | Description |
-|----------|----------|---------|-------------|
-| `x` | no | `0` | Pixel offset from anchor (positive = right) |
-| `y` | no | `0` | Pixel offset from anchor (positive = down) |
-| `width` | no | | Width: pixels (number) or percentage of panel width (string) |
-| `height` | no | | Height: pixels (number) or percentage of panel height (string) |
-| `color` | no | | Colour tint (hex, e.g. `E4E4E480`) |
-| `flip-x` | no | | Mirror horizontally (`"true"`) |
+| Property | Required | Default | Description                                                    |
+| -------- | -------- | ------- | -------------------------------------------------------------- |
+| `x`      | no       | `0`     | Pixel offset from anchor (positive = right)                    |
+| `y`      | no       | `0`     | Pixel offset from anchor (positive = down)                     |
+| `width`  | no       |         | Width: pixels (number) or percentage of panel width (string)   |
+| `height` | no       |         | Height: pixels (number) or percentage of panel height (string) |
+| `color`  | no       |         | Colour tint (hex, e.g. `E4E4E480`)                             |
+| `flip-x` | no       |         | Mirror horizontally (`"true"`)                                 |
 
 Multiple decors in one anchor share the same anchor point, useful for grouped elements:
 

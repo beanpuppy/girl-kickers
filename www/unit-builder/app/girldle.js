@@ -619,21 +619,14 @@ function girldleRenderInput(guesses, solved, failed) {
   const suggestions = document.getElementById("girldleSuggestions");
   const guessBtn = document.getElementById("girldleGuessBtn");
   let selectedDoll = null;
+  let highlightIdx = -1;
 
-  input.addEventListener("input", () => {
+  function showSuggestions() {
     const val = input.value.trim().toLowerCase();
-    selectedDoll = null;
-    guessBtn.disabled = true;
 
-    if (val.length < 1) {
-      suggestions.innerHTML = "";
-      suggestions.style.display = "none";
-      return;
-    }
-
-    const matches = available
-      .filter((d) => d.name.toLowerCase().includes(val))
-      .slice(0, 8);
+    const matches = val.length < 1
+      ? available.slice(0, 8)
+      : available.filter((d) => d.name.toLowerCase().includes(val)).slice(0, 8);
 
     if (matches.length === 0) {
       suggestions.innerHTML = "";
@@ -658,9 +651,16 @@ function girldleRenderInput(guesses, solved, failed) {
         suggestions.style.display = "none";
       });
     });
+  }
+
+  input.addEventListener("input", () => {
+    selectedDoll = null;
+    guessBtn.disabled = true;
+    highlightIdx = -1;
+    showSuggestions();
   });
 
-  let highlightIdx = -1;
+  input.addEventListener("focus", showSuggestions);
 
   input.addEventListener("keydown", (e) => {
     const items = suggestions.querySelectorAll(".girldle-suggestion");

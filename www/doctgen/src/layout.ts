@@ -10,11 +10,12 @@ import type {
 
 // DK2 GUI constants
 const SCREEN_WIDTH = 1290;
-const ROW_SPACING = 180;
-const FIRST_ROW_OFFSET = 160;
+const DEFAULT_ROW_SPACING = 180;
+const DEFAULT_FIRST_ROW_OFFSET = 160;
+const DEFAULT_PANEL_BOTTOM_PADDING = 80;
 const TITLE_BAR_HEIGHT = 72;
 const PANEL_TOP_PADDING = 70; // origin Y offset from screen top
-const PANEL_GAP = 20;
+const DEFAULT_PANEL_GAP = 20;
 const CONNECTOR_BAR_WIDTH = 8;
 const CONNECTOR_BAR_START_Y = 60; // below node centre (bottom of ~120px icon)
 const CONNECTOR_ARROW_OFFSET = 16; // arrow tip from bar end
@@ -105,6 +106,10 @@ interface PlacedPanel {
 }
 
 export function computeLayout(ir: DoctrineLayout): ComputedLayout {
+  const baseGap = ir.gap ?? DEFAULT_PANEL_GAP;
+  const colGap = ir.columnGap ?? baseGap;
+  const rowGap = ir.rowGap ?? baseGap;
+
   // CSS grid-style auto-flow placement
   const placed = placeOnGrid(ir.panels, ir.gridColumns);
 
@@ -118,7 +123,14 @@ export function computeLayout(ir: DoctrineLayout): ComputedLayout {
   // For rowspan=1 panels, their height contributes to their row
   // For rowspan>1 panels, distribute height evenly across spanned rows
   for (const p of placed) {
-    const panelHeight = computePanelHeight(p.panel.rows);
+    const panelHeight =
+      p.panel.height ??
+      computePanelHeight(
+        p.panel.rows,
+        p.panel.paddingTop,
+        p.panel.paddingBottom,
+        p.panel.rowSpacing,
+      );
     if (p.panel.rowspan === 1) {
       rowHeights[p.gridRow] = Math.max(rowHeights[p.gridRow], panelHeight);
     } else {
@@ -129,13 +141,21 @@ export function computeLayout(ir: DoctrineLayout): ComputedLayout {
     }
   }
 
-  const panels: LayoutPanel[] = placed.map((p) => {
-    const yOffset = computeRowYOffset(p.gridRow, rowHeights);
+  // Compute effective widths: if some panels in a row have explicit widths,
+  // distribute the remaining screen space among auto-width panels
+  const effectiveWidths = computeEffectiveWidths(
+    placed,
+    ir.gridColumns,
+    colGap,
+  );
+
+  const panels: LayoutPanel[] = placed.map((p, i) => {
+    const yOffset = computeRowYOffset(p.gridRow, rowHeights, rowGap);
     // Panel height = sum of spanned row heights + gaps between them
     let totalHeight = 0;
     for (let r = 0; r < p.panel.rowspan; r++) {
       totalHeight += rowHeights[p.gridRow + r];
-      if (r > 0) totalHeight += PANEL_GAP;
+      if (r > 0) totalHeight += rowGap;
     }
     return computePanel(
       p.panel,
@@ -145,6 +165,8 @@ export function computeLayout(ir: DoctrineLayout): ComputedLayout {
       p.index,
       ir.style,
       totalHeight,
+      effectiveWidths[i],
+      colGap,
     );
   });
 
@@ -216,12 +238,67 @@ function placeOnGrid(
   return placed;
 }
 
-function computeRowYOffset(gridRow: number, rowHeights: number[]): number {
+function computeRowYOffset(
+  gridRow: number,
+  rowHeights: number[],
+  gap: number,
+): number {
   let y = PANEL_TOP_PADDING;
   for (let r = 0; r < gridRow; r++) {
-    y += (rowHeights[r] ?? 0) + PANEL_GAP;
+    y += (rowHeights[r] ?? 0) + gap;
   }
   return -y;
+}
+
+function computeEffectiveWidths(
+  placed: PlacedPanel[],
+  gridColumns: number,
+  gap: number,
+): (number | undefined)[] {
+  const widths: (number | undefined)[] = new Array(placed.length).fill(
+    undefined,
+  );
+
+  // Check if any panel has an explicit width
+  const hasExplicitWidth = placed.some((p) => p.panel.width !== undefined);
+  if (!hasExplicitWidth) return widths;
+
+  // Group panels by grid row
+  const rowPanels = new Map<number, number[]>();
+  for (let i = 0; i < placed.length; i++) {
+    const row = placed[i].gridRow;
+    const group = rowPanels.get(row) ?? [];
+    group.push(i);
+    rowPanels.set(row, group);
+  }
+
+  for (const indices of rowPanels.values()) {
+    let explicitTotal = 0;
+    let autoColspanTotal = 0;
+
+    for (const i of indices) {
+      if (placed[i].panel.width !== undefined) {
+        explicitTotal += placed[i].panel.width!;
+      } else {
+        autoColspanTotal += placed[i].panel.colspan;
+      }
+    }
+
+    if (autoColspanTotal === 0) continue; // all explicit, nothing to distribute
+
+    // Available space = screen width minus gaps minus explicit widths
+    const totalGaps = gap * (indices.length + 1);
+    const availableForAuto = SCREEN_WIDTH - totalGaps - explicitTotal;
+    const perColspan = availableForAuto / autoColspanTotal;
+
+    for (const i of indices) {
+      if (placed[i].panel.width === undefined) {
+        widths[i] = Math.round(perColspan * placed[i].panel.colspan);
+      }
+    }
+  }
+
+  return widths;
 }
 
 function computePanel(
@@ -232,14 +309,28 @@ function computePanel(
   panelIndex: number,
   style: DoctrineStyle,
   heightOverride?: number,
+  widthOverride?: number,
+  gap: number = DEFAULT_PANEL_GAP,
 ): LayoutPanel {
-  const panelWidth = computePanelWidth(gridColumns, panel.colspan);
-  const panelHeight = heightOverride ?? computePanelHeight(panel.rows);
+  const panelWidth =
+    widthOverride ??
+    panel.width ??
+    computePanelWidth(gridColumns, panel.colspan, gap);
+  const panelHeight =
+    panel.height ??
+    heightOverride ??
+    computePanelHeight(
+      panel.rows,
+      panel.paddingTop,
+      panel.paddingBottom,
+      panel.rowSpacing,
+    );
   const { origin, align } = computePanelPosition(
     gridColumns,
     gridCol,
     yOffset,
     panel.colspan,
+    gap,
   );
 
   const nodeMap = new Map<string, DoctrineNode>();
@@ -255,12 +346,28 @@ function computePanel(
     edgesByParent.set(edge.from, existing);
   }
 
+  const pTop = panel.paddingTop ?? DEFAULT_FIRST_ROW_OFFSET;
+  const pRowSpacing = panel.rowSpacing ?? DEFAULT_ROW_SPACING;
+
   const layoutNodes: LayoutNodeWithConnectors[] = panel.nodes.map((node) => {
-    const layoutNode = computeNodePosition(node, panel.columns, panelWidth);
+    const layoutNode = computeNodePosition(
+      node,
+      panel.columns,
+      panelWidth,
+      pTop,
+      pRowSpacing,
+    );
     const edges = edgesByParent.get(node.name) ?? [];
     const connectors =
       edges.length > 0
-        ? computeConnectors(node, edges, nodeMap, panel.columns, panelWidth)
+        ? computeConnectors(
+            node,
+            edges,
+            nodeMap,
+            panel.columns,
+            panelWidth,
+            pRowSpacing,
+          )
         : [];
     const childNames = edges.map((e) => e.to);
     return { node: layoutNode, connectors, childNames };
@@ -287,17 +394,24 @@ function computePanel(
   };
 }
 
-function computePanelWidth(gridColumns: number, colspan: number): number {
-  const totalGap = PANEL_GAP * (gridColumns + 1);
+function computePanelWidth(
+  gridColumns: number,
+  colspan: number,
+  gap: number = DEFAULT_PANEL_GAP,
+): number {
+  const totalGap = gap * (gridColumns + 1);
   const availableWidth = SCREEN_WIDTH - totalGap;
   const colWidth = availableWidth / gridColumns;
-  return Math.round(colWidth * colspan + PANEL_GAP * (colspan - 1));
+  return Math.round(colWidth * colspan + gap * (colspan - 1));
 }
 
-const PANEL_BOTTOM_PADDING = 80; // space below last row's node centre
-
-function computePanelHeight(rows: number): number {
-  return FIRST_ROW_OFFSET + (rows - 1) * ROW_SPACING + PANEL_BOTTOM_PADDING;
+function computePanelHeight(
+  rows: number,
+  paddingTop: number = DEFAULT_FIRST_ROW_OFFSET,
+  paddingBottom: number = DEFAULT_PANEL_BOTTOM_PADDING,
+  rowSpacing: number = DEFAULT_ROW_SPACING,
+): number {
+  return paddingTop + (rows - 1) * rowSpacing + paddingBottom;
 }
 
 function computePanelPosition(
@@ -305,21 +419,21 @@ function computePanelPosition(
   gridCol: number,
   yOffset: number,
   colspan: number,
+  gap: number,
 ): { origin: string; align: Align } {
-  // All panels use align="lt" with Y from top-left for consistency
   if (colspan === gridColumns) {
-    return { origin: `${PANEL_GAP} ${yOffset}`, align: "lt" as Align };
+    return { origin: `${gap} ${yOffset}`, align: "lt" as Align };
   }
 
   if (gridColumns === 1) {
-    return { origin: `${PANEL_GAP} ${yOffset}`, align: "lt" as Align };
+    return { origin: `${gap} ${yOffset}`, align: "lt" as Align };
   }
 
   if (gridCol === 0) {
-    return { origin: `${PANEL_GAP} ${yOffset}`, align: "lt" as Align };
+    return { origin: `${gap} ${yOffset}`, align: "lt" as Align };
   }
   if (gridCol + colspan === gridColumns) {
-    return { origin: `-${PANEL_GAP} ${yOffset}`, align: "rt" as Align };
+    return { origin: `-${gap} ${yOffset}`, align: "rt" as Align };
   }
   return { origin: `0 ${yOffset}`, align: "t" as Align };
 }
@@ -328,8 +442,10 @@ export function computeNodePosition(
   node: DoctrineNode,
   panelColumns: number,
   panelWidth: number,
+  paddingTop: number = DEFAULT_FIRST_ROW_OFFSET,
+  rowSpacing: number = DEFAULT_ROW_SPACING,
 ): LayoutNode {
-  const y = -(node.row * ROW_SPACING + FIRST_ROW_OFFSET);
+  const y = -(node.row * rowSpacing + paddingTop);
   const { x, align } = computeColumnPosition(
     node.col,
     panelColumns,
@@ -384,6 +500,7 @@ function computeConnectors(
   nodeMap: Map<string, DoctrineNode>,
   panelColumns: number,
   panelWidth: number,
+  rowSpacing: number = DEFAULT_ROW_SPACING,
 ): Connector[] {
   const children = edges.map((e) => nodeMap.get(e.to)!);
 
@@ -419,7 +536,9 @@ function computeConnectors(
   if (sameColVertical.length > 0 && diffColVertical.length === 0) {
     // Straight vertical to same-column child(ren)
     for (const child of sameColVertical) {
-      connectors.push(buildStraightVerticalConnector(parentNode, child));
+      connectors.push(
+        buildStraightVerticalConnector(parentNode, child, rowSpacing),
+      );
     }
   } else if (sameColVertical.length > 0 && diffColVertical.length > 0) {
     // Branching: vertical bar to same-col child + horizontal branches to diff-col children
@@ -430,6 +549,7 @@ function computeConnectors(
         diffColVertical,
         panelColumns,
         panelWidth,
+        rowSpacing,
       ),
     );
   } else if (diffColVertical.length > 0) {
@@ -447,13 +567,20 @@ function computeConnectors(
           diffColVertical,
           panelColumns,
           panelWidth,
+          rowSpacing,
         ),
       );
     } else {
       // L-shaped connectors
       for (const child of diffColVertical) {
         connectors.push(
-          buildLShapedConnector(parentNode, child, panelColumns, panelWidth),
+          buildLShapedConnector(
+            parentNode,
+            child,
+            panelColumns,
+            panelWidth,
+            rowSpacing,
+          ),
         );
       }
     }
@@ -465,12 +592,13 @@ function computeConnectors(
 function buildStraightVerticalConnector(
   parent: DoctrineNode,
   child: DoctrineNode,
+  rowSpacing: number = DEFAULT_ROW_SPACING,
 ): Connector {
   const rowDelta = child.row - parent.row;
   const barHeight =
     rowDelta === 1
       ? CONNECTOR_STRAIGHT_BAR_HEIGHT
-      : CONNECTOR_STRAIGHT_BAR_HEIGHT + (rowDelta - 1) * ROW_SPACING;
+      : CONNECTOR_STRAIGHT_BAR_HEIGHT + (rowDelta - 1) * rowSpacing;
 
   return {
     segments: [
@@ -545,12 +673,13 @@ function buildBranchConnector(
   diffColChildren: DoctrineNode[],
   panelColumns: number,
   panelWidth: number,
+  rowSpacing: number = DEFAULT_ROW_SPACING,
 ): Connector {
   const rowDelta = sameColChild.row - parent.row;
   const barHeight =
     rowDelta === 1
       ? CONNECTOR_STRAIGHT_BAR_HEIGHT
-      : CONNECTOR_STRAIGHT_BAR_HEIGHT + (rowDelta - 1) * ROW_SPACING;
+      : CONNECTOR_STRAIGHT_BAR_HEIGHT + (rowDelta - 1) * rowSpacing;
 
   const segments: ConnectorSegment[] = [
     {
@@ -633,6 +762,7 @@ function buildTJunctionConnector(
   allChildren: DoctrineNode[],
   panelColumns: number,
   panelWidth: number,
+  rowSpacing: number = DEFAULT_ROW_SPACING,
 ): Connector {
   // Find the directly-below child (if any) for the vertical bar
   const belowChild = allChildren.find((c) => c.col === parent.col);
@@ -643,7 +773,7 @@ function buildTJunctionConnector(
     const barHeight =
       rowDelta === 1
         ? CONNECTOR_STRAIGHT_BAR_HEIGHT
-        : CONNECTOR_STRAIGHT_BAR_HEIGHT + (rowDelta - 1) * ROW_SPACING;
+        : CONNECTOR_STRAIGHT_BAR_HEIGHT + (rowDelta - 1) * rowSpacing;
     segments.push(
       {
         type: "vertical_bar",
@@ -734,12 +864,13 @@ function buildLShapedConnector(
   child: DoctrineNode,
   panelColumns: number,
   panelWidth: number,
+  rowSpacing: number = DEFAULT_ROW_SPACING,
 ): Connector {
   const rowDelta = child.row - parent.row;
   const barHeight =
     rowDelta === 1
       ? CONNECTOR_STRAIGHT_BAR_HEIGHT
-      : CONNECTOR_STRAIGHT_BAR_HEIGHT + (rowDelta - 1) * ROW_SPACING;
+      : CONNECTOR_STRAIGHT_BAR_HEIGHT + (rowDelta - 1) * rowSpacing;
 
   const hBarWidth = getHorizontalBarWidth(
     parent,
