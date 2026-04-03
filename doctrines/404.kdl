@@ -1,0 +1,99 @@
+grid columns=3 unit="GFL-UNIT-404" {
+    panel title="@menu_doctrine_branch_calibration" columns=2 rows=4 {
+        anchor x="0%" y="0%" {
+            decor "data/textures/gui/deploy/deploy_class_diagonalbars.dds" width=190 height=75 color="0c0b0b33"
+        }
+        anchor x="100%" y="0%" {
+            decor "data/textures/gui/deploy/deploy_class_diagonalbars.dds" width=190 height=75 color="0c0b0b33" flip-x="true"
+        }
+
+        node "GFL_LethalPrecision" col=0 row=0
+        node "GFL_CQCProtocols" col=1 row=0
+        node "GFL_RapidDeployment" col=0 row=1
+        node "GFL_OverwhelmingForce" col=1 row=1
+        node "GFL_WeaponTransition" col=0 row=2
+        node "GFL_CombatEfficiency" col=1 row=2
+        node "GFL_SuppressionProtocols" col=0.5 row=3
+
+        edge "GFL_CQCProtocols" "GFL_OverwhelmingForce"
+        edge "GFL_RapidDeployment" "GFL_WeaponTransition"
+        edge "GFL_RapidDeployment" "GFL_CombatEfficiency"
+    }
+
+    panel title="@menu_doctrine_branch_neuralhelix" columns=2 rows=3 {
+        anchor x="0%" y="0%" {
+            decor "data/textures/gui/deploy/deploy_class_diagonalbars.dds" width=190 height=75 color="0c0b0b33"
+        }
+        anchor x="100%" y="0%" {
+            decor "data/textures/gui/deploy/deploy_class_diagonalbars.dds" width=190 height=75 color="0c0b0b33" flip-x="true"
+        }
+
+        node "GFL_404_DreamWonderland" col=0 row=0
+        node "GFL_404_NoticeMeBigSis" col=1 row=0
+        node "GFL_404_ShadowsFury" col=0 row=1
+        node "GFL_404_DepressiveMentality" col=1 row=1
+        node "GFL_404_DelayedResponse" col=0.5 row=2
+    }
+
+    panel title="@menu_doctrine_branch_remolder" columns=2 rows=3 {
+        anchor x="0%" y="0%" {
+            decor "data/textures/gui/deploy/deploy_class_diagonalbars.dds" width=190 height=75 color="0c0b0b33"
+        }
+        anchor x="100%" y="0%" {
+            decor "data/textures/gui/deploy/deploy_class_diagonalbars.dds" width=190 height=75 color="0c0b0b33" flip-x="true"
+        }
+
+        node "GFL_CommunicationProtocols" col=0 row=0
+        node "GFL_OptimizedPerformance" col=1 row=0
+        node "GFL_AdvancedProtocols" col=0 row=1
+        node "GFL_TacticalIntelligence" col=0 row=2
+        node "GFL_InformationExtraction" col=1 row=2
+
+        edge "GFL_CommunicationProtocols" "GFL_AdvancedProtocols"
+        edge "GFL_AdvancedProtocols" "GFL_TacticalIntelligence"
+        edge "GFL_AdvancedProtocols" "GFL_InformationExtraction"
+    }
+
+    panel title="@menu_doctrine_level_vet" colspan=3 columns=4 rows=1 \
+        title-bar-height=90 title-bar-color="88888880" \
+        title-font="header_2" {
+
+        anchor x="0%" y="0%" {
+            decor "data/textures/gui/deploy/deploy_class_diagonalbars.dds" width=220 height=95 color="0c0b0b33"
+        }
+        anchor x="100%" y="0%" {
+            decor "data/textures/gui/deploy/deploy_class_diagonalbars.dds" width=220 height=95 color="0c0b0b33" flip-x="true"
+        }
+
+        // bottom border
+        anchor x="0%" y="100%" {
+            decor "data/textures/gui/square.tga" width="100%" height=8 color="88888880"
+        }
+        // left border (below title)
+        anchor x="0%" y="37%" {
+            decor "data/textures/gui/square.tga" width=8 height="62%" color="88888880"
+        }
+        // right border (below title)
+        anchor x="100%" y="37%" {
+            decor "data/textures/gui/square.tga" width=8 height="62%" color="88888880"
+        }
+
+        // stars left of title
+        anchor x="16%" y="10%" {
+            decor "data/textures/gui/missions/pack_stars.tga"
+            decor "data/textures/gui/missions/pack_stars.tga" x=50 color="f0e3cc"
+            decor "data/textures/gui/missions/pack_stars.tga" x=100 color="f0e3cc"
+        }
+        // stars right of title
+        anchor x="80%" y="10%" {
+            decor "data/textures/gui/missions/pack_stars.tga"
+            decor "data/textures/gui/missions/pack_stars.tga" x=-50 color="f0e3cc"
+            decor "data/textures/gui/missions/pack_stars.tga" x=-100 color="f0e3cc"
+        }
+
+        node "GFL_404_HighValueTarget" col=0 row=0
+        node "GFL_404_PhantomSignal" col=1 row=0
+        node "GFL_404_DamageControl" col=2 row=0
+        node "GFL_404_CloseQuartersDominance" col=3 row=0
+    }
+}
