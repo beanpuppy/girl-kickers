@@ -3,6 +3,11 @@ Girls' Frontline mod for Door Kickers 2.
 
 [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3580762170)
 
+## Web Tools
+
+- [Unit Builder](https://antistrategie.github.io/girl-kickers/unit-builder/) - build and share custom squads with the mod's tactical dolls
+- [Doctgen](https://antistrategie.github.io/girl-kickers/doctgen/) - visual editor for creating DK2 doctrine tree layouts from KDL, with live preview and XML export
+
 ## Development Setup
 
 ### Clone the Repository

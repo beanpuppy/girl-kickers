@@ -1,6 +1,6 @@
 # DK2 Doctrine GUI XML Reference
 
-Reference for how DK2's doctrine screen GUI XML works. Used by the doctrine compiler (`www/doctrine-compiler/`).
+Reference for how DK2's doctrine screen GUI XML works. Used by Doctgen (`www/doctgen/`).
 
 ## File Structure
 

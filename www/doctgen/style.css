@@ -1,0 +1,640 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #0e0e11;
+  --panel: rgba(18, 18, 22, 0.82);
+  --panel-solid: #121216;
+  --text: #e8e8ec;
+  --text-secondary: #a0a0a8;
+  --text-muted: #606068;
+  --accent: #d4853b;
+  --accent-light: rgba(212, 133, 59, 0.15);
+  --danger: #c4424b;
+  --card-border: rgba(255, 255, 255, 0.06);
+  --section-bg: rgba(255, 255, 255, 0.03);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family:
+    "DM Sans",
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* ── Top bar ── */
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background: var(--panel-solid);
+  border-bottom: 1px solid var(--card-border);
+  flex-shrink: 0;
+}
+
+.top-bar .title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.top-bar .title .brand {
+  color: var(--accent);
+  margin-right: 8px;
+}
+
+.top-bar .title .sub {
+  color: var(--text-secondary);
+  font-weight: 400;
+}
+
+.top-bar-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ── Buttons ── */
+.btn {
+  background: var(--section-bg);
+  color: var(--text);
+  border: 1px solid var(--card-border);
+  padding: 6px 14px;
+  font-size: 13px;
+  font-family: inherit;
+  cursor: pointer;
+  transition:
+    background 0.15s,
+    border-color 0.15s;
+}
+
+.btn:hover {
+  background: var(--accent-light);
+  border-color: var(--accent);
+}
+
+.btn-icon {
+  padding: 6px 8px;
+  font-size: 16px;
+}
+
+/* ── Toggle ── */
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  user-select: none;
+}
+
+.toggle input {
+  display: none;
+}
+
+.toggle .toggle-track {
+  width: 32px;
+  height: 18px;
+  background: var(--section-bg);
+  border: 1px solid var(--card-border);
+  position: relative;
+  transition: background 0.15s;
+}
+
+.toggle input:checked + .toggle-track {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.toggle .toggle-track::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: var(--text);
+  top: 2px;
+  left: 2px;
+  transition: transform 0.15s;
+}
+
+.toggle input:checked + .toggle-track::after {
+  transform: translateX(14px);
+}
+
+/* ── Info bar ── */
+.info-bar {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 24px 22%;
+  background: var(--accent-light);
+  border-bottom: 1px solid var(--card-border);
+  flex-shrink: 0;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  max-height: 200px;
+  overflow: hidden;
+  transition:
+    max-height 0.3s ease,
+    padding 0.3s ease,
+    opacity 0.3s ease;
+  opacity: 1;
+}
+
+.info-bar.hidden {
+  max-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  opacity: 0;
+  border-bottom: none;
+}
+
+.info-content {
+  flex: 1;
+}
+
+.info-content p {
+  margin-bottom: 4px;
+}
+
+.info-content p:last-child {
+  margin-bottom: 0;
+}
+
+.info-content a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.info-content a:hover {
+  text-decoration: underline;
+}
+
+.info-dismiss {
+  background: none;
+  border: none;
+  color: var(--text);
+  font-size: 28px;
+  cursor: pointer;
+  padding: 0 4px;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.info-dismiss:hover {
+  color: var(--accent);
+}
+
+/* ── Main layout ── */
+.main {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.editor-pane {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--card-border);
+  overflow: hidden;
+}
+
+/* ── File bar ── */
+.file-bar {
+  display: flex;
+  align-items: center;
+  background: var(--panel-solid);
+  border-bottom: 1px solid var(--card-border);
+  flex-shrink: 0;
+  overflow-x: auto;
+  height: 32px;
+}
+
+.file-tabs {
+  display: flex;
+  min-width: 0;
+  overflow-x: auto;
+}
+
+.file-tab {
+  padding: 6px 14px;
+  font-size: 12px;
+  font-family: inherit;
+  color: var(--text-muted);
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  border-right: 1px solid var(--card-border);
+  cursor: pointer;
+  white-space: nowrap;
+  transition:
+    color 0.15s,
+    border-color 0.15s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.file-tab:hover {
+  color: var(--text-secondary);
+}
+
+.file-tab.active {
+  color: var(--text);
+  border-bottom-color: var(--accent);
+  background: var(--section-bg);
+}
+
+.file-tab .file-close {
+  font-size: 14px;
+  color: var(--text-muted);
+  cursor: pointer;
+  line-height: 1;
+  padding: 0 2px;
+}
+
+.file-tab .file-close:hover {
+  color: var(--danger);
+}
+
+.file-add {
+  flex-shrink: 0;
+  border: none !important;
+  font-size: 18px !important;
+  padding: 4px 10px !important;
+  background: none !important;
+  color: var(--text-muted) !important;
+}
+
+.file-add:hover {
+  color: var(--accent) !important;
+  background: none !important;
+}
+
+.file-vim {
+  flex-shrink: 0;
+  margin-left: auto;
+  padding: 0 12px;
+  font-size: 12px;
+}
+
+#editorPane {
+  flex: 1;
+  overflow: hidden;
+}
+
+/* ── Context menu ── */
+.context-menu {
+  position: fixed;
+  background: var(--panel-solid);
+  border: 1px solid var(--card-border);
+  z-index: 300;
+  min-width: 120px;
+  padding: 4px 0;
+}
+
+.context-menu button {
+  display: block;
+  width: 100%;
+  padding: 6px 16px;
+  text-align: left;
+  background: none;
+  border: none;
+  color: var(--text);
+  font-size: 13px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.context-menu button:hover {
+  background: var(--accent-light);
+}
+
+.context-menu button.danger {
+  color: var(--danger);
+}
+
+.context-menu button.danger:hover {
+  background: rgba(196, 66, 75, 0.15);
+}
+
+/* ── Vim command bar ── */
+.cm-vim-panel {
+  background: var(--panel-solid) !important;
+  border-top: 1px solid var(--card-border) !important;
+  color: var(--text) !important;
+  font-family:
+    "Fira Code", "Cascadia Code", "JetBrains Mono", monospace !important;
+  font-size: 13px !important;
+  padding: 4px 8px !important;
+}
+
+.cm-vim-panel input {
+  background: var(--bg) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--card-border) !important;
+  font-family: inherit !important;
+  font-size: inherit !important;
+  padding: 2px 6px !important;
+  outline: none !important;
+}
+
+.cm-vim-panel input:focus {
+  border-color: var(--accent) !important;
+}
+
+.cm-vim-message {
+  color: var(--text-secondary) !important;
+}
+
+#editorPane .cm-editor {
+  height: 100%;
+  font-size: 14px;
+}
+
+#editorPane .cm-scroller {
+  overflow: auto !important;
+}
+
+.cm-editor.has-selection .cm-activeLine {
+  background: none !important;
+}
+
+.cm-editor.has-selection .cm-activeLineGutter {
+  background: none !important;
+}
+
+.output-pane {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* ── Tabs ── */
+.tabs {
+  display: flex;
+  border-bottom: 1px solid var(--card-border);
+  background: var(--panel-solid);
+  flex-shrink: 0;
+  height: 32px;
+}
+
+.tab {
+  padding: 6px 14px;
+  font-size: 12px;
+  font-family: inherit;
+  color: var(--text-muted);
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition:
+    color 0.15s,
+    border-color 0.15s;
+}
+
+.tab:hover {
+  color: var(--text-secondary);
+}
+
+.tab.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/* ── Tab content ── */
+.tab-content {
+  flex: 1;
+  overflow: hidden;
+  display: none;
+}
+
+.tab-content.active {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Preview ── */
+.preview-container {
+  flex: 1;
+  padding: 8px 16px;
+  overflow: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.preview-container svg {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* ── XML output ── */
+.xml-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.xml-actions {
+  display: flex;
+  gap: 8px;
+  padding: 8px 16px;
+  border-bottom: 1px solid var(--card-border);
+  background: var(--panel-solid);
+}
+
+.xml-output {
+  flex: 1;
+  overflow: auto;
+  padding: 16px;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text-secondary);
+  font-family: "Fira Code", "Cascadia Code", "JetBrains Mono", monospace;
+  font-size: 12px;
+  line-height: 1.5;
+  white-space: pre;
+  tab-size: 4;
+}
+
+/* ── Error bar ── */
+.error-bar {
+  background: rgba(196, 66, 75, 0.15);
+  border-top: 1px solid var(--danger);
+  color: var(--danger);
+  padding: 8px 20px;
+  font-size: 13px;
+  font-family: monospace;
+  display: none;
+  flex-shrink: 0;
+}
+
+.error-bar.visible {
+  display: block;
+}
+
+/* ── Help modal ── */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.modal-overlay.visible {
+  display: flex;
+}
+
+.modal {
+  background: var(--panel-solid);
+  border: 1px solid var(--card-border);
+  max-width: 800px;
+  max-height: 80vh;
+  width: 90%;
+  overflow-y: auto;
+  padding: 32px;
+}
+
+.modal h1,
+.modal h2,
+.modal h3 {
+  color: var(--accent);
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.modal h1:first-child {
+  margin-top: 0;
+}
+
+.modal p,
+.modal li {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.modal code {
+  background: var(--section-bg);
+  padding: 2px 6px;
+  font-size: 13px;
+}
+
+.modal pre {
+  background: var(--bg);
+  padding: 16px;
+  overflow-x: auto;
+  margin: 12px 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.modal pre code {
+  background: none;
+  padding: 0;
+}
+
+.modal table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 12px 0;
+  font-size: 13px;
+}
+
+.modal th,
+.modal td {
+  padding: 6px 12px;
+  border: 1px solid var(--card-border);
+  text-align: left;
+}
+
+.modal th {
+  background: var(--section-bg);
+  color: var(--text);
+}
+
+.modal td {
+  color: var(--text-secondary);
+}
+
+.modal .close-btn {
+  position: sticky;
+  top: 0;
+  float: right;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0 4px;
+}
+
+.modal .close-btn:hover {
+  color: var(--text);
+}
+
+/* ── Toast ── */
+.toast {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--panel-solid);
+  border: 1px solid var(--card-border);
+  color: var(--text);
+  padding: 8px 20px;
+  font-size: 13px;
+  z-index: 200;
+  animation: toast-in 0.2s ease-out;
+}
+
+.toast.hiding {
+  animation: toast-out 0.2s ease-in forwards;
+}
+
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+@keyframes toast-out {
+  from {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px);
+  }
+}

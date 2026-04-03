@@ -19,6 +19,15 @@ find mod/models/dolls/ -name "*.dds" -exec sh -c '
 ' _ {} \;
 '''
 
+[tasks.doctgen]
+description = "Compile all doctrine KDL files to mod XML"
+run = 'bun www/doctgen/src/cli.ts doctrines/*.kdl -o mod/gui/gfl_doctrine.xml'
+
+[tasks.build-doctgen]
+description = "Bundle the doctgen web app"
+dir = "www/doctgen"
+run = 'bun build app.ts --outdir dist --bundle --minify'
+
 [tasks.zip-blender-plugin]
 description = "Create khm_tools.zip for Blender addon distribution"
 dir = "tools"

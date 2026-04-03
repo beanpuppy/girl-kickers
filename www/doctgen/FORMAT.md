@@ -1,6 +1,6 @@
 # Doctrine KDL Format
 
-The doctrine compiler takes `.kdl` files describing doctrine tree layouts and compiles them to DK2 GUI XML.
+Doctgen takes `.kdl` files describing doctrine tree layouts and generates DK2 GUI XML. KDL is a document language similar to XML but cleaner to read and write. See the [KDL spec](https://kdl.dev/) for the full language reference.
 
 ## Structure
 
@@ -32,8 +32,6 @@ grid columns=3 unit="GFL-UNIT-DEFY" {
 | `unit` | yes | Unit name (used for `#UnitName_DoctrineTree`) |
 | `inactive-color` | no | Connector inactive colour (default `716b5f`) |
 | `active-color` | no | Connector active colour (default `f97b03`) |
-| `panel-bg-color` | no | Default panel background colour (default `211e1d80`) |
-| `title-color` | no | Panel title text colour (default `f0e3cc`) |
 
 Panels flow left-to-right and wrap to the next row automatically, following [CSS grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout) auto-flow rules. Panels in the same row stretch to match the tallest panel's height.
 
@@ -54,7 +52,8 @@ panel title="@menu_doctrine_branch_calibration" columns=2 rows=4 {
 | `rows` | yes | | Number of rows in the node grid |
 | `colspan` | no | `1` | Number of outer grid columns to span |
 | `rowspan` | no | `1` | Number of outer grid rows to span |
-| `bg-color` | no | grid `panel-bg-color` | Background colour override |
+| `bg-color` | no | `211e1d80` | Panel background colour |
+| `title-color` | no | `f0e3cc` | Title text colour |
 | `title-bar-height` | no | `72` | Title bar height in pixels |
 | `title-bar-color` | no | `211e1d40` | Title bar background colour |
 | `title-font` | no | `header_3` | Title font (`header_2` enables auto-downsize) |
@@ -109,7 +108,7 @@ node "GFL_SuppressionProtocols" col=0.5 row=3
 
 ## Edge
 
-Edges define connectors between nodes. The compiler determines the connector type (vertical, horizontal, branching, T-junction) from the relative positions of the connected nodes.
+Edges define connectors between nodes. Doctgen determines the connector type (vertical, horizontal, branching, T-junction) from the relative positions of the connected nodes.
 
 ```kdl
 edge "ParentNode" "ChildNode"
@@ -171,8 +170,14 @@ anchor x="16%" y="10%" {
 ## Full example
 
 ```kdl
+// 3-column grid, one doctrine tree per unit
 grid columns=3 unit="GFL-UNIT-DEFY" {
+
+    // Standard panel: 2-column, 4-row node grid
     panel title="@menu_doctrine_branch_calibration" columns=2 rows=4 {
+
+        // Diagonal bar decorations on the title bar
+        // Anchored to top-left and top-right of panel
         anchor x="0%" y="0%" {
             decor "data/textures/gui/deploy/deploy_class_diagonalbars.dds" \
                 width=190 height=75 color="0c0b0b33"
@@ -182,6 +187,8 @@ grid columns=3 unit="GFL-UNIT-DEFY" {
                 width=190 height=75 color="0c0b0b33" flip-x="true"
         }
 
+        // Nodes placed on the grid by col/row
+        // col=0 is left, col=1 is right, col=0.5 centres between them
         node "GFL_LethalPrecision" col=0 row=0
         node "GFL_CQCProtocols" col=1 row=0
         node "GFL_RapidDeployment" col=0 row=1
@@ -190,18 +197,24 @@ grid columns=3 unit="GFL-UNIT-DEFY" {
         node "GFL_CombatEfficiency" col=1 row=2
         node "GFL_SuppressionProtocols" col=0.5 row=3
 
+        // Edges: parent -> child, connector type is auto-detected
+        // Same column = vertical, different column = branching
         edge "GFL_CQCProtocols" "GFL_OverwhelmingForce"
         edge "GFL_RapidDeployment" "GFL_WeaponTransition"
         edge "GFL_RapidDeployment" "GFL_CombatEfficiency"
     }
 
+    // Full-width veteran panel spanning all 3 grid columns
+    // Custom title bar styling: taller, accent colour, larger font
     panel title="@menu_doctrine_level_vet" colspan=3 columns=4 rows=1 \
         title-bar-height=90 title-bar-color="E4E4E480" title-font="header_2" {
 
+        // Bottom border decoration
         anchor x="0%" y="100%" {
             decor "data/textures/gui/square.tga" width="100%" height=8 color="E4E4E480"
         }
 
+        // 4 nodes in a single row, same-row edge is horizontal
         node "GFL_DEFY_TacticalIndependence" col=0 row=0
         node "GFL_DEFY_SquadDefiance" col=1 row=0
         node "GFL_DEFY_BattlefieldEchoes" col=2 row=0
@@ -216,8 +229,8 @@ grid columns=3 unit="GFL-UNIT-DEFY" {
 
 ```bash
 # single file
-bun www/doctrine-compiler/src/cli.ts doctrines/defy.kdl -o mod/gui/gfl_doctrine.xml
+bun www/doctgen/src/cli.ts doctrines/defy.kdl -o mod/gui/gfl_doctrine.xml
 
 # multiple files combined into one XML
-bun www/doctrine-compiler/src/cli.ts doctrines/*.kdl -o mod/gui/gfl_doctrine.xml
+bun www/doctgen/src/cli.ts doctrines/*.kdl -o mod/gui/gfl_doctrine.xml
 ```

@@ -84,7 +84,7 @@ function generatePanel(panel: LayoutPanel, style: DoctrineStyle): string {
     `${t}\t\t<Item sizeX="${panel.sizeX}" sizeY="${panel.titleBarHeight}" align="lt">`,
   );
   lines.push(
-    `${t}\t\t\t<StaticText text="${panel.title}" font="${panel.titleFont}" fontAutoDownsize="${autoDownsize}" textColor="${style.titleColor}"/>`,
+    `${t}\t\t\t<StaticText text="${panel.title}" font="${panel.titleFont}" fontAutoDownsize="${autoDownsize}" textColor="${panel.titleColor}"/>`,
   );
   lines.push(`${t}\t\t</Item>`);
   lines.push(`${t}\t</StaticImage>`);

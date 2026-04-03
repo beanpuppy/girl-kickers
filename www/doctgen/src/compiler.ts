@@ -38,7 +38,8 @@ export interface DoctrinePanel {
   nodes: DoctrineNode[];
   edges: DoctrineEdge[];
   anchors: Anchor[];
-  bgColor?: string;
+  bgColor: string;
+  titleColor: string;
   rowspan: number;
   titleBarHeight: number;
   titleBarColor: string;
@@ -48,15 +49,11 @@ export interface DoctrinePanel {
 export interface DoctrineStyle {
   inactiveColor: string;
   activeColor: string;
-  panelBgColor: string;
-  titleColor: string;
 }
 
 export const DEFAULT_STYLE: DoctrineStyle = {
   inactiveColor: "716b5f",
   activeColor: "f97b03",
-  panelBgColor: "211e1d80",
-  titleColor: "f0e3cc",
 };
 
 export interface DoctrineLayout {
@@ -132,10 +129,6 @@ export function parseKdl(kdlText: string): DoctrineLayout {
       optionalString(gridNode, "inactive-color") ?? DEFAULT_STYLE.inactiveColor,
     activeColor:
       optionalString(gridNode, "active-color") ?? DEFAULT_STYLE.activeColor,
-    panelBgColor:
-      optionalString(gridNode, "panel-bg-color") ?? DEFAULT_STYLE.panelBgColor,
-    titleColor:
-      optionalString(gridNode, "title-color") ?? DEFAULT_STYLE.titleColor,
   };
 
   return { gridColumns, unitName, panels, style };
@@ -245,7 +238,8 @@ function parsePanel(panelNode: KdlNode, gridColumns: number): DoctrinePanel {
     );
   }
 
-  const bgColor = optionalString(panelNode, "bg-color");
+  const bgColor = optionalString(panelNode, "bg-color") ?? "211e1d80";
+  const titleColor = optionalString(panelNode, "title-color") ?? "f0e3cc";
   const titleBarHeight =
     (panelNode.properties["title-bar-height"] as number | undefined) ?? 72;
   const titleBarColor =
@@ -262,6 +256,7 @@ function parsePanel(panelNode: KdlNode, gridColumns: number): DoctrinePanel {
     edges,
     anchors,
     bgColor,
+    titleColor,
     titleBarHeight,
     titleBarColor,
     titleFont,

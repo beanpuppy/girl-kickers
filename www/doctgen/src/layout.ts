@@ -48,11 +48,13 @@ export interface ConnectorSegment {
 
 export interface Connector {
   segments: ConnectorSegment[];
+  childNames: string[];
 }
 
 export interface LayoutNodeWithConnectors {
   node: LayoutNode;
   connectors: Connector[];
+  childNames: string[];
 }
 
 export interface ResolvedDecor {
@@ -77,6 +79,7 @@ export interface LayoutPanel {
   sizeX: number;
   sizeY: number;
   bgColor: string;
+  titleColor: string;
   titleBarHeight: number;
   titleBarColor: string;
   titleFont: string;
@@ -259,7 +262,8 @@ function computePanel(
       edges.length > 0
         ? computeConnectors(node, edges, nodeMap, panel.columns, panelWidth)
         : [];
-    return { node: layoutNode, connectors };
+    const childNames = edges.map((e) => e.to);
+    return { node: layoutNode, connectors, childNames };
   });
 
   const anchors = panel.anchors.map((a) =>
@@ -273,7 +277,8 @@ function computePanel(
     align,
     sizeX: panelWidth,
     sizeY: panelHeight,
-    bgColor: panel.bgColor ?? style.panelBgColor,
+    bgColor: panel.bgColor,
+    titleColor: panel.titleColor,
     titleBarHeight: panel.titleBarHeight,
     titleBarColor: panel.titleBarColor,
     titleFont: panel.titleFont,
