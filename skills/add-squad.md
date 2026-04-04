@@ -150,7 +150,7 @@ If not already done, use the `/assign-voices` skill to set up voice lines for ea
 ## Verification
 
 After all files are updated:
-1. Run `python scripts/validate_voice_files.py` to check voice line references
+1. Run `python scripts/validate/validate_mod.py` to check voice line references
 2. Run `python scripts/generate_deploy.py` to generate deploy screens
 3. Check that all referenced textures/models exist: portraits, cubebody models, weapon signature models
 4. Grep for the new unit ID across all files to make sure everything references it consistently

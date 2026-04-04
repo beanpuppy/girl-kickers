@@ -1,0 +1,22 @@
+{
+  "name": "doctgen",
+  "module": "cli.js",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@codemirror/language": "^6.12.3",
+    "@codemirror/state": "^6.6.0",
+    "@codemirror/view": "^6.41.0",
+    "@lezer/highlight": "^1.2.3",
+    "@replit/codemirror-vim": "^6.3.0",
+    "codemirror": "^6.0.2",
+    "kdljs": "^0.3.0",
+    "thememirror": "^2.0.1"
+  }
+}

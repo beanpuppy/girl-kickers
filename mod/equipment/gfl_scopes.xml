@@ -73,6 +73,15 @@ ex:
         </Params>
     </Scope>
 
+    <Scope name="NOTHINGBURGER_GFL"
+            inventoryBinding="PrimaryWeaponScope"
+            tooltip="@scope_no_sights_name"
+            description="@scope_no_sights_desc"
+            img="data/models/signatures/attachments/no_sights_ui.dds"
+        >
+        <Params />
+    </Scope>
+
     <Scope name="scope_GFL_RedDot"
             unlockCost="0"
             inventoryBinding="PrimaryWeaponScope"

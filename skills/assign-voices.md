@@ -232,7 +232,7 @@ Use this exact format. Path names use `data/sounds/voice/` prefix (not `mod/`). 
 
 ## Validation
 
-After writing the XML, run `python scripts/validate_voice_files.py` to check that:
+After writing the XML, run `python scripts/validate/validate_mod.py` to check that:
 - All VOX IDs are present
 - No invalid or duplicate IDs
 - All referenced `.wav` files exist

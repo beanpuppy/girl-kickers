@@ -45,14 +45,28 @@ jobs:
           sudo sed -i '/<policy domain="coder" rights="none" pattern="DDS"/d' /etc/ImageMagick-6/policy.xml 2>/dev/null || true
           sudo sed -i 's/rights="none" pattern="\*"/rights="read|write" pattern="*"/' /etc/ImageMagick-6/policy.xml 2>/dev/null || true
 
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+
       - name: Build main data
         run: python main/www/unit-builder/build_data.py
+
+      - name: Build Doctgen
+        working-directory: main/www/doctgen
+        run: |
+          bun install
+          bun build app.ts --outdir dist --bundle --minify
 
       - name: Assemble site root from main
         run: |
           cp -r main/www _site
           cp -r _site/unit-builder/app/* _site/unit-builder/
           rm -rf _site/unit-builder/app _site/unit-builder/build_data.py
+          # Doctgen: keep only web-facing files
+          rm -rf _site/doctgen/src _site/doctgen/tests \
+                 _site/doctgen/node_modules _site/doctgen/bun.lock \
+                 _site/doctgen/package.json _site/doctgen/.gitignore \
+                 _site/doctgen/app.ts
 
       - name: Deploy extra branches
         if: inputs.extra_branches != ''
