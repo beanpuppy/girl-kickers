@@ -625,8 +625,8 @@ function girldleRenderInput(guesses, solved, failed) {
     const val = input.value.trim().toLowerCase();
 
     const matches = val.length < 1
-      ? available.slice(0, 8)
-      : available.filter((d) => d.name.toLowerCase().includes(val)).slice(0, 8);
+      ? available
+      : available.filter((d) => d.name.toLowerCase().includes(val));
 
     if (matches.length === 0) {
       suggestions.innerHTML = "";
