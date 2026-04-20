@@ -3417,7 +3417,7 @@
             minShots="1"
             maxShots="3"
             resetTime="450"
-            accuracyAdd="-500"
+            accuracyAdd="0"
             followupShotAccuracyAdd="0"
             critChanceAdd="10"
         />
