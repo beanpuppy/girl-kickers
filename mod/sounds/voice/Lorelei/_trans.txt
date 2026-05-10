@@ -1,0 +1,145 @@
+# Voice Line Translations for Lorelei
+# Generated automatically using OpenAI Whisper
+# Total files: 47
+
+Series_Attack__VO_Lorelei_Series_Tone_Positive_003.wav
+  ...Painful?
+
+Series_Battle_Start__VO_Lorelei_Series_Tone_Positive_002.wav
+  I'll have fun.
+
+Series_Chosen__VO_Lorelei_Series_Tone_Positive_006.wav
+  Order me.
+
+Series_Daily_001.wav
+  Are you bored? That's just right. I know a lot of interesting stories, but I won't listen to them. Come on, come over here.
+
+Series_Daily_002.wav
+  I have a drink party in a few days, but I won't go with you if you don't want to. Yes, I want to be a commander.
+
+Series_Daily_003.wav
+  Fufu, why are you in such a hurry? I just fixed your collar.
+
+Series_Daily_004.wav
+  The new dress... My chest is a little sore... Can you fix it for me instead?
+
+Series_Daily_005.wav
+  If you touch me any longer, it'll be dangerous. The only people here right now are you and me. Eh? No one's looking?
+
+Series_Die__VO_Lorelei_Series_Tone_Negative_001.wav
+  Too bad...
+
+Series_Dying__VO_Lorelei_Series_Tone_Negative_002.wav
+  Not bad.
+
+Series_Hit__VO_Lorelei_Single_Hit_001.wav
+  Be patient.
+
+Series_Kill__VO_Lorelei_Single_Kill_001.wav
+  Sweet dreams.
+
+Series_Lose__VO_Lorelei_Single_Lose_001.wav
+  I'm sorry. I'll comfort you later.
+
+Series_Set_Click__VO_Lorelei_Series_Tone_Positive_004.wav
+  I'll help you.
+
+Series_Set_Fall__VO_Lorelei_Series_Tone_Positive_005.wav
+  Let me hear your instructions.
+
+Series_Shield_Broken__VO_Lorelei_Series_Tone_Negative_003.wav
+  Hmph.
+
+Series_Skill01__VO_Lorelei_Single_Skill_001.wav
+  This is where the real show begins.
+
+Series_Skill02__VO_Lorelei_Single_Skill_002.wav
+  I can't run away anymore.
+
+Series_Tone_Positive_001.wav
+  Come here.
+
+Series_Ultimate__VO_Lorelei_Single_Ultimate_SSR_001.wav
+  You can't just give up yet.
+
+Series_Up_001.wav
+  This is what I've been seeking.
+
+Series_Up_002.wav
+  I'll teach you how I do it.
+
+Series_Up_003.wav
+  The commander is also bad.
+
+Series_Up_004.wav
+  ...I'm not satisfied yet.
+
+Series_Up_005.wav
+  I won't let you get away.
+
+Series_Win__VO_Lorelei_Single_Win_001.wav
+  Fufu, I'm so excited to see your happy face.
+
+Single_Birthday_SSR_001.wav
+  Happy birthday. I've prepared an order-made cake and a present. Let's celebrate in my room tonight. Eh? There's something I've never seen? Fufu, I'll understand soon enough. Come on, come a little closer.
+
+Single_Christmas_001.wav
+  Christmas is coming soon. I've prepared some costumes for that, but I might have been a little too bold. I think you'll like it too, so come visit my room later. Or... should I go to another place?
+
+Single_Friendliness_001.wav
+  You're still as cute as ever. I want to bully you.
+
+Single_Friendliness_002.wav
+  I like your eyes. Let's be a little more honest.
+
+Single_Friendliness_003.wav
+  If you have any bold plans, can you leave it to me? It's okay, I'll do it properly. Besides, I like this kind of thing.
+
+Single_Friendliness_004.wav
+  Come to my room whenever you need me.
+
+Single_Friendliness_005.wav
+  I have to take care of the doll's body too. So, when you touch my body, please be a little more careful.
+
+Single_Friendliness_006.wav
+  I have never suppressed my desire. I don't think it's a bad thing. Commander, you should be a little more honest with yourself. You can hit me with your imagination.
+
+Single_Friendliness_007.wav
+  For your sake, I can become any kind of person. Think carefully about my use.
+
+Single_Friendliness_008.wav
+  Even though I'm satisfied living with you like this, I still don't seem satisfied. I want you to be more and more honest. I want to know more about you. Hey, is that okay?
+
+Single_Login_001.wav
+  Commander, what kind of dream did you have last night?
+
+Single_MidAutumn_001.wav
+  Today is the day of the moon. I know a good spot, but... Would you like to go with me?
+
+Single_NewYear_001.wav
+  It's almost New Year, but do you have any wishes? If you have any, tell me. I'll do my best to make it come true.
+
+Single_Obtain_SSR_001.wav
+  Long time no see, Commander. Hehe, you haven't changed at all. I am Lorelai. I will engrave this new name into your body.
+
+Single_Passive_SSR_001.wav
+  This is a secret.
+
+Single_SpringFes_001.wav
+  Ah, you came to a good place. Will you support this red lantern? I'm trying to fix it now. Yes, something like that. Excuse me for a moment. Fufu, happy new year. I put the yearbook in my pocket.
+
+Single_Title_001.wav
+  Dolls Front Line 2 Exilium
+
+Single_Valentine_001.wav
+  Commander, this is my homemade chocolate. I'm glad you like it. I wonder if I can return it tonight. I can't wait.
+
+VO_LoreleySence_Change_1.wav
+  ...Hm? ...Ah!? ...Hm? ...I'm sorry. I'm sorry. ...I'm sorry. ...I'm sorry. I'm sorry. I'm sorry.
+
+VO_LoreleySence_Change_2.wav
+  Ahahah... Escaped from the class...
+
+VO_LoreleySence_Start.wav
+  ...... ...... ......
+

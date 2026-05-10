@@ -1,0 +1,157 @@
+# Voice Line Translations for YooHee
+# Generated automatically using OpenAI Whisper
+# Total files: 51
+
+Series_Attack__VO_YooHee_Series_Tone_Positive_003.wav
+  Don't blink!
+
+Series_Battle_Start__VO_YooHee_Series_Tone_Positive_002.wav
+  Ready, set, go!
+
+Series_Chosen_Auto__VO_YooHee_Series_Tone_Positive_007.wav
+  Relax.
+
+Series_Chosen__VO_YooHee_Series_Tone_Positive_006.wav
+  Be careful!
+
+Series_Daily_001.wav
+  I-I'm nervous, did you find out? Actually, there's a stage next week.
+
+Series_Daily_002.wav
+  Spark? It's a doll dance unit I made. It's my job as a senpai to create a place for my juniors who can't fight.
+
+Series_Daily_003.wav
+  Sharkly-senpai is really caring and it's easy to understand what she's saying. I wonder if I can be like that too...
+
+Series_Daily_004.wav
+  Alright! I've planned out the dance lesson, the stage, and the choreography research! Ah, I have to take some time to talk to the juniors too!
+
+Series_Daily_005.wav
+  Depending on the time and situation, the foundation will be different depending on the new year. You didn't know that, did you?
+
+Series_Die__VO_YooHee_Series_Tone_Negative_001.wav
+  If this continues...
+
+Series_Dying__VO_YooHee_Series_Tone_Negative_002.wav
+  The rhythm is...
+
+Series_Hit__VO_YooHee_Single_Hit_001.wav
+  It's time for some ad-libs!
+
+Series_Kill__VO_YooHee_Single_Kill_001.wav
+  I'm not practicing enough!
+
+Series_Lose__VO_YooHee_Single_Lose_001.wav
+  I'll definitely make up for this mistake!
+
+Series_Set_Click__VO_YooHee_Series_Tone_Positive_004.wav
+  It's my turn?
+
+Series_Set_Fall__VO_YooHee_Series_Tone_Positive_005.wav
+  Showtime!
+
+Series_Shield_Broken__VO_YooHee_Series_Tone_Negative_003.wav
+  So my breathing is getting the best of me!
+
+Series_Skill01__VO_YooHee_Single_Skill_001.wav
+  Let's get into the rhythm!
+
+Series_Skill02__VO_YooHee_Single_Skill_002.wav
+  I'll keep on going!
+
+Series_Tone_Positive_001.wav
+  Keep your posture proper.....
+
+Series_Ultimate__VO_YooHee_Single_Ultimate_SSR_001.wav
+  The results of the practice are here!
+
+Series_Up_001.wav
+  Yeah, sounds good!
+
+Series_Up_002.wav
+  Look at me move!
+
+Series_Up_003.wav
+  Feel it slowly.
+
+Series_Up_004.wav
+  Yeah, yeah! Well done!
+
+Series_Up_005.wav
+  Now, showtime!
+
+Series_Win__VO_YooHee_Single_Win_001.wav
+  It was a stage where I put everything I had into it! It was so much fun!
+
+Single_Birthday_SSR_001.wav
+  I might as well celebrate my commander's birthday and do a quick dance! Just kidding! Here, birthday cake!
+
+Single_Birthday_SSR_002.wav
+  Commander, why don't you dance with me? Relax, and follow my rhythm... You're doing great! It's your birthday, Commander! I hope it's a wonderful memory!
+
+Single_Christmas_001.wav
+  Christmas tree? Leave the decoration to me!
+
+Single_Christmas_002.wav
+  I'm going to play the role of a
+
+Single_Friendliness_001.wav
+  Commander, there's a Sparkle stage nearby. Would you like to come and see it?
+
+Single_Friendliness_002.wav
+  Commander, can you let me smell that pudding for a bit? You don't have to eat it? Dancers have to make their own sweets!
+
+Single_Friendliness_003.wav
+  S-S-Commander? I'll tell you this, but it's useless to provoke and make them run away. I said it! I'll do it!
+
+Single_Friendliness_004.wav
+  N-No! I thought I could understand humans better if I observed you. I'm not stalking you!
+
+Single_Friendliness_005.wav
+  When it comes to expressing, dolls are not good at it, but with effort, you can do anything. For example, human observation? Haha, can I make the commander the observation target?
+
+Single_Friendliness_006.wav
+  The reason I became a boy? The first thing someone said was the trigger. Who it is, is a secret.
+
+Single_Friendliness_007.wav
+  Maintaining the body shape is also a dancer's job. I'm using the most attention to the maintenance of the body. Hey, Commander. I... I wonder if...
+
+Single_Friendliness_008.wav
+  Commander, can you dance with me for a bit? I want to express my gratitude through this dance. Without you, I wouldn't have been able to find my dream.
+
+Single_Login_001.wav
+  Good morning, Commander! Want to see the dance we practiced earlier?
+
+Single_MidAutumn_001.wav
+  The moon is beautiful today. That gentle light... It's healing me. Hey, Commander. Why don't you take a little more rest?
+
+Single_MidAutumn_002.wav
+  Today's moon is the most beautiful in the year. I'm sure it's because I'm watching it with you, Commander.
+
+Single_NewYear_001.wav
+  Commander, Spark will be performing at the annual live show of the satellite city! Come and see!
+
+Single_NewYear_002.wav
+  Alright! Today's New Year Special Stage! I'll do my best! Of course, the Commander will come to see it too, right? Right?
+
+Single_Obtain_SSR_001.wav
+  Good face, good posture. Today's stage is... Eh, Commander! Are you going to watch my stage?
+
+Single_Passive_SSR_001.wav
+  Yeah! I'm in the right place!
+
+Single_SpringFes_001.wav
+  I've put a lot of work into the command room entrance. I hope there are a lot of requests this year too!
+
+Single_SpringFes_002.wav
+  I put more than half of this year's hair cut and training on! Dancers are easy to get, so training will be easy too! I worked so hard... Of course, there's a reward!
+
+Single_Title_001.wav
+  The front line of the same line! That's right! Exilium!
+
+Single_Valentine_001.wav
+  Commander, do you like accessories? I made a bracelet, but I'm glad you like it. Huh? Is your face red? I-I mistook you for someone else.
+
+Single_Valentine_002.wav
+  I made a pair of stuffed animals that the commander and I made. Would you like one? One looks like she's wearing a wedding dress. This is just a dance costume!
+
