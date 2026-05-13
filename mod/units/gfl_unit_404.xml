@@ -1,21 +1,21 @@
 <Units>
     <Unit
-        name="GFL-UNIT-GIRL"
-        nameUI="@GFL-UNIT-GIRL-NAME"
-        description="@GFL-UNIT-GIRL-DESC"
-        flagTex="data/textures/gfl_girl_bg.dds"
-        flagColor="E3F6FD"
-        movie="data/movies/gfl_unlock_girl.ogv"
-        rndNameEntry="@#GFL-UNIT-GIRL-NAME-RND"
+        name="GFL-UNIT-404"
+        nameUI="@GFL-UNIT-404-NAME"
+        description="@GFL-UNIT-404-DESC"
+        flagTex="data/textures/gfl_404_bg.dds"
+        flagColor="888888"
+        movie="data/movies/gfl_unlock_404.ogv"
+        rndNameEntry="@#GFL-UNIT-404-NAME-RND"
         voicepack="commander_eng"
-        incapacitationChance="60"
+        incapacitationChance="85"
         incapacitationChanceCrit="30"
     >
         <Classes>
             <Class
-                name="GFL-DOLL-SKKF"
-                nameUI="@DOLL-SKKF-NAME"
-                description="@DOLL-SKKF-DESC"
+                name="GFL-DOLL-HK416"
+                nameUI="@DOLL-HK416-NAME"
+                description="@DOLL-HK416-DESC"
                 numSlots="1"
                 supply="100"
                 iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
@@ -23,9 +23,9 @@
                 maxUpgradeable="2"
             />
             <Class
-                name="GFL-DOLL-SKKM"
-                nameUI="@DOLL-SKKM-NAME"
-                description="@DOLL-SKKM-DESC"
+                name="GFL-DOLL-G11"
+                nameUI="@DOLL-G11-NAME"
+                description="@DOLL-G11-DESC"
                 numSlots="1"
                 supply="100"
                 iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
@@ -33,9 +33,9 @@
                 maxUpgradeable="2"
             />
             <Class
-                name="GFL-DOLL-UMP40"
-                nameUI="@DOLL-UMP40-NAME"
-                description="@DOLL-UMP40-DESC"
+                name="GFL-DOLL-G36K"
+                nameUI="@DOLL-G36K-NAME"
+                description="@DOLL-G36K-DESC"
                 numSlots="1"
                 supply="100"
                 iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
@@ -43,9 +43,9 @@
                 maxUpgradeable="2"
             />
             <Class
-                name="GFL-DOLL-K2"
-                nameUI="@DOLL-K2-NAME"
-                description="@DOLL-K2-DESC"
+                name="GFL-DOLL-G28"
+                nameUI="@DOLL-G28-NAME"
+                description="@DOLL-G28-DESC"
                 numSlots="1"
                 supply="100"
                 iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
@@ -53,9 +53,29 @@
                 maxUpgradeable="2"
             />
             <Class
-                name="GFL-DOLL-DSR50"
-                nameUI="@DOLL-DSR50-NAME"
-                description="@DOLL-DSR50-DESC"
+                name="GFL-DOLL-UMP45"
+                nameUI="@DOLL-UMP45-NAME"
+                description="@DOLL-UMP45-DESC"
+                numSlots="1"
+                supply="100"
+                iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
+                upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2"
+                maxUpgradeable="2"
+            />
+            <Class
+                name="GFL-DOLL-UMP9"
+                nameUI="@DOLL-UMP9-NAME"
+                description="@DOLL-UMP9-DESC"
+                numSlots="1"
+                supply="100"
+                iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
+                upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2"
+                maxUpgradeable="2"
+            />
+            <Class
+                name="GFL-DOLL-VECTOR"
+                nameUI="@DOLL-VECTOR-NAME"
+                description="@DOLL-VECTOR-DESC"
                 numSlots="1"
                 supply="100"
                 iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
@@ -128,6 +148,44 @@
             <Rank xpNeeded="48310" badgeTex="" />
             <Rank xpNeeded="58900" badgeTex="" />
             <Rank xpNeeded="70360" badgeTex="" />
+            <Rank xpNeeded="82680" badgeTex="" />
+            <Rank xpNeeded="95820" badgeTex="" />
+            <Rank xpNeeded="109790" badgeTex="" />
+            <Rank xpNeeded="124550" badgeTex="" />
+            <Rank xpNeeded="140100" badgeTex="" />
+            <Rank xpNeeded="156420" badgeTex="" />
         </Ranks>
+
+        <Doctrine doctrinePointsPerSquadLevel="1">
+            <Node name="Handguns_ReloadDrills" />
+            <Node name="GFL_CQCProtocols">
+                <Node name="GFL_OverwhelmingForce" />
+            </Node>
+            <Node name="GFL_RapidDeployment">
+                <Node name="GFL_WeaponTransition" />
+                <Node name="GFL_CombatEfficiency" />
+            </Node>
+            <Node name="GFL_SuppressionProtocols" />
+            <Node name="GFL_LethalPrecision" />
+
+            <Node name="GFL_404_DreamWonderland" />
+            <Node name="GFL_404_NoticeMeBigSis" />
+            <Node name="GFL_404_ShadowsFury" />
+            <Node name="GFL_404_DepressiveMentality" />
+            <Node name="GFL_404_DelayedResponse" />
+
+            <Node name="GFL_OptimizedPerformance" />
+            <Node name="GFL_CommunicationProtocols">
+                <Node name="GFL_AdvancedProtocols">
+                    <Node name="GFL_TacticalIntelligence" numLevels="2" />
+                    <Node name="GFL_InformationExtraction" />
+                </Node>
+            </Node>
+
+            <Node name="GFL_404_HighValueTarget" minSquadLevel="10" />
+            <Node name="GFL_404_PhantomSignal" minSquadLevel="10" />
+            <Node name="GFL_404_DamageControl" minSquadLevel="10" />
+            <Node name="GFL_404_CloseQuartersDominance" minSquadLevel="10" />
+        </Doctrine>
     </Unit>
 </Units>

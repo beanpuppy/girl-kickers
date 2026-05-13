@@ -1,21 +1,21 @@
 <Units>
     <Unit
-        name="GFL-UNIT-GIRL"
-        nameUI="@GFL-UNIT-GIRL-NAME"
-        description="@GFL-UNIT-GIRL-DESC"
-        flagTex="data/textures/gfl_girl_bg.dds"
-        flagColor="E3F6FD"
-        movie="data/movies/gfl_unlock_girl.ogv"
-        rndNameEntry="@#GFL-UNIT-GIRL-NAME-RND"
+        name="GFL-UNIT-GROZA"
+        nameUI="@GFL-UNIT-GROZA-NAME"
+        description="@GFL-UNIT-GROZA-DESC"
+        flagTex="data/textures/gfl_groza_bg.dds"
+        flagColor="a1251f"
+        movie="data/movies/gfl_unlock_groza.ogv"
+        rndNameEntry="@#GFL-UNIT-GROZA-NAME-RND"
         voicepack="commander_eng"
-        incapacitationChance="60"
-        incapacitationChanceCrit="30"
+        incapacitationChance="80"
+        incapacitationChanceCrit="25"
     >
         <Classes>
             <Class
-                name="GFL-DOLL-SKKF"
-                nameUI="@DOLL-SKKF-NAME"
-                description="@DOLL-SKKF-DESC"
+                name="GFL-DOLL-OTS14"
+                nameUI="@DOLL-OTS14-NAME"
+                description="@DOLL-OTS14-DESC"
                 numSlots="1"
                 supply="100"
                 iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
@@ -23,9 +23,9 @@
                 maxUpgradeable="2"
             />
             <Class
-                name="GFL-DOLL-SKKM"
-                nameUI="@DOLL-SKKM-NAME"
-                description="@DOLL-SKKM-DESC"
+                name="GFL-DOLL-OM50"
+                nameUI="@DOLL-OM50-NAME"
+                description="@DOLL-OM50-DESC"
                 numSlots="1"
                 supply="100"
                 iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
@@ -33,9 +33,9 @@
                 maxUpgradeable="2"
             />
             <Class
-                name="GFL-DOLL-UMP40"
-                nameUI="@DOLL-UMP40-NAME"
-                description="@DOLL-UMP40-DESC"
+                name="GFL-DOLL-HARE"
+                nameUI="@DOLL-HARE-NAME"
+                description="@DOLL-HARE-DESC"
                 numSlots="1"
                 supply="100"
                 iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
@@ -43,9 +43,9 @@
                 maxUpgradeable="2"
             />
             <Class
-                name="GFL-DOLL-K2"
-                nameUI="@DOLL-K2-NAME"
-                description="@DOLL-K2-DESC"
+                name="GFL-DOLL-CURVA"
+                nameUI="@DOLL-CURVA-NAME"
+                description="@DOLL-CURVA-DESC"
                 numSlots="1"
                 supply="100"
                 iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
@@ -53,9 +53,9 @@
                 maxUpgradeable="2"
             />
             <Class
-                name="GFL-DOLL-DSR50"
-                nameUI="@DOLL-DSR50-NAME"
-                description="@DOLL-DSR50-DESC"
+                name="GFL-DOLL-VEPR12"
+                nameUI="@DOLL-VEPR12-NAME"
+                description="@DOLL-VEPR12-DESC"
                 numSlots="1"
                 supply="100"
                 iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
@@ -128,6 +128,48 @@
             <Rank xpNeeded="48310" badgeTex="" />
             <Rank xpNeeded="58900" badgeTex="" />
             <Rank xpNeeded="70360" badgeTex="" />
+            <Rank xpNeeded="82680" badgeTex="" />
+            <Rank xpNeeded="95820" badgeTex="" />
+            <Rank xpNeeded="109790" badgeTex="" />
+            <Rank xpNeeded="124550" badgeTex="" />
+            <Rank xpNeeded="140100" badgeTex="" />
+            <Rank xpNeeded="156420" badgeTex="" />
         </Ranks>
+
+        <Doctrine doctrinePointsPerSquadLevel="1">
+            <Node name="Handguns_ReloadDrills" />
+            <Node name="GFL_CQCProtocols">
+                <Node name="GFL_OverwhelmingForce" />
+            </Node>
+            <Node name="GFL_RapidDeployment">
+                <Node name="GFL_WeaponTransition" />
+                <Node name="GFL_CombatEfficiency" />
+            </Node>
+            <Node name="GFL_SuppressionProtocols" />
+            <Node name="GFL_LethalPrecision" />
+
+            <Node name="GFL_GROZA_PerfectCover" />
+            <Node name="GFL_GROZA_StellarPursuit" />
+            <Node name="GFL_GROZA_TameYourRabbit" />
+            <Node name="GFL_GROZA_CavityProtection" />
+            <Node name="GFL_GROZA_CenterStage" />
+
+            <Node name="GFL_OptimizedPerformance" />
+            <Node name="GFL_CommunicationProtocols">
+                <Node name="GFL_AdvancedProtocols">
+                    <Node name="GFL_TacticalIntelligence" numLevels="2" />
+                    <Node name="GFL_InformationExtraction" />
+                </Node>
+            </Node>
+
+            <Node name="GFL_GROZA_NeverLeftBehind" minSquadLevel="10" />
+            <Node name="GFL_GROZA_HardLessons" minSquadLevel="10" />
+            <Node name="GFL_GROZA_StrengthInNumbers" minSquadLevel="10" />
+            <Node
+                name="GFL_GROZA_ReadTheRoom"
+                minSquadLevel="10"
+                numLevels="3"
+            />
+        </Doctrine>
     </Unit>
 </Units>

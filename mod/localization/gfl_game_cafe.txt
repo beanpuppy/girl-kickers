@@ -1,0 +1,72 @@
+@GFL-UNIT-CAFE-NAME=Zucchero Café
+@GFL-UNIT-CAFE-DESC=A group of service and support dolls operating from a café base, providing backup services and logistics while maintaining their cover as hospitality workers in civilian territory.
+@#GFL-UNIT-CAFE-NAME-RND=Zucchero Café
+
+@DOLL-M1903-NAME=SPRINGFIELD
+@DOLL-M1903-DESC=Former manager of the Integrated Logistics Department, current manager of Zucchero Café, leader of an underground intelligence network… These identities converge into the Doll smiling before you: Springfield. Gentle, unyielding, kind and rational, she's the picture of reliability for her loved ones, and her personality attracts a wide variety of people to her. She's not above bending the rules to get her way, however… But you won't tell anybody, right?
+@WEAP-M1903-NAME=M1903 Springfield
+@WEAP-M1903-DESC=Officially designated the 'United States Rifle, Caliber .30-06, Model of 1903' and referred by the troops as the '03' or simply as the 'Springfield', the M1903 Springfield is an American magazine fed, bolt-action repeating rifle. It served as the main infantry rifle of US forces during World War 1, and it remains popular today as a civilian firearm, historical collector's piece, competitive shooting rifle, and military drill rifle.
+@firearm_caliber_3006_name=.30-06 Springfield
+@firearm_operation_boltaction_name=Bolt Action
+@ammo_3006_match_name=.30-06 Match Grade
+@ammo_3006_match_desc=Precision manufactured ammunition with consistent powder loads and match bullets for superior accuracy and terminal performance.
+
+@skin_m1903_default_name=Clean Military Uniform
+@skin_m1903_default_desc=Springfield's usual outfit. The elegant colors bring out the regal qualities of the outfit, subconsciously inducing those around Springfield to treat her with respect. Her warm smile however, dissipates any sense of awkwardness or need for formaility.
+@skin_m1903_skin1_name=Queen in Radiance
+@skin_m1903_skin1_desc=She is more dazzling and eye-catching than any jewel under the lamplight. A single gentle smile from her is neough to capture the gazes of everyone in front of her.
+@skin_m1903_skin2_name=Enjoy the Fragrance
+@skin_m1903_skin2_desc="It's been a tiring day, Commander. Would you like some coffee? The sweetness and the temperature are just the way you like them."\nShe's perfectly concocted the flavor you like, just like all the coffees from days gone by.
+
+@DOLL-WA2000-NAME=MAKIATTO
+@DOLL-WA2000-DESC=A calm, proud, yet awkward Doll who isn't good at expressing herself. She loves fluffy little animals and overly sweet macchiatos. Always a loner, her gaze often lingers somewhere. When will she finally get the response she's been longing for?
+@WEAP-WA2000-NAME=Walther WA2000
+@WEAP-WA2000-DESC=Walther WA2000 is a semi-automatic, bullpup configured sniper rifle designed and produced by Carl Walther GmbH Sportwaffen. Designed between 1970s–1980s and produced between 1982-1988, originally designed for and advertised to law enforcement units in response to the 1972 Munich Olympics Massacre.
+@firearm_caliber_300wm_name=.300 Winchester Magnum
+@ammo_300wm_match_name=.300 Win Mag Match
+@ammo_300wm_match_desc=Premium match-grade ammunition with selected components for maximum accuracy and consistency at extreme ranges.
+
+@skin_wa2000_default_name=Caramel Melody
+@skin_wa2000_default_desc=Makiatto's usual outfit. She rarely opens her violin case; it holds her most cherished weapon.
+@skin_wa2000_skin1_name=Ballroom Interlude
+@skin_wa2000_skin1_desc=This is the dress that Makiatto wears to the ball. Its simple style, adorned with a familiar ribbon, carries a secret hope--that her dance partner will finally take notice of her.
+
+@DOLL-G36-NAME=CENTAUREISSI
+@DOLL-G36-DESC=A humble yet principled Doll. She brews aromatic coffee and stands as the steadfast guardian of the café - she is the irreplaceable shield of "Zucchero".
+@WEAP-G36-NAME=G36
+@WEAP-G36-DESC=The G36 is a gas-operated select-fire 5.56x45mm rifle developed by German arms manufacturer Heckler and Koch. It was designed as a replacement for the venerable G3 battle rifle, which had served West Germany throughout the Cold War.
+
+@DOLL-XCR-NAME=SHARKRY
+@DOLL-XCR-DESC=A mischievous, impish Doll whose sweet smiles hide a cute cunning. She is hungry not only for the stage but also for the boundless adoration from her customers.
+@WEAP-XCR-NAME=XCR-L Standard
+@WEAP-XCR-DESC=The XCR is a line of American rifles by Robinson Armament Co. It was developed for the Special Operations Forces Combat Assault Rifle competition (which would be won by FN's SCAR line) but ultimately never joined it.
+
+@doctrine_gfl_cafe_pathofprotection_name=Path of Protection
+@doctrine_gfl_cafe_pathofprotection_descr=Springfield's elegant and watchful presence inspires confidence in allies. Her gentle yet vigilant nature creates a protective aura that helps teammates stay calm under fire and maintain their composure.
+
+@buff_gfl_cafe_protective=Protective Aura
+
+@doctrine_gfl_cafe_absolutementaldefense_name=Absolute Mental Defense
+@doctrine_gfl_cafe_absolutementaldefense_descr=D-Don't barge into someone's personal space! Makiatto's unshakeable focus and mental fortitude under pressure. Her exceptional discipline allows her to resist suppression and maintain precision even in chaotic situations, delivering accurate long-range fire when others would falter.
+
+@doctrine_gfl_cafe_perfectservice_name=Perfect Service
+@doctrine_gfl_cafe_perfectservice_descr=Centaureissi's meticulous attention to detail and dutiful nature. Her presence instills discipline and precision in nearby allies, improving their efficiency and accuracy through her example of perfect execution.
+
+@buff_gfl_cafe_meticulous=Meticulous Service
+
+@doctrine_gfl_cafe_spotlightcharge_name=Spotlight Charge
+@doctrine_gfl_cafe_spotlightcharge_descr=Sharkry's energetic and fashionable nature drives her to the center of action. Active to the point of recklessness, she excels at aggressive close-range engagements with exceptional speed and devastating accuracy.
+
+@doctrine_gfl_cafe_sparklingnight_name=Sparkling Night
+@doctrine_gfl_cafe_sparklingnight_descr=One sip, and it feels as though you're standing on a stage illuminated by fireworks and lights. The café's hospitality network gathers valuable intelligence from patrons, revealing enemy positions at mission start.
+
+@doctrine_gfl_cafe_longsummer_name=Long Summer
+@doctrine_gfl_cafe_longsummer_descr=One sip, and you're greeted by the warmth of the sunlight, the essence of summer, and the cool breeze of air conditioning. Enhanced survival training and field medical skills keep the team operational even under heavy fire.
+
+@doctrine_gfl_cafe_belovedmacchiato_name=Beloved Macchiato
+@doctrine_gfl_cafe_belovedmacchiato_descr=One sip, sweet to the heart. Each successful engagement boosts morale and inspires nearby teammates with renewed confidence and accuracy.
+
+@buff_gfl_cafe_sweetmorale=Sweet Morale
+
+@doctrine_gfl_cafe_velvetlatte_name=Velvet Latte
+@doctrine_gfl_cafe_velvetlatte_descr=One sip feels like velvet gently brushing your tongue. Smooth, refined execution with exceptional precision and timing. Professional marksmanship delivers accurate, lethal shots with minimal hesitation.

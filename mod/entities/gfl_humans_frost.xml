@@ -1,0 +1,158 @@
+<Entities>
+    <Entity name="FROST-QBZ191" type="Human" editorAutoHeight="false">
+        <RenderObject3D
+            model="data/models/dolls/qbz191.khm"
+            diffuseTex="data/models/dolls/qbz191.dds"
+        />
+
+        <Breakable
+            template="GenericTrooperGibs"
+            breakOnDamage="explosive"
+            deleteOnDeath="false"
+        />
+        <PhysicalParams health="100" />
+
+        <Human type="GoodGuy" unit="GFL-UNIT-FROST" class="GFL-DOLL-QBZ191">
+            <Id
+                name="FROST-QBZ191"
+                portrait="data/textures/portraits/gfl_qbz191.dds"
+                gender="0"
+                voicePack="Qiongjiu-Voice"
+            />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="150.0" />
+
+            <Mobility>
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
+            </Mobility>
+
+            <Equipment>
+                <Item name="GFL-WEAP-QBZ191" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
+            </Equipment>
+        </Human>
+    </Entity>
+
+    <Entity name="FROST-AKALFA" type="Human" editorAutoHeight="false">
+        <RenderObject3D
+            model="data/models/dolls/cubebodies/akalfa.khm"
+            diffuseTex="data/models/dolls/akalfa.dds"
+        />
+
+        <Breakable
+            template="GenericTrooperGibs"
+            breakOnDamage="explosive"
+            deleteOnDeath="false"
+        />
+        <PhysicalParams health="100" />
+
+        <Human type="GoodGuy" unit="GFL-UNIT-FROST" class="GFL-DOLL-AKALFA">
+            <Id
+                name="FROST-AKALFA"
+                portrait="data/textures/portraits/gfl_akalfa.dds"
+                gender="0"
+                voicePack="Tololo-Voice"
+            />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="150.0" />
+
+            <Mobility>
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
+            </Mobility>
+
+            <Equipment>
+                <Item name="GFL-WEAP-AKALFA" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
+                <Item name="GFL_SKIN_AKALFA_DEFAULT" />
+            </Equipment>
+        </Human>
+    </Entity>
+
+    <Entity name="FROST-AA12" type="Human" editorAutoHeight="false">
+        <RenderObject3D
+            model="data/models/dolls/aa12.khm"
+            diffuseTex="data/models/dolls/aa12.dds"
+        />
+
+        <Breakable
+            template="GenericTrooperGibs"
+            breakOnDamage="explosive"
+            deleteOnDeath="false"
+        />
+        <PhysicalParams health="100" />
+
+        <Human type="GoodGuy" unit="GFL-UNIT-FROST" class="GFL-DOLL-AA12">
+            <Id
+                name="FROST-AA12"
+                portrait="data/textures/portraits/gfl_aa12.dds"
+                gender="0"
+                voicePack="Lind-Voice"
+            />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="150.0" />
+
+            <Mobility>
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
+            </Mobility>
+
+            <Equipment>
+                <Item name="GFL-WEAP-AA12" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
+            </Equipment>
+        </Human>
+    </Entity>
+
+    <Entity name="FROST-MP7" type="Human" editorAutoHeight="false">
+        <RenderObject3D
+            model="data/models/dolls/mp7.khm"
+            diffuseTex="data/models/dolls/mp7.dds"
+        />
+
+        <Breakable
+            template="GenericTrooperGibs"
+            breakOnDamage="explosive"
+            deleteOnDeath="false"
+        />
+        <PhysicalParams health="100" />
+
+        <Human type="GoodGuy" unit="GFL-UNIT-FROST" class="GFL-DOLL-MP7">
+            <Id
+                name="FROST-MP7"
+                portrait="data/textures/portraits/gfl_mp7.dds"
+                gender="0"
+                voicePack="Cheeta-Voice"
+            />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="150.0" />
+
+            <Mobility>
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
+            </Mobility>
+
+            <Equipment>
+                <Item name="GFL-WEAP-MP7" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
+            </Equipment>
+        </Human>
+    </Entity>
+</Entities>

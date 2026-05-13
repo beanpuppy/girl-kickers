@@ -1,0 +1,37 @@
+@GFL-UNIT-GIRL-NAME=Girls' Frontline
+@GFL-UNIT-GIRL-DESC="We need to head to the frontline... the GIRLS' FRONTLINE 2: EXILIUM"\n                                ― Shikikan (probably)
+@#GFL-UNIT-GIRL-NAME-RND=Girls' Frontline
+
+@DOLL-SKKF-NAME=SKK (F)
+@DOLL-SKKF-DESC=I know this gal, she's literally me!
+
+@DOLL-SKKM-NAME=SKK (M)
+@DOLL-SKKM-DESC=I know this guy, he's literally me!
+
+@DOLL-UMP40-NAME=LAINIE
+@DOLL-UMP40-DESC=Once a personality emulation born from Leva’s neural core, she has been reborn in a body with a familiar appearance. Cheerful, optimistic, warm like the sun… Her personality is the same as it was and makes her more than a mere replica. Though her past is incomplete, she’s pouring all her energy into building a future.
+
+@DOLL-K2-NAME=YOOHEE
+@DOLL-K2-DESC=A Doll who devoted herself to dancing, with a heart full of passion and responsibility. Honoring the Commander who encouraged her to pursue her calling, she Sparkle Squad, who takes in wandering Dolls. Her path is one of dance and discipline, and the secret to her success to always keep her objective in her heart. Believe in her, she's genuinely as good as her word. “Keep with the rhythm and ignite the crowd!”
+
+@DOLL-DSR50-NAME=LORELEI
+@DOLL-DSR50-DESC=A mysterious and powerful Tactical Doll, Loreley excels at switching identities to accomplish her goals. Most of the time, she maintains an elegant and dignified demeanor, giving her a natural advantage in social interactions, intelligence gathering, disguise and deception. She doesn't carry any identifier of her current affiliation, but the first thing that should come to the mind of anyone taking a good look at her is “danger”. She joined the Sixteenth Bureau of Statesec as a secret agent after a rigorous screening process.
+
+@WEAP-UMP40-NAME=UMP40
+@WEAP-UMP40-DESC=H&K's polymer-framed UMP series in .40 S&W trim. Cheaper to build than the MP5, and splits the difference between the 9mm and .45 variants. Real stopping power without the full recoil tax of the UMP-45.\n\n30 rounds, semi or full auto, threaded for a can. Solid in CQB out to medium range, but watch muzzle climb on long bursts.
+
+@WEAP-K2-NAME=Daewoo K2
+@WEAP-K2-DESC=South Korea's standard service rifle since 1985. Long-stroke piston in an AR-style chassis, chambered in 5.56x45mm NATO and feeding from STANAG mags. Korea's answer to keeping the M16 honest in dirty conditions.\n\n30 rounds, semi-auto or three-round burst. Reliable, accurate well past 400m, shoulders like any modern carbine. Run-and-gun or measured fire, both work.
+
+@WEAP-DSR50-NAME=DSR-50
+@WEAP-DSR50-DESC=German-made anti-materiel bullpup from DSR-Precision. Bolt-action .50 BMG with a 5-round detachable magazine, modular barrel system, and integral monopod. Built for one-shot stops at extreme range: engines, hardened cover, light armour.\n\nSlow to cycle, brutal to anything it touches. Set up, breathe, send it. Don't try to clear rooms with this thing.
+
+@WEAP-MAKAROVPM-NAME=Makarov PM
+@WEAP-MAKAROVPM-DESC=Soviet sidearm from 1951, the pistol every Cold War officer pulled from a desk drawer at some point. Simple blowback action, fed from an 8-round single stack of 9x18mm Makarov. Built to never quit.\n\nUnderpowered next to 9x19mm Parabellum, but the cartridge runs subsonic out of a short barrel and pairs naturally with a can. Close work only. Pull, point, repeat.
+
+@firearm_caliber_40sw_name=.40 S&W
+@ammo_40sw_fmj_name=.40 S&W FMJ
+@ammo_40sw_fmj_desc=Bridging the gap between 9x19mm and .45 ACP. The .40 S&W trades a few rounds of capacity for a heavier bullet and flatter trajectory at SMG ranges. More recoil to manage, but it hits harder downrange.
+
+@ammo_9x18_fmj_makarovpm_name=9x18mm FMJ
+@ammo_9x18_fmj_makarovpm_desc=Standard Soviet 9x18mm Makarov ball ammunition. Lower energy than 9x19mm Parabellum, but runs subsonic out of a short barrel and pairs naturally with a suppressor. Effective at conversational distance, less so beyond it.

@@ -1,8 +1,8 @@
 <Entities>
-    <Entity name="GIRL-SKKF" type="Human" editorAutoHeight="false">
+    <Entity name="GROZA-OTS14" type="Human" editorAutoHeight="false">
         <RenderObject3D
-            model="data/models/dolls/skkf.khm"
-            diffuseTex="data/models/dolls/skkf.dds"
+            model="data/models/dolls/cubebodies/ots14.khm"
+            diffuseTex="data/models/dolls/ots14.dds"
         />
 
         <Breakable
@@ -12,35 +12,37 @@
         />
         <PhysicalParams health="100" />
 
-        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-SKKF">
+        <Human type="GoodGuy" unit="GFL-UNIT-GROZA" class="GFL-DOLL-OTS14">
             <Id
-                name="GIRL-SKKF"
-                portrait="data/textures/portraits/gfl_skkf.dds"
+                name="GROZA-OTS14"
+                portrait="data/textures/portraits/gfl_ots14.dds"
                 gender="0"
+                voicePack="Groza-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
             <Equipment>
-                <Item name="GFL-WEAP-MAKAROVPM" />
+                <Item name="GFL-WEAP-OTS14" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />
                 <Item name="GFL_NightVision" />
                 <Item name="GFL_CombatFrame" />
+                <Item name="GFL_SKIN_OTS14_DEFAULT" />
             </Equipment>
         </Human>
     </Entity>
 
-    <Entity name="GIRL-SKKM" type="Human" editorAutoHeight="false">
+    <Entity name="GROZA-OM50" type="Human" editorAutoHeight="false">
         <RenderObject3D
-            model="data/models/dolls/skkm.khm"
-            diffuseTex="data/models/dolls/skkm.dds"
+            model="data/models/dolls/om50.khm"
+            diffuseTex="data/models/dolls/om50.dds"
         />
 
         <Breakable
@@ -50,61 +52,23 @@
         />
         <PhysicalParams health="100" />
 
-        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-SKKM">
+        <Human type="GoodGuy" unit="GFL-UNIT-GROZA" class="GFL-DOLL-OM50">
             <Id
-                name="GIRL-SKKM"
-                portrait="data/textures/portraits/gfl_skkm.dds"
-                gender="1"
-            />
-            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
-
-            <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
-            </Mobility>
-
-            <Equipment>
-                <Item name="GFL-WEAP-MAKAROVPM" />
-                <Item name="GFL_FeetOfGunmetal" />
-                <Item name="GFL_Lockpick" />
-                <Item name="GFL_BasicCore" />
-                <Item name="GFL_NightVision" />
-                <Item name="GFL_CombatFrame" />
-            </Equipment>
-        </Human>
-    </Entity>
-
-    <Entity name="GIRL-UMP40" type="Human" editorAutoHeight="false">
-        <RenderObject3D
-            model="data/models/dolls/ump40.khm"
-            diffuseTex="data/models/dolls/ump40.dds"
-        />
-
-        <Breakable
-            template="GenericTrooperGibs"
-            breakOnDamage="explosive"
-            deleteOnDeath="false"
-        />
-        <PhysicalParams health="100" />
-
-        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-UMP40">
-            <Id
-                name="GIRL-UMP40"
-                portrait="data/textures/portraits/gfl_ump40.dds"
+                name="GROZA-OM50"
+                portrait="data/textures/portraits/gfl_om50.dds"
                 gender="0"
-                voicePack="Lene-Voice"
+                voicePack="Nemesis-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
             <Equipment>
-                <Item name="GFL-WEAP-UMP40" />
+                <Item name="GFL-WEAP-OM50" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />
@@ -114,10 +78,10 @@
         </Human>
     </Entity>
 
-    <Entity name="GIRL-K2" type="Human" editorAutoHeight="false">
+    <Entity name="GROZA-HARE" type="Human" editorAutoHeight="false">
         <RenderObject3D
-            model="data/models/dolls/k2.khm"
-            diffuseTex="data/models/dolls/k2.dds"
+            model="data/models/dolls/hare.khm"
+            diffuseTex="data/models/dolls/hare.dds"
         />
 
         <Breakable
@@ -127,23 +91,23 @@
         />
         <PhysicalParams health="100" />
 
-        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-K2">
+        <Human type="GoodGuy" unit="GFL-UNIT-GROZA" class="GFL-DOLL-HARE">
             <Id
-                name="GIRL-K2"
-                portrait="data/textures/portraits/gfl_k2.dds"
+                name="GROZA-HARE"
+                portrait="data/textures/portraits/gfl_hare.dds"
                 gender="0"
-                voicePack="YooHee-Voice"
+                voicePack="Charolic-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="100.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="3.5" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
             <Equipment>
-                <Item name="GFL-WEAP-K2" />
+                <Item name="GFL-WEAP-HARE" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />
@@ -153,10 +117,10 @@
         </Human>
     </Entity>
 
-    <Entity name="GIRL-DSR50" type="Human" editorAutoHeight="false">
+    <Entity name="GROZA-CURVA" type="Human" editorAutoHeight="false">
         <RenderObject3D
-            model="data/models/dolls/dsr50.khm"
-            diffuseTex="data/models/dolls/dsr50.dds"
+            model="data/models/dolls/curva.khm"
+            diffuseTex="data/models/dolls/curva.dds"
         />
 
         <Breakable
@@ -166,23 +130,23 @@
         />
         <PhysicalParams health="100" />
 
-        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-DSR50">
+        <Human type="GoodGuy" unit="GFL-UNIT-GROZA" class="GFL-DOLL-CURVA">
             <Id
-                name="GIRL-DSR50"
-                portrait="data/textures/portraits/gfl_dsr50.dds"
+                name="GROZA-CURVA"
+                portrait="data/textures/portraits/gfl_curva.dds"
                 gender="0"
-                voicePack="Lorelei-Voice"
+                voicePack="Colphne-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="40.0" />
+            <Brain suppressionRecovery="150.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
             <Equipment>
-                <Item name="GFL-WEAP-DSR50" />
+                <Item name="GFL-WEAP-CURVA" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />
@@ -192,4 +156,42 @@
         </Human>
     </Entity>
 
+    <Entity name="GROZA-VEPR12" type="Human" editorAutoHeight="false">
+        <RenderObject3D
+            model="data/models/dolls/vepr12.khm"
+            diffuseTex="data/models/dolls/vepr12.dds"
+        />
+
+        <Breakable
+            template="GenericTrooperGibs"
+            breakOnDamage="explosive"
+            deleteOnDeath="false"
+        />
+        <PhysicalParams health="100" />
+
+        <Human type="GoodGuy" unit="GFL-UNIT-GROZA" class="GFL-DOLL-VEPR12">
+            <Id
+                name="GROZA-VEPR12"
+                portrait="data/textures/portraits/gfl_vepr12.dds"
+                gender="0"
+                voicePack="Vepley-Voice"
+            />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="150.0" />
+
+            <Mobility>
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
+            </Mobility>
+
+            <Equipment>
+                <Item name="GFL-WEAP-VEPR12" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
+            </Equipment>
+        </Human>
+    </Entity>
 </Entities>

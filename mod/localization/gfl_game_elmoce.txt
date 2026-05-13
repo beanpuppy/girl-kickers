@@ -1,0 +1,88 @@
+@GFL-UNIT-ELMOCE-NAME=Elmo Combined Echelon
+@GFL-UNIT-ELMOCE-DESC=The combined echelon of the Elmo MCV formed from wandering dolls who joined the Elmo after the Groza Squad when the Mephisto Agreement was relaxed.
+@#GFL-UNIT-ELMOCE-NAME-RND=Elmo Combined Echelon
+
+@DOLL-PKPSP-NAME=PERITYA
+@DOLL-PKPSP-DESC=Combat, survival, and a spectrum of emotions are all part of this vast world. Compared to the digital realm, she finds countless undiscovered pleasures in this expansive reality. Hm... that cloud has finally covered the sun. Time to lie down and rest for a while.
+@WEAP-PKPSP-NAME=PKP-SP GPMG
+@WEAP-PKPSP-DESC=The PKP Pecheneg is a Russian 7.62×54mmR general-purpose machine gun featuring a heavy, forced-air-cooled barrel with radial cooling ribs. The PKP-SP is a modernized variant with Picatinny rails for accessories.
+@firearm_caliber_762x54_name=7.62×54mmR
+@ammo_762x54r_fmj_nsu_name=NSU 150gr FMJ
+@ammo_762x54r_fmj_nsu_desc=Standard full-power machine gun ammunition manufactured by the Neo Soviet Union for belt-fed weapons. The heavy bullet delivers punishing damage and consistent penetration at all ranges, designed to keep firing until there is nothing left standing.
+
+@skin_pkpsp_default_name=Dual Hunter
+@skin_pkpsp_default_desc=Peritya's typical outfit. The distinct footwear design enhances her agility.
+@skin_pkpsp_skin1_name=Born Huntress
+@skin_pkpsp_skin1_desc=Peritya's sportswear. Light, slim-fitting and doused in bright, showy colors, it adds a touch of liveliness and energy to the otherwise languid Peritya.
+
+@DOLL-SPAS12-NAME=SABRINA
+@DOLL-SPAS12-DESC=A Doll passionate abouut culinary research and enjoying food, the kitchen is her new battlefield. Loves sharing her cooking process, though aroma may have boundaries, her smile spreads through the network, infecting every viewer.
+@WEAP-SPAS12-NAME=SPAS-12
+@WEAP-SPAS12-DESC=The Franchi SPAS-12 is an Italian dual-mode combat shotgun that can operate as either semi-automatic or pump-action. Chambered in 12 gauge, it became iconic through its appearances in action films and video games.
+
+@DOLL-TYPE97S-NAME=QIUHUA
+@DOLL-TYPE97S-DESC=A cheerful and optimistic Doll who hunts for delicacies in the Yellow Zone and helps feed settlements in the harsh contaminated lands. A wandering hero who won't let a single bad deed go unpunished. “Adding ketchup to sweet and sour pork is a sin, but if you like it that much, I'll let it slide.”
+@WEAP-TYPE97S-NAME=Type 97 Shotgun
+@WEAP-TYPE97S-DESC=The Hawk Industries Type 97 is a Chinese 12 gauge shotgun with dual-mode operation. It uses a 5-round detachable box magazine and can switch between gas-operated semi-automatic and pump-action modes.
+
+@DOLL-MP5-NAME=PERI
+@DOLL-MP5-DESC=A small but ambitious rookie Underground Broker, cheerful and friendly in her daily life, but sly and crafty when dealing with her peers. She aims to be “cool” like her former teacher, and doesn't worry as much about her size now, caring about “strength” instead. Part of being “cool” is to proactively and handsomely solve any problem her friends have. She trains hard to reach her ideal of “cool” and learned the trade of the Brokers when working in contamination zones. Intel, Relic tech, rare resources, she'll handle any job, but what she yearns for is to hear news of her former comrades, and so she follows the Elmo. Maybe you can compliment her for her hard work?
+@WEAP-MP5-NAME=MP5
+@WEAP-MP5-DESC=The Heckler & Koch MP5 is a 9×19mm submachine gun developed in the 1960s. Adopted by over forty nations, it's one of the world's most recognized submachine guns with over 100 variants.
+
+@DOLL-PA15-NAME=FLORENCE
+@DOLL-PA15-DESC=A highly competent medical specialist Doll. In pursuit of novel thrills, Florence left G&K after it was restructured and went alone to the Yellow Zone to practice her specialty. By applying her medical expertise, she continued to grow and earned a reputation as the “Underground Doctor”.
+@WEAP-PA15-NAME=PA-15
+@WEAP-PA15-DESC=The PA-15 is a French semi-automatic pistol chambered in 9×19mm Parabellum. It features a 15-round magazine and served with various military and law enforcement agencies.
+
+@DOLL-VSK94-NAME=NIKKETA
+@DOLL-VSK94-DESC=Walking the path of justice as Public Security Doll, acting as an older sister to protect the children she treasures, spending her monthly salary in a blink... Can someone really have that kind of mismatched personality? Fighting on the frontline of justice, Nikketa follows her path with cool confidence, but she might reveal another side of herself after meeting the Commander again. "My work means I can't trust people easily. But Boss is an exception, because we follow the same path of justice."
+@WEAP-VSK94-NAME=VSK-94
+@WEAP-VSK94-DESC=The VSK-94 is a Russian suppressed sniper rifle chambered in 9×39mm subsonic ammunition. Developed from the 9A-91, it features an integral suppressor and serves as a designated marksman rifle for covert operations.
+@firearm_caliber_939_name=9×39mm
+@ammo_9x39subsonic_fmj_name=NSU 16gr Subsonic FMJ
+@ammo_9x39subsonic_fmj_desc=Specialised subsonic ammunition designed for suppressed weapons. The heavy bullet travels below the speed of sound, eliminating the sonic crack and allowing the VSK-94's integral suppressor to be fully effective. Penetration is respectable thanks to the bullet's mass and hardened core.
+
+@DOLL-DP12-NAME=HELEN
+@DOLL-DP12-DESC=In the chaos of Griffin’s disbandment, Helen accepted a corporate position at Mangi Security Service while still looking for the Commander. Her new job revealed excellent intelligence gathering abilities, leading to her selection for Project Coronal Storm, and her neural cloud was used as the basis for the Third-Generation Doll Cocoon. Moving in the shadows, Helen uses her ingenuity and official authority in the highest circles of information to shed light on the dark plot of the URNC conglomerate.
+@WEAP-DP12-NAME=DP-12
+@WEAP-DP12-DESC=The DP-12 is a bullpup double-barrel pump-action shotgun with dual magazine tubes. Each pump cycles both barrels for devastating close-range firepower.
+
+@DOLL-LEWIS-NAME=LEWIS
+@DOLL-LEWIS-DESC=Lewis was created by Universal Anything Services as a designer of collectible toys, but was later converted into a Tactical Doll and hired by Griffin & Kryuger. After G&K's restructuring, she joined the AI and quantum technology research company 42LAB on Persica's request. As a toy designer, Lewis always hated war and leaving G&K should have been her opportunity to never set foot on the battlefield again. But to create a future for all children and protect their smile, she has decided to remain on the path of the T-Doll.
+@WEAP-LEWIS-NAME=Lewis Machine Gun
+@WEAP-LEWIS-DESC=The Lewis Gun is a WWI-era light machine gun chambered in .303 British. Featuring a distinctive top-mounted 47-round pan magazine and characteristic cooling shroud, it was one of the most widely used light machine guns of the Great War.
+
+@doctrine_gfl_elmoce_catandmouse_name=Impromptu Cat and Mouse Game
+@doctrine_gfl_elmoce_catandmouse_descr=Peritya's relaxed predator instincts awaken on the battlefield. Her LMG suppression pins enemies like a cat toying with mice, while her deadly accuracy pounces on those frozen in fear.
+@buff_gfl_elmoce_terrifiedmouse=Hunted by Peritya
+
+@doctrine_gfl_elmoce_hotoil_name=Hot Oil Protection
+@doctrine_gfl_elmoce_hotoil_descr=The kitchen is her new battlefield. After eliminating an enemy, Sabrina's combat adrenaline surges like hot oil splattering from a pan, providing temporary protection and fueling aggressive follow-up attacks.
+@buff_gfl_elmoce_oilshield=Protected by Hot Oil
+
+@doctrine_gfl_elmoce_stirfry_name=Fragrant Stir-Fry
+@doctrine_gfl_elmoce_stirfry_descr=A cheerful hunter who feeds settlements with delicacies from the Yellow Zone. Qiuhua's optimistic presence and well-prepared meals boost squad morale, while her hunting skills make her deadly with a shotgun.
+@buff_gfl_elmoce_wellfed=Well Fed
+
+@doctrine_gfl_elmoce_venturecapital_name=Venture Capital
+@doctrine_gfl_elmoce_venturecapital_descr=An ambitious Underground Broker invests in her team's survival. Peri's resourcefulness provides the entire squad with improved protective gear and resilience, proving that strength matters more than size.
+
+@doctrine_gfl_elmoce_masochistic_name=Masochistic Hallucination
+@doctrine_gfl_elmoce_masochistic_descr=Pain comes hand in hand with pleasure, and the boundary between the real and the surreal can become hard to discern. When wounded, Florence's thrill-seeking nature awakens with terrifying intensity, while her unhinged combat behavior disturbs nearby enemies.
+@buff_gfl_elmoce_hallucinating=Disturbed by Florence
+
+@doctrine_gfl_elmoce_righteousverdict_name=Righteous Verdict
+@doctrine_gfl_elmoce_righteousverdict_descr=A righteous Doll firmly believes that no sin can be hidden, and that villains will reap what they sow. Nikketa's path of justice is delivered through her rifle with lethal precision and unwavering confidence.
+
+@doctrine_gfl_elmoce_zonerecon_name=Zone Reconnaissance
+@doctrine_gfl_elmoce_zonerecon_descr=Wandering the contaminated Yellow Zones has taught these dolls the common patrol patterns and hiding spots. Their experience reveals enemy positions at mission start.
+
+@doctrine_gfl_elmoce_survivalinstinct_name=Survival Instinct
+@doctrine_gfl_elmoce_survivalinstinct_descr=Hardened by the harsh contaminated lands, these survivors don't go down easily. Wounds only make them fight harder, driven by an unshakeable will to live.
+
+@doctrine_gfl_elmoce_independent_name=Independent Operators
+@doctrine_gfl_elmoce_independent_descr=Used to operating alone in the wilderness, these wanderers maintain peak performance without relying on squad cohesion. Self-sufficient and deadly.
+
+@doctrine_gfl_elmoce_veteranmarks_name=Veteran Marksmanship
+@doctrine_gfl_elmoce_veteranmarks_descr=Years of combat experience across diverse environments have honed their shooting skills. Superior accuracy and lethality at all ranges with any weapon.

@@ -1,21 +1,21 @@
 <Units>
     <Unit
-        name="GFL-UNIT-GIRL"
-        nameUI="@GFL-UNIT-GIRL-NAME"
-        description="@GFL-UNIT-GIRL-DESC"
-        flagTex="data/textures/gfl_girl_bg.dds"
-        flagColor="E3F6FD"
-        movie="data/movies/gfl_unlock_girl.ogv"
-        rndNameEntry="@#GFL-UNIT-GIRL-NAME-RND"
+        name="GFL-UNIT-CAFE"
+        nameUI="@GFL-UNIT-CAFE-NAME"
+        description="@GFL-UNIT-CAFE-DESC"
+        flagTex="data/textures/gfl_cafe_bg.dds"
+        flagColor="D67849"
+        movie="data/movies/gfl_unlock_cafe.ogv"
+        rndNameEntry="@#GFL-UNIT-CAFE-NAME-RND"
         voicepack="commander_eng"
-        incapacitationChance="60"
+        incapacitationChance="85"
         incapacitationChanceCrit="30"
     >
         <Classes>
             <Class
-                name="GFL-DOLL-SKKF"
-                nameUI="@DOLL-SKKF-NAME"
-                description="@DOLL-SKKF-DESC"
+                name="GFL-DOLL-M1903"
+                nameUI="@DOLL-M1903-NAME"
+                description="@DOLL-M1903-DESC"
                 numSlots="1"
                 supply="100"
                 iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
@@ -23,9 +23,9 @@
                 maxUpgradeable="2"
             />
             <Class
-                name="GFL-DOLL-SKKM"
-                nameUI="@DOLL-SKKM-NAME"
-                description="@DOLL-SKKM-DESC"
+                name="GFL-DOLL-WA2000"
+                nameUI="@DOLL-WA2000-NAME"
+                description="@DOLL-WA2000-DESC"
                 numSlots="1"
                 supply="100"
                 iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
@@ -33,9 +33,9 @@
                 maxUpgradeable="2"
             />
             <Class
-                name="GFL-DOLL-UMP40"
-                nameUI="@DOLL-UMP40-NAME"
-                description="@DOLL-UMP40-DESC"
+                name="GFL-DOLL-G36"
+                nameUI="@DOLL-G36-NAME"
+                description="@DOLL-G36-DESC"
                 numSlots="1"
                 supply="100"
                 iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
@@ -43,19 +43,9 @@
                 maxUpgradeable="2"
             />
             <Class
-                name="GFL-DOLL-K2"
-                nameUI="@DOLL-K2-NAME"
-                description="@DOLL-K2-DESC"
-                numSlots="1"
-                supply="100"
-                iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
-                upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2"
-                maxUpgradeable="2"
-            />
-            <Class
-                name="GFL-DOLL-DSR50"
-                nameUI="@DOLL-DSR50-NAME"
-                description="@DOLL-DSR50-DESC"
+                name="GFL-DOLL-XCR"
+                nameUI="@DOLL-XCR-NAME"
+                description="@DOLL-XCR-DESC"
                 numSlots="1"
                 supply="100"
                 iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
@@ -128,6 +118,47 @@
             <Rank xpNeeded="48310" badgeTex="" />
             <Rank xpNeeded="58900" badgeTex="" />
             <Rank xpNeeded="70360" badgeTex="" />
+            <Rank xpNeeded="82680" badgeTex="" />
+            <Rank xpNeeded="95820" badgeTex="" />
+            <Rank xpNeeded="109790" badgeTex="" />
+            <Rank xpNeeded="124550" badgeTex="" />
+            <Rank xpNeeded="140100" badgeTex="" />
+            <Rank xpNeeded="156420" badgeTex="" />
         </Ranks>
+
+        <Doctrine doctrinePointsPerSquadLevel="1">
+            <Node name="Handguns_ReloadDrills" />
+            <Node name="GFL_CQCProtocols">
+                <Node name="GFL_OverwhelmingForce" />
+            </Node>
+            <Node name="GFL_RapidDeployment">
+                <Node name="GFL_WeaponTransition" />
+                <Node name="GFL_CombatEfficiency" />
+            </Node>
+            <Node name="GFL_SuppressionProtocols" />
+            <Node name="GFL_LethalPrecision" />
+
+            <Node name="GFL_CAFE_PathOfProtection" />
+            <Node name="GFL_CAFE_AbsoluteMentalDefense" />
+            <Node name="GFL_CAFE_PerfectService" />
+            <Node name="GFL_CAFE_SpotlightCharge" />
+
+            <Node name="GFL_OptimizedPerformance" />
+            <Node name="GFL_CommunicationProtocols">
+                <Node name="GFL_AdvancedProtocols">
+                    <Node name="GFL_TacticalIntelligence" numLevels="2" />
+                    <Node name="GFL_InformationExtraction" />
+                </Node>
+            </Node>
+
+            <Node
+                name="GFL_CAFE_SparklingNight"
+                minSquadLevel="10"
+                numLevels="2"
+            />
+            <Node name="GFL_CAFE_LongSummer" minSquadLevel="10" numLevels="3" />
+            <Node name="GFL_CAFE_BelovedMacchiato" minSquadLevel="10" />
+            <Node name="GFL_CAFE_VelvetLatte" minSquadLevel="10" />
+        </Doctrine>
     </Unit>
 </Units>

@@ -53,9 +53,11 @@ Each ammo entry needs:
 
 Update the `name` attribute to include the new weapon's suffix (e.g. `_GFL_MOSINNAGANT`). Also create matching ammo for suppressed variants if applicable (same stats but with `silenced="1"` and lower `audibleSoundRadius`).
 
-### 3. Entities (`mod/entities/gfl_humans.xml`)
+### 3. Entities (`mod/entities/gfl_humans_{squad_lower}.xml`)
 
-Add an `<Entity>` for each doll, appended before `</Entities>`. Follow this template:
+Create a new per-squad entity file (one file per squad — see existing `gfl_humans_defy.xml`, `gfl_humans_404.xml`, etc.). Wrap entries in `<Entities>...</Entities>`. **Squad-file load order is canonical** (see `SQUAD_ORDER` in `www/unit-builder/build_data.py` and `scripts/generate_deploy.py`) — append the new squad slug at the end of those lists so existing URL-hash bit indices stay stable.
+
+Each entity follows this template:
 
 ```xml
 <Entity name="{SQUAD}-{DOLL_ID}" type="Human" editorAutoHeight="false">
@@ -96,9 +98,9 @@ Notes:
 - Only use `data/models/dolls/cubebodies/{name}.khm` if the doll has skins in `mod/models/dolls/skins/{name}/`. Cubebody models are for dolls with swappable skins only. If no skins exist, use the normal model path `data/models/dolls/{name}.khm`.
 - If the doll has skins, also add entries to `mod/equipment/gfl_skins.xml` (Bind + Scope for each skin) and add the default skin as the last Equipment item. See existing entries in `gfl_skins.xml` for the pattern.
 
-### 4. Unit definition (`mod/units/gfl_unit.xml`)
+### 4. Unit definition (`mod/units/gfl_unit_{squad_lower}.xml`)
 
-Add a new `<Unit>` block before `</Units>`. Copy the structure from an existing unit (DEFY is a good template). Key attributes:
+Create a new per-squad unit file (one file per squad — see existing `gfl_unit_defy.xml`, `gfl_unit_404.xml`, etc.) wrapping a single `<Unit>` block in `<Units>...</Units>`. Copy the structure from an existing unit file (DEFY is a good template). Key attributes:
 - `name="GFL-UNIT-{SQUAD}"`
 - `nameUI="@GFL-UNIT-{SQUAD}-NAME"`
 - `description="@GFL-UNIT-{SQUAD}-DESC"`
@@ -123,10 +125,11 @@ Add a `<Portrait>` entry per doll before `</HumanIdentities>`:
 />
 ```
 
-### 6. Localisation (`mod/localization/gfl_game.txt`)
+### 6. Localisation (`mod/localization/gfl_game_{squad_lower}.txt` + `gfl_game_common.txt`)
 
-Add these strings:
+Localisation is split per squad. Create a new `gfl_game_{squad_lower}.txt` for the squad's doll/weapon/skin/doctrine/buff strings, and add unit identity strings to `gfl_game_common.txt`. DK2 loads every `*.txt` file in the localization directory, so just dropping the file in is enough; no loader changes needed.
 
+In `gfl_game_{squad_lower}.txt` (unit identity first, then per doll):
 ```
 @GFL-UNIT-{SQUAD}-NAME={Display Name}
 @GFL-UNIT-{SQUAD}-DESC={Description}
@@ -138,6 +141,8 @@ Add these strings:
 @WEAP-{DOLL_ID}-NAME={Weapon Name}
 @WEAP-{DOLL_ID}-DESC={Weapon Description}
 ```
+
+Generic calibre/ammo strings, shared doctrines, scopes, armours, helmets, and GEAR go in `gfl_game_common.txt` so other squads can share them.
 
 ### 7. Deploy screen
 
