@@ -398,6 +398,13 @@ const GIRLDLE_DOLLS = [
     role: "Vanguard",
     squad: "Monsoon Squad",
   },
+  {
+    name: "Mityl",
+    weapon: "SMG",
+    element: "Hydro",
+    role: "Sentinel",
+    squad: "Elmo Combined Echelon",
+  },
 ];
 
 const GIRLDLE_ATTRS = ["weapon", "element", "role", "squad"];
@@ -603,7 +610,9 @@ function girldleRenderInput(guesses, solved, failed) {
   }
 
   const usedNames = new Set(guesses.map((g) => g.name));
-  const available = GIRLDLE_DOLLS.filter((d) => !usedNames.has(d.name));
+  const available = GIRLDLE_DOLLS.filter((d) => !usedNames.has(d.name)).sort(
+    (a, b) => a.name.localeCompare(b.name),
+  );
 
   actions.innerHTML = `
         <div class="girldle-input-row">
@@ -624,9 +633,10 @@ function girldleRenderInput(guesses, solved, failed) {
   function showSuggestions() {
     const val = input.value.trim().toLowerCase();
 
-    const matches = val.length < 1
-      ? available
-      : available.filter((d) => d.name.toLowerCase().includes(val));
+    const matches =
+      val.length < 1
+        ? available
+        : available.filter((d) => d.name.toLowerCase().includes(val));
 
     if (matches.length === 0) {
       suggestions.innerHTML = "";
@@ -709,6 +719,7 @@ function girldleRenderInput(guesses, solved, failed) {
   });
 
   input.focus();
+  showSuggestions();
 }
 
 let girldleGuesses = [];
