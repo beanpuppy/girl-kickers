@@ -405,6 +405,13 @@ const GIRLDLE_DOLLS = [
     role: "Sentinel",
     squad: "Elmo Combined Echelon",
   },
+  {
+    name: "Welrod",
+    weapon: "HG",
+    element: "Corrosion",
+    role: "Bulwark",
+    squad: "H.I.D.E. 404",
+  },
 ];
 
 const GIRLDLE_ATTRS = ["weapon", "element", "role", "squad"];
@@ -487,7 +494,15 @@ function girldleShareResults() {
   const date = girldleTodayUTC();
   const solved = girldleSolved;
   const count = girldleGuesses.length;
-  const header = `Girldle ${date} ${solved ? count : "X"}/${GIRLDLE_MAX_GUESSES}`;
+  const header = `Girldle · ${date} · ${solved ? count : "X"}/${GIRLDLE_MAX_GUESSES}`;
+
+  // Watermark: append `count` zero-width spaces (U+200B) to the header.
+  // The ROnergate bot uses this as a lightweight anti-cheat signal. A
+  // hand-typed forgery won't carry the watermark, and the count matches
+  // the row count so it can't be faked by stripping random ZWSPs.
+  //
+  // if you're reading this, please dont use this information to cheat ;(
+  const watermark = "\u200B".repeat(count);
 
   const rows = girldleGuesses.map((guess) => {
     const nameSquare =
@@ -507,9 +522,10 @@ function girldleShareResults() {
 
   const text =
     header +
+    watermark +
     "\n" +
     rows.join("\n") +
-    "\nhttps://antistrategie.github.io/girl-kickers/unit-builder/#girldle";
+    "\n<https://antistrategie.github.io/girl-kickers/unit-builder/#girldle>";
   navigator.clipboard.writeText(text).then(() => {
     showToast("Results copied to clipboard!");
   });
