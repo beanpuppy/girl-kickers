@@ -6,6 +6,10 @@ updates:
       interval: weekly
     cooldown:
       default-days: 7
+    groups:
+      all:
+        patterns:
+          - "*"
 
   - package-ecosystem: uv
     directory: /
@@ -13,6 +17,10 @@ updates:
       interval: weekly
     cooldown:
       default-days: 7
+    groups:
+      all:
+        patterns:
+          - "*"
 
   - package-ecosystem: bun
     directory: /www/doctgen
@@ -20,3 +28,7 @@ updates:
       interval: weekly
     cooldown:
       default-days: 7
+    groups:
+      all:
+        patterns:
+          - "*"
