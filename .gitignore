@@ -12,3 +12,6 @@ tools/gfl2.map
 
 # Generated unit builder data (built by CI)
 www/unit-builder/app/data/
+
+# Beta publish staging dir (built by beta/build.py)
+beta/_staging/

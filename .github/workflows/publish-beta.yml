@@ -1,0 +1,50 @@
+name: Publish to Beta Workshop
+
+on:
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install steamcmd
+        run: |
+          sudo add-apt-repository -y multiverse
+          sudo dpkg --add-architecture i386
+          sudo apt-get update
+          echo steam steam/question select "I AGREE" | sudo debconf-set-selections
+          echo steam steam/license note '' | sudo debconf-set-selections
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y steamcmd
+
+      - name: Stage workshop content
+        run: |
+          vdf=$(beta/build.py --staging "$RUNNER_TEMP/beta_staging")
+          echo "VDF=$vdf" >> "$GITHUB_ENV"
+
+      - name: Generate Steam Guard code
+        id: totp
+        env:
+          STEAM_SHARED_SECRET: ${{ secrets.STEAM_SHARED_SECRET }}
+        run: |
+          code=$(beta/totp.py)
+          echo "::add-mask::$code"
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+
+      - name: Publish to workshop
+        env:
+          STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
+          STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
+          STEAM_GUARD_CODE: ${{ steps.totp.outputs.code }}
+        run: |
+          steamcmd \
+            +login "$STEAM_USERNAME" "$STEAM_PASSWORD" "$STEAM_GUARD_CODE" \
+            +workshop_build_item "$VDF" \
+            +quit
