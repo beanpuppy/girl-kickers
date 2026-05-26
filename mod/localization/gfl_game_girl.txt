@@ -8,8 +8,26 @@
 @DOLL-SKKM-NAME=SKK (M)
 @DOLL-SKKM-DESC=I know this guy, he's literally me!
 
-@buff_skk_commanded=Under SKK command
-@buff_skk_commanding=Commander: Inspires nearby allies
+@buff_gfl_commanded=Under SKK command
+@buff_gfl_commanding=Commander: Inspires nearby allies
+
+@helmet_gfl_combathelmet_name=Combat Helmet
+@helmet_gfl_combathelmet_desc=Standard tactical helmet, light enough that you forget you're wearing one. Stops most fragmentation and pistol rounds, but rifle fire will go through it and ruin your afternoon.
+
+@helmet_gfl_heavyhelmet_name=Heavy Combat Helmet
+@helmet_gfl_heavyhelmet_desc=High-cut helmet with a ceramic insert riding on top of the shell. Adds noticeable weight, but you'll thank it the first time a rifle round glances off the back of your skull instead of through it.
+
+@armor_gfl_softvest_name=Concealed Vest IIA
+@armor_gfl_softvest_desc=Soft armour panels that sit flush under the uniform. Reliable against handgun fire, less so against anything moving faster than that.
+
+@armor_gfl_frontvest_name=Concealed Vest IIIA Slick
+@armor_gfl_frontvest_desc=Front and back IIIA panels, no side wraps. Lighter than a full vest and stays flat against the torso, with the trade that anything coming in from the side has a clean path.\n\nFine if you're facing the threat. Less fine when it flanks you.
+
+@armor_gfl_fullvest_name=Concealed Vest IIIA
+@armor_gfl_fullvest_desc=Full soft armour wrap, front and back panels both at IIIA. Sits flat under the uniform and stops most handgun and SMG rounds.\n\nDiscreet enough to wear all day, protective enough that you should.
+
+@armor_gfl_tacticalvest_name=Plate Carrier
+@armor_gfl_tacticalvest_desc=Hard front and back plates over a load-bearing harness. The civilian disguise is practically over the moment you put this on.\n\nWill take the edge off most rifle fire and stop anything below it cold. Pair it with the heavy helmet if you plan on being the one breaking the door down.
 
 @DOLL-UMP40-NAME=LAINIE
 @DOLL-UMP40-DESC=Once a personality emulation born from Leva’s neural core, she has been reborn in a body with a familiar appearance. Cheerful, optimistic, warm like the sun… Her personality is the same as it was and makes her more than a mere replica. Though her past is incomplete, she’s pouring all her energy into building a future.

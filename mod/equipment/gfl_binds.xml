@@ -2515,25 +2515,24 @@
         <eqp name="GFL-WEAP-MAKAROVPM" />
 
         <!-- Armor -->
-        <eqp name="GFL_RecFrame" />
-        <eqp name="GFL_LawFrame" />
-        <eqp name="GFL_CombatFrame" />
-        <eqp name="GFL_EliteFrame" />
-        <eqp name="GFL_GrafFrame" />
-        <eqp name="GFL_RhinoFrame" />
+        <eqp name="EmptyArmor" />
+        <eqp name="GFL_SoftVest" />
+        <eqp name="GFL_FrontVest" />
+        <eqp name="GFL_FullVest" />
+        <eqp name="GFL_TacticalVest" />
 
-        <eqp name="GFL_BasicCore" />
-        <eqp name="GFL_VanguardCore" />
-        <eqp name="GFL_SentinelCore" />
-        <eqp name="GFL_BulwarkCore" />
-        <eqp name="GFL_SupportCore" />
+        <!-- Helmet -->
+        <eqp name="EmptyHelmet" />
+        <eqp name="GFL_CombatHelmet" />
+        <eqp name="GFL_HeavyHelmet" />
 
         <!-- NVG -->
-        <eqp name="GFL_NightVision" />
+        <eqp name="NVG" />
+        <eqp name="NVG_02" />
 
         <!-- Utility -->
-        <eqp name="GFL_FeetOfGunmetal" />
-        <eqp name="GFL_Lockpick" />
+        <eqp name="FeetOfSteel" />
+        <eqp name="Lockpick Machine" />
 
         <eqp name="Stinger" />
         <eqp name="Smoke Grenade" />
@@ -2572,25 +2571,24 @@
         <eqp name="GFL-WEAP-MAKAROVPM" />
 
         <!-- Armor -->
-        <eqp name="GFL_RecFrame" />
-        <eqp name="GFL_LawFrame" />
-        <eqp name="GFL_CombatFrame" />
-        <eqp name="GFL_EliteFrame" />
-        <eqp name="GFL_GrafFrame" />
-        <eqp name="GFL_RhinoFrame" />
+        <eqp name="EmptyArmor" />
+        <eqp name="GFL_SoftVest" />
+        <eqp name="GFL_FrontVest" />
+        <eqp name="GFL_FullVest" />
+        <eqp name="GFL_TacticalVest" />
 
-        <eqp name="GFL_BasicCore" />
-        <eqp name="GFL_VanguardCore" />
-        <eqp name="GFL_SentinelCore" />
-        <eqp name="GFL_BulwarkCore" />
-        <eqp name="GFL_SupportCore" />
+        <!-- Helmet -->
+        <eqp name="EmptyHelmet" />
+        <eqp name="GFL_CombatHelmet" />
+        <eqp name="GFL_HeavyHelmet" />
 
         <!-- NVG -->
-        <eqp name="GFL_NightVision" />
+        <eqp name="NVG" />
+        <eqp name="NVG_02" />
 
         <!-- Utility -->
-        <eqp name="GFL_FeetOfGunmetal" />
-        <eqp name="GFL_Lockpick" />
+        <eqp name="FeetOfSteel" />
+        <eqp name="Lockpick Machine" />
 
         <eqp name="Stinger" />
         <eqp name="Smoke Grenade" />

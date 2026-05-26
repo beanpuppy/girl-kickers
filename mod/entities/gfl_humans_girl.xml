@@ -20,6 +20,7 @@
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
             <Brain suppressionRecovery="40.0" />
+            <Concealment default="10" canHide="true" />
 
             <Mobility>
                 <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
@@ -28,14 +29,11 @@
 
             <Equipment>
                 <Item name="GFL-WEAP-MAKAROVPM" />
-                <Item name="GFL_FeetOfGunmetal" />
-                <Item name="GFL_Lockpick" />
-                <Item name="GFL_BasicCore" />
-                <Item name="GFL_NightVision" />
-                <Item name="GFL_CombatFrame" />
+                <Item name="FeetOfSteel" />
+                <Item name="Lockpick" />
             </Equipment>
 
-            <Doctrine name="SKK_CommandAura" />
+            <Doctrine name="GFL_CommandAura" />
         </Human>
     </Entity>
 
@@ -60,6 +58,7 @@
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
             <Brain suppressionRecovery="40.0" />
+            <Concealment default="10" canHide="true" />
 
             <Mobility>
                 <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
@@ -68,14 +67,11 @@
 
             <Equipment>
                 <Item name="GFL-WEAP-MAKAROVPM" />
-                <Item name="GFL_FeetOfGunmetal" />
-                <Item name="GFL_Lockpick" />
-                <Item name="GFL_BasicCore" />
-                <Item name="GFL_NightVision" />
-                <Item name="GFL_CombatFrame" />
+                <Item name="FeetOfSteel" />
+                <Item name="Lockpick" />
             </Equipment>
 
-            <Doctrine name="SKK_CommandAura" />
+            <Doctrine name="GFL_CommandAura" />
         </Human>
     </Entity>
 
