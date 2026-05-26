@@ -18,16 +18,16 @@
 @helmet_gfl_heavyhelmet_desc=High-cut helmet with a ceramic insert riding on top of the shell. Adds noticeable weight, but you'll thank it the first time a rifle round glances off the back of your skull instead of through it.
 
 @armor_gfl_softvest_name=Concealed Vest IIA
-@armor_gfl_softvest_desc=Soft armour panels that sit flush under the uniform. Reliable against handgun fire, less so against anything moving faster than that.
+@armor_gfl_softvest_desc=Two-panel IIA, soft layer only. Handles pistol fire, anything with more energy than that goes through. Light enough you forget you're wearing it, until something doesn't.
 
 @armor_gfl_frontvest_name=Concealed Vest IIIA Slick
-@armor_gfl_frontvest_desc=Front and back IIIA panels, no side wraps. Lighter than a full vest and stays flat against the torso, with the trade that anything coming in from the side has a clean path.\n\nFine if you're facing the threat. Less fine when it flanks you.
+@armor_gfl_frontvest_desc=Stripped-down IIIA carrier. Side wraps deleted to save bulk, leaving the front and back panels at full rating.\n\nWhere the bullets come from matters, just don't get flanked :)
 
 @armor_gfl_fullvest_name=Concealed Vest IIIA
-@armor_gfl_fullvest_desc=Full soft armour wrap, front and back panels both at IIIA. Sits flat under the uniform and stops most handgun and SMG rounds.\n\nDiscreet enough to wear all day, protective enough that you should.
+@armor_gfl_fullvest_desc=Wraps the torso in IIIA: front, back, and sides all rated against handgun and SMG fire. The compromise option, less concealable than the slick cut, less protective than hard plates.
 
 @armor_gfl_tacticalvest_name=Plate Carrier
-@armor_gfl_tacticalvest_desc=Hard front and back plates over a load-bearing harness. The civilian disguise is practically over the moment you put this on.\n\nWill take the edge off most rifle fire and stop anything below it cold. Pair it with the heavy helmet if you plan on being the one breaking the door down.
+@armor_gfl_tacticalvest_desc=Hard ceramic plates riding a load-bearing harness. Rated against most rifle ammunition at typical engagement distances though specialist threats and AP rounds will still find a way through eventually.\n\nThere is no hiding this one. Wear it when you've already decided to be loud.
 
 @DOLL-UMP40-NAME=LAINIE
 @DOLL-UMP40-DESC=Once a personality emulation born from Leva’s neural core, she has been reborn in a body with a familiar appearance. Cheerful, optimistic, warm like the sun… Her personality is the same as it was and makes her more than a mere replica. Though her past is incomplete, she’s pouring all her energy into building a future.
