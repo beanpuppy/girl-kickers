@@ -13,6 +13,18 @@ const DOLL_ABILITIES = {
       desc: "Incendiary grenades that spread fire over a wide area, burning and stunning enemies caught in the blaze.",
     },
   ],
+  "GFL-DOLL-SKKF": [
+    {
+      name: "Commander's Aura",
+      desc: "Nearby allies fight more effectively under SKK's leadership.",
+    },
+  ],
+  "GFL-DOLL-SKKM": [
+    {
+      name: "Commander's Aura",
+      desc: "Nearby allies fight more effectively under SKK's leadership.",
+    },
+  ],
 };
 
 let allDolls = [];
@@ -1324,6 +1336,11 @@ function generateEntitiesXml(unitId, dolls, bitmaskId) {
         equipment.push(d.selectedSkin.id);
       }
 
+      const doctrineLines = (e.doctrines || [])
+        .map((name) => `            <Doctrine name="${xmlEsc(name)}" />`)
+        .join("\n");
+      const doctrineBlock = doctrineLines ? `\n\n${doctrineLines}` : "";
+
       const model = d.selectedSkin ? d.selectedSkin.model : e.model;
       const diffuseTex = d.selectedSkin
         ? d.selectedSkin.diffuseTex
@@ -1359,7 +1376,7 @@ deleteOnDeath="false"
 
 <Equipment>
 ${equipItems}
-</Equipment>
+</Equipment>${doctrineBlock}
         </Human>
     </Entity>`;
     })

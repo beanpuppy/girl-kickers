@@ -8,6 +8,9 @@
 @DOLL-SKKM-NAME=SKK (M)
 @DOLL-SKKM-DESC=I know this guy, he's literally me!
 
+@buff_skk_commanded=Under SKK command
+@buff_skk_commanding=Commander: Inspires nearby allies
+
 @DOLL-UMP40-NAME=LAINIE
 @DOLL-UMP40-DESC=Once a personality emulation born from Leva’s neural core, she has been reborn in a body with a familiar appearance. Cheerful, optimistic, warm like the sun… Her personality is the same as it was and makes her more than a mere replica. Though her past is incomplete, she’s pouring all her energy into building a future.
 

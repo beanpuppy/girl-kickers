@@ -34,6 +34,8 @@
                 <Item name="GFL_NightVision" />
                 <Item name="GFL_CombatFrame" />
             </Equipment>
+
+            <Doctrine name="SKK_CommandAura" />
         </Human>
     </Entity>
 
@@ -72,6 +74,8 @@
                 <Item name="GFL_NightVision" />
                 <Item name="GFL_CombatFrame" />
             </Equipment>
+
+            <Doctrine name="SKK_CommandAura" />
         </Human>
     </Entity>
 

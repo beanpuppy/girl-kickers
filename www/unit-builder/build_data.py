@@ -70,6 +70,8 @@ def parse_entities(paths: list[Path]) -> dict[str, dict]:
             for item in human.findall("Equipment/Item"):
                 equipment.append(item.get("name"))
 
+            doctrines = [d.get("name") for d in human.findall("Doctrine")]
+
             entities[class_id] = {
                 "bitIndex": bit_index,
                 "entityName": name,
@@ -91,6 +93,7 @@ def parse_entities(paths: list[Path]) -> dict[str, dict]:
                 "fovEyeRadius": fov.get("eyeRadiusMeters"),
                 "suppressionRecovery": brain.get("suppressionRecovery"),
                 "equipment": equipment,
+                "doctrines": doctrines,
             }
             bit_index += 1
 
@@ -485,6 +488,7 @@ def build_dolls_json():
                 "fovEyeRadius": ent["fovEyeRadius"],
                 "suppressionRecovery": ent["suppressionRecovery"],
                 "equipment": ent["equipment"],
+                "doctrines": ent["doctrines"],
             },
         }
 
