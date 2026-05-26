@@ -253,3 +253,21 @@
 
 @ammo_762x54r_fmj_mosinnagant_name=7.62x54mmR FMJ
 @ammo_762x54r_fmj_mosinnagant_desc=Full-power 7.62x54mmR rifle cartridge for bolt-action precision work. Devastating at range with excellent penetration against all but the heaviest armour.
+
+@helmet_gfl_combathelmet_name=Combat Helmet
+@helmet_gfl_combathelmet_desc=Standard tactical helmet, light enough that you forget you're wearing one. Stops most fragmentation and pistol rounds, but rifle fire will go through it and ruin your afternoon.
+
+@helmet_gfl_heavyhelmet_name=Heavy Combat Helmet
+@helmet_gfl_heavyhelmet_desc=High-cut helmet with a ceramic insert riding on top of the shell. Adds noticeable weight, but you'll thank it the first time a rifle round glances off the back of your skull instead of through it.
+
+@armor_gfl_softvest_name=Concealed Vest IIA
+@armor_gfl_softvest_desc=Two-panel IIA, soft layer only. Handles pistol fire, anything with more energy than that goes through. Light enough you forget you're wearing it, until something doesn't.
+
+@armor_gfl_frontvest_name=Concealed Vest IIIA Slick
+@armor_gfl_frontvest_desc=Stripped-down IIIA carrier. Side wraps deleted to save bulk, leaving the front and back panels at full rating.\n\nWhere the bullets come from matters, just don't get flanked :)
+
+@armor_gfl_fullvest_name=Concealed Vest IIIA
+@armor_gfl_fullvest_desc=Wraps the torso in IIIA: front, back, and sides all rated against handgun and SMG fire. The compromise option, less concealable than the slick cut, less protective than hard plates.
+
+@armor_gfl_tacticalvest_name=Plate Carrier
+@armor_gfl_tacticalvest_desc=Hard ceramic plates riding a load-bearing harness. Rated against most rifle ammunition at typical engagement distances though specialist threats and AP rounds will still find a way through eventually.\n\nThere is no hiding this one. Wear it when you've already decided to be loud.

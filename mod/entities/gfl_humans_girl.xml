@@ -54,7 +54,7 @@
             <Id
                 name="GIRL-SKKM"
                 portrait="data/textures/portraits/gfl_skkm.dds"
-                gender="1"
+                gender="0"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
             <Brain suppressionRecovery="40.0" />
