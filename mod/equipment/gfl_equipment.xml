@@ -374,7 +374,7 @@
         description="@helmet_gfl_combathelmet_desc"
         img="data/models/humans/attachments/ach_helmet_ui.dds"
     >
-        <MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="-2" />
+        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
         <ConcealmentModifier add="-5" />
         <Params>
             <ProtectionArc degrees="360" coveragePercent="15" piercingProtectionLevel="40" />
@@ -391,7 +391,7 @@
         description="@helmet_gfl_heavyhelmet_desc"
         img="data/models/humans/attachments/ihps_helmet_ui.dds"
     >
-        <MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="-2" />
+        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
         <ConcealmentModifier add="-7" />
         <Params>
             <ProtectionArc degrees="360" coveragePercent="20" piercingProtectionLevel="50" />
@@ -408,7 +408,7 @@
         description="@armor_gfl_softvest_desc"
         img="data/models/equipment/armor_softlevelii_ui.dds"
     >
-        <MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="0" />
+        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
         <ConcealmentModifier add="-2" />
         <Params>
             <ProtectionArc degrees="90" coveragePercent="50" piercingProtectionLevel="35" />
@@ -427,7 +427,7 @@
         description="@armor_gfl_frontvest_desc"
         img="data/models/equipment/armor_softpanelsiiia_ui.dds"
     >
-        <MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="0" />
+        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
         <ConcealmentModifier add="-2" />
         <Params>
             <ProtectionArc degrees="90" coveragePercent="50" piercingProtectionLevel="45" />
@@ -446,7 +446,7 @@
         description="@armor_gfl_fullvest_desc"
         img="data/models/equipment/armor_softleveliiia_ui.dds"
     >
-        <MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0" />
+        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
         <ConcealmentModifier add="-3" />
         <Params>
             <ProtectionArc degrees="90" coveragePercent="55" piercingProtectionLevel="45" />
@@ -465,7 +465,7 @@
         description="@armor_gfl_tacticalvest_desc"
         img="data/models/equipment/armor_tacvestiii_ui.dds"
     >
-        <MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="-1" />
+        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
         <ConcealmentModifier add="-8" />
         <Params>
             <ProtectionArc degrees="90" coveragePercent="65" piercingProtectionLevel="55" />
