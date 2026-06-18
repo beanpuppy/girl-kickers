@@ -13,12 +13,12 @@
             nodeName="GFL_Commanded"
             target="friends_in_radius"
             radius="10.0"
-            durationMs="60000"
+            durationMs="600000"
         />
         <GiveBuff
             nodeName="GFL_Commanding"
             target="self"
-            durationMs="60000"
+            durationMs="600000"
         />
     </Node>
 
