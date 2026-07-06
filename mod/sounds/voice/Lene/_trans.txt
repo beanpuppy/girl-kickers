@@ -1,0 +1,157 @@
+# Voice Line Translations for Lene
+# Generated automatically using OpenAI Whisper
+# Total files: 51
+
+Series_Attack__VO_Lene_Series_Tone_Positive_003.wav
+  Nature!
+
+Series_Battle_Start__VO_Lene_Series_Tone_Positive_002.wav
+  Let's go!
+
+Series_Chosen_Auto__VO_Lene_Series_Tone_Positive_007.wav
+  Leave it to me!
+
+Series_Chosen__VO_Lene_Series_Tone_Positive_006.wav
+  I'll do it!
+
+Series_Daily_001.wav
+  The Commander's chair is fluffy! What kind of material is it?
+
+Series_Daily_002.wav
+  Eeeh, so you rode the Elmo and went to all sorts of places! I'm jealous... You've probably seen the ocean, right?
+
+Series_Daily_003.wav
+  I was in Riva's mind the whole time. It was like I was being locked in a dark space. Are you curious?
+
+Series_Daily_004.wav
+  delete
+
+Series_Daily_005.wav
+  It's a pain in the ass to have to move anything with my own hands after entering the body. I wish things would just fly in like a mental space.
+
+Series_Die__VO_Lene_Series_Tone_Negative_001.wav
+  My vision is... dark...
+
+Series_Dying__VO_Lene_Series_Tone_Negative_002.wav
+  It's not over yet!
+
+Series_Hit__VO_Lene_Single_Hit_001.wav
+  New equipment!
+
+Series_Kill__VO_Lene_Single_Kill_001.wav
+  This is good!
+
+Series_Lose__VO_Lene_Single_Lose_001.wav
+  Ugh... This enemy is strong...
+
+Series_Set_Click__VO_Lene_Series_Tone_Positive_004.wav
+  What's wrong?
+
+Series_Set_Fall__VO_Lene_Series_Tone_Positive_005.wav
+  Here it is!
+
+Series_Shield_Broken__VO_Lene_Series_Tone_Negative_003.wav
+  This is bad...
+
+Series_Skill01__VO_Lene_Single_Skill_001.wav
+  Hold tight!
+
+Series_Skill02__VO_Lene_Single_Skill_002.wav
+  I'm not bad at it!
+
+Series_Tone_Positive_001.wav
+  I'm all set!
+
+Series_Ultimate__VO_Lene_Single_Ultimate_SSR_001.wav
+  Ogas is still active!
+
+Series_Up_001.wav
+  Oh, that's great!
+
+Series_Up_002.wav
+  Let's keep it up!
+
+Series_Up_003.wav
+  Modification success!
+
+Series_Up_004.wav
+  It's as fluffy as the sun!
+
+Series_Up_005.wav
+  Fufu, I'm getting better at this!
+
+Series_Win__VO_Lene_Single_Win_001.wav
+  So this is the real battle... That was easy!
+
+Single_Birthday_SSR_001.wav
+  Happy birthday! For this day, I chose cake, candles, balloons, and presents! What are your wishes? Tell me!
+
+Single_Birthday_SSR_002.wav
+  Pampaka-pam! Happy birthday! I've prepared a special candle this year. I hope this small candle will light up your world!
+
+Single_Christmas_001.wav
+  I changed the wallpaper of my room's screen to a fireplace! Come and play if you like! I'll ride a fluffy blanket, and I'll go around the fireplace to give out presents! This is what Christmas feels like!
+
+Single_Christmas_002.wav
+  Look at this beard! Does it look good on you? Tonight's Elmo Santa is me! What kind of present do you want, Commander? Just tell me in secret!
+
+Single_Friendliness_001.wav
+  I want to go up to the roof and get sunburned, but can you choose a nice pair of sunglasses from here? I'd be even happier if you came with me, Commander!
+
+Single_Friendliness_002.wav
+  Is it a bit too close? Of course it is! I've been watching the Commander's rumors for years!
+
+Single_Friendliness_003.wav
+  I was curious about the high evaluation of both Riva and Persica for the Commander, but... I was convinced when I actually met them!
+
+Single_Friendliness_004.wav
+  If I can't see anything, and if I'm left in a situation where I don't know the past or the future, what will you do?
+
+Single_Friendliness_005.wav
+  Even a small light becomes a great light in the darkness. Commander, you're like a flame that illuminates the world!
+
+Single_Friendliness_006.wav
+  Commander, close your eyes! When you can't see, don't you feel like your senses are being sharpened? When I was in the mental space, I used to play like that a lot! It's a simulated feeling, though...
+
+Single_Friendliness_007.wav
+  Eh? Ah, this? When you say sunbathing, you mean swimsuit, right? Come on, help me put on sunscreen.
+
+Single_Friendliness_008.wav
+  If we can finish everything we have to do, let's go on a trip together! I want to see all kinds of scenery. It's a promise, after all.
+
+Single_Login_001.wav
+  Wh.. Haiiii- It's its thats a lovely team Perfect version of Hinata Fuck
+
+Single_MidAutumn_001.wav
+  There was leftover wasabi, natume and sausage in the kitchen, so I learned from Meirin and made geppei! Do you want to try it? Eh? There's no such geppei in the An? Eh? It's okay, it's okay! It's delicious! Maybe...
+
+Single_MidAutumn_002.wav
+  The moon is so beautiful. It's not as warm as the sun, but it has the kindness to illuminate everyone's
+
+Single_NewYear_001.wav
+  Happy New Year! The sun is shining again! Let's feel the new year's sun!
+
+Single_NewYear_002.wav
+  Commander! Happy New Year! Let's make a new year's promise! If you make a promise, you'll have to work hard for a year to keep it!
+
+Single_Obtain_SSR_001.wav
+  I guess it's the first time I've ever been directly involved with humans. Please take care of me!
+
+Single_Passive_SSR_001.wav
+  It's still not over!
+
+Single_SpringFes_001.wav
+  The new year decorations are beautiful! Oh, there's a candle material over there! Commander, what shape do you like? I'll make it for you!
+
+Single_SpringFes_002.wav
+  Commander, look! This is the head of the lion, Lena gave it to me! It's powerful, isn't it? Tonight, I'm going to fight with Lena and the lion on the Elmo board, so be sure to come!
+
+Single_Title_001.wav
+  Dolls Front Line 2 Exilium
+
+Single_Valentine_001.wav
+  I'm not yet the age for Valentine's Day. I'm just kidding! I'll go out with you today!
+
+Single_Valentine_002.wav
+  I've been looking forward to dating you today! Hey, can I hold your hand? Today, I want to feel your warmth forever...
+

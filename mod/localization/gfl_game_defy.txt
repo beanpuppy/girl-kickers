@@ -1,0 +1,53 @@
+@GFL-UNIT-DEFY-NAME=Task Force DEFY
+@GFL-UNIT-DEFY-DESC=An elite team of newer model Tactical Dolls capable of great autonomy in the field, hence the name of the team. They form the most effective combat squad in the Neo-Soviet Union.
+@#GFL-UNIT-DEFY-NAME-RND=Task Force DEFY
+
+@DOLL-AK15-NAME=VOYMASTINA
+@DOLL-AK15-DESC=A girl who looks quite vicious, she's taller than most other Dolls. She's serious and prioritizes efficiency in her words and deeds. She gives people the impression of lacking emotion, but her wrath is frightening.
+@WEAP-AK15-NAME=AK-15
+@WEAP-AK15-DESC=The AK-15 is a variant of the AK-12 chambered for the 7.62×39mm cartridge. Both the AK-12 and AK-15 were developed by the Kalashnikov Group as part of the "Ratnik" ("Warrior", Russian future infantry combat system) program, and have been accepted into Russian military service.
+
+@skin_ak15_default_name=White Mastiff's Fang
+@skin_ak15_default_desc=Voymastina's usual outfit. Its simple desgin has nothing in the way of personalization or decoration. It shows its true worth in battle, where it is like a sharp fang.
+@skin_ak15_skin1_name=Erwin
+@skin_ak15_skin1_desc="I'm sorry I can't blend in like a normal agent... But I can ensure your safety."\nShe Stands by your side, her keen gaze sweeping over everyone who could possibly be suspicious.
+
+@DOLL-AN94-NAME=ALVA
+@DOLL-AN94-DESC=A Doll from the Neo-Soviet Union’s Bureau of State Security and the prototype for the Wolf Pack Project, now leader of Task Force DEFY. After becoming the leader of DEFY, she’s taken over her former partner as the new alpha wolf, earned the respect of her squad members and became better at socializing. What she wants is for Task Force DEFY to endure, and to unravel Paradeus’ new plot. She really loves cats.
+@WEAP-AN94-NAME=AN-94
+@WEAP-AN94-DESC=The AN-94, or Avtomat Nikonova 1994, is a 5.45x39mm caliber gas-operated Russian firearm made by PO Izhmash made during Project Abakan. Project Abakan was a Russian assault rifle program that took place from 1980 to 1994. Being the only outcome from the project, AN-94 was awarded with the name Abakan. The GRAU designation for the AN-94 is '6P33'.
+
+@skin_an94_default_name=Hyper Trigger
+@skin_an94_default_desc=Alva's usual outfit. It's a highly professional special forces battle dress uniform that has next to no ornamentation or personalization, affording mobility and the ability to execute highly-demanding maneuvers in just about any environment.
+@skin_an94_skin1_name=Antje
+@skin_an94_skin1_desc="Commander, I'm not picking up any abnormailities in our surroundings. Currently, I am your assistant Antje... That's a name I didn't expect to be using again."\nDue to the demands of providing undercover close protection, she follows you closely, sticking much closer to you than usual.
+
+@doctrine_gfl_defy_femalegorilla_name=The Female Gorilla
+@doctrine_gfl_defy_femalegorilla_descr=Voymastina intimidates anyone in her presense. Enemies within her radius gain reduced accuracy, supression recovery, and aim time.
+@buff_gfl_defy_femalegorillabuff=Intimidated by Voymastina
+
+@doctrine_gfl_defy_alphaprotocol_name=Alpha Protocol
+@doctrine_gfl_defy_alphaprotocol_descr=Alva leads DEFY as its new alpha operator. When she eliminates targets, allies within gain accuracy, suppression recovery, and movement speed for 5 seconds.
+@buff_gfl_defy_tacticalsynchronization=Synchronized with Alva
+
+@doctrine_gfl_defy_perfectmortality_name=Perfect Mortality
+@doctrine_gfl_defy_perfectmortality_descr=Death gives meaning to existence. Greatly increases incapacitation chance over death, enables self-repair, and fights harder when wounded.
+
+@doctrine_gfl_defy_iceandblood_name=Ice & Blood
+@doctrine_gfl_defy_iceandblood_descr=Cold precision meets violent efficiency. Faster target acquisition, increased critical chance on consecutive kills, and resistance to suppression.
+
+@buff_gfl_defy_defycoordination=DEFY Coordination
+
+@doctrine_gfl_defy_battleechoes_name=Battlefield Echoes
+@doctrine_gfl_defy_battleechoes_descr=Residual combat data from previous engagements reveals enemy positions. Neural network analysis exposes a hostile unit per level near spawn points at mission start.
+
+@doctrine_gfl_defy_momentum_name=Violent Momentum
+@doctrine_gfl_defy_momentum_descr=Combat acceleration systems activate on enemy elimination. Dramatically increases movement and target acquisition speed for sustained assaults.
+
+@doctrine_gfl_defy_tacticalindep_name=Tactical Independence
+@doctrine_gfl_defy_tacticalindep_descr=The squad becomes more independent. Improves suppression recovery, flinch resistance, and rapid target switching for isolated units.
+
+@doctrine_gfl_defy_squaddefiance_name=Squad Defiance
+@doctrine_gfl_defy_squaddefiance_descr=Standing firm against overwhelming odds. Each level increases frontal armor coverage and damage resistance. Squad eliminations rally nearby allies with offensive and defensive bonuses.
+
+@buff_gfl_defy_defiant=Rallied by defiant stand

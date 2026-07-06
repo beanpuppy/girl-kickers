@@ -1,0 +1,314 @@
+<Entities>
+    <Entity name="ELMOCE-PKPSP" type="Human" editorAutoHeight="false">
+        <RenderObject3D
+            model="data/models/dolls/cubebodies/pkpsp.khm"
+            diffuseTex="data/models/dolls/pkpsp.dds"
+        />
+
+        <Breakable
+            template="GenericTrooperGibs"
+            breakOnDamage="explosive"
+            deleteOnDeath="false"
+        />
+        <PhysicalParams health="100" />
+
+        <Human type="GoodGuy" unit="GFL-UNIT-ELMOCE" class="GFL-DOLL-PKPSP">
+            <Id
+                name="ELMOCE-PKPSP"
+                portrait="data/textures/portraits/gfl_pkpsp.dds"
+                gender="0"
+                voicePack="Peritya-Voice"
+            />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="150.0" />
+
+            <Mobility>
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
+            </Mobility>
+
+            <Equipment>
+                <Item name="GFL-WEAP-PKPSP" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
+                <Item name="GFL_SKIN_PKPSP_DEFAULT" />
+            </Equipment>
+        </Human>
+    </Entity>
+
+    <Entity name="ELMOCE-SPAS12" type="Human" editorAutoHeight="false">
+        <RenderObject3D
+            model="data/models/dolls/spas12.khm"
+            diffuseTex="data/models/dolls/spas12.dds"
+        />
+
+        <Breakable
+            template="GenericTrooperGibs"
+            breakOnDamage="explosive"
+            deleteOnDeath="false"
+        />
+        <PhysicalParams health="100" />
+
+        <Human type="GoodGuy" unit="GFL-UNIT-ELMOCE" class="GFL-DOLL-SPAS12">
+            <Id
+                name="ELMOCE-SPAS12"
+                portrait="data/textures/portraits/gfl_spas12.dds"
+                gender="0"
+                voicePack="Sabrina-Voice"
+            />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="150.0" />
+
+            <Mobility>
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
+            </Mobility>
+
+            <Equipment>
+                <Item name="GFL-WEAP-SPAS12" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
+            </Equipment>
+        </Human>
+    </Entity>
+
+    <Entity name="ELMOCE-TYPE97S" type="Human" editorAutoHeight="false">
+        <RenderObject3D
+            model="data/models/dolls/type97s.khm"
+            diffuseTex="data/models/dolls/type97s.dds"
+        />
+
+        <Breakable
+            template="GenericTrooperGibs"
+            breakOnDamage="explosive"
+            deleteOnDeath="false"
+        />
+        <PhysicalParams health="100" />
+
+        <Human type="GoodGuy" unit="GFL-UNIT-ELMOCE" class="GFL-DOLL-TYPE97S">
+            <Id
+                name="ELMOCE-TYPE97S"
+                portrait="data/textures/portraits/gfl_type97s.dds"
+                gender="0"
+                voicePack="Qiuhua-Voice"
+            />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="150.0" />
+
+            <Mobility>
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
+            </Mobility>
+
+            <Equipment>
+                <Item name="GFL-WEAP-TYPE97S" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
+            </Equipment>
+        </Human>
+    </Entity>
+
+    <Entity name="ELMOCE-MP5" type="Human" editorAutoHeight="false">
+        <RenderObject3D
+            model="data/models/dolls/mp5.khm"
+            diffuseTex="data/models/dolls/mp5.dds"
+        />
+
+        <Breakable
+            template="GenericTrooperGibs"
+            breakOnDamage="explosive"
+            deleteOnDeath="false"
+        />
+        <PhysicalParams health="100" />
+
+        <Human type="GoodGuy" unit="GFL-UNIT-ELMOCE" class="GFL-DOLL-MP5">
+            <Id
+                name="ELMOCE-MP5"
+                portrait="data/textures/portraits/gfl_mp5.dds"
+                gender="0"
+                voicePack="Peri-Voice"
+            />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="150.0" />
+
+            <Mobility>
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
+            </Mobility>
+
+            <Equipment>
+                <Item name="GFL-WEAP-MP5" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
+            </Equipment>
+        </Human>
+    </Entity>
+
+    <Entity name="ELMOCE-PA15" type="Human" editorAutoHeight="false">
+        <RenderObject3D
+            model="data/models/dolls/pa15.khm"
+            diffuseTex="data/models/dolls/pa15.dds"
+        />
+
+        <Breakable
+            template="GenericTrooperGibs"
+            breakOnDamage="explosive"
+            deleteOnDeath="false"
+        />
+        <PhysicalParams health="100" />
+
+        <Human type="GoodGuy" unit="GFL-UNIT-ELMOCE" class="GFL-DOLL-PA15">
+            <Id
+                name="ELMOCE-PA15"
+                portrait="data/textures/portraits/gfl_pa15.dds"
+                gender="0"
+                voicePack="Florence-Voice"
+            />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="150.0" />
+
+            <Mobility>
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
+            </Mobility>
+
+            <Equipment>
+                <Item name="GFL-WEAP-PA15" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
+            </Equipment>
+        </Human>
+    </Entity>
+
+    <Entity name="ELMOCE-VSK94" type="Human" editorAutoHeight="false">
+        <RenderObject3D
+            model="data/models/dolls/vsk94.khm"
+            diffuseTex="data/models/dolls/vsk94.dds"
+        />
+
+        <Breakable
+            template="GenericTrooperGibs"
+            breakOnDamage="explosive"
+            deleteOnDeath="false"
+        />
+        <PhysicalParams health="100" />
+
+        <Human type="GoodGuy" unit="GFL-UNIT-ELMOCE" class="GFL-DOLL-VSK94">
+            <Id
+                name="ELMOCE-VSK94"
+                portrait="data/textures/portraits/gfl_vsk94.dds"
+                gender="0"
+                voicePack="Nikketa-Voice"
+            />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="150.0" />
+
+            <Mobility>
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
+            </Mobility>
+
+            <Equipment>
+                <Item name="GFL-WEAP-VSK94" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
+            </Equipment>
+        </Human>
+    </Entity>
+
+    <Entity name="ELMOCE-DP12" type="Human" editorAutoHeight="false">
+        <RenderObject3D
+            model="data/models/dolls/dp12.khm"
+            diffuseTex="data/models/dolls/dp12.dds"
+        />
+
+        <Breakable
+            template="GenericTrooperGibs"
+            breakOnDamage="explosive"
+            deleteOnDeath="false"
+        />
+        <PhysicalParams health="100" />
+
+        <Human type="GoodGuy" unit="GFL-UNIT-ELMOCE" class="GFL-DOLL-DP12">
+            <Id
+                name="ELMOCE-DP12"
+                portrait="data/textures/portraits/gfl_dp12.dds"
+                gender="0"
+                voicePack="Helen-Voice"
+            />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="150.0" />
+
+            <Mobility>
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
+            </Mobility>
+
+            <Equipment>
+                <Item name="GFL-WEAP-DP12" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
+            </Equipment>
+        </Human>
+    </Entity>
+
+    <Entity name="ELMOCE-LEWIS" type="Human" editorAutoHeight="false">
+        <RenderObject3D
+            model="data/models/dolls/lewis.khm"
+            diffuseTex="data/models/dolls/lewis.dds"
+        />
+
+        <Breakable
+            template="GenericTrooperGibs"
+            breakOnDamage="explosive"
+            deleteOnDeath="false"
+        />
+        <PhysicalParams health="100" />
+
+        <Human type="GoodGuy" unit="GFL-UNIT-ELMOCE" class="GFL-DOLL-LEWIS">
+            <Id
+                name="ELMOCE-LEWIS"
+                portrait="data/textures/portraits/gfl_lewis.dds"
+                gender="0"
+                voicePack="Lewis-Voice"
+            />
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+            <Brain suppressionRecovery="150.0" />
+
+            <Mobility>
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
+                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
+            </Mobility>
+
+            <Equipment>
+                <Item name="GFL-WEAP-LEWIS" />
+                <Item name="GFL_FeetOfGunmetal" />
+                <Item name="GFL_Lockpick" />
+                <Item name="GFL_BasicCore" />
+                <Item name="GFL_NightVision" />
+                <Item name="GFL_CombatFrame" />
+            </Equipment>
+        </Human>
+    </Entity>
+</Entities>

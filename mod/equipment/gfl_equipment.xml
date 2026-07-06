@@ -362,4 +362,117 @@
     </HelmetNVG>
 
 
+<!-- ===== SKK Commander gear ===== -->
+
+<!-- Combat Helmet: ACH-pattern. Visible tactical helmet, takes a chunk of concealment. -->
+
+    <Helmet
+        name="GFL_CombatHelmet"
+        inventoryBinding="Helmet"
+        unlockCost="0"
+        tooltip="@helmet_gfl_combathelmet_name"
+        description="@helmet_gfl_combathelmet_desc"
+        img="data/models/humans/attachments/ach_helmet_ui.dds"
+    >
+        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="-5" />
+        <Params>
+            <ProtectionArc degrees="360" coveragePercent="15" piercingProtectionLevel="40" />
+        </Params>
+    </Helmet>
+
+<!-- Heavy Combat Helmet: IHPS-pattern. No hiding this one. -->
+
+    <Helmet
+        name="GFL_HeavyHelmet"
+        inventoryBinding="Helmet"
+        unlockCost="0"
+        tooltip="@helmet_gfl_heavyhelmet_name"
+        description="@helmet_gfl_heavyhelmet_desc"
+        img="data/models/humans/attachments/ihps_helmet_ui.dds"
+    >
+        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="-7" />
+        <Params>
+            <ProtectionArc degrees="360" coveragePercent="20" piercingProtectionLevel="50" />
+        </Params>
+    </Helmet>
+
+<!-- Soft Vest: IIA, light coverage, easy to hide. -->
+
+    <Armor
+        name="GFL_SoftVest"
+        inventoryBinding="Armor"
+        unlockCost="0"
+        tooltip="@armor_gfl_softvest_name"
+        description="@armor_gfl_softvest_desc"
+        img="data/models/equipment/armor_softlevelii_ui.dds"
+    >
+        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="-2" />
+        <Params>
+            <ProtectionArc degrees="90" coveragePercent="50" piercingProtectionLevel="35" />
+            <ProtectionArc degrees="270" coveragePercent="25" piercingProtectionLevel="35" />
+            <ProtectionArc degrees="360" coveragePercent="50" piercingProtectionLevel="35" />
+        </Params>
+    </Armor>
+
+<!-- Front Vest: IIIA front-only panel. -->
+
+    <Armor
+        name="GFL_FrontVest"
+        inventoryBinding="Armor"
+        unlockCost="2"
+        tooltip="@armor_gfl_frontvest_name"
+        description="@armor_gfl_frontvest_desc"
+        img="data/models/equipment/armor_softpanelsiiia_ui.dds"
+    >
+        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="-2" />
+        <Params>
+            <ProtectionArc degrees="90" coveragePercent="50" piercingProtectionLevel="45" />
+            <ProtectionArc degrees="270" coveragePercent="0" piercingProtectionLevel="0" />
+            <ProtectionArc degrees="360" coveragePercent="50" piercingProtectionLevel="45" />
+        </Params>
+    </Armor>
+
+<!-- Full Vest: IIIA front and back. -->
+
+    <Armor
+        name="GFL_FullVest"
+        inventoryBinding="Armor"
+        unlockCost="3"
+        tooltip="@armor_gfl_fullvest_name"
+        description="@armor_gfl_fullvest_desc"
+        img="data/models/equipment/armor_softleveliiia_ui.dds"
+    >
+        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="-3" />
+        <Params>
+            <ProtectionArc degrees="90" coveragePercent="55" piercingProtectionLevel="45" />
+            <ProtectionArc degrees="270" coveragePercent="35" piercingProtectionLevel="45" />
+            <ProtectionArc degrees="360" coveragePercent="55" piercingProtectionLevel="45" />
+        </Params>
+    </Armor>
+
+<!-- Tactical Vest: plate carrier, no pretence of stealth. -->
+
+    <Armor
+        name="GFL_TacticalVest"
+        inventoryBinding="Armor"
+        unlockCost="2"
+        tooltip="@armor_gfl_tacticalvest_name"
+        description="@armor_gfl_tacticalvest_desc"
+        img="data/models/equipment/armor_tacvestiii_ui.dds"
+    >
+        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="-8" />
+        <Params>
+            <ProtectionArc degrees="90" coveragePercent="65" piercingProtectionLevel="55" />
+            <ProtectionArc degrees="270" coveragePercent="45" piercingProtectionLevel="55" />
+            <ProtectionArc degrees="360" coveragePercent="65" piercingProtectionLevel="55" />
+        </Params>
+    </Armor>
+
+
 </Equipment>

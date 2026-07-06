@@ -1,8 +1,8 @@
 <Entities>
-    <Entity name="GIRL-AN94" type="Human" editorAutoHeight="false">
+    <Entity name="GIRL-SKKF" type="Human" editorAutoHeight="false">
         <RenderObject3D
-            model="data/models/dolls/cubebodies/an94.khm"
-            diffuseTex="data/models/dolls/an94.dds"
+            model="data/models/dolls/skkf.khm"
+            diffuseTex="data/models/dolls/skkf.dds"
         />
 
         <Breakable
@@ -12,77 +12,35 @@
         />
         <PhysicalParams health="100" />
 
-        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-AN94">
+        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-SKKF">
             <Id
-                name="DEFY-AN94"
-                portrait="data/textures/portraits/gfl_an94.dds"
+                name="GIRL-SKKF"
+                portrait="data/textures/portraits/gfl_skkf.dds"
                 gender="0"
-                voicePack="Alva-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="150.0" />
+            <Brain suppressionRecovery="40.0" />
+            <Concealment default="10" canHide="true" />
 
             <Mobility>
-                <MoveSpeed min="1.6" defaultMetersPerSec="2.4" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
             <Equipment>
-                <Item name="GFL-WEAP-AN94" />
-                <Item name="GFL_FeetOfGunmetal" />
-                <Item name="GFL_Lockpick" />
-                <Item name="GFL_BasicCore" />
-                <Item name="GFL_NightVision" />
-                <Item name="GFL_CombatFrame" />
-                <Item name="GFL_SKIN_AN94_DEFAULT" />
+                <Item name="GFL-WEAP-MAKAROVPM" />
+                <Item name="FeetOfSteel" />
+                <Item name="Lockpick" />
             </Equipment>
+
+            <Doctrine name="GFL_CommandAura" />
         </Human>
     </Entity>
 
-    <Entity name="GIRL-AK15" type="Human" editorAutoHeight="false">
+    <Entity name="GIRL-SKKM" type="Human" editorAutoHeight="false">
         <RenderObject3D
-            model="data/models/dolls/cubebodies/ak15.khm"
-            diffuseTex="data/models/dolls/ak15.dds"
-        />
-
-        <Breakable
-            template="GenericTrooperGibs"
-            breakOnDamage="explosive"
-            deleteOnDeath="false"
-        />
-        <PhysicalParams health="150" />
-
-        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-AK15">
-            <Id
-                name="DEFY-AK15"
-                portrait="data/textures/portraits/gfl_ak15.dds"
-                gender="0"
-                voicePack="Voymastina-Voice"
-            />
-            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="150.0" />
-
-            <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.6" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
-            </Mobility>
-
-            <Equipment>
-                <Item name="GFL-WEAP-AK15" />
-                <Item name="GFL_FeetOfTitanium" />
-                <Item name="GFL_Lockpick" />
-                <Item name="GFL_BasicCore" />
-                <Item name="GFL_NightVision" />
-                <Item name="GFL_CombatFrame" />
-                <Item name="GFL_SKIN_AK15_DEFAULT" />
-            </Equipment>
-        </Human>
-    </Entity>
-
-    <Entity name="GIRL-HK416" type="Human" editorAutoHeight="false">
-        <RenderObject3D
-            model="data/models/dolls/cubebodies/hk416.khm"
-            diffuseTex="data/models/dolls/hk416.dds"
+            model="data/models/dolls/skkm.khm"
+            diffuseTex="data/models/dolls/skkm.dds"
         />
 
         <Breakable
@@ -92,37 +50,35 @@
         />
         <PhysicalParams health="100" />
 
-        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-HK416">
+        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-SKKM">
             <Id
-                name="404-HK416"
-                portrait="data/textures/portraits/gfl_hk416.dds"
+                name="GIRL-SKKM"
+                portrait="data/textures/portraits/gfl_skkm.dds"
                 gender="0"
-                voicePack="Clukay-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="150.0" />
+            <Brain suppressionRecovery="40.0" />
+            <Concealment default="10" canHide="true" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
             <Equipment>
-                <Item name="GFL-WEAP-HK416" />
-                <Item name="GFL_FeetOfGunmetal" />
-                <Item name="GFL_Lockpick" />
-                <Item name="GFL_BasicCore" />
-                <Item name="GFL_NightVision" />
-                <Item name="GFL_CombatFrame" />
-                <Item name="GFL_SKIN_HK416_DEFAULT" />
+                <Item name="GFL-WEAP-MAKAROVPM" />
+                <Item name="FeetOfSteel" />
+                <Item name="Lockpick" />
             </Equipment>
+
+            <Doctrine name="GFL_CommandAura" />
         </Human>
     </Entity>
 
-    <Entity name="GIRL-G11" type="Human" editorAutoHeight="false">
+    <Entity name="GIRL-UMP40" type="Human" editorAutoHeight="false">
         <RenderObject3D
-            model="data/models/dolls/g11.khm"
-            diffuseTex="data/models/dolls/g11.dds"
+            model="data/models/dolls/ump40.khm"
+            diffuseTex="data/models/dolls/ump40.dds"
         />
 
         <Breakable
@@ -132,23 +88,23 @@
         />
         <PhysicalParams health="100" />
 
-        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-G11">
+        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-UMP40">
             <Id
-                name="404-G11"
-                portrait="data/textures/portraits/gfl_g11.dds"
+                name="GIRL-UMP40"
+                portrait="data/textures/portraits/gfl_ump40.dds"
                 gender="0"
-                voicePack="Mechty-Voice"
+                voicePack="Lene-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="150.0" />
+            <Brain suppressionRecovery="40.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
             <Equipment>
-                <Item name="GFL-WEAP-G11" />
+                <Item name="GFL-WEAP-UMP40" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />
@@ -158,10 +114,10 @@
         </Human>
     </Entity>
 
-    <Entity name="GIRL-G36K" type="Human" editorAutoHeight="false">
+    <Entity name="GIRL-K2" type="Human" editorAutoHeight="false">
         <RenderObject3D
-            model="data/models/dolls/g36k.khm"
-            diffuseTex="data/models/dolls/g36k.dds"
+            model="data/models/dolls/k2.khm"
+            diffuseTex="data/models/dolls/k2.dds"
         />
 
         <Breakable
@@ -171,23 +127,23 @@
         />
         <PhysicalParams health="100" />
 
-        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-G36K">
+        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-K2">
             <Id
-                name="404-G36K"
-                portrait="data/textures/portraits/gfl_g36k.dds"
+                name="GIRL-K2"
+                portrait="data/textures/portraits/gfl_k2.dds"
                 gender="0"
-                voicePack="Andoris-Voice"
+                voicePack="YooHee-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="150.0" />
+            <Brain suppressionRecovery="40.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
             <Equipment>
-                <Item name="GFL-WEAP-G36K" />
+                <Item name="GFL-WEAP-K2" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />
@@ -197,10 +153,10 @@
         </Human>
     </Entity>
 
-    <Entity name="GIRL-G28" type="Human" editorAutoHeight="false">
+    <Entity name="GIRL-DSR50" type="Human" editorAutoHeight="false">
         <RenderObject3D
-            model="data/models/dolls/g28.khm"
-            diffuseTex="data/models/dolls/g28.dds"
+            model="data/models/dolls/dsr50.khm"
+            diffuseTex="data/models/dolls/dsr50.dds"
         />
 
         <Breakable
@@ -210,967 +166,23 @@
         />
         <PhysicalParams health="100" />
 
-        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-G28">
+        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-DSR50">
             <Id
-                name="404-G28"
-                portrait="data/textures/portraits/gfl_g28.dds"
+                name="GIRL-DSR50"
+                portrait="data/textures/portraits/gfl_dsr50.dds"
                 gender="0"
-                voicePack="Biyoca-Voice"
+                voicePack="Lorelei-Voice"
             />
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="150.0" />
+            <Brain suppressionRecovery="40.0" />
 
             <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
+                <MoveSpeed min="1.3" defaultMetersPerSec="2.8" max="10" />
                 <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
             </Mobility>
 
             <Equipment>
-                <Item name="GFL-WEAP-G28" />
-                <Item name="GFL_FeetOfGunmetal" />
-                <Item name="GFL_Lockpick" />
-                <Item name="GFL_BasicCore" />
-                <Item name="GFL_NightVision" />
-                <Item name="GFL_CombatFrame" />
-            </Equipment>
-        </Human>
-    </Entity>
-
-    <Entity name="GIRL-UMP45" type="Human" editorAutoHeight="false">
-        <RenderObject3D
-            model="data/models/dolls/cubebodies/ump45.khm"
-            diffuseTex="data/models/dolls/ump45.dds"
-        />
-
-        <Breakable
-            template="GenericTrooperGibs"
-            breakOnDamage="explosive"
-            deleteOnDeath="false"
-        />
-        <PhysicalParams health="100" />
-
-        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-UMP45">
-            <Id
-                name="404-UMP45"
-                portrait="data/textures/portraits/gfl_ump45.dds"
-                gender="0"
-                voicePack="Leva-Voice"
-            />
-            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="150.0" />
-
-            <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
-            </Mobility>
-
-            <Equipment>
-                <Item name="GFL-WEAP-UMP45" />
-                <Item name="GFL_FeetOfGunmetal" />
-                <Item name="GFL_Lockpick" />
-                <Item name="GFL_BasicCore" />
-                <Item name="GFL_NightVision" />
-                <Item name="GFL_CombatFrame" />
-                <Item name="GFL_SKIN_UMP45_DEFAULT" />
-            </Equipment>
-        </Human>
-    </Entity>
-
-    <Entity name="GIRL-UMP9" type="Human" editorAutoHeight="false">
-        <RenderObject3D
-            model="data/models/dolls/ump9.khm"
-            diffuseTex="data/models/dolls/ump9.dds"
-        />
-
-        <Breakable
-            template="GenericTrooperGibs"
-            breakOnDamage="explosive"
-            deleteOnDeath="false"
-        />
-        <PhysicalParams health="100" />
-
-        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-UMP9">
-            <Id
-                name="404-UMP9"
-                portrait="data/textures/portraits/gfl_ump9.dds"
-                gender="0"
-                voicePack="Lenna-Voice"
-            />
-            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="150.0" />
-
-            <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
-            </Mobility>
-
-            <Equipment>
-                <Item name="GFL-WEAP-UMP9" />
-                <Item name="GFL_FeetOfGunmetal" />
-                <Item name="GFL_Lockpick" />
-                <Item name="GFL_BasicCore" />
-                <Item name="GFL_NightVision" />
-                <Item name="GFL_CombatFrame" />
-            </Equipment>
-        </Human>
-    </Entity>
-
-    <Entity name="GIRL-VECTOR" type="Human" editorAutoHeight="false">
-        <RenderObject3D
-            model="data/models/dolls/cubebodies/vector.khm"
-            diffuseTex="data/models/dolls/vector.dds"
-        />
-
-        <Breakable
-            template="GenericTrooperGibs"
-            breakOnDamage="explosive"
-            deleteOnDeath="false"
-        />
-        <PhysicalParams health="100" />
-
-        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-VECTOR">
-            <Id
-                name="404-VECTOR"
-                portrait="data/textures/portraits/gfl_vector.dds"
-                gender="0"
-                voicePack="Vector-Voice"
-            />
-            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="150.0" />
-
-            <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
-            </Mobility>
-
-            <Equipment>
-                <Item name="GFL-WEAP-VECTOR" />
-                <Item name="GFL_FeetOfGunmetal" />
-                <Item name="GFL_Lockpick" />
-                <Item name="GFL_BasicCore" />
-                <Item name="GFL_NightVision" />
-                <Item name="GFL_CombatFrame" />
-                <Item name="GFL-GEAR-VECTOR-GRENADE" />
-                <Item name="GFL_SKIN_VECTOR_DEFAULT" />
-            </Equipment>
-        </Human>
-    </Entity>
-
-    <Entity name="GIRL-M1903" type="Human" editorAutoHeight="false">
-        <RenderObject3D
-            model="data/models/dolls/cubebodies/m1903.khm"
-            diffuseTex="data/models/dolls/m1903.dds"
-        />
-
-        <Breakable
-            template="GenericTrooperGibs"
-            breakOnDamage="explosive"
-            deleteOnDeath="false"
-        />
-        <PhysicalParams health="100" />
-
-        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-M1903">
-            <Id
-                name="CAFE-M1903"
-                portrait="data/textures/portraits/gfl_m1903.dds"
-                gender="0"
-                voicePack="Springfield-Voice"
-            />
-            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="150.0" />
-
-            <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
-            </Mobility>
-
-            <Equipment>
-                <Item name="GFL-WEAP-M1903" />
-                <Item name="GFL_FeetOfGunmetal" />
-                <Item name="GFL_Lockpick" />
-                <Item name="GFL_BasicCore" />
-                <Item name="GFL_NightVision" />
-                <Item name="GFL_CombatFrame" />
-                <Item name="GFL_SKIN_M1903_DEFAULT" />
-            </Equipment>
-        </Human>
-    </Entity>
-
-    <Entity name="GIRL-WA2000" type="Human" editorAutoHeight="false">
-        <RenderObject3D
-            model="data/models/dolls/cubebodies/wa2000.khm"
-            diffuseTex="data/models/dolls/wa2000.dds"
-        />
-
-        <Breakable
-            template="GenericTrooperGibs"
-            breakOnDamage="explosive"
-            deleteOnDeath="false"
-        />
-        <PhysicalParams health="100" />
-
-        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-WA2000">
-            <Id
-                name="CAFE-WA2000"
-                portrait="data/textures/portraits/gfl_wa2000.dds"
-                gender="0"
-                voicePack="Macqiato-Voice"
-            />
-            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="150.0" />
-
-            <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
-            </Mobility>
-
-            <Equipment>
-                <Item name="GFL-WEAP-WA2000" />
-                <Item name="GFL_FeetOfGunmetal" />
-                <Item name="GFL_Lockpick" />
-                <Item name="GFL_BasicCore" />
-                <Item name="GFL_NightVision" />
-                <Item name="GFL_CombatFrame" />
-                <Item name="GFL_SKIN_WA2000_DEFAULT" />
-            </Equipment>
-        </Human>
-    </Entity>
-
-    <Entity name="GIRL-G36" type="Human" editorAutoHeight="false">
-        <RenderObject3D
-            model="data/models/dolls/g36.khm"
-            diffuseTex="data/models/dolls/g36.dds"
-        />
-
-        <Breakable
-            template="GenericTrooperGibs"
-            breakOnDamage="explosive"
-            deleteOnDeath="false"
-        />
-        <PhysicalParams health="100" />
-
-        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-G36">
-            <Id
-                name="CAFE-G36"
-                portrait="data/textures/portraits/gfl_g36.dds"
-                gender="0"
-                voicePack="Centaureissi-Voice"
-            />
-            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="150.0" />
-
-            <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
-            </Mobility>
-
-            <Equipment>
-                <Item name="GFL-WEAP-G36" />
-                <Item name="GFL_FeetOfGunmetal" />
-                <Item name="GFL_Lockpick" />
-                <Item name="GFL_BasicCore" />
-                <Item name="GFL_NightVision" />
-                <Item name="GFL_CombatFrame" />
-            </Equipment>
-        </Human>
-    </Entity>
-
-    <Entity name="GIRL-XCR" type="Human" editorAutoHeight="false">
-        <RenderObject3D
-            model="data/models/dolls/xcr.khm"
-            diffuseTex="data/models/dolls/xcr.dds"
-        />
-
-        <Breakable
-            template="GenericTrooperGibs"
-            breakOnDamage="explosive"
-            deleteOnDeath="false"
-        />
-        <PhysicalParams health="100" />
-
-        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-XCR">
-            <Id
-                name="CAFE-XCR"
-                portrait="data/textures/portraits/gfl_xcr.dds"
-                gender="0"
-                voicePack="Sharkry-Voice"
-            />
-            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="150.0" />
-
-            <Mobility>
-                <MoveSpeed min="1.6" defaultMetersPerSec="2.4" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
-            </Mobility>
-
-            <Equipment>
-                <Item name="GFL-WEAP-XCR" />
-                <Item name="GFL_FeetOfGunmetal" />
-                <Item name="GFL_Lockpick" />
-                <Item name="GFL_BasicCore" />
-                <Item name="GFL_NightVision" />
-                <Item name="GFL_CombatFrame" />
-            </Equipment>
-        </Human>
-    </Entity>
-
-    <Entity name="GIRL-OTS14" type="Human" editorAutoHeight="false">
-        <RenderObject3D
-            model="data/models/dolls/cubebodies/ots14.khm"
-            diffuseTex="data/models/dolls/ots14.dds"
-        />
-
-        <Breakable
-            template="GenericTrooperGibs"
-            breakOnDamage="explosive"
-            deleteOnDeath="false"
-        />
-        <PhysicalParams health="100" />
-
-        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-OTS14">
-            <Id
-                name="GROZA-OTS14"
-                portrait="data/textures/portraits/gfl_ots14.dds"
-                gender="0"
-                voicePack="Groza-Voice"
-            />
-            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="150.0" />
-
-            <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
-            </Mobility>
-
-            <Equipment>
-                <Item name="GFL-WEAP-OTS14" />
-                <Item name="GFL_FeetOfGunmetal" />
-                <Item name="GFL_Lockpick" />
-                <Item name="GFL_BasicCore" />
-                <Item name="GFL_NightVision" />
-                <Item name="GFL_CombatFrame" />
-                <Item name="GFL_SKIN_OTS14_DEFAULT" />
-            </Equipment>
-        </Human>
-    </Entity>
-
-    <Entity name="GIRL-OM50" type="Human" editorAutoHeight="false">
-        <RenderObject3D
-            model="data/models/dolls/om50.khm"
-            diffuseTex="data/models/dolls/om50.dds"
-        />
-
-        <Breakable
-            template="GenericTrooperGibs"
-            breakOnDamage="explosive"
-            deleteOnDeath="false"
-        />
-        <PhysicalParams health="100" />
-
-        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-OM50">
-            <Id
-                name="GROZA-OM50"
-                portrait="data/textures/portraits/gfl_om50.dds"
-                gender="0"
-                voicePack="Nemesis-Voice"
-            />
-            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="150.0" />
-
-            <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
-            </Mobility>
-
-            <Equipment>
-                <Item name="GFL-WEAP-OM50" />
-                <Item name="GFL_FeetOfGunmetal" />
-                <Item name="GFL_Lockpick" />
-                <Item name="GFL_BasicCore" />
-                <Item name="GFL_NightVision" />
-                <Item name="GFL_CombatFrame" />
-            </Equipment>
-        </Human>
-    </Entity>
-
-    <Entity name="GIRL-HARE" type="Human" editorAutoHeight="false">
-        <RenderObject3D
-            model="data/models/dolls/hare.khm"
-            diffuseTex="data/models/dolls/hare.dds"
-        />
-
-        <Breakable
-            template="GenericTrooperGibs"
-            breakOnDamage="explosive"
-            deleteOnDeath="false"
-        />
-        <PhysicalParams health="100" />
-
-        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-HARE">
-            <Id
-                name="GROZA-HARE"
-                portrait="data/textures/portraits/gfl_hare.dds"
-                gender="0"
-                voicePack="Charolic-Voice"
-            />
-            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="100.0" />
-
-            <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="3.5" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
-            </Mobility>
-
-            <Equipment>
-                <Item name="GFL-WEAP-HARE" />
-                <Item name="GFL_FeetOfGunmetal" />
-                <Item name="GFL_Lockpick" />
-                <Item name="GFL_BasicCore" />
-                <Item name="GFL_NightVision" />
-                <Item name="GFL_CombatFrame" />
-            </Equipment>
-        </Human>
-    </Entity>
-
-    <Entity name="GIRL-CURVA" type="Human" editorAutoHeight="false">
-        <RenderObject3D
-            model="data/models/dolls/curva.khm"
-            diffuseTex="data/models/dolls/curva.dds"
-        />
-
-        <Breakable
-            template="GenericTrooperGibs"
-            breakOnDamage="explosive"
-            deleteOnDeath="false"
-        />
-        <PhysicalParams health="100" />
-
-        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-CURVA">
-            <Id
-                name="GROZA-CURVA"
-                portrait="data/textures/portraits/gfl_curva.dds"
-                gender="0"
-                voicePack="Colphne-Voice"
-            />
-            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="150.0" />
-
-            <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
-            </Mobility>
-
-            <Equipment>
-                <Item name="GFL-WEAP-CURVA" />
-                <Item name="GFL_FeetOfGunmetal" />
-                <Item name="GFL_Lockpick" />
-                <Item name="GFL_BasicCore" />
-                <Item name="GFL_NightVision" />
-                <Item name="GFL_CombatFrame" />
-            </Equipment>
-        </Human>
-    </Entity>
-
-    <Entity name="GIRL-VEPR12" type="Human" editorAutoHeight="false">
-        <RenderObject3D
-            model="data/models/dolls/vepr12.khm"
-            diffuseTex="data/models/dolls/vepr12.dds"
-        />
-
-        <Breakable
-            template="GenericTrooperGibs"
-            breakOnDamage="explosive"
-            deleteOnDeath="false"
-        />
-        <PhysicalParams health="100" />
-
-        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-VEPR12">
-            <Id
-                name="GROZA-VEPR12"
-                portrait="data/textures/portraits/gfl_vepr12.dds"
-                gender="0"
-                voicePack="Vepley-Voice"
-            />
-            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="150.0" />
-
-            <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
-            </Mobility>
-
-            <Equipment>
-                <Item name="GFL-WEAP-VEPR12" />
-                <Item name="GFL_FeetOfGunmetal" />
-                <Item name="GFL_Lockpick" />
-                <Item name="GFL_BasicCore" />
-                <Item name="GFL_NightVision" />
-                <Item name="GFL_CombatFrame" />
-            </Equipment>
-        </Human>
-    </Entity>
-
-    <Entity name="GIRL-PKPSP" type="Human" editorAutoHeight="false">
-        <RenderObject3D
-            model="data/models/dolls/cubebodies/pkpsp.khm"
-            diffuseTex="data/models/dolls/pkpsp.dds"
-        />
-
-        <Breakable
-            template="GenericTrooperGibs"
-            breakOnDamage="explosive"
-            deleteOnDeath="false"
-        />
-        <PhysicalParams health="100" />
-
-        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-PKPSP">
-            <Id
-                name="ELMOCE-PKPSP"
-                portrait="data/textures/portraits/gfl_pkpsp.dds"
-                gender="0"
-                voicePack="Peritya-Voice"
-            />
-            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="150.0" />
-
-            <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
-            </Mobility>
-
-            <Equipment>
-                <Item name="GFL-WEAP-PKPSP" />
-                <Item name="GFL_FeetOfGunmetal" />
-                <Item name="GFL_Lockpick" />
-                <Item name="GFL_BasicCore" />
-                <Item name="GFL_NightVision" />
-                <Item name="GFL_CombatFrame" />
-                <Item name="GFL_SKIN_PKPSP_DEFAULT" />
-            </Equipment>
-        </Human>
-    </Entity>
-
-    <Entity name="GIRL-SPAS12" type="Human" editorAutoHeight="false">
-        <RenderObject3D
-            model="data/models/dolls/spas12.khm"
-            diffuseTex="data/models/dolls/spas12.dds"
-        />
-
-        <Breakable
-            template="GenericTrooperGibs"
-            breakOnDamage="explosive"
-            deleteOnDeath="false"
-        />
-        <PhysicalParams health="100" />
-
-        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-SPAS12">
-            <Id
-                name="ELMOCE-SPAS12"
-                portrait="data/textures/portraits/gfl_spas12.dds"
-                gender="0"
-                voicePack="Sabrina-Voice"
-            />
-            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="150.0" />
-
-            <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
-            </Mobility>
-
-            <Equipment>
-                <Item name="GFL-WEAP-SPAS12" />
-                <Item name="GFL_FeetOfGunmetal" />
-                <Item name="GFL_Lockpick" />
-                <Item name="GFL_BasicCore" />
-                <Item name="GFL_NightVision" />
-                <Item name="GFL_CombatFrame" />
-            </Equipment>
-        </Human>
-    </Entity>
-
-    <Entity name="GIRL-TYPE97S" type="Human" editorAutoHeight="false">
-        <RenderObject3D
-            model="data/models/dolls/type97s.khm"
-            diffuseTex="data/models/dolls/type97s.dds"
-        />
-
-        <Breakable
-            template="GenericTrooperGibs"
-            breakOnDamage="explosive"
-            deleteOnDeath="false"
-        />
-        <PhysicalParams health="100" />
-
-        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-TYPE97S">
-            <Id
-                name="ELMOCE-TYPE97S"
-                portrait="data/textures/portraits/gfl_type97s.dds"
-                gender="0"
-                voicePack="Qiuhua-Voice"
-            />
-            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="150.0" />
-
-            <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
-            </Mobility>
-
-            <Equipment>
-                <Item name="GFL-WEAP-TYPE97S" />
-                <Item name="GFL_FeetOfGunmetal" />
-                <Item name="GFL_Lockpick" />
-                <Item name="GFL_BasicCore" />
-                <Item name="GFL_NightVision" />
-                <Item name="GFL_CombatFrame" />
-            </Equipment>
-        </Human>
-    </Entity>
-
-    <Entity name="GIRL-MP5" type="Human" editorAutoHeight="false">
-        <RenderObject3D
-            model="data/models/dolls/mp5.khm"
-            diffuseTex="data/models/dolls/mp5.dds"
-        />
-
-        <Breakable
-            template="GenericTrooperGibs"
-            breakOnDamage="explosive"
-            deleteOnDeath="false"
-        />
-        <PhysicalParams health="100" />
-
-        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-MP5">
-            <Id
-                name="ELMOCE-MP5"
-                portrait="data/textures/portraits/gfl_mp5.dds"
-                gender="0"
-                voicePack="Peri-Voice"
-            />
-            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="150.0" />
-
-            <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
-            </Mobility>
-
-            <Equipment>
-                <Item name="GFL-WEAP-MP5" />
-                <Item name="GFL_FeetOfGunmetal" />
-                <Item name="GFL_Lockpick" />
-                <Item name="GFL_BasicCore" />
-                <Item name="GFL_NightVision" />
-                <Item name="GFL_CombatFrame" />
-            </Equipment>
-        </Human>
-    </Entity>
-
-    <Entity name="GIRL-PA15" type="Human" editorAutoHeight="false">
-        <RenderObject3D
-            model="data/models/dolls/pa15.khm"
-            diffuseTex="data/models/dolls/pa15.dds"
-        />
-
-        <Breakable
-            template="GenericTrooperGibs"
-            breakOnDamage="explosive"
-            deleteOnDeath="false"
-        />
-        <PhysicalParams health="100" />
-
-        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-PA15">
-            <Id
-                name="ELMOCE-PA15"
-                portrait="data/textures/portraits/gfl_pa15.dds"
-                gender="0"
-                voicePack="Florence-Voice"
-            />
-            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="150.0" />
-
-            <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
-            </Mobility>
-
-            <Equipment>
-                <Item name="GFL-WEAP-PA15" />
-                <Item name="GFL_FeetOfGunmetal" />
-                <Item name="GFL_Lockpick" />
-                <Item name="GFL_BasicCore" />
-                <Item name="GFL_NightVision" />
-                <Item name="GFL_CombatFrame" />
-            </Equipment>
-        </Human>
-    </Entity>
-
-    <Entity name="GIRL-VSK94" type="Human" editorAutoHeight="false">
-        <RenderObject3D
-            model="data/models/dolls/vsk94.khm"
-            diffuseTex="data/models/dolls/vsk94.dds"
-        />
-
-        <Breakable
-            template="GenericTrooperGibs"
-            breakOnDamage="explosive"
-            deleteOnDeath="false"
-        />
-        <PhysicalParams health="100" />
-
-        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-VSK94">
-            <Id
-                name="ELMOCE-VSK94"
-                portrait="data/textures/portraits/gfl_vsk94.dds"
-                gender="0"
-                voicePack="Nikketa-Voice"
-            />
-            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="150.0" />
-
-            <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
-            </Mobility>
-
-            <Equipment>
-                <Item name="GFL-WEAP-VSK94" />
-                <Item name="GFL_FeetOfGunmetal" />
-                <Item name="GFL_Lockpick" />
-                <Item name="GFL_BasicCore" />
-                <Item name="GFL_NightVision" />
-                <Item name="GFL_CombatFrame" />
-            </Equipment>
-        </Human>
-    </Entity>
-
-    <Entity name="GIRL-DP12" type="Human" editorAutoHeight="false">
-        <RenderObject3D
-            model="data/models/dolls/dp12.khm"
-            diffuseTex="data/models/dolls/dp12.dds"
-        />
-
-        <Breakable
-            template="GenericTrooperGibs"
-            breakOnDamage="explosive"
-            deleteOnDeath="false"
-        />
-        <PhysicalParams health="100" />
-
-        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-DP12">
-            <Id
-                name="ELMOCE-DP12"
-                portrait="data/textures/portraits/gfl_dp12.dds"
-                gender="0"
-                voicePack="Helen-Voice"
-            />
-            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="150.0" />
-
-            <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
-            </Mobility>
-
-            <Equipment>
-                <Item name="GFL-WEAP-DP12" />
-                <Item name="GFL_FeetOfGunmetal" />
-                <Item name="GFL_Lockpick" />
-                <Item name="GFL_BasicCore" />
-                <Item name="GFL_NightVision" />
-                <Item name="GFL_CombatFrame" />
-            </Equipment>
-        </Human>
-    </Entity>
-
-    <Entity name="GIRL-LEWIS" type="Human" editorAutoHeight="false">
-        <RenderObject3D
-            model="data/models/dolls/lewis.khm"
-            diffuseTex="data/models/dolls/lewis.dds"
-        />
-
-        <Breakable
-            template="GenericTrooperGibs"
-            breakOnDamage="explosive"
-            deleteOnDeath="false"
-        />
-        <PhysicalParams health="100" />
-
-        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-LEWIS">
-            <Id
-                name="ELMOCE-LEWIS"
-                portrait="data/textures/portraits/gfl_lewis.dds"
-                gender="0"
-                voicePack="Lewis-Voice"
-            />
-            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="150.0" />
-
-            <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
-            </Mobility>
-
-            <Equipment>
-                <Item name="GFL-WEAP-LEWIS" />
-                <Item name="GFL_FeetOfGunmetal" />
-                <Item name="GFL_Lockpick" />
-                <Item name="GFL_BasicCore" />
-                <Item name="GFL_NightVision" />
-                <Item name="GFL_CombatFrame" />
-            </Equipment>
-        </Human>
-    </Entity>
-
-    <Entity name="GIRL-QBZ191" type="Human" editorAutoHeight="false">
-        <RenderObject3D
-            model="data/models/dolls/qbz191.khm"
-            diffuseTex="data/models/dolls/qbz191.dds"
-        />
-
-        <Breakable
-            template="GenericTrooperGibs"
-            breakOnDamage="explosive"
-            deleteOnDeath="false"
-        />
-        <PhysicalParams health="100" />
-
-        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-QBZ191">
-            <Id
-                name="FROST-QBZ191"
-                portrait="data/textures/portraits/gfl_qbz191.dds"
-                gender="0"
-                voicePack="Qiongjiu-Voice"
-            />
-            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="150.0" />
-
-            <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
-            </Mobility>
-
-            <Equipment>
-                <Item name="GFL-WEAP-QBZ191" />
-                <Item name="GFL_FeetOfGunmetal" />
-                <Item name="GFL_Lockpick" />
-                <Item name="GFL_BasicCore" />
-                <Item name="GFL_NightVision" />
-                <Item name="GFL_CombatFrame" />
-            </Equipment>
-        </Human>
-    </Entity>
-
-    <Entity name="GIRL-AKALFA" type="Human" editorAutoHeight="false">
-        <RenderObject3D
-            model="data/models/dolls/cubebodies/akalfa.khm"
-            diffuseTex="data/models/dolls/akalfa.dds"
-        />
-
-        <Breakable
-            template="GenericTrooperGibs"
-            breakOnDamage="explosive"
-            deleteOnDeath="false"
-        />
-        <PhysicalParams health="100" />
-
-        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-AKALFA">
-            <Id
-                name="FROST-AKALFA"
-                portrait="data/textures/portraits/gfl_akalfa.dds"
-                gender="0"
-                voicePack="Tololo-Voice"
-            />
-            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="150.0" />
-
-            <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
-            </Mobility>
-
-            <Equipment>
-                <Item name="GFL-WEAP-AKALFA" />
-                <Item name="GFL_FeetOfGunmetal" />
-                <Item name="GFL_Lockpick" />
-                <Item name="GFL_BasicCore" />
-                <Item name="GFL_NightVision" />
-                <Item name="GFL_CombatFrame" />
-                <Item name="GFL_SKIN_AKALFA_DEFAULT" />
-            </Equipment>
-        </Human>
-    </Entity>
-
-    <Entity name="GIRL-AA12" type="Human" editorAutoHeight="false">
-        <RenderObject3D
-            model="data/models/dolls/aa12.khm"
-            diffuseTex="data/models/dolls/aa12.dds"
-        />
-
-        <Breakable
-            template="GenericTrooperGibs"
-            breakOnDamage="explosive"
-            deleteOnDeath="false"
-        />
-        <PhysicalParams health="100" />
-
-        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-AA12">
-            <Id
-                name="FROST-AA12"
-                portrait="data/textures/portraits/gfl_aa12.dds"
-                gender="0"
-                voicePack="Lind-Voice"
-            />
-            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="150.0" />
-
-            <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
-            </Mobility>
-
-            <Equipment>
-                <Item name="GFL-WEAP-AA12" />
-                <Item name="GFL_FeetOfGunmetal" />
-                <Item name="GFL_Lockpick" />
-                <Item name="GFL_BasicCore" />
-                <Item name="GFL_NightVision" />
-                <Item name="GFL_CombatFrame" />
-            </Equipment>
-        </Human>
-    </Entity>
-
-    <Entity name="GIRL-MP7" type="Human" editorAutoHeight="false">
-        <RenderObject3D
-            model="data/models/dolls/mp7.khm"
-            diffuseTex="data/models/dolls/mp7.dds"
-        />
-
-        <Breakable
-            template="GenericTrooperGibs"
-            breakOnDamage="explosive"
-            deleteOnDeath="false"
-        />
-        <PhysicalParams health="100" />
-
-        <Human type="GoodGuy" unit="GFL-UNIT-GIRL" class="GFL-DOLL-MP7">
-            <Id
-                name="FROST-MP7"
-                portrait="data/textures/portraits/gfl_mp7.dds"
-                gender="0"
-                voicePack="Cheeta-Voice"
-            />
-            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="150.0" />
-
-            <Mobility>
-                <MoveSpeed min="1.3" defaultMetersPerSec="2.4" max="10" />
-                <TurnSpeed min="6" defaultMetersPerSec="16" max="20" />
-            </Mobility>
-
-            <Equipment>
-                <Item name="GFL-WEAP-MP7" />
+                <Item name="GFL-WEAP-DSR50" />
                 <Item name="GFL_FeetOfGunmetal" />
                 <Item name="GFL_Lockpick" />
                 <Item name="GFL_BasicCore" />

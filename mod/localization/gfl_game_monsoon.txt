@@ -1,0 +1,27 @@
+@GFL-UNIT-MONSOON-NAME=Monsoon Squad
+@GFL-UNIT-MONSOON-DESC=A group of wandering musicians made up of T-Dolls formerly from G&K. Both their music and fighting abilities strike deep into their target's hearts.
+@#GFL-UNIT-MONSOON-NAME-RND=Monsoon Squad
+
+@DOLL-QBZ95-NAME=DAIYAN
+@DOLL-QBZ95-DESC=A gentle and reserved Doll who roams the lands with her guzheng and her bandmates from "Monsoon". When she plucks the strings, she evokes the deepest desires buried in the hearts of her listenersーlistening to all, and embracing all. After G&K was restructured, Daiyan left and picked up the guzheng again as a wandering musician.
+
+@WEAP-QBZ95-NAME=QBZ-95
+@WEAP-QBZ95-DESC=The QBZ-95 is a bullpup configured, selective fire rifle manufactured by Arsenal 266 (part of Norinco) and Arsenal 296 (under Jianshe Corp). The rifle's designation "QBZ" stands for "light weapon (Qīng Wŭqì) - rifle (Bùqiāng) - automatic (Zìdòng)", in keeping with the coding standards of the Chinese defense industry.
+
+@DOLL-QBZ97-NAME=JIANGYU
+@DOLL-QBZ97-DESC=A lively and enthusiastic Doll who follows in her older sister's footsteps with a carefree spirit. She roams the lands with her bandmates, bringing fresh and fiery notes to "Monsoon". Jiangyu is not only a reliable T-Doll in combat, but a true crowd-pleaser on stage. Using her agility and vivacity, she goes above and beyond to put on exciting performances. She may stumble occasionally, but her enthusiasm will cut through any difficulty.
+
+@WEAP-QBZ97-NAME=QBZ-97
+@WEAP-QBZ97-DESC=The QBZ-97 is essentially a QBZ-95 chambered for the 5.56x45mm NATO cartridge, and was a model developed primarily for international export. The two rifles are commonly referred to as the 'Type 95' and 'Type 97' to indicate the year they completed development and entered service.
+
+@DOLL-CSLS06-NAME=ZHAOHUI
+@DOLL-CSLS06-DESC=A stoic Doll with rich combat experience, she is unpretentious and decisive in action. As the leader of Monsoon Squad, she excels in combat and handling team affairs but is still a novice at lightening the mood. Don't hesitate to welcome herーa hero pursuing justice is always worthy of trust.
+
+@WEAP-CSLS06-NAME=CS/LS06
+@WEAP-CSLS06-DESC=The CS/LS06 is a submachine-gun with a top-loaded helical magazine. Its it is designed to be as most compact as possible while being able to equip a sizable magazine.
+
+@DOLL-CZ75-NAME=FAYE
+@DOLL-CZ75-DESC=A grim, nimble doll with the air of a delinquent. She has actual experience with hand-to-hand fighting techniques, and is easily annoyed by slow-paced people. However, what makes her distinct is that she's extraordinarily broad-minded, and can be generously forgiving regarding the daily issues brought about by any dolls with a problem.
+
+@WEAP-CZ75-NAME=CZ 75
+@WEAP-CZ75-DESC=A semi-automatic handgun chambered in 9x19 Parabellum. Introduced in Czechoslovakia as early as 1975, it is one of the first semi-automatic pistols that can be fired by simply pulling the trigger and supported by a staggered column magazine. This allowed unparalleled firepower in such a compact package during the times it was introduced.

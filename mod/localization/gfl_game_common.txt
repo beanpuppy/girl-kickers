@@ -1,0 +1,273 @@
+@menu_doctrine_branch_calibration=CALIBRATION
+@menu_doctrine_branch_neuralhelix=NEURAL HELIX
+@menu_doctrine_branch_remolder=PATTERN REMOLDER
+
+@doctrine_gfl_optimized_name=Optimized Performance Mode
+@doctrine_gfl_optimized_descr=Enhanced output and task efficiency algorithms. Increases movement and all field skill speeds. Reduces equipment swap time for technical tools.
+
+@doctrine_gfl_commprotocols_name=Communication Protocols
+@doctrine_gfl_commprotocols_descr=Language modules enable basic civilian interaction. Allows ordering civilians to safety.
+
+@doctrine_gfl_advancedprotocols_name=Advanced Protocols
+@doctrine_gfl_advancedprotocols_descr=Full communication suite with command authority. Enables directing civilians to specific exits and clearing rooms of non-combatants.
+
+@doctrine_gfl_tacticalintel_name=Tactical Intelligence
+@doctrine_gfl_tacticalintel_descr=Pre-mission data analysis reveals critical objectives. Makes 2 objectives, hostages, or bombs visible for 10 seconds per node level at mission start.
+
+@doctrine_gfl_infoextraction_name=Information Extraction
+@doctrine_gfl_infoextraction_descr=Advanced interrogation protocols for gathering tactical intelligence. Allows persuading civilians and surrendered enemies to reveal nearby threats.
+
+@doctrine_gfl_cqc_name=CQB Protocols
+@doctrine_gfl_cqc_descr=Close quarters battle subroutines. Significantly improves melee stun duration, damage output, strike speed, and overall mobility.
+
+@doctrine_gfl_overwhelming_name=Overwhelming Force
+@doctrine_gfl_overwhelming_descr=Maximum force authorization with precision targeting protocols. Drastically increases melee lethality and attack speed, improving point-blank engagement effectiveness.
+
+@doctrine_gfl_rapideploy_name=Rapid Deployment
+@doctrine_gfl_rapideploy_descr=Mobility optimization for rifle-equipped units. Increases movement speed while maintaining combat readiness. Reduces weapon ready and guard times significantly.
+
+@doctrine_gfl_transition_name=Weapon Transition Drills
+@doctrine_gfl_transition_descr=Automated sidearm deployment protocols. Enables instant pistol transition when primary weapon empties. Drastically improves pistol swap speed and close-range effectiveness.
+
+@doctrine_gfl_combateff_name=Combat Efficiency
+@doctrine_gfl_combateff_descr=Comprehensive rifle optimization protocols combining precision and speed. Improves accuracy, aim time, and follow-up shot placement across all engagement ranges.
+
+@doctrine_gfl_suppression_name=Suppression Protocols
+@doctrine_gfl_suppression_descr=Coordinated suppressive fire patterns with target vulnerability analysis. Increases suppression output significantly and provides accuracy bonuses against suppressed targets. Reduces effectiveness of enemy cover when suppressed.
+
+@doctrine_gfl_lethalprecision_name=Lethal Precision
+@doctrine_gfl_lethalprecision_descr=Optimized targeting algorithms prioritize vital areas. Significantly increases critical hit probability and reduces target acquisition time. Marksman rifles gain enhanced headshot capability.
+
+@GEAR-GIRLKICK-GUNMETAL-TTIP=Doll Kick!
+
+@GEAR-GIRLKICK-TITANIUM-TTIP=Strongest Kick of the NSU!
+
+@GEAR-GFL-LOCKPICK-TTIP=Unlock lock!
+
+@scope_GFL_ironsights_name=Iron sights
+
+@scope_GFL_ironsights_desc=Standard ironsights for basic aim guidance. Provides the quickest aim time at the cost of precision. T-Dolls being sent with nothing but iron sights tend to rely on just their built-in sensor packages in close range fights, removing the need to "consult" the sights during target acquisition, allowing the doll to process shooting protocols faster.
+
+@scope_GFL_smallreddot_name=Micro Red Dot 1x
+@scope_GFL_smallreddot_desc=A red dot sight so small it can fit to pistol slides. Nearly weightless for a Doll, it provides the best aim time while allowing precise shots at close range, but the red dot sight eventually becomes a hindrance for scoring killshots at long range.
+
+@scope_GFL_holosight_name=Holo-sight 1x
+@scope_GFL_holosight_desc=The favored optical attachment of most T-Dolls engaging at close to medium range. This sight magically projects a reticle over the target, with drop marks for medium-range shooting. Most Dolls under the Shikikan's command train with this sight in shooting drills that their protocols are optimized with its bulk and heft.
+
+@scope_GFL_largereddot_name=M68 Red Dot 1x
+@scope_GFL_largereddot_desc=Minimalistic sight that simply paints a red dot over the target. Zeroed farther than its smaller Red Dot cousin, it allows a faster response than the holosight while maintaining a steady precision advantage at all relevant ranges.
+
+@scope_GFL_holomag3x_name=Holo / Magnifier 3x
+@scope_GFL_holomag3x_desc=Holo-sight with a 3x magnifier for those situations you need more magnification without losing too much on your close range benefits. It is a bit heavier though.
+
+@scope_GFL_4x_name=Combat Optic 4x
+@scope_GFL_4x_desc=Simple magnified optic for shooting at medium ranges, with little weight penalty, but makes close range shooting more difficult due to its static configuration.
+
+@scope_GFL_SpecterDR_name=Dual Role Optic 1/4x
+@scope_GFL_SpecterDR_desc=Excellent optic suited for close-in AND medium range work, though a little heavy. A small price to pay for an optic perfect for generalized use.
+
+@scope_GFL_lpvo6x_name=LPVO 1-6x
+@scope_GFL_lpvo6x_desc=A Low Power Variable Optic that works great at ranges up to 25m and even more. The entry point of the heavier scopes, this scope provides greater precision at the cost of hindered aim time at close range. Perfect for sniper Dolls who you still want to assist in close range fights while still specializing in long range.
+
+@scope_GFL_lpvo8x_name=LPVO 1-8x
+@scope_GFL_lpvo8x_desc=A good all-around assaulter optic that truly shines at ranges farther than 25m. Another excellent attachment for sniper Dolls that you still wish to participate in close quarters combat while maintaining their capability to take out targets at long range, but a bit heavier than its 1-6x cousin.
+
+@scope_GFL_lromk4_name=LR Optic 3.5-10x
+@scope_GFL_lromk4_desc=Entry level optic for dedicated marksman duties. Provides powerful benefits at mid-to-long range, but is very heavy and very unwieldy at close range.
+
+@scope_GFL_lromk6_3_18_name=LR Optic 3-18x
+@scope_GFL_lromk6_3_18_desc=A marksman optic specialized in the 25 to 50m range zone, and adequate elsewhere. Provides powerful benefits at mid-to-long range, but is very heavy and very unwieldy at close range. It is recommended to bring a handgun to switch into if you decide to have your Doll's equipping this to have any chance dueling with any close targets.
+
+@scope_GFL_lropm5_25_name=LR Optic 5-25x
+@scope_GFL_lropm5_25_desc=A heavy and cumbersome optic that brings maximum precision from 25m out. Enhances the Doll's equipped weapon by intense degrees at long range, but suffers greatly at close range. It is a requirement to bring a reliable sidearm or have the Doll equipping this sit out any room-to-room fights.
+
+@GEAR-MEDIC-GRENADE-NAME=2x Medic Grenade
+@GEAR-MEDIC-GRENADE-DESC=Experimental grenade that repairs damage to all units within the blast radius. Use with caution in mixed engagements to avoid healing enemy units.
+@GEAR-MEDIC-GRENADE-TTIP=Throw medic grenade
+@menu_game_medic_grenade_none_ttip=No more medic grenades
+
+@armor_gfl_recframe_name=16Lab Recreation Frame
+@armor_recframe_desc=Doll body frame developed by Persica to give your Dolls a closer approximation of the human experience, enabling them to participate in activities outside their normal design parameters, such as tasting and savoring food.\n\nThis frame offers no real protection for the Doll’s Neural Core beyond its synthetic skin, in exchange this frame increases the Doll’s motor function performance by 20%, which could be useful in specific combat scenarios.\n\nMayling strongly disapproves of deploying Dolls into combat with this frame, citing the extreme risk posed by its complete lack of protection qualities, which almost guarantees her pulling an all-nighter reuploading the Doll’s Neural Cloud into a new frame.\n\nNote: While the stats appear absurdly high, the extremely low coverage (10%) means hits will almost never be stopped in practice. Other frames offer far more reliable protection, trust me :)
+
+@armor_gfl_lawframe_name=Law Enforcement Frame Mk.II
+@armor_gfl_lawframe_desc=Doll body frame extensively used by Dolls working in security and law enforcement in Green and White Zones.\n\nFeatures self-lubricating joints that grant increased motor function performance by 12% for on-foot chases while still offering decent protection against small arms fire from common armed criminals thanks to the anti-ballistic gel layer underneath the synthetic skin.
+
+@armor_gfl_combatframe_name=B.R.I.E.F. Combat Frame
+@support_gear_lockpick_name=Lockpick
+@armor_gfl_combatframe_desc=Doll body frame developed and approved by B.R.I.E.F. for extensive combat use in Yellow Zones.\n\nIts heterogeneous anti-ballistic gel–carbide weave matrix shrugs off the shoddy intermediate rounds favored by the Varjagers, while maintaining enough thermal transfer efficiency to enable efficient heat dissipation in scorching wasteland climates.\n\nIncidentally, it’s perfect for the Commander’s deployment in Nowheraki.
+
+@armor_gfl_eliteframe_name=I.O.P. Elite Frame
+@armor_gfl_eliteframe_desc=Doll body frame developed by I.O.P. for Elite Dolls such as the famous AR Team, Task Force DEFY and Klukai, formerly Gr 416.\n\nIt features higher quality artificial musculature that enhances the motor function performance of a doll even when at combat load, allowing the installation of subdermal matrices that can resist strong intermediate rounds.\n\nDue to the improved musculature generating more heat when in action, the subdermal matrices are installed in a way that covers only specific angles of the frame to retain the required heat dissipation index for optimal operation. This is no problem of course for Elite Dolls that operate in a squad that cover each other's tangos.
+
+@armor_gfl_grafframe_name=High-Endurance Frame "Deichgraf"
+@armor_gfl_grafframe_desc=Doll body frame developed by the collaborative efforts of Mayling, Springfield and Bathilde to produce a frame that can be made with Elmo's in-house facilities with defensive capabilities that would equal the default frames of Elite Dolls.\n\nUsing an inexpensive method of applying matriced armored synthskin over a reinforced subdermal layer that protects the vital parts of the frame, the result is a well armored frame with notoriously poor heat dissipation capability, causing mobility issues.\n\nIts name is inspired from the secretive, seemingly unkillable weapons platform "Deichgraf" the Commander has fought countless times.
+
+@armor_gfl_rhinoframe_name=Nosorog Reactive Endoskeleton
+@armor_gfl_rhinoframe_desc=An experimental Doll body frame provided by the Commander's specific female contact in NOMFA to support his endeavors in Nowheraki.\n\nDesigned by the NSU to enable Machine Gun T-Dolls to provide heavy frontline machinegun fire undaunted, this frame is equipped with an extremely powerful energy-based hardkill active protection system that can eliminate most firearms projectiles heading towards the Doll with an 80% success rate.\n\nThis APS covers 70 degree arc in front of the Doll.\n\nAs a consequence, the frame itself is extremely heavy from the APS components and generates an insane amount of heat that it directly interferes with a Neural Core's processing rate, causing it to prioritize mobility commands the least.
+
+@helmet_gfl_basic_name=Basic Core
+@helmet_gfl_basic_desc=Standard Neural Core housing that provides standard Doll survivability protocols against critical hits to essential Doll Frame components.
+
+@helmet_gfl_vanguard_name=Vanguard Core
+@helmet_gfl_vanguard_desc=Remolding Core designed for Vanguard Dolls. Enhances the Doll's movement speed by an incredible degree at the cost of room clearing capability and a reduction to the Doll's survivability against critical hits to essential Doll Frame components.
+
+@helmet_gfl_sentinel_name=Sentinel Core
+@helmet_gfl_sentinel_desc=Remolding Core designed for Sentinel Dolls. Enhances the Doll's room clearing capability by an incredible degree at the cost of a reduction to the Doll's survivability against critical hits to essential Doll Frame components.
+
+@helmet_gfl_bulwark_name=Bulwark Core
+@helmet_gfl_bulwark_desc=Remolding Core designed for Bulwark Dolls. Enhances the Doll's survivability against critical hits to essential Doll Frame components at the cost of reduced overall mobility.
+
+@helmet_gfl_support_name=Support Core
+@helmet_gfl_support_desc=Remolding Core designed for Support Dolls. Enhances the Doll's general mobility and room clearing capability at the cost of a steep reduction to the Doll's survivability against critical hits to essential Doll Frame components.
+
+@helmet_gfl_nvg1_name=Night Eyes TIS
+@helmet_gfl_nvg1_desc=Thermal Imaging System designed by Mayling to integrate seamlessly to the optical components of any Doll Frame the Commander deploys in the field. Mayling claims it is based on the Wolf Eyes System of DEFY... but Groza claims no significant power drain is happening during its use, but nonetheless impressed that it is very effective.
+
+@ammo_556_fmj_epr_name=URNC 62gr EPR
+@ammo_556_fmj_epr_desc=Standard performance FMJ rounds sourced from common channels such as the Underground Brokers and NOMFA. Fires and burns cleanly even in the harshest conditions, ensuring retention of its damage and penetration at range.
+
+@ammo_556_apf_sf_name=SF Armor Piercing Frangible
+@ammo_556_apf_sf_desc=Powerful intermediate rounds designed to penetrate body armor and cause severe damage upon penetration, at the cost of rapid loss of penetration power beyond 10 meters. Rumored to be designed by the Sangvis Ferri Ringleader Beluga for use against the Commander's Dolls who are known to be armored against most intermediate rounds.
+
+@ammo_919_jhp_over_name=NOMFA 124gr JHP +P
+@ammo_919_jhp_over_desc=Overpressure, low-caliber JHP rounds designed to penetrate low-level armor while causing as much damage as possible on a tiny payload. While repeated use of this ammo type Regularly purchased by PMCs and civilians in the Yellow Zones looking to maximize the power of their handguns, SMGs and PDWs.\n\nRumor has it that +P rounds increase the cyclic rate of some guns.
+
+@ammo_919_squeak_flash_name=ELMO Squeak Flash
+@ammo_919_squeak_flash_desc=Custom chemical rounds that produces a distinct high-pitched squeak and disorienting wisps of light upon impact. Materialized from one of Cheeta's shooting range pranks to the Commander, it is now refined for suppression against both humans and ELIDs. Mayling describes the effect of having one explode close as like hearing nails sharply grind a chalkboard through your tinnitus while being flashed by a strobe light.
+
+@ammo_556x39_fmj_nsu_name=NSU 57gr FMJ
+@ammo_556x39_fmj_nsu_desc=Neo Soviet Union's standard service intermediate round that has aims to replace the ubiquitous 7.62x39mm service round. It performs roughly the same as its predecessor with a slight reduction on overall damage.
+
+@ammo_556x39_supercavitator_defy_name=DEFY Supercav Soft
+@ammo_556x39_supercavitator_defy_desc=Custom rounds designed for underwater combat against soft targets. When fired underwater, it generates cavitation bubble thanks to its flat, disc shaped nose, allowing the bullet to drag against air instead of water. While all of these qualities seem useless in the environment of Nowheraki, the bullet itself still acts as a overengineered JHP round on land with improved ballistics at range.
+
+@ammo_762x39_fmj_nsu_name=NSU 123gr FMJ
+@ammo_762x39_fmj_nsu_desc=Standard performance FMJ rounds made en masse for the old AK rifles of the KCCO. Large and intimidating among its intermediate peers, it boasts higher damage and penetration at close range.
+
+@ammo_762x39_jhe_elid_name=NSU Anti-ELID JHE
+@ammo_762x39_jhe_elid_desc=Custom intermediate rounds designed to destroy ELIDs via micro explosive that trigger upon skin penetration. While the effectiveness of this ammunition is extremely dubious due to the microexplosive system adding too much weight onto the bullet, causing significant performance problems, it is still quite horrifying when given to the hands of someone who can wield it.
+
+@ammo_473_fmj_404_name=404 51gr CL FMJ
+@ammo_473_fmj_404_desc=Caseless rounds developed during the first Cold War which are now being made in house by H.I.D.E. 404 for Mechty's use. Thanks to its design, a lot of rounds can be packed in a small space while maintaining the standard performance of a 5.56mm round, at the cost of potential heat issues. Logisically heavy to produce given the resources of a small organization as H.I.D.E. 404, a sly Mechty can sometimes be heard making excuses of saving ammunition costs by letting her sit out on some missions. Klukai of course, is never pleased to hear this.
+
+@ammo_473_frang_404_name=16Lab ISS Frangible
+@ammo_473_frang_404_desc=Caseless rounds for theoretical use in space stations. It is designed to be frangible as to prevent overpenetration and any damage to space station hulls on a miss. In Nowheraki, it just gives Mechty the option for high-damage rounds at the cost of penetration power. Interestingly, it is quite easier to manufacture than the FMJ counterpart.
+
+@ammo_762_fmj_epr_name=URNC 130gr EPR
+@ammo_762_fmj_epr_desc=Standard performance FMJ rounds sourced from common channels such as the Underground Brokers and NOMFA. Fires and burns cleanly even in the harshest conditions, ensuring retention of its damage and penetration at range.
+
+@ammo_45_jhp_over_name=NOMFA 185gr JHP +P
+@ammo_45_jhp_over_desc=Overpressure, low-caliber JHP rounds designed to penetrate low-level armor while causing as much damage as possible on a tiny payload. While repeated use of this ammo type Regularly purchased by PMCs and civilians in the Yellow Zones looking to maximize the power of their handguns, SMGs and PDWs.\n\nRumor has it that +P rounds increase the cyclic rate of some guns.
+
+@ammo_45_ew_spec_name=404 .45 EW Spec
+@ammo_45_ew_spec_desc=Specialized rounds for electronic warfare and human-type suppression. Upon impact, the rounds detonate into tiny high-pitched EMP fields that can bring targets to their knees. This comes at a cost of a low-energy projectile that has extremely reduced stopping power.
+
+@ammo_919_ew_spec_name=404 9x19mm EW Spec
+@ammo_919_ew_spec_desc=Specialized rounds for electronic warfare and human-type suppression. Upon impact, the rounds detonate into tiny high-pitched EMP fields that can bring targets to their knees. This comes at a cost of a low-energy projectile that has extremely reduced stopping power.
+
+@ammo_45_fmj_urnc_name=URNC 230gr FMJ
+@ammo_45_fmj_urnc_desc=Standard performance FMJ rounds sourced from common channels such as the Underground Brokers and NOMFA. This one is particularly designed for PDWs with an extremely very high cyclic rate.
+
+@ammo_45_jhp_inc_name=404 JHP Incendiary
+@ammo_45_jhp_inc_desc=JHP rounds with incendiary payloads inserted in the hollowed area. Due to the size of the payload, the additional effect it causes is negligible, but Vector insists that these rounds provide her a way to express her "art" in the battlefield.
+
+@ammo_3006_fmj_name=URNC 130gr FMJ
+@ammo_3006_fmj_desc=Standard full-power cartridge ammunition excellent for engaging targets at long ranges. While the design itself is antiquated, it is still widely used in the Yellow Zones today.
+
+@ammo_3006_lait_name=ZCH SEPR "Cafe au Lait"
+@ammo_3006_lait_desc=Specialized enhanced performance rounds crafted by Springfield herself to catch up with the performance of her assault rifle wielding peers. Its able to retain its power after penetrating a target, increasing Springfield's crowd control capability at the cost of some lethality.
+
+@ammo_300wm_fmj_name=NOMFA 180gr FMJ
+@ammo_300wm_fmj_desc=Standard high-power cartridge ammunition excellent for engaging targets at long ranges. Preferred sniping round by big game hunters, law enforcement and mercenaries.
+
+@ammo_300wm_macchiato_name=ZCH Endothermic "Macchiato"
+@ammo_300wm_macchiato_desc=Specialized rounds designed for Makiatto's specifications for suppressing HVT's for capture. When fired, it leaves a strong trail of endothermic energy that can heavily disorient both senses and sensors. However the altered composition of the bullet prevents it from effective at overpenetrating bodies.
+
+@ammo_556_tiramisu_name=ZCH Frangible "Tiramisu"
+@ammo_556_tiramisu_desc=Specialized rounds designed for Centaureissi's specifications for quickly taking out soft targets and minimizing environmental destruction to keep things clean after combat. The rounds are designed to break apart upon impact which is very effective against flesh, but nearly negligible against any forms of hard armor.
+
+@ammo_762x39_fmj_duplex_name=ELMO Duplex FMJ
+@ammo_762x39_fmj_duplex_desc=Experimental round developed by Mayling as a gift for Groza. It utilizes two bullets stacked on each other inside a standard cartridge. The result is each bullet fires two projectiles in hopes of increasing hit probability at the cost of some accuracy. While the concept is weird, Groza appreciates the extra firepower she can pack in her trusty OTs-14.
+
+@ammo_50bmg_fmj_name=URNC 750gr FMJ
+@ammo_50bmg_fmj_desc=Standard full-power cartridge whose design stands the test of time. Commonly used by vehicle mounted machineguns and anti-materiel rifles. Exceptionally devastating against almost everything in the battlefield save for dedicated armor that is designed to resist tank rounds.
+
+@ammo_50bmg_remover_name=ELMO Remover HEIAP
+@ammo_50bmg_remover_desc=Powerful round produced in-house in the ELMO foundries for support gunner drone use. It uses the highest yield explosive available at the cheapest cost so it can be produced under a tight budget, at the cost of some ballistic performance. The round was titled as the "Remover" by Mayling herself after a conversation with Nemesis about its effectiveness with her weapon.
+
+@ammo_50bmg_match_name=NOMFA Match Grade
+@ammo_50bmg_match_desc=Premium match-grade .50 BMG ammunition with precision-loaded components for maximum accuracy and consistency at extreme ranges. The tighter tolerances and superior ballistics make it ideal for precise long-range engagements.
+
+
+@GEAR-VECTOR-GRENADE-NAME=x5 Searing Finale
+@GEAR-VECTOR-GRENADE-DESC=Incendiary grenades with a small explosive charge that spreads its fiery payload further and stunning nearby enemies at the explosion point. Paint terror into their bones and clear your canvas.
+@GEAR-VECTOR-GRENADE-TTIP=Throw Searing Finale
+@menu_game_vector_grenade_none_ttip=Out of Confectance Index
+
+
+@armor_gfl_hare_name=Shield & Plate
+@armor_gfl_hare_desc=Tactical shield combined with reinforced plating. Krolik's shield provides exceptional frontal coverage while charging into close quarters. Limited mobility and rear protection.
+
+@armor_gfl_hare_heavy_name=Heavy Shield Rig
+@armor_gfl_hare_heavy_desc=Reinforced full-coverage shield system with additional side and rear armor plating. Provides comprehensive protection at the cost of significantly reduced mobility and increased profile. For when Krolik needs to tank through heavy fire.
+
+@no_ammo_name=None
+@no_ammo_desc=
+@scope_no_sights_name=None
+@scope_no_sights_desc=
+
+
+@ammo_12g00buck_name=URNC 00 Buckshot
+@ammo_12g00buck_desc=Standard 12 gauge 00 buckshot loaded with nine pellets. A proven close-quarters load that delivers devastating spread damage against soft targets, though its effectiveness drops sharply at range.
+
+@ammo_12gcalciumbirdshot_name=ELMO Calcium Birdshot
+@ammo_12gcalciumbirdshot_desc=Experimental 12 gauge shells loaded with thirty-two lightweight calcium composite pellets. The extreme pellet count creates a wide spread pattern ideal for hitting fast-moving targets, but each pellet carries minimal energy and is nearly useless against armour.
+
+@ammo_12grfslug_name=NOMFA RF Slug
+@ammo_12grfslug_desc=A single high-mass rifled slug designed for maximum accuracy and stopping power in a shotgun platform. Excellent penetration and damage against single targets, trading the spread of buckshot for precision.
+
+@ammo_12gsuperheavyslugs_name=ELMO Super Heavy Slugs
+@ammo_12gsuperheavyslugs_desc=Oversized slugs loaded four to a shell using a stacked configuration. Each slug carries significant mass and penetration power, combining the spread advantage of buckshot with the armour-defeating properties of a slug.
+
+@ammo_303brit_lewis_name=.303 British FMJ
+@ammo_303brit_lewis_desc=Standard full metal jacket .303 British ammunition for the Lewis Gun. Balanced performance for suppressive fire.
+@ammo_303brit_ap_lewis_name=.303 British AP
+@ammo_303brit_ap_lewis_desc=Armor-piercing .303 British ammunition. Enhanced penetration at the cost of reduced stopping power.
+
+
+@firearm_caliber_58x42_name=5.8×42mm
+@ammo_58x42_fmj_name=NSU 77gr FMJ
+@ammo_58x42_fmj_desc=Standard service ammunition for the Chinese 5.8×42mm cartridge. A modern intermediate round with flat trajectory and consistent penetration, designed for the PLA's latest generation of small arms.
+
+
+@firearm_caliber_762x38_name=7.62×38mmR
+@ammo_762x38_fmj_nagant_name=7.62x38mmR FMJ
+@ammo_762x38_fmj_nagant_desc=Standard 7.62x38mmR ammunition for the Nagant M1895's gas-seal cylinder. The recessed bullet allows the cylinder to seal against the barrel, making suppressed fire viable.
+
+@firearm_caliber_9x18_name=9×18mm
+@ammo_9x18_jhp_stechkin_name=9x18mm JHP +P
+@ammo_9x18_jhp_stechkin_desc=Overpressure hollow-point 9x18mm rounds. The +P loading compensates for the cartridge's lower energy compared to 9x19mm, expanding on impact for increased damage against soft targets at close range.
+
+@ammo_762x25_fmj_ppsh41_name=7.62x25mm FMJ
+@ammo_762x25_fmj_ppsh41_desc=High-velocity bottleneck pistol cartridge for submachine guns. The small, fast bullet has surprising penetration for its size but bleeds energy quickly at range.
+
+@ammo_762x54r_fmj_mosinnagant_name=7.62x54mmR FMJ
+@ammo_762x54r_fmj_mosinnagant_desc=Full-power 7.62x54mmR rifle cartridge for bolt-action precision work. Devastating at range with excellent penetration against all but the heaviest armour.
+
+@helmet_gfl_combathelmet_name=Combat Helmet
+@helmet_gfl_combathelmet_desc=Standard tactical helmet, light enough that you forget you're wearing one. Stops most fragmentation and pistol rounds, but rifle fire will go through it and ruin your afternoon.
+
+@helmet_gfl_heavyhelmet_name=Heavy Combat Helmet
+@helmet_gfl_heavyhelmet_desc=High-cut helmet with a ceramic insert riding on top of the shell. Adds noticeable weight, but you'll thank it the first time a rifle round glances off the back of your skull instead of through it.
+
+@armor_gfl_softvest_name=Concealed Vest IIA
+@armor_gfl_softvest_desc=Two-panel IIA, soft layer only. Handles pistol fire, anything with more energy than that goes through. Light enough you forget you're wearing it, until something doesn't.
+
+@armor_gfl_frontvest_name=Concealed Vest IIIA Slick
+@armor_gfl_frontvest_desc=Stripped-down IIIA carrier. Side wraps deleted to save bulk, leaving the front and back panels at full rating.\n\nWhere the bullets come from matters, just don't get flanked :)
+
+@armor_gfl_fullvest_name=Concealed Vest IIIA
+@armor_gfl_fullvest_desc=Wraps the torso in IIIA: front, back, and sides all rated against handgun and SMG fire. The compromise option, less concealable than the slick cut, less protective than hard plates.
+
+@armor_gfl_tacticalvest_name=Plate Carrier
+@armor_gfl_tacticalvest_desc=Hard ceramic plates riding a load-bearing harness. Rated against most rifle ammunition at typical engagement distances though specialist threats and AP rounds will still find a way through eventually.\n\nThere is no hiding this one. Wear it when you've already decided to be loud.

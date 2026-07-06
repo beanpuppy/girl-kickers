@@ -12,64 +12,90 @@ ROOT = Path(__file__).resolve().parent.parent.parent
 MOD = ROOT / "mod"
 OUT = ROOT / "www" / "unit-builder" / "app" / "data"
 
+# Canonical squad order. Entity bit-indices are assigned by concatenating the
+# per-squad files in this order, so URL hashes stay stable across mod updates.
+# Append new squads at the end — never reorder.
+SQUAD_ORDER = [
+    "girl",
+    "defy",
+    "404",
+    "cafe",
+    "groza",
+    "elmoce",
+    "frost",
+    "monsoon",
+    "pol03",
+]
 
-def parse_localisation(path: Path) -> dict[str, str]:
-    """Parse gfl_game.txt into a key->value dict."""
+
+def parse_localisation(loc_dir: Path) -> dict[str, str]:
+    """Parse every gfl_game_*.txt in loc_dir into a single key->value dict."""
     loc = {}
-    for line in path.read_text(encoding="utf-8").splitlines():
-        line = line.strip()
-        if line.startswith("@") and "=" in line:
-            key, _, val = line.partition("=")
-            loc[key[1:]] = val  # strip leading @
+    for path in sorted(loc_dir.glob("gfl_game_*.txt")):
+        for line in path.read_text(encoding="utf-8").splitlines():
+            line = line.strip()
+            if line.startswith("@") and "=" in line:
+                key, _, val = line.partition("=")
+                loc[key[1:]] = val  # strip leading @
     return loc
 
 
-def parse_entities(path: Path) -> dict[str, dict]:
-    """Parse gfl_humans.xml, return dict keyed by class ID."""
-    tree = ET.parse(path)
+def parse_entities(paths: list[Path]) -> dict[str, dict]:
+    """Parse per-squad gfl_humans_*.xml files in order, return dict keyed by class ID.
+
+    Bit indices are assigned by the concatenated order of entities across files,
+    which is determined by the input path list — keep it stable (see SQUAD_ORDER).
+    """
     entities = {}
+    bit_index = 0
 
-    for bit_index, entity_el in enumerate(tree.findall("Entity")):
-        name = entity_el.get("name")
-        human = entity_el.find("Human")
-        if human is None:
-            continue
+    for path in paths:
+        tree = ET.parse(path)
+        for entity_el in tree.findall("Entity"):
+            name = entity_el.get("name")
+            human = entity_el.find("Human")
+            if human is None:
+                continue
 
-        class_id = human.get("class")
-        id_el = human.find("Id")
-        phys = entity_el.find("PhysicalParams")
-        render = entity_el.find("RenderObject3D")
-        move = human.find("Mobility/MoveSpeed")
-        turn = human.find("Mobility/TurnSpeed")
-        fov = human.find("FOV")
-        brain = human.find("Brain")
+            class_id = human.get("class")
+            id_el = human.find("Id")
+            phys = entity_el.find("PhysicalParams")
+            render = entity_el.find("RenderObject3D")
+            move = human.find("Mobility/MoveSpeed")
+            turn = human.find("Mobility/TurnSpeed")
+            fov = human.find("FOV")
+            brain = human.find("Brain")
 
-        equipment = []
-        for item in human.findall("Equipment/Item"):
-            equipment.append(item.get("name"))
+            equipment = []
+            for item in human.findall("Equipment/Item"):
+                equipment.append(item.get("name"))
 
-        entities[class_id] = {
-            "bitIndex": bit_index,
-            "entityName": name,
-            "idName": id_el.get("name"),
-            "portrait": id_el.get("portrait"),
-            "gender": id_el.get("gender"),
-            "voicePack": id_el.get("voicePack"),
-            "health": int(phys.get("health")),
-            "model": render.get("model"),
-            "diffuseTex": render.get("diffuseTex"),
-            "moveSpeed": float(move.get("defaultMetersPerSec")),
-            "moveSpeedMin": float(move.get("min")),
-            "moveSpeedMax": float(move.get("max")),
-            "turnSpeed": float(turn.get("defaultMetersPerSec")),
-            "turnSpeedMin": float(turn.get("min")),
-            "turnSpeedMax": float(turn.get("max")),
-            "fovDegrees": fov.get("degrees"),
-            "fovDistance": fov.get("distanceMeters"),
-            "fovEyeRadius": fov.get("eyeRadiusMeters"),
-            "suppressionRecovery": brain.get("suppressionRecovery"),
-            "equipment": equipment,
-        }
+            doctrines = [d.get("name") for d in human.findall("Doctrine")]
+
+            entities[class_id] = {
+                "bitIndex": bit_index,
+                "entityName": name,
+                "idName": id_el.get("name"),
+                "portrait": id_el.get("portrait"),
+                "gender": id_el.get("gender"),
+                "voicePack": id_el.get("voicePack"),
+                "health": int(phys.get("health")),
+                "model": render.get("model"),
+                "diffuseTex": render.get("diffuseTex"),
+                "moveSpeed": float(move.get("defaultMetersPerSec")),
+                "moveSpeedMin": float(move.get("min")),
+                "moveSpeedMax": float(move.get("max")),
+                "turnSpeed": float(turn.get("defaultMetersPerSec")),
+                "turnSpeedMin": float(turn.get("min")),
+                "turnSpeedMax": float(turn.get("max")),
+                "fovDegrees": fov.get("degrees"),
+                "fovDistance": fov.get("distanceMeters"),
+                "fovEyeRadius": fov.get("eyeRadiusMeters"),
+                "suppressionRecovery": brain.get("suppressionRecovery"),
+                "equipment": equipment,
+                "doctrines": doctrines,
+            }
+            bit_index += 1
 
     return entities
 
@@ -77,8 +103,10 @@ def parse_entities(path: Path) -> dict[str, dict]:
 def parse_identities(path: Path) -> dict[str, dict]:
     """Parse gfl_human_identities.xml, return dict keyed by class ID.
 
-    For each class, we pick the first non-GIRL unit mapping to determine
-    the squad, and use the customName from there.
+    For each class we pick a unit to display as its squad. Non-GIRL units win
+    when present (kept for historical entries that had both squad and GIRL
+    Portraits); dolls that only live under GFL-UNIT-GIRL keep GIRL as their
+    squad.
     """
     tree = ET.parse(path)
     identities = {}
@@ -91,24 +119,24 @@ def parse_identities(path: Path) -> dict[str, dict]:
         if class_id not in identities:
             identities[class_id] = {
                 "customName": custom_name,
-                "squad": None,
-                "squadUnit": None,
+                "squad": unit,
+                "squadUnit": unit,
             }
-
-        # Prefer the non-GIRL unit for squad assignment
-        if unit != "GFL-UNIT-GIRL" and identities[class_id]["squad"] is None:
+        elif identities[class_id]["squad"] == "GFL-UNIT-GIRL" and unit != "GFL-UNIT-GIRL":
+            # Prefer the non-GIRL unit if we saw GIRL first.
             identities[class_id]["squad"] = unit
             identities[class_id]["squadUnit"] = unit
 
     return identities
 
 
-def parse_classes(path: Path) -> list[str]:
-    """Parse gfl_unit.xml, return ordered list of class IDs."""
-    tree = ET.parse(path)
+def parse_classes(paths: list[Path]) -> list[str]:
+    """Parse per-squad gfl_unit_*.xml files in order, return ordered list of class IDs."""
     classes = []
-    for cls in tree.findall(".//Class"):
-        classes.append(cls.get("name"))
+    for path in paths:
+        tree = ET.parse(path)
+        for cls in tree.findall(".//Class"):
+            classes.append(cls.get("name"))
     return classes
 
 
@@ -131,7 +159,9 @@ def parse_weapons(path: Path) -> dict[str, dict]:
         mod_params = firearm.find("ModifiableParams")
         params = firearm.find("Params")
         mag = mod_params.get("roundsPerMagazine", "") if mod_params is not None else ""
-        fire_mode_key = params.get("operationInfoText", "") if params is not None else ""
+        fire_mode_key = (
+            params.get("operationInfoText", "") if params is not None else ""
+        )
 
         weapons[name] = {
             "id": name,
@@ -141,7 +171,8 @@ def parse_weapons(path: Path) -> dict[str, dict]:
             "img": firearm.get("img", ""),
             "magazine": mag,
             "fireModeKey": fire_mode_key.lstrip("@"),
-            "hasSuppressor": f"{name}-SUP" in all_names or name in integrally_suppressed,
+            "hasSuppressor": f"{name}-SUP" in all_names
+            or name in integrally_suppressed,
         }
 
     return weapons
@@ -221,9 +252,15 @@ def convert_portraits_dds(entities: dict[str, dict], out_dir: Path) -> dict[str,
             )
             print(f"  Converted {dds_path.name} -> {png_name}")
         except FileNotFoundError:
-            print("  Warning: ImageMagick not found, skipping DDS conversion", file=sys.stderr)
+            print(
+                "  Warning: ImageMagick not found, skipping DDS conversion",
+                file=sys.stderr,
+            )
         except subprocess.CalledProcessError as e:
-            print(f"  Warning: failed to convert {dds_path.name}: {e.stderr.decode()}", file=sys.stderr)
+            print(
+                f"  Warning: failed to convert {dds_path.name}: {e.stderr.decode()}",
+                file=sys.stderr,
+            )
 
         converted[dds_rel] = png_name
 
@@ -324,15 +361,19 @@ def resolve_fire_mode(key: str, loc: dict[str, str]) -> str:
 def build_dolls_json():
     print("Parsing mod data...")
 
-    loc = parse_localisation(MOD / "localization" / "gfl_game.txt")
-    entities = parse_entities(MOD / "entities" / "gfl_humans.xml")
+    loc = parse_localisation(MOD / "localization")
+    entity_files = [MOD / "entities" / f"gfl_humans_{slug}.xml" for slug in SQUAD_ORDER]
+    unit_files = [MOD / "units" / f"gfl_unit_{slug}.xml" for slug in SQUAD_ORDER]
+    entities = parse_entities(entity_files)
     identities = parse_identities(MOD / "units" / "gfl_human_identities.xml")
-    class_order = parse_classes(MOD / "units" / "gfl_unit.xml")
+    class_order = parse_classes(unit_files)
     weapons = parse_weapons(MOD / "equipment" / "gfl_weapons.xml")
     skins_by_class = parse_skins(MOD / "equipment" / "gfl_skins.xml")
 
-    print(f"Found {len(entities)} entities, {len(identities)} identities, "
-          f"{len(weapons)} weapons, {len(class_order)} classes")
+    print(
+        f"Found {len(entities)} entities, {len(identities)} identities, "
+        f"{len(weapons)} weapons, {len(class_order)} classes"
+    )
 
     OUT.mkdir(parents=True, exist_ok=True)
 
@@ -355,7 +396,9 @@ def build_dolls_json():
 
     for class_id in all_class_ids:
         if class_id not in entities:
-            print(f"  Warning: class {class_id} has no entity definition", file=sys.stderr)
+            print(
+                f"  Warning: class {class_id} has no entity definition", file=sys.stderr
+            )
             continue
 
         ent = entities[class_id]
@@ -390,14 +433,16 @@ def build_dolls_json():
             skin_png = dds_skin_map.get(skin["img"], "")
             skin_img = f"data/skins/{skin_png}" if skin_png else ""
 
-            skins.append({
-                "id": skin["id"],
-                "name": loc.get(skin_name_key, skin["id"]),
-                "description": loc.get(skin_desc_key, ""),
-                "img": skin_img,
-                "model": skin["model"],
-                "diffuseTex": skin["diffuseTex"],
-            })
+            skins.append(
+                {
+                    "id": skin["id"],
+                    "name": loc.get(skin_name_key, skin["id"]),
+                    "description": loc.get(skin_desc_key, ""),
+                    "img": skin_img,
+                    "model": skin["model"],
+                    "diffuseTex": skin["diffuseTex"],
+                }
+            )
 
         # Resolve portrait
         portrait_png = dds_portrait_map.get(ent["portrait"], "")
@@ -419,9 +464,7 @@ def build_dolls_json():
                 "name": loc.get(weapon_name_key, weapon_id or ""),
                 "category": weapon_data.get("category", ""),
                 "magazine": weapon_data.get("magazine", ""),
-                "fireMode": resolve_fire_mode(
-                    weapon_data.get("fireModeKey", ""), loc
-                ),
+                "fireMode": resolve_fire_mode(weapon_data.get("fireModeKey", ""), loc),
                 "hasSuppressor": weapon_data.get("hasSuppressor", False),
             },
             "skins": skins,
@@ -445,6 +488,7 @@ def build_dolls_json():
                 "fovEyeRadius": ent["fovEyeRadius"],
                 "suppressionRecovery": ent["suppressionRecovery"],
                 "equipment": ent["equipment"],
+                "doctrines": ent["doctrines"],
             },
         }
 
@@ -452,11 +496,11 @@ def build_dolls_json():
 
     # Scan backgrounds directory
     bg_dir = ROOT / "www" / "unit-builder" / "app" / "backgrounds"
-    backgrounds = sorted(
-        f"backgrounds/{p.name}"
-        for p in bg_dir.glob("*.png")
-        if p.is_file()
-    ) if bg_dir.exists() else []
+    backgrounds = (
+        sorted(f"backgrounds/{p.name}" for p in bg_dir.glob("*.png") if p.is_file())
+        if bg_dir.exists()
+        else []
+    )
     print(f"\nFound {len(backgrounds)} background images")
 
     # Build squad icon map: squad display name -> icon path
@@ -480,7 +524,10 @@ def build_dolls_json():
     try:
         git_hash = subprocess.run(
             ["git", "rev-parse", "--short", "HEAD"],
-            capture_output=True, text=True, check=True, cwd=ROOT,
+            capture_output=True,
+            text=True,
+            check=True,
+            cwd=ROOT,
         ).stdout.strip()
     except (FileNotFoundError, subprocess.CalledProcessError):
         git_hash = "unknown"
@@ -496,7 +543,9 @@ def build_dolls_json():
     }
 
     out_file = OUT / "dolls.json"
-    out_file.write_text(json.dumps(result, indent=2, ensure_ascii=False), encoding="utf-8")
+    out_file.write_text(
+        json.dumps(result, indent=2, ensure_ascii=False), encoding="utf-8"
+    )
     print(f"\nWrote {len(dolls)} dolls to {out_file}")
 
 

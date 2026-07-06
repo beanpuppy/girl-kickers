@@ -1,0 +1,93 @@
+@GFL-UNIT-404-NAME=H.I.D.E 404
+@GFL-UNIT-404-DESC=A mercenary unit of tactical dolls specialising in covert operations and electronic warfare, known for completing contracts through any means necessary regardless of collateral damage.
+@#GFL-UNIT-404-NAME-RND=H.I.D.E 404
+
+@DOLL-HK416-NAME=KLUKAI
+@DOLL-HK416-DESC=Elegant and composed; a Doll brimming with confidence. She aspires to make every member of H.I.D.E. 404 into an elite. Only those who are familiar with her know the tenderness that lies behind her cold, strong-willed demeanor.
+@WEAP-HK416-NAME=HK416
+@WEAP-HK416-DESC=The Heckler & Koch HK416 is a collaboration project between the US Army Delta Force R&D department and the German firearms company Heckler & Koch, at the request of US Army combat veteran Larry Vickers. The goal was to make a M4 variant that has a shorter profile and lacks the AR-15's direct impingement system.
+
+@skin_hk416_default_name=Blazing Star
+@skin_hk416_default_desc=Klukai's usual outfit. Her ultramarine jacket is the most eye-catching sight on the battlefield, but Klukai has never been afraid of being the center of her enemies' attention -- or rather, that was the aim of choosing her outfit in the first place.
+@skin_hk416_skin1_name=Speed Star
+@skin_hk416_skin1_desc=This is Klukai's riding outfit. Her pure white bodysuit hugs her lovely curves. Like a zephyr or a tempest, this shining knight extends and invitation to you. Mount up, ride out!
+@skin_hk416_skin2_name=Astral Luminous
+@skin_hk416_skin2_desc=Klukai's tactical rider outfit. It combines protective features with combat assisting capabilities, allowing Klukai to weave through the frontlines like a blue streak of lightning.
+
+@DOLL-G11-NAME=MECHTY
+@DOLL-G11-DESC=A Doll who approaches everything with peak laziness, except for gaming and reading manga. She's mastered the ultimate skill: falling asleep anytime, anywhere, under any circumstance. Although she seems to embody the philosophy of "lying flat" to the extreme, she reveals her dependable side in times of crisis, though in her words, "It'd be better if we just never ran into any 'crisis' at all".
+@WEAP-G11-NAME=G11
+@WEAP-G11-DESC=During the Cold War, caseless ammunition was one of NATO's top projects, in order to achieve both easier ammunition storage/logistics and faster rate of fire. In the end, almost every project ended in failure or lost interest, with the exception of Heckler & Koch's G11. In theory, caseless munitions can achieve faster rates of weapon fire, since the process of the bolt unlocking followed by brass extraction and ejection is not needed with a bullet that doesn't come with a case; the weapon only needs to fire, load a new cartridge, and repeat.
+@firearm_caliber_473x33_name=4.73×33mm Caseless
+
+@DOLL-G36K-NAME=ANDORIS
+@DOLL-G36K-DESC=A gentle Doll whose sweet smile and gaze could melt ice and snow. But if she's been looking and smiling at you for too long, she's probably crashed. Because of this quirk, Andoris cannot give it her all on the battlefield. But what she lacks in firepower, she makes up for in intelligence gathering. Andoris is an expert intelligence officer due to her large storage space, and can pick up details anyone else would have missed. Using her abilities outside of the battlefield, Andoris has found a way of life and a home.
+@WEAP-G36K-NAME=G36K-KSK
+@WEAP-G36K-DESC=The G36K (for kurz, “short”), is the shortened, carbine version of the G36 introduced by Heckler & Koch in 1997. Andoris uses a G36KA4, the variant used since 2022 by the Kommando Spezialkräfte (KSK), the special forces of the German Army.
+
+@DOLL-G28-NAME=BELKA
+@DOLL-G28-DESC=Innocent, peppy and a skilled mood maker Doll. She may seem harmless, but is always preparing some secret prank. Nothing wrong with a bit of levity! And there's nobody who couldn't forgive those big doe eyes and cute smile! But the fragile flower facade drops when she steps on the battlefield: even with her good performances, Belka never spares any effort. She aims to become an elite T-Doll like her Big Sis, and be useful to both her and the Commander. Her deepest desire is simply to remain by the side of the people she cherishes.
+@WEAP-G28-NAME=G28
+@WEAP-G28-DESC=G28 is the Bundeswehr designation for HK241 semi-automatic 7.62mm calibre designated marksman rifle designed by Heckler & Koch. Designed based on the civilian variant HK417 battle rifle the MR308, Heckler & Koch had given the name HK241 to G28 in October 2017, but the army designation remains the same. G28 shares approximately 75% interchangeable parts with HK417.
+
+@DOLL-UMP45-NAME=LEVA
+@DOLL-UMP45-DESC=A Doll born from conspiracy. The former leader of H.I.D.E. 404, now working with Lenna on confidential missions for the Non-Military Forces Administration. She always wears a smile and a polite demeanor, concealing the personality of a fox. Once your guard has been lowered with a smile, she will get what she wants with sharp words and outmaneuver you before you could react, smiling playfully all the while. Her close ones know what the smile truly conceals: the determination to protect people important to her. When danger appears, the fox becomes a lion and bares its sharp fangs.
+@WEAP-UMP45-NAME=UMP45
+@WEAP-UMP45-DESC=The UMP (Universale Maschinenpistole, German for "Universal Submachine Gun") is a submachine gun developed and manufactured by Heckler & Koch. The UMP is a blowback-operated select-fire submachine gun firing from a closed bolt. It features a polymer stock that is able to be folded for compactness, a paddle-style magazine release, and a handguard that is able to accept accessories, such as vertical foregrips. The barrel is approximately 8 inches long, and there may be rails on top of the receiver to mount optics.
+@firearm_caliber_45acp_name=.45 ACP
+
+@skin_ump45_default_name=Reasoned Gaze
+@skin_ump45_default_desc=Leva's typical outfit. Infusing her unique personaility into this outfit design which symbolizes rationality reflects how she walks a lonely path but never compromises her principles. This unique contradiction is where Leva's charm lies.
+@skin_ump45_skin1_name=Diamond Flower
+@skin_ump45_skin1_desc="I've taken part in many more parties than in the past. However, there's one that I've been looking forward to; I've never gotten an invite for it... So what are you waiting for, Commander~?"\nShe fixes you with her mirthful eyes, waiting for your answer.
+
+@DOLL-UMP9-NAME=LENNA
+@DOLL-UMP9-DESC=Lenna followed Kalina when she left G&K to join the Paramilitary Supervision Bureau in her quality as "a Doll who can handle responsibilities". She remains uncomfortable when separated from her beloved sister, and cherishes the memories of the time she spent fighting with her close companions. Her occupation and bodies have changed, but she's remains the same and will give you a big smile and hug when you're reunited.
+@WEAP-UMP9-NAME=UMP9
+@WEAP-UMP9-DESC=As the name signifies, the UMP9 is the UMP variant chambered for the 9x19mm Parabellum cartridge. Like the other two main variants, the UMP9 features a 2-round burst fire mode, in addition to the more standard semi-automatic and fully automatic firing modes. The UMP9 has a standard barrel length of 200mm, and is able to achieve a cyclic rate of fire of around 600-650 rounds per minute, feeding from a 30-round double-stacked magazine. The effective firing range is listed as being close to 100m.
+
+@DOLL-VECTOR-NAME=VECTOR
+@DOLL-VECTOR-DESC=A regularly pessimistic Doll. However, as the leader of H.I.D.E. 404's Team B, Vector will absolutely push through and endure till the very last moment with her teammates in the face of adversity, no matter how depressing the outcomes of her calculations.
+@WEAP-VECTOR-NAME=KRISS Vector
+@WEAP-VECTOR-DESC=The KRISS Vector is a series of weapons based upon the parent submachine gun design developed by the American firearms company KRISS USA, formerly Transformational Defense Industries (TDI). The various weapons in the Vector family use an unconventional delayed blowback system combined with an in-line design to reduce perceived recoil and muzzle climb.
+
+@skin_vector_default_name=Concealment Gear
+@skin_vector_default_desc=Vector's usual outfit. The discreet color scheme allows her to easily hide traces of her activity, allowing Vector to perpetually gain an advantage by always staying ahead in combat.
+@skin_vector_skin1_name=Vivi Sometimes Hides Her Molotovs
+@skin_vector_skin1_desc="I know I still have much room for improvement, Commander. If you have any suggestions, please feel free to tell me."\nHer eyes are sincere as she meets your gaze, yet there's a hint of worry in them.
+
+@doctrine_gfl_404_dreamwonderland_name=Dream Wonderland
+@doctrine_gfl_404_dreamwonderland_descr=Mechty operates in Patch Mode: enhanced defensive systems reduce incoming damage and stability loss. Upon eliminating a target, she consumes an energy drink and enters Turbo Mode for 7 seconds: sacrificing all defenses for explosive offensive power.
+
+@buff_gfl_404_turbomode=Turbo Mode
+
+@doctrine_gfl_404_noticemebigsis_name=Notice Me Big Sis!
+@doctrine_gfl_404_noticemebigsis_descr=Belka's desire to become an elite like Klukai drives her to greater heights. When in range of her Big Sis, Belka gains improved accuracy, critical chance, aim speed, and movement.
+
+@buff_gfl_404_belkainspired=Inspired by Klukai
+
+@doctrine_gfl_404_shadowsfury_name=Shadow's Fury
+@doctrine_gfl_404_shadowsfury_descr=Lenna is Leva's devoted shadow, uncomfortable when separated from her big sister. When close to Leva, Lenna feels at ease and fights more effectively. When Leva engages in combat, the protective shadow erupts into fury to defend the one she cherishes.
+
+@buff_gfl_404_shadowpresence=Near Big Sister
+@buff_gfl_404_furyunleashed=Protective Fury
+
+@doctrine_gfl_404_depressivementality_name=Depressive Mentality
+@doctrine_gfl_404_depressivementality_descr=A regularly pessimistic Doll who expects the worst. However, as leader of Team B, Vector will absolutely push through and endure till the very last moment with her teammates in the face of adversity. When wounded, her calculations drive her to fight even harder.
+
+@doctrine_gfl_404_delayedresponse_name=Delayed Response
+@doctrine_gfl_404_delayedresponse_descr=Andoris is an expert intelligence officer with vast data storage, picking up details others miss. Her pre-mission intelligence reveals enemy positions at the start of operations. However, her system crashes and processing delays mean she cannot give her all in direct combat. Enhanced armor compensates for sluggish response times.
+
+@doctrine_gfl_404_highvaluetarget_name=High Value Target
+@doctrine_gfl_404_highvaluetarget_descr=Professional mercenaries identify and prioritize high-threat targets like suicide bombers. Enhanced targeting systems improve accuracy, headshot probability, and rapid engagement of multiple clustered enemies.
+
+@doctrine_gfl_404_phantomsignal_name=Phantom Signal
+@doctrine_gfl_404_phantomsignal_descr=Squad 404's signature electronic warfare tactics. Generates fake communication signals and radio interference that disrupts enemy coordination, accuracy, and combat effectiveness at close range.
+
+@buff_gfl_404_signaljammed=Signal Jammed
+
+@doctrine_gfl_404_damagecontrol_name=Damage Control
+@doctrine_gfl_404_damagecontrol_descr=Despite their dysfunctional dynamics, Squad 404 excels at handling chaotic situations. Always prepared for problems with enhanced resilience and mobility. When wounded, they fight even harder to clean up the mess.
+
+@doctrine_gfl_404_cqcdominance_name=Close Quarters Dominance
+@doctrine_gfl_404_cqcdominance_descr=Squad 404's aggressive breach tactics and close-range expertise. Exceptional movement speed combined with devastating accuracy and lethality in confined spaces.

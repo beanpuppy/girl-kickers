@@ -1,5 +1,18 @@
 <FirearmAttackTypes>
 
+<!-- For Suppression -->
+
+    <AttackType name="GFL_AreaSuppression_Auto">
+        <ModifiableParams
+            minAimTime="250"
+            maxAimTime="250"
+            minShots="6"
+            maxShots="8"
+            resetTime="400"
+            critChanceAdd="-25"
+        />
+    </AttackType>
+
 <!-- XCR SHARKRY, THE STANDARD OF ALL ASSAULT RIFLE ATTACK TYPES -->
 
     <AttackType name="GFL_CQC_XCR">
@@ -3913,20 +3926,432 @@
 
 
 
-<!-- For Suppression -->
+    <!-- UMP40 LAINIE -->
 
-    <AttackType name="GFL_AreaSuppression_Auto">
+    <AttackType name="GFL_CQC_UMP40">
+    <!-- Under 4m. -->
         <ModifiableParams
-            minAimTime="250"
-            maxAimTime="250"
-            minShots="6"
-            maxShots="8"
-            resetTime="400"
-            critChanceAdd="-25"
+            minAimTime="320"
+            maxAimTime="320"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
         />
     </AttackType>
 
+    <AttackType name="GFL_Near_UMP40">
+    <!-- Under 8m. -->
+        <ModifiableParams
+            minAimTime="320"
+            maxAimTime="320"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="10"
+        />
+    </AttackType>
 
+    <AttackType name="GFL_Close_UMP40">
+    <!-- Under 12m. -->
+        <ModifiableParams
+            minAimTime="330"
+            maxAimTime="380"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="10"
+        />
+    </AttackType>
 
+    <AttackType name="GFL_Medium_UMP40">
+    <!-- Under 16m. -->
+        <ModifiableParams
+            minAimTime="330"
+            maxAimTime="430"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="15"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_MedEdge_UMP40">
+    <!-- Under 20m. -->
+        <ModifiableParams
+            minAimTime="330"
+            maxAimTime="430"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="15"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Extended_UMP40">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="330"
+            maxAimTime="480"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <!-- K2 YOOHEE -->
+
+    <AttackType name="GFL_CQC_K2">
+    <!-- Under 4m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Near_K2">
+    <!-- Under 8m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Close_K2">
+    <!-- Under 12m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="400"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Medium_K2">
+    <!-- Under 16m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_MedEdge_K2">
+    <!-- Under 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="10"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Extended_K2">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="500"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="5"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <!-- DSR-50 LORELEI -->
+
+    <AttackType name="GFL_CQC_DSR50">
+    <!-- Under 4m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="1"
+            resetTime="0"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Near_DSR50">
+    <!-- Under 8m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="340"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="1"
+            resetTime="0"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Close_DSR50">
+    <!-- Under 12m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="400"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="1"
+            resetTime="0"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_CloseMounted_DSR50">
+    <!-- Under 12m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="400"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="1"
+            resetTime="0"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="60"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Medium_DSR50">
+    <!-- Under 16m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="1"
+            resetTime="0"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_MediumMounted_DSR50">
+    <!-- Under 16m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="1"
+            resetTime="0"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="60"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_MedEdge_DSR50">
+    <!-- Under 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="1"
+            resetTime="0"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_MedEdgeMounted_DSR50">
+    <!-- Under 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="1"
+            resetTime="0"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="60"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Extended_DSR50">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="500"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="1"
+            resetTime="0"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="20"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_ExtendedMounted_DSR50">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="500"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="1"
+            resetTime="0"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="60"
+        />
+    </AttackType>
+
+    <!-- MAKAROV PM COMMANDER (M/F) -->
+
+    <AttackType name="GFL_CQC_MAKAROVPM">
+        <!-- Under 4m. -->
+        <ModifiableParams
+            minAimTime="200"
+            maxAimTime="200"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="3"
+            resetTime="450"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Near_MAKAROVPM">
+        <!-- Under 8m. -->
+        <ModifiableParams
+            minAimTime="200"
+            maxAimTime="200"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="3"
+            resetTime="450"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="0"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Close_MAKAROVPM">
+        <!-- Under 12m. -->
+        <ModifiableParams
+            minAimTime="250"
+            maxAimTime="250"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="3"
+            resetTime="450"
+            accuracyAdd="10"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="5"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Medium_MAKAROVPM">
+    <!-- Under 16m. -->
+        <ModifiableParams
+            minAimTime="250"
+            maxAimTime="250"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="3"
+            resetTime="450"
+            accuracyAdd="10"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="25"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_MedEdge_MAKAROVPM">
+    <!-- Under 20m. -->
+        <ModifiableParams
+            minAimTime="250"
+            maxAimTime="250"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="3"
+            resetTime="450"
+            accuracyAdd="10"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="5"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Extended_MAKAROVPM">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="250"
+            maxAimTime="250"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="3"
+            resetTime="450"
+            accuracyAdd="10"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="5"
+        />
+    </AttackType>
 
 </FirearmAttackTypes>

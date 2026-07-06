@@ -13,6 +13,18 @@ const DOLL_ABILITIES = {
       desc: "Incendiary grenades that spread fire over a wide area, burning and stunning enemies caught in the blaze.",
     },
   ],
+  "GFL-DOLL-SKKF": [
+    {
+      name: "Commander's Aura",
+      desc: "Nearby allies fight more effectively under SKK's leadership.",
+    },
+  ],
+  "GFL-DOLL-SKKM": [
+    {
+      name: "Commander's Aura",
+      desc: "Nearby allies fight more effectively under SKK's leadership.",
+    },
+  ],
 };
 
 let allDolls = [];
@@ -205,6 +217,17 @@ async function init() {
     handleRoute();
     restoreState();
   });
+
+  // Delegated handler for squad "Add all" / "Remove all" buttons.
+  // Uses data-squad rather than inline onclick so squad names with special
+  // characters (e.g. "Girls' Frontline") don't break the call.
+  document.addEventListener("click", (e) => {
+    const btn = e.target.closest(".squad-add-all");
+    if (!btn || btn.disabled) return;
+    e.stopPropagation();
+    toggleSquadDolls(btn.dataset.squad);
+  });
+
   handleRoute();
 }
 
@@ -310,7 +333,7 @@ function renderContent() {
       const allInUnit = squadDollIds.every((id) => unitDolls.includes(id));
       const canAdd = !allInUnit && unitDolls.length < MAX_DOLLS;
       const showDisabled = !allInUnit && !canAdd;
-      const addAllBtn = `<button class="squad-add-all ${allInUnit ? "active" : ""} ${showDisabled ? "disabled" : ""}" onclick="event.stopPropagation(); toggleSquadDolls('${esc(squad)}')" ${showDisabled ? "disabled" : ""}>${allInUnit ? "Remove all" : "Add all"}</button>`;
+      const addAllBtn = `<button class="squad-add-all ${allInUnit ? "active" : ""} ${showDisabled ? "disabled" : ""}" data-squad="${esc(squad)}" ${showDisabled ? "disabled" : ""}>${allInUnit ? "Remove all" : "Add all"}</button>`;
 
       return `<div class="squad-section">
 <div class="squad-header">${iconHtml}${esc(squad)}${addAllBtn}</div>
@@ -1313,6 +1336,11 @@ function generateEntitiesXml(unitId, dolls, bitmaskId) {
         equipment.push(d.selectedSkin.id);
       }
 
+      const doctrineLines = (e.doctrines || [])
+        .map((name) => `            <Doctrine name="${xmlEsc(name)}" />`)
+        .join("\n");
+      const doctrineBlock = doctrineLines ? `\n\n${doctrineLines}` : "";
+
       const model = d.selectedSkin ? d.selectedSkin.model : e.model;
       const diffuseTex = d.selectedSkin
         ? d.selectedSkin.diffuseTex
@@ -1348,7 +1376,7 @@ deleteOnDeath="false"
 
 <Equipment>
 ${equipItems}
-</Equipment>
+</Equipment>${doctrineBlock}
         </Human>
     </Entity>`;
     })
@@ -1403,7 +1431,7 @@ function deployClassEntry(doll, x, y, width, slotNum, flagColour, align) {
 function generateDeployTabbed(unitId, flagColour, dolls) {
   const TABS_PER_ROW = 5;
   const tabs = [];
-  const DOLLS_PER_TAB = 6;
+  const DOLLS_PER_TAB = 8;
   for (let i = 0; i < dolls.length; i += DOLLS_PER_TAB)
     tabs.push(dolls.slice(i, i + DOLLS_PER_TAB));
 
@@ -1450,34 +1478,55 @@ function generateDeployTabbed(unitId, flagColour, dolls) {
       const dollRows = Math.ceil(tabDollCount / 2);
       const setOriginY = -608 - (dollRows - 1) * 160;
 
+      const iconNum = Math.min(t + 1, 5);
+      const iconTex = `data/textures/gui/deploy/gfl_class_icon_tab${iconNum}.dds`;
       xml += `
         <Checkbox name="custom_tab${t}_cbox" origin="${xPos} 0" align="r" stealFocus="true" defaultState="${isDefault}">
 <UncheckedState>
     <RenderObject2D texture="data/textures/gui/square.tga" sizeX="64" sizeY="64" color="080808cc" />
     <OnOpen>
         <Action type="Hide" target="custom_unit_tab${t}" />
+        <Action type="Hide" target="custom_tab${t}_icon_active" />
+        <Action type="Show" target="custom_tab${t}_icon" />
     </OnOpen>
     <OnClick>
         <RenderObject2D texture="data/textures/gui/square.tga" sizeX="60" sizeY="60" color="${xmlEsc(flagColour)}" />
 ${uncheckActions}
     </OnClick>
+    <OnHover>
+        <RenderObject2D texture="data/textures/gui/square.tga" sizeX="64" sizeY="64" color="${xmlEsc(flagColour)}" />
+        <Action type="Hide" target="custom_tab${t}_icon" />
+        <Action type="Show" target="custom_tab${t}_icon_hover" />
+    </OnHover>
+    <OnHoverEnd>
+        <Action type="Hide" target="custom_tab${t}_icon_hover" />
+        <Action type="Show" target="custom_tab${t}_icon" />
+    </OnHoverEnd>
 </UncheckedState>
 <CheckedState acceptInput="false">
-    <RenderObject2D texture="data/textures/gui/square.tga" sizeX="64" sizeY="64" color="080808cc" />
+    <RenderObject2D texture="data/textures/gui/square.tga" sizeX="64" sizeY="64" color="${xmlEsc(flagColour)}" />
     <OnOpen>
         <Action type="SetOrigin" target="#deploy_squad_buttons" params="-8 ${setOriginY}" />
         <Action type="Show" target="custom_unit_tab${t}" />
+        <Action type="Hide" target="custom_tab${t}_icon" />
+        <Action type="Show" target="custom_tab${t}_icon_active" />
     </OnOpen>
 </CheckedState>
-<StaticImage name="tab${t}_label" origin="0 0">
-    <RenderObject2D texture="data/textures/gui/square.tga" sizeX="4" sizeY="4" color="${xmlEsc(flagColour)}" />
+<StaticImage name="custom_tab${t}_icon" origin="0 0" hidden="true">
+    <RenderObject2D texture="${iconTex}" sizeX="24" sizeY="24" color="${xmlEsc(flagColour)}" />
+</StaticImage>
+<StaticImage name="custom_tab${t}_icon_hover" origin="0 0" hidden="true">
+    <RenderObject2D texture="${iconTex}" sizeX="24" sizeY="24" color="211e1d" />
+</StaticImage>
+<StaticImage name="custom_tab${t}_icon_active" origin="0 0" hidden="false">
+    <RenderObject2D texture="${iconTex}" sizeX="24" sizeY="24" color="211e1d" />
 </StaticImage>
         </Checkbox>\n`;
     }
     xml += `    </Item>\n`;
   }
 
-  // Tab content — each tab has up to 6 dolls in a 2x3 grid
+  // Tab content — each tab has up to 8 dolls in a 2x4 grid
   const positions = [
     { x: -101, y: 0 },
     { x: 100, y: 0 },
@@ -1485,6 +1534,8 @@ ${uncheckActions}
     { x: 100, y: -160 },
     { x: -101, y: -320 },
     { x: 100, y: -320 },
+    { x: -101, y: -480 },
+    { x: 100, y: -480 },
   ];
 
   const contentY = -(tabRows.length * 72);

@@ -1,0 +1,59 @@
+@GFL-UNIT-FROST-NAME=Frostfall Squad
+@GFL-UNIT-FROST-DESC=Operating under Griffin & Kryuger in the post-Contamination era, they represent the PMC's enduring presence despite its diminished status.
+@#GFL-UNIT-FROST-NAME-RND=Frostfall Squad
+
+@DOLL-QBZ191-NAME=QIONGJIU
+@DOLL-QBZ191-DESC=A Doll who steps up to shoulder heavy responsibilities. She dedicates her time and energy to Griffin, while perfectly maintaining her individuality, thanks to her precise and efficient work planning. She never deviates, never breaks the rules; rather than changing the plan, she prefers to change reality.
+@WEAP-QBZ191-NAME=QBZ-191
+@WEAP-QBZ191-DESC=The QBZ-191 is a modular assault rifle developed as China's next-generation standard infantry weapon. Chambered in 5.8×42mm, it features improved ergonomics, modularity, and reliability compared to its predecessors.
+
+@DOLL-AKALFA-NAME=TOLOLO
+@DOLL-AKALFA-DESC=A serene Doll who finds solace under the starry sky. Hidden beneath her reticence is a delicate and sensitive soul. When the world slumbers, she confides in the vast cosmos and delights in the stars that seem to shine just for her.
+@WEAP-AKALFA-NAME=AK-Alfa
+@WEAP-AKALFA-DESC=The AK-Alfa is a modernized variant of the legendary Kalashnikov platform, featuring enhanced accuracy, reduced recoil, and improved ergonomics while maintaining the AK's legendary reliability.
+
+@skin_akalfa_default_name=Grey Meteor
+@skin_akalfa_default_desc=Tololo usually wears a distincitve outfit, always carrying guns and cameras.
+@skin_akalfa_skin1_name=Horizon Cruise
+@skin_akalfa_skin1_desc="The course to the heavens is fixed, but as long as you look up, you'll always be able to find a new direction... Commander, will you search for the way with me?"\nThere's no need for words; her crystal-clear gaze is an offer you can't refuse.
+
+@DOLL-AA12-NAME=LIND
+@DOLL-AA12-DESC=Created as a clinical test subject Doll, Lind distinguished herself with her outstanding gunplay and overwhelming firepower. A member of the original Griffin & Kryuger, she remained in the PMC after its downsizing. After her open-mic late-night radio show stopped, her sweets allowance was cut down and her personal network was upended, Lind’s withdrawal symptoms worsened her social anxiety disorder, but as long as her comrades can be patient with her, she’ll be able to confidently face the future.
+@WEAP-AA12-NAME=AA-12
+@WEAP-AA12-DESC=The Atchisson Assault Shotgun is a fully automatic shotgun with extremely low recoil. Its high capacity drum magazine and devastating firepower make it ideal for close-quarters combat and breaching operations.
+
+@DOLL-MP7-NAME=CHEETA
+@DOLL-MP7-DESC=This Doll with a ceaseless fountain of inspiration is Griffin's Queen of Inventions. Undeterred by countless setbacks, her mind churns out a whirlwind of quirky, headache-inducing ideas. Yet, when the moment demands it, she always manages to come up with ingenious solutions.
+@WEAP-MP7-NAME=MP7
+@WEAP-MP7-DESC=The Heckler & Koch MP7 is a compact personal defense weapon firing 4.6×30mm armor-piercing ammunition. Its high rate of fire and excellent penetration make it effective against armored targets despite its compact size.
+@firearm_caliber_46x30_name=4.6×30mm
+@ammo_46x30_ap_name=HK 31gr AP
+@ammo_46x30_ap_desc=Purpose-built armour-piercing ammunition for the MP7 platform. The small, high-velocity projectile with a hardened steel penetrator defeats body armour that stops conventional pistol rounds, though the tiny calibre limits raw stopping power.
+
+@doctrine_gfl_frost_commonrail_name=Common Rail
+@doctrine_gfl_frost_commonrail_descr=Always have faith in your allies, but also have a contingency plan in place. When Qiongjiu eliminates a target, nearby allies within 8 meters gain accuracy and suppression recovery for 5 seconds.
+@buff_gfl_frost_commonrail=Supported by Qiongjiu
+
+@doctrine_gfl_frost_auroracurtain_name=Aurora Curtain
+@doctrine_gfl_frost_auroracurtain_descr=Look; that radiance is the annihilation of a star. When Tololo eliminates a target, she gains drastically improved target acquisition and switching speed for 4 seconds.
+@buff_gfl_frost_auroracascade=Aurora Cascade
+
+@doctrine_gfl_frost_sweetsstockpile_name=Sweets Stockpile
+@doctrine_gfl_frost_sweetsstockpile_descr=The soothing balm that eases anxiety is also a narcotic that snares the soul. Enemies near Lind suffer reduced suppression recovery and slower target acquisition.
+@buff_gfl_frost_honeytrap=Honeytrapped
+
+@doctrine_gfl_frost_spicycandy_name=Spicy Candy
+@doctrine_gfl_frost_spicycandy_descr=Want to feel your tongue catch fire? When Cheeta is wounded, her genius kicks into overdrive. Nearby allies benefit from her experimental inventions, gaining improved critical chance and movement speed.
+@buff_gfl_frost_spicycandy=Genius Invention
+
+@doctrine_gfl_frost_combatreadiness_name=Combat Readiness
+@doctrine_gfl_frost_combatreadiness_descr=Frostfall maintains peak combat readiness through disciplined training. Improved suppression recovery and flinch resistance.
+
+@doctrine_gfl_frost_griffinefficiency_name=Griffin Efficiency
+@doctrine_gfl_frost_griffinefficiency_descr=Operating with limited resources has taught efficiency. Faster reloads and weapon transitions across all equipment.
+
+@doctrine_gfl_frost_advancedintelnetwork_name=Advanced Intel Network
+@doctrine_gfl_frost_advancedintelnetwork_descr=G&K's intelligence network provides pre-mission reconnaissance. Reveals objectives, hostages, or bombs at mission start.
+
+@doctrine_gfl_frost_tacticaladaptation_name=Tactical Adaptation
+@doctrine_gfl_frost_tacticaladaptation_descr=Experience across varied combat scenarios enables tactical flexibility. Enhanced accuracy and target acquisition at all ranges.

@@ -1,8 +1,3 @@
-<!-- DEPRECATED: DK2 has a hard limit of 32 classes per unit. GIRL currently
-     has 30 dolls and cannot grow further. Post pol-03 plan: repurpose GIRL as
-     a home for squadless dolls (robella, lainie, etc.) and build a web utility
-     on github pages where players pick up to 32 dolls to generate a custom
-     unit add-on mod. -->
 <Units>
     <Unit
         name="GFL-UNIT-GIRL"
@@ -18,9 +13,9 @@
     >
         <Classes>
             <Class
-                name="GFL-DOLL-AN94"
-                nameUI="@DOLL-AN94-NAME"
-                description="@DOLL-AN94-DESC"
+                name="GFL-DOLL-SKKF"
+                nameUI="@DOLL-SKKF-NAME"
+                description="@DOLL-SKKF-DESC"
                 numSlots="1"
                 supply="100"
                 iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
@@ -28,9 +23,9 @@
                 maxUpgradeable="2"
             />
             <Class
-                name="GFL-DOLL-AK15"
-                nameUI="@DOLL-AK15-NAME"
-                description="@DOLL-AK15-DESC"
+                name="GFL-DOLL-SKKM"
+                nameUI="@DOLL-SKKM-NAME"
+                description="@DOLL-SKKM-DESC"
                 numSlots="1"
                 supply="100"
                 iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
@@ -38,9 +33,9 @@
                 maxUpgradeable="2"
             />
             <Class
-                name="GFL-DOLL-HK416"
-                nameUI="@DOLL-HK416-NAME"
-                description="@DOLL-HK416-DESC"
+                name="GFL-DOLL-UMP40"
+                nameUI="@DOLL-UMP40-NAME"
+                description="@DOLL-UMP40-DESC"
                 numSlots="1"
                 supply="100"
                 iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
@@ -48,9 +43,9 @@
                 maxUpgradeable="2"
             />
             <Class
-                name="GFL-DOLL-G11"
-                nameUI="@DOLL-G11-NAME"
-                description="@DOLL-G11-DESC"
+                name="GFL-DOLL-K2"
+                nameUI="@DOLL-K2-NAME"
+                description="@DOLL-K2-DESC"
                 numSlots="1"
                 supply="100"
                 iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
@@ -58,259 +53,9 @@
                 maxUpgradeable="2"
             />
             <Class
-                name="GFL-DOLL-G36K"
-                nameUI="@DOLL-G36K-NAME"
-                description="@DOLL-G36K-DESC"
-                numSlots="1"
-                supply="100"
-                iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
-                upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2"
-                maxUpgradeable="2"
-            />
-            <Class
-                name="GFL-DOLL-G28"
-                nameUI="@DOLL-G28-NAME"
-                description="@DOLL-G28-DESC"
-                numSlots="1"
-                supply="100"
-                iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
-                upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2"
-                maxUpgradeable="2"
-            />
-            <Class
-                name="GFL-DOLL-UMP45"
-                nameUI="@DOLL-UMP45-NAME"
-                description="@DOLL-UMP45-DESC"
-                numSlots="1"
-                supply="100"
-                iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
-                upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2"
-                maxUpgradeable="2"
-            />
-            <Class
-                name="GFL-DOLL-UMP9"
-                nameUI="@DOLL-UMP9-NAME"
-                description="@DOLL-UMP9-DESC"
-                numSlots="1"
-                supply="100"
-                iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
-                upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2"
-                maxUpgradeable="2"
-            />
-            <Class
-                name="GFL-DOLL-VECTOR"
-                nameUI="@DOLL-VECTOR-NAME"
-                description="@DOLL-VECTOR-DESC"
-                numSlots="1"
-                supply="100"
-                iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
-                upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2"
-                maxUpgradeable="2"
-            />
-            <Class
-                name="GFL-DOLL-M1903"
-                nameUI="@DOLL-M1903-NAME"
-                description="@DOLL-M1903-DESC"
-                numSlots="1"
-                supply="100"
-                iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
-                upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2"
-                maxUpgradeable="2"
-            />
-            <Class
-                name="GFL-DOLL-WA2000"
-                nameUI="@DOLL-WA2000-NAME"
-                description="@DOLL-WA2000-DESC"
-                numSlots="1"
-                supply="100"
-                iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
-                upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2"
-                maxUpgradeable="2"
-            />
-            <Class
-                name="GFL-DOLL-G36"
-                nameUI="@DOLL-G36-NAME"
-                description="@DOLL-G36-DESC"
-                numSlots="1"
-                supply="100"
-                iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
-                upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2"
-                maxUpgradeable="2"
-            />
-            <Class
-                name="GFL-DOLL-XCR"
-                nameUI="@DOLL-XCR-NAME"
-                description="@DOLL-XCR-DESC"
-                numSlots="1"
-                supply="100"
-                iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
-                upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2"
-                maxUpgradeable="2"
-            />
-            <Class
-                name="GFL-DOLL-OTS14"
-                nameUI="@DOLL-OTS14-NAME"
-                description="@DOLL-OTS14-DESC"
-                numSlots="1"
-                supply="100"
-                iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
-                upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2"
-                maxUpgradeable="2"
-            />
-            <Class
-                name="GFL-DOLL-OM50"
-                nameUI="@DOLL-OM50-NAME"
-                description="@DOLL-OM50-DESC"
-                numSlots="1"
-                supply="100"
-                iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
-                upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2"
-                maxUpgradeable="2"
-            />
-            <Class
-                name="GFL-DOLL-HARE"
-                nameUI="@DOLL-HARE-NAME"
-                description="@DOLL-HARE-DESC"
-                numSlots="1"
-                supply="100"
-                iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
-                upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2"
-                maxUpgradeable="2"
-            />
-            <Class
-                name="GFL-DOLL-CURVA"
-                nameUI="@DOLL-CURVA-NAME"
-                description="@DOLL-CURVA-DESC"
-                numSlots="1"
-                supply="100"
-                iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
-                upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2"
-                maxUpgradeable="2"
-            />
-            <Class
-                name="GFL-DOLL-VEPR12"
-                nameUI="@DOLL-VEPR12-NAME"
-                description="@DOLL-VEPR12-DESC"
-                numSlots="1"
-                supply="100"
-                iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
-                upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2"
-                maxUpgradeable="2"
-            />
-            <Class
-                name="GFL-DOLL-PKPSP"
-                nameUI="@DOLL-PKPSP-NAME"
-                description="@DOLL-PKPSP-DESC"
-                numSlots="1"
-                supply="100"
-                iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
-                upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2"
-                maxUpgradeable="2"
-            />
-            <Class
-                name="GFL-DOLL-SPAS12"
-                nameUI="@DOLL-SPAS12-NAME"
-                description="@DOLL-SPAS12-DESC"
-                numSlots="1"
-                supply="100"
-                iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
-                upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2"
-                maxUpgradeable="2"
-            />
-            <Class
-                name="GFL-DOLL-TYPE97S"
-                nameUI="@DOLL-TYPE97S-NAME"
-                description="@DOLL-TYPE97S-DESC"
-                numSlots="1"
-                supply="100"
-                iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
-                upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2"
-                maxUpgradeable="2"
-            />
-            <Class
-                name="GFL-DOLL-MP5"
-                nameUI="@DOLL-MP5-NAME"
-                description="@DOLL-MP5-DESC"
-                numSlots="1"
-                supply="100"
-                iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
-                upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2"
-                maxUpgradeable="2"
-            />
-            <Class
-                name="GFL-DOLL-PA15"
-                nameUI="@DOLL-PA15-NAME"
-                description="@DOLL-PA15-DESC"
-                numSlots="1"
-                supply="100"
-                iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
-                upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2"
-                maxUpgradeable="2"
-            />
-            <Class
-                name="GFL-DOLL-VSK94"
-                nameUI="@DOLL-VSK94-NAME"
-                description="@DOLL-VSK94-DESC"
-                numSlots="1"
-                supply="100"
-                iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
-                upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2"
-                maxUpgradeable="2"
-            />
-            <Class
-                name="GFL-DOLL-DP12"
-                nameUI="@DOLL-DP12-NAME"
-                description="@DOLL-DP12-DESC"
-                numSlots="1"
-                supply="100"
-                iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
-                upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2"
-                maxUpgradeable="2"
-            />
-            <Class
-                name="GFL-DOLL-LEWIS"
-                nameUI="@DOLL-LEWIS-NAME"
-                description="@DOLL-LEWIS-DESC"
-                numSlots="1"
-                supply="100"
-                iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
-                upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2"
-                maxUpgradeable="2"
-            />
-            <Class
-                name="GFL-DOLL-QBZ191"
-                nameUI="@DOLL-QBZ191-NAME"
-                description="@DOLL-QBZ191-DESC"
-                numSlots="1"
-                supply="100"
-                iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
-                upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2"
-                maxUpgradeable="2"
-            />
-            <Class
-                name="GFL-DOLL-AKALFA"
-                nameUI="@DOLL-AKALFA-NAME"
-                description="@DOLL-AKALFA-DESC"
-                numSlots="1"
-                supply="100"
-                iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
-                upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2"
-                maxUpgradeable="2"
-            />
-            <Class
-                name="GFL-DOLL-AA12"
-                nameUI="@DOLL-AA12-NAME"
-                description="@DOLL-AA12-DESC"
-                numSlots="1"
-                supply="100"
-                iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
-                upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2"
-                maxUpgradeable="2"
-            />
-            <Class
-                name="GFL-DOLL-MP7"
-                nameUI="@DOLL-MP7-NAME"
-                description="@DOLL-MP7-DESC"
+                name="GFL-DOLL-DSR50"
+                nameUI="@DOLL-DSR50-NAME"
+                description="@DOLL-DSR50-DESC"
                 numSlots="1"
                 supply="100"
                 iconTex="data/textures/gui/deploy/class_icon_undercover.dds"

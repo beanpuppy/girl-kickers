@@ -2,8 +2,8 @@
 """
 Script to generate deploy screen GUI from unit definitions.
 
-Reads unit definitions from gfl_unit.xml and generates base unit deploy
-screens (gfl_deploy.xml).
+Reads unit definitions from mod/units/gfl_unit_*.xml (one file per squad) and
+generates base unit deploy screens (gfl_deploy.xml).
 
 Layout rules:
 - Units with ≤4 dolls: Single column (380px wide)
@@ -178,13 +178,19 @@ def main():
     script_dir = Path(__file__).parent
     project_dir = script_dir.parent
 
-    unit_file = project_dir / "mod" / "units" / "gfl_unit.xml"
+    # Canonical squad order — must match SQUAD_ORDER in www/unit-builder/build_data.py
+    # so the deploy screen and URL hash bit indices agree.
+    squad_order = ["girl", "defy", "404", "cafe", "groza", "elmoce", "frost", "monsoon", "pol03"]
+    units_dir = project_dir / "mod" / "units"
+    unit_files = [units_dir / f"gfl_unit_{slug}.xml" for slug in squad_order]
     deploy_output = project_dir / "mod" / "gui" / "gfl_deploy.xml"
 
     print("=== Generating Deploy Screens ===\n")
-    print(f"Reading units from: {unit_file}")
 
-    units = extract_unit_data(unit_file)
+    units = []
+    for unit_file in unit_files:
+        print(f"Reading units from: {unit_file}")
+        units.extend(extract_unit_data(unit_file))
 
     print(f"\nFound {len(units)} units:")
     for unit in units:

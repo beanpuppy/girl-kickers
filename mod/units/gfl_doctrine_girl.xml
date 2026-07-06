@@ -1,0 +1,37 @@
+<DoctrineNodes>
+    <!-- Command Aura: always-active base-kit buff on SKK entities.
+         Wired in via <Doctrine name="GFL_CommandAura"/> on the SKK humans,
+         not exposed in any doctrine tree (.kdl).
+
+         Uses the vanilla aura pattern (see Enemy_ForeignAdvisorBuff in stock
+         doctrine_nodes.xml): one buff to friends_in_radius for the actual
+         effect, plus an empty self-buff so SKK's tooltip shows what they emit.
+         Long durationMs keeps the buff visually permanent; allies who leave
+         the aura retain it for up to 60s before it falls off. -->
+    <Node name="GFL_CommandAura">
+        <GiveBuff
+            nodeName="GFL_Commanded"
+            target="friends_in_radius"
+            radius="10.0"
+            durationMs="600000"
+        />
+        <GiveBuff
+            nodeName="GFL_Commanding"
+            target="self"
+            durationMs="600000"
+        />
+    </Node>
+
+    <Node name="GFL_Commanded" description="@buff_gfl_commanded">
+        <EquipmentModifier
+            suppressionRecoveryAdd="20"
+        />
+        <AttackTypeModifier
+            minRange="0"
+            maxRange="50"
+            accuracyAdd="10"
+        />
+    </Node>
+
+    <Node name="GFL_Commanding" description="@buff_gfl_commanding" />
+</DoctrineNodes>

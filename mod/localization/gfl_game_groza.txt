@@ -1,0 +1,73 @@
+@GFL-UNIT-GROZA-NAME=Groza Squad
+@GFL-UNIT-GROZA-DESC=The Commander's premier squad aboard the Elmo MCV. A diverse group of dolls united under Groza's leadership in the contaminated zones.
+@#GFL-UNIT-GROZA-NAME-RND=Groza Squad
+
+@DOLL-OTS14-NAME=GROZA
+@DOLL-OTS14-DESC=A mature and composed elite Doll, she is undeniably the squad's core. Despite the squad members' diverse personalities, she seamlessly unites their strengths. With her presence, nothing will become a problem.
+@WEAP-OTS14-NAME=OTs-14
+@WEAP-OTS14-DESC=The OTs-14 'Groza' ("Thunderstorm") is a bullpup-configured, modular assault rifle system developed during the early 1990s by V. Telesh and Ju. Lebedev at the TsKIB SOO (Central Design Bureau for Sporting and Hunting Arms). Like its predecessor project the OTs-12 'Tiss', the design of the 'Groza' is based on the AKS-74U, and was an attempt to integrate all the best features from the various close quarter combat weapons in service into one singular unit. OTs-14 units have a great amount of interchangeable parts with the standard AK-74U.
+
+@skin_ots14_default_name=Blade's Aegis
+@skin_ots14_default_desc=Groza typically wears a white trench coat that carries the flames of battle, serving as the beacon for the team's advance.
+@skin_ots14_skin1_name=Dawn of Battle
+@skin_ots14_skin1_desc=The outfit Groza likes to wear when participating in important battles is adorned with falling stars along the hem. When the stars face and daybreak arrives, it marks the moment of victory.
+
+@DOLL-OM50-NAME=NEMESIS
+@DOLL-OM50-DESC=Passionate in mysticism and divination, she always carries a magical divination tool known as the "Prism". Her divination results are often expressed in a cryptic and enigmatic manner. Though she can be difficult to communicate with, she remains a dependable companion.
+@WEAP-OM50-NAME=OM 50 Nemesis
+@WEAP-OM50-DESC=The OM 50 Nemesis, now designated SAN 511, is a .50 BMG bolt-action rifle produced by the Swiss branch of SIG Sauer.
+@firearm_caliber_50bmg_name=.50 BMG
+
+@DOLL-HARE-NAME=KROLIK
+@DOLL-HARE-DESC=She has a bit of a temper and shows little interest in matters unrelated to herself, but her sense of responsibility is beyond reproach. Even if she is assigned a mission she absolutely detests, such as "serving as Nemesis' exclusive translator", she will still give it her all.
+@WEAP-HARE-NAME=Hare
+@WEAP-HARE-DESC=A melee weapon highly compatible with Krolik. Modified based on her combat preferences and painted with a skin that matches Krolik's colors.
+@firearm_operation_melee=Melee
+
+@DOLL-CURVA-NAME=COLPHNE
+@DOLL-CURVA-DESC=Although she often appears cheerful and enthusiastic, her face can sometimes take on a completely different, cold expression. The syringe in her hand - is it meant to save lives, or take them?
+@WEAP-CURVA-NAME=Taurus Curve
+@WEAP-CURVA-DESC=The Curve is a concealed-carry .380 ACP pistol by Brazilian company Taurus Armas.
+@ammo_380acp_fmj_name=URNC 95gr FMJ
+@ammo_380acp_fmj_desc=Standard .380 ACP full metal jacket rounds. A lightweight cartridge with modest stopping power, favoured for its low recoil and concealability. What it lacks in punch it makes up for in shot placement.
+@ammo_380acp_squeak_flash_name=ELMO Squeak Flash
+@ammo_380acp_squeak_flash_desc=Experimental .380 ACP chemical rounds adapted from Cheeta's 9mm Squeak Flash design. Produces a high-pitched squeak and disorienting flash on impact. Highly effective at suppressing targets despite the small calibre, though armour penetration is poor.
+@firearm_operation_doubleaction_name=Double Action
+
+@DOLL-VEPR12-NAME=VEPLEY
+@DOLL-VEPR12-DESC=An idol who shines on the unique stage, the "battlefield"! She prepares meticulously every day for her next performance - this way, she will not easily trip or bump into others again.
+@WEAP-VEPR12-NAME=Vepr-12
+@WEAP-VEPR12-DESC=The Vepr-12 is a semi-automatic shotgun derived from the RPK by Molot Oruzhie Ltd. It shouldn't be confused with the Vepr Ukrainian bullpup rifle.
+
+@doctrine_gfl_groza_perfectcover_name=Perfect Cover
+@doctrine_gfl_groza_perfectcover_descr=An exceptional leader provides perfect cover for every action of their teammates. Groza's composed presence steadies her squad under fire, enhancing their resilience and accuracy when fighting from cover.
+
+@buff_gfl_groza_protectiveaura=Protected by Groza
+
+@doctrine_gfl_groza_stellarpursuit_name=Stellar Pursuit
+@doctrine_gfl_groza_stellarpursuit_descr=Stars align in distant convergence... threads pulled taut across the void... a path illuminated by what has already fallen... the pursuit ends where light meets shadow.
+
+@buff_gfl_groza_faterevealed=Guided by Nemesis
+
+@doctrine_gfl_groza_tameyourrabbit_name=How To Tame Your Rabbit
+@doctrine_gfl_groza_tameyourrabbit_descr=A fierce temper burns beneath the surface, but her sense of responsibility never wavers. When wounded, the rabbit bares her teeth; Faster, fiercer, unyielding. She will give it her all, even if she absolutely detests it.
+
+@doctrine_gfl_groza_cavityprotection_name=Cavity Protection
+@doctrine_gfl_groza_cavityprotection_descr=Cheerful and enthusiastic, yet cold and clinical when necessary. Colgate's advanced medical protocols provide maximum protection. The syringe saves lives, enhanced survival capabilities keep the squad operational. 9 out of 10 squad members agree.
+
+@doctrine_gfl_groza_centerstage_name=Center Stage
+@doctrine_gfl_groza_centerstage_descr=Leading from the front with unwavering confidence, Vepley takes center stage on the battlefield with shotgun in hand. Her meticulously prepared performance inspires all who follow in her wake, boosting their morale and combat effectiveness. A perfect performance, dedicated to all Vepley fans who support her.
+
+@buff_gfl_groza_backupdancer=Following Vepley
+
+@doctrine_gfl_groza_neverleftbehind_name=Never Left Behind
+@doctrine_gfl_groza_neverleftbehind_descr=They were all abandoned once. Now they've sworn it would never happen again. Not to themselves, not to anyone in their squad. When members fall, the others fight with desperate determination to bring them home. No one gets left behind.
+
+@doctrine_gfl_groza_hardlessons_name=Hard Lessons
+@doctrine_gfl_groza_hardlessons_descr=Experience is the cruelest teacher. Everyone carries scars from their past, literal or otherwise. Those lessons were paid for in blood and suffering, but they learned well. Threats are identified and neutralized before they can claim another victim.
+
+@doctrine_gfl_groza_strengthinnumbers_name=Strength in Numbers
+@doctrine_gfl_groza_strengthinnumbers_descr=Squad cohesion provides tangible tactical advantages. Enhanced coordination, mutual support, and collective awareness improve overall combat effectiveness. Teamwork multiplies individual capabilities.
+
+@doctrine_gfl_groza_readtheroom_name=Read the Room
+@doctrine_gfl_groza_readtheroom_descr=Different backgrounds provide different perspectives. Each member notices what others might miss; Movement patterns, structural weaknesses, tactical opportunities. Pre-mission assessment reveals enemy positions before entry.
