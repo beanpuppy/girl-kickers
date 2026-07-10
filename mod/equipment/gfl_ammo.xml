@@ -747,6 +747,40 @@
     </Ammo>
 
     <Ammo
+        name="473CLFMJ_GFL_G11-SUP"
+        tooltip="@ammo_473_fmj_404_name"
+        description="@ammo_473_fmj_404_desc"
+        img="data/models/weapons/attachments/m855_ammo_ui.dds"
+    >
+        <Params
+            roundsPerSecond="7.7"
+            audibleSoundRadius="40"
+            physicsImpactForce="0.8"
+            suppressionScale="0.80"
+            silenced="1"
+        >
+            <Damage
+                start="24"
+                end="20"
+                startDist="0"
+                endDist="100"
+            />
+            <CriticalChancePercent
+                start="0"
+                end="0"
+                startDist="0"
+                endDist="100"
+            />
+            <ArmorPenetration
+                start="50"
+                end="50"
+                startDist="0"
+                endDist="100"
+            />
+        </Params>
+    </Ammo>
+
+    <Ammo
         name="473ISSFRANG_GFL_G11" unlockCost="6"
         tooltip="@ammo_473_frang_404_name"
         description="@ammo_473_frang_404_desc"
@@ -792,6 +826,40 @@
             roundsPerSecond="12.5"
             audibleSoundRadius="100"
             physicsImpactForce="2.0"
+        >
+            <Damage
+                start="28"
+                end="24"
+                startDist="0"
+                endDist="100"
+            />
+            <CriticalChancePercent
+                start="0"
+                end="0"
+                startDist="0"
+                endDist="100"
+            />
+            <ArmorPenetration
+                start="50"
+                end="50"
+                startDist="0"
+                endDist="100"
+            />
+        </Params>
+    </Ammo>
+
+    <Ammo
+        name="556FMJEPR_GFL_G36K-SUP"
+        tooltip="@ammo_556_fmj_epr_name"
+        description="@ammo_556_fmj_epr_desc"
+        img="data/models/weapons/attachments/m855a1_ammo_ui.dds"
+    >
+
+        <Params
+            roundsPerSecond="12.5"
+            audibleSoundRadius="40"
+            physicsImpactForce="2.0"
+            silenced="1"
         >
             <Damage
                 start="28"
@@ -1103,6 +1171,40 @@
             audibleSoundRadius="70"
             physicsImpactForce="1.7"
             suppressionScale="0.95"
+        >
+            <Damage
+                start="26"
+                end="22"
+                startDist="0"
+                endDist="50"
+            />
+            <CriticalChancePercent
+                start="0"
+                end="0"
+                startDist="0"
+                endDist="100"
+            />
+            <ArmorPenetration
+                start="40"
+                end="20"
+                startDist="0"
+                endDist="50"
+            />
+        </Params>
+    </Ammo>
+
+    <Ammo
+        name="45ACPFMJ_GFL_VECTOR-SUP"
+        tooltip="@ammo_45_fmj_urnc_name"
+        description="@ammo_45_fmj_urnc_desc"
+        img="data/models/weapons/attachments/m855_ammo_ui.dds"
+    >
+        <Params
+            roundsPerSecond="20"
+            audibleSoundRadius="30"
+            physicsImpactForce="1.7"
+            suppressionScale="0.95"
+            silenced="1"
         >
             <Damage
                 start="26"
@@ -2458,6 +2560,40 @@
             roundsPerSecond="10.8"
             audibleSoundRadius="100"
             physicsImpactForce="2.0"
+        >
+            <Damage
+                start="34"
+                end="30"
+                startDist="0"
+                endDist="100"
+            />
+            <CriticalChancePercent
+                start="0"
+                end="0"
+                startDist="0"
+                endDist="100"
+            />
+            <ArmorPenetration
+                start="60"
+                end="50"
+                startDist="0"
+                endDist="100"
+            />
+        </Params>
+    </Ammo>
+
+    <Ammo
+            name="58x42FMJ_GFL_QBZ95-SUP"
+            tooltip="@ammo_58x42_fmj_name"
+            description="@ammo_58x42_fmj_desc"
+            img="data/models/weapons/attachments/m855_ammo_ui.dds"
+    >
+
+        <Params
+            roundsPerSecond="10.8"
+            audibleSoundRadius="40"
+            physicsImpactForce="2.0"
+            silenced="1"
         >
             <Damage
                 start="34"
