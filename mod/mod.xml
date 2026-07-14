@@ -15,8 +15,8 @@ Every weapon has been individually tuned and each weapon class plays differently
 Some dolls have alternate costumes available. This requires the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3286103408]In-Game Camouflage Selector[/url] mod loaded before this mod. Without the camo selector mod, dolls will use their default outfit.
 
 [h3]Units[/h3]
-[b]GFL (uncategorised):[/b] SKK (F/M), Loreley, Lainie, Yoohee
-[b]Task Force DEFY:[/b] Alva, Voymastina
+[b]GFL (uncategorised):[/b] SKK (F/M), Loreley, Lainie, Yoohee
+[b]Task Force DEFY:[/b] Alva, Voymastina, Koleda
 [b]H.I.D.E 404:[/b] Klukai, Mechty, Andoris, Belka, Leva, Lenna, Vector
 [b]Zucchero Café:[/b] Springfield, Makiatto, Centaureissi, Sharkry
 [b]Groza Squad:[/b] Groza, Nemesis, Krolik, Colphne, Vepley
@@ -26,6 +26,10 @@ Some dolls have alternate costumes available. This requires the [url=https://ste
 [b]POL-03 Security Divisions:[/b] Mosin-Nagant, Nagant, Ksenia, Papasha
 
 [i]Note: Only dolls currently available in GFL2 are/will be included.[/i]
+
+Due to restrictions on how many troopers can be added to a unit, a combined unit with all dolls is not possible. To facilitate cross-squad doll units, we&apos;ve created a web utility to build your own unit as an add-on mod you can install: 
+
+[url=https://antistrategie.github.io/girl-kickers/unit-builder/]Visit the unit builder here.[/url]
 
 To see our roadmap, visit the [url=https://trello.com/b/y77gdE1R/girl-kickers]Trello board.[/url] Contribute on [url=https://github.com/antistrategie/girl-kickers]GitHub[/url] or join the [url=https://discord.gg/XcfYGmxvde]Discord[/url] for discussion and feedback.
 
@@ -54,16 +58,4 @@ Special thanks to:
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3586738239]Chinese localisation[/url]
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3595646925]Korean localisation[/url]
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3605426442]Japanese localisation[/url]
-[/list]" changeNotes="This patch is for reworking the GIRL unit to no longer be an all squad combined unit, but to include all Dolls who aren&apos;t in a squad with more than 1 member.
-
-The GIRL unit now includes:
-- *SKK (F and M)
-- Loreley
-- Lainie
-- Yoohee
-
-*SKK has a 10 meter radius aura that buffs teammates giving accuracy and suppression recovery. 
-
-The intended way to get cross unit Dolls is through the unit builder web utility: https://antistrategie.github.io/girl-kickers/unit-builder/
-I know this is not ideal, but this is needed if we want to keep adding Dolls under these unit trooper number restrictions placed upon us by the game.
-" languageMod="" tags="Playable Units,Equipment,UI" ugcId="3580762170"/>
+[/list]" changeNotes="- Added Koleda (AK-12) to Task Force DEFY" languageMod="" tags="Playable Units,Equipment,UI" ugcId="3580762170"/>
