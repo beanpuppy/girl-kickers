@@ -13,6 +13,13 @@
         gender="0"
         customName="VOYMASTINA"
     />
+    <Portrait
+        tex="data/textures/portraits/gfl_ak12.dds"
+        unit="GFL-UNIT-DEFY"
+        class="GFL-DOLL-AK12"
+        gender="0"
+        customName="KOLEDA"
+    />
 
     <Portrait
         tex="data/textures/portraits/gfl_hk416.dds"

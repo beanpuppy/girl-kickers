@@ -1,5 +1,6 @@
 .venv
 .ruff_cache
+.env
 
 __pycache__/
 tools/mmd_converter/output/*.png

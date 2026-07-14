@@ -32,6 +32,16 @@
                 upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2"
                 maxUpgradeable="2"
             />
+            <Class
+                name="GFL-DOLL-AK12"
+                nameUI="@DOLL-AK12-NAME"
+                description="@DOLL-AK12-DESC"
+                numSlots="1"
+                supply="100"
+                iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
+                upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2"
+                maxUpgradeable="2"
+            />
         </Classes>
 
         <TrooperRanks>

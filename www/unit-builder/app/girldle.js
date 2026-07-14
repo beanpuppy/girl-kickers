@@ -419,6 +419,13 @@ const GIRLDLE_DOLLS = [
     role: "Sentinel",
     squad: "Elmo Combined Echelon",
   },
+  {
+    name: "Koleda",
+    weapon: "AR",
+    element: "Hydro",
+    role: "Vanguard",
+    squad: "Task Force DEFY",
+  },
 ];
 
 const GIRLDLE_ATTRS = ["weapon", "element", "role", "squad"];

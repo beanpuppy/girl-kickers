@@ -1105,6 +1105,206 @@
         </Sounds>
     </Firearm>
 
+<!-- AK-12 KOLEDA -->
+
+    <Bind eqp="GFL-WEAP-AK12">
+        <to name="545x39FMJAP_GFL_AK12" />
+        <to name="545x39SUPCAV_GFL_AK12" />
+
+        <to name="scope_GFL_IronSights" />
+        <to name="scope_GFL_RedDot" />
+        <to name="scope_GFL_Holosight" />
+        <to name="scope_GFL_M68CCO" />
+        <to name="scope_GFL_M150RCO" />
+        <to name="scope_GFL_HoloMag3x" />
+        <to name="scope_GFL_SpecterDR" />
+        <to name="scope_GFL_LPVO_6X" />
+        <to name="scope_GFL_LPVO_8X" />
+        <to name="scope_GFL_LROMK4_3_10X" />
+        <to name="scope_GFL_LROMK6_3_18X" />
+        <to name="scope_GFL_LROPM_5_25X" />
+
+    </Bind>
+    <Firearm
+        name="GFL-WEAP-AK12"
+        inventoryBinding="PrimaryWeapon"
+        category="rifle"
+        unlockCost="0"
+        tooltip="@WEAP-AK12-NAME"
+        description="@WEAP-AK12-DESC"
+        img="data/models/signatures/ak12_ui.dds"
+        animationSet="rifle"
+    >
+        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="-4" />
+
+        <RenderObject3D
+            model="data/models/signatures/ak12.khm"
+            attachSlot="prop_front_rifle"
+            skipGOSSAO="true"
+            diffuseTex="data/models/signatures/ak12.dds"
+        />
+
+        <ModifiableParams
+            numPellets="1"
+            roundsPerMagazine="30"
+            closedBolt="1"
+            cyclicReload="0"
+            reloadTime="1700"
+            reloadEmptyTime="1800"
+            changeInTime="0"
+            changeOutTime="0"
+            readyTime="340"
+            guardTime="160"
+            accuracyStart="85"
+            accuracyEnd="80"
+            accuracyStartDist="4"
+            accuracyEndDist="50"
+            suppressArea="1"
+        />
+
+        <Params
+            caliberInfoText="@firearm_caliber_545x39_name"
+            operationInfoText="@firearm_operation_semifull_name"
+            ejectingShellEntity="BulletCasingLarge"
+            magazineEntity="type56_mag"
+            suppressedSwitch="GFL-WEAP-AK12-SUP"
+            ai_rangeMin="1.0"
+            ai_rangeOptimal="15.0"
+            ai_rangeMax="45.0"
+        />
+
+        <AttackTypes>
+
+            <AttackType name="GFL_CQC_AK12" rangeMeters="4" />
+            <AttackType name="GFL_Near_AK12" rangeMeters="8" />
+            <AttackType name="GFL_Close_AK12" rangeMeters="12" />
+            <AttackType name="GFL_Medium_AK12" rangeMeters="16" />
+            <AttackType name="GFL_MedEdge_AK12" rangeMeters="20" />
+            <AttackType name="GFL_Extended_AK12" rangeMeters="9999" />
+
+        </AttackTypes>
+
+        <AttackTypesSuppressiveFire>
+            <AttackType name="GFL_AreaSuppression_Auto" rangeMeters="9999" />
+        </AttackTypesSuppressiveFire>
+
+        <MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_01" />
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_02" />
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_03" />
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
+        </MuzzleFlash>
+
+        <Sounds>
+            <Equip name="rifle_eqp" />
+            <Unequip name="rifle_neqp" />
+            <Reload name="rifle_reld" />
+            <ReloadEmpty name="rifle_reldempt" />
+            <Fire name="akm_fire" />
+            <ShellDrop name="rifle_shell_drop" />
+            <Empty name="gen_empty" />
+        </Sounds>
+    </Firearm>
+
+<!-- AK-12 KOLEDA (SUPPRESSED) -->
+
+    <Bind eqp="GFL-WEAP-AK12-SUP">
+        <to name="545x39FMJAP_GFL_AK12-SUP" />
+
+        <to name="scope_GFL_IronSights" />
+        <to name="scope_GFL_RedDot" />
+        <to name="scope_GFL_Holosight" />
+        <to name="scope_GFL_M68CCO" />
+        <to name="scope_GFL_M150RCO" />
+        <to name="scope_GFL_HoloMag3x" />
+        <to name="scope_GFL_SpecterDR" />
+        <to name="scope_GFL_LPVO_6X" />
+        <to name="scope_GFL_LPVO_8X" />
+        <to name="scope_GFL_LROMK4_3_10X" />
+        <to name="scope_GFL_LROMK6_3_18X" />
+        <to name="scope_GFL_LROPM_5_25X" />
+    </Bind>
+    <Firearm
+        name="GFL-WEAP-AK12-SUP"
+        inventoryBinding="PrimaryWeaponMuzzle"
+        category="rifle"
+        unlockCost="0"
+        tooltip="@WEAP-AK12-NAME"
+        description="@WEAP-AK12-DESC"
+        img="data/models/signatures/ak12_ui.dds"
+        animationSet="rifle"
+    >
+        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="-4" />
+
+        <RenderObject3D model="data/models/signatures/ak12.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/signatures/ak12.dds"/>
+        <RenderObject3D model="data/models/weapons/attachments/silencer_01.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/silencer_01a.dds"/>
+
+        <ModifiableParams
+            numPellets="1"
+            roundsPerMagazine="30"
+            closedBolt="1"
+            cyclicReload="0"
+            reloadTime="1700"
+            reloadEmptyTime="1800"
+            changeInTime="0"
+            changeOutTime="0"
+            readyTime="340"
+            guardTime="160"
+            accuracyStart="85"
+            accuracyEnd="80"
+            accuracyStartDist="4"
+            accuracyEndDist="50"
+            suppressArea="1"
+            meleeDamageBonus="100"
+        />
+
+        <Params
+            caliberInfoText="@firearm_caliber_545x39_name"
+            operationInfoText="@firearm_operation_semifull_name"
+            ejectingShellEntity="BulletCasingLarge"
+            magazineEntity="type56_mag"
+            suppressedSwitch="GFL-WEAP-AK12"
+            suppressedImg="data/models/weapons/attachments/basic_silencer_ui.dds"
+            ai_rangeMin="1.0"
+            ai_rangeOptimal="15.0"
+            ai_rangeMax="45.0"
+        />
+
+        <AttackTypes>
+
+            <AttackType name="GFL_CQC_AK12" rangeMeters="4" />
+            <AttackType name="GFL_Near_AK12" rangeMeters="8" />
+            <AttackType name="GFL_Close_AK12" rangeMeters="12" />
+            <AttackType name="GFL_Medium_AK12" rangeMeters="16" />
+            <AttackType name="GFL_MedEdge_AK12" rangeMeters="20" />
+            <AttackType name="GFL_Extended_AK12" rangeMeters="9999" />
+
+        </AttackTypes>
+
+        <AttackTypesSuppressiveFire>
+            <AttackType name="GFL_AreaSuppression_Auto" rangeMeters="9999" />
+        </AttackTypesSuppressiveFire>
+
+        <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Rifle">
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_05" />
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_06" />
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_07" />
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_08" />
+        </MuzzleFlash>
+
+        <Sounds>
+            <Equip name="rifle_eqp" />
+            <Unequip name="rifle_neqp" />
+            <Reload name="rifle_reld" />
+            <ReloadEmpty name="rifle_reldempt" />
+            <Fire name="aks103sup_fire" />
+            <ShellDrop name="rifle_shell_drop" />
+            <Empty name="gen_empty" />
+        </Sounds>
+    </Firearm>
+
 <!-- H.I.D.E. 404 -->
 
 <!-- HK416 KLUKAI -->

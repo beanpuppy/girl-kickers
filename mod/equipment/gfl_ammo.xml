@@ -608,6 +608,108 @@
         </Params>
     </Ammo>
 
+<!-- AK-12 KOLEDA -->
+
+    <Ammo
+        name="545x39FMJAP_GFL_AK12"
+        tooltip="@ammo_556x39_fmj_nsu_name"
+        description="@ammo_556x39_fmj_nsu_desc"
+        img="data/models/weapons/attachments/m855_ammo_ui.dds"
+    >
+
+        <Params
+            roundsPerSecond="11.7"
+            audibleSoundRadius="100"
+            physicsImpactForce="1.5"
+        >
+            <Damage
+                start="28"
+                end="24"
+                startDist="0"
+                endDist="100"
+            />
+            <CriticalChancePercent
+                start="0"
+                end="0"
+                startDist="0"
+                endDist="100"
+            />
+            <ArmorPenetration
+                start="50"
+                end="50"
+                startDist="0"
+                endDist="100"
+            />
+        </Params>
+    </Ammo>
+
+    <Ammo
+        name="545x39FMJAP_GFL_AK12-SUP"
+        tooltip="@ammo_556x39_fmj_nsu_name"
+        description="@ammo_556x39_fmj_nsu_desc"
+        img="data/models/weapons/attachments/m855_ammo_ui.dds"
+    >
+        <Params
+            roundsPerSecond="11.7"
+            audibleSoundRadius="40"
+            physicsImpactForce="1.5"
+            silenced="1"
+        >
+            <Damage
+                start="28"
+                end="24"
+                startDist="0"
+                endDist="100"
+            />
+            <CriticalChancePercent
+                start="0"
+                end="0"
+                startDist="0"
+                endDist="100"
+            />
+            <ArmorPenetration
+                start="50"
+                end="50"
+                startDist="0"
+                endDist="100"
+            />
+        </Params>
+    </Ammo>
+
+    <Ammo
+        name="545x39SUPCAV_GFL_AK12"
+        unlockCost="6"
+        tooltip="@ammo_556x39_supercavitator_defy_name"
+        description="@ammo_556x39_supercavitator_defy_desc"
+        img="data/models/weapons/attachments/m855_ammo_ui.dds"
+    >
+
+        <Params
+            roundsPerSecond="11.7"
+            audibleSoundRadius="100"
+            physicsImpactForce="1.5"
+        >
+            <Damage
+                start="36"
+                end="32"
+                startDist="0"
+                endDist="40"
+            />
+            <CriticalChancePercent
+                start="0"
+                end="0"
+                startDist="0"
+                endDist="100"
+            />
+            <ArmorPenetration
+                start="40"
+                end="30"
+                startDist="0"
+                endDist="100"
+            />
+        </Params>
+    </Ammo>
+
 <!-- HK416 KLUKAI -->
 
     <Ammo

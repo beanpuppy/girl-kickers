@@ -1,0 +1,188 @@
+# Voice Line Translations for Koleda
+# Generated via OpenAI (gpt-4o-transcribe + gpt-5)
+# Total files: 46
+
+Series_Attack__VO_Koleda_Series_Tone_Positive_003.wav
+  JP: 次はあなたの番。
+  EN: You're up next.
+
+Series_Battle_Start__VO_Koleda_Series_Tone_Positive_002.wav
+  JP: 狼が来たわよ。
+  EN: Wolves incoming!
+
+Series_Chosen_Auto__VO_Koleda_Series_Tone_Positive_007.wav
+  JP: 賢明な判断ね。
+  EN: Good call.
+
+Series_Chosen__VO_Koleda_Series_Tone_Positive_006.wav
+  JP: また私?
+  EN: Me again?
+
+Series_Daily_001.wav
+  JP: 目をつむってても、相手の表情や視線を把握できるのは知ってるでしょ?
+  EN: You know I can read their expression and where they’re looking even with my eyes closed, right?
+
+Series_Daily_002.wav
+  JP: 私の名前?もともとは復活してやるって意気込んでつけた名前だったけど、今となっては叶っちゃったわね。
+  EN: My name? I picked it when I swore I’d come back to life—and I guess I have.
+
+Series_Daily_003.wav
+  JP: こんな大きな車、どうやって一人で操縦してたの?三日経っても回りきれてないんだけど私。
+  EN: How did you run a vehicle this big all by yourself? I’ve been at it three days and I still can’t keep up.
+
+Series_Daily_004.wav
+  JP: ここで指揮官に豆知識を一つ。実は私、反逆小隊では末っ子なの。だからこれからはたくさん甘やかしてね。
+  EN: Here’s a fun fact for you, Commander: I’m the baby of the Rebel Squad. So from now on, spoil me rotten, okay?
+
+Series_Daily_005.wav
+  JP: あれ?その理屈じゃ、ボイマスティナが私の姉になるってこと?待って、急に吐き気が……今の発言、やっぱりなかったことにして。
+  EN: Huh? By that logic, Boimastina would be my big sister? Wait, I think I’m gonna be sick... You know what, let’s pretend I never said that.
+
+Series_Die__VO_Koleda_Series_Tone_Negative_001.wav
+  JP: まだ終わってない。
+  EN: Not over yet.
+
+Series_Dying__VO_Koleda_Series_Tone_Negative_002.wav
+  JP: ここからが本番よ。
+  EN: Now it gets real.
+
+Series_Hit__VO_Koleda_Single_Hit_001.wav
+  JP: 見つけた
+  EN: Found it!
+
+Series_Hitted.wav
+  JP: Ha.
+  EN: Yes!
+
+Series_Kill__VO_Koleda_Single_Kill_001.wav
+  JP: 次。
+  EN: Next.
+
+Series_Lose__VO_Koleda_Single_Lose_001.wav
+  JP: これで終わりと思ったら大間違いよ。
+  EN: If you think this is over, you’re dead wrong.
+
+Series_Set_Click__VO_Koleda_Series_Tone_Positive_004.wav
+  JP: まかせて
+  EN: Leave it to me!
+
+Series_Set_Fall__VO_Koleda_Series_Tone_Positive_005.wav
+  JP: すぐに終わらせてあげる。
+  EN: I'll make this quick.
+
+Series_Shield_Broken__VO_Koleda_Series_Tone_Negative_003.wav
+  JP: それじゃあ、第二ラウンドといきましょうか。
+  EN: Alright, round two—here we go.
+
+Series_Skill01__VO_Koleda_Single_Skill_001.wav
+  JP: 目障りよ。
+  EN: You’re an eyesore.
+
+Series_Skill02__VO_Koleda_Single_Skill_002.wav
+  JP: チャンスがあるとでも?
+  EN: You think you stand a chance?
+
+Series_Tone_Positive_001.wav
+  JP: イケてるでしょ?
+  EN: Pretty cool, huh?
+
+Series_Ultimate__VO_Koleda_Single_Ultimate_SSR_001.wav
+  JP: ほら、一っ走り付き合ってあげる!
+  EN: Come on, I’ll join you for a quick sprint!
+
+Series_Up_001.wav
+  JP: ありがとう。
+  EN: Thanks.
+
+Series_Up_002.wav
+  JP: さすが私。
+  EN: Just like me.
+
+Series_Up_003.wav
+  JP: この素材、まだまだ研究の余地があるわね。
+  EN: There’s still plenty left to research about this material.
+
+Series_Up_004.wav
+  JP: 全員倒しちゃったら潜入とは呼べないわね。
+  EN: If we take everyone out, you can’t call that infiltration.
+
+Series_Up_005.wav
+  JP: どう?見とれちゃった?
+  EN: How’s that? Mesmerized?
+
+Series_Win__VO_Koleda_Single_Win_001.wav
+  JP: 私が負けるところなんて想像もできないわよね。
+  EN: You can't even imagine me losing, can you?
+
+Single_Birthday_SSR_001.wav
+  JP: お誕生日おめでとう。毎年プレゼントを考えなきゃいけないなんて、面倒すぎない?直接リクエストしてもらえたらいいのに。それとも指揮官へのいたずらをプレゼントにしちゃおうかな。なんて、うそうそ。はい、受け取って。私なりに頑張って選んだんだから。
+  EN: Happy birthday. Isn’t it a pain having to come up with a present every year? I wish you’d just tell me what you want. Or maybe your present should be a little prank on the Commander. Just kidding. Here—take it. I did my best picking it out.
+
+Single_Christmas_001.wav
+  JP: 起きたら枕元にプレゼントが置いてあったの。嬉しいことは嬉しいんだけど、どうして三つあったのかしら。うち二つは指揮官とアルバノだと思うんだけど、残り一つはまさか……ひぃぃぃぃ！
+  EN: When I woke up, there were presents by my pillow. I’m happy and all, but why were there three? I figure two are from the Commander and Albano, but the last one… no way—Eeeeeek!
+
+Single_Friendliness_001.wav
+  JP: 私のいない間に、アルバやボイマスティナとこっそり仲良くなってないでしょうね。
+  EN: You didn’t secretly buddy up with Alba or Boimastina while I was gone, did you?
+
+Single_Friendliness_002.wav
+  JP: いい加減、自分のお手入れくらいしたら?私ですら人工皮膚をつけてるのに。まぁ、アルバにつけてもらったんだけどね。
+  EN: Seriously, at least do some upkeep on yourself. Even I’m wearing synthetic skin—though Alba put it on for me.
+
+Single_Friendliness_003.wav
+  JP: クリプターとショウは無関係よ。ただ、ショウのやり方に倣って名前を付けただけ。本当はネーレが設計したのだから命名権は彼女にあるはずなんだけど、本人は無頓着みたい。
+  EN: Crypter and Shaw are unrelated. We just named it the way Shaw does. Technically, since Nere designed it, the naming rights should be hers—but she doesn’t seem to care.
+
+Single_Friendliness_004.wav
+  JP: アンナ？私も久しく会ってないわね。あっちにもまだ戻れていないけど、特に何も変わっていないはずよ。体は成長しなくても、精神は成長してるもの。あの子はもう、誰かに守られているだけのお子様じゃない。
+  EN: Anna? I haven’t seen her in ages, either. I still haven’t made it back over there, but I doubt much has changed. Even if her body isn’t growing, her mind is. She’s not just some kid who needs protecting anymore.
+
+Single_Friendliness_005.wav
+  JP: ぶっちゃけ私、保安局のことは信用していないの。ショウの研究に出資してくれたから、仕方なく協力してあげてるだけ。それに、自分の名声はともかく、ショウの名声は守ってあげたいもの。でもまあ、いつかは一泡吹かせてやるわ。
+  EN: Honestly, I don’t trust the Security Bureau. I’m only helping because they funded Sho’s research. I don’t care about my own reputation, but I want to protect Sho’s. Still, I’ll give them a nasty surprise someday.
+
+Single_Friendliness_006.wav
+  JP: どうして別人になりすませられるか?うーん、この素体と付属パーツのおかげかしら。あれから何年も経っているのに、ネーレでさえ原理を把握できていないのだから。人間の技術じゃないことは確かね。結局のところ、ショーに最も背いているのは、遺跡の力を借りてる私なのかも。
+  EN: How can I pass myself off as someone else? Hm… must be thanks to this chassis and its attachments. It’s been years, and even Nere still can’t pin down how it works. One thing’s for sure: this isn’t human tech. In the end, maybe I’m the one betraying the show most—borrowing the power of the ruins.
+
+Single_Friendliness_007.wav
+  JP: アンジェのことで得られた教訓があるとすれば、どんなときも常に手札を用意しておけ、ということね。私を冷酷と罵ってくれても構わないわ。でもあんな無力感はもう味わいたくないの。二度とね。
+  EN: If there’s one lesson I learned from what happened with Ange, it’s this: always have a contingency ready. Call me ruthless if you want. But I never want to feel that helpless again. Never again.
+
+Single_Friendliness_008.wav
+  JP: 指揮官がどこまで駆け抜けていくのか、すごく興味があるの。大丈夫。あなたの行く末をこの目で見届けるまで、決して離れないから。
+  EN: I'm really curious to see how far you'll go, Commander. Don't worry. I won't leave your side until I've seen with my own eyes where your path leads.
+
+Single_Login_001.wav
+  JP: やっと起きたんだ。ねえ、一緒にサボらない?えー、指揮官真面目すぎ。
+  EN: Finally woke up, huh? Hey, wanna slack off together? Geez, you’re too serious, Commander.
+
+Single_MidAutumn_001.wav
+  JP: こうして月を眺めるなんて久々ね。なあに?今まで仕事で忙しくてそんな暇なかったんだから、たまにゆっくりするくらいいいじゃない。
+  EN: It’s been a while since I watched the moon like this. What? I’ve been swamped with work—it's fine to take it easy once in a while.
+
+Single_NewYear_001.wav
+  JP: 明けましておめでとう、指揮官。また一年生き延びてくれてうれしいわ。その調子でもう一年頑張りましょ。え?挨拶が不吉すぎる?でも、私たちにとっては一番現実的な挨拶じゃない?
+  EN: Happy New Year, Commander. Glad you survived another year. Let’s keep it up and make it through the next one. Huh? Too grim for a greeting? For us, that’s just being realistic.
+
+Single_Obtain_SSR_001.wav
+  JP: 久しぶりね、指揮官。これだよ。私が来たということは、春も戻ってくるということ。嬉しいでしょ?
+  EN: Long time no see, Commander. Here I am. If I’m here, it means spring’s coming back too. Happy?
+
+Single_Passive_SSR_001.wav
+  JP: 逃がさないわよ。
+  EN: You’re not getting away!
+
+Single_SpringFes_001.wav
+  JP: 春節明けましておめでとう、指揮官。それで、私のお年玉は?十年会えなかった分、十包み用意してくれてるのよね。ええ、アルバやボイマスティナにもそれくらい必要になるわ。それから、ネーレとケビンの分も…。ちょっと、どこ行くの?
+  EN: Happy Lunar New Year, Commander. So, where’s my red envelope? We haven’t seen each other for ten years, so you’ve got ten of them ready, right? Alva and Boimastina will need that many too. And Nere and Kevin’s as well... Hey, where are you going?
+
+Single_Title_001.wav
+  JP: ドールズフロントライン2 エクシリウム
+  EN: Girls' Frontline 2: Exilium
+
+Single_Valentine_001.wav
+  JP: チョコを用意したわよ。本命チョコが一つ、義理チョコが二つ、それからカレーチョコと泥チョコが一つずつで計五つあるわけだけど、ランダムに選んでもらえる?ええ、一つだけ。
+  EN: I’ve got chocolates ready. One true-love chocolate, two courtesy chocolates, plus one curry chocolate and one mud chocolate—five in all. Pick one at random? Yes, just one.
+

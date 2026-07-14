@@ -3,9 +3,9 @@
 @#GFL-UNIT-DEFY-NAME-RND=Task Force DEFY
 
 @DOLL-AK15-NAME=VOYMASTINA
-@DOLL-AK15-DESC=A girl who looks quite vicious, she's taller than most other Dolls. She's serious and prioritizes efficiency in her words and deeds. She gives people the impression of lacking emotion, but her wrath is frightening.
+@DOLL-AK15-DESC=No matter how difficult her mission is, Voymastina will always come up with a way to complete it. In her team, she is the sharpest blade, the strongest shield, and the most reliable linchpin of any plan that involves her. At times, you will be grateful that she's not on the opposing side.
 @WEAP-AK15-NAME=AK-15
-@WEAP-AK15-DESC=The AK-15 is a variant of the AK-12 chambered for the 7.62×39mm cartridge. Both the AK-12 and AK-15 were developed by the Kalashnikov Group as part of the "Ratnik" ("Warrior", Russian future infantry combat system) program, and have been accepted into Russian military service.
+@WEAP-AK15-DESC=Kalashnikov's 7.62x39mm build from the Ratnik trials, for anyone who never bought the small-calibre pitch. Same modern chassis and controls as the AK-12, but chambered for the same M43 round the Soviets were issuing in the 40s.\n\nIn Voymastina's hands it also works as a club. She considers this a feature.
 
 @skin_ak15_default_name=White Mastiff's Fang
 @skin_ak15_default_desc=Voymastina's usual outfit. Its simple desgin has nothing in the way of personalization or decoration. It shows its true worth in battle, where it is like a sharp fang.
@@ -15,12 +15,17 @@
 @DOLL-AN94-NAME=ALVA
 @DOLL-AN94-DESC=A Doll from the Neo-Soviet Union’s Bureau of State Security and the prototype for the Wolf Pack Project, now leader of Task Force DEFY. After becoming the leader of DEFY, she’s taken over her former partner as the new alpha wolf, earned the respect of her squad members and became better at socializing. What she wants is for Task Force DEFY to endure, and to unravel Paradeus’ new plot. She really loves cats.
 @WEAP-AN94-NAME=AN-94
-@WEAP-AN94-DESC=The AN-94, or Avtomat Nikonova 1994, is a 5.45x39mm caliber gas-operated Russian firearm made by PO Izhmash made during Project Abakan. Project Abakan was a Russian assault rifle program that took place from 1980 to 1994. Being the only outcome from the project, AN-94 was awarded with the name Abakan. The GRAU designation for the AN-94 is '6P33'.
+@WEAP-AN94-DESC=Nikonov's Abakan, the rifle that won the fourteen-year trials to replace the AK-74. The action rides on a cable and pulley and fires the first two rounds at 1800rpm, so the second is gone before the muzzle starts to climb. The factory pitch was "two bullets, one hole", and for once the factory wasn't lying.
 
 @skin_an94_default_name=Hyper Trigger
 @skin_an94_default_desc=Alva's usual outfit. It's a highly professional special forces battle dress uniform that has next to no ornamentation or personalization, affording mobility and the ability to execute highly-demanding maneuvers in just about any environment.
 @skin_an94_skin1_name=Antje
 @skin_an94_skin1_desc="Commander, I'm not picking up any abnormailities in our surroundings. Currently, I am your assistant Antje... That's a name I didn't expect to be using again."\nDue to the demands of providing undercover close protection, she follows you closely, sticking much closer to you than usual.
+
+@DOLL-AK12-NAME=KOLEDA
+@DOLL-AK12-DESC=The former alpha wolf of the rebellious squad, after experiencing her worst day, took responsibility and led her comrades to stand guard until the very end. She ultimately handed over the leadership and title to a trustworthy companion, choosing to continue fighting in a different way. To this day, she remains the AK-12 you know, but please be careful—she is now more dangerous than ever.
+@WEAP-AK12-NAME=AK-12
+@WEAP-AK12-DESC=Kalashnikov Group's flagship from the Ratnik programme, and the rifle the AK-74 spent forty years waiting to become. Same rugged action that has survived every swamp on the planet, now wearing proper rails, an adjustable stock, and sights designed this century. Chambered in 5.45x39mm: lighter, flatter, and faster shooting than its 7.62mm sibling.\n\nIf you need a wall removed, ask Voymastina. For everything else, there's the AK-12.
 
 @doctrine_gfl_defy_femalegorilla_name=The Female Gorilla
 @doctrine_gfl_defy_femalegorilla_descr=Voymastina intimidates anyone in her presense. Enemies within her radius gain reduced accuracy, supression recovery, and aim time.

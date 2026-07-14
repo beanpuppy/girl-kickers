@@ -1,36 +1,76 @@
 #!/usr/bin/env python3
-"""Transcribe and translate Japanese voice files to English"""
+"""
+Transcribe + translate Japanese voice files to English via OpenAI.
 
+Two API calls per clip (same approach as WOMENACE scripts/voice/transcribe.py):
+  1. Audio transcription via gpt-4o-transcribe (or override). language=ja.
+  2. Chat completion via gpt-5 (or override) to translate JP -> EN.
+
+Reads OPENAI_API_KEY from the environment or a .env at the repo root.
+Auto-detects character directories under --voice-dir and only transcribes
+those without a _trans.txt file.
+"""
+
+from __future__ import annotations
+
+import argparse
 import os
-import warnings
-import whisper
-from pathlib import Path
 import sys
-import torch
+from pathlib import Path
 
-# Suppress specific ROCm warnings
-warnings.filterwarnings("ignore", message=".*hipBLASLt.*")
-warnings.filterwarnings("ignore", message=".*Flash attention.*")
-warnings.filterwarnings("ignore", message=".*Memory Efficient attention.*")
+import openai
+from dotenv import load_dotenv
 
-# Enable experimental ROCm features for better performance on newer AMD GPUs
-os.environ.setdefault("TORCH_ROCM_AOTRITON_ENABLE_EXPERIMENTAL", "1")
+# Load .env from repo root (parent of scripts/voice/) so OPENAI_API_KEY is
+# picked up without needing to export it in every shell.
+load_dotenv(Path(__file__).resolve().parents[2] / ".env")
+
+DEFAULT_ASR_MODEL = "gpt-4o-transcribe"
+DEFAULT_TRANSLATE_MODEL = "gpt-5"
+
+AUDIO_EXTENSIONS = {".wav", ".ogg", ".flac", ".mp3", ".m4a"}
+
+TRANSLATE_SYSTEM = (
+    "You are a translator. Translate the user's Japanese text into natural "
+    "conversational English. The input is a single voice line from a tactical "
+    "squad-based game (combat barks, acknowledgements, ability callouts). "
+    "Match the tone: short exclamations stay short, formal lines stay formal. "
+    "Output only the English translation, no commentary, no quotes."
+)
 
 
-def transcribe_character_dir(character_dir, model, device):
+def transcribe_jp(client: openai.OpenAI, model: str, audio_path: Path) -> str:
+    with audio_path.open("rb") as f:
+        result = client.audio.transcriptions.create(
+            model=model,
+            file=f,
+            language="ja",
+        )
+    return (result.text or "").strip()
+
+
+def translate_en(client: openai.OpenAI, model: str, jp_text: str) -> str:
+    if not jp_text:
+        return ""
+    resp = client.chat.completions.create(
+        model=model,
+        messages=[
+            {"role": "system", "content": TRANSLATE_SYSTEM},
+            {"role": "user", "content": jp_text},
+        ],
+    )
+    return (resp.choices[0].message.content or "").strip()
+
+
+def transcribe_character_dir(character_dir, client, asr_model, translate_model):
     """
     Transcribe all voice files in a character directory.
 
     Returns a list of translation results.
     """
-    # Find all audio files
-    audio_extensions = {".wav", ".ogg", ".flac", ".mp3", ".m4a"}
-    audio_files = []
-
-    for ext in audio_extensions:
-        audio_files.extend(character_dir.glob(f"*{ext}"))
-
-    audio_files = sorted(audio_files)
+    audio_files = sorted(
+        p for p in character_dir.iterdir() if p.suffix.lower() in AUDIO_EXTENSIONS
+    )
 
     if not audio_files:
         return []
@@ -41,17 +81,15 @@ def transcribe_character_dir(character_dir, model, device):
         print(f"  [{i}/{len(audio_files)}] {audio_file.name}")
 
         try:
-            # Transcribe and translate to English
-            use_fp16 = device == "cuda"
-            result = model.transcribe(
-                str(audio_file), language="ja", task="translate", fp16=use_fp16
-            )
+            jp = transcribe_jp(client, asr_model, audio_file)
+            en = translate_en(client, translate_model, jp)
 
-            translation = result["text"].strip()
-
-            if translation:
-                results.append({"file": audio_file.name, "translation": translation})
-                print(f"    EN: {translation}")
+            if en:
+                results.append(
+                    {"file": audio_file.name, "transcript": jp, "translation": en}
+                )
+                print(f"    JP: {jp}")
+                print(f"    EN: {en}")
             else:
                 print("    (no speech detected)")
 
@@ -61,7 +99,9 @@ def transcribe_character_dir(character_dir, model, device):
     return results
 
 
-def process_voice_directories(voice_base_dir, model_name="large", force=False):
+def process_voice_directories(
+    voice_base_dir, asr_model, translate_model, force=False
+):
     """
     Auto-detect character directories and transcribe those without _trans.txt files.
     """
@@ -92,28 +132,24 @@ def process_voice_directories(voice_base_dir, model_name="large", force=False):
         print("Use --force to regenerate transcriptions.")
         return
 
-    # Initialize model once
-    device = "cuda" if torch.cuda.is_available() else "cpu"
-    print(f"\nUsing device: {device}")
-    if device == "cuda":
-        print(f"GPU: {torch.cuda.get_device_name(0)}")
+    if not os.environ.get("OPENAI_API_KEY"):
+        print("Error: OPENAI_API_KEY not set (env var or .env at repo root)")
+        sys.exit(1)
 
-    print(f"\nLoading Whisper model: {model_name}")
-    print("(First run will download the model)")
-    print(
-        "Model sizes: tiny (~75MB), base (~150MB), small (~500MB), medium (~1.5GB), large (~3GB)"
-    )
-    model = whisper.load_model(model_name, device=device)
+    client = openai.OpenAI()
 
     print(f"\n{'=' * 60}")
-    print(f"Processing {len(dirs_to_process)} character(s)")
+    print(
+        f"Processing {len(dirs_to_process)} character(s) "
+        f"(ASR: {asr_model}, MT: {translate_model})"
+    )
     print(f"{'=' * 60}\n")
 
     # Process each character directory
     for idx, char_dir in enumerate(dirs_to_process, 1):
         print(f"[{idx}/{len(dirs_to_process)}] Processing {char_dir.name}...")
 
-        results = transcribe_character_dir(char_dir, model, device)
+        results = transcribe_character_dir(char_dir, client, asr_model, translate_model)
 
         if results:
             # Write to _trans.txt in the character directory
@@ -121,13 +157,14 @@ def process_voice_directories(voice_base_dir, model_name="large", force=False):
 
             with open(output_file, "w", encoding="utf-8") as f:
                 f.write(f"# Voice Line Translations for {char_dir.name}\n")
-                f.write("# Generated automatically using OpenAI Whisper\n")
+                f.write(f"# Generated via OpenAI ({asr_model} + {translate_model})\n")
                 f.write(f"# Total files: {len(results)}\n")
                 f.write("\n")
 
                 for item in results:
                     f.write(f"{item['file']}\n")
-                    f.write(f"  {item['translation']}\n")
+                    f.write(f"  JP: {item['transcript']}\n")
+                    f.write(f"  EN: {item['translation']}\n")
                     f.write("\n")
 
             print(f"  ✓ Saved {len(results)} translations to {output_file}")
@@ -141,10 +178,8 @@ def process_voice_directories(voice_base_dir, model_name="large", force=False):
 
 
 if __name__ == "__main__":
-    import argparse
-
     parser = argparse.ArgumentParser(
-        description="Transcribe and translate Japanese voice files to English.\n"
+        description="Transcribe and translate Japanese voice files to English via OpenAI.\n"
         "Auto-detects character directories and only transcribes those without _trans.txt files.",
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
@@ -154,10 +189,14 @@ if __name__ == "__main__":
         help="Base voice directory containing character folders (default: mod/sounds/voice)",
     )
     parser.add_argument(
-        "--model",
-        choices=["tiny", "base", "small", "medium", "large"],
-        default="large",
-        help="Whisper model size (default: large)",
+        "--asr-model",
+        default=DEFAULT_ASR_MODEL,
+        help=f"OpenAI ASR model (default: {DEFAULT_ASR_MODEL})",
+    )
+    parser.add_argument(
+        "--translate-model",
+        default=DEFAULT_TRANSLATE_MODEL,
+        help=f"OpenAI translation model (default: {DEFAULT_TRANSLATE_MODEL})",
     )
     parser.add_argument(
         "--force",
@@ -167,4 +206,6 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    process_voice_directories(args.voice_dir, args.model, args.force)
+    process_voice_directories(
+        args.voice_dir, args.asr_model, args.translate_model, args.force
+    )
