@@ -426,6 +426,13 @@ const GIRLDLE_DOLLS = [
     role: "Vanguard",
     squad: "Task Force DEFY",
   },
+  {
+    name: "Asteria",
+    weapon: "AR",
+    element: "Physical",
+    role: "Support",
+    squad: "AR Team",
+  },
 ];
 
 const GIRLDLE_ATTRS = ["weapon", "element", "role", "squad"];
