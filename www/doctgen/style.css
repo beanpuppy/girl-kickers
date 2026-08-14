@@ -150,8 +150,12 @@ body {
   font-size: 17px;
   line-height: 1.7;
   color: var(--text-secondary);
-  max-height: 200px;
-  overflow: hidden;
+  max-height: min(200px, 40vh);
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--text-muted) transparent;
   transition:
     max-height 0.3s ease,
     padding 0.3s ease,
@@ -165,6 +169,14 @@ body {
   padding-bottom: 0;
   opacity: 0;
   border-bottom: none;
+  /* keep the collapse animation clean, no scrollbar flash on the way out */
+  overflow: hidden;
+}
+
+/* The dismiss button must stay put while the text scrolls under it. */
+.info-bar .info-dismiss {
+  position: sticky;
+  top: 0;
 }
 
 .info-content {
