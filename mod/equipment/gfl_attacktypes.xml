@@ -4446,4 +4446,282 @@
         />
     </AttackType>
 
+<!-- AR TEAM -->
+
+    <!-- ST AR-15 ASTERIA -->
+
+    <AttackType name="GFL_CQC_AR15">
+    <!-- Under 4m. -->
+        <ModifiableParams
+            minAimTime="300"
+            maxAimTime="300"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="3"
+            resetTime="300"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="5"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Near_AR15">
+    <!-- Under 8m. -->
+        <ModifiableParams
+            minAimTime="300"
+            maxAimTime="300"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="3"
+            resetTime="300"
+            accuracyAdd="5"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Close_AR15">
+    <!-- Under 12m. -->
+        <ModifiableParams
+            minAimTime="320"
+            maxAimTime="380"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="3"
+            resetTime="300"
+            accuracyAdd="10"
+            followupShotAccuracyAdd="5"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Medium_AR15">
+    <!-- Under 16m. -->
+        <ModifiableParams
+            minAimTime="320"
+            maxAimTime="420"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="2"
+            resetTime="300"
+            accuracyAdd="20"
+            followupShotAccuracyAdd="10"
+            critChanceAdd="15"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_MedEdge_AR15">
+    <!-- Under 20m. -->
+        <ModifiableParams
+            minAimTime="320"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="2"
+            resetTime="300"
+            accuracyAdd="20"
+            followupShotAccuracyAdd="10"
+            critChanceAdd="15"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Extended_AR15">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="330"
+            maxAimTime="500"
+            roundsPerSecondOverride="0"
+            minShots="1"
+            maxShots="2"
+            resetTime="320"
+            accuracyAdd="20"
+            followupShotAccuracyAdd="10"
+            critChanceAdd="15"
+        />
+    </AttackType>
+
+    <!-- M4 SOPMOD II SOPPO -->
+
+    <AttackType name="GFL_CQC_SOPMODII">
+    <!-- Under 4m. -->
+        <ModifiableParams
+            minAimTime="320"
+            maxAimTime="320"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="220"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="20"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Near_SOPMODII">
+    <!-- Under 8m. -->
+        <ModifiableParams
+            minAimTime="320"
+            maxAimTime="320"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="220"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="15"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Close_SOPMODII">
+    <!-- Under 12m. -->
+        <ModifiableParams
+            minAimTime="330"
+            maxAimTime="380"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Medium_SOPMODII">
+    <!-- Under 16m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="430"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="5"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_MedEdge_SOPMODII">
+    <!-- Under 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="450"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="5"
+            critChanceAdd="5"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Extended_SOPMODII">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="350"
+            maxAimTime="500"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="280"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="5"
+            critChanceAdd="5"
+        />
+    </AttackType>
+
+    <!-- RO635 ROBELLA -->
+
+    <AttackType name="GFL_CQC_RO635">
+    <!-- Under 4m. -->
+        <ModifiableParams
+            minAimTime="300"
+            maxAimTime="300"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="230"
+            accuracyAdd="5"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Near_RO635">
+    <!-- Under 8m. -->
+        <ModifiableParams
+            minAimTime="300"
+            maxAimTime="300"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="-1"
+            resetTime="230"
+            accuracyAdd="5"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="10"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Close_RO635">
+    <!-- Under 12m. -->
+        <ModifiableParams
+            minAimTime="320"
+            maxAimTime="370"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="5"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="5"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Medium_RO635">
+    <!-- Under 16m. -->
+        <ModifiableParams
+            minAimTime="330"
+            maxAimTime="420"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="5"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_MedEdge_RO635">
+    <!-- Under 20m. -->
+        <ModifiableParams
+            minAimTime="330"
+            maxAimTime="430"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="5"
+        />
+    </AttackType>
+
+    <AttackType name="GFL_Extended_RO635">
+    <!-- Beyond 20m. -->
+        <ModifiableParams
+            minAimTime="340"
+            maxAimTime="480"
+            roundsPerSecondOverride="0"
+            minShots="3"
+            maxShots="5"
+            resetTime="250"
+            accuracyAdd="0"
+            followupShotAccuracyAdd="0"
+            critChanceAdd="5"
+        />
+    </AttackType>
+
 </FirearmAttackTypes>

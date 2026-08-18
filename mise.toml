@@ -19,6 +19,10 @@ find mod/models/dolls/ -name "*.dds" -exec sh -c '
 ' _ {} \;
 '''
 
+[tasks.weld-meshes]
+description = "Weld coincident vertices in doll meshes (fixes seams that tear when animated)"
+run = 'uv run python scripts/weld_khm.py mod/models/dolls/'
+
 [tasks.doctgen]
 description = "Compile all doctrine KDL files to mod XML"
 run = 'bun www/doctgen/src/cli.ts doctrines/*.kdl -o mod/gui/gfl_doctrine.xml'

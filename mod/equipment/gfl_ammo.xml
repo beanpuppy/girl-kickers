@@ -3257,4 +3257,314 @@
         </Params>
     </Ammo>
 
+<!-- AR TEAM -->
+
+<!-- ST AR-15 ASTERIA -->
+
+    <Ammo
+        name="556FMJEPR_GFL_AR15"
+        tooltip="@ammo_556_fmj_epr_name"
+        description="@ammo_556_fmj_epr_desc"
+        img="data/models/weapons/attachments/mk318_ammo_ui.dds"
+    >
+
+        <Params
+            roundsPerSecond="8.0"
+            audibleSoundRadius="100"
+            physicsImpactForce="2.0"
+        >
+            <Damage
+                start="32"
+                end="28"
+                startDist="0"
+                endDist="100"
+            />
+            <CriticalChancePercent
+                start="0"
+                end="0"
+                startDist="0"
+                endDist="100"
+            />
+            <ArmorPenetration
+                start="55"
+                end="55"
+                startDist="0"
+                endDist="100"
+            />
+        </Params>
+    </Ammo>
+
+<!-- ST AR-15 ASTERIA (SUPPRESSED) -->
+
+    <Ammo
+        name="556FMJEPR_GFL_AR15-SUP"
+        tooltip="@ammo_556_fmj_epr_name"
+        description="@ammo_556_fmj_epr_desc"
+        img="data/models/weapons/attachments/mk318_ammo_ui.dds"
+    >
+        <Params
+            roundsPerSecond="8.0"
+            audibleSoundRadius="40"
+            physicsImpactForce="2.0"
+            silenced="1"
+        >
+            <Damage
+                start="32"
+                end="28"
+                startDist="0"
+                endDist="100"
+            />
+            <CriticalChancePercent
+                start="0"
+                end="0"
+                startDist="0"
+                endDist="100"
+            />
+            <ArmorPenetration
+                start="55"
+                end="55"
+                startDist="0"
+                endDist="100"
+            />
+        </Params>
+    </Ammo>
+
+    <Ammo
+        name="556APFSF_GFL_AR15" unlockCost="6"
+        tooltip="@ammo_556_apf_sf_name"
+        description="@ammo_556_apf_sf_desc"
+        img="data/models/weapons/attachments/mk318_ammo_ui.dds"
+    >
+
+        <Params
+            roundsPerSecond="8.0"
+            audibleSoundRadius="100"
+            physicsImpactForce="2.0"
+        >
+            <Damage
+                start="40"
+                end="36"
+                startDist="0"
+                endDist="40"
+            />
+            <CriticalChancePercent
+                start="0"
+                end="0"
+                startDist="0"
+                endDist="100"
+            />
+            <ArmorPenetration
+                start="70"
+                end="20"
+                startDist="5"
+                endDist="20"
+            />
+        </Params>
+    </Ammo>
+
+<!-- M4 SOPMOD II SOPPO -->
+
+    <Ammo
+        name="556FMJEPR_GFL_SOPMODII"
+        tooltip="@ammo_556_fmj_epr_name"
+        description="@ammo_556_fmj_epr_desc"
+        img="data/models/weapons/attachments/mk318_ammo_ui.dds"
+    >
+
+        <Params
+            roundsPerSecond="15.8"
+            audibleSoundRadius="100"
+            physicsImpactForce="2.0"
+        >
+            <Damage
+                start="26"
+                end="22"
+                startDist="0"
+                endDist="100"
+            />
+            <CriticalChancePercent
+                start="0"
+                end="0"
+                startDist="0"
+                endDist="100"
+            />
+            <ArmorPenetration
+                start="45"
+                end="45"
+                startDist="0"
+                endDist="100"
+            />
+        </Params>
+    </Ammo>
+
+<!-- M4 SOPMOD II SOPPO (SUPPRESSED) -->
+
+    <Ammo
+        name="556FMJEPR_GFL_SOPMODII-SUP"
+        tooltip="@ammo_556_fmj_epr_name"
+        description="@ammo_556_fmj_epr_desc"
+        img="data/models/weapons/attachments/mk318_ammo_ui.dds"
+    >
+        <Params
+            roundsPerSecond="15.8"
+            audibleSoundRadius="40"
+            physicsImpactForce="2.0"
+            silenced="1"
+        >
+            <Damage
+                start="26"
+                end="22"
+                startDist="0"
+                endDist="100"
+            />
+            <CriticalChancePercent
+                start="0"
+                end="0"
+                startDist="0"
+                endDist="100"
+            />
+            <ArmorPenetration
+                start="45"
+                end="45"
+                startDist="0"
+                endDist="100"
+            />
+        </Params>
+    </Ammo>
+
+    <Ammo
+        name="556APFSF_GFL_SOPMODII" unlockCost="6"
+        tooltip="@ammo_556_apf_sf_name"
+        description="@ammo_556_apf_sf_desc"
+        img="data/models/weapons/attachments/mk318_ammo_ui.dds"
+    >
+
+        <Params
+            roundsPerSecond="15.8"
+            audibleSoundRadius="100"
+            physicsImpactForce="2.0"
+        >
+            <Damage
+                start="34"
+                end="30"
+                startDist="0"
+                endDist="40"
+            />
+            <CriticalChancePercent
+                start="0"
+                end="0"
+                startDist="0"
+                endDist="100"
+            />
+            <ArmorPenetration
+                start="70"
+                end="20"
+                startDist="5"
+                endDist="20"
+            />
+        </Params>
+    </Ammo>
+
+<!-- RO635 ROBELLA -->
+
+    <Ammo
+        name="919JHPOVER_GFL_RO635"
+        tooltip="@ammo_919_jhp_over_name"
+        description="@ammo_919_jhp_over_desc"
+        img="data/models/weapons/attachments/m1152_ammo_ui.dds"
+    >
+        <Params
+            roundsPerSecond="15.0"
+            audibleSoundRadius="50"
+            physicsImpactForce="1.5"
+        >
+            <Damage
+                start="36"
+                end="32"
+                startDist="0"
+                endDist="50"
+            />
+            <CriticalChancePercent
+                start="0"
+                end="0"
+                startDist="0"
+                endDist="50"
+            />
+            <ArmorPenetration
+                start="50"
+                end="20"
+                startDist="0"
+                endDist="50"
+            />
+        </Params>
+    </Ammo>
+
+<!-- RO635 ROBELLA (SUPPRESSED) -->
+
+    <Ammo
+        name="919JHPOVER_GFL_RO635-SUP"
+        tooltip="@ammo_919_jhp_over_name"
+        description="@ammo_919_jhp_over_desc"
+        img="data/models/weapons/attachments/m1152_ammo_ui.dds"
+    >
+        <Params
+            roundsPerSecond="15.0"
+            audibleSoundRadius="25"
+            physicsImpactForce="1.5"
+            silenced="1"
+        >
+            <Damage
+                start="36"
+                end="32"
+                startDist="0"
+                endDist="50"
+            />
+            <CriticalChancePercent
+                start="0"
+                end="0"
+                startDist="0"
+                endDist="50"
+            />
+            <ArmorPenetration
+                start="50"
+                end="20"
+                startDist="0"
+                endDist="50"
+            />
+        </Params>
+    </Ammo>
+
+    <Ammo
+        name="919SQUEAKFLASH_GFL_RO635" unlockCost="6"
+        tooltip="@ammo_919_squeak_flash_name"
+        description="@ammo_919_squeak_flash_desc"
+        img="data/models/weapons/attachments/m1153_ammo_ui.dds"
+    >
+        <Params
+            roundsPerSecond="15.0"
+            audibleSoundRadius="50"
+            physicsImpactForce="1.5"
+            suppressionScale="3.0"
+        >
+            <Damage
+                start="36"
+                end="32"
+                startDist="0"
+                endDist="40"
+            />
+            <CriticalChancePercent
+                start="0"
+                end="0"
+                startDist="0"
+                endDist="50"
+            />
+            <ArmorPenetration
+                start="20"
+                end="20"
+                startDist="0"
+                endDist="100"
+            />
+        </Params>
+    </Ammo>
+
 </Equipment>

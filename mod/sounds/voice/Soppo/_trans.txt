@@ -1,0 +1,188 @@
+# Voice Line Translations for Soppo
+# Generated via OpenAI (gpt-4o-transcribe + gpt-5)
+# Total files: 46
+
+Series_Attack__VO_Soppo_Series_Tone_Positive_003.wav
+  JP: みーつけた!
+  EN: Found ya!
+
+Series_Battle_Start__VO_Soppo_Series_Tone_Positive_002.wav
+  JP: いひひひ、早くしようよ。
+  EN: Heeheehee, let’s get a move on.
+
+Series_Chosen_Auto__VO_Soppo_Series_Tone_Positive_007.wav
+  JP: 待ちきれないよ。
+  EN: I can’t wait!
+
+Series_Chosen__VO_Soppo_Series_Tone_Positive_006.wav
+  JP: 次は私、私!
+  EN: I'm next! Me!
+
+Series_Daily_001.wav
+  JP: えー、なになに、私にも見せて?
+  EN: Ooh, what is it? Can I see too?
+
+Series_Daily_002.wav
+  JP: フフフ、ロベラが留守のうちに楽しいことをー。わっ、指揮官、今の内緒だからね！
+  EN: Hehe, let’s have some fun while Robera’s out... Whoa—Commander! You didn’t hear that, okay!
+
+Series_Daily_003.wav
+  JP: 暇だなー。体は動きたくてムズムズしてるのに。ねえ指揮官、横にいるダイナーゲートで遊んでもいい?え、ダンデライオンが駄目って?
+  EN: I’m bored. My body’s itching to move. Hey, Commander, can I play with the Dinergate next to me? Huh? Dandelion says no?
+
+Series_Daily_004.wav
+  JP: 指揮官、メイリンが人手不足で困ってそうだから手伝ってくるね。工具?そんなの私にはいらないって。
+  EN: Commander, Meilin looks shorthanded—I’ll go help her out. Tools? I don’t need any.
+
+Series_Daily_005.wav
+  JP: こないだの敵の慌てよう、思い出しただけで笑えてきちゃった。ねえ指揮官、一緒に私のメンタルデータ見ない?
+  EN: I can’t help but laugh just remembering how the enemy panicked the other day. Hey, Commander, want to review my mental data with me?
+
+Series_Die__VO_Soppo_Series_Tone_Negative_001.wav
+  JP: やったなー。
+  EN: Nice one!
+
+Series_Dying__VO_Soppo_Series_Tone_Negative_002.wav
+  JP: まだ終わってない!
+  EN: It's not over yet!
+
+Series_Hit__VO_Soppo_Single_Hit_001.wav
+  JP: よいしょ!
+  EN: Hup!
+
+Series_Hitted.wav
+  JP: が。
+  EN: Gah.
+
+Series_Kill__VO_Soppo_Single_Kill_001.wav
+  JP: こんなんで壊れちゃうんだ。
+  EN: So that’s all it takes to break it.
+
+Series_Lose__VO_Soppo_Single_Lose_001.wav
+  JP: ちょ、たんまたんま!指揮官、早く行こう!
+  EN: Whoa, time out! Commander, let’s move—now!
+
+Series_Set_Click__VO_Soppo_Series_Tone_Positive_004.wav
+  JP: 早く早くー!
+  EN: Hurry, hurry!
+
+Series_Set_Fall__VO_Soppo_Series_Tone_Positive_005.wav
+  JP: 今追ってるよ。
+  EN: In pursuit!
+
+Series_Shield_Broken__VO_Soppo_Series_Tone_Negative_003.wav
+  JP: もっとちょうだい!
+  EN: Gimme more!
+
+Series_Skill01__VO_Soppo_Single_Skill_001.wav
+  JP: どこからバラそうかな。
+  EN: Where should I start taking it apart?
+
+Series_Skill02__VO_Soppo_Single_Skill_002.wav
+  JP: 痛いのいくよ!
+  EN: Here comes the pain!
+
+Series_Tone_Positive_001.wav
+  JP: わたしの出番?
+  EN: My turn?
+
+Series_Ultimate__VO_Soppo_Single_Ultimate_SSR_001.wav
+  JP: そのパーツ、私に使わせてよ。
+  EN: Let me use that part.
+
+Series_Up_001.wav
+  JP: やったー!
+  EN: Yes!
+
+Series_Up_002.wav
+  JP: ぷぷぷー
+  EN: Honk, honk, hoooonk!
+
+Series_Up_003.wav
+  JP: あぶないよ。
+  EN: Watch out!
+
+Series_Up_004.wav
+  JP: 全部ぶっ壊してやる。
+  EN: I'll smash everything!
+
+Series_Up_005.wav
+  JP: もう待ちきれないよ。
+  EN: I can’t wait any longer!
+
+Series_Win__VO_Soppo_Single_Win_001.wav
+  JP: 土下座されても許さないもんね。
+  EN: Grovel all you want—I won’t forgive you.
+
+Single_Birthday_SSR_001.wav
+  JP: お誕生日おめでたー。わー、ケーキにイチゴが乗ってるー。んふふ。今年の誕生日プレゼントは、指揮官のイチゴを食べてあげること!なんちゃって。本当は、じゃーん、ソップ特製特大ショートケーキを用意しましたー。
+  EN: Happy birthday! Wow, strawberries on top of the cake! Hehe. This year’s present is... I’ll eat your strawberry, Commander! Just kidding. Actually—ta‑da! I’ve prepared Sopp’s special, extra‑large strawberry shortcake!
+
+Single_Christmas_001.wav
+  JP: ジングルベル ジングルベル パーツが鳴る 全部壊して笑い合おうよ
+  EN: Jingle bells, jingle bells, the parts all jingle—let’s smash everything and laugh together!
+
+Single_Friendliness_001.wav
+  JP: 指揮官も一緒に遊ぼうよ。扇風機に向かって話すと変な声になるんだ。
+  EN: Come play with us too, Commander! Talk into a fan and your voice sounds funny.
+
+Single_Friendliness_002.wav
+  JP: したいことランキング第2位、ケンカ?第1位、指揮官とケンカ!ちなみに指揮官をぶつ方じゃなくて、指揮官と一緒に相手をコテンパンにする方ね。
+  EN: Number two on my to-do list: pick a fight. Number one: pick a fight with the Commander! And just to be clear, not with the Commander—together with the Commander, we beat ’em to a pulp.
+
+Single_Friendliness_003.wav
+  JP: 私のコレクション、見てみたくない?冷たくって、綺麗で、キラキラしてるんだ。他の人?他の人たちは良さを分かってくれないからダメ。
+  EN: Wanna see my collection? Cold, beautiful, and sparkly. Other people? Not allowed. They don’t appreciate it.
+
+Single_Friendliness_004.wav
+  JP: 指揮官、最近戦いになるとみんな私から離れていくんだけど、どうしてかな。え、戦闘中の私が怖すぎるから?そんな、ちゃんと空気読んで解体は我慢したのに。指揮官は分かってくれるよね、ね?
+  EN: Commander, lately when a fight breaks out, everyone keeps their distance from me. I wonder why. What, because I’m too scary in combat? Come on—I even held off on the dismantling to be considerate. You understand, right, Commander? Right?
+
+Single_Friendliness_005.wav
+  JP: 戦いの後って、いつも暑くなるなぁ。これ？これ冷却用なんだ。指揮官もこっち来て涼んでみる？えへへ、もっと寄ってよ。
+  EN: I always get so hot after a fight. This? It’s for cooling down. Commander, want to come over here and cool off? Hehe, come a little closer.
+
+Single_Friendliness_006.wav
+  JP: 指揮官、もし何かなくしたら言ってね。私、鼻には自信あるから、きっと見つけてあげられるよ。
+  EN: Commander, if you lose anything, let me know. I’ve got a keen nose—I’ll track it down for you.
+
+Single_Friendliness_007.wav
+  JP: あー、リヴァがね、戦ってる時の私のこと、凶暴な野犬みたいって言ってたんだけど、指揮官はどう思う?でも、なんか強そうだし、悪い意味じゃないよね?ぐるるるー、エルマガーの戦術犬だぞー!歯向かう奴は全員噛みちぎってやるー!
+  EN: Uh, Riva said I fight like a vicious stray dog—what do you think, Commander? I mean, it sounds kinda badass, not an insult, right? Grrrr—Elmagar’s tactical hound! Anyone who defies me gets bitten to pieces!
+
+Single_Friendliness_008.wav
+  JP: 指揮官のことだーいすき!でも任務がある時は一緒にいられないから……じゃじゃーん!そういう時のために、このM4 SOPMOD II ジュニアを作りました!私がいないときに代わりだと思って大事にしてね!
+  EN: I love you sooo much, Commander! But when there’s a mission we can’t be together, so… ta-daa! For times like that, I made this M4 SOPMOD II Junior! When I’m not around, treat it like my stand-in and take good care of it, okay!
+
+Single_Login_001.wav
+  JP: 指揮官、一緒に狩りに行こうよ。
+  EN: Commander, let’s go hunting together!
+
+Single_MidAutumn_001.wav
+  JP: お月様、まんまるだな。ねえ指揮官、みんなも同じ月を見てると思う?
+  EN: The moon’s perfectly round. Hey, Commander, do you think everyone else is looking at the same moon?
+
+Single_NewYear_001.wav
+  JP: あーもう、ロベラが今年の目標を決めろってうるさいから、指揮官も一緒に逃げよ。目標を立てさせられない場所ならどこでもいいからー。
+  EN: Ugh, Robera keeps nagging me to set this year’s goals—let’s run away together, Commander. Anywhere’s fine, as long as they can’t make me set any.
+
+Single_Obtain_SSR_001.wav
+  JP: わーい、指揮官受け止めてー！えへへ、私のことまだ覚えてくれてた？
+  EN: Yay, catch me, Commander! Hehe, you still remember me?
+
+Single_Passive_SSR_001.wav
+  JP: どんな悲鳴をあげてくれるの?
+  EN: What kind of scream will you make?
+
+Single_SpringFes_001.wav
+  JP: お正月、今年もたくさん戦ってコレクションいっぱい。ほっ、指揮官、もう一個だけ倉庫の申請してもいい?ええお願いだから。
+  EN: New Year’s—fought a ton again this year, and my collection’s overflowing. Phew... Commander, can I file a request for just one more storage slot? Please, I’m begging you.
+
+Single_Title_001.wav
+  JP: ドールズフロントライン2 エクシリウム
+  EN: Girls' Frontline 2: Exilium
+
+Single_Valentine_001.wav
+  JP: バレンタインなら知ってるよ。花を贈るんだよね。というわけで、はい、これ。この花は「素体の手」って名前で、こっちは「思い人の目」って言うんだよ。それから……あ、ちょ、指揮官逃げないでよー!
+  EN: Valentine’s? I know that one. You give flowers, right? So, here you go. This one’s called Hand of the Vessel, and this one’s Lover’s Eye. And—ah, hey, Commander, don’t run away!
+

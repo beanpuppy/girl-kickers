@@ -16,6 +16,30 @@ KHM_MAX_BONE_INFLUENCES = 4
 KHM_MAX_BONES = 64
 
 
+def IterActionFCurves(animation_data):
+    # Blender 4.4 moved f-curves out of Action into per-slot channelbags and
+    # 5.0 dropped Action.fcurves entirely, so walk the layered action instead.
+    action = animation_data.action if animation_data else None
+    if action is None:
+        return
+
+    if hasattr(action, "fcurves"):  # legacy actions, Blender < 5.0
+        yield from action.fcurves
+        return
+
+    slot = animation_data.action_slot
+    if slot is None:
+        return
+
+    for layer in action.layers:
+        for strip in layer.strips:
+            if strip.type != "KEYFRAME":
+                continue
+            channelbag = strip.channelbag(slot)
+            if channelbag:
+                yield from channelbag.fcurves
+
+
 def ReadSkin(file, pMesh):
     print("ReadSkin", file.tell())
     hasSkin = ReadUChar(file)
@@ -470,24 +494,19 @@ def SpawnAnimation(context, pModelDefinition):
     context.scene.render.fps = int(fps)
 
     # Remove redundant keyframes where values don't change between frames
-    action = b_obj.animation_data.action
-    if action:
-        for fcurve in action.fcurves:
-            keyframes = fcurve.keyframe_points
-            if len(keyframes) < 3:
-                continue
-            to_remove = []
-            for i in range(1, len(keyframes) - 1):
-                prev_val = keyframes[i - 1].co[1]
-                curr_val = keyframes[i].co[1]
-                next_val = keyframes[i + 1].co[1]
-                if (
-                    abs(curr_val - prev_val) < 0.0001
-                    and abs(curr_val - next_val) < 0.0001
-                ):
-                    to_remove.append(i)
-            for i in reversed(to_remove):
-                keyframes.remove(keyframes[i])
+    for fcurve in IterActionFCurves(b_obj.animation_data):
+        keyframes = fcurve.keyframe_points
+        if len(keyframes) < 3:
+            continue
+        to_remove = []
+        for i in range(1, len(keyframes) - 1):
+            prev_val = keyframes[i - 1].co[1]
+            curr_val = keyframes[i].co[1]
+            next_val = keyframes[i + 1].co[1]
+            if abs(curr_val - prev_val) < 0.0001 and abs(curr_val - next_val) < 0.0001:
+                to_remove.append(i)
+        for i in reversed(to_remove):
+            keyframes.remove(keyframes[i])
 
 
 def SpawnModel(context, pModelDefinition):

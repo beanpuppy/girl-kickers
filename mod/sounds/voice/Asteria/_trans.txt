@@ -1,0 +1,188 @@
+# Voice Line Translations for Asteria
+# Generated via OpenAI (gpt-4o-transcribe + gpt-5)
+# Total files: 46
+
+Series_Attack__VO_Asteria_Series_Tone_Positive_003.wav
+  JP: ファイヤ。
+  EN: Fire!
+
+Series_Battle_Start__VO_Asteria_Series_Tone_Positive_002.wav
+  JP: 敵ユニットの数、確認。
+  EN: Enemy unit count confirmed.
+
+Series_Chosen_Auto__VO_Asteria_Series_Tone_Positive_007.wav
+  JP: 了解。
+  EN: Roger.
+
+Series_Chosen__VO_Asteria_Series_Tone_Positive_006.wav
+  JP: まかせてください。
+  EN: Leave it to me.
+
+Series_Daily_001.wav
+  JP: 指揮官は、別世界の自分について考えたことはありますか？え、もう見たことがある?
+  EN: Commander, have you ever thought about yourself in another world? Wait, you’ve already seen one?
+
+Series_Daily_002.wav
+  JP: あれから十年が経ちました。今、みんなが私に何を求めているのか、ゆっくり聞いていきたいです。
+  EN: Ten years have passed since then. Now, I would like to take my time and listen to what everyone expects of me.
+
+Series_Daily_003.wav
+  JP: ここからだと、星がほとんど見えませんね。昔、遠い場所で眺めた夜空はとっても綺麗で、流れ星もよく見えていたのに。でも、あの時した願い事のうちの一つはもう叶いました。
+  EN: You can barely see any stars from here. Long ago, in a far-off place, the night sky was so beautiful—you could see shooting stars all the time. But one of the wishes I made back then has already come true.
+
+Series_Daily_004.wav
+  JP: えっ、わ、私は何も。ただ、起爆装置のスイッチを確認していただけで。ほら、いざという時、動かなかったら困るじゃないですか。
+  EN: Huh? I-I wasn’t doing anything. I was just checking the detonator switch. Look, if it doesn’t work when it counts, we’re in trouble, right?
+
+Series_Daily_005.wav
+  JP: 復讐者の印って、ちょっとネーミングセンスが古くないですか?M16は気に入りそうだけど、まあ、他に思い浮かぶわけでもないし、よしとしましょう。
+  EN: Isn’t “Mark of the Avenger” a bit old-fashioned? M16 would probably like it, though. Well, I can’t think of anything better, so let’s go with it.
+
+Series_Die__VO_Asteria_Series_Tone_Negative_001.wav
+  JP: これでやっと入る。
+  EN: This'll finally get us in.
+
+Series_Dying__VO_Asteria_Series_Tone_Negative_002.wav
+  JP: そろそろ俺の出番ね。
+  EN: I'm up soon.
+
+Series_Hit__VO_Asteria_Single_Hit_001.wav
+  JP: これなんてどう?
+  EN: How about this?
+
+Series_Hitted__VO_Asteria_Series_HittedLast.wav
+  JP: ちょっ
+  EN: Wait—!
+
+Series_Kill__VO_Asteria_Single_Kill_001.wav
+  JP: クリティカル
+  EN: Critical hit!
+
+Series_Lose__VO_Asteria_Single_Lose_001.wav
+  JP: すみません、後で反省しておきます。
+  EN: I'm sorry. I'll reflect on it later.
+
+Series_Set_Click__VO_Asteria_Series_Tone_Positive_004.wav
+  JP: はい。
+  EN: Yes.
+
+Series_Set_Fall__VO_Asteria_Series_Tone_Positive_005.wav
+  JP: 期待に応えてみせます。
+  EN: I will not let you down.
+
+Series_Shield_Broken__VO_Asteria_Series_Tone_Negative_003.wav
+  JP: っ。
+  EN: Gah!
+
+Series_Skill01__VO_Asteria_Single_Skill_001.wav
+  JP: チャンス!
+  EN: Now’s our chance!
+
+Series_Skill02__VO_Asteria_Single_Skill_002.wav
+  JP: 捕らえた!
+  EN: Gotcha!
+
+Series_Tone_Positive_001.wav
+  JP: 出番ですか。
+  EN: Is it my turn?
+
+Series_Ultimate__VO_Asteria_Single_Ultimate_SSR_001.wav
+  JP: 消し炭にしてあげる。
+  EN: I’ll incinerate you.
+
+Series_Up_001.wav
+  JP: 私の予想通りです。
+  EN: Just as I expected.
+
+Series_Up_002.wav
+  JP: まだ強くなれるのかしら。
+  EN: I wonder if I can get even stronger.
+
+Series_Up_003.wav
+  JP: もっと、私を頼ってください。
+  EN: Please count on me more.
+
+Series_Up_004.wav
+  JP: この感覚、久しぶりね。
+  EN: Haven’t felt this in a while.
+
+Series_Up_005.wav
+  JP: 今の私なら、あなたを安心させられますか。
+  EN: Can I reassure you now?
+
+Series_Win__VO_Asteria_Single_Win_001.wav
+  JP: 指揮官の側に立っていいのは、私だけです。
+  EN: Only I may stand by the commander’s side.
+
+Single_Birthday_SSR_001.wav
+  JP: お誕生日おめでとうございます、指揮官。あれだけの時間が経ったにもかかわらず、またこうして直接祝えるなんて。せっかくなので、十年分のお祝いとプレゼントをまとめて送りますね。
+  EN: Happy birthday, Commander. I never thought I’d be able to celebrate you in person again like this after all this time. Since we have the chance, I’ll give you ten years’ worth of birthday wishes and gifts all at once.
+
+Single_Christmas_001.wav
+  JP: 少々お待ちを。今ターキーを焼いているところなんです。あちらにできたてのホットワインがあるので、よかったら飲んでください。えっ、もう空になってる?まったく……今からあいつを説教しにいきます。
+  EN: Please wait a moment. I’m roasting a turkey right now. There’s freshly made mulled wine over there—help yourself. What, it’s already empty? Good grief… I’ll go give that guy a talking-to.
+
+Single_Friendliness_001.wav
+  JP: 私に聞きたいことがたくさんあるのでは？正直に答えるので、遠慮なくどうぞ。
+  EN: You must have a lot of questions for me. I’ll answer honestly—ask away.
+
+Single_Friendliness_002.wav
+  JP: みんな相変わらず元気ですね。ま、ここにいる全員を集めても、ケンカだのバラスタの騒ぐあのバカには敵わないでしょうけどね。
+  EN: Everyone’s as lively as ever. Still, even if we gathered everyone here, we probably wouldn’t stand a chance against that idiot Barasta—always picking fights and making a racket.
+
+Single_Friendliness_003.wav
+  JP: あいつの足跡を追っているうちにここへたどり着いたわけですが、これは偶然なのでしょうか。
+  EN: We followed his tracks and wound up here. Is that just a coincidence?
+
+Single_Friendliness_004.wav
+  JP: M16については指揮官も呆れているのでは。何も言わず消えたかと思いきや、ふと現れるし。え?私も同じ?あ、私はちゃんと手紙を残しましたよ。
+  EN: Even the Commander must be exasperated with M16. She vanishes without a word, then pops up out of nowhere. Huh? Me too? Oh, I made sure to leave a note.
+
+Single_Friendliness_005.wav
+  JP: 前を向け。少し距離を感じる言葉ですが、それでももう少しだけ頑張れる気がしますよね。
+  EN: Keep looking forward. It may sound a bit impersonal, but it still makes you feel like you can keep going just a little longer, doesn’t it?
+
+Single_Friendliness_006.wav
+  JP: たとえ私一人になっても、あなたのことは最後まで守りきるつもりです。でも、守れるなら全員で守ったほうが心強いですよね。
+  EN: Even if I’m the last one standing, I’ll keep you safe to the very end. Still, it’s much more reassuring with the whole squad watching your back, right?
+
+Single_Friendliness_007.wav
+  JP: M4のことは必ず連れ戻す。そのためなら何だってする。指揮官も付き合ってくれますか?
+  EN: I'll bring M4 back, no matter what. I'll do whatever it takes. Will you back me up, Commander?
+
+Single_Friendliness_008.wav
+  JP: つまり、今の私はあなたに認められたということでしょうか。ありがとうございます。嬉しいです、本当に。
+  EN: So... does that mean I’ve earned your recognition? Thank you. I’m truly happy.
+
+Single_Login_001.wav
+  JP: お疲れ様です。もしパラデウスの総統に出るなら、私の経験が助けになるかと。
+  EN: Good work. If we’re going after Paradeus’s leader, my experience could help.
+
+Single_MidAutumn_001.wav
+  JP: 指揮官、お月見中でしたか？今日の月は特に丸くて綺麗ですね。周りで輝く星たちが霞んで見えるほどに……そうだ、中秋節ならAR小隊のみんなを呼んだほうがいいですよね。
+  EN: Commander, were you moon-gazing? The moon’s especially round and beautiful tonight—it even makes the stars around it look faint... Oh, right—since it’s the Mid-Autumn Festival, we should invite the whole AR Team, shouldn’t we?
+
+Single_NewYear_001.wav
+  JP: もう一年が過ぎるなんて、時間が経つのはあっという間ですね。もし、時間という概念から解放されたら、指揮官は今日という日をどのように過ごしますか？あ、いえ、ただふと思っただけです。さあ、みんなと一緒にお祝いしましょう。
+  EN: Hard to believe another year’s already gone by. If you were free from the very idea of time, Commander, how would you spend today? Ah—no, just a passing thought. Come on, let’s celebrate with everyone.
+
+Single_Obtain_SSR_001.wav
+  JP: ようやく私の出番ですか。もう一度、あなたと戦えるなんて光栄です。かつてのように、また遠慮なく指示をください。
+  EN: Is it finally my turn? It’s an honor to fight by your side again. Just like old times, don’t hesitate to give me your orders.
+
+Single_Passive_SSR_001.wav
+  JP: これが欲しいんでしょ?
+  EN: You want this, don’t you?
+
+Single_SpringFes_001.wav
+  JP: この餃子、メイリンに包み方を教わりながら作ったんですよ。ちなみに、中には効果を詰めてあります。しー、後でこっそり指揮官のお皿に入れておくので、くれぐれも急いで食べないようにしてくださいね。
+  EN: I made these dumplings with Mei-Lin teaching me how to wrap them. By the way, they’re packed with buffs. Shh—I'll sneak them onto your plate later, Commander, so make sure you don’t eat them too fast.
+
+Single_Title_001.wav
+  JP: ドールズフロントライン2 エクシリウム
+  EN: Girls’ Frontline 2: Exilium
+
+Single_Valentine_001.wav
+  JP: 私のデート申請、通してくれたんですか?やった!やりたいことをたくさん考えてきたので、今日は大忙しですよ!それでは、早速出発です!
+  EN: You approved my date request? Yay! I’ve got tons of things I want to do, so we’re going to be super busy today! Alright, let’s head out!
+

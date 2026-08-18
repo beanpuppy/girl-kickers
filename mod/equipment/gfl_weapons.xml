@@ -6857,4 +6857,612 @@
         </Sounds>
     </Firearm>
 
+<!-- AR TEAM -->
+
+<!-- ST AR-15 ASTERIA -->
+
+    <Bind eqp="GFL-WEAP-AR15">
+        <to name="556FMJEPR_GFL_AR15" />
+        <to name="556APFSF_GFL_AR15" />
+
+        <to name="scope_GFL_IronSights" />
+        <to name="scope_GFL_RedDot" />
+        <to name="scope_GFL_Holosight" />
+        <to name="scope_GFL_M68CCO" />
+        <to name="scope_GFL_M150RCO" />
+        <to name="scope_GFL_HoloMag3x" />
+        <to name="scope_GFL_SpecterDR" />
+        <to name="scope_GFL_LPVO_6X" />
+        <to name="scope_GFL_LPVO_8X" />
+        <to name="scope_GFL_LROMK4_3_10X" />
+        <to name="scope_GFL_LROMK6_3_18X" />
+        <to name="scope_GFL_LROPM_5_25X" />
+    </Bind>
+    <Firearm
+        name="GFL-WEAP-AR15"
+        inventoryBinding="PrimaryWeapon"
+        category="rifle"
+        unlockCost="0"
+        tooltip="@WEAP-AR15-NAME"
+        description="@WEAP-AR15-DESC"
+        img="data/models/signatures/ar15_ui.dds"
+        animationSet="rifle"
+    >
+        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="-4" />
+
+        <RenderObject3D
+            model="data/models/signatures/ar15.khm"
+            attachSlot="prop_front_rifle"
+            skipGOSSAO="true"
+            diffuseTex="data/models/signatures/ar15.dds"
+        />
+
+        <ModifiableParams
+            numPellets="1"
+            roundsPerMagazine="30"
+            closedBolt="1"
+            cyclicReload="0"
+            reloadTime="1700"
+            reloadEmptyTime="1800"
+            changeInTime="0"
+            changeOutTime="0"
+            readyTime="340"
+            guardTime="160"
+            accuracyStart="85"
+            accuracyEnd="80"
+            accuracyStartDist="4"
+            accuracyEndDist="50"
+        />
+
+        <Params
+            caliberInfoText="@firearm_caliber_556x45_name"
+            operationInfoText="@firearm_operation_semiauto_name"
+            ejectingShellEntity="BulletCasingLarge"
+            magazineEntity="m4_mag"
+            suppressedSwitch="GFL-WEAP-AR15-SUP"
+            ai_rangeMin="1.0"
+            ai_rangeOptimal="20.0"
+            ai_rangeMax="50.0"
+        />
+
+        <AttackTypes>
+
+            <AttackType name="GFL_CQC_AR15" rangeMeters="4" />
+            <AttackType name="GFL_Near_AR15" rangeMeters="8" />
+            <AttackType name="GFL_Close_AR15" rangeMeters="12" />
+            <AttackType name="GFL_Medium_AR15" rangeMeters="16" />
+            <AttackType name="GFL_MedEdge_AR15" rangeMeters="20" />
+            <AttackType name="GFL_Extended_AR15" rangeMeters="9999" />
+
+        </AttackTypes>
+
+        <MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_01" />
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_02" />
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_03" />
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
+        </MuzzleFlash>
+
+        <Sounds>
+            <Equip name="rifle_eqp" />
+            <Unequip name="rifle_neqp" />
+            <Reload name="rifle_reld" />
+            <ReloadEmpty name="rifle_reldempt" />
+            <Fire name="m4_fire" />
+            <ShellDrop name="rifle_shell_drop" />
+            <Empty name="gen_empty" />
+        </Sounds>
+    </Firearm>
+
+<!-- ST AR-15 ASTERIA (SUPPRESSED) -->
+
+    <Bind eqp="GFL-WEAP-AR15-SUP">
+        <to name="556FMJEPR_GFL_AR15-SUP" />
+
+        <to name="scope_GFL_IronSights" />
+        <to name="scope_GFL_RedDot" />
+        <to name="scope_GFL_Holosight" />
+        <to name="scope_GFL_M68CCO" />
+        <to name="scope_GFL_M150RCO" />
+        <to name="scope_GFL_HoloMag3x" />
+        <to name="scope_GFL_SpecterDR" />
+        <to name="scope_GFL_LPVO_6X" />
+        <to name="scope_GFL_LPVO_8X" />
+        <to name="scope_GFL_LROMK4_3_10X" />
+        <to name="scope_GFL_LROMK6_3_18X" />
+        <to name="scope_GFL_LROPM_5_25X" />
+    </Bind>
+    <Firearm
+        name="GFL-WEAP-AR15-SUP"
+        inventoryBinding="PrimaryWeaponMuzzle"
+        category="rifle"
+        unlockCost="0"
+        tooltip="@WEAP-AR15-NAME"
+        description="@WEAP-AR15-DESC"
+        img="data/models/signatures/ar15_ui.dds"
+        animationSet="rifle"
+    >
+        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="-4" />
+
+        <RenderObject3D
+            model="data/models/signatures/ar15.khm"
+            attachSlot="prop_front_rifle"
+            skipGOSSAO="true"
+            diffuseTex="data/models/signatures/ar15.dds"
+        />
+        <RenderObject3D
+            model="data/models/weapons/attachments/silencer_01.khm"
+            attachSlot="silencer_socket"
+            skipGOSSAO="true"
+            diffuseTex="data/models/weapons/attachments/silencer_01a.dds"
+        />
+
+        <ModifiableParams
+            numPellets="1"
+            roundsPerMagazine="30"
+            closedBolt="1"
+            cyclicReload="0"
+            reloadTime="1700"
+            reloadEmptyTime="1800"
+            changeInTime="0"
+            changeOutTime="0"
+            readyTime="340"
+            guardTime="160"
+            accuracyStart="85"
+            accuracyEnd="80"
+            accuracyStartDist="4"
+            accuracyEndDist="50"
+        />
+
+        <Params
+            caliberInfoText="@firearm_caliber_556x45_name"
+            operationInfoText="@firearm_operation_semiauto_name"
+            ejectingShellEntity="BulletCasingLarge"
+            magazineEntity="m4_mag"
+            suppressedSwitch="GFL-WEAP-AR15"
+            suppressedImg="data/models/weapons/attachments/basic_silencer_ui.dds"
+            ai_rangeMin="1.0"
+            ai_rangeOptimal="20.0"
+            ai_rangeMax="50.0"
+        />
+
+        <AttackTypes>
+
+            <AttackType name="GFL_CQC_AR15" rangeMeters="4" />
+            <AttackType name="GFL_Near_AR15" rangeMeters="8" />
+            <AttackType name="GFL_Close_AR15" rangeMeters="12" />
+            <AttackType name="GFL_Medium_AR15" rangeMeters="16" />
+            <AttackType name="GFL_MedEdge_AR15" rangeMeters="20" />
+            <AttackType name="GFL_Extended_AR15" rangeMeters="9999" />
+
+        </AttackTypes>
+
+        <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Rifle">
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_05" />
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_06" />
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_07" />
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_08" />
+        </MuzzleFlash>
+
+        <Sounds>
+            <Equip name="rifle_eqp" />
+            <Unequip name="rifle_neqp" />
+            <Reload name="rifle_reld" />
+            <ReloadEmpty name="rifle_reldempt" />
+            <Fire name="m4sup_fire" />
+            <ShellDrop name="rifle_shell_drop" />
+            <Empty name="gen_empty" />
+        </Sounds>
+    </Firearm>
+
+<!-- M4 SOPMOD II SOPPO -->
+
+    <Bind eqp="GFL-WEAP-SOPMODII">
+        <to name="556FMJEPR_GFL_SOPMODII" />
+        <to name="556APFSF_GFL_SOPMODII" />
+
+        <to name="scope_GFL_IronSights" />
+        <to name="scope_GFL_RedDot" />
+        <to name="scope_GFL_Holosight" />
+        <to name="scope_GFL_M68CCO" />
+        <to name="scope_GFL_M150RCO" />
+        <to name="scope_GFL_HoloMag3x" />
+        <to name="scope_GFL_SpecterDR" />
+        <to name="scope_GFL_LPVO_6X" />
+        <to name="scope_GFL_LPVO_8X" />
+        <to name="scope_GFL_LROMK4_3_10X" />
+        <to name="scope_GFL_LROMK6_3_18X" />
+        <to name="scope_GFL_LROPM_5_25X" />
+    </Bind>
+    <Firearm
+        name="GFL-WEAP-SOPMODII"
+        inventoryBinding="PrimaryWeapon"
+        category="rifle"
+        unlockCost="0"
+        tooltip="@WEAP-SOPMODII-NAME"
+        description="@WEAP-SOPMODII-DESC"
+        img="data/models/signatures/sopmodii_ui.dds"
+        animationSet="rifle"
+    >
+        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="-4" />
+
+        <RenderObject3D
+            model="data/models/signatures/sopmodii.khm"
+            attachSlot="prop_front_rifle"
+            skipGOSSAO="true"
+            diffuseTex="data/models/signatures/sopmodii.dds"
+        />
+
+        <ModifiableParams
+            numPellets="1"
+            roundsPerMagazine="30"
+            closedBolt="1"
+            cyclicReload="0"
+            reloadTime="1600"
+            reloadEmptyTime="1700"
+            changeInTime="0"
+            changeOutTime="0"
+            readyTime="320"
+            guardTime="150"
+            accuracyStart="85"
+            accuracyEnd="80"
+            accuracyStartDist="4"
+            accuracyEndDist="50"
+            suppressArea="1"
+        />
+
+        <Params
+            caliberInfoText="@firearm_caliber_556x45_name"
+            operationInfoText="@firearm_operation_semifull_name"
+            ejectingShellEntity="BulletCasingLarge"
+            magazineEntity="m4_mag"
+            suppressedSwitch="GFL-WEAP-SOPMODII-SUP"
+            ai_rangeMin="1.0"
+            ai_rangeOptimal="12.0"
+            ai_rangeMax="40.0"
+        />
+
+        <AttackTypes>
+
+            <AttackType name="GFL_CQC_SOPMODII" rangeMeters="4" />
+            <AttackType name="GFL_Near_SOPMODII" rangeMeters="8" />
+            <AttackType name="GFL_Close_SOPMODII" rangeMeters="12" />
+            <AttackType name="GFL_Medium_SOPMODII" rangeMeters="16" />
+            <AttackType name="GFL_MedEdge_SOPMODII" rangeMeters="20" />
+            <AttackType name="GFL_Extended_SOPMODII" rangeMeters="9999" />
+
+        </AttackTypes>
+
+        <AttackTypesSuppressiveFire>
+            <AttackType name="GFL_AreaSuppression_Auto" rangeMeters="9999" />
+        </AttackTypesSuppressiveFire>
+
+        <MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_01" />
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_02" />
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_03" />
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
+        </MuzzleFlash>
+
+        <Sounds>
+            <Equip name="rifle_eqp" />
+            <Unequip name="rifle_neqp" />
+            <Reload name="rifle_reld" />
+            <ReloadEmpty name="rifle_reldempt" />
+            <Fire name="m4_fire" />
+            <ShellDrop name="rifle_shell_drop" />
+            <Empty name="gen_empty" />
+        </Sounds>
+    </Firearm>
+
+<!-- M4 SOPMOD II SOPPO (SUPPRESSED) -->
+
+    <Bind eqp="GFL-WEAP-SOPMODII-SUP">
+        <to name="556FMJEPR_GFL_SOPMODII-SUP" />
+
+        <to name="scope_GFL_IronSights" />
+        <to name="scope_GFL_RedDot" />
+        <to name="scope_GFL_Holosight" />
+        <to name="scope_GFL_M68CCO" />
+        <to name="scope_GFL_M150RCO" />
+        <to name="scope_GFL_HoloMag3x" />
+        <to name="scope_GFL_SpecterDR" />
+        <to name="scope_GFL_LPVO_6X" />
+        <to name="scope_GFL_LPVO_8X" />
+        <to name="scope_GFL_LROMK4_3_10X" />
+        <to name="scope_GFL_LROMK6_3_18X" />
+        <to name="scope_GFL_LROPM_5_25X" />
+    </Bind>
+    <Firearm
+        name="GFL-WEAP-SOPMODII-SUP"
+        inventoryBinding="PrimaryWeaponMuzzle"
+        category="rifle"
+        unlockCost="0"
+        tooltip="@WEAP-SOPMODII-NAME"
+        description="@WEAP-SOPMODII-DESC"
+        img="data/models/signatures/sopmodii_ui.dds"
+        animationSet="rifle"
+    >
+        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="-4" />
+
+        <RenderObject3D
+            model="data/models/signatures/sopmodii.khm"
+            attachSlot="prop_front_rifle"
+            skipGOSSAO="true"
+            diffuseTex="data/models/signatures/sopmodii.dds"
+        />
+        <RenderObject3D
+            model="data/models/weapons/attachments/silencer_01.khm"
+            attachSlot="silencer_socket"
+            skipGOSSAO="true"
+            diffuseTex="data/models/weapons/attachments/silencer_01a.dds"
+        />
+
+        <ModifiableParams
+            numPellets="1"
+            roundsPerMagazine="30"
+            closedBolt="1"
+            cyclicReload="0"
+            reloadTime="1600"
+            reloadEmptyTime="1700"
+            changeInTime="0"
+            changeOutTime="0"
+            readyTime="320"
+            guardTime="150"
+            accuracyStart="85"
+            accuracyEnd="80"
+            accuracyStartDist="4"
+            accuracyEndDist="50"
+            suppressArea="1"
+        />
+
+        <Params
+            caliberInfoText="@firearm_caliber_556x45_name"
+            operationInfoText="@firearm_operation_semifull_name"
+            ejectingShellEntity="BulletCasingLarge"
+            magazineEntity="m4_mag"
+            suppressedSwitch="GFL-WEAP-SOPMODII"
+            suppressedImg="data/models/weapons/attachments/basic_silencer_ui.dds"
+            ai_rangeMin="1.0"
+            ai_rangeOptimal="12.0"
+            ai_rangeMax="40.0"
+        />
+
+        <AttackTypes>
+
+            <AttackType name="GFL_CQC_SOPMODII" rangeMeters="4" />
+            <AttackType name="GFL_Near_SOPMODII" rangeMeters="8" />
+            <AttackType name="GFL_Close_SOPMODII" rangeMeters="12" />
+            <AttackType name="GFL_Medium_SOPMODII" rangeMeters="16" />
+            <AttackType name="GFL_MedEdge_SOPMODII" rangeMeters="20" />
+            <AttackType name="GFL_Extended_SOPMODII" rangeMeters="9999" />
+
+        </AttackTypes>
+
+        <AttackTypesSuppressiveFire>
+            <AttackType name="GFL_AreaSuppression_Auto" rangeMeters="9999" />
+        </AttackTypesSuppressiveFire>
+
+        <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Rifle">
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_05" />
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_06" />
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_07" />
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_08" />
+        </MuzzleFlash>
+
+        <Sounds>
+            <Equip name="rifle_eqp" />
+            <Unequip name="rifle_neqp" />
+            <Reload name="rifle_reld" />
+            <ReloadEmpty name="rifle_reldempt" />
+            <Fire name="m4sup_fire" />
+            <ShellDrop name="rifle_shell_drop" />
+            <Empty name="gen_empty" />
+        </Sounds>
+    </Firearm>
+
+<!-- RO635 ROBELLA -->
+
+    <Bind eqp="GFL-WEAP-RO635">
+        <to name="919JHPOVER_GFL_RO635" />
+        <to name="919SQUEAKFLASH_GFL_RO635" />
+
+        <to name="scope_GFL_IronSights" />
+        <to name="scope_GFL_RedDot" />
+        <to name="scope_GFL_Holosight" />
+        <to name="scope_GFL_M68CCO" />
+        <to name="scope_GFL_M150RCO" />
+        <to name="scope_GFL_HoloMag3x" />
+        <to name="scope_GFL_SpecterDR" />
+        <to name="scope_GFL_LPVO_6X" />
+        <to name="scope_GFL_LPVO_8X" />
+        <to name="scope_GFL_LROMK4_3_10X" />
+        <to name="scope_GFL_LROMK6_3_18X" />
+        <to name="scope_GFL_LROPM_5_25X" />
+    </Bind>
+    <Firearm
+        name="GFL-WEAP-RO635"
+        inventoryBinding="PrimaryWeapon"
+        category="smg"
+        unlockCost="0"
+        tooltip="@WEAP-RO635-NAME"
+        description="@WEAP-RO635-DESC"
+        img="data/models/signatures/ro635_ui.dds"
+        animationSet="rifle"
+    >
+        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="-2" />
+
+        <RenderObject3D
+            model="data/models/signatures/ro635.khm"
+            attachSlot="prop_front_rifle"
+            skipGOSSAO="true"
+            diffuseTex="data/models/signatures/ro635.dds"
+        />
+
+        <ModifiableParams
+            numPellets="1"
+            roundsPerMagazine="32"
+            closedBolt="1"
+            cyclicReload="0"
+            reloadTime="1600"
+            reloadEmptyTime="1700"
+            changeInTime="0"
+            changeOutTime="0"
+            readyTime="300"
+            guardTime="140"
+            accuracyStart="75"
+            accuracyEnd="55"
+            accuracyStartDist="4"
+            accuracyEndDist="50"
+        />
+
+        <Params
+            caliberInfoText="@firearm_caliber_9x19_name"
+            operationInfoText="@firearm_operation_semifull_name"
+            ejectingShellEntity="BulletCasingSmall"
+            magazineEntity="mp5_mag"
+            suppressedSwitch="GFL-WEAP-RO635-SUP"
+            ai_rangeMin="1.0"
+            ai_rangeOptimal="10.0"
+            ai_rangeMax="25.0"
+            ai_stopWhenShooting="false"
+        />
+
+        <AttackTypes>
+
+            <AttackType name="GFL_CQC_RO635" rangeMeters="4" />
+            <AttackType name="GFL_Near_RO635" rangeMeters="8" />
+            <AttackType name="GFL_Close_RO635" rangeMeters="12" />
+            <AttackType name="GFL_Medium_RO635" rangeMeters="16" />
+            <AttackType name="GFL_MedEdge_RO635" rangeMeters="20" />
+            <AttackType name="GFL_Extended_RO635" rangeMeters="9999" />
+
+        </AttackTypes>
+
+        <MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Pistol">
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_01" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_02" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_03" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_04" />
+        </MuzzleFlash>
+
+        <Sounds>
+            <Equip name="smg_eqp" />
+            <Unequip name="smg_neqp" />
+            <Reload name="smg_reld" />
+            <ReloadEmpty name="smg_reldempt" />
+            <Fire name="mp5a_fire" />
+            <ShellDrop name="smg_shell_drop" />
+            <Empty name="gen_empty" />
+        </Sounds>
+    </Firearm>
+
+<!-- RO635 ROBELLA (SUPPRESSED) -->
+
+    <Bind eqp="GFL-WEAP-RO635-SUP">
+        <to name="919JHPOVER_GFL_RO635-SUP" />
+
+        <to name="scope_GFL_IronSights" />
+        <to name="scope_GFL_RedDot" />
+        <to name="scope_GFL_Holosight" />
+        <to name="scope_GFL_M68CCO" />
+        <to name="scope_GFL_M150RCO" />
+        <to name="scope_GFL_HoloMag3x" />
+        <to name="scope_GFL_SpecterDR" />
+        <to name="scope_GFL_LPVO_6X" />
+        <to name="scope_GFL_LPVO_8X" />
+        <to name="scope_GFL_LROMK4_3_10X" />
+        <to name="scope_GFL_LROMK6_3_18X" />
+        <to name="scope_GFL_LROPM_5_25X" />
+    </Bind>
+    <Firearm
+        name="GFL-WEAP-RO635-SUP"
+        inventoryBinding="PrimaryWeaponMuzzle"
+        category="smg"
+        unlockCost="0"
+        tooltip="@WEAP-RO635-NAME"
+        description="@WEAP-RO635-DESC"
+        img="data/models/signatures/ro635_ui.dds"
+        animationSet="rifle"
+    >
+        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="-2" />
+
+        <RenderObject3D
+            model="data/models/signatures/ro635.khm"
+            attachSlot="prop_front_rifle"
+            skipGOSSAO="true"
+            diffuseTex="data/models/signatures/ro635.dds"
+        />
+        <RenderObject3D
+            model="data/models/weapons/attachments/silencer_01.khm"
+            attachSlot="silencer_socket"
+            skipGOSSAO="true"
+            diffuseTex="data/models/weapons/attachments/silencer_01a.dds"
+        />
+
+        <ModifiableParams
+            numPellets="1"
+            roundsPerMagazine="32"
+            closedBolt="1"
+            cyclicReload="0"
+            reloadTime="1600"
+            reloadEmptyTime="1700"
+            changeInTime="0"
+            changeOutTime="0"
+            readyTime="300"
+            guardTime="140"
+            accuracyStart="75"
+            accuracyEnd="55"
+            accuracyStartDist="4"
+            accuracyEndDist="50"
+        />
+
+        <Params
+            caliberInfoText="@firearm_caliber_9x19_name"
+            operationInfoText="@firearm_operation_semifull_name"
+            ejectingShellEntity="BulletCasingSmall"
+            magazineEntity="mp5_mag"
+            suppressedSwitch="GFL-WEAP-RO635"
+            suppressedImg="data/models/weapons/attachments/basic_silencer_ui.dds"
+            ai_rangeMin="1.0"
+            ai_rangeOptimal="10.0"
+            ai_rangeMax="25.0"
+            ai_stopWhenShooting="false"
+        />
+
+        <AttackTypes>
+
+            <AttackType name="GFL_CQC_RO635" rangeMeters="4" />
+            <AttackType name="GFL_Near_RO635" rangeMeters="8" />
+            <AttackType name="GFL_Close_RO635" rangeMeters="12" />
+            <AttackType name="GFL_Medium_RO635" rangeMeters="16" />
+            <AttackType name="GFL_MedEdge_RO635" rangeMeters="20" />
+            <AttackType name="GFL_Extended_RO635" rangeMeters="9999" />
+
+        </AttackTypes>
+
+        <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Pistol">
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_01" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_02" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_03" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_04" />
+        </MuzzleFlash>
+
+        <Sounds>
+            <Equip name="smg_eqp" />
+            <Unequip name="smg_neqp" />
+            <Reload name="smg_reld" />
+            <ReloadEmpty name="smg_reldempt" />
+            <Fire name="mp5sd_fire" />
+            <ShellDrop name="smg_shell_drop" />
+            <Empty name="gen_empty" />
+        </Sounds>
+    </Firearm>
+
 </Equipment>

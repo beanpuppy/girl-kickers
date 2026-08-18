@@ -25,6 +25,7 @@ SQUAD_ORDER = [
     "frost",
     "monsoon",
     "pol03",
+    "arteam",
 ]
 
 

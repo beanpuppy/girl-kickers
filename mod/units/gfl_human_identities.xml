@@ -315,4 +315,26 @@
         gender="0"
         customName="LORELEI"
     />
+
+    <Portrait
+        tex="data/textures/portraits/gfl_ar15.dds"
+        unit="GFL-UNIT-ARTEAM"
+        class="GFL-DOLL-AR15"
+        gender="0"
+        customName="ASTERIA"
+    />
+    <Portrait
+        tex="data/textures/portraits/gfl_sopmodii.dds"
+        unit="GFL-UNIT-ARTEAM"
+        class="GFL-DOLL-SOPMODII"
+        gender="0"
+        customName="SOPPO"
+    />
+    <Portrait
+        tex="data/textures/portraits/gfl_ro635.dds"
+        unit="GFL-UNIT-ARTEAM"
+        class="GFL-DOLL-RO635"
+        gender="0"
+        customName="ROBELLA"
+    />
 </HumanIdentities>

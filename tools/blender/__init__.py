@@ -1,4 +1,6 @@
 # Changelog:
+# v2.1 - Blender 5.2 support: read animation f-curves via slotted-action
+#        channelbags now that Action.fcurves is gone
 # v2.0 - Fixed export producing incorrect bone weights
 #      - Fixed import crash on models with helper weights
 #      - Fixed crashes on large meshes (40k+ verts)
@@ -12,7 +14,7 @@ from bpy_extras.io_utils import (
 bl_info = {
     "name": "KHM Tools",
     "author": "Reuben Yu (original), Antistratégie (fixes)",
-    "version": (2, 0),
+    "version": (2, 1),
     "blender": (5, 1, 0),
     "location": "File > Import/Export > khm (.khm)",
     "description": "Import and export Door Kickers 2 model files",

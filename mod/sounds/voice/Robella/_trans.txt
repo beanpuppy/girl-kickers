@@ -1,0 +1,212 @@
+# Voice Line Translations for Robella
+# Generated via OpenAI (gpt-4o-transcribe + gpt-5)
+# Total files: 52
+
+Series_Attack__VO_Robella_Series_Tone_Positive_003.wav
+  JP: 撃て
+  EN: Fire!
+
+Series_Battle_Start__VO_Robella_Series_Tone_Positive_002.wav
+  JP: この戦い、必ず勝ちます。
+  EN: We will definitely win this battle.
+
+Series_Chosen_Auto__VO_Robella_Series_Tone_Positive_007.wav
+  JP: 少尉注意。
+  EN: Heads up, Second Lieutenant!
+
+Series_Chosen__VO_Robella_Series_Tone_Positive_006.wav
+  JP: ご命令を。
+  EN: Awaiting orders.
+
+Series_Daily_001.wav
+  JP: んん？コンソールの上に使用済みのコーヒーカップが二つ……お客様ですか？
+  EN: Huh? Two empty coffee cups on the console... Do we have guests?
+
+Series_Daily_002.wav
+  JP: 今日も静かな一日でした。バリャーグもイキムクロも現れず、ソップも……おとなしくしていました。
+  EN: Another quiet day. Neither the Varyag nor the Ikimukuro showed up, and even Sopp... kept quiet.
+
+Series_Daily_003.wav
+  JP: 人間は人形より複雑です。人形は論理演算すれば明確な答えが出ますが、人間は様々な要素に左右されます。だから人間は喜びや悩み、迷いや苦しみを感じるのでしょう。もっとそれらの感情について知り、感じてみたいものです。
+  EN: Humans are more complex than dolls. With dolls, logic yields clear answers; humans are swayed by many factors. That’s why they feel joy and worry, hesitation and suffering. I want to learn more about those emotions—and feel them for myself.
+
+Series_Daily_004.wav
+  JP: 私の損傷のことより、次の任務の予算について考えてください。
+  EN: Please consider the budget for the next mission rather than my injuries.
+
+Series_Daily_005.wav
+  JP: 指揮官、言われていたものを…あっ、何ですかこの騒ぎは。またソップ?ちょっと目を離した隙に…やめなさいソップ!ソップ!
+  EN: Commander, here’s what you asked for— Huh? What’s all this commotion? Sopp again? I look away for one second and... Stop it, Sopp! Sopp!
+
+Series_Die__VO_Robella_Series_Tone_Negative_001.wav
+  JP: すみません。
+  EN: I'm sorry.
+
+Series_Dying__VO_Robella_Series_Tone_Negative_002.wav
+  JP: 持ちこたえなきゃ。
+  EN: Gotta hold out.
+
+Series_Hit__VO_Robella_Single_Hit_001.wav
+  JP: 隙あり。
+  EN: You're open!
+
+Series_Hitted__VO_Robella_Series_HittedLast.wav
+  JP: くっ
+  EN: Ugh!
+
+Series_Kill__VO_Robella_Single_Kill_001.wav
+  JP: 終わりです。
+  EN: It’s over.
+
+Series_Lose__VO_Robella_Single_Lose_001.wav
+  JP: 計画が甘かった。皆さん、すみません。
+  EN: The plan was flawed. My apologies, everyone.
+
+Series_Set_Click__VO_Robella_Series_Tone_Positive_004.wav
+  JP: 待機。
+  EN: Standing by.
+
+Series_Set_Fall__VO_Robella_Series_Tone_Positive_005.wav
+  JP: 失望はさせません。
+  EN: I won’t let you down.
+
+Series_Shield_Broken__VO_Robella_Series_Tone_Negative_003.wav
+  JP: 油断した。
+  EN: I let my guard down.
+
+Series_Skill01__VO_Robella_Single_Skill_001.wav
+  JP: あなたの罪を数えなさい。
+  EN: Count your sins.
+
+Series_Skill02__VO_Robella_Single_Skill_002.wav
+  JP: 行動開始、時間に注意。
+  EN: Commence operations. Watch the time.
+
+Series_Tone_Positive_001.wav
+  JP: 戦闘準備完了。
+  EN: Combat preparations complete.
+
+Series_Ultimate__VO_Robella_Single_Ultimate_SSR_001.wav
+  JP: 弱点を狙って。
+  EN: Aim for the weak spot!
+
+Series_Up_001.wav
+  JP: 少し強くなりました。
+  EN: I've become a little stronger.
+
+Series_Up_002.wav
+  JP: もっと成長しないと。
+  EN: Gotta get stronger.
+
+Series_Up_003.wav
+  JP: まだいけます。
+  EN: I can still fight.
+
+Series_Up_004.wav
+  JP: みんなの力になります。
+  EN: I’ll support everyone.
+
+Series_Up_005.wav
+  JP: 未来をこの手に。
+  EN: The future’s in my hands.
+
+Series_Win__VO_Robella_Single_Win_001.wav
+  JP: 通りすがりの人形よ。覚えておいて。
+  EN: Just a passing doll. Remember that.
+
+Single_Birthday_SSR_001.wav
+  JP: 指揮官、お誕生日おめでとうございます。みんなの方も準備が終わりました。パーティー会場はこちらです。どうぞ。
+  EN: Commander, happy birthday. Everyone is ready as well. The party is this way. This way, please.
+
+Single_Birthday_SSR_002.wav
+  JP: もう一年ですか。時間が過ぎるのは早いですね。去年叶えたかったお願いは叶いましたか?どんなお願いでも、私が力になってみせましょう。
+  EN: Has it been a year already? Time flies. Did the wish you made last year come true? Whatever your wish, I’ll make sure to help.
+
+Single_Christmas_001.wav
+  JP: メリークリスマス、指揮官。これをどうぞ。この模型はレアものですよ。情報サイトをあちこち探してきた甲斐がありました。
+  EN: Merry Christmas, Commander. Here—this is for you. This model’s a rare find. All that scouring the info sites paid off.
+
+Single_Christmas_002.wav
+  JP: 今日は指揮官に特別なプレゼントをご用意しました。ただ渡すだけではつまらないので、ここは中身を当ててみてはいかがでしょう。ヒントはあなたが以前欲しいと口にしていたものです。私ははっきりと覚えていますよ。
+  EN: Commander, I’ve prepared a special gift for you today. Just handing it over would be dull, so why not try guessing what’s inside? Here’s a hint: it’s something you said you wanted before. I remember it clearly.
+
+Single_Friendliness_001.wav
+  JP: 任務地近くに小さい市場があるそうです。有名ではありませんが、珍しいものがあるかもしれません。一緒に行きませんか?
+  EN: I hear there’s a small market near the mission area. It’s not well-known, but there might be some rare finds. Want to check it out together?
+
+Single_Friendliness_002.wav
+  JP: 指揮官、今日何か予定はありますか?SNSで面白そうな映画を見つけたので、もしよかったら一緒に
+  EN: Commander, do you have any plans today? I found a movie on social media that looks interesting—if you’re up for it, want to go together?
+
+Single_Friendliness_003.wav
+  JP: え、これ、私がSNSに上げた投稿じゃないですか。どうしてこれを……その、忘れてください。
+  EN: Wait, isn’t that the post I put on social media? Why would you show me that? Just… please forget it.
+
+Single_Friendliness_004.wav
+  JP: メンタルに穴が空くことは、人形にとって異常で、非論理的なことです。しかしその空洞が、今の私を形作っているのです。
+  EN: For a doll, a hole in the psyche is abnormal and illogical. Yet that void is what shapes who I am now.
+
+Single_Friendliness_005.wav
+  JP: この前の戦闘での事態はどうかお忘れください。ダイナーゲートがあんなにたくさんやってくるとは思わなかったので…
+  EN: Please forget what happened in the last battle. I didn’t expect that many Dinergates to show up…
+
+Single_Friendliness_006.wav
+  JP: 今日までずっと人間を観察しながら考えてきました。人間についてわからないことはまだたくさんありますが、一つだけ確かなことは、あなたは他の人とは違う、特別な人だということです。
+  EN: I’ve been observing humans and thinking about them up to now. There’s still a lot I don’t understand, but one thing is certain: you’re different from the others—you’re special.
+
+Single_Friendliness_007.wav
+  JP: 時間空いてるか、ですか？そうですね。あなたとの約束なら、優先して時間を作ります。
+  EN: Are you asking if I’m free? If it’s plans with you, I’ll make time for it first.
+
+Single_Friendliness_008.wav
+  JP: 再会してから、あなたが大切にしているものを近くで見てきました。それはきっと、私と同じもの。これからもずっと、そばにいさせてください。
+  EN: Since we reunited, I’ve seen up close what you hold dear. I’m sure it’s the same thing I cherish. Please allow me to stay by your side, always.
+
+Single_Login_001.wav
+  JP: 今日は天気が悪いので、外出任務は私に任せてください。
+  EN: Since the weather’s bad today, please let me handle the field mission.
+
+Single_MidAutumn_001.wav
+  JP: 今夜の月は丸くて、とても綺麗ですね。ちょっとした食べ物と飲み物を用意したので、もう少し眺めていませんか?
+  EN: The moon’s full and really beautiful tonight. I brought some snacks and drinks—want to stay and watch a little longer?
+
+Single_MidAutumn_002.wav
+  JP: 一緒にお月見なんてどうですか、指揮官。言い伝えによると、お月様には仙人がいるそうなのですが、あんな遠い場所に独りぼっちだなんて、寂しくないのでしょうか。幸い、私には指揮官がいますが、離れ離れになるつもりはありませんよ。
+  EN: Care to go moon-gazing together, Commander? Legend has it there’s an immortal on the moon—being all alone that far away, wouldn’t that be lonely? Fortunately, I have you, Commander, and I don’t intend for us to be apart.
+
+Single_NewYear_001.wav
+  JP: 指揮官、明けましておめでとうございます。あなたが健やかに過ごせて、私もSOPのことを心配せずに済む年であることを願います。指揮官の願い事は何ですか?
+  EN: Happy New Year, Commander. I hope you stay healthy, and that I won’t have to worry about SOP this year. What’s your wish, Commander?
+
+Single_NewYear_002.wav
+  JP: あけましておめでとうございます、指揮官。ヒーロー作品のほとんどは主人公が一人で責任を背負っていましたが、指揮官には私がいます。去年も今年も来年も、困難は半分こです。
+  EN: Happy New Year, Commander. In most hero stories, the hero carries the burden alone—but you’ve got me. Last year, this year, and next, we share the hardships equally.
+
+Single_Obtain_SSR_001.wav
+  JP: やっとまたお会いできました。指揮官、また以前のように命令してください。
+  EN: At last, we meet again. Commander, please issue your orders as you did before.
+
+Single_Passive_SSR_001.wav
+  JP: 守るべき人のために。
+  EN: For the one I must protect.
+
+Single_SpringFes_001.wav
+  JP: 外出した人形たちと勝手に連絡を取ってすみません。今日は団欒の日だとメイリンに聞きました。今日は指揮官と人形のみんなで一緒にいたいんです。
+  EN: Sorry for contacting the dolls who were out without permission. Meiling told me today’s our get-together day. I want to spend today with the Commander and all the dolls.
+
+Single_SpringFes_002.wav
+  JP: 春節とは、誰もが休む日、これは指揮官も例外ではありません。仕事はひとまず置いて、私と映画でも見ませんか?私のコレクションしたとっておきの名作たち、気になりますよね。
+  EN: Spring Festival is a day when everyone takes a break—you’re no exception, Commander. How about we set work aside and watch a movie? You’re curious about the choice classics in my collection, aren’t you?
+
+Single_Title_001.wav
+  JP: ドールズフロントライン2 エクセリウム
+  EN: Girls' Frontline 2: Exilium
+
+Single_Valentine_001.wav
+  JP: 今日、闇ブローカーから珍しい映画を買いました。昔流行った恋愛ものらしいのですが、初めてのジャンルなので、その、一緒に観てくれませんか?
+  EN: I bought a rare movie from a black-market dealer today. Apparently it’s a romance that was popular back in the day, and I’ve never tried that genre before, so, um… would you watch it with me?
+
+Single_Valentine_002.wav
+  JP: 去年見た恋愛映画、面白かったので今年も指揮官を誘いに来ました。闇ブローカー曰く、普通の恋愛映画よりもかなり刺激的らしく…きっともっと面白くなってるはずなんです。
+  EN: Last year’s romance flick was fun, so I came to invite you again this year, Commander. A black-market broker says this one’s a lot spicier than your usual romance, so it should be even better.
+

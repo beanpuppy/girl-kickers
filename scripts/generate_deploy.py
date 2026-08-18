@@ -180,7 +180,7 @@ def main():
 
     # Canonical squad order — must match SQUAD_ORDER in www/unit-builder/build_data.py
     # so the deploy screen and URL hash bit indices agree.
-    squad_order = ["girl", "defy", "404", "cafe", "groza", "elmoce", "frost", "monsoon", "pol03"]
+    squad_order = ["girl", "defy", "404", "cafe", "groza", "elmoce", "frost", "monsoon", "pol03", "arteam"]
     units_dir = project_dir / "mod" / "units"
     unit_files = [units_dir / f"gfl_unit_{slug}.xml" for slug in squad_order]
     deploy_output = project_dir / "mod" / "gui" / "gfl_deploy.xml"
