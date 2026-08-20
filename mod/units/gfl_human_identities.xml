@@ -317,11 +317,11 @@
     />
 
     <Portrait
-        tex="data/textures/portraits/gfl_ar15.dds"
+        tex="data/textures/portraits/gfl_ro635.dds"
         unit="GFL-UNIT-ARTEAM"
-        class="GFL-DOLL-AR15"
+        class="GFL-DOLL-RO635"
         gender="0"
-        customName="ASTERIA"
+        customName="ROBELLA"
     />
     <Portrait
         tex="data/textures/portraits/gfl_sopmodii.dds"
@@ -331,10 +331,10 @@
         customName="SOPPO"
     />
     <Portrait
-        tex="data/textures/portraits/gfl_ro635.dds"
+        tex="data/textures/portraits/gfl_ar15.dds"
         unit="GFL-UNIT-ARTEAM"
-        class="GFL-DOLL-RO635"
+        class="GFL-DOLL-AR15"
         gender="0"
-        customName="ROBELLA"
+        customName="ASTERIA"
     />
 </HumanIdentities>

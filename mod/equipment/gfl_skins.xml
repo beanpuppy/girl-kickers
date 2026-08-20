@@ -358,4 +358,34 @@
         />
     </Scope>
 
+<!-- Robella Skins -->
+
+    <Bind eqp="GFL_SKIN_RO635_DEFAULT">
+        <to name="GFL-DOLL-RO635" />
+    </Bind>
+    <Scope name="GFL_SKIN_RO635_DEFAULT" inventoryBinding="Custom1"
+        tooltip="@skin_ro635_default_name"
+        description="@skin_ro635_default_desc"
+        img="data/models/dolls/skins/ro635/skin0_ui.dds"
+    >
+        <RenderObject3D
+            model="data/models/dolls/ro635.khm"
+            diffuseTex="data/models/dolls/ro635.dds"
+        />
+    </Scope>
+
+    <Bind eqp="GFL_SKIN_RO635_SKIN1">
+        <to name="GFL-DOLL-RO635" />
+    </Bind>
+    <Scope name="GFL_SKIN_RO635_SKIN1" inventoryBinding="Custom1"
+        tooltip="@skin_ro635_skin1_name"
+        description="@skin_ro635_skin1_desc"
+        img="data/models/dolls/skins/ro635/skin1_ui.dds"
+    >
+        <RenderObject3D
+            model="data/models/dolls/skins/ro635/skin1.khm"
+            diffuseTex="data/models/dolls/skins/ro635/skin1.dds"
+        />
+    </Scope>
+
 </Equipment>

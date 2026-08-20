@@ -13,9 +13,9 @@
     >
         <Classes>
             <Class
-                name="GFL-DOLL-AR15"
-                nameUI="@DOLL-AR15-NAME"
-                description="@DOLL-AR15-DESC"
+                name="GFL-DOLL-RO635"
+                nameUI="@DOLL-RO635-NAME"
+                description="@DOLL-RO635-DESC"
                 numSlots="1"
                 supply="100"
                 iconTex="data/textures/gui/deploy/class_icon_undercover.dds"
@@ -33,9 +33,9 @@
                 maxUpgradeable="2"
             />
             <Class
-                name="GFL-DOLL-RO635"
-                nameUI="@DOLL-RO635-NAME"
-                description="@DOLL-RO635-DESC"
+                name="GFL-DOLL-AR15"
+                nameUI="@DOLL-AR15-NAME"
+                description="@DOLL-AR15-DESC"
                 numSlots="1"
                 supply="100"
                 iconTex="data/textures/gui/deploy/class_icon_undercover.dds"

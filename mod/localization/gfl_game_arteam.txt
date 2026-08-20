@@ -16,3 +16,8 @@
 @DOLL-RO635-DESC=On the surface, Robella appears decisive and acts with swift efficiency. In reality, in places unseen, she has already been struggling alone for a long time. Her sensitivity, gentleness, and delicacy are things that only you can see.\n"If you're too tired, leave the rest of the work to me... I wouldn't want the Commander to be absent from the upcoming strategy meeting."
 @WEAP-RO635-NAME=RO635
 @WEAP-RO635-DESC=Colt's Model 635, an M4 wearing a 9x19mm barrel and a magazine well adapter. The controls, the sights, and the manual of arms are all carbine, so anyone trained on the rifle can pick it up cold, but the round is a pistol round and behaves like one past twenty metres.
+
+@skin_ro635_default_name=Mechanical Heart
+@skin_ro635_default_desc=This is Robella's everyday outfit. Its bright yellow colors are a stark contrast to her cool expression, but it also reflects her heart--gentle, accepting, and caring for her friends more than anything else.
+@skin_ro635_skin1_name=Enforcer of the Law
+@skin_ro635_skin1_desc="I must not mess up at the party... Aiieeeee. I, I'm sorry, Commander, I didn't mean to do that..."\nShe collapses into your arms, her cheeks a ripe red. Is it because she's embarrassed by her faux pas, or for some other reason?

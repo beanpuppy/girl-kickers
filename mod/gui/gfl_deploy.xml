@@ -2351,7 +2351,7 @@
         <Action type="AddMeToParent" target="#unit_header" />
     </OnOpen>
 
- <StaticImage name="GFL-DOLL-AR15" origin="0 -74">
+ <StaticImage name="GFL-DOLL-RO635" origin="0 -74">
      <RenderObject2D
              texture="data/textures/gui/square.tga"
              sizeX="380"
@@ -2453,7 +2453,7 @@
      </Item>
  </StaticImage>
 
- <StaticImage name="GFL-DOLL-RO635" origin="0 -394">
+ <StaticImage name="GFL-DOLL-AR15" origin="0 -394">
      <RenderObject2D
              texture="data/textures/gui/square.tga"
              sizeX="380"
