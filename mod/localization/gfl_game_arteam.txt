@@ -5,7 +5,7 @@
 @DOLL-AR15-NAME=ASTERIA
 @DOLL-AR15-DESC=As a member of the AR team, she is now more composed and calm than before. After experiencing the departure of M4 and parting ways with the commander, she has come to cherish her comrades even more. She acts with a results-oriented mindset, paying little attention to the process; coupled with her taciturn nature and aversion to arguing, she often leads to misunderstandings. Often, it is only after she has silently made many sacrifices that others realize her good intentions. And this is precisely her unique way of treating others with gentleness.
 @WEAP-AR15-NAME=ST AR-15
-@WEAP-AR15-DESC=Stoner's original lightweight rifle, the design every 5.56mm service weapon since has been arguing with. This one is a match build: heavier barrel, tighter chamber, trigger broken in by somebody who cared. Semi-automatic by design and by preference.
+@WEAP-AR15-DESC=Stoner's original lightweight rifle, the design every 5.56mm service weapon since has been arguing with. Where the service pattern went select-fire and became the M16, this one stayed semi-automatic, and it is a match build besides: heavier barrel, tighter chamber, trigger broken in by somebody who cared.
 
 @DOLL-SOPMODII-NAME=SOPPO
 @DOLL-SOPMODII-DESC=A lively and energetic T-Doll who loves battle. She's simple-minded, prefers straightforward actions, rarely engages in deep thinking, and unconditionally trusts her teammates, obeying all your orders.\n"Commander, what do we do next? Haven't decided? Well… how about we go have some fun—"
@@ -15,7 +15,7 @@
 @DOLL-RO635-NAME=ROBELLA
 @DOLL-RO635-DESC=On the surface, Robella appears decisive and acts with swift efficiency. In reality, in places unseen, she has already been struggling alone for a long time. Her sensitivity, gentleness, and delicacy are things that only you can see.\n"If you're too tired, leave the rest of the work to me... I wouldn't want the Commander to be absent from the upcoming strategy meeting."
 @WEAP-RO635-NAME=RO635
-@WEAP-RO635-DESC=Colt's Model 635, an M4 wearing a 9x19mm barrel and a magazine well adapter. The controls, the sights, and the manual of arms are all carbine, so anyone trained on the rifle can pick it up cold, but the round is a pistol round and behaves like one past twenty metres.
+@WEAP-RO635-DESC=Colt's Model 635, the AR-15 pattern rebuilt around 9x19mm: straight blowback instead of a gas system, and a block in the magazine well to feed Uzi-pattern sticks. The controls, the sights, and the manual of arms are all carbine, so anyone trained on the rifle can pick it up cold, but the round is a pistol round and behaves like one past twenty metres.
 
 @skin_ro635_default_name=Mechanical Heart
 @skin_ro635_default_desc=This is Robella's everyday outfit. Its bright yellow colors are a stark contrast to her cool expression, but it also reflects her heart--gentle, accepting, and caring for her friends more than anything else.

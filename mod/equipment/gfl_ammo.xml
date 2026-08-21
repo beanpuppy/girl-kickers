@@ -3274,8 +3274,8 @@
             physicsImpactForce="2.0"
         >
             <Damage
-                start="32"
-                end="28"
+                start="28"
+                end="24"
                 startDist="0"
                 endDist="100"
             />
@@ -3286,8 +3286,8 @@
                 endDist="100"
             />
             <ArmorPenetration
-                start="55"
-                end="55"
+                start="50"
+                end="50"
                 startDist="0"
                 endDist="100"
             />
@@ -3309,8 +3309,8 @@
             silenced="1"
         >
             <Damage
-                start="32"
-                end="28"
+                start="28"
+                end="24"
                 startDist="0"
                 endDist="100"
             />
@@ -3321,8 +3321,8 @@
                 endDist="100"
             />
             <ArmorPenetration
-                start="55"
-                end="55"
+                start="50"
+                end="50"
                 startDist="0"
                 endDist="100"
             />
@@ -3342,8 +3342,8 @@
             physicsImpactForce="2.0"
         >
             <Damage
-                start="40"
-                end="36"
+                start="36"
+                end="32"
                 startDist="0"
                 endDist="40"
             />
@@ -3377,8 +3377,8 @@
             physicsImpactForce="2.0"
         >
             <Damage
-                start="26"
-                end="22"
+                start="28"
+                end="24"
                 startDist="0"
                 endDist="100"
             />
@@ -3389,8 +3389,8 @@
                 endDist="100"
             />
             <ArmorPenetration
-                start="45"
-                end="45"
+                start="50"
+                end="50"
                 startDist="0"
                 endDist="100"
             />
@@ -3412,8 +3412,8 @@
             silenced="1"
         >
             <Damage
-                start="26"
-                end="22"
+                start="28"
+                end="24"
                 startDist="0"
                 endDist="100"
             />
@@ -3424,8 +3424,8 @@
                 endDist="100"
             />
             <ArmorPenetration
-                start="45"
-                end="45"
+                start="50"
+                end="50"
                 startDist="0"
                 endDist="100"
             />
@@ -3445,8 +3445,8 @@
             physicsImpactForce="2.0"
         >
             <Damage
-                start="34"
-                end="30"
+                start="36"
+                end="32"
                 startDist="0"
                 endDist="40"
             />
@@ -3479,8 +3479,8 @@
             physicsImpactForce="1.5"
         >
             <Damage
-                start="36"
-                end="32"
+                start="38"
+                end="34"
                 startDist="0"
                 endDist="50"
             />
@@ -3514,8 +3514,8 @@
             silenced="1"
         >
             <Damage
-                start="36"
-                end="32"
+                start="38"
+                end="34"
                 startDist="0"
                 endDist="50"
             />
@@ -3547,8 +3547,8 @@
             suppressionScale="3.0"
         >
             <Damage
-                start="36"
-                end="32"
+                start="38"
+                end="34"
                 startDist="0"
                 endDist="40"
             />
