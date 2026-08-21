@@ -24,7 +24,8 @@ Some dolls have alternate costumes available. This requires the [url=https://ste
 [b]Frostfall Squad:[/b] Qiongju, Cheeta, Tololo, Lind
 [b]Monsoon Squad:[/b]  Daiyan, Jiangyu, Zhaohui, Faye
 [b]POL-03 Security Divisions:[/b] Mosin-Nagant, Nagant, Ksenia, Papasha
-
+[b]AR Team:[/b] Robella, Soppo, Asteria
+
 [i]Note: Only dolls currently available in GFL2 are/will be included.[/i]
 
 Due to restrictions on how many troopers can be added to a unit, a combined unit with all dolls is not possible. To facilitate cross-squad doll units, we&apos;ve created a web utility to build your own unit as an add-on mod you can install: 
@@ -58,4 +59,5 @@ Special thanks to:
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3586738239]Chinese localisation[/url]
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3595646925]Korean localisation[/url]
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3605426442]Japanese localisation[/url]
-[/list]" changeNotes="- Added Koleda (AK-12) to Task Force DEFY" languageMod="" tags="Playable Units,Equipment,UI" ugcId="3580762170"/>
+[/list]" changeNotes="Added AR Team
+Welded duplicate vertices across all doll models, fixing seams that split open during animation" languageMod="" tags="Playable Units,Equipment,UI" ugcId="3580762170"/>
