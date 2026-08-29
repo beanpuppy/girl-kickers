@@ -433,6 +433,20 @@ const GIRLDLE_DOLLS = [
     role: "Support",
     squad: "AR Team",
   },
+  {
+    name: "Eagletta",
+    weapon: "HG",
+    element: "Freeze",
+    role: "Sentinel",
+    squad: "Elmo Combined Echelon",
+  },
+  {
+    name: "Cecilia",
+    weapon: "AR",
+    element: "Burn",
+    role: "Sentinel",
+    squad: "Zucchero Café",
+  },
 ];
 
 const GIRLDLE_ATTRS = ["weapon", "element", "role", "squad"];
