@@ -1566,6 +1566,7 @@
             operationInfoText="@firearm_operation_semifull_name"
             ejectingShellEntity=""
             magazineEntity="m4_mag"
+            suppressedSwitch="GFL-WEAP-G11-SUP"
             ai_rangeMin="1.0"
             ai_rangeOptimal="15.0"
             ai_rangeMax="45.0"
@@ -1603,6 +1604,102 @@
             <Empty name="gen_empty" />
         </Sounds>
     </Firearm>
+
+    <Bind eqp="GFL-WEAP-G11-SUP">
+        <to name="473CLFMJ_GFL_G11-SUP" />
+
+        <to name="scope_GFL_IronSights" />
+        <to name="scope_GFL_RedDot" />
+        <to name="scope_GFL_Holosight" />
+        <to name="scope_GFL_M68CCO" />
+        <to name="scope_GFL_M150RCO" />
+        <to name="scope_GFL_HoloMag3x" />
+        <to name="scope_GFL_SpecterDR" />
+        <to name="scope_GFL_LPVO_6X" />
+        <to name="scope_GFL_LPVO_8X" />
+        <to name="scope_GFL_LROMK4_3_10X" />
+        <to name="scope_GFL_LROMK6_3_18X" />
+        <to name="scope_GFL_LROPM_5_25X" />
+    </Bind>
+    <Firearm
+        name="GFL-WEAP-G11-SUP"
+        inventoryBinding="PrimaryWeaponMuzzle"
+        category="rifle"
+        unlockCost="0"
+        tooltip="@WEAP-G11-NAME"
+        description="@WEAP-G11-DESC"
+        img="data/models/signatures/g11_ui.dds"
+        animationSet="rifle"
+    >
+        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="-4" />
+
+        <RenderObject3D model="data/models/signatures/g11.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/signatures/g11.dds"/>
+        <RenderObject3D model="data/models/weapons/attachments/silencer_01.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/silencer_01a.dds"/>
+
+        <ModifiableParams
+            numPellets="1"
+            roundsPerMagazine="50"
+            closedBolt="1"
+            cyclicReload="0"
+            reloadTime="1900"
+            reloadEmptyTime="2000"
+            changeInTime="0"
+            changeOutTime="0"
+            readyTime="340"
+            guardTime="160"
+            accuracyStart="85"
+            accuracyEnd="80"
+            accuracyStartDist="4"
+            accuracyEndDist="50"
+            suppressArea="1"
+        />
+
+        <Params
+            caliberInfoText="@firearm_caliber_473x33_name"
+            operationInfoText="@firearm_operation_semifull_name"
+            ejectingShellEntity=""
+            magazineEntity="m4_mag"
+            suppressedSwitch="GFL-WEAP-G11"
+            suppressedImg="data/models/weapons/attachments/basic_silencer_ui.dds"
+            ai_rangeMin="1.0"
+            ai_rangeOptimal="15.0"
+            ai_rangeMax="45.0"
+        />
+
+        <AttackTypes>
+
+            <AttackType name="GFL_CQC_G11" rangeMeters="4" />
+            <AttackType name="GFL_Near_G11" rangeMeters="8" />
+            <AttackType name="GFL_Close_G11" rangeMeters="12" />
+            <AttackType name="GFL_Medium_G11" rangeMeters="16" />
+            <AttackType name="GFL_MedEdge_G11" rangeMeters="20" />
+            <AttackType name="GFL_Extended_G11" rangeMeters="9999" />
+
+        </AttackTypes>
+
+        <AttackTypesSuppressiveFire>
+            <AttackType name="GFL_AreaSuppression_Auto" rangeMeters="9999" />
+        </AttackTypesSuppressiveFire>
+
+        <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Rifle">
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_05" />
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_06" />
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_07" />
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_08" />
+        </MuzzleFlash>
+
+        <Sounds>
+            <Equip name="rifle_eqp" />
+            <Unequip name="rifle_neqp" />
+            <Reload name="rifle_reld" />
+            <ReloadEmpty name="rifle_reldempt" />
+            <Fire name="m4sup_fire" />
+            <ShellDrop name="rifle_shell_drop" />
+            <Empty name="gen_empty" />
+        </Sounds>
+    </Firearm>
+
 
 <!-- G36K ANDORIS -->
 
@@ -1666,6 +1763,7 @@
             operationInfoText="@firearm_operation_semifull_name"
             ejectingShellEntity="BulletCasingLarge"
             magazineEntity="m4_mag"
+            suppressedSwitch="GFL-WEAP-G36K-SUP"
             ai_rangeMin="1.0"
             ai_rangeOptimal="15.0"
             ai_rangeMax="45.0"
@@ -1703,6 +1801,102 @@
             <Empty name="gen_empty" />
         </Sounds>
     </Firearm>
+
+    <Bind eqp="GFL-WEAP-G36K-SUP">
+        <to name="556FMJEPR_GFL_G36K-SUP" />
+
+        <to name="scope_GFL_IronSights" />
+        <to name="scope_GFL_RedDot" />
+        <to name="scope_GFL_Holosight" />
+        <to name="scope_GFL_M68CCO" />
+        <to name="scope_GFL_M150RCO" />
+        <to name="scope_GFL_HoloMag3x" />
+        <to name="scope_GFL_SpecterDR" />
+        <to name="scope_GFL_LPVO_6X" />
+        <to name="scope_GFL_LPVO_8X" />
+        <to name="scope_GFL_LROMK4_3_10X" />
+        <to name="scope_GFL_LROMK6_3_18X" />
+        <to name="scope_GFL_LROPM_5_25X" />
+    </Bind>
+    <Firearm
+        name="GFL-WEAP-G36K-SUP"
+        inventoryBinding="PrimaryWeaponMuzzle"
+        category="rifle"
+        unlockCost="0"
+        tooltip="@WEAP-G36K-NAME"
+        description="@WEAP-G36K-DESC"
+        img="data/models/signatures/g36k_ui.dds"
+        animationSet="rifle"
+    >
+        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="-4" />
+
+        <RenderObject3D model="data/models/signatures/g36k.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/signatures/g36k.dds"/>
+        <RenderObject3D model="data/models/weapons/attachments/silencer_01.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/silencer_01a.dds"/>
+
+        <ModifiableParams
+            numPellets="1"
+            roundsPerMagazine="30"
+            closedBolt="1"
+            cyclicReload="0"
+            reloadTime="1700"
+            reloadEmptyTime="1800"
+            changeInTime="0"
+            changeOutTime="0"
+            readyTime="340"
+            guardTime="160"
+            accuracyStart="85"
+            accuracyEnd="80"
+            accuracyStartDist="4"
+            accuracyEndDist="50"
+            suppressArea="1"
+        />
+
+        <Params
+            caliberInfoText="@firearm_caliber_556x45_name"
+            operationInfoText="@firearm_operation_semifull_name"
+            ejectingShellEntity="BulletCasingLarge"
+            magazineEntity="m4_mag"
+            suppressedSwitch="GFL-WEAP-G36K"
+            suppressedImg="data/models/weapons/attachments/basic_silencer_ui.dds"
+            ai_rangeMin="1.0"
+            ai_rangeOptimal="15.0"
+            ai_rangeMax="45.0"
+        />
+
+        <AttackTypes>
+
+            <AttackType name="GFL_CQC_G36K" rangeMeters="4" />
+            <AttackType name="GFL_Near_G36K" rangeMeters="8" />
+            <AttackType name="GFL_Close_G36K" rangeMeters="12" />
+            <AttackType name="GFL_Medium_G36K" rangeMeters="16" />
+            <AttackType name="GFL_MedEdge_G36K" rangeMeters="20" />
+            <AttackType name="GFL_Extended_G36K" rangeMeters="9999" />
+
+        </AttackTypes>
+
+        <AttackTypesSuppressiveFire>
+            <AttackType name="GFL_AreaSuppression_Auto" rangeMeters="9999" />
+        </AttackTypesSuppressiveFire>
+
+        <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Rifle">
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_05" />
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_06" />
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_07" />
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_08" />
+        </MuzzleFlash>
+
+        <Sounds>
+            <Equip name="rifle_eqp" />
+            <Unequip name="rifle_neqp" />
+            <Reload name="rifle_reld" />
+            <ReloadEmpty name="rifle_reldempt" />
+            <Fire name="m4sup_fire" />
+            <ShellDrop name="rifle_shell_drop" />
+            <Empty name="gen_empty" />
+        </Sounds>
+    </Firearm>
+
 
 <!-- G28 BELKA -->
 
@@ -2259,6 +2453,7 @@
             operationInfoText="@firearm_operation_semifull_name"
             ejectingShellEntity="BulletCasingSmall"
             magazineEntity="mp5_mag"
+            suppressedSwitch="GFL-WEAP-VECTOR-SUP"
             ai_rangeMin="1.0"
             ai_rangeOptimal="8.0"
             ai_rangeMax="20.0"
@@ -2293,6 +2488,99 @@
             <Empty name="gen_empty" />
         </Sounds>
     </Firearm>
+
+    <Bind eqp="GFL-WEAP-VECTOR-SUP">
+        <to name="45ACPFMJ_GFL_VECTOR-SUP" />
+
+        <to name="scope_GFL_IronSights" />
+        <to name="scope_GFL_RedDot" />
+        <to name="scope_GFL_Holosight" />
+        <to name="scope_GFL_M68CCO" />
+        <to name="scope_GFL_M150RCO" />
+        <to name="scope_GFL_HoloMag3x" />
+        <to name="scope_GFL_SpecterDR" />
+        <to name="scope_GFL_LPVO_6X" />
+        <to name="scope_GFL_LPVO_8X" />
+        <to name="scope_GFL_LROMK4_3_10X" />
+        <to name="scope_GFL_LROMK6_3_18X" />
+        <to name="scope_GFL_LROPM_5_25X" />
+    </Bind>
+
+    <Firearm
+        name="GFL-WEAP-VECTOR-SUP"
+        inventoryBinding="PrimaryWeaponMuzzle"
+        category="smg"
+        unlockCost="0"
+        tooltip="@WEAP-VECTOR-NAME"
+        description="@WEAP-VECTOR-DESC"
+        img="data/models/signatures/vector_ui.dds"
+        animationSet="rifle"
+    >
+        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="-2" />
+
+        <RenderObject3D model="data/models/signatures/vector.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/signatures/vector.dds"/>
+        <RenderObject3D model="data/models/weapons/attachments/silencer_01.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/silencer_01a.dds"/>
+
+        <ModifiableParams
+            numPellets="1"
+            roundsPerMagazine="30"
+            closedBolt="1"
+            cyclicReload="0"
+            reloadTime="1800"
+            reloadEmptyTime="1900"
+            changeInTime="0"
+            changeOutTime="0"
+            readyTime="300"
+            guardTime="140"
+            accuracyStart="75"
+            accuracyEnd="55"
+            accuracyStartDist="4"
+            accuracyEndDist="50"
+        />
+
+        <Params
+            caliberInfoText="@firearm_caliber_45acp_name"
+            operationInfoText="@firearm_operation_semifull_name"
+            ejectingShellEntity="BulletCasingSmall"
+            magazineEntity="mp5_mag"
+            suppressedSwitch="GFL-WEAP-VECTOR"
+            suppressedImg="data/models/weapons/attachments/basic_silencer_ui.dds"
+            ai_rangeMin="1.0"
+            ai_rangeOptimal="8.0"
+            ai_rangeMax="20.0"
+            ai_stopWhenShooting="false"
+        />
+
+        <AttackTypes>
+
+            <AttackType name="GFL_CQC_VECTOR" rangeMeters="4" />
+            <AttackType name="GFL_Near_VECTOR" rangeMeters="8" />
+            <AttackType name="GFL_Close_VECTOR" rangeMeters="12" />
+            <AttackType name="GFL_Medium_VECTOR" rangeMeters="16" />
+            <AttackType name="GFL_MedEdge_VECTOR" rangeMeters="20" />
+            <AttackType name="GFL_Extended_VECTOR" rangeMeters="9999" />
+
+        </AttackTypes>
+
+        <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Pistol">
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_01" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_02" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_03" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_04" />
+        </MuzzleFlash>
+
+        <Sounds>
+            <Equip name="smg_eqp" />
+            <Unequip name="smg_neqp" />
+            <Reload name="smg_reld" />
+            <ReloadEmpty name="smg_reldempt" />
+            <Fire name="45sup_fire" />
+            <ShellDrop name="smg_shell_drop" />
+            <Empty name="gen_empty" />
+        </Sounds>
+    </Firearm>
+
 
 <!-- CAFE ZUCCHERO -->
 
@@ -4822,6 +5110,7 @@
             operationInfoText="@firearm_operation_semifull_name"
             ejectingShellEntity="BulletCasingLarge"
             magazineEntity="m4_mag"
+            suppressedSwitch="GFL-WEAP-QBZ95-SUP"
             ai_rangeMin="1.0"
             ai_rangeOptimal="18.0"
             ai_rangeMax="45.0"
@@ -4858,6 +5147,106 @@
             <Empty name="gen_empty" />
         </Sounds>
     </Firearm>
+
+    <Bind eqp="GFL-WEAP-QBZ95-SUP">
+        <to name="58x42FMJ_GFL_QBZ95-SUP" />
+
+        <to name="scope_GFL_IronSights" />
+        <to name="scope_GFL_RedDot" />
+        <to name="scope_GFL_Holosight" />
+        <to name="scope_GFL_M68CCO" />
+        <to name="scope_GFL_M150RCO" />
+        <to name="scope_GFL_HoloMag3x" />
+        <to name="scope_GFL_SpecterDR" />
+        <to name="scope_GFL_LPVO_6X" />
+        <to name="scope_GFL_LPVO_8X" />
+        <to name="scope_GFL_LROMK4_3_10X" />
+        <to name="scope_GFL_LROMK6_3_18X" />
+        <to name="scope_GFL_LROPM_5_25X" />
+    </Bind>
+
+    <Firearm
+        name="GFL-WEAP-QBZ95-SUP"
+        inventoryBinding="PrimaryWeaponMuzzle"
+        category="rifle"
+        unlockCost="0"
+        tooltip="@WEAP-QBZ95-NAME"
+        description="@WEAP-QBZ95-DESC"
+        img="data/models/signatures/type95_ui.dds"
+        animationSet="rifle"
+    >
+
+        <MobilityModifiers
+            moveSpeedModifierPercent="0"
+            turnSpeedModifierPercent="0"
+        />
+
+        <ConcealmentModifier add="-4" />
+
+        <RenderObject3D model="data/models/signatures/type95.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/signatures/type95.dds"/>
+        <RenderObject3D model="data/models/weapons/attachments/silencer_01.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/silencer_01a.dds"/>
+
+        <ModifiableParams
+            numPellets="1"
+            roundsPerMagazine="30"
+            closedBolt="1"
+            cyclicReload="0"
+            reloadTime="1700"
+            reloadEmptyTime="1800"
+            changeInTime="0"
+            changeOutTime="0"
+            readyTime="340"
+            guardTime="160"
+            accuracyStart="85"
+            accuracyEnd="80"
+            accuracyStartDist="4"
+            accuracyEndDist="50"
+        />
+
+        <Params
+            caliberInfoText="@firearm_caliber_58x42_name"
+            operationInfoText="@firearm_operation_semifull_name"
+            ejectingShellEntity="BulletCasingLarge"
+            magazineEntity="m4_mag"
+            suppressedSwitch="GFL-WEAP-QBZ95"
+            suppressedImg="data/models/weapons/attachments/basic_silencer_ui.dds"
+            ai_rangeMin="1.0"
+            ai_rangeOptimal="18.0"
+            ai_rangeMax="45.0"
+            ai_stopWhenShooting="false"
+        />
+
+
+        <AttackTypes>
+
+            <AttackType name="GFL_CQC_QBZ95" rangeMeters="4" />
+            <AttackType name="GFL_Near_QBZ95" rangeMeters="8" />
+            <AttackType name="GFL_Close_QBZ95" rangeMeters="12" />
+            <AttackType name="GFL_Medium_QBZ95" rangeMeters="16" />
+            <AttackType name="GFL_MedEdge_QBZ95" rangeMeters="20" />
+            <AttackType name="GFL_Extended_QBZ95" rangeMeters="9999" />
+
+        </AttackTypes>
+
+
+        <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Rifle">
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_05" />
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_06" />
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_07" />
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_08" />
+        </MuzzleFlash>
+
+        <Sounds>
+            <Equip name="rifle_eqp" />
+            <Unequip name="rifle_neqp" />
+            <Reload name="rifle_reld" />
+            <ReloadEmpty name="rifle_reldempt" />
+            <Fire name="m4sup_fire" />
+            <ShellDrop name="rifle_shell_drop" />
+            <Empty name="gen_empty" />
+        </Sounds>
+    </Firearm>
+
 
 <!-- QBZ-97 JIANGYU -->
 
