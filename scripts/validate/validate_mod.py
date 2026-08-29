@@ -3,6 +3,9 @@
 
 Uses basegame_manifest.json to distinguish mod files from base game assets.
 Run generate_basegame_manifest.py to regenerate the manifest when DK2 updates.
+
+The manifest is optional: without it, mod-internal checks still run and references
+that only the base game can satisfy are reported as unverified rather than as errors.
 """
 
 import json
@@ -16,7 +19,12 @@ ROOT = SCRIPT_DIR.parent.parent
 MOD = ROOT / "mod"
 MANIFEST = SCRIPT_DIR / "basegame_manifest.json"
 
+# Above this many errors, suggest the manifest may be stale rather than the mod broken.
+STALE_MANIFEST_HINT_THRESHOLD = 50
+
 errors = []
+unresolved = []
+basegame_available = False
 
 
 def error(msg):
@@ -24,8 +32,35 @@ def error(msg):
     print(f"  \033[31m✗ {msg}\033[0m")
 
 
+def unresolved_ref(msg):
+    """Record a reference that no mod file defines.
+
+    With a base game manifest we can tell a genuine typo from a base game asset,
+    so this is a hard error. Without one we cannot, and reporting every base game
+    reference as missing buries the real errors in thousands of false ones, so we
+    just tally them and print a single actionable line in the summary instead.
+    """
+    if basegame_available:
+        error(msg)
+    else:
+        unresolved.append(msg)
+
+
 def ok(msg):
     print(f"  \033[32m✓\033[0m {msg}")
+
+
+def warn(msg):
+    print(f"  \033[33m!\033[0m {msg}")
+
+
+def section_result(err_before, unres_before, clean_msg):
+    """Report a section as clean only if it produced no errors and left nothing unverified."""
+    new_unres = len(unresolved) - unres_before
+    if len(errors) == err_before and not new_unres:
+        ok(clean_msg)
+    elif len(errors) == err_before and new_unres:
+        warn(f"{new_unres} reference(s) unverified (no base game manifest)")
 
 
 def parse_xml(path):
@@ -41,21 +76,50 @@ def collect_all(pattern):
 
 
 def load_manifest():
+    """Load the base game manifest.
+
+    Returns (files, loc_keys, equipment, available). When the manifest is absent
+    `available` is False and references we cannot resolve are reported as
+    unverified rather than as errors.
+    """
     if not MANIFEST.exists():
-        print(f"Warning: {MANIFEST} not found, base game checks will be skipped")
-        return set(), set(), set()
-    data = json.loads(MANIFEST.read_text())
+        return set(), set(), set(), False
+    try:
+        data = json.loads(MANIFEST.read_text())
+    except json.JSONDecodeError as e:
+        print(
+            f"\033[33m! {MANIFEST.name} is not valid JSON ({e}); regenerate it.\033[0m"
+        )
+        return set(), set(), set(), False
     return (
         set(data.get("files", [])),
         set(data.get("loc_keys", [])),
         set(data.get("equipment", [])),
+        True,
     )
 
 
 def main():
+    global basegame_available
+
     print("\nValidating mod...\n")
 
-    basegame_files, basegame_loc_keys, basegame_equipment = load_manifest()
+    (
+        basegame_files,
+        basegame_loc_keys,
+        basegame_equipment,
+        basegame_available,
+    ) = load_manifest()
+
+    if not basegame_available:
+        warn(f"No base game manifest at {MANIFEST.relative_to(ROOT)}")
+        warn(
+            "Mod-internal checks will still run; base game references can't be verified."
+        )
+        warn(
+            "To enable them: python scripts/validate/generate_basegame_manifest.py [path/to/DoorKickers2]"
+        )
+        print()
 
     # ══════════════════════════════════════════════
     # Collect all definitions from all XMLs
@@ -93,6 +157,8 @@ def main():
     all_equipment = set()
     voice_packs = set()
     skin_class_binds = {}  # skin_name -> set of class_names
+    entity_impls = {}  # (unit, class) -> entity_name
+    portraits = {}  # (unit, class) -> source file
 
     print("Scanning all mod XMLs...")
     for path in collect_all("**/*.xml"):
@@ -153,6 +219,21 @@ def main():
                 if name:
                     all_equipment.add(name)
 
+        # Entity -> (unit, class) implementations
+        for entity in tree.iter("Entity"):
+            human = entity.find(".//Human")
+            if human is None:
+                continue
+            unit_ref, class_ref = human.get("unit"), human.get("class")
+            if unit_ref and class_ref:
+                entity_impls[(unit_ref, class_ref)] = entity.get("name", "?")
+
+        # Portrait (human identity) entries
+        for portrait in tree.iter("Portrait"):
+            unit_ref, class_ref = portrait.get("unit"), portrait.get("class")
+            if unit_ref and class_ref:
+                portraits[(unit_ref, class_ref)] = path.relative_to(MOD)
+
         # Voice packs
         for pack in tree.iter("Pack"):
             name = pack.get("name")
@@ -179,6 +260,7 @@ def main():
 
     print("\n\033[1mValidating entities...\033[0m")
     ent_errors_before = len(errors)
+    ent_unres_before = len(unresolved)
     for path in collect_all("entities/gfl_humans*.xml"):
         tree = parse_xml(path)
         if not tree:
@@ -214,11 +296,12 @@ def main():
             for item in human.iter("Item"):
                 item_name = item.get("name")
                 if item_name and item_name not in all_equipment:
-                    error(
+                    unresolved_ref(
                         f"{fname}: Entity '{entity_name}' references unknown equipment '{item_name}'"
                     )
-    if len(errors) == ent_errors_before:
-        ok("All entity references are valid")
+    section_result(
+        ent_errors_before, ent_unres_before, "All entity references are valid"
+    )
 
     print("\n\033[1mValidating weapon attack types...\033[0m")
     at_errors_before = len(errors)
@@ -236,17 +319,20 @@ def main():
 
     print("\n\033[1mValidating weapon binds...\033[0m")
     wb_errors_before = len(errors)
+    wb_unres_before = len(unresolved)
     for weapon_name, bound_items in weapon_binds.items():
         for item_name in bound_items:
             if item_name not in all_equipment:
-                error(
+                unresolved_ref(
                     f"Weapon '{weapon_name}' bind references unknown item '{item_name}'"
                 )
-    if len(errors) == wb_errors_before:
-        ok("All weapon bind references are valid")
+    section_result(
+        wb_errors_before, wb_unres_before, "All weapon bind references are valid"
+    )
 
     print("\n\033[1mValidating equipment binds...\033[0m")
     eb_errors_before = len(errors)
+    eb_unres_before = len(unresolved)
     for path in collect_all("equipment/gfl_binds.xml"):
         tree = parse_xml(path)
         if not tree:
@@ -258,11 +344,10 @@ def main():
             for eqp in bind.iter("eqp"):
                 eqp_name = eqp.get("name")
                 if eqp_name and eqp_name not in all_equipment:
-                    error(
+                    unresolved_ref(
                         f"Equipment bind for '{class_ref}' references unknown item '{eqp_name}'"
                     )
-    if len(errors) == eb_errors_before:
-        ok("All equipment binds are valid")
+    section_result(eb_errors_before, eb_unres_before, "All equipment binds are valid")
 
     print("\n\033[1mValidating skin binds...\033[0m")
     sb_errors_before = len(errors)
@@ -277,6 +362,7 @@ def main():
 
     print("\n\033[1mValidating deploy screen...\033[0m")
     dp_errors_before = len(errors)
+    deploy_units = set()
     for path in collect_all("gui/gfl_deploy*.xml"):
         tree = parse_xml(path)
         if not tree:
@@ -285,10 +371,47 @@ def main():
         for item in tree.iter("Item"):
             name = item.get("name")
             if name and name.startswith("GFL-UNIT-"):
+                deploy_units.add(name)
                 if name not in units:
                     error(f"{fname}: Deploy references unknown unit '{name}'")
     if len(errors) == dp_errors_before:
         ok("All deploy references are valid")
+
+    # ══════════════════════════════════════════════
+    # Unit consistency (reverse references)
+    #
+    # The checks above verify that everything a squad references exists. These
+    # verify the opposite: that every doll a unit declares is actually wired up
+    # everywhere it needs to be. Adding a squad touches several files (see
+    # skills/add-squad.md) and it's easy to add a Class but forget its entity,
+    # its portrait, or the deploy screen — a doll that silently never shows up.
+    # ══════════════════════════════════════════════
+
+    print("\n\033[1mValidating unit consistency...\033[0m")
+    uc_errors_before = len(errors)
+
+    declared = {(unit, cls) for unit, classes in units.items() for cls in classes}
+
+    for unit, cls in sorted(declared - set(entity_impls)):
+        error(f"Unit '{unit}' declares class '{cls}' but no entity implements it")
+
+    for unit, cls in sorted(declared - set(portraits)):
+        error(
+            f"Unit '{unit}' class '{cls}' has no <Portrait> in units/gfl_human_identities.xml"
+        )
+
+    for (unit, cls), src in sorted(portraits.items()):
+        if unit not in units:
+            error(f"{src}: Portrait references unknown unit '{unit}'")
+        elif cls not in units[unit]:
+            error(f"{src}: Portrait references class '{cls}' not in unit '{unit}'")
+
+    if deploy_units:
+        for unit in sorted(set(units) - deploy_units):
+            error(f"Unit '{unit}' is defined but never appears on the deploy screen")
+
+    if len(errors) == uc_errors_before:
+        ok(f"All {len(declared)} unit/class pairs are consistently wired up")
 
     # ══════════════════════════════════════════════
     # File references
@@ -297,6 +420,7 @@ def main():
     print("\n\033[1mValidating file references...\033[0m")
     file_ref_count = 0
     fr_errors_before = len(errors)
+    fr_unres_before = len(unresolved)
     for path in collect_all("**/*.xml"):
         tree = parse_xml(path)
         if not tree:
@@ -311,11 +435,14 @@ def main():
                         continue
                     if ref in basegame_files:
                         continue
-                    error(
+                    unresolved_ref(
                         f"{path.relative_to(MOD)}: Missing file '{ref}' (not in mod or base game)"
                     )
-    if len(errors) == fr_errors_before:
-        ok(f"All {file_ref_count} file references are valid")
+    section_result(
+        fr_errors_before,
+        fr_unres_before,
+        f"All {file_ref_count} file references are valid",
+    )
 
     # ══════════════════════════════════════════════
     # Voice files
@@ -430,6 +557,7 @@ def main():
 
     print("\n\033[1mValidating localisation...\033[0m")
     loc_errors_before = len(errors)
+    loc_unres_before = len(unresolved)
 
     loc_dir = MOD / "localization"
     loc_files = sorted(loc_dir.glob("*.txt")) if loc_dir.exists() else []
@@ -467,7 +595,7 @@ def main():
         for key in sorted(xml_keys - loc_key_set):
             if key in basegame_loc_keys:
                 continue
-            error(
+            unresolved_ref(
                 f"Localisation key '{key}' used in XML but not defined in any loc file"
             )
 
@@ -478,14 +606,47 @@ def main():
     else:
         error("No localisation files found in localization/")
 
-    if len(errors) == loc_errors_before:
-        ok("All localisation keys are valid")
+    section_result(
+        loc_errors_before, loc_unres_before, "All localisation keys are valid"
+    )
 
     # ══════════════════════════════════════════════
     # Summary
     # ══════════════════════════════════════════════
 
     print(f"\n{'=' * 50}")
+
+    if unresolved:
+        print(
+            f"\033[33m! {len(unresolved)} reference(s) could not be verified without a "
+            f"base game manifest.\033[0m"
+        )
+        print(
+            "  These are most likely base game assets (scopes, sounds, shared models), "
+            "not mistakes."
+        )
+        print("  To check them, generate a manifest from your DK2 install:")
+        print(
+            "    python scripts/validate/generate_basegame_manifest.py [path/to/DoorKickers2]"
+        )
+        print()
+
+    # A manifest generated from a different DK2 build shows up as a flood of
+    # "missing" base game assets. Point at the likely cause rather than making
+    # people wade through hundreds of identical-looking errors.
+    if basegame_available and len(errors) > STALE_MANIFEST_HINT_THRESHOLD:
+        print(
+            f"\033[33m! {len(errors)} errors is a lot. If most of them are base game assets "
+            f"(data/models/weapons/..., scopes, sounds),\033[0m"
+        )
+        print(
+            "  your basegame_manifest.json is probably stale or from a different DK2 build."
+        )
+        print(
+            "  Regenerate it: python scripts/validate/generate_basegame_manifest.py [path/to/DoorKickers2]"
+        )
+        print()
+
     if errors:
         print(f"\033[31m✗ {len(errors)} error(s) found\033[0m")
         sys.exit(1)

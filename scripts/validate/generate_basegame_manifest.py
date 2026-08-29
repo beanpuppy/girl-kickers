@@ -34,20 +34,23 @@ def find_dk2():
 
 
 def main():
-    dk2 = find_dk2()
-    if not dk2:
-        print("Could not find DK2 install. Searched:")
-        for p in STEAM_PATHS:
-            print(f"  {p}")
-        print(
-            "\nPass the path as an argument: python generate_basegame_manifest.py /path/to/DoorKickers2"
-        )
-        sys.exit(1)
-
+    # An explicit path wins over auto-detection. This has to be checked first:
+    # auto-detection exiting on failure would otherwise make the argument
+    # unreachable for anyone whose DK2 isn't in a default Steam folder.
     if len(sys.argv) > 1:
         dk2 = Path(sys.argv[1])
         if not (dk2 / "data").exists():
             print(f"No data/ directory found at {dk2}")
+            sys.exit(1)
+    else:
+        dk2 = find_dk2()
+        if not dk2:
+            print("Could not find DK2 install. Searched:")
+            for p in STEAM_PATHS:
+                print(f"  {p}")
+            print(
+                "\nPass the path as an argument: python generate_basegame_manifest.py /path/to/DoorKickers2"
+            )
             sys.exit(1)
 
     data_dir = dk2 / "data"
