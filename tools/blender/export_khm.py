@@ -404,6 +404,13 @@ def SerializeAnimation(context, pModelDefinition):
     bpy.ops.object.mode_set(mode="OBJECT")
 
 
+def IsPoseBoneSelected(pose_bone):
+    # Blender 5.x stores selection on PoseBone, older versions on Bone
+    if hasattr(pose_bone, "select"):
+        return pose_bone.select is True
+    return pose_bone.bone.select is True
+
+
 def SerializeAnimationMask(context, pModelDefinition):
     b_obj = context.object
     if (
@@ -419,8 +426,12 @@ def SerializeAnimationMask(context, pModelDefinition):
     bpy.ops.object.mode_set(mode="POSE")
     for pose_bone in b_obj.pose.bones:
         animation_mask_entry = sAnimationMaskEntry()
-        animation_mask_entry.szNodeName = pose_bone.name
-        if pose_bone.bone.select is True:
+        # helpers are imported as bones with a "HELPER_" prefix, mask files use the bare name
+        node_name = pose_bone.name
+        if node_name.startswith("HELPER_"):
+            node_name = node_name[7:]
+        animation_mask_entry.szNodeName = node_name
+        if IsPoseBoneSelected(pose_bone):
             animation_mask_entry.mask = 1
         else:
             animation_mask_entry.mask = 0

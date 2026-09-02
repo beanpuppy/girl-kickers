@@ -379,6 +379,14 @@ def LoadModel(pszFilePath):
     return pModelDefinition
 
 
+def SetPoseBoneSelected(pose_bone, selected):
+    # Blender 5.x stores selection on PoseBone, older versions on Bone
+    if hasattr(pose_bone, "select"):
+        pose_bone.select = selected
+    else:
+        pose_bone.bone.select = selected
+
+
 def SpawnAnimationMask(context, pModelDefinition):
     print("SpawnAnimationMask")
 
@@ -394,18 +402,18 @@ def SpawnAnimationMask(context, pModelDefinition):
     b_obj = context.object
 
     bpy.ops.object.mode_set(mode="POSE")
-    bones_to_highlight = []
+    bones_to_highlight = set()
 
     for bone in pModelDefinition.pAnimationMask.sAnimationMaskEntry:
         if bone.mask == 1:
-            bones_to_highlight.append(bone.szNodeName)
+            bones_to_highlight.add(bone.szNodeName)
 
     for pose_bone in b_obj.pose.bones:
-        if pose_bone.name in bones_to_highlight:
-            try:
-                pose_bone.bone.select = True
-            except AttributeError:
-                pass  # Blender version lacks Bone.select
+        # helpers are imported as bones with a "HELPER_" prefix, mask files use the bare name
+        node_name = pose_bone.name
+        if node_name.startswith("HELPER_"):
+            node_name = node_name[7:]
+        SetPoseBoneSelected(pose_bone, node_name in bones_to_highlight)
 
 
 def SpawnAnimation(context, pModelDefinition):

@@ -1,4 +1,7 @@
 # Changelog:
+# v2.2 - Fixed animation mask export writing an empty mask
+#      - Fixed mask import/export bone selection on Blender 5.x
+#      - Mask import/export now handles HELPER_ bones
 # v2.1 - Blender 5.2 support: read animation f-curves via slotted-action
 #        channelbags now that Action.fcurves is gone
 # v2.0 - Fixed export producing incorrect bone weights
@@ -14,7 +17,7 @@ from bpy_extras.io_utils import (
 bl_info = {
     "name": "KHM Tools",
     "author": "Reuben Yu (original), Antistratégie (fixes)",
-    "version": (2, 1),
+    "version": (2, 2),
     "blender": (5, 1, 0),
     "location": "File > Import/Export > khm (.khm)",
     "description": "Import and export Door Kickers 2 model files",
