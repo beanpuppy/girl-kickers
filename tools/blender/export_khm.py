@@ -411,7 +411,7 @@ def SerializeAnimationMask(context, pModelDefinition):
         or bpy.context.selected_objects[0].type != "ARMATURE"
     ):
         print(
-            "[Error] SerializeAnimation: Please select an armature to export the animation."
+            "[Error] SerializeAnimationMask: Please select an armature to export the animation mask."
         )
         return
 
@@ -419,12 +419,15 @@ def SerializeAnimationMask(context, pModelDefinition):
     bpy.ops.object.mode_set(mode="POSE")
     for pose_bone in b_obj.pose.bones:
         animation_mask_entry = sAnimationMaskEntry()
-        animation_mask_entry.szName = pose_bone.name
+        animation_mask_entry.szNodeName = pose_bone.name
         if pose_bone.bone.select is True:
             animation_mask_entry.mask = 1
         else:
             animation_mask_entry.mask = 0
         pModelDefinition.pAnimationMask.sAnimationMaskEntry.append(animation_mask_entry)
+    pModelDefinition.pAnimationMask.numNodes = len(
+        pModelDefinition.pAnimationMask.sAnimationMaskEntry
+    )
 
 
 def SaveBones(file, pModelDefinition):
