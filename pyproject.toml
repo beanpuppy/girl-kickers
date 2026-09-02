@@ -3,7 +3,7 @@ name = "girl-kickers"
 version = "0.1.0"
 requires-python = ">=3.12"
 dependencies = [
-    "openai>=1.50",
+    "openai>=3.3.1",
     "python-dotenv",
     "numpy",
     "scipy",
