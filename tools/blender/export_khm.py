@@ -1,4 +1,5 @@
 import copy
+import math
 
 import bpy
 import mathutils
@@ -394,8 +395,22 @@ def SerializeAnimation(context, pModelDefinition):
             transform.vTrans, transform.qRot, transform.vScale = matrix.decompose()
             transform.vTrans += local_matrixes[n].to_translation()
 
+            values = (*transform.vTrans, *transform.qRot, *transform.vScale)
+            degenerate_scale = any(abs(v) < 0.01 or abs(v) > 10 for v in transform.vScale)
+            if not all(math.isfinite(v) for v in values) or abs(transform.qRot.magnitude - 1.0) > 0.01 or degenerate_scale:
+                raise Exception(
+                    f"Bone '{pose_bone.name}' has a broken transform at frame {f} "
+                    f"(scale {[round(v, 3) for v in transform.vScale]}, quaternion length {transform.qRot.magnitude:.3g}). "
+                    "A scale key near zero or a hand-typed rotation usually causes this. Check its keyframes in the Graph Editor."
+                )
+
             if pose_bone.name not in bones_to_keyframes:
                 bones_to_keyframes[pose_bone.name] = []
+            else:
+                # q and -q are the same rotation; keep the sign continuous so the
+                # game never interpolates through zero between two frames
+                if bones_to_keyframes[pose_bone.name][-1].qRot.dot(transform.qRot) < 0:
+                    transform.qRot.negate()
             bones_to_keyframes[pose_bone.name].append(transform)
 
     for bone in bones_to_keyframes:

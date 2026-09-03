@@ -3,6 +3,8 @@
 #        nodes to model nodes by index and the model lists helpers last
 #      - Animation import rounds the frame rate instead of truncating to 29
 #      - Mesh export gives a clear error when the armature has several meshes
+#      - Animation export refuses broken transforms (zero scale, bad rotation)
+#        and keeps quaternion signs continuous between frames
 # v2.2 - Fixed animation mask export writing an empty mask
 #      - Fixed mask import/export bone selection on Blender 5.x
 #      - Mask import/export now handles HELPER_ bones
