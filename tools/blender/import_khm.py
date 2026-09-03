@@ -438,6 +438,9 @@ def SpawnAnimation(context, pModelDefinition):
         anim_bone_name = node_anim.szNodeName
         if anim_bone_name in armature_bone_names:
             node_to_bone[n] = anim_bone_name
+        elif "HELPER_" + anim_bone_name in armature_bone_names:
+            # helpers are imported as bones with a "HELPER_" prefix
+            node_to_bone[n] = "HELPER_" + anim_bone_name
 
     # Get local matrices for matched bones
     local_matrixes = {}
@@ -499,7 +502,7 @@ def SpawnAnimation(context, pModelDefinition):
 
     context.scene.frame_end = num_frames
     fps = 1000 / pModelDefinition.pAnimation.frameDurationMs
-    context.scene.render.fps = int(fps)
+    context.scene.render.fps = round(fps)  # int() truncates 29.999 to 29
 
     # Remove redundant keyframes where values don't change between frames
     for fcurve in IterActionFCurves(b_obj.animation_data):

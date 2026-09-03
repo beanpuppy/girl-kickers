@@ -315,11 +315,11 @@ def SerializeModel(context, pModelDefinition):
             if obj.parent == b_obj and obj.type == "MESH" and "COL_" not in obj.name:
                 attached_meshes.append(obj)
         if len(attached_meshes) != 1:
-            print(
-                "[Error] SerializeModel: Armature does not have a singular attached mesh."
+            raise Exception(
+                "Mesh export needs the armature to have exactly one mesh child, "
+                f"found {len(attached_meshes)}: {[m.name for m in attached_meshes]}. "
+                "Unparent the others, or untick Mesh to export only the animation."
             )
-            print(f"        Found: {[m.name for m in attached_meshes]}")
-            return None
         b_obj = attached_meshes[0]
 
     SerializeHelpersAndCollisions(context, b_obj, pModelDefinition)
@@ -345,9 +345,15 @@ def SerializeAnimation(context, pModelDefinition):
     pModelDefinition.pAnimation = sAnimation()
     bpy.ops.object.mode_set(mode="POSE")
 
+    # The game maps animation nodes onto model nodes by index. The model export
+    # lists bones first and helpers last, while pose.bones interleaves helpers
+    # after their parents, so helpers are left out here (the game's own
+    # animations contain bones only).
+    anim_bones = [pb for pb in b_obj.pose.bones if not pb.name.startswith("HELPER_")]
+
     pModelDefinition.pAnimation.numNodeFrames = scene.frame_end
     pModelDefinition.pAnimation.frameDurationMs = 1 / scene.render.fps * 1000
-    pModelDefinition.pAnimation.numNodes = len(b_obj.pose.bones)
+    pModelDefinition.pAnimation.numNodes = len(anim_bones)
     pModelDefinition.pAnimation.pNodeTransforms = []
     pModelDefinition.pAnimation.pNodeAnimations = []
     pModelDefinition.pAnimation.startTimeS = 0.0
@@ -359,31 +365,27 @@ def SerializeAnimation(context, pModelDefinition):
 
     local_matrixes = []
     bpy.ops.object.mode_set(mode="EDIT")
-    for n in range(pModelDefinition.pAnimation.numNodes):
-        if b_obj.data.edit_bones[n].parent is not None:
-            local_matrix = (
-                b_obj.data.edit_bones[n].parent.matrix.inverted()
-                @ b_obj.data.edit_bones[n].matrix
-            )
+    for pose_bone in anim_bones:
+        edit_bone = b_obj.data.edit_bones[pose_bone.name]
+        if edit_bone.parent is not None:
+            local_matrix = edit_bone.parent.matrix.inverted() @ edit_bone.matrix
         else:
-            local_matrix = b_obj.data.edit_bones[n].matrix
+            local_matrix = edit_bone.matrix
         local_matrixes.append(local_matrix)
 
     bpy.ops.object.mode_set(mode="POSE")
 
-    for n in range(len(b_obj.pose.bones)):
+    for n, pose_bone in enumerate(anim_bones):
         pNodeAnimation = sNodeAnimation()
         pNodeAnimation.uiNodeId = n
-        pNodeAnimation.szNodeName = b_obj.pose.bones[n].name
+        pNodeAnimation.szNodeName = pose_bone.name
         pModelDefinition.pAnimation.pNodeAnimations.append(pNodeAnimation)
 
     for f in range(scene.frame_end):
         scene.frame_set(f)
 
-        for n in range(len(b_obj.pose.bones)):
+        for n, pose_bone in enumerate(anim_bones):
             transform = sNodeTransform()
-
-            pose_bone = b_obj.pose.bones[n]
 
             matrix = (
                 pose_bone.matrix_basis.transposed() @ local_matrixes[n].inverted()

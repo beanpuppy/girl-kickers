@@ -1,4 +1,8 @@
 # Changelog:
+# v2.3 - Animation export leaves helper bones out: the game maps animation
+#        nodes to model nodes by index and the model lists helpers last
+#      - Animation import rounds the frame rate instead of truncating to 29
+#      - Mesh export gives a clear error when the armature has several meshes
 # v2.2 - Fixed animation mask export writing an empty mask
 #      - Fixed mask import/export bone selection on Blender 5.x
 #      - Mask import/export now handles HELPER_ bones
@@ -17,7 +21,7 @@ from bpy_extras.io_utils import (
 bl_info = {
     "name": "KHM Tools",
     "author": "Reuben Yu (original), Antistratégie (fixes)",
-    "version": (2, 2),
+    "version": (2, 3),
     "blender": (5, 1, 0),
     "location": "File > Import/Export > khm (.khm)",
     "description": "Import and export Door Kickers 2 model files",
